@@ -573,6 +573,12 @@ Read:
 
 `docs/IMAGE-DIRECTION.md`
 
+### React or Next.js engineering and performance
+
+Read:
+
+`.agents/skills/admonk-react-engineering/SKILL.md`
+
 Specific skills may provide additional technical guidance.
 
 ---
