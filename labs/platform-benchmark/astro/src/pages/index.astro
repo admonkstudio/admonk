@@ -1,0 +1,254 @@
+---
+const systems = [
+  { index: '01', name: 'LINEA', copy: 'A continuous line that can disappear into ceiling planes.', type: 'linea' },
+  { index: '02', name: 'HALO', copy: 'A suspended ring engineered for reflected ambient light.', type: 'halo' },
+  { index: '03', name: 'AXIS', copy: 'A directional system for precise architectural accents.', type: 'axis' },
+];
+
+const steps = [
+  ['01', 'SPACE', 'Read material, volume and circulation.'],
+  ['02', 'LIGHT STUDY', 'Define beam, contrast and atmosphere.'],
+  ['03', 'FIXTURE SYSTEM', 'Choose optics, geometry and finish.'],
+  ['04', 'INSTALLATION', 'Calibrate, commission and refine.'],
+];
+
+const stats = [
+  ['24°', 'primary optic'],
+  ['2700K', 'warm spectrum'],
+  ['18', 'custom modules'],
+  ['DALI', 'control system'],
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="AERA — a fictional architectural lighting benchmark created to compare Figma, Webflow, and Astro." />
+    <title>AERA — Architectural Lighting</title>
+  </head>
+  <body>
+    <main class="aera-lab">
+      <section class="hero reveal">
+        <nav class="nav" aria-label="Primary">
+          <span class="brand">AERA</span>
+          <span class="nav-meta">ARCHITECTURAL LIGHTING / COPENHAGEN</span>
+        </nav>
+
+        <div class="hero-grid">
+          <div class="copy">
+            <p class="kicker">01 / LIGHT AS STRUCTURE</p>
+            <h1>Light should shape<br />the space, not<br />decorate it.</h1>
+            <p class="body-copy">Sculptural lighting systems engineered for hospitality, residential and cultural spaces.</p>
+          </div>
+
+          <div class="light-field" aria-hidden="true">
+            {Array.from({ length: 7 }).map((_, i) => <i class={`beam beam-${i + 1}`}></i>)}
+          </div>
+        </div>
+
+        <div class="hero-foot">
+          <a href="#collections">EXPLORE THE COLLECTION <span>↓</span></a>
+          <a class="secondary-link" href="#contact">DISCUSS A PROJECT</a>
+        </div>
+      </section>
+
+      <section class="section philosophy reveal">
+        <div>
+          <p class="kicker dark">02 / PHILOSOPHY</p>
+          <h2>A fixture disappears.<br />Its effect remains.</h2>
+        </div>
+        <p class="lead">AERA starts with the volume of the room: surfaces, paths, reflection and shadow. The object is designed only after the light has a reason to exist.</p>
+
+        <div class="editorial">
+          <div class="glow" aria-hidden="true"></div>
+          <div class="editorial-copy">
+            <span>SHADOW / MATERIAL / DEPTH</span>
+            <h3>The geometry is quiet.<br />The light does the work.</h3>
+            <p>Controlled beam · modular optics · custom finish</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="collections" class="section reveal">
+        <p class="kicker dark">03 / COLLECTIONS</p>
+        <h2>Three systems.<br />One architectural language.</h2>
+
+        <div class="systems">
+          {systems.map((system) => (
+            <article class="system">
+              <small>{system.index}</small>
+              <h3>{system.name}</h3>
+              <p>{system.copy}</p>
+              <div class={`product ${system.type}`} aria-hidden="true">
+                {system.type === 'linea' && <b class="line"></b>}
+                {system.type === 'halo' && <b class="ring"></b>}
+                {system.type === 'axis' && <><b class="axis-stem"></b><em class="axis-head"></em></>}
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section class="process reveal">
+        <p class="kicker">04 / FROM SPACE TO SYSTEM</p>
+        <h2>The fixture is the fourth decision.</h2>
+        <div class="process-line">
+          {steps.map(([index, title, copy], i) => (
+            <div class:list={['step', { active: i === 0, last: i === steps.length - 1 }]}>
+              <span>{index}</span>
+              <h3>{title}</h3>
+              <p>{copy}</p>
+            </div>
+          ))}
+        </div>
+        <div class="progress" aria-hidden="true"><b></b></div>
+      </section>
+
+      <section class="section project reveal">
+        <p class="kicker dark">05 / PROJECT</p>
+        <h2>The Noma Atrium</h2>
+        <p class="meta">COPENHAGEN / 2026</p>
+        <div class="project-grid">
+          <div class="project-art" aria-hidden="true">
+            {Array.from({ length: 5 }).map((_, i) => <i class={`project-beam pb-${i + 1}`}></i>)}
+          </div>
+          <div class="project-copy">
+            <h3>A 14-metre atrium lit as a gradient of warm vertical planes rather than individual fixtures.</h3>
+            <dl>
+              {stats.map(([value, label]) => <div><dt>{value}</dt><dd>{label}</dd></div>)}
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <footer id="contact" class="footer reveal">
+        <p class="kicker">06 / ENGINEERING BENEATH THE ATMOSPHERE</p>
+        <p class="footer-copy">Photometrics · modular optics · control systems · custom finishes</p>
+        <div class="footer-row"><a href="#">DISCUSS A PROJECT</a><span>AERA / COPENHAGEN</span></div>
+      </footer>
+    </main>
+
+    <script>
+      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const items = document.querySelectorAll('.reveal');
+      if (reduce || !('IntersectionObserver' in window)) {
+        items.forEach((el) => el.classList.add('is-visible'));
+      } else {
+        const observer = new IntersectionObserver((entries) => {
+          for (const entry of entries) {
+            if (!entry.isIntersecting) continue;
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        }, { threshold: 0.14 });
+        items.forEach((el) => observer.observe(el));
+      }
+    </script>
+  </body>
+</html>
+
+<style is:global>
+  :root { color-scheme: light; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  html { scroll-behavior: smooth; background: #edebe1; }
+  body { margin: 0; }
+  * { box-sizing: border-box; }
+  a { color: inherit; text-decoration: none; }
+
+  .aera-lab { --ink:#0e0e0c; --paper:#edebe1; --white:#faf8f1; --amber:#ff941f; background:var(--paper); color:var(--ink); line-height:1.3; }
+  .hero { min-height:100svh; background:var(--ink); color:var(--white); padding:32px 4.5vw 40px; display:flex; flex-direction:column; overflow:hidden; position:relative; }
+  .nav,.hero-foot,.footer-row { display:flex; justify-content:space-between; gap:24px; font-size:11px; letter-spacing:.08em; }
+  .brand { font-size:18px; font-weight:600; letter-spacing:0; }
+  .hero-grid { display:grid; grid-template-columns:minmax(0,.9fr) minmax(420px,1.1fr); gap:5vw; align-items:center; flex:1; }
+  .kicker { font-size:11px; letter-spacing:.08em; color:#86847d; margin:0 0 24px; }
+  .kicker.dark { color:#77746b; }
+  h1,h2 { margin:0; font-size:clamp(42px,4.1vw,64px); line-height:1.04; font-weight:500; letter-spacing:-.035em; }
+  .body-copy { max-width:440px; color:#aaa79e; font-size:17px; line-height:1.55; margin-top:30px; }
+  .light-field { height:72vh; max-height:650px; position:relative; }
+  .beam { position:absolute; top:11%; left:18%; width:12px; height:78%; border-radius:999px; background:linear-gradient(180deg,rgba(255,148,31,.05),#ff941f 46%,rgba(121,44,12,.1)); box-shadow:0 0 24px rgba(255,148,31,.14); transform-origin:center; }
+  .beam-2 { left:29%; top:14%; height:72%; transform:rotate(-5deg); }
+  .beam-3 { left:40%; top:20%; height:65%; transform:rotate(5deg); }
+  .beam-4 { left:51%; top:25%; height:58%; transform:rotate(-4deg); }
+  .beam-5 { left:62%; top:30%; height:50%; transform:rotate(5deg); }
+  .beam-6 { left:73%; top:35%; height:42%; transform:rotate(-4deg); }
+  .beam-7 { left:84%; top:40%; height:34%; transform:rotate(4deg); }
+  .hero-foot { border-top:1px solid #33332f; padding-top:28px; }
+  .hero-foot span { color:var(--amber); padding-left:30px; }
+
+  .section { padding:110px 4.5vw; }
+  .philosophy { display:grid; grid-template-columns:1fr 1fr; gap:80px; }
+  .lead { font-size:19px; line-height:1.62; max-width:520px; margin-top:60px; }
+  .editorial { grid-column:1/-1; min-height:590px; background:#26231f; padding:28px; display:grid; grid-template-columns:1.7fr .8fr; gap:50px; margin-top:45px; }
+  .glow { background:radial-gradient(circle at 52% 48%,#f68c2b 0,#57240e 17%,#1c1410 42%,#0f0e0d 78%); }
+  .editorial-copy { color:var(--white); display:flex; flex-direction:column; justify-content:center; }
+  .editorial-copy span { font-size:10px; color:#858078; letter-spacing:.08em; }
+  .editorial-copy h3 { font-size:30px; line-height:1.22; font-weight:500; margin:46px 0; }
+  .editorial-copy p { border-top:1px solid #575147; padding-top:22px; color:#9d988e; font-size:13px; }
+
+  .systems { margin-top:80px; }
+  .system { display:grid; grid-template-columns:55px 220px 1fr 310px; gap:28px; align-items:center; border-top:1px solid #c7c3b7; padding:28px 0; }
+  .system h3 { font-size:32px; font-weight:500; margin:0; }
+  .system p { max-width:400px; }
+  .system small { color:#77746b; }
+  .product { height:210px; background:#d6d2c5; position:relative; }
+  .line { position:absolute; width:65%; height:9px; background:var(--amber); left:17%; top:49%; border-radius:10px; }
+  .halo { background:#201e1b; }
+  .ring { position:absolute; width:110px; height:110px; border:7px solid var(--amber); border-radius:50%; left:50%; top:50%; transform:translate(-50%,-50%); }
+  .axis-stem { position:absolute; width:13px; height:66%; background:var(--ink); left:38%; top:17%; border-radius:9px; }
+  .axis-head { position:absolute; width:38%; height:9px; background:var(--amber); left:41%; top:25%; border-radius:9px; }
+
+  .process { background:var(--ink); color:var(--white); padding:110px 4.5vw; }
+  .process-line { display:grid; grid-template-columns:repeat(4,1fr); gap:40px; margin-top:120px; }
+  .step { position:relative; color:#aaa79e; }
+  .step::after { content:''; position:absolute; height:1px; background:#45443f; left:54px; right:-28px; top:24px; }
+  .step.last::after { display:none; }
+  .step > span { display:grid; place-items:center; width:48px; height:48px; border:1px solid #595750; border-radius:50%; font-size:11px; color:#fff; position:relative; z-index:1; background:var(--ink); }
+  .step.active > span { background:var(--amber); color:var(--ink); border-color:var(--amber); }
+  .step h3 { font-size:13px; letter-spacing:.05em; color:#fff; margin-top:30px; }
+  .step p { font-size:13px; line-height:1.55; max-width:220px; }
+  .progress { height:1px; background:#3d3b37; margin-top:70px; }
+  .progress b { display:block; width:0; height:100%; background:var(--amber); transition:width 1.8s cubic-bezier(.2,.8,.2,1); }
+  .process.is-visible .progress b { width:100%; }
+
+  .meta { font-size:12px; color:#77746b; letter-spacing:.08em; }
+  .project-grid { display:grid; grid-template-columns:2fr .8fr; gap:55px; margin-top:55px; }
+  .project-art { min-height:640px; background:linear-gradient(135deg,#10100e,#3d2415 60%,#b85c19); position:relative; overflow:hidden; }
+  .project-beam { position:absolute; top:12%; left:10%; height:76%; width:6px; background:var(--amber); }
+  .pb-2 { left:28%; top:20%; height:64%; }.pb-3 { left:46%; top:28%; height:52%; }.pb-4 { left:64%; top:36%; height:40%; }.pb-5 { left:82%; top:44%; height:28%; }
+  .project-copy h3 { font-size:22px; line-height:1.5; font-weight:500; }
+  .project-copy dl { margin-top:55px; }
+  .project-copy dl div { display:grid; grid-template-columns:100px 1fr; border-top:1px solid #c7c3b7; padding:18px 0; }
+  .project-copy dt { font-size:22px; }.project-copy dd { margin:4px 0; color:#77746b; font-size:13px; }
+
+  .footer { background:var(--ink); color:var(--white); padding:65px 4.5vw; }
+  .footer-copy { font-size:20px; margin:22px 0 70px; }
+  .footer a { color:var(--amber); font-size:13px; }.footer span { font-size:11px; color:#77746b; }
+
+  .reveal { opacity:0; transform:translateY(24px); transition:opacity .7s ease,transform .9s cubic-bezier(.2,.8,.2,1); }
+  .reveal.is-visible { opacity:1; transform:none; }
+
+  @media (max-width: 767px) {
+    .hero { min-height:760px; padding:24px 22px; }
+    .nav-meta { display:none; }
+    .hero-grid { display:block; padding-top:80px; }
+    h1,h2 { font-size:38px; }
+    .body-copy { font-size:15px; max-width:300px; }
+    .light-field { position:absolute; right:15px; bottom:95px; width:150px; height:300px; }
+    .hero-foot { font-size:10px; }.secondary-link { display:none; }
+    .section { padding:76px 22px; }.philosophy { display:block; }
+    .lead { font-size:16px; margin-top:36px; }
+    .editorial { display:block; min-height:480px; margin-top:42px; padding:20px; }
+    .glow { height:280px; }.editorial-copy h3 { font-size:23px; margin:30px 0; }
+    .system { grid-template-columns:1fr 110px; gap:16px; padding:28px 0; }.system small { display:none; }.system h3 { font-size:25px; }.system p { grid-column:1/2; font-size:14px; }.product { grid-column:2/3; grid-row:1/3; height:110px; }.ring { width:62px; height:62px; border-width:5px; }
+    .process { padding:76px 22px; }.process-line { display:block; margin-top:60px; }.step { display:grid; grid-template-columns:42px 1fr; column-gap:18px; margin-bottom:26px; }.step::after { display:none; }.step > span { width:34px; height:34px; grid-row:1/3; }.step h3 { margin:3px 0 2px; }.step p { margin:0; font-size:11px; }
+    .project-grid { display:block; }.project-art { min-height:330px; }.project-copy h3 { font-size:18px; margin-top:30px; }
+    .footer { padding:54px 22px; }.footer-copy { font-size:17px; line-height:1.5; }.nav,.hero-foot,.footer-row { font-size:10px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior:auto; }
+    .reveal { opacity:1; transform:none; transition:none; }
+    .progress b { width:100%; transition:none; }
+  }
+</style>
