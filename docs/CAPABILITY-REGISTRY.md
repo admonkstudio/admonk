@@ -1,267 +1,180 @@
 # Admonk Capability Registry
 
-This registry tracks reusable capabilities that can support Admonk and future client projects.
+This registry tracks reusable capabilities for Admonk and future client projects.
 
-A capability can be:
+Status:
 
-- **Active** — implemented and ready to use.
-- **Connected** — tool/plugin/MCP available but may require local authentication.
-- **Reference** — useful upstream knowledge, not imported as a governing skill.
-- **Planned** — likely future need; add when implementation quality can be grounded in current authoritative sources.
-- **Watch** — promising, but not yet justified as a standard dependency.
+- **Active** — reusable guidance exists and is ready when triggered.
+- **Connected** — external capability is available but may need project/user authentication.
+- **Reference** — useful authoritative knowledge; load when needed.
+- **Watch** — promising future capability, not yet worth standardizing.
 
-The goal is future readiness without making every task load every capability.
+> **Future-ready does not mean always-loaded.** Skills should activate only when the project enters their discipline.
 
 ---
 
-# 1. Studio / Creative System
+## 1. Creative / Experience
 
-| Capability | Status | Primary owner |
+| Capability | Status | Owner |
 |---|---|---|
 | Web design / art direction | Active | `admonk-web-design` |
 | Design-quality audit | Active | `admonk-design-quality` |
-| UX systems / accessibility | Active | `admonk-ux-systems` |
+| UX / accessibility systems | Active | `admonk-ux-systems` |
 | Image art direction | Active | `admonk-image-direction` |
-| Image production / AI imagery | Active | `admonk-image-production` |
-| Motion principles | Active | `admonk-motion` |
-| Motion production routing | Active | `admonk-motion-production` |
+| AI image production | Active | `admonk-image-production` |
+| Motion direction | Active | `admonk-motion` |
+| Motion technology / production routing | Active | `admonk-motion-production` |
+| Capability selection | Active | `admonk-capability-router` |
 | Brand voice | Active | `docs/BRAND-VOICE.md` |
-| Client context architecture | Active | `docs/AGENT-ARCHITECTURE.md` + client template |
-| Capability routing | Active | `admonk-capability-router` |
 
 ---
 
-# 2. Platform Execution
+## 2. Design / Build Platforms
 
-| Capability | Status | Notes |
+| Capability | Status | Owner / Source |
 |---|---|---|
-| Figma | Active / Connected | `admonk-figma`; official Figma integration supports design context, canvas writes, Code Connect, and motion context when available. |
-| Webflow | Active / Connected | `admonk-webflow`; official Webflow tooling can manage site/design/data/custom-code workflows. |
-| Astro | Active | `admonk-astro`; use official Astro docs for version-sensitive behavior. |
+| Figma | Active / Connected | `admonk-figma`; official Figma integration |
+| Webflow | Active / Connected | `admonk-webflow`; official Webflow integration |
+| Astro | Active | `admonk-astro`; current Astro docs |
+| Static HTML/CSS/JS | Active | core implementation skills |
 | React / Next.js | Active | `admonk-react-engineering` |
 | React Motion | Active | `admonk-react-motion` |
-| Static HTML/CSS/JS | Active by core skills | No dedicated framework required. |
+| shadcn | Connected | official MCP |
+| 21st | Connected | MCP exploration accelerator |
 
 ---
 
-# 3. Motion / Interaction
+## 3. Motion / Rich Media
+
+| Capability | Status | Owner |
+|---|---|---|
+| CSS interaction | Active | `admonk-motion-production` |
+| GSAP | Active | GSAP skill set |
+| ScrollTrigger | Active | `gsap-scrolltrigger` |
+| SVG animation | Active | GSAP/code + motion skills |
+| Rive state-machine animation | Active / ready when needed | `admonk-rive` |
+| Three.js / WebGL / spatial experiences | Active / ready when needed | `admonk-3d-web` |
+| React Three Fiber | Reference | use when React project justifies it |
+| Lottie | Reference | use for appropriate pre-authored vector motion |
+| WebGPU | Watch | evaluate against current browser/project needs |
+| Generated/video cinematic assets | Watch / project-specific | create dedicated workflow when required |
+
+---
+
+## 4. Production Quality
+
+| Capability | Status | Owner |
+|---|---|---|
+| Browser QA | Active | `admonk-browser-qa` |
+| Playwright CLI | Active | official Playwright CLI skill |
+| Technical SEO / migration | Active / ready when needed | `admonk-seo` |
+| Core Web Vitals / web performance | Active / ready when needed | `admonk-performance` |
+| Security review / threat model | Active / ready when needed | `admonk-security-review` |
+| Analytics / conversion measurement | Active / ready when needed | `admonk-analytics` |
+| Localization / RTL | Active / ready when needed | `admonk-localization` |
+| Deployment / release | Active / ready when needed | `admonk-deployment` |
+| Visual regression baselines | Reference | add formal automation when a project needs it |
+| Formal cross-browser matrix | Reference | activate for contractual/production requirements |
+
+---
+
+## 5. Backend / Data / CMS
+
+| Capability | Status | Owner / Notes |
+|---|---|---|
+| Webflow CMS | Active / Connected | Webflow tools + `admonk-webflow` |
+| Supabase | Active / Connected when project authorizes it | `admonk-supabase`; official Supabase skill/MCP |
+| PostgreSQL | Active through Supabase guidance when relevant | official Postgres/Supabase best-practice sources |
+| REST APIs | Active general capability | provider-specific docs when used |
+| GraphQL | Reference | use when architecture benefits |
+| Headless CMS | Reference | evaluate Sanity/Contentful/Storyblok/Strapi/etc. per project |
+| Search infrastructure | Reference | Algolia/Meilisearch/database search according to need |
+| File/storage pipelines | Reference | platform-specific |
+
+---
+
+## 6. Automation / AI / Integrations
 
 | Capability | Status | Notes |
 |---|---|---|
-| GSAP core | Active | Official/adapted GSAP skills |
-| GSAP timelines | Active | Official/adapted GSAP skills |
-| ScrollTrigger | Active | Official/adapted GSAP skills |
-| GSAP plugins | Active | Official/adapted GSAP skills |
-| GSAP performance | Active | Official/adapted GSAP skills |
-| React + GSAP | Active | Official/adapted GSAP skills |
-| CSS motion | Active by production routing | Prefer for simple interaction. |
-| Figma motion prototype | Active / Connected | Use for design intent and handoff. |
-| Rive | Planned | High-value future option for interactive vector/state-machine animation. |
-| Lottie | Planned | Useful for pre-authored portable vector motion; evaluate per project. |
-| SVG motion | Active via GSAP/code | Add more specialized guidance if recurring projects justify it. |
-| Three.js / WebGL | Planned | Important for spatial/3D web experiences. |
-| React Three Fiber | Planned | Add when React-based 3D projects appear. |
-| WebGPU | Watch | Evaluate when production/browser/client requirements justify it. |
+| Webhooks | Active | platform/API specific |
+| CRM integration | Ready when needed | use vendor-specific current docs |
+| n8n / workflow automation | Ready when needed | do not force into simple projects |
+| Email automation | Ready when needed | provider-specific |
+| WhatsApp automation | Ready when needed | provider/compliance-specific |
+| AI chat / agents | Ready when needed | use current model/provider/evaluation guidance |
+| OpenAI API | Ready when needed | always consult current official OpenAI docs |
+| Agent evaluations | Ready when needed | required for serious client AI systems |
 
 ---
 
-# 4. Images / Visual Assets
+## 7. Commerce / Transactions
 
 | Capability | Status | Notes |
 |---|---|---|
-| Built-in AI raster generation/editing | Active through Codex/ChatGPT environment | Coordinated by `admonk-image-production`. |
-| Website hero/editorial imagery | Active | Image direction + production. |
-| Product/device mockups | Active | Prefer real UI/logo compositing when accuracy matters. |
-| Transparent cutouts / compositing | Active | Use production invariants. |
-| Responsive image art direction | Active | Desktop/mobile crops or separate assets when necessary. |
-| 3D rendered product imagery | Planned | Can use image generation or dedicated 3D pipeline depending on requirement. |
-| Deterministic vector illustration | Planned | Prefer SVG/design tools over raster AI for precise systems. |
-| Video generation / cinematic assets | Watch / project-dependent | Add dedicated workflow when a project requires it. |
+| Ecommerce UX | Ready when needed | product/category/cart/checkout journey |
+| Stripe / payments | Connected capability available when required | high-stakes; use official current integration guidance |
+| Webflow Ecommerce | Reference | evaluate limitations against project |
+| Shopify / headless commerce | Reference | evaluate for future commerce projects |
 
 ---
 
-# 5. Component / UI Discovery
+## 8. Operations
 
 | Capability | Status | Notes |
 |---|---|---|
-| shadcn MCP | Connected | Reliable primitive discovery/implementation foundation. |
-| 21st MCP | Connected | Exploration/inspiration/generation accelerator; not design authority. |
-| UI UX Pro Max guidance | Active, adapted | `admonk-ux-systems` |
-| Taste guidance | Active, adapted | `admonk-design-quality` |
+| Webflow publishing | Connected | Webflow integration |
+| Static/server deployment | Active / ready when needed | `admonk-deployment` |
+| Preview/staging environments | Active principle | `admonk-deployment` |
+| CI/CD | Active principle | add project-specific workflow when justified |
+| Error monitoring | Ready when needed | Sentry/provider-specific |
+| Uptime monitoring | Ready when needed | critical sites/apps |
+| GitHub Actions analysis | Connected through GitHub; specialist skills can be added if recurring |
 
 ---
 
-# 6. Browser / QA
+## 9. Client Portability
 
-| Capability | Status | Notes |
-|---|---|---|
-| Browser QA workflow | Active | `admonk-browser-qa` |
-| Playwright CLI | Active | Official Playwright CLI skill integrated. |
-| Responsive testing | Active | Browser QA + platform skill. |
-| Console/network inspection | Active | Playwright/browser tooling. |
-| Visual regression | Planned | Add a dedicated baseline/diff workflow when recurring use justifies it. |
-| Cross-browser matrix | Planned | Add when production clients require formal browser coverage. |
-| Lighthouse/Core Web Vitals automation | Planned | Useful for production audits and performance baselines. |
+The reusable system is governed by:
 
----
+- `docs/AGENT-ARCHITECTURE.md`
+- `templates/client-project/`
 
-# 7. SEO / Discoverability
+Client context must remain inside the client project.
 
-These are highly likely future needs and should be treated as part of website delivery even when not sold as a separate product.
-
-| Capability | Status | Notes |
-|---|---|---|
-| Technical SEO review | Planned | Metadata, canonical, robots, sitemap, redirects, crawlability, schema. |
-| On-page SEO/content structure | Planned | Should preserve brand voice and user intent. |
-| Structured data/schema | Planned | Implement per real content/entity requirements. |
-| Migration/redirect audit | Planned | Important for redesigns/replatforming. |
-| Programmatic SEO | Watch | Use only when business/content model supports genuine value. |
-| Search Console integration/analysis | Planned | Useful for post-launch iteration. |
-
-Do not create a generic SEO skill from stale rules. Build it from current Google/search-engine primary documentation when activated.
+Reusable studio knowledge may be promoted back into Admonk only when it is generalizable and contains no confidential client information.
 
 ---
 
-# 8. Performance
+## 10. Evaluation Lab
 
-| Capability | Status | Notes |
-|---|---|---|
-| React performance | Active | `admonk-react-engineering` |
-| GSAP performance | Active | `gsap-performance` |
-| Image optimization | Active / platform-specific | Image production + Webflow/Astro. |
-| Core Web Vitals audit | Planned | Should include real measurements. |
-| Bundle/network analysis | Active where tooling permits | React/browser QA. |
-| Font-loading optimization | Planned | Important for premium typography-heavy sites. |
-| Third-party script audit | Planned | Analytics/ads/chat widgets frequently cause performance debt. |
+Controlled platform benchmark:
 
----
+- `labs/platform-benchmark/BENCHMARK.md`
+- `labs/platform-benchmark/SCORECARD.md`
 
-# 9. Security / Privacy
+Initial environments:
 
-OpenAI maintains current Codex Security workflows for repository/diff scanning and threat modeling. Prefer official/current security tooling rather than an improvised checklist for high-stakes audits.
+1. Figma
+2. Webflow
+3. Astro
 
-| Capability | Status | Notes |
-|---|---|---|
-| Basic frontend security hygiene | Active through engineering review | Secrets, unsafe input, external scripts, auth boundaries. |
-| Repository security scan | Planned integration | Prefer current Codex Security/plugin workflow when available. |
-| Diff/PR security scan | Planned integration | Useful before deployment of sensitive changes. |
-| Threat modeling | Planned integration | Trigger for systems with auth, sensitive data, payments, APIs, etc. |
-| Dependency vulnerability review | Planned | Use current package/advisory data. |
-| Privacy/consent review | Planned | Especially forms, analytics, tracking, cookies, health/financial data. |
-
-Security scans must only target systems the client/Admonk is authorized to assess.
+The benchmark should later expand when a real question justifies another environment—not simply to collect platforms.
 
 ---
 
-# 10. CMS / Data / Backend
+## 11. Skill Intake Rules
 
-| Capability | Status | Notes |
-|---|---|---|
-| Webflow CMS | Active / connected | `admonk-webflow` |
-| Headless CMS | Planned | Evaluate Sanity, Contentful, Storyblok, Strapi, etc. per project. |
-| Supabase | Planned high priority | Auth, Postgres, storage, realtime; common in Admonk prototypes/products. |
-| PostgreSQL/data modeling | Planned | Add reusable modeling/migration guidance. |
-| REST APIs | Active general capability | Add provider-specific skills as projects require. |
-| GraphQL | Planned | Use only when platform/project benefits. |
-| Search | Planned | Algolia/Meilisearch/DB search depending on scale. |
-| File/storage pipelines | Planned | Needed for media-heavy apps/CMS. |
+Before adding an external skill or permanent capability:
 
----
-
-# 11. Automation / Integrations / AI
-
-| Capability | Status | Notes |
-|---|---|---|
-| Webhooks | Active where platform supports | Webflow and custom integrations. |
-| CRM integration | Planned reusable workflow | Zoho, HubSpot, Salesforce, etc. |
-| n8n / workflow automation | Planned | Strong fit for client automation extensions. |
-| Email automation | Planned | Provider-specific when project needs it. |
-| WhatsApp automation | Planned | Requires provider/compliance-specific implementation. |
-| AI chat/agents | Planned | Use current provider APIs and evaluation/security practices. |
-| OpenAI API | Planned official-docs integration | Use current OpenAI docs/skills, not static model assumptions. |
-| Agent evaluations | Planned | Important for client AI systems before launch. |
-
----
-
-# 12. Analytics / Optimization
-
-| Capability | Status | Notes |
-|---|---|---|
-| Webflow Analyze | Connected where enabled | `admonk-webflow` |
-| Google Analytics | Planned | Event/measurement planning + validation. |
-| Tag Manager | Planned | Use carefully; avoid uncontrolled script debt. |
-| Search Console | Planned | SEO iteration. |
-| PostHog / product analytics | Planned | Useful for apps/product experiences. |
-| Conversion measurement | Planned | Define events around real business actions. |
-| A/B experimentation | Watch | Add only when traffic/decision quality supports it. |
-
----
-
-# 13. Localization / Internationalization
-
-| Capability | Status | Notes |
-|---|---|---|
-| RTL design | Active principle | Needs stronger project-specific implementation guidance when used. |
-| Multi-language content | Planned | Platform-specific localization. |
-| Locale-aware SEO | Planned | hreflang, localized metadata/URLs where applicable. |
-| Translation workflow | Planned | Preserve approved terminology and brand voice. |
-
----
-
-# 14. Commerce / Transactions
-
-| Capability | Status | Notes |
-|---|---|---|
-| Ecommerce UX | Planned | Product/category/cart/checkout patterns. |
-| Stripe/payments | Planned / plugin available when required | High-stakes; use official current integration guidance. |
-| Webflow Ecommerce | Planned | Evaluate per client needs/limitations. |
-| Headless commerce | Watch | Shopify/Medusa/etc. for future commerce projects. |
-
----
-
-# 15. Deployment / Operations
-
-| Capability | Status | Notes |
-|---|---|---|
-| Webflow publishing | Connected | `admonk-webflow` |
-| Static/Node deployment | Planned workflow | Vercel/Cloudflare/Netlify/etc. based on stack. |
-| CI/CD | Planned | GitHub Actions and platform deployment. |
-| Preview environments | Planned | Important for client approval/QA. |
-| Error monitoring | Planned | Sentry/etc. for application-style projects. |
-| Uptime/status monitoring | Planned | For critical client sites/apps. |
-
----
-
-# 16. Future Skill Intake Rules
-
-When adding future skills:
-
-1. Prefer official/maintained sources.
-2. Check whether the skill is for **using a technology** or **contributing to that technology's own repository**.
-3. Avoid importing huge catalogs when a focused adapted skill is enough.
-4. Preserve source/license attribution where required.
-5. Do not let an external skill override Admonk/client design authority.
-6. Make trigger descriptions narrow enough that irrelevant skills do not load.
-7. Record Keep / Modify / Skip / Reference decisions when adapting opinionated external skills.
-8. Recheck version-sensitive guidance periodically.
-
----
-
-# 17. Immediate Next Additions
-
-After the Figma/Webflow/Astro benchmark, the highest-value capability additions are expected to be:
-
-1. Production SEO / migration audit skill.
-2. Production performance/Core Web Vitals skill.
-3. Security review/threat-model integration.
-4. Supabase/data/backend integration skill.
-5. 3D/WebGL/Three.js skill.
-6. Rive interactive-motion skill.
-7. Analytics/conversion measurement skill.
-8. Localization/RTL production skill.
-9. Deployment/CI skill.
-
-This list can change based on the next real client project.
+1. Prefer official maintained sources.
+2. Confirm the skill teaches **using** the technology rather than contributing to the vendor's own monorepo.
+3. Check overlap with existing Admonk skills.
+4. Check licensing and maintenance.
+5. Keep external technical expertise subordinate to client/project and Admonk creative authority.
+6. Use narrow trigger descriptions so irrelevant skills stay unloaded.
+7. Verify version-sensitive facts from current primary documentation.
+8. Add a wrapper/adaptation instead of importing a large catalog when that gives better control.
 
 ---
 
