@@ -13,6 +13,12 @@ Core rule:
 
 > **Design for the business and brand first. Use Webflow's systems to implement it cleanly.**
 
+Native implementation rule:
+
+> **If Webflow itself supports the required structure, style, responsive behavior, state, CMS behavior, component behavior, or interaction natively, use Webflow rather than recreating it in custom code.**
+
+Custom code is an extension layer for capabilities Webflow does not support cleanly. It is not a shortcut around learning or using the Designer.
+
 ---
 
 # 1. Inspect Before Building
@@ -26,6 +32,65 @@ Before significant changes:
 - Determine whether custom code already controls relevant behavior.
 
 Do not duplicate an existing component or class system without a reason.
+
+---
+
+# 1A. Native Designer First
+
+Use the full Webflow platform before adding custom code.
+
+Default implementation order:
+
+```text
+1. Native Webflow element / semantic structure
+        ↓
+2. Native classes + Style panel
+        ↓
+3. Native variables / modes / design-system features
+        ↓
+4. Native flex / grid / positioning / sizing / overflow / effects / transforms
+        ↓
+5. Native breakpoints / responsive controls
+        ↓
+6. Native components / slots / properties
+        ↓
+7. Native CMS / conditional visibility / bindings / forms / settings
+        ↓
+8. Native attributes / states / interactions when the platform supports the requirement
+        ↓
+9. Custom CSS only for a CSS capability Webflow itself cannot express cleanly
+        ↓
+10. Custom JavaScript / GSAP only for behavior Webflow itself cannot express cleanly
+```
+
+Examples:
+
+- If Webflow exposes a CSS property in the Style panel, set it there instead of writing the same property in a `<style>` block.
+- If Webflow variables can control a repeated value, use variables instead of custom CSS variables created only in code.
+- If Webflow Grid/Flex can create the layout, do not recreate it through embedded CSS.
+- If native component properties/slots solve reuse, do not create JavaScript templating for the same problem.
+- If a native interaction can achieve the intended behavior cleanly, do not replace it with JavaScript merely because writing code is easier for the agent.
+
+## MCP / Tool Limitation Is Not a Platform Limitation
+
+A connected agent may not expose every capability that exists in the Webflow Designer.
+
+If Webflow supports a feature natively but the currently available MCP/tool cannot manipulate it:
+
+1. Do **not** automatically substitute custom CSS/JavaScript.
+2. Use another available native Webflow operation if one exists.
+3. If direct automation is unavailable, document the required native Designer step clearly.
+4. Only use custom code if the **Webflow platform itself** cannot produce the required result cleanly, or the user explicitly approves a code-based alternative.
+
+This distinction is mandatory:
+
+```text
+MCP cannot do it
+≠
+Webflow cannot do it
+```
+
+The goal is to produce a professional Webflow project that remains understandable and editable inside Webflow after the agent leaves.
 
 ---
 
@@ -58,9 +123,13 @@ Do not allow Webflow defaults to force:
 - Card-grid page grammar
 - Fixed container patterns everywhere
 - Repetitive section composition
-- Built-in interactions where a better production method exists
+- Built-in interactions where a better production method genuinely exists
 
-Use custom layout/CSS/JS when the concept genuinely requires it.
+Creative freedom does not justify bypassing Webflow's native implementation capabilities.
+
+If Webflow natively supports the required CSS/layout behavior, implement the creative composition through the Designer first.
+
+Use custom CSS/JS only when the concept requires a capability that Webflow itself cannot express cleanly.
 
 The final site should still be understandable to future editors/developers.
 
@@ -79,6 +148,8 @@ For each significant section/component:
 - Confirm type wrapping.
 - Confirm interaction substitutions for hover.
 - Confirm fixed/sticky/pinned behavior.
+
+Prefer Webflow's native responsive controls, fluid units, variables, flex/grid behavior, and supported container-responsive features before adding CSS media/container-query code manually.
 
 Do not treat the Designer preview alone as final QA; test the published/staging output.
 
@@ -99,6 +170,8 @@ Examples:
 
 Do not componentize unique art-directed compositions unless reuse/editability benefits from it.
 
+Use Webflow component slots/properties and native component capabilities before custom scripting for content variants or reuse.
+
 ---
 
 # 6. CMS
@@ -116,6 +189,8 @@ Before changing CMS:
 Do not use static content where the client needs ongoing structured editing.
 
 Do not add CMS complexity for content that is truly one-off.
+
+Prefer native CMS bindings, collection lists, conditional visibility, references, and supported filtering/sorting before writing client-side JavaScript to recreate CMS behavior.
 
 ---
 
@@ -135,20 +210,37 @@ For assets:
 
 # 8. Custom Code
 
-Use custom code when Webflow-native capabilities cannot express the required behavior cleanly.
+Custom code is a controlled extension layer.
 
-Common use cases:
+Use it only after confirming Webflow itself cannot express the requirement cleanly through native Designer/platform capabilities.
 
-- GSAP
-- Advanced scroll interactions
-- API integrations
-- Custom form behavior
-- Dynamic logic
-- Specialized performance/analytics behavior
+Appropriate use cases may include:
+
+- Advanced GSAP choreography beyond native interaction capability
+- Specialized scroll behavior Webflow cannot provide cleanly
+- APIs and external integrations
+- Complex dynamic application logic
+- Specialized form processing unavailable natively
+- Unsupported CSS features/selectors/properties that materially improve the design
+- Specialized analytics/performance behavior unavailable through native settings
+
+Before adding code, ask:
+
+1. Can Webflow's Style panel do this?
+2. Can variables do this?
+3. Can native layout/responsive controls do this?
+4. Can components/slots/properties do this?
+5. Can CMS/settings/bindings do this?
+6. Can native states/interactions do this cleanly?
+7. Is the limitation actually Webflow's, or only the current MCP/tool's?
+
+If the answer is that Webflow supports it natively, use the native implementation.
 
 Before replacing existing site/page custom code, read it first.
 
 Prefer additive/surgical changes over overwriting entire code blocks when unrelated scripts exist.
+
+When custom code is necessary, document why the native platform was insufficient.
 
 ---
 
@@ -159,16 +251,21 @@ Use `admonk-motion` and `admonk-motion-production`.
 Default routing:
 
 ```text
-Simple Webflow-native behavior
-→ Webflow interaction/native CSS
+Simple CSS hover / transition / transform
+→ Webflow Style panel / native state
 
-Advanced choreography / ScrollTrigger / SVG / complex sequence
+Standard Webflow interaction that the platform supports cleanly
+→ Webflow native interaction
+
+Advanced choreography / ScrollTrigger / complex SVG / behavior beyond Webflow capability
 → custom GSAP/JS
 ```
 
-Do not force Webflow-native interactions when they make an advanced animation difficult to understand or maintain.
+Do not force GSAP for a simple hover, transition, transform, opacity change, or state that Webflow can implement natively.
 
-Do not force GSAP for a simple hover/fade.
+Do not use code merely because the MCP cannot currently author a Webflow interaction. If Webflow itself supports the interaction, treat it as a native Designer implementation unless there is a genuine technical reason to use code.
+
+Use GSAP/custom motion when it materially exceeds Webflow's native capabilities or produces a substantially cleaner and more maintainable solution for an advanced requirement.
 
 ---
 
@@ -187,6 +284,8 @@ Verify:
 - Analytics events where needed
 - Privacy/consent requirements
 
+Use Webflow's native form fields, settings, validation, states, and supported integrations when they meet the requirement.
+
 If a project uses webhooks or external automation, document the data flow in the client project's platform context.
 
 ---
@@ -204,6 +303,8 @@ Check where relevant:
 - Image alt text
 - Heading hierarchy
 - Redirect/migration requirements
+
+Use Webflow's native SEO/page/site settings where available rather than injecting equivalent metadata through custom code.
 
 Do not change indexing status or publish changes without understanding the effect.
 
@@ -254,6 +355,7 @@ Before publish:
 - Check forms/integrations affected by the change.
 - Check console errors where custom code changed.
 - Confirm no placeholder content/assets remain.
+- Audit custom CSS/JS and verify none of it merely duplicates a native Webflow capability without justification.
 
 Do not publish merely to see whether unfinished code works if a preview/staging path exists.
 
@@ -266,15 +368,22 @@ When comparing Webflow with Figma/Astro, measure:
 - Speed from design to production
 - Visual fidelity
 - Responsive control
+- Native Designer capability utilization
+- Percentage of implementation achieved without custom code
 - CMS/editability
-- Motion/custom-code freedom
+- Native motion capability
+- Advanced custom-motion freedom
 - AI autonomy
 - Maintainability by non-developers
 - Performance
 - Integration capability
 - Production readiness
 
-Evaluate the published result, not only the Designer canvas.
+For benchmark builds, apply the Native Designer First rule strictly.
+
+A custom-code solution to a capability Webflow already supports natively counts as an implementation-quality failure, even if the rendered output looks correct.
+
+Evaluate the published/staging result and the Designer architecture, not only the visual canvas.
 
 ---
 
@@ -314,4 +423,4 @@ Because Lumos evolves, record the project's Lumos version and verify version-sen
 
 # Final Rule
 
-> **Use Webflow's visual speed without inheriting Webflow's visual sameness. Use Lumos when it makes the implementation cleaner without making the design more generic.**
+> **Use Webflow's visual speed and native capabilities first. Extend the platform only where the platform actually ends. Use Lumos when it makes the implementation cleaner without making the design more generic.**
