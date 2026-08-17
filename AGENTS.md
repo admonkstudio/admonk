@@ -220,7 +220,7 @@ For technology selection/prototyping/production use:
 
 `.agents/skills/admonk-motion-production/SKILL.md`
 
-Use the relevant GSAP or React Motion skill only after the motion concept and technology owner are clear.
+Use the relevant GSAP, React Motion, Rive, or 3D skill only after the motion concept and technology owner are clear.
 
 ---
 
@@ -230,51 +230,93 @@ Choose the platform from project requirements. Do not choose the project around 
 
 ## Figma
 
-Use:
-
-`.agents/skills/admonk-figma/SKILL.md`
+Use `.agents/skills/admonk-figma/SKILL.md`.
 
 Figma is a design/prototyping/design-to-code environment, not creative authority.
 
 ## Webflow
 
-Use:
-
-`.agents/skills/admonk-webflow/SKILL.md`
+Use `.agents/skills/admonk-webflow/SKILL.md`.
 
 Preserve visual freedom while keeping Designer structure, CMS, components, assets, and custom code maintainable.
 
 ## Astro
 
-Use:
-
-`.agents/skills/admonk-astro/SKILL.md`
+Use `.agents/skills/admonk-astro/SKILL.md`.
 
 Keep static content static and add runtime JavaScript only where the experience needs it.
 
 ## React / Next.js
 
-Use:
-
-`.agents/skills/admonk-react-engineering/SKILL.md`
+Use `.agents/skills/admonk-react-engineering/SKILL.md`.
 
 React/Next.js is an implementation option, not Admonk's default stack.
 
-For React component motion use:
+For React component motion use `.agents/skills/admonk-react-motion/SKILL.md`.
 
-`.agents/skills/admonk-react-motion/SKILL.md`
+## Supabase / Backend
+
+Use `.agents/skills/admonk-supabase/SKILL.md` only when the project uses or genuinely needs Supabase.
+
+Verify version-sensitive Supabase behavior against current official docs/skills/MCP before implementation.
+
+## Interactive 3D
+
+Use `.agents/skills/admonk-3d-web/SKILL.md` for Three.js/WebGL/WebGPU or spatial web experiences.
+
+Real-time 3D is a medium, not a default premium effect.
+
+## Rive
+
+Use `.agents/skills/admonk-rive/SKILL.md` for interactive vector/state-machine animation when that model is more appropriate than CSS, GSAP, Motion, video, or 3D.
 
 ---
 
-# 11. Browser QA
+# 11. Production Disciplines
 
-For real browser validation use:
+Load these only when the task enters the relevant discipline.
 
-`.agents/skills/admonk-browser-qa/SKILL.md`
+## SEO / Migration
 
-and, where available:
+Use `.agents/skills/admonk-seo/SKILL.md`.
 
-`.agents/skills/playwright-cli/SKILL.md`
+Verify search-engine behavior from current primary documentation.
+
+## Performance
+
+Use `.agents/skills/admonk-performance/SKILL.md`.
+
+Use real browser/lab evidence and field data when available rather than optimizing a synthetic score blindly.
+
+## Security
+
+Use `.agents/skills/admonk-security-review/SKILL.md` for auth, user data, payments, APIs, databases, uploads, secrets, or other security-sensitive systems.
+
+Only assess systems the client/Admonk is authorized to test.
+
+## Analytics
+
+Use `.agents/skills/admonk-analytics/SKILL.md`.
+
+Track meaningful business/user outcomes rather than collecting events without a decision purpose.
+
+## Localization / RTL
+
+Use `.agents/skills/admonk-localization/SKILL.md`.
+
+Localize the experience, layout, typography, content system, SEO, and QA—not only strings.
+
+## Deployment / Release
+
+Use `.agents/skills/admonk-deployment/SKILL.md`.
+
+A build is not delivery; verify production configuration, critical flows, release risk, and maintainability.
+
+---
+
+# 12. Browser QA
+
+For real browser validation use `.agents/skills/admonk-browser-qa/SKILL.md` and, where available, `.agents/skills/playwright-cli/SKILL.md`.
 
 Test the actual rendered environment for responsive behavior, interaction, motion, forms, console errors, network failures, and important user journeys.
 
@@ -282,7 +324,7 @@ A technically valid implementation that feels wrong or breaks in the real browse
 
 ---
 
-# 12. Capability Routing
+# 13. Capability Routing
 
 When a request spans multiple disciplines or the correct tool is unclear, use:
 
@@ -298,7 +340,7 @@ When a future project introduces an unfamiliar technology, check current authori
 
 ---
 
-# 13. Existing Systems Rule
+# 14. Existing Systems Rule
 
 Do not rebuild functioning client systems without a reason.
 
@@ -310,7 +352,7 @@ This applies to branding, CMS, CRM, analytics, databases, automation, design sys
 
 ---
 
-# 14. MCP / Plugin / External Skills
+# 15. MCP / Plugin / External Skills
 
 Tools expand what the agent can access. Skills guide how the agent should work. Client/project context determines what should actually be built.
 
@@ -320,17 +362,13 @@ Prefer maintained official integrations/sources when they satisfy the requiremen
 
 Do not import large external skill catalogs blindly. Inspect relevance, overlap, maintenance, security, and licensing first.
 
-Current MCP guidance:
+Current MCP guidance: `docs/MCP-SERVERS.md`.
 
-`docs/MCP-SERVERS.md`
-
-Current third-party skill decisions/attribution:
-
-`docs/THIRD-PARTY-SKILLS.md`
+Current third-party skill decisions/attribution: `docs/THIRD-PARTY-SKILLS.md`.
 
 ---
 
-# 15. Security, Secrets & High-Stakes Systems
+# 16. Security, Secrets & High-Stakes Systems
 
 Never commit API keys, tokens, passwords, private registry credentials, customer secrets, or `.env` files containing secrets.
 
@@ -342,7 +380,7 @@ Only test or scan systems the client/Admonk is authorized to assess.
 
 ---
 
-# 16. Reusable Learning
+# 17. Reusable Learning
 
 Promote lessons from client projects into reusable Admonk skills only when the learning is generalizable.
 
@@ -350,7 +388,7 @@ Never promote confidential client information, proprietary strategy, licensed as
 
 ---
 
-# 17. Labs / Evaluation
+# 18. Labs / Evaluation
 
 Experimental comparisons should use controlled briefs and preserve failures as evidence.
 
@@ -364,7 +402,7 @@ Do not change the brief to make a preferred platform look stronger.
 
 ---
 
-# 18. Final Principle
+# 19. Final Principle
 
 Every agent working with Admonk should optimize for:
 
