@@ -240,6 +240,14 @@ Use `.agents/skills/admonk-webflow/SKILL.md`.
 
 Preserve visual freedom while keeping Designer structure, CMS, components, assets, and custom code maintainable.
 
+**Webflow is native-first.** If the Webflow platform can implement a structure, CSS property, responsive behavior, variable, component, CMS behavior, form setting, state, or interaction natively, use the Designer/platform capability instead of recreating it in custom CSS/JavaScript.
+
+A limitation of the current MCP/tool is **not** a limitation of Webflow. If the agent cannot automate a native Designer capability, preserve/document the native step rather than substituting code merely to keep the workflow automated.
+
+Custom CSS/JavaScript/GSAP is reserved for requirements Webflow itself cannot express cleanly, or for an explicitly approved advanced implementation.
+
+For substantial new Webflow builds with no existing coherent framework, also use `.agents/skills/admonk-lumos/SKILL.md`.
+
 ## Astro
 
 Use `.agents/skills/admonk-astro/SKILL.md`.
