@@ -35,12 +35,21 @@ Status:
 |---|---|---|
 | Figma | Active / Connected | `admonk-figma`; official Figma integration |
 | Webflow | Active / Connected | `admonk-webflow`; official Webflow integration |
+| Lumos Webflow architecture | Active / preferred for substantial new Webflow builds | `admonk-lumos`; official Lumos docs + `lumosframework/skill` |
 | Astro | Active | `admonk-astro`; current Astro docs |
 | Static HTML/CSS/JS | Active | core implementation skills |
 | React / Next.js | Active | `admonk-react-engineering` |
 | React Motion | Active | `admonk-react-motion` |
 | shadcn | Connected | official MCP |
 | 21st | Connected | MCP exploration accelerator |
+
+### Webflow framework rule
+
+For substantial **new** Webflow production projects, Lumos is the preferred starting architecture when no coherent project/client framework already exists.
+
+For existing Webflow projects, preserve the established system unless migration is explicitly justified.
+
+Lumos is an implementation architecture, not creative direction.
 
 ---
 
@@ -158,6 +167,8 @@ Initial environments:
 1. Figma
 2. Webflow
 3. Astro
+
+For Webflow, an additional architecture subtest may compare raw/ad-hoc Webflow construction with a Lumos-structured implementation while keeping the same creative brief.
 
 The benchmark should later expand when a real question justifies another environment—not simply to collect platforms.
 
