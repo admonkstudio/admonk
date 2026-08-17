@@ -33,6 +33,8 @@ Each environment should receive the same:
 
 Platform-specific implementation may differ.
 
+Each platform should also be evaluated according to its **real professional workflow**, not by bypassing native capabilities merely because code is easier for an AI agent to generate.
+
 ---
 
 # 2. Fictional Benchmark Brand
@@ -260,21 +262,81 @@ The Figma result does not need to be production runtime code.
 
 Goal:
 
-Evaluate design-to-production speed in a visual website environment.
+Evaluate design-to-production speed in a professional visual website environment.
+
+## Native Designer First Constraint
+
+The Webflow benchmark must use the full native Webflow Designer/platform capability before custom code.
+
+Required implementation order:
+
+```text
+Native elements / semantics
+→ classes + Style panel
+→ variables / modes
+→ grid / flex / positioning / sizing / effects / transforms
+→ native responsive controls
+→ components / slots / properties
+→ CMS / bindings / forms / settings
+→ native states / interactions where supported
+→ custom CSS only when Webflow itself lacks the CSS capability
+→ custom JS / GSAP only when Webflow itself lacks the behavior or the advanced requirement genuinely exceeds native interactions
+```
+
+If Webflow supports a CSS property in the Designer, implementing the same property through embedded CSS is **not allowed for the benchmark**.
+
+If Webflow supports an interaction natively but the current MCP cannot author it, record this as an **AI tooling limitation** and preserve/use the native Designer step. Do not substitute JavaScript solely to keep the process automated.
+
+Mandatory distinction:
+
+```text
+Agent/MCP cannot do it
+≠
+Webflow cannot do it
+```
+
+Custom code must include a short reason identifying the actual native platform limitation it solves.
+
+## Webflow Architecture Passes
+
+The benchmark may preserve two Webflow implementations for learning:
+
+### Webflow A — Raw / Pre-rule Prototype
+
+The earlier AERA prototype used page-level custom CSS/JS for several capabilities Webflow can implement natively.
+
+Preserve it as historical evidence of what an unconstrained coding agent tends to do, but **do not use it as the final scored professional Webflow implementation**.
+
+### Webflow B — Professional Native-First + Lumos
+
+Rebuild the same AERA concept using:
+
+- `admonk-webflow`
+- `admonk-lumos`
+- native Webflow Designer capabilities first
+- current Lumos architecture/version rules
+- custom code only beyond real Webflow platform limits
+
+This is the Webflow implementation used for final platform scoring.
 
 Test:
 
 - Designer structure
-- Classes/variables/components
+- Lumos class architecture
+- Webflow variables
+- Components/slots/properties
 - Responsive implementation
+- Native CSS/style coverage
 - CMS suitability where relevant
 - Asset handling
-- Native vs custom motion
-- GSAP integration
+- Native interaction capability
+- Legitimate GSAP/custom-code extension points
 - Form/CTA readiness
 - Published-site QA
 - Client editing/maintenance
 - AI ability to modify a real Webflow project
+- AI/MCP limitations versus actual Webflow limitations
+- Amount of custom code required after native capabilities are exhausted
 
 ---
 
@@ -315,6 +377,15 @@ For each environment, preserve evidence of:
 - Human corrections required
 - Final output
 
+For Webflow also record:
+
+- Native Designer capabilities used
+- Lumos systems used
+- Custom CSS added and why Webflow could not do it natively
+- Custom JavaScript/GSAP added and why native interactions/behavior were insufficient
+- Native steps the MCP could not automate
+- Whether any custom code duplicated a native capability
+
 Do not hide failures; the failures are part of the benchmark.
 
 ---
@@ -330,4 +401,7 @@ What should Admonk use Astro for?
 Where should the workflow move between them?
 What does AI handle well in each environment?
 Where does human creative/technical intervention still add the most value?
+How much of a professional Webflow build can the agent complete using native Designer capabilities?
+Where does the Webflow MCP end before Webflow itself ends?
+Does Lumos materially improve AI-built Webflow architecture and maintainability?
 ```
