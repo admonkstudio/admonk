@@ -44,8 +44,10 @@ Examples:
 - Business model
 - Audience
 - Positioning
+- Brand strategy
 - Brand identity
 - Brand guidelines
+- Voice/tone
 - Content
 - Competitors
 - Objectives
@@ -54,7 +56,7 @@ Examples:
 - Existing systems
 - Approved decisions
 
-This belongs in the client's repository.
+This belongs in the client's repository and/or approved canonical client sources.
 
 ## Layer C — Project / Platform Context
 
@@ -62,6 +64,12 @@ Specific to the implementation.
 
 Examples:
 
+- Production design system
+- Webflow Style Sheet
+- Webflow Brand Guideline page
+- Figma library
+- Variables/tokens
+- Components
 - Figma
 - Webflow
 - Astro
@@ -73,9 +81,10 @@ Examples:
 - APIs
 - Motion technology
 - Browser support
+- Responsive strategy
 - Performance targets
 
-This also belongs in the client's project repository.
+This belongs in the client's project repository and live production/design sources.
 
 ---
 
@@ -86,22 +95,26 @@ For client projects, use this hierarchy:
 ```text
 1. Current explicit user/client instruction
         ↓
-2. Client business and brand context
+2. Approved client business / strategy / brand guideline
         ↓
-3. Current project requirements
+3. Client production design system / live Style Sheet / Figma library
         ↓
-4. Admonk studio principles
+4. Current project requirements and recorded decisions
         ↓
-5. Relevant Admonk task skills
+5. Admonk studio principles
         ↓
-6. Platform-specific skills
+6. Relevant Admonk task skills
         ↓
-7. External skills / MCPs
+7. Platform-specific skills
         ↓
-8. Generic best practices
+8. External skills / MCPs
+        ↓
+9. Framework defaults / generic best practices
 ```
 
-This prevents the reusable Admonk system from forcing the Admonk website's visual identity onto client work.
+This prevents the reusable Admonk system, platform frameworks, and AI defaults from forcing an unrelated visual identity onto client work.
+
+If approved sources materially conflict, identify and resolve the conflict rather than silently mixing them.
 
 ---
 
@@ -136,6 +149,7 @@ client-project/
 ├── docs/
 │   ├── CLIENT-BUSINESS.md
 │   ├── BRAND-GUIDELINES.md
+│   ├── DESIGN-SYSTEM.md
 │   ├── PROJECT-BRIEF.md
 │   ├── CONTENT.md
 │   ├── PROJECT-DECISIONS.md
@@ -147,6 +161,8 @@ client-project/
 ```
 
 The reusable Admonk skills should be supplied separately rather than copied into every client's documentation.
+
+The client docs should point to canonical live sources instead of pretending the repository summary replaces the real Figma/Webflow/brand system.
 
 ---
 
@@ -160,14 +176,17 @@ Read:
 
 - `docs/CLIENT-BUSINESS.md`
 - `docs/PROJECT-BRIEF.md`
+- approved brand/strategy source when relevant
 
 ## Brand / design task
 
 Read:
 
 - `docs/BRAND-GUIDELINES.md`
+- `docs/DESIGN-SYSTEM.md`
 - `docs/PROJECT-BRIEF.md`
-- relevant supplied assets
+- relevant supplied/canonical assets
+- Figma/Webflow design-system sources when available
 
 ## Copy/content task
 
@@ -182,8 +201,12 @@ Read:
 Read:
 
 - `docs/PLATFORM.md`
+- `docs/DESIGN-SYSTEM.md`
 - `docs/PROJECT-BRIEF.md`
 - existing project/code structure
+- live platform classes/variables/components where relevant
+
+For Webflow, normally inspect the `Style Sheet` page and `Brand Guideline` page when they exist.
 
 ## Continuation or revision
 
@@ -191,7 +214,7 @@ Also read:
 
 - `docs/PROJECT-DECISIONS.md`
 
-Do not load every context file for every task.
+Do not load every context file for every trivial task, but do not begin substantial creative/implementation work without the client sources necessary to stay aligned.
 
 ---
 
@@ -223,7 +246,80 @@ The studio signature should be **quality of thinking and execution**, not visual
 
 ---
 
-# 7. Platform Skills Are Execution Layers
+# 7. Design System as Production Source of Truth
+
+The client's approved production design system should be inspected before creating new tokens/classes/components.
+
+Typical sources:
+
+```text
+Webflow
+→ Style Sheet page + variables + components + framework conventions
+
+Figma
+→ variables/styles + components + design-system/library pages
+
+Code
+→ tokens/theme + shared components + documented conventions
+```
+
+Rules:
+
+- reuse before duplicating
+- add reusable new patterns back into the canonical system
+- document project-specific exceptions
+- do not let a framework starter override approved client values
+- do not create an AI-only parallel system that future editors cannot understand
+
+For Webflow projects, Admonk commonly expects:
+
+1. **Style Sheet** — classes, variables, components, states, reusable system examples.
+2. **Brand Guideline** — strategy, voice, visual rules, imagery, identity direction.
+
+Project docs should point to and summarize these sources.
+
+---
+
+# 8. Responsive + Performance Are Continuous Constraints
+
+Responsive behavior and performance are not final QA-only stages.
+
+During design, implementation, motion, image work, and iteration, consider:
+
+## Responsive
+
+- desktop
+- tablet/intermediate widths
+- mobile
+- in-between viewport widths
+- text wrapping/scaling
+- grid/reflow behavior
+- image crops/art direction
+- navigation
+- touch vs hover
+- motion substitutions
+- long content/localization
+- browser zoom/text enlargement where relevant
+
+## Performance
+
+- PageSpeed Insights / Lighthouse diagnostics
+- current Core Web Vitals
+- mobile runtime cost
+- image/video delivery
+- font count/weight
+- JavaScript / third-party scripts
+- animation/rendering cost
+- layout stability
+- interaction responsiveness
+
+Default principle:
+
+> **Design responsively and performance-consciously from the beginning, then verify with real browser evidence.**
+
+---
+
+# 9. Platform Skills Are Execution Layers
 
 Platform skills must not redefine the design.
 
@@ -249,7 +345,7 @@ Do not select the project because a platform skill is available.
 
 ---
 
-# 8. Capability Library Strategy
+# 10. Capability Library Strategy
 
 Admonk should maintain a broad capability library because future client needs are unpredictable.
 
@@ -271,24 +367,28 @@ This allows future-ready capability without flooding normal tasks with unrelated
 
 ---
 
-# 9. New Client Workflow
+# 11. New Client Workflow
 
 When a new client arrives:
 
 1. Create a repository from `templates/client-project/`.
-2. Populate the client business and brand context.
-3. Record the project objective and deliverables.
-4. Record existing systems before proposing replacements.
-5. Choose the implementation platform after requirements are understood.
-6. Activate the relevant reusable Admonk skills.
-7. Build.
-8. Verify in the real environment.
-9. Record major decisions and exceptions.
-10. Reuse project learning without leaking confidential client data into unrelated projects.
+2. Populate client business / brand strategy / voice context.
+3. Record/link the canonical Brand Guideline source.
+4. Record/link the production design system (Webflow Style Sheet, Figma library, code system, etc.).
+5. Populate `docs/DESIGN-SYSTEM.md` with the implementation-facing rules and source links.
+6. Record the project objective and deliverables.
+7. Record existing systems before proposing replacements.
+8. Define responsive and performance expectations in `docs/PLATFORM.md`.
+9. Choose the implementation platform after requirements are understood.
+10. Activate the relevant reusable Admonk skills.
+11. Build while preserving brand/design-system alignment, responsive behavior, and performance.
+12. Verify in the real environment.
+13. Record major decisions and exceptions.
+14. Reuse project learning without leaking confidential client data into unrelated projects.
 
 ---
 
-# 10. Reusable Knowledge vs Learned Client Knowledge
+# 12. Reusable Knowledge vs Learned Client Knowledge
 
 Reusable learning can be promoted back into Admonk's studio system when it is generalizable.
 
@@ -313,7 +413,7 @@ Do not promote:
 
 ---
 
-# 11. Future Direction
+# 13. Future Direction
 
 As the system grows, the preferred long-term split is:
 
@@ -336,4 +436,4 @@ Until then, the current repository remains the source of truth for the reusable 
 
 # Final Principle
 
-> **Carry the method. Learn the client. Choose the tool. Build the project.**
+> **Carry the method. Learn the client. Follow the system. Design responsively. Protect performance. Choose the tool. Build the project.**
