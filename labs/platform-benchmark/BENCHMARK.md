@@ -25,10 +25,12 @@ Each environment should receive the same:
 - Business objective
 - Audience
 - Content requirements
+- Brand/design-system rules
 - Design direction
 - Image requirements
 - Motion requirements
 - Responsive requirements
+- Performance requirements where runtime exists
 - Success criteria
 
 Platform-specific implementation may differ.
@@ -73,6 +75,35 @@ AERA combines light engineering with sculptural form.
 - Neon sci-fi visual clichés
 - Excessive copy
 - Motion that blocks normal browsing
+
+---
+
+# 2A. Benchmark Brand / Design System
+
+The benchmark should behave like a real client project rather than letting each platform invent unrelated styling rules.
+
+Create and preserve an AERA design-system/brand source containing at least:
+
+- positioning / audience / brand character
+- voice direction
+- colors
+- typography
+- spacing/layout principles
+- image direction
+- motion character
+- reusable UI patterns
+- responsive principles
+
+For Webflow B, use two visible project pages where practical:
+
+1. **Style Sheet** — production classes, variables, components, states and reusable system examples.
+2. **Brand Guideline** — positioning, strategy, voice, visual rules, imagery and brand direction.
+
+The production page should reuse these sources rather than creating an unrelated parallel system.
+
+For Figma, use a comparable design-system/brand area or library.
+
+For Astro, translate the same approved system into code/tokens/components rather than redesigning the identity.
 
 ---
 
@@ -186,6 +217,8 @@ At least one important image should require deliberate text-safe negative space.
 
 At least one image should test responsive/mobile art direction.
 
+Runtime implementations should also evaluate responsive image delivery, asset weight, and layout stability.
+
 ---
 
 # 6. Motion Requirements
@@ -212,26 +245,56 @@ Do not create an artificially long pinned-scroll experience merely to demonstrat
 
 Reduced-motion behavior must be considered.
 
+For Webflow/Astro, motion must also be evaluated for mobile/runtime performance.
+
 ---
 
 # 7. Responsive Requirements
 
+Responsiveness is part of the concept from the beginning.
+
 Evaluate:
 
 - Desktop
-- Tablet or intermediate width
+- Tablet / intermediate width
 - Mobile
+- Intermediate viewport widths between named breakpoints
 
 The design should adapt rather than simply shrink.
 
 Test:
 
 - Image art direction
-- Type hierarchy
+- Type hierarchy/wrapping
+- Layout reflow
 - Navigation
 - Motion substitution
 - Touch behavior
 - Section rhythm
+- long content where relevant
+- browser zoom/text enlargement where relevant
+
+Mobile should preserve AERA's visual concept and hierarchy rather than simply stack every desktop element.
+
+---
+
+# 7A. Runtime Performance Requirements
+
+For Webflow and Astro, performance is part of the scored implementation.
+
+At appropriate milestones and before final scoring when a testable URL exists:
+
+- run PageSpeed Insights/Lighthouse diagnostics on mobile and desktop
+- evaluate current Core Web Vitals signals/risks
+- inspect LCP asset strategy
+- inspect layout stability
+- inspect interaction/script cost
+- inspect font/image/media weight
+- record material third-party/custom-code cost
+
+Use current Google/web.dev guidance rather than hard-coding stale metrics into the benchmark.
+
+Do not optimize purely for a synthetic score at the expense of the intended experience; first look for a more efficient implementation of the same creative idea.
 
 ---
 
@@ -246,7 +309,8 @@ Test:
 - AI-assisted creation/editing
 - Visual concept freedom
 - Auto Layout vs art direction
-- Variables/components
+- Client/benchmark variables/components
+- Design-system consistency
 - Responsive design intent
 - Image integration
 - Motion prototyping
@@ -297,6 +361,19 @@ Webflow cannot do it
 
 Custom code must include a short reason identifying the actual native platform limitation it solves.
 
+## Design System / Brand Constraint
+
+Before building the final Webflow version:
+
+- establish/inspect the AERA `Style Sheet` page
+- establish/inspect the AERA `Brand Guideline` page
+- use approved Webflow variables
+- use approved components
+- reuse the approved class/framework system
+- add genuinely reusable new system elements back to the Style Sheet
+
+The production landing page should not become the undocumented source of its own parallel design system.
+
 ## Webflow Architecture Passes
 
 The benchmark may preserve two Webflow implementations for learning:
@@ -313,6 +390,7 @@ Rebuild the same AERA concept using:
 
 - `admonk-webflow`
 - `admonk-lumos`
+- AERA Style Sheet + Brand Guideline
 - native Webflow Designer capabilities first
 - current Lumos architecture/version rules
 - custom code only beyond real Webflow platform limits
@@ -322,16 +400,20 @@ This is the Webflow implementation used for final platform scoring.
 Test:
 
 - Designer structure
+- Brand/design-system fidelity
+- Style Sheet reuse
 - Lumos class architecture
 - Webflow variables
 - Components/slots/properties
 - Responsive implementation
+- Intermediate viewport behavior
 - Native CSS/style coverage
 - CMS suitability where relevant
 - Asset handling
 - Native interaction capability
 - Legitimate GSAP/custom-code extension points
 - Form/CTA readiness
+- PageSpeed / Core Web Vitals potential
 - Published-site QA
 - Client editing/maintenance
 - AI ability to modify a real Webflow project
@@ -349,12 +431,14 @@ Evaluate unrestricted code-native implementation.
 Test:
 
 - Semantic page structure
+- AERA design-system translation
 - CSS/layout freedom
 - Image handling
 - Minimal client JavaScript
 - GSAP/CSS motion
 - View-transition potential
-- Performance
+- Responsive behavior across real widths
+- PageSpeed/Core Web Vitals potential
 - Maintainability
 - Content/CMS extensibility
 - Browser QA
@@ -367,12 +451,13 @@ Test:
 For each environment, preserve evidence of:
 
 - Initial brief interpretation
+- Brand/design-system interpretation
 - First meaningful design result
 - Major revisions
 - Time/number of significant AI iterations
 - Screenshots/frames
 - Motion test
-- Responsive test
+- Responsive tests including intermediate widths
 - Problems encountered
 - Human corrections required
 - Final output
@@ -380,11 +465,15 @@ For each environment, preserve evidence of:
 For Webflow also record:
 
 - Native Designer capabilities used
+- Style Sheet/design-system reuse
 - Lumos systems used
 - Custom CSS added and why Webflow could not do it natively
 - Custom JavaScript/GSAP added and why native interactions/behavior were insufficient
 - Native steps the MCP could not automate
 - Whether any custom code duplicated a native capability
+- mobile and desktop PageSpeed results/diagnostics when measurable
+
+For Astro also record mobile/desktop performance evidence when measurable.
 
 Do not hide failures; the failures are part of the benchmark.
 
@@ -401,6 +490,9 @@ What should Admonk use Astro for?
 Where should the workflow move between them?
 What does AI handle well in each environment?
 Where does human creative/technical intervention still add the most value?
+How well does each environment preserve one shared brand/design system?
+How well does each environment handle responsive behavior across real viewport ranges?
+How well do runtime environments preserve the creative idea while meeting strong performance expectations?
 How much of a professional Webflow build can the agent complete using native Designer capabilities?
 Where does the Webflow MCP end before Webflow itself ends?
 Does Lumos materially improve AI-built Webflow architecture and maintainability?
