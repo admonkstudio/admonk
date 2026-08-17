@@ -27,6 +27,10 @@ Core rule:
 
 > **Admonk decides what should be designed. Lumos helps Webflow stay systematic while we build it.**
 
+Native implementation rule:
+
+> **Lumos should be implemented through Webflow's native Designer capabilities wherever Webflow supports the requirement. Custom code extends Lumos only where Webflow itself ends.**
+
 ---
 
 # 1. When to Use Lumos
@@ -125,6 +129,8 @@ Before creating or changing Lumos structure:
 
 Do not create a duplicate utility, variable, class, or component if the project already provides an appropriate one.
 
+Also audit existing custom CSS/JS for rules that Webflow can now express natively. Do not preserve unnecessary code simply because an older implementation used it.
+
 ---
 
 # 5. Class Architecture
@@ -180,7 +186,7 @@ Do not create project-specific utilities until checking whether Lumos already pr
 
 Lumos relies heavily on variables to make Webflow scalable.
 
-For repeated design values prefer the project's variable system over hard-coded one-off values when appropriate.
+For repeated design values prefer the project's native Webflow/Lumos variable system over hard-coded one-off values when appropriate.
 
 Common variable domains include:
 
@@ -197,10 +203,11 @@ Common variable domains include:
 
 When adapting the Lumos starter to a client:
 
-1. Translate the client's real design system into variables.
+1. Translate the client's real design system into Webflow variables.
 2. Do not preserve starter values simply because they exist.
 3. Avoid hard-coded duplication that defeats global control.
 4. Add project-specific variables only when they represent real reusable decisions.
+5. Do not create a parallel CSS custom-property system in embedded code when native Webflow variables can own the value.
 
 Variables serve the design; the design does not serve the starter variables.
 
@@ -220,7 +227,7 @@ Translate:
 - Text wrapping
 - Text styles
 
-into the project's Lumos variable/text-style system.
+into the project's Lumos/Webflow variable and text-style system.
 
 Do not replace client typography with framework defaults.
 
@@ -232,7 +239,7 @@ Typography utilities should make global changes easier, not flatten all editoria
 
 # 8. Color and Theme System
 
-Use Lumos theme/swatches when they improve systematic color behavior.
+Use Lumos theme/swatches and native Webflow variables/modes when they improve systematic color behavior.
 
 Useful cases:
 
@@ -248,20 +255,28 @@ A theme system is infrastructure, not an instruction to force every design into 
 
 Client brand colors and art direction remain authoritative.
 
+Do not recreate native theme/variable behavior in custom CSS unless the project requires functionality Webflow does not provide.
+
 ---
 
 # 9. Fluid Size and Breakpointless Principles
 
 Modern Lumos increasingly favors fluid sizing, container-aware behavior, and content-driven responsive decisions instead of solving every change through Webflow's fixed pixel breakpoints.
 
-Use these principles where the project's Lumos version supports them:
+Use these principles where the project's Lumos version and Webflow capabilities support them:
 
 - Fluid sizes between defined viewport limits.
 - `clamp()`-style scaling through Lumos/Fluid Builder systems.
-- Container queries where appropriate.
+- Container-aware behavior where supported.
 - Content-driven wrapping.
 - Responsive variables/utilities when supplied by the version.
 - Breakpoints only when the composition genuinely needs a structural change.
+
+Native-first requirement:
+
+- If Webflow exposes the responsive property/control required, use the Designer.
+- If Lumos provides the utility/variable, use that system.
+- Use embedded CSS media/container queries only when Webflow itself cannot express the required responsive behavior cleanly.
 
 This does **not** mean never designing mobile explicitly.
 
@@ -294,17 +309,25 @@ Rule:
 
 > **Systemize recurring spacing. Art-direct exceptional spacing.**
 
+Use native Webflow spacing controls for both system and optical values rather than embedded CSS when the property is supported.
+
 ---
 
 # 11. Grid and Layout
 
-Use Lumos grid/flex/container utilities as structural tools.
+Use Lumos grid/flex/container utilities and Webflow's native layout controls as structural tools.
 
 Do not allow the default grid system to force every section into the same composition.
 
 Admonk may create unusual layouts, overlaps, asymmetry, editorial compositions, spatial storytelling, and custom motion while retaining a clean underlying Lumos structure.
 
-If the visual concept requires custom CSS such as subgrid, container queries, complex grid placement, masks, or advanced positioning, use it deliberately and document the behavior.
+Before adding custom CSS for layout, check whether the current Webflow Designer can express the required grid, flex, positioning, sizing, overflow, transform, aspect-ratio, sticky/fixed, or other CSS behavior natively.
+
+If Webflow supports it, use Webflow.
+
+Use custom CSS such as unsupported selectors/properties, advanced subgrid/container logic, specialized masks, or other features only when the required behavior is not available cleanly through the native platform.
+
+Document any custom layout CSS so later editors know why it exists.
 
 ---
 
@@ -345,6 +368,8 @@ Do not convert every unique art-directed section into a closed component.
 
 Choose component rigidity according to editing risk and reuse.
 
+Prefer native Webflow component slots/properties/variants over code-driven templating when they satisfy the requirement.
+
 ---
 
 # 13. Page Structure
@@ -382,6 +407,8 @@ Useful states may include concepts such as:
 - active
 
 Use the project's actual implementation and current docs rather than inventing attribute syntax from memory.
+
+Prefer Webflow-native states/interactions and Lumos trigger/state conventions before JavaScript when the required behavior is natively achievable.
 
 For advanced choreography, `admonk-motion` and `admonk-motion-production` still choose the appropriate technology.
 
@@ -424,15 +451,22 @@ Lumos provides structure; Admonk motion skills own motion decisions.
 Routing:
 
 ```text
-Simple CSS/state behavior
-→ Lumos state/trigger + CSS/Webflow
+Simple hover / transition / transform / opacity / state
+→ Webflow native Style panel / state
 
-Normal reveal/micro-interaction
-→ CSS/Webflow or lightweight JS
+Standard interaction supported cleanly by Webflow
+→ Webflow native interaction
 
-Advanced sequence / scroll choreography / SVG
-→ GSAP
+Lumos state/trigger behavior
+→ Lumos + native Webflow implementation
+
+Advanced sequence / scroll choreography / complex SVG / behavior beyond Webflow capability
+→ GSAP/custom code
 ```
+
+Do not write CSS/JavaScript for a simple animation just because code is easier for an agent to generate.
+
+Do not treat an MCP limitation as a Webflow limitation. If Webflow can create the interaction natively but the current agent tool cannot author it, record/use a native Designer step rather than defaulting to code.
 
 Animation code should target stable intentional hooks/classes/attributes without making the framework impossible to edit.
 
@@ -454,6 +488,7 @@ Before handoff:
 - Document project-specific additions/deviations.
 - Explain which areas are safe for client editing.
 - Preserve advanced custom-code areas from accidental editing where possible.
+- Minimize custom code so the site's normal styling/layout remains editable inside Webflow.
 
 For substantial projects, document custom Lumos additions in the client repository and/or project documentation.
 
@@ -467,13 +502,41 @@ When an agent is building through Webflow tools/MCP:
 - Reuse existing variables/components/classes.
 - Follow Lumos naming rather than generating arbitrary names.
 - Prefer Webflow-native variables/components when Lumos expects them.
-- Use custom code only when needed.
+- Use the Style panel/native Designer capabilities for supported CSS rather than embedded CSS.
+- Use native responsive controls before custom media-query code.
+- Use native CMS/forms/settings/components before recreating equivalent behavior in JavaScript.
+- Use native Webflow states/interactions when they can achieve the intended behavior cleanly.
 - Preserve client editor usability.
 - Verify actual output after structural changes.
 
-If a Webflow MCP operation cannot express a Lumos requirement cleanly, do not corrupt the framework merely to avoid a manual/native Designer step.
+## Native-First Decision Test
 
-Document the limitation and choose the cleanest supported implementation.
+Before any custom CSS or JavaScript is introduced, the agent must determine whether Webflow itself supports the requirement.
+
+```text
+Can Webflow do it natively?
+        │
+        ├── YES → use Webflow Designer/platform capability
+        │
+        └── NO  → custom code may be considered
+```
+
+This includes CSS properties supported by Webflow's Style panel. If Webflow can set the property, do not duplicate it in embedded CSS.
+
+## Tool Limitation Rule
+
+If a Webflow MCP operation cannot express a native Lumos/Webflow requirement cleanly, do **not** corrupt the framework or jump to custom code merely to keep the task fully automated.
+
+Instead:
+
+1. Check for another native Webflow tool/action.
+2. Preserve the intended native architecture.
+3. Document the manual/native Designer step if automation cannot reach it.
+4. Use custom code only when Webflow itself lacks the required capability, not simply because the MCP lacks the operation.
+
+Mandatory distinction:
+
+> **MCP limitation ≠ Webflow limitation.**
 
 ---
 
@@ -497,8 +560,9 @@ If migration is approved:
 2. Map old conventions to Lumos equivalents.
 3. Migrate incrementally where possible.
 4. Preserve behavior and semantic structure.
-5. Run full responsive/browser/form/SEO QA.
-6. Document breaking changes.
+5. Replace avoidable code with native Webflow/Lumos capabilities where safe.
+6. Run full responsive/browser/form/SEO QA.
+7. Document breaking changes.
 
 ---
 
@@ -513,6 +577,14 @@ Before calling a Lumos Webflow build complete, check:
 - Variables replace avoidable duplication.
 - Components match real reuse/editing needs.
 - Page structure is consistent.
+
+## Native Webflow Use
+
+- Supported CSS is implemented through Webflow rather than unnecessary `<style>` blocks.
+- Native layout/responsive controls are used where capable.
+- Native components/CMS/forms/settings are used instead of avoidable code equivalents.
+- Custom interactions/code exist only where Webflow cannot achieve the requirement cleanly or where a documented advanced implementation is genuinely better.
+- No custom code exists solely because the current MCP lacked access to a Designer capability.
 
 ## Design
 
@@ -529,7 +601,7 @@ Before calling a Lumos Webflow build complete, check:
 
 ## Production
 
-- Custom code is documented.
+- Necessary custom code is documented with the native limitation it solves.
 - Forms/CMS/integrations still work.
 - Browser QA is complete.
 - Client editing is understandable.
@@ -557,4 +629,4 @@ See `UPSTREAM.md` for attribution and integration decisions.
 
 # Final Principle
 
-> **Use Lumos to make the Webflow system invisible, so the client experiences the design rather than the framework.**
+> **Use Lumos to make the Webflow system invisible. Use Webflow natively wherever possible, and add code only beyond the platform's real limits.**
