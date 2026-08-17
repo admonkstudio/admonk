@@ -39,19 +39,21 @@ For client work, the authority order is:
 ```text
 1. Current explicit user/client instruction
         ↓
-2. Client business and brand context
+2. Client business, brand strategy, and approved brand guideline
         ↓
-3. Current project requirements
+3. Client production design system / live Style Sheet / Figma library
         ↓
-4. Admonk studio principles
+4. Current project requirements and recorded decisions
         ↓
-5. Relevant Admonk task skills
+5. Admonk studio principles
         ↓
-6. Platform-specific skills
+6. Relevant Admonk task skills
         ↓
-7. External skills / MCPs
+7. Platform-specific skills
         ↓
-8. Generic best practices
+8. External skills / MCPs
+        ↓
+9. Framework defaults / generic best practices
 ```
 
 Never make every client look like Admonk.
@@ -61,6 +63,34 @@ The studio signature is the quality of thinking and execution, not a fixed visua
 New client repositories should use:
 
 `templates/client-project/`
+
+---
+
+# 2A. Client Brand + Design System Rule
+
+For substantial client work, the agent must align with the client's real system before creating new creative or implementation conventions.
+
+When available, inspect:
+
+- client business/positioning context
+- approved Brand Guideline / strategy source
+- `docs/BRAND-GUIDELINES.md`
+- `docs/DESIGN-SYSTEM.md`
+- Figma design-system/library
+- Webflow `Style Sheet` page
+- Webflow `Brand Guideline` page
+- production variables/tokens
+- production components
+- existing class/framework conventions
+- previous project decisions
+
+Core rule:
+
+> **Reuse the client's approved system before inventing a parallel one.**
+
+Do not let Admonk preferences, Lumos, Webflow defaults, a component library, or AI-generated conventions override the client's approved identity.
+
+If approved sources conflict materially, identify the conflict and record/resolve the decision rather than silently mixing systems.
 
 ---
 
@@ -156,6 +186,14 @@ For procedural setup, use short sequential steps and finish with a test/verifica
 
 Do not claim implementation is finished merely because code was written. Verify the real output where tooling allows it.
 
+Three quality constraints are always considered during web work, not only at handoff:
+
+1. **Brand/design-system alignment**
+2. **Responsive behavior**
+3. **Performance / PageSpeed / Core Web Vitals**
+
+A solution that works only at the current viewport, ignores the client's system, or introduces avoidable performance cost is not complete.
+
 ---
 
 # 7. Creative Principles
@@ -178,6 +216,8 @@ and use:
 
 `.agents/skills/admonk-ux-systems/SKILL.md`
 
+Responsive intent must be part of the visual concept. Mobile should preserve the concept and hierarchy rather than merely stack desktop sections.
+
 ---
 
 # 8. Images
@@ -197,6 +237,8 @@ For generation/editing/preparation/integration use:
 `.agents/skills/admonk-image-production/SKILL.md`
 
 Keep accurate project UI, logos, and important text as real assets when possible instead of relying on generative reconstruction.
+
+Plan responsive crops/variants and runtime asset cost as part of image direction.
 
 ---
 
@@ -222,6 +264,8 @@ For technology selection/prototyping/production use:
 
 Use the relevant GSAP, React Motion, Rive, or 3D skill only after the motion concept and technology owner are clear.
 
+Motion must be evaluated for mobile behavior, reduced motion, and runtime performance.
+
 ---
 
 # 10. Platform Skills
@@ -234,9 +278,13 @@ Use `.agents/skills/admonk-figma/SKILL.md`.
 
 Figma is a design/prototyping/design-to-code environment, not creative authority.
 
+When a client design system exists, use its approved variables/styles/components rather than creating a disconnected Figma system.
+
 ## Webflow
 
 Use `.agents/skills/admonk-webflow/SKILL.md`.
+
+Before substantial work, inspect the project's Style Sheet, Brand Guideline, variables, components, classes/framework, and relevant project docs when those sources exist.
 
 Preserve visual freedom while keeping Designer structure, CMS, components, assets, and custom code maintainable.
 
@@ -272,7 +320,7 @@ Verify version-sensitive Supabase behavior against current official docs/skills/
 
 Use `.agents/skills/admonk-3d-web/SKILL.md` for Three.js/WebGL/WebGPU or spatial web experiences.
 
-Real-time 3D is a medium, not a default premium effect.
+Real-time 3D is a medium, not a default premium effect. Its performance cost must be part of the decision.
 
 ## Rive
 
@@ -293,6 +341,10 @@ Verify search-engine behavior from current primary documentation.
 ## Performance
 
 Use `.agents/skills/admonk-performance/SKILL.md`.
+
+Performance is a continuous design/implementation constraint.
+
+For production web work, consider PageSpeed Insights, current Core Web Vitals, mobile runtime cost, asset/media weight, scripts, fonts, layout stability, and interaction responsiveness throughout the build.
 
 Use real browser/lab evidence and field data when available rather than optimizing a synthetic score blindly.
 
@@ -322,17 +374,41 @@ A build is not delivery; verify production configuration, critical flows, releas
 
 ---
 
-# 12. Browser QA
+# 12. Responsive Quality
+
+Responsive behavior is an always-on requirement for web work.
+
+For major sections/components consider:
+
+- desktop
+- tablet/intermediate widths
+- mobile
+- reflow and wrapping
+- type scaling
+- image art direction/crops
+- navigation
+- touch vs hover
+- motion substitutions
+- long content/localization
+- zoom/text enlargement where relevant
+
+Do not validate only named breakpoint widths. Intermediate viewport widths often reveal layout failures.
+
+The final responsive experience should feel intentionally designed at each range, not repaired after desktop approval.
+
+---
+
+# 13. Browser QA
 
 For real browser validation use `.agents/skills/admonk-browser-qa/SKILL.md` and, where available, `.agents/skills/playwright-cli/SKILL.md`.
 
-Test the actual rendered environment for responsive behavior, interaction, motion, forms, console errors, network failures, and important user journeys.
+Test the actual rendered environment for responsive behavior, interaction, motion, forms, console errors, network failures, performance regressions, and important user journeys.
 
 A technically valid implementation that feels wrong or breaks in the real browser is not finished.
 
 ---
 
-# 13. Capability Routing
+# 14. Capability Routing
 
 When a request spans multiple disciplines or the correct tool is unclear, use:
 
@@ -348,7 +424,7 @@ When a future project introduces an unfamiliar technology, check current authori
 
 ---
 
-# 14. Existing Systems Rule
+# 15. Existing Systems Rule
 
 Do not rebuild functioning client systems without a reason.
 
@@ -356,11 +432,11 @@ Prefer:
 
 > **Integrate → Improve → Replace only when justified.**
 
-This applies to branding, CMS, CRM, analytics, databases, automation, design systems, codebases, and other existing infrastructure.
+This applies to branding, design systems, CMS, CRM, analytics, databases, automation, codebases, and other existing infrastructure.
 
 ---
 
-# 15. MCP / Plugin / External Skills
+# 16. MCP / Plugin / External Skills
 
 Tools expand what the agent can access. Skills guide how the agent should work. Client/project context determines what should actually be built.
 
@@ -376,7 +452,7 @@ Current third-party skill decisions/attribution: `docs/THIRD-PARTY-SKILLS.md`.
 
 ---
 
-# 16. Security, Secrets & High-Stakes Systems
+# 17. Security, Secrets & High-Stakes Systems
 
 Never commit API keys, tokens, passwords, private registry credentials, customer secrets, or `.env` files containing secrets.
 
@@ -388,7 +464,7 @@ Only test or scan systems the client/Admonk is authorized to assess.
 
 ---
 
-# 17. Reusable Learning
+# 18. Reusable Learning
 
 Promote lessons from client projects into reusable Admonk skills only when the learning is generalizable.
 
@@ -396,7 +472,7 @@ Never promote confidential client information, proprietary strategy, licensed as
 
 ---
 
-# 18. Labs / Evaluation
+# 19. Labs / Evaluation
 
 Experimental comparisons should use controlled briefs and preserve failures as evidence.
 
@@ -410,7 +486,7 @@ Do not change the brief to make a preferred platform look stronger.
 
 ---
 
-# 19. Final Principle
+# 20. Final Principle
 
 Every agent working with Admonk should optimize for:
 
