@@ -9,6 +9,18 @@ Use this file to record the implementation environment and constraints.
 - Hosting/deployment:
 - Repository structure:
 
+## Webflow Architecture (if applicable)
+
+- Webflow framework/system: Lumos / Client-First / MAST / custom / existing client system / none
+- Framework version:
+- Starter/cloneable source:
+- Project-specific framework deviations:
+- Variable system notes:
+- Component strategy:
+- Client Build Mode/editor expectations:
+
+For substantial new Webflow projects, evaluate Lumos as the preferred Admonk architecture. Do not migrate an existing coherent framework automatically.
+
 ## Design Source
 
 - Figma file/project:
