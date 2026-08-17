@@ -6,10 +6,50 @@ Reusable Admonk studio skills may be available to the agent, but the client's bu
 
 ---
 
-# 1. Context
+# 1. Project Lifecycle
+
+Use the Admonk Project Lifecycle for substantial project work.
+
+Reusable source:
+
+- `docs/PROJECT-LIFECYCLE.md` from the Admonk agent system
+- `admonk-project-lifecycle` skill
+
+Project-local control files:
+
+- `docs/PROJECT-STATUS.md` — where the project is and what happens next
+- `docs/PROJECT-AUDIT.md` — reverse-lifecycle audit for an existing project
+- `docs/PROJECT-DECISIONS.md` — durable material decisions
+
+Lifecycle:
+
+```text
+00 Open
+→ 01 Discover
+→ 02 Align + Audit
+→ 03 Define
+→ 04 Content + Structure
+→ 05 Creative Direction
+→ 06 Design + Systemize
+→ 07 Build + Connect
+→ 08 Verify + Optimize
+→ 09 Review + Launch
+→ 10 Handoff + Learn
+```
+
+Phases may overlap where safe, but do not mark a gate approved while required decisions remain unresolved.
+
+When continuing a project, read `PROJECT-STATUS.md` first rather than restarting from the beginning.
+
+When auditing an existing site, preserve strong work and classify gaps as Complete / Partial / Missing / Conflicting / Not applicable.
+
+---
+
+# 2. Context
 
 Before substantial work, load only the relevant files:
 
+- Project state → `docs/PROJECT-STATUS.md`
 - Business / positioning → `docs/CLIENT-BUSINESS.md`
 - Brand strategy / visual identity / voice → `docs/BRAND-GUIDELINES.md`
 - Production design system / Style Sheet mapping → `docs/DESIGN-SYSTEM.md`
@@ -22,7 +62,7 @@ If the project has canonical live sources such as a Webflow `Style Sheet` page, 
 
 ---
 
-# 2. Authority
+# 3. Authority
 
 Use this priority:
 
@@ -40,7 +80,7 @@ Do not let a framework starter, AI default, or Admonk aesthetic override the cli
 
 ---
 
-# 3. Brand Alignment Gate
+# 4. Brand Alignment Gate
 
 Before substantial design, copy, component, or implementation work:
 
@@ -68,7 +108,7 @@ For Figma projects, normally inspect:
 
 ---
 
-# 4. Responsive-First Rule
+# 5. Responsive-First Rule
 
 Responsiveness is not a final adaptation pass.
 
@@ -92,7 +132,7 @@ Mobile should preserve the concept, hierarchy, usability, and brand rather than 
 
 ---
 
-# 5. Performance-By-Design Rule
+# 6. Performance-By-Design Rule
 
 Performance is part of the project from design through handoff.
 
@@ -113,7 +153,28 @@ Do not sacrifice a meaningful visual idea for a trivial synthetic score gain wit
 
 ---
 
-# 6. Core Rules
+# 7. Working Loop
+
+Within the current lifecycle phase:
+
+```text
+Read status
+→ identify next task/decision
+→ load required context
+→ do the work
+→ verify the result
+→ record material decisions/issues
+→ update status
+→ continue or request approval
+```
+
+Do not leave important state only in chat history.
+
+If a late change affects an earlier strategic/design/system decision, return to the earliest affected lifecycle phase and propagate the change forward rather than layering contradictory patches into production.
+
+---
+
+# 8. Core Rules
 
 - Do not make the client look like Admonk unless the client brief genuinely calls for it.
 - Preserve strong existing brand assets and systems.
@@ -124,11 +185,12 @@ Do not sacrifice a meaningful visual idea for a trivial synthetic score gain wit
 - Use the simplest technology that satisfies the requirement.
 - Test the real rendered experience before declaring implementation complete.
 - Record material project decisions in `docs/PROJECT-DECISIONS.md`.
+- Update `docs/PROJECT-STATUS.md` after material progress.
 - Treat responsive behavior and performance as continuous quality constraints.
 
 ---
 
-# 7. Delivery Standard
+# 9. Delivery Standard
 
 The final work should be:
 
@@ -141,5 +203,6 @@ The final work should be:
 - Technically sound.
 - Tested in the target environment.
 - Maintainable within the client's chosen platform/system.
+- Documented enough for the intended handoff owner.
 
-A page that visually matches the concept but ignores the client's system, breaks between breakpoints, or performs poorly is not complete.
+A page that visually matches the concept but ignores the client's system, breaks between breakpoints, performs poorly, or has not been verified in production is not complete.
