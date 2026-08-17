@@ -3,3 +3,10 @@ command = "npx"
 args = ["-y", "shadcn@latest", "mcp"]
 startup_timeout_sec = 30
 enabled = true
+
+[mcp_servers."21st"]
+url = "https://21st.dev/api/mcp"
+env_http_headers = { "x-api-key" = "API_KEY_21ST" }
+startup_timeout_sec = 30
+default_tools_approval_mode = "writes"
+enabled = true
