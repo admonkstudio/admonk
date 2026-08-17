@@ -1,6 +1,6 @@
 ---
 name: admonk-webflow
-description: Design, build, edit, integrate, and QA Admonk or client websites in Webflow. Use when working with the Webflow Designer, pages, elements, classes, variables, components, CMS, assets, forms, scripts/custom code, analytics, sitemap, site publishing, or site-level agent instructions. This skill preserves Admonk creative standards while treating Webflow as an implementation platform rather than a house style.
+description: Design, build, edit, integrate, and QA Admonk or client websites in Webflow. Use when working with the Webflow Designer, pages, elements, classes, variables, components, CMS, assets, forms, scripts/custom code, analytics, sitemap, site publishing, or site-level agent instructions. For substantial new Webflow production builds, evaluate and normally use the Admonk Lumos architecture skill unless the project already has a coherent framework. This skill preserves Admonk creative standards while treating Webflow as an implementation platform rather than a house style.
 ---
 
 # Admonk Webflow
@@ -235,6 +235,7 @@ Suitable examples:
 - CMS-specific procedures
 - Client-specific publishing rules
 - Project-local editing constraints
+- The project's Lumos version and project-specific Lumos deviations when Lumos is used
 
 Do not push Admonk's entire studio knowledge into every Webflow site.
 
@@ -277,6 +278,40 @@ Evaluate the published result, not only the Designer canvas.
 
 ---
 
+# 16. Lumos Architecture
+
+For a **substantial new Webflow production project** with no established framework, Lumos is the preferred Admonk starting architecture.
+
+Use:
+
+`.agents/skills/admonk-lumos/SKILL.md`
+
+Lumos should provide implementation discipline for:
+
+- Class naming
+- Utilities/combo classes
+- Variables
+- Typography/color systems
+- Fluid sizing/spacing
+- Grid/container systems
+- Components and slots
+- Page architecture
+- Responsive/state systems
+- Client handoff
+- Figma-to-Webflow system translation
+
+Admonk remains responsible for creative direction, composition, imagery, motion concept, storytelling, and client brand translation.
+
+Do not migrate an existing coherent Webflow system into Lumos automatically.
+
+For existing projects:
+
+> **Preserve the existing architecture unless migration has a clear maintainability/business benefit.**
+
+Because Lumos evolves, record the project's Lumos version and verify version-sensitive rules against current official documentation rather than memory.
+
+---
+
 # Final Rule
 
-> **Use Webflow's visual speed without inheriting Webflow's visual sameness.**
+> **Use Webflow's visual speed without inheriting Webflow's visual sameness. Use Lumos when it makes the implementation cleaner without making the design more generic.**
