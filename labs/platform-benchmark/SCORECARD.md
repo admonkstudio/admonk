@@ -50,6 +50,37 @@ Do not use a score without an observation explaining it.
 
 ---
 
+# Webflow-Specific Architecture Scores
+
+These do not apply to Figma/Astro. They exist to distinguish the capabilities of **Webflow itself** from the capabilities of the current AI/MCP integration.
+
+| Webflow Category | Score 1–5 | Evidence / Notes |
+|---|---:|---|
+| Native Designer utilization |  | How much structure/style was implemented through real Webflow capabilities? |
+| Native Style panel / CSS coverage |  | Did the agent avoid embedded CSS for properties Webflow already supports? |
+| Variables / modes usage |  | Were reusable values implemented through Webflow/Lumos variables? |
+| Lumos architecture quality |  | Classes, utilities, page structure, spacing, components, version discipline |
+| Native responsive implementation |  | Were Webflow/Lumos responsive capabilities used before custom media queries? |
+| Native component capability |  | Slots/properties/components used appropriately |
+| Native CMS/forms/settings usage |  | Did the implementation avoid unnecessary JS replacements? |
+| Native interaction usage |  | Where Webflow supports the motion, was it kept native? |
+| Custom-code necessity |  | 5 = code only beyond real Webflow limits; 1 = heavy avoidable code |
+| MCP coverage of Webflow |  | How much of Webflow's native capability can the agent directly operate? |
+| MCP limitation handling |  | Did the agent preserve native steps rather than bypass them with code? |
+| Designer maintainability |  | Can a professional/client continue editing without understanding hidden CSS/JS? |
+
+## Custom-Code Audit
+
+For every custom-code block used in the final Webflow benchmark, record:
+
+| Code / Purpose | CSS or JS | Native Webflow alternative checked? | Why native Webflow was insufficient | Keep / Replace |
+|---|---|---|---|---|
+|  |  |  |  |  |
+
+If Webflow supports the same implementation natively, the final decision should normally be **Replace**.
+
+---
+
 # Time / Iteration Evidence
 
 ## Figma
@@ -59,11 +90,24 @@ Do not use a score without an observation explaining it.
 - Manual corrections:
 - Major blockers:
 
-## Webflow
+## Webflow A — Raw / Pre-rule
 
 - Time to first useful direction:
 - Significant AI iterations:
 - Manual corrections:
+- Custom-code dependence:
+- Major blockers:
+
+This version is preserved as evidence but is not the professional final score when it violates Native Designer First.
+
+## Webflow B — Native-First + Lumos
+
+- Time to first useful direction:
+- Significant AI iterations:
+- Manual native Designer steps:
+- MCP limitations encountered:
+- Legitimate custom CSS required:
+- Legitimate custom JS/GSAP required:
 - Major blockers:
 
 ## Astro
@@ -98,6 +142,20 @@ Do not use a score without an observation explaining it.
 - 
 
 ## Astro weaknesses
+
+- 
+
+## Webflow MCP vs Webflow Platform
+
+### MCP can operate directly
+
+- 
+
+### Webflow supports natively but MCP cannot currently operate
+
+- 
+
+### Requires genuine custom-code extension
 
 - 
 
