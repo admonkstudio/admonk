@@ -38,3 +38,5 @@
 - Ready for assessment — not_assessed
 - Ready for quote — not_assessed
 - Ready for design — not_assessed
+
+<!-- deliberate Milestone 7 stale-SHA verification -->
