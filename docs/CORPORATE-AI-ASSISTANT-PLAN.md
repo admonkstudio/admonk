@@ -1,3 +1,13 @@
+# MIGRATED — Corporate AI Assistant Historical Planning
+
+**Canonical product repository:** `admonkstudio/corporate-ai-assistant`  
+**Canonical current docs:** `AGENTS.md`, `docs/PROJECT-STATUS.md`, `docs/TASKS.md`, `docs/PRODUCT.md`  
+**Historical recovery copy:** `admonkstudio/corporate-ai-assistant/docs/HISTORICAL-RECOVERY.md`
+
+This suite copy is retained only as migration/history evidence. Do not treat it as the current product source of truth.
+
+---
+
 # Corporate AI Assistant — Recovered Planning & Development Context
 
 **Status:** Under development / planning source of truth  
