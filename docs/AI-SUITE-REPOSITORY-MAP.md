@@ -12,3 +12,12 @@
 The suite layer coordinates. It does not override a specialist repository's product-specific execution contract.
 
 When a suite-level instruction conflicts with a specialist repository's current canonical rule, stop and resolve the conflict explicitly.
+
+
+## Corporate AI Assistant planning source
+
+Until a dedicated Corporate AI Assistant repository is identified or created, the recovered canonical planning context is:
+
+`docs/CORPORATE-AI-ASSISTANT-PLAN.md`
+
+This document consolidates historical Employee AI / Internal AI / Company Intelligence discussions from earlier Kalam planning.
