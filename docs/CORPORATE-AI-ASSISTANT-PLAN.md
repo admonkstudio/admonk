@@ -490,3 +490,29 @@ Before creating it, verify whether an existing Kalam/Admonk repository already c
 If no current repository exists, create a dedicated product repository and migrate this document into it as the starting planning record.
 
 Until then, this file is the recovered canonical planning source.
+
+
+## 16. Existing implementation verification
+
+A focused GitHub review was completed on 2026-09-21.
+
+### Evidence found
+
+Historical Kalam Digital Platform commits document the Employee AI architecture and roadmap:
+
+- `80e2f9ba3150ec7e824c57afef02fd371a7fb236` — Customer Agent Platform foundation; explicitly describes Employee AI as a later product and states that the work was documentation/foundation sequencing rather than Employee AI implementation.
+- `a49b9a954a71e3ae994ac78d8a583c7bf7b91142` — locked PF/CA/PD/EA roadmap; documents EA1 Employee AI Foundation and later intelligence layers.
+
+### Evidence not found
+
+Within the currently connected GitHub estate:
+- no dedicated Corporate/Employee AI repository was identified;
+- no Employee AI / Internal AI / Company Intelligence implementation branch was found in `kalamcx/kalam-digital-platform`;
+- current branch naming is Customer AI/reconstruction focused;
+- no active default-branch Corporate AI Assistant implementation was found.
+
+### Current conclusion
+
+The recoverable state is **planning + reusable architectural foundations**, not a verified Corporate AI Assistant implementation.
+
+This conclusion is limited to currently connected GitHub repositories. Local/unconnected/private work must still be checked before declaring that no implementation exists anywhere.
