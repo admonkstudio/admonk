@@ -28,6 +28,9 @@ Intended responsibilities:
 
 Repository: **TBD — dedicated repository not yet identified/created.**
 
+Recovered planning source:
+`docs/CORPORATE-AI-ASSISTANT-PLAN.md`
+
 The Corporate AI Assistant must not silently become the owner of specialist product data. It should call specialist systems through governed interfaces.
 
 ### 2. Support Platform / Ask Kalam
