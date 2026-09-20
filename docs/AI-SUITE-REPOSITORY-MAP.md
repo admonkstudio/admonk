@@ -3,7 +3,7 @@
 | Product / Layer | Repository | Role | Current State | Canonical Authority |
 |---|---|---|---|---|
 | Admonk shared studio / suite coordination | `admonkstudio/admonk` | shared methods, suite boundaries, cross-product contracts | Active | root `AGENTS.md` + `docs/AI-SUITE.md` |
-| Corporate AI Assistant | TBD | company brain / orchestration | Repository not yet identified | future repository `AGENTS.md` |
+| Corporate AI Assistant | `admonkstudio/corporate-ai-assistant` | company brain / orchestration | CAI-P0 Recovery & Scope Freeze | repository `AGENTS.md` + canonical docs |
 | Support Platform / Ask Kalam | `kalamcx/kalam-digital-platform` | AI Customer Resolution Platform | M0 reconstruction | repository `AGENTS.md` + canonical docs |
 | Marketing Hub | `admonkstudio/marketing-hub` | marketing operating/intelligence system | PDISC discovery | repository `AGENTS.md` + canonical docs |
 
@@ -16,8 +16,15 @@ When a suite-level instruction conflicts with a specialist repository's current 
 
 ## Corporate AI Assistant planning source
 
-Until a dedicated Corporate AI Assistant repository is identified or created, the recovered canonical planning context is:
+Canonical product-specific planning now lives in:
 
-`docs/CORPORATE-AI-ASSISTANT-PLAN.md`
+`admonkstudio/corporate-ai-assistant`
 
-This document consolidates historical Employee AI / Internal AI / Company Intelligence discussions from earlier Kalam planning.
+Read:
+- `AGENTS.md`
+- `docs/PROJECT-STATUS.md`
+- `docs/TASKS.md`
+- `docs/PRODUCT.md`
+- `docs/HISTORICAL-RECOVERY.md`
+
+The older recovery files in this suite repository are retained as migration/history evidence only.
