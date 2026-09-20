@@ -10,7 +10,9 @@ products:
   corporate_ai_assistant:
     role: company-wide brain and orchestration
     repository: null
-    repository_status: TBD
+    proposed_repository: admonkstudio/corporate-ai-assistant
+    repository_status: planning-only; no dedicated implementation found in connected GitHub
+    planning_source: admonkstudio/admonk/docs/CORPORATE-AI-ASSISTANT-PLAN.md
     authority: future product repository
   support_platform:
     role: support/customer-resolution arm
