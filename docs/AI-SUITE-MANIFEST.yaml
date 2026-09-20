@@ -4,16 +4,15 @@ suite:
   coordination_repository: admonkstudio/admonk
   github_project:
     name: Admonk AI Suite
-    status: pending-manual-creation
+    status: active
 
 products:
   corporate_ai_assistant:
     role: company-wide brain and orchestration
-    repository: null
-    proposed_repository: admonkstudio/corporate-ai-assistant
-    repository_status: planning-only; no dedicated implementation found in connected GitHub
-    planning_source: admonkstudio/admonk/docs/CORPORATE-AI-ASSISTANT-PLAN.md
-    authority: future product repository
+    repository: admonkstudio/corporate-ai-assistant
+    repository_status: active planning; CAI-P0 Recovery & Scope Freeze
+    planning_source: admonkstudio/corporate-ai-assistant/docs/PROJECT-STATUS.md
+    authority: product repository
   support_platform:
     role: support/customer-resolution arm
     repository: kalamcx/kalam-digital-platform
