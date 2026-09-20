@@ -26,10 +26,10 @@ Intended responsibilities:
 - company-level alerts, summaries and decision support;
 - tool routing across approved company systems.
 
-Repository: **TBD — dedicated repository not yet identified/created.**
+Repository:
+`admonkstudio/corporate-ai-assistant`
 
-Recovered planning source:
-`docs/CORPORATE-AI-ASSISTANT-PLAN.md`
+Canonical product planning now lives in that repository. Historical recovery material in this suite repository is retained only as migration/history evidence.
 
 The Corporate AI Assistant must not silently become the owner of specialist product data. It should call specialist systems through governed interfaces.
 
@@ -193,7 +193,7 @@ Cross-product actions require explicit authorization, auditability, and source o
 
 1. Preserve the existing Support Platform reconstruction without interference.
 2. Continue Marketing Hub discovery and provider/evidence verification.
-3. Identify or create the Corporate AI Assistant repository.
+3. Continue Corporate AI Assistant CAI-P0 scope freeze in its dedicated repository.
 4. Define the minimum shared tenant/user/app-to-app contract only when concrete integration work begins.
 5. Create the cross-repository GitHub Project board when UI/admin access is available.
 6. Avoid premature shared runtime packages.
