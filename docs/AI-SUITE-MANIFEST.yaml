@@ -1,0 +1,48 @@
+suite:
+  name: Admonk AI Suite
+  owner: Admonk Studio
+  coordination_repository: admonkstudio/admonk
+  github_project:
+    name: Admonk AI Suite
+    status: pending-manual-creation
+
+products:
+  corporate_ai_assistant:
+    role: company-wide brain and orchestration
+    repository: null
+    repository_status: TBD
+    authority: future product repository
+  support_platform:
+    role: support/customer-resolution arm
+    repository: kalamcx/kalam-digital-platform
+    product_category: AI Customer Resolution Platform
+    active_branch: reconstruction/prelaunch
+    active_milestone: M0 — Freeze & Establish Source of Truth
+    authority: product repository
+  marketing_hub:
+    role: marketing arm
+    repository: admonkstudio/marketing-hub
+    active_milestone: PDISC — Product Discovery through Kalam 2027 Strategy
+    authority: product repository
+    analytics_boundary: analytics is a core Marketing Hub layer
+
+shared_contracts:
+  status: planned
+  areas:
+    - tenant_identity
+    - user_identity_rbac
+    - app_to_app_auth
+    - audit_event_envelope
+    - provenance
+    - data_sensitivity
+    - tool_api_invocation
+    - cross_product_navigation
+    - notification_event_contract
+    - release_version_metadata
+
+rules:
+  - specialist products remain authoritative for their domains
+  - no direct cross-product database writes
+  - no monorepo migration during current reconstruction/discovery
+  - shared skills only for genuinely cross-product concerns
+  - product-specific AGENTS.md governs work inside its repository
