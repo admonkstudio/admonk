@@ -503,3 +503,28 @@ Every agent working with Admonk should optimize for:
 The goal is not to produce more work.
 
 The goal is to produce better work.
+
+
+---
+
+# 20. Admonk AI Suite
+
+Admonk also coordinates a specialist AI product family:
+
+- Corporate AI Assistant — company brain/intelligence layer.
+- Support Platform / Ask Kalam — support/customer-resolution arm.
+- Marketing Hub — marketing arm.
+
+For cross-product work, read:
+
+`docs/AI-SUITE.md`
+
+`docs/AI-SUITE-REPOSITORY-MAP.md`
+
+and use:
+
+`.agents/skills/admonk-ai-suite/SKILL.md`
+
+Important: this repository coordinates shared suite rules. Each specialist application's own repository remains authoritative for its product-specific milestones, security, architecture, data model and implementation.
+
+Do not merge the products into one codebase or share runtime data stores merely for organizational convenience.
