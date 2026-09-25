@@ -147,3 +147,38 @@ This remains a hypothesis to validate through:
 - future concrete cross-product contracts.
 
 No implementation is authorized by this document.
+
+
+## 7. Reusable specialist-product pattern
+
+The emerging pattern is not "custom-build one app per client."
+
+Instead, each mature specialist product should be reusable across organizations and configured per tenant.
+
+A common high-level product chassis may include:
+- **Setup** — tenant, users, roles, connectors, modules, permissions, agents;
+- **Knowledge / Training** — policies, SOPs, domain documentation, instructions, templates and approved context;
+- **Conversations / Review** — human-agent interactions, outputs, approvals, actions and audit;
+- **Analytics** — domain outcomes, operational performance, agent quality and connector/data health.
+
+Each specialist product then adds its own domain model.
+
+Examples:
+- Marketing Hub adds strategy, KPIs, campaigns, content, marketing tasks, evidence and channel analytics.
+- Support Platform adds conversations, cases, resolution workflows, support knowledge, SLAs and verified outcomes.
+
+The shared chassis should not erase these domain differences.
+
+### Connector principle
+
+Connectors should match the domain's work:
+- Marketing may connect website, analytics, social, comments/messages, advertising, email/automation, Drive, calendar and planning/request systems.
+- Support may connect support channels, tickets, messaging and customer-resolution systems.
+
+When a channel crosses domains, route by ownership. For example, social engagement may begin in Marketing, but a genuine support case should hand off to Support through a governed contract.
+
+### Productization implication
+
+A future company may subscribe to one or more reusable specialist products and optionally connect them to the standalone Corporate AI Assistant.
+
+The Corporate AI Assistant becomes more valuable as governed specialist products are connected, while each specialist product remains independently useful.
