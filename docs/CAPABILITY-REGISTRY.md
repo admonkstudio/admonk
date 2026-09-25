@@ -128,7 +128,18 @@ Lumos is an implementation architecture, not creative direction.
 
 ---
 
-## 8. Operations
+## 8. Product / App Supervision
+
+| Capability | Status | Owner |
+|---|---|---|
+| Product / app supervision | Active | `admonk-product-supervisor` |
+| Lifecycle stage gates | Active | `docs/PRODUCT-SUPERVISOR.md` |
+| Launch / scale readiness | Active | `admonk-product-supervisor` + specialist production skills |
+| Periodic product/technical health audit | Active | `admonk-product-supervisor` |
+
+---
+
+## 9. Operations
 
 | Capability | Status | Notes |
 |---|---|---|
@@ -142,7 +153,7 @@ Lumos is an implementation architecture, not creative direction.
 
 ---
 
-## 9. Client Portability
+## 10. Client Portability
 
 The reusable system is governed by:
 
@@ -155,7 +166,7 @@ Reusable studio knowledge may be promoted back into Admonk only when it is gener
 
 ---
 
-## 10. Evaluation Lab
+## 11. Evaluation Lab
 
 Controlled platform benchmark:
 
@@ -174,7 +185,7 @@ The benchmark should later expand when a real question justifies another environ
 
 ---
 
-## 11. Skill Intake Rules
+## 12. Skill Intake Rules
 
 Before adding an external skill or permanent capability:
 
