@@ -182,3 +182,51 @@ When a channel crosses domains, route by ownership. For example, social engageme
 A future company may subscribe to one or more reusable specialist products and optionally connect them to the standalone Corporate AI Assistant.
 
 The Corporate AI Assistant becomes more valuable as governed specialist products are connected, while each specialist product remains independently useful.
+
+
+## 8. Shared onboarding shell hypothesis
+
+A potentially reusable cross-product element is the **onboarding shell**, not the full department setup semantics.
+
+Candidate shared onboarding capabilities:
+- organization/company details;
+- department/workspace creation;
+- user invitation;
+- role/membership assignment;
+- connector ownership/consent;
+- communication preferences;
+- resumable/skippable setup;
+- setup progress/completeness;
+- final review/activation;
+- audit/version record of activated configuration.
+
+Each specialist product should then provide its own domain onboarding sections.
+
+For Marketing Hub, domain onboarding includes:
+- marketing strategy;
+- KPIs/targets;
+- request/work intake;
+- evidence sources;
+- marketing tools/connectors;
+- workflows/approvals;
+- agent capabilities.
+
+For Support Platform, the equivalent domain setup may include:
+- support knowledge;
+- channels;
+- case/resolution rules;
+- SLAs;
+- escalation;
+- support-specific agents.
+
+### Shared-shell principle
+Prefer:
+**shared onboarding mechanics + specialist domain configuration**
+
+Not:
+**one universal questionnaire that assumes every department operates the same way**.
+
+### Activation-plan principle
+A specialist product may use onboarding inputs to generate a proposed initial operating configuration/plan. That proposal remains pending until an authorized human approves it.
+
+Activation should create an auditable versioned configuration baseline.
