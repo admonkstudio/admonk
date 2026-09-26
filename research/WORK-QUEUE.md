@@ -9,7 +9,7 @@ This queue tracks the decision-sized research work required to populate and lock
 
 | Order | Artifact / decision | Mode | Status |
 |---:|---|---|---|
-| 1 | Product principles / product-definition doctrine | Document Population Research | NEXT |
+| 1 | Product principles / product-definition doctrine | Document Population Research | AWAITING Q1 |
 | 2 | Premium product-quality doctrine | Document Population Research | Pending |
 | 3 | Engineering simplicity doctrine | Document Population Research | Pending |
 | 4 | Security/privacy baseline doctrine | Document Population Research | Pending |
