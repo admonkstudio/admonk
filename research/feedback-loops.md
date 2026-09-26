@@ -166,3 +166,41 @@ product outcome
 Instrument only what answers a current validated question or closes a current decision loop.
 
 Do not treat one metric as causal truth merely because it correlates with an outcome.
+
+
+## AI evaluation operating rule
+
+Approved direction:
+`research/synthesis/R016-ai-evaluation-regression-baseline.md`
+
+For each material AI/agent capability:
+
+1. define the intended outcome and unacceptable failures;
+2. maintain a small representative regression seed for critical dependable behavior;
+3. run only the relevant regression subset when a material AI behavior change occurs;
+4. prefer deterministic outcome checks before rules, model graders or human review;
+5. evaluate trajectories only when process/tool/permission/cost behavior materially matters;
+6. add privacy-safe real failures and meaningful edge cases back into regression;
+7. increase trials only when variance or consequence justifies the extra cost;
+8. track evaluation token/model/tool/runtime cost.
+
+### Evaluation loop
+
+```text
+critical behavior / known failure
+→ representative eval case
+→ candidate change
+→ relevant regression run
+→ quality / permission / cost comparison
+→ release decision
+→ production observation
+→ new failure/edge case
+→ regression update
+```
+
+Capability suites explore what the agent may learn to do.
+Regression suites protect what the product already depends on.
+
+Evaluation infrastructure must remain provider-neutral at the governance layer.
+
+Do not let evaluation spend bypass the same unit-economics discipline applied to production AI.
