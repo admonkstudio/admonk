@@ -83,7 +83,7 @@ Do not select tools because a platform supports more features. Capability and ar
 7. **M2-07 Settings inheritance/overrides — LOCKED**
 8. **M2-08 Shared onboarding shell — LOCKED**
 9. **M2-09 Connector + credential ownership — LOCKED**
-10. Knowledge/context hierarchy
+10. **M2-10 Knowledge/context hierarchy — LOCKED**
 11. AI/agent capability authorization + approvals
 12. Audit/provenance/event model
 13. Notification/communication preferences
@@ -527,5 +527,25 @@ Status: **OWNER DIRECTION RECORDED — M2-09 NOT YET LOCKED.**
 - connection reuse never means credential disclosure to consuming products.
 
 **Accepted cost:** Admonk One/shared platform must maintain reusable ingestion/sync and governed data contracts, but this prevents repeated provider integrations and enables efficient cross-product intelligence.
+
+**Status:** LOCKED.
+
+
+## Locked decision — M2-10 Federated Permission-Aware Context Plane
+
+**Decision:** Keep approved knowledge, structured operational data, operational memory, and temporary task/conversation context as distinct context classes. Use shared context metadata and governed retrieval/composition without moving all domain truth into one central store.
+
+Rules:
+- context is scoped by tenant, organizational scope, product/domain, and narrower user/task context where needed;
+- specialist products remain authoritative for their domain semantics and canonical sources;
+- Admonk One may maintain a context registry describing ownership, scope, class, authority, provenance, freshness, sensitivity and availability;
+- Corporate Brain composes only context permitted for the acting user/agent and does not become owner of specialist-domain truth;
+- access controls and source restrictions are applied before/at retrieval;
+- historical versions/effective periods are preserved;
+- applicability uses authority + scope + specificity + effective period, with unresolved conflicts surfaced;
+- private, draft or AI-derived context is not promoted to approved company knowledge automatically;
+- retrieval indexes are supporting infrastructure, not the source of truth.
+
+**Accepted cost:** shared context contracts/registry and governed retrieval composition instead of a single central knowledge store.
 
 **Status:** LOCKED.
