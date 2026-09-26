@@ -10,8 +10,8 @@ This queue tracks the decision-sized research work required to populate and lock
 | Order | Artifact / decision | Mode | Status |
 |---:|---|---|---|
 | 1 | Product principles / product-definition doctrine | Document Population Research | LOCKED |
-| 2 | Premium product-quality doctrine | Document Population Research | AWAITING Q1 |
-| 3 | Engineering simplicity doctrine | Document Population Research | Pending |
+| 2 | Premium product-quality doctrine | Document Population Research | LOCKED |
+| 3 | Engineering simplicity doctrine | Document Population Research | ACTIVE |
 | 4 | Security/privacy baseline doctrine | Document Population Research | Pending |
 | 5 | AI autonomy/agent authority doctrine | Document Population Research | Pending |
 | 6 | Operations/reliability doctrine | Document Population Research | Pending |
