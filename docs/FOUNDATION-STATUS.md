@@ -33,7 +33,7 @@
 
 ## Current work
 
-Execute `research/WORK-QUEUE.md` using the Research Operating Protocol. Current next item: Product principles / product-definition doctrine.
+Priority 1–3 research items R001–R016 are complete/locked. Current checkpoint: owner acceptance of the retroactive Decision Cost audit for R001–R006. Priority 4 tool decisions must not begin until this checkpoint is accepted.
 
 ## FOUNDATION-M1 remaining gate
 
