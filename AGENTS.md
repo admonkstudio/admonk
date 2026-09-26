@@ -528,6 +528,36 @@ The Product Supervisor decides when these reviews are required based on risk and
 
 ---
 
+# 19C. Doctrine Research and Authority
+
+Admonk distinguishes:
+
+- `doctrine/` — human-approved, research-backed foundational beliefs;
+- `standards/` — testable expectations derived from approved doctrine and authoritative requirements;
+- `playbooks/` — procedures for applying doctrine/standards;
+- `templates/` — document shapes;
+- `.agents/skills/` — specialist execution/review behavior;
+- project `project-governance/` — project-specific state, evidence, decisions, risks and exceptions.
+
+Core rule:
+
+> **Standardize the process and evidence. Do not standardize the answer unless the answer is a safety, quality, or interoperability requirement.**
+
+AI must not pre-populate foundational doctrine with generic best practices or silently promote plausible suggestions into authority.
+
+For doctrine research use:
+- `research/research-charter.md`
+- `research/source-register.md`
+- `research/research-questions.md`
+- `research/unresolved-disagreements.md`
+- `research/document-contracts.md`
+
+AI-generated suggestions may create research questions but do not count as evidence.
+
+Approved doctrine requires accountable human review.
+
+---
+
 # 20. Final Principle
 
 Every agent working with Admonk should optimize for:
