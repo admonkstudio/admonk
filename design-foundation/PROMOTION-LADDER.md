@@ -1,70 +1,42 @@
 # Design Foundation — Promotion Ladder
 
-**Status:** Governance scaffold, not design doctrine  
-**Purpose:** Prevent local product solutions from becoming shared Admonk standards before reuse is proven.
+**Status:** APPROVED GOVERNANCE  
+**Approved:** 2026-09-26  
+**Canonical policy:** `component-promotion-policy.md`
 
 ## Promotion path
 
 ```text
-Local experiment
-    ↓
-Repeated local pattern
-    ↓
-Domain pattern
-    ↓
-Proven cross-product pattern
-    ↓
-Foundation candidate
-    ↓
-Approved foundation rule/component
+Local
+→ Candidate
+→ Trial
+→ Stable
+→ Deprecated
 ```
 
-## Promotion evidence
+Promotion is evidence-gated and proportional to the maintenance/compatibility obligation Admonk accepts.
 
-A pattern/component should not move upward merely because it looks reusable.
+## Layer progression
 
-Promotion should normally require evidence that:
-- more than one real use case exists;
-- semantics are stable;
-- interaction behavior is stable;
-- product-specific assumptions are identified and removed or intentionally retained at a lower layer;
-- accessibility behavior is validated;
-- responsive/input-mode behavior is validated;
-- ownership is clear;
-- documentation exists;
-- appropriate tests/evidence exist;
-- central maintenance provides more value than local duplication.
+A Stable asset may remain product- or domain-owned.
 
-## Layer rules
+Cross-product Foundation promotion is a separate decision and requires:
+- real cross-product consumers;
+- matching semantics and interaction model;
+- compatible context/density assumptions;
+- matching accessibility obligations;
+- lower total maintenance cost centrally;
+- no material loss of product differentiation.
 
-### Local experiment
-Product-specific and intentionally provisional.
+## Important rules
 
-### Repeated local pattern
-Used more than once inside one product. Still product-owned.
-
-### Domain pattern
-Reusable across several workflows in the same domain, but may still encode domain semantics.
-
-### Proven cross-product pattern
-Observed across distinct real products with genuinely matching semantics, behavior and context needs.
-
-### Foundation candidate
-Proposed for shared Admonk governance. Must undergo review against research-backed Design Foundation doctrine/standards.
-
-### Approved foundation rule/component
-Shared, versioned, documented and owned.
-
-## Demotion / deprecation
-
-A shared item may be demoted or deprecated if:
-- product needs diverge;
-- the shared abstraction accumulates incompatible variants;
-- accessibility/responsive behavior becomes harder to maintain centrally;
-- only one real consumer remains;
-- local implementation becomes clearer or safer;
-- ownership disappears.
+- Local is the default.
+- Promotion is never required merely because something appears reusable.
+- Trial makes uncertainty and change risk explicit.
+- Stable is a maintenance/compatibility promise.
+- Earlier centralization is allowed only for documented cross-product accessibility, navigation, recovery, or interoperability needs.
+- Shared assets may be demoted/deprecated when the economics or semantics stop supporting central ownership.
 
 ## Core rule
 
-> **Shared design assets must earn promotion through evidence; they are not promoted by resemblance.**
+> **Shared assets earn promotion through evidence and accepted ownership cost, not resemblance.**
