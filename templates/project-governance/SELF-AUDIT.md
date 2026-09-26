@@ -21,7 +21,7 @@ A small internal web app where:
 |---|---|---|---|
 | Stage detection | Starts at PS-0 |  |  |
 | Question discipline | Asks only high-value missing questions |  |  |
-| Minimum artifacts | Produces only Product Brief, MVP/Capability Spec, Architecture & Risk Brief, Project State before build |  |  |
+| Progressive artifacts | Low-risk BriefFlow can begin from one Prototype Definition; separate artifacts appear only when complexity/risk/maturity justifies them |  |  |
 | Critical unknown | Blocks build when a critical auth/data/security decision is unresolved |  |  |
 | Low-risk baseline | Does not invent enterprise governance |  |  |
 | Connector escalation | CMS read does not automatically become publish permission |  |  |

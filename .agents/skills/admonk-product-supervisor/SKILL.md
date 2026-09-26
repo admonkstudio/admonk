@@ -117,11 +117,11 @@ A project may use Prototype governance during controlled discovery/staging and P
 
 ## Mandatory build gate
 
-Before production implementation, verify the minimum viable Product Supervisor artifacts:
-- Product Brief
-- MVP / Capability Specification
-- Architecture & Risk Brief
-- lightweight Project State
+Require the minimum Product Supervisor **information**, not a fixed document count.
+
+A low-risk Prototype may use one compact Prototype Definition. Split Product Brief, MVP/Capability Spec, Architecture & Risk Brief and Project State only when scope, risk, duration or maturity makes them useful.
+
+Before a real Production release, the relevant durable product, capability, architecture/risk and state information must exist in clear canonical form.
 
 Do not begin implementation while critical product/data/authorization questions remain open.
 

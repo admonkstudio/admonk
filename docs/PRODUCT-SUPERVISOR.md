@@ -440,45 +440,37 @@ Artifacts are created when the project reaches the stage that needs them.
 
 ### Minimum viable Product Supervisor — before implementation
 
-Every serious product must have at minimum:
+The gate requires the **information**, not a fixed number of files.
 
-1. **Product Brief**
-   - target user;
-   - problem;
-   - desired outcome;
-   - business/value hypothesis;
-   - MVP scope;
-   - explicit non-goals.
+For a low-risk Prototype, one compact **Prototype Definition** may combine:
+- target user/problem and supporting evidence;
+- desired outcome / learning goal;
+- smallest coherent scope and explicit non-goals;
+- critical journey / acceptance evidence;
+- basic architecture/data/integration approach;
+- material risks and unresolved assumptions;
+- current state and accountable owner.
 
-2. **MVP / Capability Specification**
-   - jobs-to-be-done;
-   - primary flows;
-   - roles/permissions;
-   - core capabilities;
-   - acceptance criteria;
-   - important edge cases.
+Split dedicated artifacts only when scope, risk, duration or maturity makes the separation useful:
 
-3. **Architecture & Risk Brief**
-   - chosen stack;
-   - core entities/data ownership;
-   - identity/authorization;
-   - integrations/actions;
-   - sensitive data;
-   - environments/secrets;
-   - major trade-offs;
-   - known scale path.
+1. **Product Brief** — when product/value/scope decisions need durable standalone authority.
+2. **MVP / Capability Specification** — when capabilities, roles, flows, edge cases or acceptance criteria become too complex for the combined record.
+3. **Architecture & Risk Brief** — when architecture, security, sensitive data, integrations/actions, environments or expensive boundaries require dedicated treatment.
+4. **Project State** — when ongoing milestones/stage/status need a separate current-state record.
 
-The project should also maintain a lightweight **Project State** file from the beginning.
+Before a real Production release, the relevant durable product, capability, architecture/risk and state information must exist in clear canonical form even if it began in one Prototype Definition.
 
 ### Build Readiness Gate
 
 Implementation may begin only when:
-- the three minimum artifacts exist;
+- the minimum required information for the current governance level exists in canonical form;
 - major assumptions are visible;
-- the first milestone has acceptance criteria;
+- the first milestone has acceptance criteria / learning evidence;
 - critical authorization/data/security questions are not unresolved;
 - the architecture is intentionally small enough for the current stage;
 - an accountable owner approves the build scope.
+
+Do not create separate files merely to satisfy the gate.
 
 ## 16. Decision, assumption and debt records
 
