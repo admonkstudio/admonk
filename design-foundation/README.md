@@ -104,3 +104,23 @@ A technically reusable component may still be wrong for another product because 
 - product-specific context.
 
 Shared reuse requires contextual fit, not only technical compatibility.
+
+
+## Approved maturity direction
+
+R008 approved:
+**Progressive evidence-gated maturity.**
+
+Current target: **Level 1 — Foundation rules**.
+
+Marketing Hub may create product-owned **Local**, **Candidate**, or approved **Trial** assets as real product needs emerge.
+
+Do not promote those assets into the shared Design Foundation merely to avoid temporary duplication.
+
+Shared **Stable** status is earned through proven semantics/behavior, ownership, documentation, tests and relevant accessibility/responsive evidence.
+
+Asset lifecycle:
+`Local → Candidate → Trial → Stable → Deprecated`
+
+See:
+`../research/design-system-maturity-model.md`
