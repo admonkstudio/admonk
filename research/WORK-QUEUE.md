@@ -36,7 +36,7 @@ This is a focused audit, not a full re-research. Reopen a decision only when the
 | 7 | Shared vs product-specific design behavior | Document Population Research | LOCKED |
 | 8 | Design-system maturity direction | Choice / Direction Research | LOCKED |
 | 9 | Token architecture direction | Choice / Direction Research | LOCKED |
-| 10 | Component promotion policy | Document Population Research | ACTIVE |
+| 10 | Component promotion policy | Document Population Research | AWAITING Q1 + COST ACCEPTANCE |
 | 11 | Design/code/Figma drift policy | Choice / Direction Research | Pending |
 
 ## Priority 3 — Standards / feedback loops
