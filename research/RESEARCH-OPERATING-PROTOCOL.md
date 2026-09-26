@@ -15,7 +15,9 @@ The working loop is:
 Research
 → compare two credible directions/resources
 → challenge both
-→ synthesize the Admonk direction
+→ identify the price of each decision
+→ test whether synthesis creates a hybrid penalty
+→ choose / layer / condition / synthesize
 → ask one simple directional question when owner input is required
 → approve / revise
 → lock the artifact or decision
@@ -62,9 +64,12 @@ Process:
    - applicability to Admonk;
    - applicability to low-budget start → scalable growth;
    - AI-assisted-development implications.
-7. Produce a proposed **Admonk synthesis** rather than copying either source.
-8. Use Q1 only for decisions that genuinely require product-owner judgment.
-9. After approval, populate the canonical document and mark the decision locked/versioned.
+7. Classify the result as **Dominant / Layered / Conditional / True Hybrid / Defer** using `research/DECISION-COST-FRAMEWORK.md`.
+8. Record the cost and residual problem of the recommended direction.
+9. If combining approaches, run the Synthesis Compatibility Check and identify any Hybrid Penalty.
+10. Produce the Admonk direction only after the total-system cost is understood.
+11. Use Q1 only for decisions that genuinely require product-owner judgment or explicit acceptance of a material trade-off.
+12. After approval, populate the canonical document and mark the decision locked/versioned.
 
 ### Important
 Do not manufacture false disagreement.
@@ -104,18 +109,20 @@ Process:
    - fit with current Admonk architecture;
    - exit path.
 4. Challenge both.
-5. State:
+5. Complete the Decision Cost Ledger for the serious candidates.
+6. If recommending a combination, run the Synthesis Compatibility Check.
+7. State:
    - what each is best for;
    - where each fails;
    - which direction is recommended and why.
-6. Ask a Q1 only when owner preference/strategy materially changes the decision.
-7. Record outcome:
+8. Ask a Q1 when owner preference/strategy or acceptance of a material cost changes the decision.
+9. Record outcome:
    - Adopt now
    - Adopt conditionally
    - Pilot
    - Defer
    - Reject
-8. Lock the decision and continue.
+10. Lock the decision and continue.
 
 ---
 
@@ -198,6 +205,24 @@ Every research comparison should test:
 
 ---
 
+## Decision cost / hybrid penalty
+
+Every material recommendation must expose:
+- benefit gained;
+- price paid;
+- residual problem;
+- new problem introduced;
+- who pays the cost;
+- when the cost appears;
+- containment/revisit trigger.
+
+Use:
+`research/DECISION-COST-FRAMEWORK.md`
+
+Do not assume a synthesis is superior merely because it contains attractive elements from both sources.
+
+---
+
 # 4. Research output format
 
 Keep the owner-facing output concise.
@@ -209,7 +234,10 @@ What the two sources/directions say.
 Where each succeeds/fails.
 
 ## Admonk direction
-The synthesized recommendation.
+The recommendation, classified as Dominant / Layered / Conditional / True Hybrid / Defer.
+
+## Decision price
+What benefit is gained, what cost is accepted, what problem remains, and whether a hybrid penalty exists.
 
 ## Q1
 Only if owner input is required.
