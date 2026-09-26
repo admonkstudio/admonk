@@ -22,7 +22,7 @@ Before FOUNDATION-M1 is locked:
 
 | Item | Mode | Status |
 |---|---|---|
-| Retroactive decision-cost audit for R001–R006 | Decision Cost Review | AWAITING COST ACCEPTANCE |
+| Retroactive decision-cost audit for R001–R006 | Decision Cost Review | ACCEPTED |
 
 Purpose:
 Re-test previously locked doctrine decisions under `research/DECISION-COST-FRAMEWORK.md` so earlier syntheses are not grandfathered past the new trade-off gate.
@@ -53,21 +53,22 @@ This is a focused audit, not a full re-research. Reopen a decision only when the
 
 Tool choices begin only after the corresponding capability need is evidenced.
 
-Candidate decisions include:
-- component workbench/documentation;
-- visual regression;
-- accessibility automation;
-- secret scanning;
-- static analysis;
-- dependency/supply-chain checks;
-- API contract validation;
-- migration validation;
-- error monitoring;
-- feature flags;
-- AI evaluation/tracing;
-- model/token cost monitoring.
+| Order | Tool capability decision | Mode | Status |
+|---:|---|---|---|
+| 17 | Component workbench / documentation | Choice / Direction Research | DECIDED — ADOPT CONDITIONALLY (Storybook) |
+| 18 | Visual regression | Choice / Direction Research | ACTIVE |
+| 19 | Accessibility automation | Choice / Direction Research | Pending |
+| 20 | Secret scanning | Choice / Direction Research | Pending |
+| 21 | Static analysis | Choice / Direction Research | Pending |
+| 22 | Dependency / supply-chain checks | Choice / Direction Research | Pending |
+| 23 | API contract validation | Choice / Direction Research | Pending |
+| 24 | Migration validation | Choice / Direction Research | Pending |
+| 25 | Error monitoring | Choice / Direction Research | Pending |
+| 26 | Feature flags | Choice / Direction Research | Pending |
+| 27 | AI evaluation / tracing | Choice / Direction Research | Pending |
+| 28 | Model / token cost monitoring | Choice / Direction Research | Pending |
 
-Each uses Mode B and ends in:
+Each ends in:
 Adopt now / Adopt conditionally / Pilot / Defer / Reject.
 
 ## Q1 rule
