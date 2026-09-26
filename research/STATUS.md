@@ -20,6 +20,8 @@
 - [x] Create evidence-note / competing-framework / synthesis / proposed-doctrine workspaces.
 - [x] Create doctrine / standards / playbooks authority shells.
 - [x] Create Design Foundation research scaffold and document contracts.
+- [x] Add Design Foundation promotion ladder and do-not-standardize scope boundaries.
+- [x] Add design drift and maturity-model research scaffolds.
 - [x] Create capability-discovery and tool-evaluation tracks.
 - [x] Create architecture-impact and feedback-loop research structures.
 - [x] Establish current Admonk capability coverage baseline.
