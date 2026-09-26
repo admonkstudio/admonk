@@ -1,7 +1,7 @@
 # Retroactive Decision-Cost Audit — R001–R006
 
 **Date:** 2026-09-26  
-**Status:** AWAITING OWNER COST ACCEPTANCE  
+**Status:** ACCEPTED — product-owner confirmed 2026-09-26  
 **Scope:** Previously locked Foundation doctrine decisions R001–R006  
 **Method:** `research/DECISION-COST-FRAMEWORK.md`
 
@@ -298,3 +298,12 @@ During BriefFlow and Marketing Hub validation, explicitly test whether:
 - AI/token/tool economics remain visible.
 
 If those validations fail, reopen the relevant doctrine rather than adding more process around it.
+
+
+## Owner acceptance
+
+**Confirmed:** 2026-09-26
+
+The product owner accepted the consolidated costs for R001–R006 and confirmed that all six decisions remain locked.
+
+The cumulative governance-complexity risk remains a mandatory validation target for BriefFlow and Marketing Hub.
