@@ -76,7 +76,7 @@ Do not select tools because a platform supports more features. Capability and ar
 
 1. **M2-01 Repository, code reuse and shared-package boundary — LOCKED**
 2. **M2-02 Tenant/company identity model — LOCKED**
-3. User + membership model
+3. **M2-03 User + membership model — LOCKED**
 4. Organization roles vs product/domain roles
 5. Effective-permission precedence
 6. Product/module entitlements
@@ -166,5 +166,51 @@ Tenant / Customer Organization
 - Marketing Hub, Corporate AI and Recruitment challenge those extracted contracts before they are treated as universally shared.
 
 **Accepted cost:** slightly richer identity/context than a flat tenant model, in exchange for supporting the already-known multi-product/company structure without building a giant enterprise hierarchy.
+
+**Status:** LOCKED.
+
+
+## Locked decision — M2-03 Unified Account + Membership + Shared Shell
+
+**Decision:** One global Admonk user account may participate in multiple tenants. Inside a tenant, one membership represents the person's organization membership. A shared suite shell/app launcher exposes only the products the user is entitled to access, without separate product logins.
+
+### Identity model
+- one stable internal `user_id` per human platform user;
+- authentication identities (email, OAuth, SSO/SAML, passwordless, etc.) map to the user rather than becoming the business identity;
+- email is mutable profile/authentication data, not the permanent user key;
+- tenant membership is a separate object from the global user;
+- one user may hold memberships in multiple tenants;
+- membership removal/suspension does not delete the global identity or historical audit references.
+
+### Organizational relationship
+- tenant membership answers whether the person belongs to the organization;
+- optional scope affiliations connect a membership to one or more organizational scopes;
+- organizational affiliation is not itself authorization;
+- roles/capabilities/product access are separate decisions handled by later M2 layers.
+
+### Shared suite experience
+- one authenticated session across the product family where technically feasible;
+- one app launcher / shared suite shell;
+- product switch preserves the active user + tenant context;
+- launcher visibility is derived from entitlement/authorization results, never used as the security boundary;
+- no separate username/password/profile setup per product.
+
+### Settings hierarchy
+1. account settings — person-level and shared across products;
+2. tenant settings — company-level and canonical once;
+3. product settings — domain/application-owned;
+4. user × product preferences — personal product-specific preferences.
+
+Shared settings must not swallow specialist product semantics.
+
+### Identity classes remain separate
+- **platform/workforce user** — may have tenant memberships;
+- **external/contact identity** — visitor, customer, candidate, requester, etc.; does not become a tenant member merely because a product interacts with them;
+- **machine/agent identity** — AI agents/services use separate machine authorization and are not fake human accounts.
+
+### Ask Kalam evidence rule
+Ask Kalam is used as **implementation evidence / learning material only** during M2. It is not considered audited or validated against the new Foundation until its own lifecycle/gate makes that audit appropriate.
+
+**Accepted cost:** a proper identity/membership/settings model is slightly richer than per-product user tables, but it eliminates duplicate auth/profile systems and enables one-account navigation across the product family.
 
 **Status:** LOCKED.
