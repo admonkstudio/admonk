@@ -1,10 +1,10 @@
 # Product Brief
 
-## Problem
+**Doctrine:** `doctrine/product-principles.md`
 
-Who has the problem?  
-What problem are they trying to solve?  
-What happens today without this product?
+The Product Brief supports a build/no-build and scope decision. It should expose uncertainty rather than read like sales copy.
+
+# VALUE — Why should this exist?
 
 ## Intended user/customer
 
@@ -12,34 +12,75 @@ Primary user:
 Buyer/customer:  
 First operating tenant/use case:  
 
+## Problem / opportunity
+
+What meaningful problem or opportunity exists?  
+What happens today?  
+What workaround/alternative is used?
+
 ## Desired outcome
 
-What should materially improve for the user/customer?
+What should materially improve?
 
-## Value hypothesis
+## Evidence
 
-Why should this product exist instead of using current alternatives?
+What evidence supports the problem/value hypothesis?  
+What is FACT vs ASSUMPTION vs HYPOTHESIS?
 
-## MVP
+Link unresolved items to `assumptions-open-questions.md`.
 
-What is the smallest coherent version that proves the operating model?
+## Proposed value
 
-## Non-goals
+Why could this product be meaningfully better than the current alternative?
 
-What are we explicitly not building now?
+# BOUNDARY — What are we building now?
 
-## Success
+## Appetite / constraints
 
-Primary success measure:  
-90-day evidence of value:  
-
-## Constraints
-
-Budget:  
+Budget/investment appetite:  
 Timeline:  
 Team:  
 Platform/provider constraints:  
+Other material constraints:  
 
-## Major assumptions
+## Smallest coherent scope
+
+What capability set is small enough to deliver well but complete enough to test the real value proposition?
+
+## Key solution concept
+
+Describe the macro solution without prematurely freezing implementation details.
+
+## Rabbit holes / complexity risks
+
+What could unexpectedly expand the work, cost, data model, permissions, integrations or operations?
+
+## Non-goals / no-gos
+
+What are we explicitly not building or solving now?
+
+# PROOF — What must become true?
+
+## Success evidence
+
+Primary evidence of user/customer value:  
+Critical acceptance evidence:  
+Expected early evidence window:  
+
+## Gate conditions
+
+Which data/security/permission/operational conditions must be satisfied before the next lifecycle gate?
+
+## Open assumptions
 
 Link to `assumptions-open-questions.md`.
+
+## Revisit triggers
+
+What new evidence would reopen the product direction or scope?
+
+## Approval
+
+Accountable owner:  
+Status: Draft / Approved / Reopened  
+Approval date:  
