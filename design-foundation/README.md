@@ -65,7 +65,7 @@ No fixed token values, visual style, component API or framework package is appro
 
 ## Core boundary
 
-> **Reuse rules and foundations broadly; reuse components only when behavior is genuinely stable; preserve product-specific expression where it creates differentiation.**
+> **Reuse rules and foundations broadly; reuse components only when semantics, behavior, accessibility, density, and interaction model genuinely fit the product context; preserve product-specific expression where it creates differentiation.**
 
 ## Authority
 
@@ -84,3 +84,23 @@ It must never overwrite a product's visual identity merely for cross-project con
 - `.agents/skills/admonk-design-quality/SKILL.md`
 - `.agents/skills/admonk-figma/SKILL.md`
 - `research/` — evidence and doctrine research.
+
+
+## Promotion and scope governance
+
+Use:
+- `PROMOTION-LADDER.md` — how local product solutions may earn promotion into shared layers;
+- `SCOPE-BOUNDARIES.md` — what should normally remain product/domain-specific;
+- `../research/design-system-drift.md` — research contract for design/code/Figma drift;
+- `../research/design-system-maturity-model.md` — provisional maturity model under research.
+
+A technically reusable component may still be wrong for another product because of:
+- information density;
+- user risk;
+- accessibility needs;
+- content length;
+- workflow consequence;
+- mobile/input behavior;
+- product-specific context.
+
+Shared reuse requires contextual fit, not only technical compatibility.
