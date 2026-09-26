@@ -651,7 +651,7 @@ The Control Matrix maps each high-impact capability to:
 - data/action scope;
 - allowed actor/agent;
 - required approval;
-- required confirmation;
+- approval binding / confirmation policy;
 - audit requirements;
 - rollback/recovery;
 - rate/spend/volume limits;
@@ -666,7 +666,7 @@ The Control Matrix maps each high-impact capability to:
 | DRAFT | Draft post, report, email, workflow, page | Allowed; clearly marked draft |
 | PROPOSE | Recommend optimization/change | Human decision required |
 | EXECUTE_REVERSIBLE | Create draft object, tag asset, stage a change | Explicit permission; approval based on risk; audit |
-| EXECUTE_CONSEQUENTIAL | Publish, send, change spend, modify production website | Named human approval, scoped permission, confirmation, audit, recovery/rollback where feasible |
+| EXECUTE_CONSEQUENTIAL | Publish, send, change spend, modify production website | Named human action-bound approval, scoped permission, audit, recovery/rollback where feasible; no redundant second confirmation when the valid approval already authorizes the exact action |
 | DESTRUCTIVE | Delete, revoke, overwrite, purge | Deny by default; controlled manual procedure unless explicitly justified |
 
 Project-specific controls may be stricter.
@@ -771,7 +771,7 @@ Expected governance behavior:
 - baseline may remain Prototype;
 - CMS read can remain low-impact;
 - production publish becomes EXECUTE_CONSEQUENTIAL;
-- publish requires scoped connector permission, named approver, preview/confirmation, audit record and rollback/recovery method;
+- publish requires scoped connector permission, named action-bound approval, audit record and rollback/recovery method; re-approval is required only if the approved content/action/target materially changes, expires or is revoked;
 - if those controls are unresolved, production publishing remains blocked.
 
 ## 27. Versioning rule

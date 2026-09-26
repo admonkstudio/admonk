@@ -18,6 +18,10 @@ capabilities:
     approval:
       required: false
       approvers: []
+      # For consequential actions, describe what approval is bound to.
+      # One valid action-bound approval may authorize execution without a second confirmation.
+      bound_to: []
+      expires_or_reapproval_trigger: null
     data_sensitivity: internal
     limits:
       rate: null

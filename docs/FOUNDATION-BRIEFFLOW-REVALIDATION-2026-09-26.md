@@ -39,3 +39,31 @@ Run the CMS-read / Production-publish escalation through:
 - Product Supervisor action classes/permission boundaries.
 
 Do not create BF02 unless the escalation exposes a real decision/gap.
+
+
+## BF02 — Action-bound approval without double approval
+**Decision:** LOCKED.
+
+A consequential action still requires human approval, but approval must be bound to the actual action being authorized. One approval is enough when it explicitly covers the exact action, target and material parameters/content and remains valid.
+
+Examples:
+- **Approve Draft** → does not authorize Production publishing.
+- **Approve & Publish this exact article to Site X** → may authorize the publish action without another confirmation.
+- Material content/action/target change, expiry or revocation → re-approval required.
+
+**Why:** preserve meaningful human control without creating approval fatigue or ceremonial double confirmation.
+
+**Foundation changes:** S004, AI autonomy doctrine, Product Supervisor Control Matrix/action classes, PB03, capability manifest template and BriefFlow self-audit updated.
+
+## Escalation result
+The CMS publishing scenario now has a coherent proportional path:
+1. CMS read access does not imply write/publish authority.
+2. Production publish is EXECUTE_CONSEQUENTIAL.
+3. Connector permission is narrowly scoped to the publish capability.
+4. Human approval is bound to the exact Production action.
+5. Audit evidence records actor, approved action and result.
+6. Recovery/rollback is required where feasible.
+7. If the article/target/action materially changes after approval, re-approval is required.
+8. A redundant second confirmation is not required when the existing approval remains valid.
+
+No additional Foundation decision is required for this scenario.

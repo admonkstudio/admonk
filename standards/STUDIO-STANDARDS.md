@@ -15,7 +15,7 @@ Three release-risk levels: Low / Medium / High. Universal minimum for all; stron
 Minimum security/privacy floor plus risk-based external references: OWASP ASVS for web security, OWASP AISVS for AI, NIST SSDF and Privacy Framework for lifecycle/privacy governance.
 
 ## S004 — AI Autonomy
-Level 1 read/analyse/recommend; Level 2 low-impact/reversible actions may earn automation; Level 3 high-impact/irreversible/external commitments require human approval. AI cannot promote its own authority.
+Level 1 read/analyse/recommend; Level 2 low-impact/reversible actions may earn automation; Level 3 high-impact/irreversible/external commitments require human approval. Consequential approval is action-bound: one approval may authorize execution when it explicitly covers the exact action/target/material parameters and remains valid; material change, expiry or revocation requires re-approval. AI cannot promote its own authority.
 
 ## S005 — AI Cost & Economics
 Provider bill is financial truth; operational tracing attributes cost to product/customer/feature/model. Track useful unit economics and spending guardrails for meaningful AI workflows.

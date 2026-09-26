@@ -50,6 +50,12 @@ May be automated only when explicitly allowed, bounded, observable and recoverab
 ### EXECUTE_CONSEQUENTIAL
 Requires named human approval by default before the side effect.
 
+Approval must be **action-bound**: the approving human must be authorizing the actual consequential action, including the material target and parameters/content that matter to the consequence.
+
+One approval is sufficient when it explicitly covers the exact action being executed and remains valid. Do not require a second confirmation merely because execution occurs after approval.
+
+Re-approval is required when the approved action materially changes, the target/scope changes, or the approval expires/is revoked. Generic content approval, review status, or a broad standing preference does not silently become authorization for a consequential side effect.
+
 ### DESTRUCTIVE
 Denied by default; use a controlled manual/special procedure unless exceptionally justified.
 

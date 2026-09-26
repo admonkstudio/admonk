@@ -11,7 +11,7 @@
 5. Add targeted capability tests only when new capability/risk justifies them.
 6. Evaluate end-to-end traces: decisions, tools, results, handoffs, retries, guardrails, outcome.
 7. Periodically calibrate subjective automated grading against human judgment.
-8. Check authority, data access, approvals and safeguards.
+8. Check authority, data access, approvals and safeguards. For consequential actions, verify approval is bound to the actual action/target/material parameters; do not add a redundant second confirmation when a still-valid approval already covers the exact execution.
 9. Compare quality gain versus cost/latency/resources; prefer cost per useful successful outcome.
 10. Release proportionally through PB02.
 11. Feed meaningful Production failures back into regression cases.
