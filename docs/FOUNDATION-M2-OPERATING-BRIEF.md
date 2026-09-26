@@ -74,7 +74,7 @@ Do not select tools because a platform supports more features. Capability and ar
 
 ## Initial M2 decision sequence
 
-1. **M2-01 Repository, code reuse and shared-package boundary**
+1. **M2-01 Repository, code reuse and shared-package boundary — LOCKED**
 2. Tenant/company identity model
 3. User + membership model
 4. Organization roles vs product/domain roles
@@ -104,3 +104,23 @@ Do not lock a shared runtime service merely because two products have similar na
 Promotion ladder for shared platform behavior:
 
 **Domain-local → proven second consumer / hard consistency need → shared contract → shared package if useful → shared runtime service only when operational/security/consistency economics justify centralization.**
+
+
+## Locked decision — M2-01 Repository, code reuse and shared-package boundary
+
+**Decision:** Federated product repositories + promoted shared contracts/packages.
+
+Rules:
+- keep Corporate AI Assistant, Marketing Hub and Support Platform in independent repositories while their product lifecycles remain materially different;
+- domain behavior stays domain-owned;
+- do not copy a proven stable cross-product behavior when one shared implementation/contract can serve the same semantics;
+- do not create generic shared abstractions merely because code looks similar;
+- promotion path: **domain-local → proven second consumer or hard consistency/security need → shared contract → shared package if useful → shared runtime service only when its economics justify centralization**;
+- prefer direct/simple code before abstractions;
+- organize shared platform code by meaningful domain/capability, not dumping grounds such as `misc/` or generic `helpers/`;
+- test shared changes using the smallest affected scope practical; do not rerun unrelated product suites merely for ceremony;
+- monorepo migration is explicitly deferred until measured cross-repository friction (synchronized changes, package-version churn, duplicated CI, cross-product refactor cost, or navigation burden) outweighs independent-repository benefits.
+
+**Accepted cost:** temporary duplication may exist while semantics are still unproven; once genuinely shared semantics are established, copy/paste duplication should end.
+
+**Status:** LOCKED.
