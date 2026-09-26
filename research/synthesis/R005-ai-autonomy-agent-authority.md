@@ -2,7 +2,7 @@
 
 **Date:** 2026-09-26  
 **Mode:** Document Population Research  
-**Status:** Awaiting product-owner Q1  
+**Status:** LOCKED — product-owner approved 2026-09-26  
 **Target:** future `doctrine/ai-autonomy-principles.md`, capability manifests, approval policy, agent evaluation/operations standards
 
 ## Research question
@@ -252,9 +252,9 @@ Changing the model should not silently change:
 
 > **Agent autonomy is bounded freedom to reason and act inside an explicit authority envelope, with stronger human control at higher-consequence boundaries and evidence-driven expansion over time.**
 
-## Q1 required
+## Product-owner decision
 
-What should be Admonk's default posture for external actions?
+**Approved direction: B — Risk-tiered, evidence-earned autonomy.**
 
 ### A. Approval-first
 All external writes/actions require a human confirmation by default, even when reversible.
@@ -274,18 +274,17 @@ Once a user enables an agent/tool, most authorized actions execute automatically
 **Benefit:** highest automation/productivity.  
 **Risk:** failures can occur before intervention, especially in consequential workflows.
 
-## Research recommendation
+## Locked Admonk direction
 
 **B — Risk-tiered, evidence-earned autonomy.**
 
 This preserves the value of agents while keeping permissions, runtime controls and irreversible consequences outside model discretion.
 
-## Lock plan after Q1
+## Lock result
 
-If B is approved:
-1. promote `doctrine/ai-autonomy-principles.md`;
-2. reconcile Product Supervisor action classes with the approved autonomy policy;
-3. strengthen capability-manifest and runtime-control requirements;
-4. record post-deployment autonomy monitoring as a future standard/feedback loop;
-5. lock R005;
-6. move to R006 — Operations / Reliability doctrine.
+- AI autonomy doctrine promoted.
+- Product Supervisor action classes reconciled with evidence-earned autonomy.
+- Runtime control remains outside model discretion.
+- Post-deployment autonomy monitoring retained as a standards/feedback-loop requirement.
+- R005 locked.
+- Next item: R006 — Operations / Reliability / AI Economics doctrine.
