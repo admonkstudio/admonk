@@ -907,3 +907,35 @@ Admonk systems should prefer:
 The Product Supervisor coordinates product-development capabilities.
 Specialist skills provide expertise.
 The project repository preserves the durable truth.
+
+
+## 35. Design-system review routing
+
+The Product Supervisor should route a design-system review when a change materially affects shared UI behavior or design foundations.
+
+Typical triggers:
+- introduces a new reusable visual/interaction pattern;
+- creates a new shared component;
+- introduces a new token role or raw value outside approved token policy;
+- creates a new spacing/type/motion convention intended for reuse;
+- duplicates an existing component with overlapping semantics;
+- changes a shared component used by multiple product areas;
+- changes accessibility/responsive behavior at the shared-system level.
+
+Review depth remains proportional to impact.
+
+Design-system review must answer:
+- can an approved existing component/pattern satisfy the need?
+- is the behavior/semantic contract genuinely different?
+- is the change product-specific, domain-specific, or foundation-level?
+- what states/accessibility/responsive behavior are affected?
+- what evidence/test protects existing consumers?
+- does the change preserve product-specific brand expression?
+
+Do not build a large shared component library before real product usage establishes stable reusable behavior.
+
+Current Design Foundation source:
+`design-foundation/README.md`
+
+Current doctrine status:
+research/scaffolding only; no universal token values/component APIs are approved yet.
