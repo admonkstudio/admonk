@@ -121,3 +121,48 @@ This is instrumentation without a feedback loop and should normally be removed o
 ## Final rule
 
 > **Instrument decisions, not curiosity. Richer observability is earned when its decision value exceeds its operating cost.**
+
+
+## Product analytics operating rule
+
+Approved direction:
+`research/synthesis/R015-product-analytics-feedback-loop.md`
+
+Use a **progressive outcome tree**:
+
+1. define one primary product-value outcome;
+2. add only the small controllable driver set needed for current decisions;
+3. preserve guardrails for quality, accessibility, reliability, trust/safety, AI unit economics, support burden and privacy;
+4. deepen the metric hierarchy only when recurring decisions or product complexity justify it.
+
+### Metric contract
+
+A governed metric should record:
+- name and product question;
+- precise definition;
+- event/data source;
+- population/segment;
+- owner;
+- role: outcome / driver / guardrail;
+- decision/action it may change;
+- review cadence/trigger;
+- known limitations;
+- privacy/retention considerations;
+- last definition change.
+
+### Analytics loop
+
+```text
+product outcome
+→ observed movement
+→ driver/segment investigation
+→ hypothesis
+→ decision/action
+→ release/experiment
+→ re-measure outcome + guardrails
+→ keep / revise / reverse
+```
+
+Instrument only what answers a current validated question or closes a current decision loop.
+
+Do not treat one metric as causal truth merely because it correlates with an outcome.
