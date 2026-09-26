@@ -80,7 +80,7 @@ Do not select tools because a platform supports more features. Capability and ar
 4. **M2-04 Organization roles vs product/domain roles — LOCKED**
 5. **M2-05 Effective-permission precedence — LOCKED**
 6. **M2-06 Product / module entitlements — LOCKED**
-7. Settings inheritance/overrides
+7. **M2-07 Settings inheritance/overrides — LOCKED**
 8. Shared onboarding shell
 9. Connector + credential ownership
 10. Knowledge/context hierarchy
@@ -384,5 +384,39 @@ Status: **OWNER DIRECTION RECORDED — M2-06 NOT YET LOCKED.**
 A bundle/plan may package several SKUs for sales, discounting or setup convenience, but runtime provisioning resolves to the underlying SKU set.
 
 **Accepted cost:** the commercial catalog may contain more SKUs than a single-plan model, but entitlement evaluation remains simple and packaging stays flexible/profitable without feature-level entitlement complexity.
+
+**Status:** LOCKED.
+
+
+## Locked decision — M2-07 Typed Hierarchical Settings
+
+**Decision:** Typed hierarchical settings with controlled inheritance:
+
+**Platform Default → Tenant → Organizational Scope → Product → User/Product where applicable.**
+
+Every setting declares its valid levels, ownership and override policy.
+
+### Rules
+- place each setting at the highest level where its semantics are genuinely shared;
+- account/company settings are canonical once rather than duplicated per product;
+- specialist/domain settings remain owned by the specialist product;
+- normal configuration values may inherit and override only at declared levels;
+- security/policy constraints may remain equal or become stricter downstream, but lower levels cannot weaken an upstream constraint unless an explicit authorized exception model permits it;
+- removing an override resets the effective value to the nearest valid parent/default rather than leaving a blank duplicate;
+- templates seed/suggest configuration but do not create permanent competing sources of truth;
+- every setting should have typed metadata including key, owner, value type, valid levels, default, override policy and sensitivity where relevant;
+- avoid one untyped giant JSON settings store as the semantic authority;
+- effective settings may be cached/resolved for performance, with targeted invalidation when parents change.
+
+### UX requirement
+The administration UI must show:
+- effective value;
+- whether it is inherited or overridden;
+- source of the active value;
+- parent/default value when overridden;
+- simple **Override** and **Reset to inherited/default** actions;
+- clear indication when a setting is constrained by higher-level policy and cannot be weakened.
+
+**Accepted cost:** a shared settings registry/resolver plus typed product-owned settings contracts, in exchange for one canonical company configuration, safe inheritance and no repeated per-product setup.
 
 **Status:** LOCKED.

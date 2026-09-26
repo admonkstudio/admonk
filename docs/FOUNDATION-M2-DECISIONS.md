@@ -11,9 +11,10 @@
 | M2-04 | LOCKED | Layered scoped authorization with default role templates, tenant-defined custom roles, stable capability catalog, optional scope inheritance, delegation ceilings, and simple toggle-based setup UX. | More capability/scope metadata than a fixed role list, but avoids role explosion, product coupling and customer-specific code forks. |
 | M2-05 | LOCKED | Default deny; applicable roles add capabilities; explicit ceilings/restrictions reduce access and win; provider limits and action approvals are final gates; every result is explainable through one shared evaluator. | Requires a central evaluator/explanation model, but avoids conflicting product-specific authorization logic. |
 | M2-06 | LOCKED | Atomic sellable SKU entitlement model: every independently sellable product/major add-on is ON/OFF; bundles compose SKUs; Corporate Brain is a cross-product add-on; permissions, flags and usage limits stay separate; billing providers do not own permanent SKU identity. | More catalog SKUs than a single-plan model, but much simpler runtime entitlement and more flexible packaging. |
+| M2-07 | LOCKED | Typed hierarchical settings: Platform Default → Tenant → Organizational Scope → Product → User/Product where applicable; settings declare valid levels/override rules; configuration may inherit/override while constraints cannot be weakened; UI shows source/inheritance/reset. | Requires a shared registry/resolver, but removes duplicated company settings and makes overrides safe/explainable. |
 
 ## Current
-**M2-07 — Shared Settings Inheritance / Overrides**
+**M2-08 — Shared Onboarding / Setup Shell**
 
 
 ## M2-04 owner requirements — recorded, decision pending
