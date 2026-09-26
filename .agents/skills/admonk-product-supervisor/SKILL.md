@@ -180,3 +180,15 @@ At PS-2 or earlier when complexity is already material, create/review:
 `project-governance/complexity-budget.md`
 
 Substantial changes should state their complexity impact proportionally.
+
+
+## Design-system review
+
+When a product change introduces or alters shared tokens, reusable components, shared interaction patterns, or design-system behavior, route a proportional design-system review using:
+- `design-foundation/README.md`;
+- `admonk-ux-systems`;
+- `admonk-design-quality`;
+- relevant platform/design-tool skills.
+
+Do not assume the Design Foundation owns the product's visual identity.
+Do not extract shared components before behavior is stable and reuse is justified.
