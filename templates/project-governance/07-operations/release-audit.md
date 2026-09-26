@@ -26,6 +26,23 @@
 |  | Cost & scale |  |  |  |  |  |  |
 |  | Documentation |  |  |  |  |  |  |
 
+## Minimum release-evidence bundle
+
+For material Production changes, record or link evidence for:
+- **Change** — what changed;
+- **Risk** — what can materially fail;
+- **Evidence** — tests/reviews/measurements that prove important requirements;
+- **Critical journey impact** — primary flows verified;
+- **Specialist evidence** — security/accessibility/data/performance/AI where relevant;
+- **Known gaps/exceptions** — explicit and owned;
+- **Recovery** — rollback/restore/mitigation path;
+- **Release owner** — accountable owner;
+- **Post-release verification** — signal that confirms release health.
+
+This may be satisfied through CI, PR evidence, the Evidence Index, and other canonical records when traceable. Do not create duplicate paperwork solely to satisfy the bundle.
+
+No universal code-coverage percentage is required. Testing depth follows the risk introduced by the actual change.
+
 ## Adversarial review
 
 Record applicable tests and evidence:
