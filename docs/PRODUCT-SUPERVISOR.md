@@ -942,3 +942,16 @@ Current Design Foundation source:
 
 Current doctrine status:
 research/scaffolding only; no universal token values/component APIs are approved yet.
+
+
+## Security/privacy assurance rule
+
+Approved doctrine:
+`doctrine/security-principles.md`
+
+> **Risk changes the depth of assurance, not whether security/privacy matter.**
+
+All governance levels inherit the universal security/privacy floor.
+Production and High-risk products require progressively stronger verification according to data sensitivity, privilege, autonomy, consequence, external reach and recovery difficulty.
+
+Do not interpret Prototype governance as permission to ignore authorization, secrets, tenant/data isolation, data purpose or other applicable baseline protections.
