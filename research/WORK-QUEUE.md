@@ -22,7 +22,7 @@ Before FOUNDATION-M1 is locked:
 
 | Item | Mode | Status |
 |---|---|---|
-| Retroactive decision-cost audit for R001–R006 | Decision Cost Review | Pending |
+| Retroactive decision-cost audit for R001–R006 | Decision Cost Review | ACTIVE |
 
 Purpose:
 Re-test previously locked doctrine decisions under `research/DECISION-COST-FRAMEWORK.md` so earlier syntheses are not grandfathered past the new trade-off gate.
@@ -47,7 +47,7 @@ This is a focused audit, not a full re-research. Reopen a decision only when the
 | 13 | Accessibility baseline | Document Population Research | LOCKED |
 | 14 | Testing / release-evidence baseline | Document Population Research | LOCKED |
 | 15 | Product analytics feedback loop | Choice / Direction Research | LOCKED |
-| 16 | AI evaluation / regression baseline | Document Population Research | AWAITING Q1 + COST ACCEPTANCE |
+| 16 | AI evaluation / regression baseline | Document Population Research | LOCKED |
 
 ## Priority 4 — Tool decisions
 
