@@ -85,7 +85,7 @@ Do not select tools because a platform supports more features. Capability and ar
 9. **M2-09 Connector + credential ownership — LOCKED**
 10. **M2-10 Knowledge/context hierarchy — LOCKED**
 11. **M2-11 AI/agent capability authorization + approvals — LOCKED**
-12. Audit/provenance/event model
+12. **M2-12 Audit/provenance/event model — LOCKED**
 13. Notification/communication preferences
 14. Usage/token/cost governance
 15. Navigation/deep-link contract
