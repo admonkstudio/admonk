@@ -2,7 +2,7 @@
 
 **Date:** 2026-09-26  
 **Mode:** Document Population Research  
-**Status:** Awaiting product-owner Q1  
+**Status:** LOCKED — product-owner approved 2026-09-26  
 **Target:** future `doctrine/product-principles.md` and Product Brief / MVP Capability Spec contracts
 
 ## Research question
@@ -144,24 +144,20 @@ Do not standardize:
 - fixed development cycle;
 - exact document length.
 
-## Q1 required
+## Product-owner decision
 
-One owner-level strategic choice remains:
+**Approved direction: A — Customer value first.**
 
-Should Admonk's foundational product-definition rule optimize first for **customer desirability** or for **bounded deliverability** when the two are temporarily in tension?
-
-The research recommendation is:
-**Customer desirability is the first filter; bounded deliverability determines the first version.**
+> **Customer desirability determines whether Admonk should build. Bounded deliverability determines what Admonk builds first.**
 
 This means:
 - do not build an easy product with weak value;
 - do not attempt the full desirable product at once;
 - validate the valuable direction, then shape the smallest credible/lovable step.
 
-## Lock plan after Q1
+## Lock result
 
-If approved:
-1. create/populate `doctrine/product-principles.md` as proposed doctrine for human approval;
-2. update Product Brief contract to use VALUE → BOUNDARY → PROOF;
-3. update the work queue item 1 to Locked;
-4. move immediately to item 2 — Premium Product Quality doctrine.
+- Product-definition doctrine promoted to `doctrine/product-principles.md`.
+- Product Brief template updated to VALUE → BOUNDARY → PROOF.
+- Work queue item 1 locked.
+- Next item: R002 — Premium Product Quality doctrine.
