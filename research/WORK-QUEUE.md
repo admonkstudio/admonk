@@ -43,8 +43,8 @@ This is a focused audit, not a full re-research. Reopen a decision only when the
 
 | Order | Artifact / decision | Mode | Status |
 |---:|---|---|---|
-| 12 | Minimum production feedback loops | Document Population Research | AWAITING Q1 + COST ACCEPTANCE |
-| 13 | Accessibility baseline | Document Population Research | Pending |
+| 12 | Minimum production feedback loops | Document Population Research | LOCKED |
+| 13 | Accessibility baseline | Document Population Research | ACTIVE |
 | 14 | Testing / release-evidence baseline | Document Population Research | Pending |
 | 15 | Product analytics feedback loop | Choice / Direction Research | Pending |
 | 16 | AI evaluation / regression baseline | Document Population Research | Pending |
