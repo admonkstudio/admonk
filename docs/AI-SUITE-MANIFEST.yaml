@@ -5,6 +5,12 @@ suite:
   github_project:
     name: Admonk AI Suite
     status: active
+  commercial_composition:
+    model: composable_product_family
+    sellable_in_parts: true
+    shared_foundation_status: discovery
+    foundation_program: docs/FOUNDATION-PROGRAM.md
+    platform_foundation: docs/PRODUCT-PLATFORM-FOUNDATION.md
 
 products:
   corporate_ai_assistant:
