@@ -136,6 +136,8 @@ Lumos is an implementation architecture, not creative direction.
 | Lifecycle stage gates | Active | `docs/PRODUCT-SUPERVISOR.md` |
 | Launch / scale readiness | Active | `admonk-product-supervisor` + specialist production skills |
 | Periodic product/technical health audit | Active | `admonk-product-supervisor` |
+| Organization / reuse | Active | `admonk-organization-reuse` |
+| Simplicity-first engineering | Active | `admonk-simplicity-engineering` |
 
 ---
 
