@@ -22,7 +22,7 @@ Before FOUNDATION-M1 is locked:
 
 | Item | Mode | Status |
 |---|---|---|
-| Retroactive decision-cost audit for R001–R006 | Decision Cost Review | ACTIVE |
+| Retroactive decision-cost audit for R001–R006 | Decision Cost Review | AWAITING COST ACCEPTANCE |
 
 Purpose:
 Re-test previously locked doctrine decisions under `research/DECISION-COST-FRAMEWORK.md` so earlier syntheses are not grandfathered past the new trade-off gate.
