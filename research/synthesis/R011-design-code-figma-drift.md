@@ -2,7 +2,7 @@
 
 **Date:** 2026-09-26  
 **Mode:** Choice / Direction Research  
-**Status:** Awaiting product-owner Q1 + cost acceptance  
+**Status:** LOCKED — C selected and decision cost explicitly accepted 2026-09-26  
 **Target:** `research/design-system-drift.md`, future `design-foundation/design-drift-policy.md`, token/source-of-truth rules
 
 ## Research question
@@ -284,7 +284,7 @@ The accepted residual problem is:
 
 > **One canonical authority per fact. Use mappings and tests to connect artifacts. Automate only material drift whose recurring cost exceeds the automation cost.**
 
-## Q1 — authority and synchronization cost acceptance
+## Product-owner decision and cost acceptance
 
 Which direction should Admonk lock?
 
@@ -306,19 +306,20 @@ Repository owns doctrine and Stable shared token definitions; code owns runtime 
 **Benefit:** each tool owns what it can actually prove.  
 **Price:** moderate authority/governance discipline and acceptance of some temporary drift.
 
-## Research recommendation
+## Locked Admonk direction
 
 **C — Artifact-specific authority + selective automation.**
 
 Explicit price:
 > **Admonk accepts some temporary, tracked drift and moderate authority-management work so it does not pay for fragile perfect synchronization or force design and runtime truth into one tool.**
 
-## Lock plan after Q1
+## Lock result
 
-If C and its price are accepted:
-1. lock R011;
-2. convert `research/design-system-drift.md` into the approved authority/drift model;
-3. create `design-foundation/design-drift-policy.md`;
-4. record repository token files as the future Stable shared-token authority at Level 2;
-5. keep Figma automation/Storybook/visual-regression adoption as later evidence-based tool decisions;
-6. complete Priority 2 and move to R012 — Minimum Production Feedback Loops.
+- Artifact-specific authority + selective automation locked.
+- Temporary tracked drift and moderate authority-management work explicitly accepted.
+- Repository is the future authority for Stable shared token definitions at Level 2.
+- Code owns runtime behavior; approved design artifacts own design intent; deployed runtime remains behavioral evidence.
+- Automation/tool adoption remains evidence-triggered.
+- R011 locked under the Decision Cost & Coupling Framework.
+- Priority 2 Design Foundation research complete.
+- Next item: R012 — Minimum Production Feedback Loops.
