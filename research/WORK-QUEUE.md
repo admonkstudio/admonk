@@ -37,13 +37,13 @@ This is a focused audit, not a full re-research. Reopen a decision only when the
 | 8 | Design-system maturity direction | Choice / Direction Research | LOCKED |
 | 9 | Token architecture direction | Choice / Direction Research | LOCKED |
 | 10 | Component promotion policy | Document Population Research | LOCKED |
-| 11 | Design/code/Figma drift policy | Choice / Direction Research | AWAITING Q1 + COST ACCEPTANCE |
+| 11 | Design/code/Figma drift policy | Choice / Direction Research | LOCKED |
 
 ## Priority 3 — Standards / feedback loops
 
 | Order | Artifact / decision | Mode | Status |
 |---:|---|---|---|
-| 12 | Minimum production feedback loops | Document Population Research | Pending |
+| 12 | Minimum production feedback loops | Document Population Research | ACTIVE |
 | 13 | Accessibility baseline | Document Population Research | Pending |
 | 14 | Testing / release-evidence baseline | Document Population Research | Pending |
 | 15 | Product analytics feedback loop | Choice / Direction Research | Pending |
