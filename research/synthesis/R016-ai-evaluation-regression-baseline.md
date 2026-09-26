@@ -2,7 +2,7 @@
 
 **Date:** 2026-09-26
 **Mode:** Document Population Research
-**Status:** Awaiting product-owner Q1 + cost acceptance
+**Status:** LOCKED — B selected and decision cost explicitly accepted 2026-09-26
 **Target:** future AI evaluation standard, Product Supervisor AI release evidence, agent feedback-loop governance
 
 ## Research question
@@ -358,19 +358,20 @@ Rely mainly on manual QA and production feedback until the AI capability is wide
 **Benefit:** lowest early evaluation cost.
 **Price:** highest risk of silent regressions, slow model-change validation and repeated production failures.
 
-## Research recommendation
+## Locked Admonk direction
 
 **B — Critical-behavior regression seed + production-failure flywheel.**
 
 Explicit price:
 > **Admonk accepts some early evaluation blind spots and later eval-infrastructure work so it can protect critical AI behavior without allowing evaluation itself to become a large recurring token and tooling expense.**
 
-## Lock plan after Q1
+## Lock result
 
-If B and its price are accepted:
-1. lock R016;
-2. promote the AI eval baseline into Product Supervisor AI/release governance;
-3. add evaluation economics to the approved feedback-loop model;
-4. record vendor neutrality because current OpenAI Evals surfaces are in transition/deprecation;
-5. complete Priority 3;
-6. run the pending retroactive Decision Cost audit for R001–R006 before entering Priority 4 tool decisions.
+- Critical-behavior regression seed + production-failure flywheel locked.
+- Early evaluation blind spots and later eval-infrastructure work explicitly accepted.
+- AI evaluation baseline promoted into Product Supervisor/release governance.
+- Evaluation economics added to the feedback-loop model.
+- Evaluation architecture remains vendor-neutral.
+- R016 locked under the Decision Cost & Coupling Framework.
+- Priority 3 complete.
+- Next checkpoint: retroactive Decision Cost audit for R001–R006 before Priority 4.
