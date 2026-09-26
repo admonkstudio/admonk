@@ -2,7 +2,7 @@
 
 **Date:** 2026-09-26  
 **Mode:** Choice / Direction Research  
-**Status:** Awaiting product-owner Q1 + cost acceptance  
+**Status:** LOCKED — B selected and decision cost explicitly accepted 2026-09-26  
 **Target:** `research/design-system-maturity-model.md`, Design Foundation governance, Marketing Hub design-stage expectations
 
 ## Research question
@@ -254,9 +254,9 @@ By keeping:
 
 > **Start with foundation rules. Let real products create candidates. Let evidence promote assets. Make stability expensive enough to mean something.**
 
-## Q1 — maturity cost acceptance
+## Product-owner decision and cost acceptance
 
-Which maturity direction should Admonk lock?
+**Approved direction: B — Progressive evidence-gated maturity.**
 
 ### A. Foundation-first Level 2 before serious product design
 Define semantic tokens and a shared starter component set before Marketing Hub's serious UX work.
@@ -276,7 +276,7 @@ Keep almost everything local through Marketing Hub. Build the reusable Design Fo
 **Benefit:** fastest immediate product work.  
 **Price:** higher inconsistency/rework risk and delayed accessibility/interaction standardization.
 
-## Research recommendation
+## Locked Admonk direction
 
 **B — Progressive evidence-gated maturity.**
 
@@ -286,12 +286,12 @@ The price is explicit:
 This is consistent with the approved engineering doctrine:
 **simple core + deliberate change seams**.
 
-## Lock plan after Q1
+## Lock result
 
-If B and its price are accepted:
-1. lock the maturity model;
-2. update `research/design-system-maturity-model.md`;
-3. add asset maturity labels to Design Foundation governance;
-4. clarify Marketing Hub may create local/trial assets without immediate foundation promotion;
-5. lock R008;
-6. move to R009 — Token architecture direction.
+- Progressive evidence-gated maturity locked.
+- Temporary duplication and later migration/refactoring explicitly accepted as the price of avoiding speculative standardization.
+- Design-system maturity model updated.
+- Asset lifecycle Local → Candidate → Trial → Stable → Deprecated adopted as the research/governance model.
+- Marketing Hub may create Local/Candidate/Trial assets without automatic foundation promotion.
+- R008 locked under the Decision Cost & Coupling Framework.
+- Next item: R009 — Token architecture direction.
