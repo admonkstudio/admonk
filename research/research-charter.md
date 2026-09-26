@@ -8,6 +8,21 @@
 
 What should Admonk's Product Supervisor actually believe and require in order to help humans and AI build premium, scalable, budget-conscious software products without collapsing into generic best-practice output?
 
+## Capability-system question
+
+In parallel with foundational doctrine, research:
+
+> **What disciplines, tools, technologies, connectors, automations and feedback systems are required to repeatedly produce high-quality software with AI assistance?**
+
+This question must be answered without turning the research into a shopping list or fixed stack.
+
+Use:
+- `research/capability-map/`
+- `research/tool-evaluation/`
+- `research/architecture-impact/`
+- `research/feedback-loops.md`
+- `research/PARALLEL-TRACKS.md`
+
 ## Why it matters
 
 The existing Product Supervisor defines a strong process, but process alone does not determine:
@@ -77,6 +92,17 @@ Every major doctrine proposal must include:
 **Confidence:**  
 **Review trigger/date:**  
 **Practical example:**  
+
+## Tool/adoption boundary
+
+Research may identify candidates while doctrine is still being researched.
+
+However:
+- discovery does not equal adoption;
+- a tool must close a documented feedback loop;
+- architecture/cost/security impact must be visible;
+- final outcome must be Adopt now / Adopt conditionally / Pilot / Defer / Reject;
+- human approval is required before changing the reusable Admonk baseline.
 
 ## Success condition
 
