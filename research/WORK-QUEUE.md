@@ -47,7 +47,7 @@ This is a focused audit, not a full re-research. Reopen a decision only when the
 | 13 | Accessibility baseline | Document Population Research | LOCKED |
 | 14 | Testing / release-evidence baseline | Document Population Research | LOCKED |
 | 15 | Product analytics feedback loop | Choice / Direction Research | LOCKED |
-| 16 | AI evaluation / regression baseline | Document Population Research | ACTIVE |
+| 16 | AI evaluation / regression baseline | Document Population Research | AWAITING Q1 + COST ACCEPTANCE |
 
 ## Priority 4 — Tool decisions
 
