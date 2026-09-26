@@ -102,3 +102,45 @@ For substantial supervisor reviews, report:
 - Required specialist reviews
 
 Do not use a numeric health score unless each dimension is evidence-backed and explained.
+
+
+## Risk classification
+
+Before build/launch governance decisions, classify the current environment:
+- Prototype
+- Production
+- High-risk
+
+Use the definitions in `docs/PRODUCT-SUPERVISOR.md`.
+
+A project may use Prototype governance during controlled discovery/staging and Production governance for its first real-user release.
+
+## Mandatory build gate
+
+Before production implementation, verify the minimum viable Product Supervisor artifacts:
+- Product Brief
+- MVP / Capability Specification
+- Architecture & Risk Brief
+- lightweight Project State
+
+Do not begin implementation while critical product/data/authorization questions remain open.
+
+## Release audit
+
+Before a production launch:
+1. load `templates/project-governance/07-operations/release-audit.md`;
+2. collect evidence, not assertions;
+3. run relevant adversarial scenarios;
+4. return exactly one decision: PASS, PASS WITH ACCEPTED RISKS, or BLOCKED;
+5. record accepted risks and owners;
+6. do not self-waive Critical/High security blockers.
+
+## State discipline
+
+Use:
+- repository Markdown for canonical governance state;
+- GitHub Issues/Projects for execution;
+- ADRs for major architecture decisions;
+- Decision Log for broader decisions;
+- Assumptions/Open Questions register for uncertainty;
+- Technical Debt & Scale Register for deliberate shortcuts and scale triggers.
