@@ -2,7 +2,7 @@
 
 **Date:** 2026-09-26
 **Mode:** Document Population Research
-**Status:** Awaiting product-owner Q1 + cost acceptance
+**Status:** LOCKED — B selected and decision cost explicitly accepted 2026-09-26
 **Target:** future `design-foundation/accessibility-rules.md`, Product Supervisor release evidence, Design Foundation quality floor
 
 ## Research question
@@ -247,19 +247,19 @@ Set accessibility requirements independently per product/workflow.
 **Benefit:** lowest baseline overhead.
 **Price:** inconsistent quality and larger accessibility debt risk.
 
-## Research recommendation
+## Locked Admonk direction
 
 **B — WCAG 2.2 AA engineering floor + manual critical-journey verification + risk-based exceptions.**
 
 Explicit price:
 > **Admonk accepts recurring accessibility verification work and occasional delivery friction so accessibility remains a real quality floor, while avoiding full formal-audit cost on every surface regardless of consequence.**
 
-## Lock plan after Q1
+## Lock result
 
-If B and its price are accepted:
-1. lock R013;
-2. promote the accessibility baseline into Design Foundation governance;
-3. update the accessibility-rules contract/status;
-4. align Product Supervisor Production/release evidence;
-5. preserve accessibility-tool selection for Priority 4;
-6. move to R014 — Testing / Release-Evidence Baseline.
+- WCAG 2.2 AA engineering floor + manual critical-journey verification + risk-based exceptions locked.
+- Recurring accessibility verification and occasional delivery friction explicitly accepted.
+- Accessibility baseline promoted into Design Foundation governance.
+- Product Supervisor Production/release evidence aligned.
+- Tool selection remains deferred to Priority 4.
+- R013 locked under the Decision Cost & Coupling Framework.
+- Next item: R014 — Testing / Release-Evidence Baseline.
