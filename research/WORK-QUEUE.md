@@ -58,8 +58,8 @@ Tool choices begin only after the corresponding capability need is evidenced.
 | 17 | Component workbench / documentation | Choice / Direction Research | DECIDED — ADOPT CONDITIONALLY (Storybook) |
 | 18 | Visual regression | Choice / Direction Research | DECIDED — ADOPT CONDITIONALLY (targeted Playwright; Chromatic deferred) |
 | 19 | Accessibility automation | Choice / Direction Research | DECIDED — ADOPT CONDITIONALLY (axe-core; Lighthouse supplementary) |
-| 20 | Secret scanning | Choice / Direction Research | ACTIVE |
-| 21 | Static analysis | Choice / Direction Research | Pending |
+| 20 | Secret scanning | Choice / Direction Research | DECIDED — ADOPT CONDITIONALLY (GitHub preferred; Gitleaks fallback) |
+| 21 | Static analysis | Choice / Direction Research | ACTIVE |
 | 22 | Dependency / supply-chain checks | Choice / Direction Research | Pending |
 | 23 | API contract validation | Choice / Direction Research | Pending |
 | 24 | Migration validation | Choice / Direction Research | Pending |
