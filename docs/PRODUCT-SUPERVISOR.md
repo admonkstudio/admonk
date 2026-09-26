@@ -782,3 +782,127 @@ Use semantic versions for the Product Supervisor once the self-audit passes.
 - MAJOR: changes that alter lifecycle gates, authority, required evidence or project behavior materially.
 
 Do not label the framework v1.0.0 before its first recorded self-audit passes.
+
+
+## 28. Risk- and impact-based specialist routing
+
+Specialist skills are **eligible or required according to scope, risk and change impact**.
+
+Do not force every discipline into every small change.
+
+Example routing:
+
+| Change | Typical reviews |
+|---|---|
+| Copy correction | Content + lightweight UX |
+| New dashboard filter | UX + accessibility + test |
+| New database entity | Architecture + data + security + migration + simplicity |
+| New external connector | Security + permissions + operations + cost + simplicity |
+| New consequential/destructive agent action | Capability control + security + adversarial + recovery |
+| Major navigation/onboarding flow | UX + design quality + accessibility + organization |
+| Framework/service introduction | Architecture + simplicity + organization + cost |
+
+The Product Supervisor determines required evidence, then routes to the smallest sufficient specialist set.
+
+## 29. Complete-state rule
+
+A meaningful product surface is not complete until relevant non-ideal states have been considered.
+
+As applicable, review:
+- loading;
+- empty;
+- error;
+- success;
+- disabled;
+- permission denied;
+- partial/stale data;
+- long or unexpected content;
+- responsive/small-screen behavior;
+- slow network;
+- destructive-action confirmation/recovery.
+
+Not every component needs every state. Every state that can materially occur must be intentional.
+
+## 30. Evidence-based quality
+
+Do not award vague quality labels such as "excellent UX", "secure", "fast", or "simple" without evidence.
+
+Examples:
+- Performance → measured critical-route evidence.
+- Accessibility → automated checks plus relevant manual keyboard/interaction review.
+- Code simplicity → simplicity review + dependency/architecture diff where useful.
+- Recovery → rollback/restore procedure or test.
+- UX quality → critical journey reviewed across required states.
+- Security → controls/tests/findings, not assertion.
+- Repository organization → navigation/canonical-source audit.
+
+The Supervisor asks:
+> **What proves this?**
+
+## 31. Complexity budget
+
+Every serious software project should maintain:
+`project-governance/complexity-budget.md`
+
+Complexity dimensions include:
+- UI;
+- code;
+- data;
+- permissions;
+- infrastructure;
+- operations;
+- vendors;
+- AI/evaluation;
+- support;
+- migration/reversal.
+
+A substantial feature should include a proportional Complexity Impact assessment.
+
+Complexity is acceptable when it solves a current validated need, is understood, and has a maintainable ownership/recovery path.
+
+## 32. Reuse discipline
+
+> **Reuse stable concepts, not merely similar-looking code.**
+
+Extract shared assets/modules when:
+- behavior is genuinely shared;
+- boundaries are stable enough;
+- at least two real consumers exist, OR security/consistency requires centralization;
+- ownership is clear;
+- testing can protect consumers.
+
+Do not create generic shared libraries for hypothetical future projects.
+
+## 33. Lifecycle participation of organization and simplicity
+
+### PS-0 / PS-1
+Organization establishes canonical truth and document homes.
+Simplicity challenges unnecessary scope and premature complexity.
+
+### PS-2
+Organization reviews domain/dependency boundaries.
+Simplicity challenges architecture and establishes the project complexity budget.
+
+### PS-3
+UX/design specialists define journeys, states, accessibility and visual behavior.
+Organization keeps design/product artifacts discoverable.
+
+### PS-4
+Implementation follows approved boundaries.
+Simplicity review applies to meaningful changes according to impact.
+
+### PS-5
+The release audit routes risk-relevant UX, design, accessibility, browser, security, performance, simplicity and operational reviews.
+
+### PS-6 / PS-7
+Periodic health checks monitor complexity, cost, technical debt, stale knowledge and evidence-backed reuse opportunities.
+
+## 34. Coordination principle
+
+Admonk systems should prefer:
+
+> **Central coordination → specialized execution → shared canonical state → evidence-based gates → no duplicated authority.**
+
+The Product Supervisor coordinates product-development capabilities.
+Specialist skills provide expertise.
+The project repository preserves the durable truth.
