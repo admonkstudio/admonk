@@ -137,6 +137,8 @@ Rules:
 
 ## 7. Design inheritance
 
+Approved family design direction: **shared behavior + subtle family cues + distinct product identity**.
+
 ```text
 Admonk Design Foundation
         ↓
@@ -150,6 +152,10 @@ Specific screens
 ```
 
 Shared foundation should govern accessibility, state behavior, semantics and component contracts where proven.
+
+Selected family-shell mechanics may be shared when cross-product familiarity materially benefits users.
+
+The shared layer must remain deliberately small because its accepted cost is ongoing governance, ownership/versioning and affected-consumer QA.
 
 Products may vary:
 - layout;
