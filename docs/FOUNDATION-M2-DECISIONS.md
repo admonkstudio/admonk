@@ -17,3 +17,7 @@
 
 ## M2-04 owner requirements — recorded, decision pending
 Custom tenant-defined roles/scopes are mandatory. Defaults should accelerate setup, not constrain it. Department setup must be configurable to real operating structures. Admin UX should use simple templates, grouped toggles, plain-language descriptions, scope selectors and an access preview instead of exposing authorization-model complexity directly.
+
+
+## M2-06 owner direction — recorded, decision pending
+Prefer atomic sellable subscription SKUs with simple ON/OFF entitlement. A commercially standalone feature may itself become an add-on SKU. Bundles/plans should compose SKUs rather than hide feature-level entitlement logic. Corporate AI/company brain is a cross-product add-on layer. Permissions and feature flags remain separate.

@@ -338,3 +338,21 @@ The user-facing/admin wording should remain plain language rather than exposing 
 **Accepted cost:** one central shared permission evaluator plus explanation metadata, in exchange for predictable behavior across custom roles, inheritance and all products.
 
 **Status:** LOCKED.
+
+
+## M2-06 owner direction — Atomic sellable subscriptions, decision pending
+
+The product owner prefers a simpler commercial entitlement model than hierarchical feature entitlements.
+
+Direction to evaluate:
+- runtime entitlement should stay primarily ON/OFF per sellable SKU;
+- if a capability/feature is commercially valuable enough to purchase separately, model it as its own sellable product/add-on SKU rather than a buried feature entitlement;
+- customers may subscribe to one specialist product, several specialist products, or individual add-on capabilities;
+- bundles/plans may exist for convenience/discounting, but should resolve to a set of independently identifiable sellable SKUs rather than define the only access model;
+- Corporate AI / company brain should be modeled as a cross-product subscription layer/add-on that can sit on top of whichever specialist products/data contracts the tenant has enabled;
+- permissions remain separate from subscriptions;
+- feature flags remain separate from subscriptions;
+- billing-provider objects must not become the platform's permanent internal product identifiers;
+- keep room for quantity/usage pricing later without forcing feature-level entitlement complexity into M2-06.
+
+Status: **OWNER DIRECTION RECORDED — M2-06 NOT YET LOCKED.**
