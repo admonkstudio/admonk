@@ -925,7 +925,8 @@ Typical triggers:
 Review depth remains proportional to impact.
 
 Design-system review must answer:
-- can an approved existing component/pattern satisfy the need?
+- can an approved existing component/pattern satisfy the need **in this product context**?
+- do semantics, behavior, accessibility, information density, content assumptions, workflow consequence and responsive/input behavior fit?
 - is the behavior/semantic contract genuinely different?
 - is the change product-specific, domain-specific, or foundation-level?
 - what states/accessibility/responsive behavior are affected?
@@ -933,6 +934,8 @@ Design-system review must answer:
 - does the change preserve product-specific brand expression?
 
 Do not build a large shared component library before real product usage establishes stable reusable behavior.
+
+Promotion should follow the Design Foundation promotion ladder from local experiment through domain/cross-product evidence before foundation approval.
 
 Current Design Foundation source:
 `design-foundation/README.md`
