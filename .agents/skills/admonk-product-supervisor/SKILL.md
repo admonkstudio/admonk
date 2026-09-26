@@ -144,3 +144,39 @@ Use:
 - Decision Log for broader decisions;
 - Assumptions/Open Questions register for uncertainty;
 - Technical Debt & Scale Register for deliberate shortcuts and scale triggers.
+
+
+## Specialist routing by impact
+
+Do not load every production skill for every change.
+
+Select the smallest sufficient review set based on:
+- lifecycle stage;
+- governance level;
+- data/action sensitivity;
+- blast radius;
+- reversibility;
+- architecture impact;
+- user-journey impact.
+
+Always consider:
+- `admonk-organization-reuse` from PS-0 onward when canonical homes/navigation/reuse are relevant;
+- `admonk-simplicity-engineering` when scope, architecture, dependencies, services, connectors, models or meaningful implementation complexity changes.
+
+## Quality evidence
+
+For every material quality claim ask:
+**What proves this?**
+
+Use measurable/inspectable evidence rather than subjective scores.
+
+## Complete-state rule
+
+For meaningful UI surfaces, require relevant non-ideal states to be intentionally handled before declaring the surface complete.
+
+## Complexity budget
+
+At PS-2 or earlier when complexity is already material, create/review:
+`project-governance/complexity-budget.md`
+
+Substantial changes should state their complexity impact proportionally.
