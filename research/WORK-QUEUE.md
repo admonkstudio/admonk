@@ -14,13 +14,13 @@ This queue tracks the decision-sized research work required to populate and lock
 | 3 | Engineering simplicity doctrine | Document Population Research | LOCKED |
 | 4 | Security/privacy baseline doctrine | Document Population Research | LOCKED |
 | 5 | AI autonomy/agent authority doctrine | Document Population Research | LOCKED |
-| 6 | Operations / reliability / AI unit-economics doctrine | Document Population Research | AWAITING Q1 |
+| 6 | Operations / reliability / AI unit-economics doctrine | Document Population Research | LOCKED |
 
 ## Priority 2 — Design Foundation
 
 | Order | Artifact / decision | Mode | Status |
 |---:|---|---|---|
-| 7 | Shared vs product-specific design behavior | Document Population Research | Pending |
+| 7 | Shared vs product-specific design behavior | Document Population Research | ACTIVE |
 | 8 | Design-system maturity direction | Choice / Direction Research | Pending |
 | 9 | Token architecture direction | Choice / Direction Research | Pending |
 | 10 | Component promotion policy | Document Population Research | Pending |
