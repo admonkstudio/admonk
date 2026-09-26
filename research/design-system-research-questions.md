@@ -63,3 +63,37 @@
 - What should Figma represent versus code?
 - How should drift between design and implementation be detected?
 - Which automated visual/accessibility checks are valuable at different maturity levels?
+
+
+## Do not standardize
+
+- Which design decisions should normally remain product-specific even if they could technically be shared?
+- Which brand/visual/workflow decisions create differentiation rather than undesirable inconsistency?
+- When does standardization reduce product fit?
+- What evidence would justify overriding the default "keep product-specific" position?
+
+Candidate areas to test:
+- brand colors;
+- illustration/photography style;
+- marketing-page composition;
+- dashboard layout;
+- domain vocabulary;
+- workflow sequence;
+- emotional tone;
+- information density;
+- AI personality.
+
+## Contextual component fit
+
+When considering reuse, research how to evaluate:
+- semantic fit;
+- behavior fit;
+- accessibility fit;
+- information density;
+- content-length assumptions;
+- workflow consequence/risk;
+- responsive/mobile behavior;
+- input modality;
+- localization/content variability.
+
+A component may be technically reusable and still be contextually wrong.
