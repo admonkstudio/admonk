@@ -214,3 +214,29 @@ Ask Kalam is used as **implementation evidence / learning material only** during
 **Accepted cost:** a proper identity/membership/settings model is slightly richer than per-product user tables, but it eliminates duplicate auth/profile systems and enables one-account navigation across the product family.
 
 **Status:** LOCKED.
+
+
+## M2-04 owner requirements — Custom Roles, Scopes and Simple Setup
+
+These are product-owner requirements for the current M2-04 decision. They are **not yet the locked M2-04 architecture**.
+
+- platform defaults should cover common organizations quickly, but defaults must not force department semantics;
+- authorized tenant/platform administrators must be able to create custom roles for their organization;
+- custom roles are composed from explicit capabilities/permissions rather than requiring code changes;
+- custom roles may be scoped to the relevant organizational scope and/or product/resource type;
+- departments may define role structures that fit their real work (for example Marketing should not be forced into generic Admin/Agent terminology);
+- role hierarchy/inheritance may be used where it materially simplifies data visibility or subordinate-scope access, but hierarchy must not silently bypass explicit capability restrictions;
+- department setup is part of product setup: learning how the department works should improve the configured operating model;
+- customization is a first-class platform requirement, equal in importance to simplicity, scalability, testing speed and cost constraints;
+- the administration UX must hide RBAC complexity behind plain-language choices:
+  - start-from-template/default role;
+  - role name + short description;
+  - choose scope;
+  - simple permission toggles grouped by job/objective;
+  - clear descriptions of what each toggle allows;
+  - preview/summary of resulting access before save;
+  - advanced detail only when needed;
+- changing a role should update its assignees through the shared permission model rather than requiring per-user recoding;
+- avoid hard-coded department-specific roles in shared platform code.
+
+Research direction: separate **organizational/data hierarchy** from **capability permissions**, while allowing tenant-specific custom role bundles and scope assignments.

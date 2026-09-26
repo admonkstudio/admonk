@@ -11,3 +11,7 @@
 
 ## Current
 **M2-04 — Organization Roles vs Product / Domain Roles**
+
+
+## M2-04 owner requirements — recorded, decision pending
+Custom tenant-defined roles/scopes are mandatory. Defaults should accelerate setup, not constrain it. Department setup must be configurable to real operating structures. Admin UX should use simple templates, grouped toggles, plain-language descriptions, scope selectors and an access preview instead of exposing authorization-model complexity directly.
