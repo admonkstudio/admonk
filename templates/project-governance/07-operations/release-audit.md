@@ -1,89 +1,63 @@
 # Product Release Audit
 
-**Release:**  
-**Environment:**  
-**Audit level:** Prototype / Production / High-risk  
-**Date:**  
-**Accountable owner:**  
-**Supervisor/reviewer:**  
+**Playbook:** `playbooks/PB02-production-readiness-release.md`
+
+**Release:**
+**Environment:**
+**Governance level:** Prototype / Production / High-risk
+**Release risk:** Low / Medium / High
+**Date:**
+**Accountable owner:**
+**Supervisor/reviewer:**
 
 ## Decision
-
 **PASS / PASS WITH ACCEPTED RISKS / BLOCKED**
 
-## Audit evidence
+## Universal Production minimum
+Confirm applicable minimum:
+- critical behavior works;
+- automated quality checks pass;
+- secrets/access remain protected;
+- no material issue is silently ignored;
+- affected critical journey verified;
+- failure detection exists where failure matters;
+- recovery/mitigation path known.
 
-| Requirement | Domain | Risk | Evidence link / result | Status | Owner | Remediation deadline | Release effect |
+## Risk-triggered evidence
+Apply only what the change affects.
+
+| Requirement | Domain | Risk | Evidence link/result | Status | Owner | Remediation/cleanup | Release effect |
 |---|---|---|---|---|---|---|---|
 |  | Product truth |  |  | Pass / Risk accepted / Blocked |  |  |  |
 |  | UX & accessibility |  |  |  |  |  |  |
 |  | Security & privacy |  |  |  |  |  |  |
 |  | Code & delivery |  |  |  |  |  |  |
-|  | Reliability |  |  |  |  |  |  |
-|  | Data integrity |  |  |  |  |  |  |
+|  | Reliability/recovery |  |  |  |  |  |  |
+|  | Data/migration integrity |  |  |  |  |  |  |
+|  | API compatibility |  |  |  |  |  |  |
 |  | Performance |  |  |  |  |  |  |
-|  | Business readiness |  |  |  |  |  |  |
-|  | Cost & scale |  |  |  |  |  |  |
-|  | Documentation |  |  |  |  |  |  |
+|  | AI behavior/authority/economics |  |  |  |  |  |  |
+|  | Business/support readiness |  |  |  |  |  |  |
+|  | Documentation/ownership |  |  |  |  |  |  |
 
-## Minimum release-evidence bundle
+## Minimum release-evidence record
+**Change → Release risk → Tests/evidence → Conditional controls → Rollout → Failure signals → Recovery → Approval if required → Result/post-release verification**
 
-For material Production changes, record or link evidence for:
-- **Change** — what changed;
-- **Risk** — what can materially fail;
-- **Evidence** — tests/reviews/measurements that prove important requirements;
-- **Critical journey impact** — primary flows verified;
-- **Specialist evidence** — security/accessibility/data/performance/AI where relevant;
-- **Known gaps/exceptions** — explicit and owned;
-- **Recovery** — rollback/restore/mitigation path;
-- **Release owner** — accountable owner;
-- **Post-release verification** — signal that confirms release health.
+CI/PR/canonical records may satisfy this. Do not duplicate paperwork. No universal coverage percentage.
 
-This may be satisfied through CI, PR evidence, the Evidence Index, and other canonical records when traceable. Do not create duplicate paperwork solely to satisfy the bundle.
+## High-risk controls when relevant
+Human approval; staged rollout/flag; migration rehearsal; API compatibility; stronger security/privacy review; AI regression evaluation; backup/restore or recovery rehearsal.
 
-No universal code-coverage percentage is required. Testing depth follows the risk introduced by the actual change.
+## Adversarial review when applicable
+Anonymous visitor; unauthorized access attempt; accidental admin harm; malformed/rapid requests/files; AI prompt/tool manipulation; dependency outage; failed job; leaked/rotated secret; bad deployment/rollback.
 
-## Adversarial review
+## Feature flags / temporary controls
+If used, record owner + cleanup/removal condition.
 
-Record applicable tests and evidence:
-- anonymous visitor;
-- user attempting unauthorized data/action access;
-- harmful accidental admin action;
-- malformed/rapid/unexpected requests or files;
-- AI prompt-injection/tool manipulation where relevant;
-- dependency outage;
-- failed background job;
-- leaked/rotated secret;
-- bad deployment/rollback.
-
-## Release blockers
-
-Confirm relevant blockers are cleared:
-- authorization verified for sensitive actions/data;
-- no exposed secrets;
-- practical backup/recovery path;
-- critical error monitoring;
-- deployment/data recovery or rollback;
-- named production incident owner;
-- critical flow verification;
-- no unresolved Critical/High security finding;
-- required privacy/consent handling.
-
-## Accepted risks
-
-Link each accepted risk to its owner, mitigation and deadline.
-
-## Operational references
-
-**Rollback method:**  
-**Backup/recovery:**  
-**Monitoring/error dashboard:**  
-**Incident/runbook:**  
-**Known risks:**  
-**Next review date:**  
+## Accepted risks / exceptions
+Link material accepted risk to owner, reason, mitigation and PB07/S030 exception record.
 
 ## Approval
-
-**Accountable owner:**  
-**Additional required approver(s):**  
-**Final decision:**  
+Accountable owner:
+Additional required approver(s):
+Final decision:

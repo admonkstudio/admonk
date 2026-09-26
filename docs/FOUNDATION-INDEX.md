@@ -1,61 +1,44 @@
 # Admonk Foundation — Read Me First
 
-**Purpose:** Give any person or AI model a deterministic entry point into the Admonk product-building foundation.
-
-## A. Studio Foundation
-
+## A. Studio Foundation — normal product work
 Read in this order:
-
 1. `AGENTS.md`
-2. `docs/FOUNDATION-PROGRAM.md`
-3. `docs/PRODUCT-SUPERVISOR.md`
-4. `research/STATUS.md`
-5. `research/research-charter.md`
-6. `research/PARALLEL-TRACKS.md`
-7. `research/capability-map/current-coverage-baseline.md`
-8. `design-foundation/README.md`
-9. approved `doctrine/`, `standards/`, `playbooks/` when populated
-10. relevant specialist skills only when the task requires them
+2. `docs/FOUNDATION-STATUS.md`
+3. `docs/FOUNDATION-PROGRAM.md`
+4. `docs/PRODUCT-SUPERVISOR.md`
+5. relevant approved `doctrine/`
+6. `standards/STUDIO-STANDARDS.md`
+7. relevant `playbooks/PB*.md`
+8. `design-foundation/README.md` when design-system work is relevant
+9. relevant specialist skills only when required
 
-## B. Product family / suite work
+Do **not** load the research corpus for ordinary execution.
 
+## B. Foundation research/change work
+Additionally read `research/STATUS.md`, research charter/queue, relevant synthesis/tool/source records and the Decision Cost Framework. Research is supporting evidence/history; it becomes authority only after human approval and promotion.
+
+## C. Product family / suite work
 Then read:
-
 1. `docs/PRODUCT-PLATFORM-FOUNDATION.md`
 2. `docs/AI-SUITE.md`
-3. `docs/AI-SUITE-REPOSITORY-MAP.md`
-4. `docs/AI-SUITE-MANIFEST.yaml`
-5. relevant product repository's `AGENTS.md` and canonical docs
+3. repository map/manifest
+4. relevant product repository canonical docs
 
-## C. Product-specific work
-
+## D. Product-specific work
 Inside a product repository:
-
 1. product `AGENTS.md`;
 2. Product Supervisor/project-governance state;
-3. product master plan/product foundation;
+3. product master plan/foundation;
 4. current milestone/tasks;
-5. product-specific architecture/security/data/docs;
-6. inherited Admonk foundation references as needed.
+5. relevant product architecture/security/data/docs;
+6. inherited Admonk Foundation references as needed.
 
-## Authority rule
-
-Shared Admonk foundations govern reusable quality/process/contracts.
-
-A specialist product remains authoritative for its own domain semantics unless an explicitly approved shared contract applies.
-
-## Critical distinction
+## Authority
+Shared Admonk foundations govern reusable quality/process/contracts. Specialist products remain authoritative for their own domain semantics unless an approved shared contract applies. Prefer references to canonical sources over copied competing instructions.
 
 ```text
-Studio Foundation
-= how we build products
-
-Product Platform Foundation
-= what all products share
-
-Product Foundation
-= what one product owns and how it inherits/extends the platform
-
-Tenant Configuration
-= how one customer uses/configures the product
+Studio Foundation = how we build products
+Product Platform Foundation = what all products share
+Product Foundation = what one product owns and how it inherits/extends the platform
+Tenant Configuration = how one customer uses/configures the product
 ```

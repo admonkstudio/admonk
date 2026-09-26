@@ -1,86 +1,76 @@
 # Product Brief
 
 **Doctrine:** `doctrine/product-principles.md`
+**Playbook:** `playbooks/PB01-product-definition-scope.md`
 
-The Product Brief supports a build/no-build and scope decision. It should expose uncertainty rather than read like sales copy.
+The Product Brief supports a build/no-build and scope decision. Expose uncertainty rather than writing sales copy.
 
-# VALUE — Why should this exist?
-
+# VALUE
 ## Intended user/customer
-
-Primary user:  
-Buyer/customer:  
-First operating tenant/use case:  
+Primary user:
+Buyer/customer:
+First operating tenant/use case:
 
 ## Problem / opportunity
-
-What meaningful problem or opportunity exists?  
-What happens today?  
+What meaningful problem/opportunity exists?
+What happens today?
 What workaround/alternative is used?
+Why does it matter?
 
 ## Desired outcome
-
-What should materially improve?
+What should materially improve? Define observable outcomes before implementation.
 
 ## Evidence
-
-What evidence supports the problem/value hypothesis?  
+What supports the problem/value hypothesis?
 What is FACT vs ASSUMPTION vs HYPOTHESIS?
-
+How strong/weak is the evidence?
 Link unresolved items to `assumptions-open-questions.md`.
 
-## Proposed value
-
-Why could this product be meaningfully better than the current alternative?
-
-# BOUNDARY — What are we building now?
-
+# BOUNDARY
 ## Appetite / constraints
-
-Budget/investment appetite:  
-Timeline:  
-Team:  
-Platform/provider constraints:  
-Other material constraints:  
+Budget/investment appetite:
+Timeline:
+Team:
+Platform/provider constraints:
+Other constraints:
 
 ## Smallest coherent scope
+What is small enough to deliver well but complete enough to test the real value proposition and important end-to-end journey?
 
-What capability set is small enough to deliver well but complete enough to test the real value proposition?
+## Now / Later / Not this version
+**Now — required to test value:**
+**Later — plausible but not justified now:**
+**Not this version / explicit non-goals:**
 
 ## Key solution concept
+Describe the macro solution without prematurely freezing implementation.
 
-Describe the macro solution without prematurely freezing implementation details.
+## Material risks / expensive boundaries
+Record only items that could materially alter product/architecture: security/privacy, AI authority, important data, external/shared APIs, irreversible actions, unusual reliability needs, costly integrations or expensive-to-change boundaries.
 
 ## Rabbit holes / complexity risks
+What could unexpectedly expand work, cost, data, permissions, integrations or operations?
 
-What could unexpectedly expand the work, cost, data model, permissions, integrations or operations?
-
-## Non-goals / no-gos
-
-What are we explicitly not building or solving now?
-
-# PROOF — What must become true?
-
+# PROOF
 ## Success evidence
-
-Primary evidence of user/customer value:  
-Critical acceptance evidence:  
-Expected early evidence window:  
+Primary evidence of user/customer value:
+Critical acceptance evidence:
+Expected early evidence window:
 
 ## Gate conditions
-
 Which data/security/permission/operational conditions must be satisfied before the next lifecycle gate?
 
-## Open assumptions
+## Decision
+**Proceed / Test first / Stop or defer**
+Reason/evidence:
 
+## Open assumptions
 Link to `assumptions-open-questions.md`.
 
 ## Revisit triggers
-
-What new evidence would reopen the product direction or scope?
+What new evidence would reopen direction or scope?
 
 ## Approval
-
-Accountable owner:  
-Status: Draft / Approved / Reopened  
-Approval date:  
+Accountable owner:
+Status: Draft / Approved / Reopened
+Approval date:

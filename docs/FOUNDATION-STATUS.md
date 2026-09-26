@@ -1,71 +1,44 @@
 # Admonk Foundation — Status
 
-**Date:** 2026-09-26  
-**Program:** Admonk Foundation Program  
+**Date:** 2026-09-26
+**Program:** Admonk Foundation Program
 **Current milestone:** **FOUNDATION-M1 — Populate & Lock Studio Foundation**
-**Current sub-milestone:** **M1-R2 — Tool / technology decisions**  
-**Milestone status:** Active  
-**Foundation lock:** Not yet complete  
+**Current sub-milestone:** **Skills + Templates Reconciliation**
+**Milestone status:** Active
+**Foundation lock:** Not yet complete
 **Current stable Product Supervisor:** v1.1.0
 
-## Completed structural work
+## Completed
+- Product Supervisor lifecycle/gates, Organization & Reuse, Simplicity-First Engineering, Complexity Budget.
+- research/doctrine/standards/playbooks authority separation and research operating system.
+- Design Foundation scaffold/promotion ladder and Product Platform Foundation direction.
+- **R001–R016 complete/locked; retroactive R001–R006 costs accepted.**
+- **T017–T028 complete/locked.**
+- **S001–S030 complete/locked.**
+- **P001/P002 complete/locked.**
+- **PB01–PB07 core playbooks complete/locked.**
 
-- Product Supervisor lifecycle/gates.
-- Risk-based release audit and evidence model.
-- Organization & Reuse skill.
-- Simplicity-First Engineering skill.
-- Complexity Budget.
-- research/doctrine/standards/playbooks authority separation.
-- capability-discovery and tool-evaluation research structure.
-- feedback-loop research model.
-- Design Foundation scaffold.
-- Design Foundation promotion ladder.
-- do-not-standardize boundaries.
-- design drift/maturity research scaffolds.
-- current capability coverage baseline.
-- Product Platform Foundation direction.
-- Foundation Program milestones.
-- Foundation Gap Audit.
-- reusable product-foundation templates.
-- Research operating protocol and work queue.
-- Research Director skill.
-- Dual-source research and Q1 templates.
+## Current work — Skills + Templates reconciliation
+Reconcile existing Studio skills, Product Supervisor/governance templates and Design Foundation artifacts against approved Standards/Playbooks.
 
-## Current work
+Immediate goals:
+- remove contradictions;
+- reference canonical Standards/Playbooks instead of competing copies;
+- update stale status/navigation;
+- preserve specialist skill detail where it adds execution value;
+- avoid rewriting healthy skills merely for stylistic consistency.
 
-Priority 1–3 research items R001–R016 are complete/locked. The retroactive Decision Cost audit for R001–R006 is accepted. Priority 4 tool decisions are active. T017 component workbench is decided: Storybook Adopt Conditionally. T018 visual regression is decided: targeted Playwright Adopt Conditionally; Chromatic deferred until shared-state/collaboration evidence justifies it. T019 accessibility automation is decided: axe-core Adopt Conditionally; Lighthouse supplementary only. T020 secret scanning is decided: GitHub Secret Protection preferred when economically available; Gitleaks portable fallback. T021 static analysis is decided: language-native checks Adopt Now; CodeQL preferred conditionally for deeper SAST; Semgrep CE targeted portable fallback; paid Semgrep deferred. T022 dependency/supply-chain is decided: Dependabot baseline; dependency review conditional; Socket conditional pilot for incremental malicious-package protection. T023 API contract validation is decided: repository-owned OpenAPI + Redocly conditional for shared APIs; Pact deferred until independent-consumer complexity justifies it. Current item: T024 Migration Validation.
+Known first findings:
+- former **“No permanent exceptions”** conflicts with S030 and must use explicit Temporary/Permanent semantics;
+- Product Brief and Release Audit require small PB01/PB02 alignment;
+- Marketing Hub is a downstream validation target, not the canonical home for Studio Foundation rules.
 
 ## FOUNDATION-M1 remaining gate
-
-- authoritative source gathering;
-- competing viewpoints;
-- evidence synthesis;
-- doctrine proposals;
-- human approval;
-- standards;
-- playbooks;
-- tool/technology decisions;
-- Design Foundation researched baseline;
-- skill/template reconciliation;
-- BriefFlow revalidation;
-- Marketing Hub revalidation;
-- repository contradiction/navigation audit;
-- versioned Studio Foundation release.
+1. complete skill/template reconciliation;
+2. BriefFlow revalidation;
+3. Marketing Hub revalidation;
+4. repository contradiction/navigation audit;
+5. version and lock Studio Foundation release.
 
 ## Explicitly not complete
-
-Do not describe the Admonk Studio Foundation as "locked/completed" until FOUNDATION-M1 passes.
-
-The Product Platform Foundation is also not locked. Its current documents are direction/architecture discovery for FOUNDATION-M2.
-
-## Next after FOUNDATION-M1
-
-**FOUNDATION-M2 — Define Shared Product Platform Foundation**
-
-Then:
-- main product master plan;
-- reusable product/department foundation;
-- individual product foundations;
-- shared contract freeze;
-- integrated reference validation;
-- platform foundation lock.
+Do not describe the Studio Foundation as fully locked/completed until the remaining validation/audit gates pass. Product Platform Foundation is also not locked; current documents remain FOUNDATION-M2 direction/discovery.
