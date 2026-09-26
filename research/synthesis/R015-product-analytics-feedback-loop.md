@@ -2,7 +2,7 @@
 
 **Date:** 2026-09-26
 **Mode:** Choice / Direction Research
-**Status:** Awaiting product-owner Q1 + cost acceptance
+**Status:** LOCKED — B selected and decision cost explicitly accepted 2026-09-26
 **Target:** Product analytics operating model and Product Supervisor PS-6/PS-7 expectations
 
 ## Research question
@@ -162,17 +162,18 @@ Map outcome and several driver levels immediately.
 **Benefit:** strongest early analytical structure.
 **Price:** highest instrumentation/governance cost and risk of modeling unproven relationships.
 
-## Research recommendation
+## Locked Admonk direction
 
 **B — Progressive outcome tree.**
 
 > **Admonk accepts some early analytical blind spots and later instrumentation work so analytics complexity grows from real product decisions rather than from the desire to measure everything.**
 
-## Lock plan after Q1
+## Lock result
 
-If B and its price are accepted:
-1. lock R015;
-2. add the metric contract and progressive outcome-tree rule to `research/feedback-loops.md`;
-3. align Product Supervisor PS-6/PS-7;
-4. defer analytics vendor/tool choice to Priority 4;
-5. move to R016 — AI Evaluation / Regression Baseline.
+- Progressive outcome tree locked.
+- Early analytical blind spots and later instrumentation/refactoring explicitly accepted.
+- Metric contract and progressive-depth rule promoted into feedback-loop governance.
+- Product Supervisor PS-6/PS-7 aligned.
+- Analytics vendor/tool choice remains deferred to Priority 4.
+- R015 locked under the Decision Cost & Coupling Framework.
+- Next item: R016 — AI Evaluation / Regression Baseline.
