@@ -1000,3 +1000,21 @@ Do not require full distributed tracing or broad telemetry merely because a prod
 Add richer observability when incidents, diagnosis cost, architecture complexity, risk or external requirements demonstrate that the evidence is worth its ongoing cost.
 
 Do not accept dashboards or telemetry streams with no owner and no plausible decision/action.
+
+
+## Accessibility baseline rule
+
+Approved baseline:
+`design-foundation/accessibility-rules.md`
+
+Production web products target WCAG 2.2 Level AA as the engineering floor.
+
+Automated checks are supporting evidence, not sufficient proof.
+
+Primary and consequential journeys require relevant manual accessibility verification.
+
+Material accessibility failures on critical journeys are release-blocking by default.
+
+Non-critical gaps may be accepted only through the Exception Register with an owner, user impact, mitigation where relevant, and expiry/review date.
+
+Deeper inclusive/user validation is routed by risk, novelty and observed exclusion rather than required universally.
