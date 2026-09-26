@@ -2,7 +2,8 @@
 
 **Date:** 2026-09-26  
 **Program:** Admonk Foundation Program  
-**Current milestone:** **FOUNDATION-M1 — Populate & Lock Studio Foundation**  
+**Current milestone:** **FOUNDATION-M1 — Populate & Lock Studio Foundation**
+**Current sub-milestone:** **M1-R1 — Execute researched document population**  
 **Milestone status:** Active  
 **Foundation lock:** Not yet complete  
 **Current stable Product Supervisor:** v1.1.0
@@ -26,10 +27,13 @@
 - Foundation Program milestones.
 - Foundation Gap Audit.
 - reusable product-foundation templates.
+- Research operating protocol and work queue.
+- Research Director skill.
+- Dual-source research and Q1 templates.
 
 ## Current work
 
-Populate the Studio Foundation with researched, human-approved doctrine and derived standards/playbooks.
+Execute `research/WORK-QUEUE.md` using the Research Operating Protocol. Current next item: Product principles / product-definition doctrine.
 
 ## FOUNDATION-M1 remaining gate
 
