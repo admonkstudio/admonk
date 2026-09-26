@@ -3,7 +3,7 @@
 **Date:** 2026-09-26
 **Program:** Admonk Foundation Program
 **Current milestone:** **FOUNDATION-M1 — Populate & Lock Studio Foundation**
-**Current sub-milestone:** **Repository Contradiction & Navigation Audit**
+**Current sub-milestone:** **Version & Lock Decision**
 **Milestone status:** Active
 **Foundation lock:** Not yet complete
 **Current stable Product Supervisor:** v1.1.0  
@@ -40,18 +40,17 @@ Accepted product-specific gap:
 
 Evidence: `docs/FOUNDATION-MARKETING-HUB-REVALIDATION-2026-09-26.md`.
 
-## Current work — Repository contradiction & navigation audit
-Verify that:
-- `docs/FOUNDATION-INDEX.md` provides a deterministic normal-work path;
-- current status files reflect completed research/standards/playbooks/validations;
-- stale pre-Foundation instructions are either updated or clearly historical;
-- canonical links resolve;
-- no competing authority remains for lifecycle/risk, exceptions, design maturity, tools or playbooks;
-- the working Product Supervisor candidate is not mislabeled as stable v1.1.0.
+## Completed audit — Repository contradiction & navigation
+Result: **PASS**.
+
+Evidence: `docs/FOUNDATION-CONTRADICTION-NAVIGATION-AUDIT-2026-09-26.md`.
+
+No unresolved current-authority contradiction or navigation blocker remains.
 
 ## FOUNDATION-M1 remaining gate
-1. repository contradiction/navigation audit;
-2. assign version and lock Studio Foundation release.
+1. assign release/version scheme;
+2. record the release/changelog;
+3. lock Studio Foundation release.
 
 ## Explicitly not complete
 Do not describe the Studio Foundation as fully locked/completed until the remaining validation/audit gates pass. Product Platform Foundation is also not locked; current documents remain FOUNDATION-M2 direction/discovery.

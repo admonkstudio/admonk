@@ -9,7 +9,7 @@
 
 ## Current phase
 
-**Focused research/decision work is complete. Final FOUNDATION-M1 contradiction/navigation audit and versioned release remain.**
+**Focused research/decision work and final contradiction/navigation audit are complete. Only versioning/release lock remains.**
 
 Research remains supporting evidence/history and is reopened only when a locked decision is challenged, materially changed or extended.
 
@@ -32,7 +32,7 @@ Research remains supporting evidence/history and is reopened only when a locked 
 - [x] Reconcile templates and skills with approved Foundation.
 - [x] Re-run BriefFlow validation — PASS after BF01/BF02 fixes.
 - [x] Re-run Marketing Hub validation — PASS after MH01 fix; one product-specific retention/export/deletion gap remains explicit.
-- [ ] Complete repository contradiction/navigation audit.
+- [x] Complete repository contradiction/navigation audit — PASS.
 - [ ] Assign version and release the revised Studio Foundation / Product Supervisor candidate.
 
 ## Constraint
