@@ -78,7 +78,7 @@ Do not select tools because a platform supports more features. Capability and ar
 2. **M2-02 Tenant/company identity model — LOCKED**
 3. **M2-03 User + membership model — LOCKED**
 4. **M2-04 Organization roles vs product/domain roles — LOCKED**
-5. Effective-permission precedence
+5. **M2-05 Effective-permission precedence — LOCKED**
 6. Product/module entitlements
 7. Settings inheritance/overrides
 8. Shared onboarding shell
@@ -295,5 +295,46 @@ Advanced technical permission detail is shown only when needed.
 An administrator may only assign/manage capabilities within their own delegated administration authority. Out-of-scope capabilities are unavailable rather than relying on the admin to avoid them manually.
 
 **Accepted cost:** the platform maintains capability metadata, scoped assignments and custom role definitions instead of a single fixed role list. This is accepted to avoid role explosion, duplicate authorization logic and customer-specific code forks.
+
+**Status:** LOCKED.
+
+
+## Locked decision — M2-05 Effective Permission Precedence
+
+**Decision:** Default deny + additive capability grants from applicable roles + explicit hierarchical restriction ceilings. Restrictions win. Provider limits and consequential-action approvals are final gates. Every authorization result must be explainable.
+
+### Evaluation model
+1. start from **default deny**;
+2. gather applicable capability grants from active role assignments;
+3. combine grants additively;
+4. apply tenant/platform/product/scope restriction ceilings;
+5. apply permitted user-specific exceptions where supported;
+6. enforce connector/provider scopes and upstream permissions;
+7. enforce action-specific approval/verification gates for consequential operations;
+8. return the effective decision plus an explanation trace.
+
+### Rules
+- roles grant capabilities; normal role definitions do not need arbitrary allow/deny policy logic;
+- hard restrictions/ceilings may reduce access and always outrank grants;
+- no child scope, custom role or user override may grant beyond an upstream ceiling;
+- approval never creates a capability that the user does not already possess;
+- provider authorization is an upper bound: platform access can never exceed the provider's own scopes/permissions;
+- scope inheritance determines **where** an assignment applies; capabilities determine **what** may be done;
+- multiple applicable roles combine their allowed capabilities rather than relying on ambiguous "closest role wins" logic;
+- individual overrides are exceptional, visible in the explanation, and should support expiry when temporary;
+- authorization must be implemented once as a shared evaluator/contract, not independently re-created in each product.
+
+### Explainability requirement
+Administrators and support tooling must be able to answer:
+- what capability was requested;
+- which role/assignment granted it;
+- which tenant/product/scope context applied;
+- whether a restriction reduced or blocked it;
+- whether provider scope blocked it;
+- whether verification/approval is still required.
+
+The user-facing/admin wording should remain plain language rather than exposing internal policy syntax.
+
+**Accepted cost:** one central shared permission evaluator plus explanation metadata, in exchange for predictable behavior across custom roles, inheritance and all products.
 
 **Status:** LOCKED.
