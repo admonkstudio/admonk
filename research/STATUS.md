@@ -19,6 +19,7 @@
 - [x] Define document-contract system.
 - [x] Create evidence-note / competing-framework / synthesis / proposed-doctrine workspaces.
 - [x] Create doctrine / standards / playbooks authority shells.
+- [x] Create Design Foundation research scaffold and document contracts.
 - [ ] Gather authoritative sources by research question.
 - [ ] Record competing viewpoints.
 - [ ] Produce evidence-backed syntheses.
