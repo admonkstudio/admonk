@@ -486,6 +486,26 @@ Do not change the brief to make a preferred platform look stronger.
 
 ---
 
+# 19A. Product / App Supervision
+
+For substantial software-product/app work, use:
+
+`.agents/skills/admonk-product-supervisor/SKILL.md`
+
+and read:
+
+`docs/PRODUCT-SUPERVISOR.md`
+
+The Product Supervisor governs lifecycle stage, build/launch gates, risk classification, cross-discipline review, deliberate technical debt, release readiness, and evidence-based scaling.
+
+Do not jump from idea to implementation merely because a coding capability is available.
+
+Default principle:
+
+> **Define before building. Build the smallest dependable version. Verify before shipping. Observe after launch. Scale only from evidence.**
+
+---
+
 # 20. Final Principle
 
 Every agent working with Admonk should optimize for:
