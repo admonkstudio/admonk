@@ -69,6 +69,41 @@ Marketing analytics is a core layer of Marketing Hub, not a separate Analytics H
 Current active stage:
 **PDISC — Product Discovery through Kalam 2027 Strategy**
 
+## Commercial composition and shared foundation
+
+Admonk's current product-owner direction is to make the suite commercially behave as **one composable product family that can be sold in parts**.
+
+A customer may enable:
+- one specialist product;
+- several specialist products;
+- the company/corporate intelligence layer;
+- later optional modules/capabilities.
+
+This commercial unity does **not** replace the technical boundary rule below.
+
+The shared Product Platform Foundation should provide common cross-product semantics where they are genuinely the same, including candidates such as:
+- tenant/company identity;
+- users/memberships;
+- product/module entitlements;
+- roles/capabilities and permission primitives;
+- settings hierarchy;
+- onboarding shell;
+- connector credential ownership;
+- audit/provenance/event contracts;
+- notification preferences;
+- AI usage/cost governance;
+- navigation/deep links;
+- design/theme inheritance;
+- version/compatibility metadata.
+
+Specialist products still own their domain semantics, data, agents, workflows, KPIs and views.
+
+Canonical foundation program:
+`docs/FOUNDATION-PROGRAM.md`
+
+Product Platform direction:
+`docs/PRODUCT-PLATFORM-FOUNDATION.md`
+
 ## Shared architecture principle
 
 Use:
