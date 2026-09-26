@@ -25,8 +25,10 @@
 
 | M2-15 | LOCKED | Tenant-aware suite navigation + stable cross-product Resource Link contract. Admonk One/family shell owns tenant/product switching; specialist products own internal navigation and resolve logical resource targets. | Requires per-product resource-link resolvers and compatibility discipline, but enables durable cross-product links without a giant composed frontend. |
 
+| M2-16 | LOCKED | Layered semantic theme inheritance: Admonk Foundation → Product Brand Theme → bounded Tenant Brand Overlay → User Display Preference. Products own identity and declare safe tenant overrides; protected accessibility/safety semantics cannot be weakened; reuse M2-07 inheritance. | Requires product theme ownership, override metadata and affected-theme QA, but preserves family coherence, product identity and bounded customer branding. |
+
 ## Current
-**M2-16 — Design / Theme Inheritance**
+**M2-17 — Localization / Timezone**
 
 
 ## M2-04 owner requirements — recorded, decision pending

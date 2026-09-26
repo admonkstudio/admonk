@@ -89,7 +89,7 @@ Do not select tools because a platform supports more features. Capability and ar
 13. **M2-13 Notification/communication preferences — LOCKED**
 14. **M2-14 Usage/token/cost governance — LOCKED**
 15. **M2-15 Navigation/deep-link contract — LOCKED**
-16. Design/theme inheritance
+16. **M2-16 Design/theme inheritance — LOCKED**
 17. Localization/timezone
 18. Data sensitivity/retention/export/deletion
 19. Version/compatibility/migration
@@ -745,5 +745,42 @@ Products resolve that logical target to their own current route/UI.
 - a future composed/microfrontend shell remains an escalation option only if measured navigation/integration friction justifies its cost.
 
 **Accepted cost:** participating products maintain a small stable resource-link resolver and compatibility discipline, in exchange for durable Corporate Brain, notification, approval and audit navigation without coupling all products into one frontend.
+
+**Status:** LOCKED.
+
+
+## Locked decision — M2-16 Layered Semantic Theme Inheritance
+
+**Decision:** Use layered semantic theme inheritance:
+
+**Admonk Design Foundation → Product Brand Theme → Tenant Brand Overlay → User Display Preference.**
+
+### Foundation layer
+- owns shared semantic/behavior contracts, accessibility constraints and stable meaning;
+- does not impose one universal product visual personality;
+- continues R009 semantic-first token architecture and evidence-gated component tokens.
+
+### Product theme layer
+- each specialist product owns its visual identity, including product-specific mappings for semantic roles;
+- product identity may include color character, typography personality, density, shape language, imagery, motion and domain expression;
+- specialist products decide which theme roles are safe and commercially useful for tenant override.
+
+### Tenant brand overlay
+- tenant customization is bounded to explicitly supported semantic roles/assets;
+- examples may include organization name/logo/accent and other product-approved brand values;
+- tenant overrides cannot weaken accessibility, safety, state semantics or other protected Foundation constraints;
+- customization is configuration, not customer-specific code forks.
+
+### User display preference
+- personal display modes such as light/dark/high-contrast preferences are separate from tenant branding;
+- user preference resolves only within supported product/theme capabilities.
+
+### Implementation/governance
+- reuse M2-07 typed inheritance/override machinery instead of building a separate settings hierarchy;
+- each theme/token contract declares ownership, value type, allowed override layers and fallback/constraints;
+- exact token inventory is not locked by M2-16 and must continue to emerge through R008/R009 evidence gates;
+- stable DTCG 2025.10 remains the preferred interchange direction when implementation reaches that stage.
+
+**Accepted cost:** product-theme ownership, tenant-override metadata, accessibility validation across supported overlays and affected-theme QA, in exchange for Admonk family coherence + distinct product identity + bounded customer branding.
 
 **Status:** LOCKED.
