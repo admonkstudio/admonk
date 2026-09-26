@@ -77,7 +77,7 @@ Do not select tools because a platform supports more features. Capability and ar
 1. **M2-01 Repository, code reuse and shared-package boundary — LOCKED**
 2. **M2-02 Tenant/company identity model — LOCKED**
 3. **M2-03 User + membership model — LOCKED**
-4. Organization roles vs product/domain roles
+4. **M2-04 Organization roles vs product/domain roles — LOCKED**
 5. Effective-permission precedence
 6. Product/module entitlements
 7. Settings inheritance/overrides
@@ -240,3 +240,60 @@ These are product-owner requirements for the current M2-04 decision. They are **
 - avoid hard-coded department-specific roles in shared platform code.
 
 Research direction: separate **organizational/data hierarchy** from **capability permissions**, while allowing tenant-specific custom role bundles and scope assignments.
+
+
+## Locked decision — M2-04 Layered Scoped Authorization + Custom Roles
+
+**Decision:** Use layered scoped authorization with default role templates, tenant-defined custom roles, a stable capability catalog, optional organizational-scope inheritance, and a simple toggle-based role builder.
+
+### Authorization layers
+- **organization roles** — small tenant-level administration roles;
+- **organizational-scope roles** — department/team/business-unit responsibility;
+- **product/domain roles** — meaningful role bundles owned by each product/domain;
+- **capabilities** — stable permission atoms that define what actions/resources are allowed.
+
+Roles are bundles of capabilities. Authorization code should prefer explicit capability checks over hard-coded role-name checks.
+
+### Custom roles
+- products/platform define the available capability catalog;
+- authorized tenant administrators may create custom roles by selecting from allowed capabilities;
+- custom roles may be scoped to a product/resource type and organizational scope;
+- tenants may rename/shape roles to match real departmental work without custom code;
+- shared platform code must not hard-code one customer's department role names;
+- defaults/templates exist for speed but are starting points, not constraints;
+- clone-and-adjust is preferred over forcing users to build every role from zero.
+
+### Scope + hierarchy
+- hierarchy answers **where** an assignment applies;
+- capabilities answer **what** actions are allowed;
+- assignments may optionally inherit from a parent organizational scope to children;
+- scope inheritance must never create capabilities absent from the role/capability bundle;
+- hierarchy must not silently bypass explicit restrictions.
+
+### Department setup requirement
+Department/product setup is part of the product operating model. Learning how a department actually works should improve:
+- scopes/teams;
+- role templates;
+- custom role bundles;
+- access structure;
+- later workflow/AI context.
+
+Marketing and other specialist domains must not be forced into generic Admin/Supervisor/Agent terminology where those labels do not fit the work.
+
+### Administration UX requirement
+Authorization complexity stays underneath the platform. Normal administrators should see:
+1. choose a default/template;
+2. name the role;
+3. choose where it applies;
+4. toggle grouped plain-language permissions;
+5. review a readable access summary;
+6. save.
+
+Advanced technical permission detail is shown only when needed.
+
+### Delegation ceiling
+An administrator may only assign/manage capabilities within their own delegated administration authority. Out-of-scope capabilities are unavailable rather than relying on the admin to avoid them manually.
+
+**Accepted cost:** the platform maintains capability metadata, scoped assignments and custom role definitions instead of a single fixed role list. This is accepted to avoid role explosion, duplicate authorization logic and customer-specific code forks.
+
+**Status:** LOCKED.
