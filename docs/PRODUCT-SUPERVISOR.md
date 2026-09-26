@@ -382,3 +382,261 @@ The supervisor should always be able to answer:
 ## 13. Final principle
 
 > **Start small. Build correctly. Measure reality. Scale only when reality asks for it.**
+
+
+## 14. Governance level
+
+Governance depth must match product risk and maturity.
+
+### Prototype
+Use when all of the following are substantially true:
+- non-production or tightly controlled internal evaluation;
+- synthetic, disposable, or low-sensitivity data;
+- no consequential live writes to customer/business systems;
+- limited users and blast radius;
+- failure is cheap and reversible.
+
+Minimum expectation:
+- source control;
+- documented product brief and scope;
+- basic architecture/risk note;
+- critical-path tests appropriate to the prototype;
+- no committed secrets;
+- explicit statement that the environment is not production.
+
+### Production
+Use when any of the following applies:
+- real users;
+- real company/customer data;
+- live connectors;
+- production writes/actions;
+- ongoing operational dependency;
+- customer-facing or business-critical workflow.
+
+This is the default audit level for a live SaaS release.
+
+### High-risk
+Use when the product materially increases consequence or regulatory exposure, including examples such as:
+- regulated or highly sensitive data;
+- payments/financial movement;
+- safety-critical behavior;
+- privileged infrastructure/security control;
+- broad autonomous destructive/write capability;
+- high legal/compliance consequence;
+- large blast radius where rollback/recovery is difficult.
+
+High-risk requires stricter independent review and cannot rely only on product-owner risk acceptance for critical security/reliability findings.
+
+## 15. Progressive governance artifacts
+
+Artifacts are created when the project reaches the stage that needs them.
+
+### Minimum viable Product Supervisor — before implementation
+
+Every serious product must have at minimum:
+
+1. **Product Brief**
+   - target user;
+   - problem;
+   - desired outcome;
+   - business/value hypothesis;
+   - MVP scope;
+   - explicit non-goals.
+
+2. **MVP / Capability Specification**
+   - jobs-to-be-done;
+   - primary flows;
+   - roles/permissions;
+   - core capabilities;
+   - acceptance criteria;
+   - important edge cases.
+
+3. **Architecture & Risk Brief**
+   - chosen stack;
+   - core entities/data ownership;
+   - identity/authorization;
+   - integrations/actions;
+   - sensitive data;
+   - environments/secrets;
+   - major trade-offs;
+   - known scale path.
+
+The project should also maintain a lightweight **Project State** file from the beginning.
+
+### Build Readiness Gate
+
+Implementation may begin only when:
+- the three minimum artifacts exist;
+- major assumptions are visible;
+- the first milestone has acceptance criteria;
+- critical authorization/data/security questions are not unresolved;
+- the architecture is intentionally small enough for the current stage;
+- an accountable owner approves the build scope.
+
+## 16. Decision, assumption and debt records
+
+Use different records for different purposes.
+
+### Project Decision Log
+Use for meaningful product, UX, vendor, operational, scope and delivery decisions.
+
+Each record should capture:
+- date;
+- decision;
+- context;
+- alternatives considered where material;
+- reason;
+- owner;
+- consequences;
+- revisit trigger if any.
+
+### ADRs
+Use Architecture Decision Records only for architectural/technical decisions significant enough to need durable technical rationale.
+
+Do not force every ordinary decision into an ADR.
+
+### Assumptions & Open Questions Register
+Classify important project statements as:
+- FACT;
+- DECISION;
+- ASSUMPTION;
+- HYPOTHESIS;
+- OPEN QUESTION.
+
+Do not silently convert assumptions into product truth.
+
+### Technical Debt & Scale Register
+For deliberate shortcuts record:
+- simplification/debt;
+- why accepted;
+- current risk;
+- affected area;
+- scale/revisit trigger;
+- expected migration path;
+- owner;
+- status.
+
+## 17. Canonical project state
+
+Default source of truth:
+
+**Repository Markdown = canonical project/governance state**
+
+Use:
+- Markdown/docs for approved scope, architecture, decisions, risk and current state;
+- GitHub Issues/Projects for execution tracking and tickets;
+- application/database state only when a future Product Supervisor product needs machine-readable runtime state.
+
+Do not let issue boards silently replace approved product/architecture documents.
+
+## 18. Gate exceptions
+
+The Product Supervisor may identify risks but must not silently waive its own gate.
+
+Default authority:
+- Low/Medium product or delivery risk: named accountable product owner may accept it when documented.
+- High non-security risk: accountable owner + relevant specialist review.
+- Critical or High security/privacy finding for production: release remains blocked until mitigated, reclassified with evidence, or reviewed/accepted by an explicitly authorized security authority.
+- High-risk products may define stricter approval requirements.
+
+Every accepted exception must include:
+- reason;
+- owner;
+- mitigation;
+- deadline/revisit date;
+- rollback/containment where relevant.
+
+## 19. Product Release Audit
+
+Before a production release is declared ready, run one reusable Product Release Audit.
+
+Possible decisions:
+- **PASS** — ready to release.
+- **PASS WITH ACCEPTED RISKS** — release allowed only with documented owners, mitigations and deadlines.
+- **BLOCKED** — one or more release-blocking gaps remain.
+
+Audit depth follows Prototype / Production / High-risk classification.
+
+### Audit domains
+
+Verify evidence for:
+- Product truth;
+- UX/accessibility;
+- Security/privacy;
+- Code/delivery;
+- Reliability;
+- Data integrity;
+- Performance;
+- Business readiness;
+- Cost/scalability;
+- Documentation/operations.
+
+Every audit item must include:
+- requirement;
+- risk level;
+- evidence;
+- status;
+- owner;
+- remediation deadline when needed;
+- release effect.
+
+Do not accept statements such as "security checked" without supporting evidence.
+
+### Adversarial / red-team review
+
+Before sign-off, test relevant failure/adversarial perspectives:
+- anonymous visitor;
+- normal user attempting unauthorized data/action access;
+- admin making a harmful accidental change;
+- malformed/rapid/unexpected requests or files;
+- AI prompt-injection/tool-manipulation attempts where applicable;
+- operator responding to dependency outage, failed job, leaked secret or bad deployment.
+
+### Default production release blockers
+
+Production launch is blocked when relevant and unresolved:
+- sensitive actions/data lack verified authorization;
+- secrets are exposed in source/client;
+- no practical backup/recovery path for important data;
+- no error monitoring for critical failures;
+- no deploy/data-migration rollback or recovery path;
+- no named incident owner;
+- critical user journey has no meaningful verification/test;
+- unresolved Critical/High security finding;
+- required privacy/consent handling is missing.
+
+The release audit template lives under:
+`templates/project-governance/07-operations/release-audit.md`.
+
+## 20. Adopt now / later
+
+### Adopt now
+- Product Supervisor naming and mandate;
+- progressive artifacts;
+- risk-based governance;
+- Project Decision Log;
+- Assumptions & Open Questions Register;
+- Technical Debt & Scale Register;
+- cost and explicit scale triggers;
+- Product Release Audit;
+- proportional security/quality review;
+- repository Markdown as governance source of truth.
+
+### Adopt when justified
+- extraction into a standalone reusable repository;
+- full distributed tracing;
+- extensive SLO/error-budget programs;
+- strict CODEOWNERS/independent approval on every project;
+- enterprise governance that is not justified by project risk.
+
+## 21. Product Supervisor principle
+
+> **Define before building.**
+>
+> **Build the smallest dependable version.**
+>
+> **Verify before shipping.**
+>
+> **Observe after launch.**
+>
+> **Scale only from evidence.**
