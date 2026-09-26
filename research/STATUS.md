@@ -4,6 +4,7 @@
 **Stable Product Supervisor:** v1.1.0  
 **Structure baseline:** v1.0.0-structure  
 **Doctrine release:** Not yet created
+**Foundation Program milestone:** FOUNDATION-M1 — Populate & Lock Studio Foundation
 
 ## Current phase
 
