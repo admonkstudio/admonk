@@ -24,3 +24,7 @@ Custom tenant-defined roles/scopes are mandatory. Defaults should accelerate set
 
 ## M2-06 owner direction — recorded, decision pending
 Prefer atomic sellable subscription SKUs with simple ON/OFF entitlement. A commercially standalone feature may itself become an add-on SKU. Bundles/plans should compose SKUs rather than hide feature-level entitlement logic. Corporate AI/company brain is a cross-product add-on layer. Permissions and feature flags remain separate.
+
+
+## M2-09 owner direction — Admonk One control plane, decision pending
+Future Admonk One should centralize suite access, connector administration and reusable ingestion. Connect providers once where practical; historical backfill + incremental sync happen once; products consume governed data contracts. Corporate Brain normally reads authorized department/product data rather than reconnecting raw providers, while direct connector access remains an explicit exception for capabilities not safely exposed through shared/domain contracts.

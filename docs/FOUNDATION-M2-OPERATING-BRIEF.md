@@ -463,3 +463,22 @@ Product setup may learn/configure departmental structure, teams, role templates 
 **Accepted cost:** shared setup-state/health contracts plus product-contributed setup definitions, in exchange for avoiding duplicate onboarding systems and repeated company configuration.
 
 **Status:** LOCKED.
+
+
+## M2-09 owner direction — Admonk One control plane, decision pending
+
+The product owner intends a future **Admonk One** experience: one account/control plane for products, subscriptions, settings, connectors and suite administration.
+
+This changes the connector direction:
+- tenant/provider connections should be established once in the shared platform where practical;
+- historical backfill and ongoing synchronization should happen once per connection/data domain, not independently in every product;
+- specialist products consume governed shared data contracts/views where semantics are shared;
+- Corporate AI / Corporate Brain should normally consume already-authorized department/product data and updates rather than reconnect every raw provider itself;
+- giving Corporate Brain access to a department may grant access to that department's governed analytics/data domain without granting raw connector credentials;
+- direct Corporate Brain connector bindings remain possible only where the Brain genuinely requires a provider capability not already represented safely through a specialist/shared data contract;
+- connector credentials remain centrally protected;
+- product/domain authorization still limits which normalized data and actions each product/agent may consume;
+- specialist products remain authoritative for their domain semantics even when ingestion/runtime plumbing is shared;
+- avoid rebuilding the same ingestion/backfill/refresh pipeline per product.
+
+Status: **OWNER DIRECTION RECORDED — M2-09 NOT YET LOCKED.**
