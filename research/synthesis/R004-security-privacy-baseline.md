@@ -2,7 +2,7 @@
 
 **Date:** 2026-09-26  
 **Mode:** Document Population Research  
-**Status:** Awaiting product-owner Q1  
+**Status:** LOCKED — product-owner approved 2026-09-26  
 **Target:** future `doctrine/security-principles.md`, security/privacy standards, Product Supervisor release blockers
 
 ## Research question
@@ -216,9 +216,9 @@ No silent permanent exceptions.
 
 > **Admonk security and privacy protect both the system and the people affected by its data and actions: enforce a non-negotiable safety floor, verify important controls, minimize unnecessary data exposure, and increase assurance as consequence rises.**
 
-## Q1 required
+## Product-owner decision
 
-How should Admonk treat the baseline across low-risk prototypes and production products?
+**Approved direction: B — Non-negotiable floor + risk-based escalation.**
 
 ### A. Maximum common baseline
 Require nearly the same comprehensive control set for every serious project from the beginning.
@@ -238,7 +238,7 @@ No universal security/privacy controls beyond avoiding obvious secrets; each pro
 **Benefit:** maximum flexibility.  
 **Risk:** important basics become inconsistent and easy to miss, especially with AI-assisted implementation.
 
-## Research recommendation
+## Locked Admonk direction
 
 **B — Non-negotiable floor + risk-based escalation.**
 
@@ -255,12 +255,11 @@ If this direction is approved:
 - do not claim compliance with PF 1.1;
 - verify the final NIST release before converting draft-specific structure into a binding Admonk standard.
 
-## Lock plan after Q1
+## Lock result
 
-If B is approved:
-1. promote `doctrine/security-principles.md`;
-2. preserve the universal-floor vs risk-escalation distinction;
-3. update Product Supervisor governance/release-blocker wording if necessary;
-4. later derive testable security/privacy standards from current final authoritative sources;
-5. lock R004;
-6. move to R005 — AI autonomy / agent authority doctrine.
+- Security/privacy doctrine promoted.
+- Universal floor vs risk-based escalation distinction locked.
+- Product Supervisor governance updated.
+- Future testable standards remain a separate standards-phase task.
+- R004 locked.
+- Next item: R005 — AI autonomy / agent authority doctrine.
