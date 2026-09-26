@@ -112,6 +112,35 @@ Customization may include:
 
 Product-specific and tenant-specific design may change views, density, vocabulary, workflows and visual expression while preserving shared behavioral/security/accessibility contracts.
 
+## 5A. FOUNDATION-M1 operating method
+
+FOUNDATION-M1 is executed through the Admonk Research Director protocol:
+
+`research/RESEARCH-OPERATING-PROTOCOL.md`
+
+For each decision-sized item:
+
+```text
+Focused research
+→ two credible resources/directions
+→ challenge both
+→ Admonk synthesis
+→ Q1 owner input only if needed
+→ approve / revise
+→ lock canonical artifact
+→ move immediately to next item
+```
+
+Three modes are used:
+- **Document Population Research** — determine how a foundational document should be reasoned about and populated;
+- **Choice / Direction Research** — compare the two strongest viable directions and choose/condition/defer;
+- **Q1 Quick Directional Intake** — one simple owner question when research cannot determine strategy/preferences.
+
+Detailed work queue:
+`research/WORK-QUEUE.md`
+
+A research result is not authority until it is approved and promoted into doctrine/standards/playbooks or a canonical decision.
+
 ## 5. Milestones
 
 ### FOUNDATION-M1 — Populate & Lock Studio Foundation
