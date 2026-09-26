@@ -245,6 +245,29 @@ Must be resolved before foundation lock:
 - shared operational observability;
 - shared release channels/feature flags.
 
+## 12A. AI usage and unit economics
+
+AI/agent usage must be economically attributable and governable.
+
+The shared foundation should eventually support, where relevant:
+- usage attribution by tenant/product/agent/feature/user;
+- provider/model/tool cost attribution;
+- token/input/output/cache usage;
+- cost per active user;
+- cost per task/action;
+- cost per successful outcome;
+- failed/retried/discarded-run cost;
+- tenant/plan/agent budgets;
+- rate/spend/volume limits;
+- cost-aware model/tool routing;
+- usage anomaly alerts;
+- commercial margin/unit-economics reporting.
+
+Do not optimize raw token count at the expense of the approved quality floor.
+
+The target is:
+**the required outcome and quality at a sustainable unit cost.**
+
 ## 13. Principle
 
 > **Commercial unity does not require technical collapse. Shared foundations should unify the experience and contracts while preserving domain authority and independent evolution.**
