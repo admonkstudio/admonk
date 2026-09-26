@@ -2,7 +2,7 @@
 
 **Date:** 2026-09-26
 **Mode:** Document Population Research
-**Status:** Awaiting product-owner Q1 + cost acceptance
+**Status:** LOCKED — B selected and decision cost explicitly accepted 2026-09-26
 **Target:** Product Supervisor release evidence, future testing/release standard, release-audit template
 
 ## Research question
@@ -276,7 +276,7 @@ We do not require:
 
 > **Test the risk, prove the critical journey, verify the change, and preserve recovery. Release confidence comes from relevant evidence—not test volume.**
 
-## Q1 — testing/release-evidence direction + price acceptance
+## Product-owner decision and cost acceptance
 
 ### A. Standardized broad test pyramid
 Require a consistent baseline of unit + integration + end-to-end suites and a common coverage target for every Production product.
@@ -296,19 +296,20 @@ Focus most automated testing on primary browser/user workflows; add other tests 
 **Benefit:** fastest path to user-visible confidence.
 **Price:** slower/flakier suites and higher risk of missing lower-level/data/permission/recovery failures.
 
-## Research recommendation
+## Locked Admonk direction
 
 **B — Risk-routed evidence baseline.**
 
 Explicit price:
 > **Admonk accepts some uneven automated coverage and moderate judgment at release time so it can spend testing effort where failure consequence and evidence value are highest rather than maintaining a universal test bureaucracy.**
 
-## Lock plan after Q1
+## Lock result
 
-If B and its price are accepted:
-1. lock R014;
-2. promote the minimum release-evidence bundle into Product Supervisor/release governance;
-3. update the release-audit template;
-4. preserve tool/framework selection for Priority 4;
-5. keep AI evaluation specifics for R016;
-6. move to R015 — Product Analytics Feedback Loop.
+- Risk-routed release-evidence baseline locked.
+- Uneven automated coverage and moderate release-time evidence judgment explicitly accepted.
+- Minimum release-evidence bundle promoted into governance.
+- Release-audit template aligned.
+- Tool/framework choice remains deferred to Priority 4.
+- AI-specific regression remains R016.
+- R014 locked under the Decision Cost & Coupling Framework.
+- Next item: R015 — Product Analytics Feedback Loop.
