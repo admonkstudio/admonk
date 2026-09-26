@@ -84,7 +84,7 @@ Do not select tools because a platform supports more features. Capability and ar
 8. **M2-08 Shared onboarding shell — LOCKED**
 9. **M2-09 Connector + credential ownership — LOCKED**
 10. **M2-10 Knowledge/context hierarchy — LOCKED**
-11. AI/agent capability authorization + approvals
+11. **M2-11 AI/agent capability authorization + approvals — LOCKED**
 12. Audit/provenance/event model
 13. Notification/communication preferences
 14. Usage/token/cost governance
@@ -547,5 +547,60 @@ Rules:
 - retrieval indexes are supporting infrastructure, not the source of truth.
 
 **Accepted cost:** shared context contracts/registry and governed retrieval composition instead of a single central knowledge store.
+
+**Status:** LOCKED.
+
+
+## Locked decision — M2-11 Shared Intersection-Based Agent Authority Envelope
+
+**Decision:** Agent authority is the intersection of the acting human/delegator authority, the agent capability manifest, tenant/product policy, authorized context, connector/provider capability, runtime limits, action class and approval state.
+
+### Reuse M1 autonomy doctrine
+Use the existing locked action classes:
+- READ;
+- DRAFT;
+- PROPOSE;
+- EXECUTE_REVERSIBLE;
+- EXECUTE_CONSEQUENTIAL;
+- DESTRUCTIVE.
+
+Do not create a second AI-specific permission model.
+
+### Authority rules
+- an agent never inherits the acting user's full permissions automatically;
+- an agent cannot exceed the human/delegator's authority;
+- an agent cannot exceed its own configured capability envelope;
+- tenant/product/scope restrictions can only reduce effective authority;
+- context access is independently constrained by M2-10;
+- connector/provider scopes are hard upper bounds;
+- runtime rate/spend/volume/time/environment limits are part of the authority envelope;
+- approval never creates a capability that is otherwise absent;
+- model reasoning may propose an action but does not perform the final authorization decision.
+
+### Action behavior
+- READ/DRAFT may operate autonomously within authorized scope;
+- PROPOSE may recommend but produces no side effect;
+- EXECUTE_REVERSIBLE may gain bounded evidence-earned autonomy when explicitly authorized, observable and recoverable;
+- EXECUTE_CONSEQUENTIAL requires action-bound human approval by default;
+- DESTRUCTIVE is denied by default and requires an exceptional controlled procedure if ever allowed.
+
+### Approval rules
+- one valid approval is sufficient when it explicitly covers the exact consequential action, target and material parameters/content;
+- material change, expiry, revocation or scope/target change requires re-approval;
+- direct user instruction may satisfy approval only when the exact consequential action and material parameters are already fixed and the interface makes the side effect clear;
+- bounded batch approvals are allowed when the exact approved set/actions are defined;
+- approval authority itself is capability-controlled.
+
+### Background / multi-agent rules
+- background agents require explicit service delegation with purpose, scope, capabilities and validity limits;
+- scheduled execution does not bypass action-class rules;
+- subagents receive only a delegated subset of authority;
+- multi-agent delegation may reduce authority but never amplify it.
+
+### Enforcement and evidence
+- final authorization is enforced outside the model through shared deterministic controls;
+- each executed/denied action should produce an explainable authorization/action receipt suitable for M2-12 audit/provenance.
+
+**Accepted cost:** agent capability manifests, delegation records and deterministic intersection evaluation, in exchange for useful cross-product AI without broad inherited authority or duplicate authorization systems.
 
 **Status:** LOCKED.

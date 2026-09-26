@@ -15,9 +15,10 @@
 | M2-08 | LOCKED | Shared Setup Center for common organization/people/security/product setup plus product-owned setup checklists; progressive Required/Recommended/Later tasks; resumable; only subscribed products shown; onboarding evolves into Setup & Health. | Requires shared setup-state/health contracts, but avoids duplicate onboarding and repeated tenant configuration. |
 | M2-09 | LOCKED | Admonk One shared integration control plane: connect/backfill/sync once where practical; centrally protected credentials; specialist products retain domain semantics and expose governed data contracts; Corporate Brain normally consumes authorized domain data rather than reconnecting providers; data-read and provider-action access are separate. | Requires reusable sync/data-contract infrastructure, but removes repeated integrations and supports efficient cross-product intelligence. |
 | M2-10 | LOCKED | Federated permission-aware Context Plane: keep approved knowledge, operational data, operational memory and temporary task context distinct; preserve domain authority, provenance and history; Corporate Brain composes only authorized context. | Requires shared context metadata/contracts and governed retrieval composition, but avoids duplicated truth and unsafe centralization. |
+| M2-11 | LOCKED | Shared intersection-based Agent Authority Envelope: effective agent authority is the intersection of delegator authority, agent capabilities, policy, context, provider scopes, runtime limits, action class and approval state; reuse M1 action classes; enforcement stays outside the model. | Requires capability/delegation metadata and deterministic evaluation, but avoids full user-permission inheritance and duplicate AI authorization systems. |
 
 ## Current
-**M2-11 — AI / Agent Capability Authorization + Approvals**
+**M2-12 — Audit / Provenance / Event Model**
 
 
 ## M2-04 owner requirements — recorded, decision pending
