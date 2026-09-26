@@ -2,7 +2,7 @@
 
 **Date:** 2026-09-26  
 **Mode:** Document Population Research  
-**Status:** Awaiting product-owner Q1  
+**Status:** LOCKED — product-owner approved 2026-09-26  
 **Target:** future `doctrine/operations-principles.md`, production feedback-loop standard, AI economics standard
 
 ## Research question
@@ -295,9 +295,9 @@ Every meaningful AI/agent capability should eventually expose at least:
 
 Raw tokens remain diagnostic telemetry beneath those unit metrics.
 
-## Q1 required
+## Product-owner decision
 
-Which economic metric should be the **primary product-level guardrail** for Admonk's AI products?
+**Approved direction: B — Cost per successful outcome + per-user monthly ceiling.**
 
 ### A. Cost per active user / month
 Make per-user monthly AI operating cost the primary metric.
@@ -324,18 +324,17 @@ Judge AI cost primarily as a percentage of subscription/revenue.
 **Benefit:** directly commercial.  
 **Risk:** can hide wasteful workflows and gives weak product/engineering feedback.
 
-## Research recommendation
+## Locked Admonk direction
 
 **B — Cost per successful outcome + per-user monthly ceiling.**
 
 This directly incorporates the owner's requirement that an AI product cannot become economically worthless through uncontrolled usage, while avoiding the mistake of treating raw token minimization as the goal.
 
-## Lock plan after Q1
+## Lock result
 
-If B is approved:
-1. promote `doctrine/operations-principles.md`;
-2. make AI unit economics a permanent Product Supervisor concern;
-3. add unit-economics fields to future product/project state and architecture/risk contracts;
-4. make cost-per-outcome + per-user/tenant ceiling part of future AI standards;
-5. lock R006;
-6. move to Priority 2 — Design Foundation research, starting with shared vs product-specific design behavior.
+- Operations/reliability/AI-economics doctrine promoted.
+- Cost per successful outcome locked as the primary AI efficiency metric.
+- Per-user/tenant/plan ceilings locked as commercial guardrails.
+- AI economics added to Product Supervisor state/review.
+- R006 locked.
+- Next item: R007 — Shared vs product-specific design behavior.
