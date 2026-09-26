@@ -405,7 +405,7 @@ Use when all of the following are substantially true:
 
 Minimum expectation:
 - source control;
-- documented product brief and scope;
+- documented product/problem/scope definition (a single Prototype Definition is sufficient when appropriate);
 - basic architecture/risk note;
 - critical-path tests appropriate to the prototype;
 - no committed secrets;
@@ -541,8 +541,9 @@ Default authority:
 Every accepted exception must include:
 - reason;
 - owner;
-- mitigation;
-- deadline/revisit date;
+- accepted risk/cost;
+- mitigation where relevant;
+- expiry/re-review condition when Temporary, or revisit trigger when Permanent;
 - rollback/containment where relevant.
 
 ## 19. Product Release Audit
@@ -940,8 +941,8 @@ Promotion should follow the Design Foundation promotion ladder from local experi
 Current Design Foundation source:
 `design-foundation/README.md`
 
-Current doctrine status:
-research/scaffolding only; no universal token values/component APIs are approved yet.
+Current Foundation status:
+the shared design baseline is approved for accessibility, component promotion, semantic token architecture and design↔code authority (S006, S011–S013, PB04, PB05). Universal fixed token values, universal component APIs and one mandatory visual theme are still not approved.
 
 
 ## Security/privacy assurance rule
