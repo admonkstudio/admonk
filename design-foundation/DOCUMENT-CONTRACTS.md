@@ -54,3 +54,35 @@ They intentionally do **not** pre-populate design doctrine, token values, visual
 **Purpose:** Define how the foundation evolves safely.  
 **Must answer:** When is design-system review required? What evidence supports new patterns/components/tokens? How are exceptions handled? How are changes validated across consumers?  
 **Required evidence:** Real cross-product usage and governance research.
+
+
+## Planned research outputs
+
+Do not create these as authoritative documents until the relevant research is synthesized and approved.
+
+### design-system-doctrine.md
+**Type:** Doctrine  
+**Purpose:** State the researched beliefs governing shared product-design foundations and product-specific expression.
+
+### design-foundation-standard.md
+**Type:** Standard  
+**Purpose:** Convert approved doctrine into testable requirements for reusable design foundations.
+
+### component-promotion-policy.md
+**Type:** Standard / governance policy  
+**Purpose:** Define evidence required to move a local component/pattern through the promotion ladder.
+
+### design-review-playbook.md
+**Type:** Playbook  
+**Purpose:** Define how risk/impact-routed design-system reviews are performed and evidenced.
+
+### design-drift-policy.md
+**Type:** Standard / operations policy  
+**Purpose:** Define authority, review cadence, acceptable drift, automation, and resolution ownership between design/code/token sources.
+
+### design-system-maturity-model.md
+**Type:** Standard / planning model  
+**Purpose:** Define optional maturity levels and evidence-based progression without forcing every product to reach the highest level.
+
+The current provisional maturity research lives at:
+`../research/design-system-maturity-model.md`
