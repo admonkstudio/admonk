@@ -1,10 +1,11 @@
 # Admonk Product Supervisor
 
 **Status:** Stable governance baseline  
-**Version:** 1.0.0  
+**Version:** 1.1.0  
 **Owner:** Admonk Studio  
 **Purpose:** Keep every software/product project on a disciplined path toward a premium, scalable, secure product while starting as small and inexpensive as practical.  
-**v1.0.0 self-audit:** `labs/product-supervisor-self-audit/brief-flow/SELF-AUDIT-RESULT.md`
+**v1.0.0 self-audit:** `labs/product-supervisor-self-audit/brief-flow/SELF-AUDIT-RESULT.md`  
+**v1.1.0 validation:** BriefFlow organization/simplicity audits + Marketing Hub organization/simplicity audits
 
 ## 1. Why this exists
 
