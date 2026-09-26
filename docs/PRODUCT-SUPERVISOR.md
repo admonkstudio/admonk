@@ -1041,3 +1041,19 @@ Do not impose one universal unit/integration/E2E ratio or code-coverage percenta
 A flaky test is degraded evidence and should be fixed, time-bound/quarantined, or replaced rather than routinely ignored.
 
 Testing effort should increase with failure consequence, change scope and uncertainty.
+
+
+## Progressive product-analytics rule
+
+Approved research:
+`research/synthesis/R015-product-analytics-feedback-loop.md`
+
+Every Production product should define one primary measurable product-value outcome.
+
+Start with the smallest controllable driver set needed for current product decisions and preserve guardrails for quality, accessibility, reliability, trust/safety, support burden, privacy and AI economics.
+
+Do not build a deep metric tree or large event taxonomy merely because the analytics tool supports it.
+
+Expand analytics depth when repeated decisions, product/module complexity or segmentation needs prove that the additional instrumentation will change decisions.
+
+Product analytics must close a decision loop; dashboards with no owner/action do not satisfy PS-6/PS-7.
