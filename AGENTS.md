@@ -626,6 +626,28 @@ Research/candidate status does not grant adoption authority.
 
 ---
 
+# 19F. Foundation Program
+
+For Admonk-owned software products, company apps, department apps, or cross-product foundation work, read:
+
+- `docs/FOUNDATION-INDEX.md`
+- `docs/FOUNDATION-STATUS.md`
+- `docs/FOUNDATION-PROGRAM.md`
+
+The Studio Foundation governs **how products are built**.
+
+The Shared Product Platform Foundation governs **what genuinely shared application primitives/contracts products inherit**.
+
+Each product foundation governs **what that product uniquely owns and how it extends the shared platform**.
+
+Core rule:
+
+> **Build the studio foundation once. Build the product platform once. Let each product inherit the strengths and earn its differences.**
+
+Do not interpret "one product sold in parts" as permission to collapse all domains into one database, one codebase, one UI, or one source of truth.
+
+---
+
 # 20. Final Principle
 
 Every agent working with Admonk should optimize for:
