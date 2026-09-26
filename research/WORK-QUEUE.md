@@ -20,7 +20,7 @@ This queue tracks the decision-sized research work required to populate and lock
 
 | Order | Artifact / decision | Mode | Status |
 |---:|---|---|---|
-| 7 | Shared vs product-specific design behavior | Document Population Research | ACTIVE |
+| 7 | Shared vs product-specific design behavior | Document Population Research | AWAITING Q1 |
 | 8 | Design-system maturity direction | Choice / Direction Research | Pending |
 | 9 | Token architecture direction | Choice / Direction Research | Pending |
 | 10 | Component promotion policy | Document Population Research | Pending |
