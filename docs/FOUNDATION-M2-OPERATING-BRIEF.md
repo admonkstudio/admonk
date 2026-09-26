@@ -88,7 +88,7 @@ Do not select tools because a platform supports more features. Capability and ar
 12. **M2-12 Audit/provenance/event model — LOCKED**
 13. **M2-13 Notification/communication preferences — LOCKED**
 14. **M2-14 Usage/token/cost governance — LOCKED**
-15. Navigation/deep-link contract
+15. **M2-15 Navigation/deep-link contract — LOCKED**
 16. Design/theme inheritance
 17. Localization/timezone
 18. Data sensitivity/retention/export/deletion
@@ -706,5 +706,44 @@ Maintain layered controls:
 No mandatory centralized AI gateway is locked by this decision; the shared metering contract comes first.
 
 **Accepted cost:** wallet ledger, versioned rate card, grant/debit logic and usage UI, in exchange for controlled consumption, transparent customer economics, top-up revenue and provider flexibility.
+
+**Status:** LOCKED.
+
+
+## Locked decision — M2-15 Tenant-Aware Suite Navigation + Resource Link Contract
+
+**Decision:** Use a thin tenant-aware suite navigation layer plus a stable cross-product Resource Link contract. Specialist products remain independently navigated and resolve their own internal routes.
+
+### Suite navigation
+Admonk One/family shell owns:
+- active tenant context;
+- authorized product discovery/app launcher;
+- account/profile/shared settings entry points;
+- suite notifications;
+- product switching.
+
+Product visibility is derived from tenant entitlement plus user authorization, but hiding a product is not a security boundary.
+
+### Cross-product Resource Link
+Cross-product references use a stable logical destination contract with fields such as:
+- tenant;
+- product key;
+- resource type;
+- resource ID;
+- optional intent/view;
+- contract version/compatibility metadata.
+
+Products resolve that logical target to their own current route/UI.
+
+### Rules
+- deep links never grant authorization;
+- links use stable identifiers and minimal context rather than serializing full product state;
+- active tenant is explicit/resolved and cross-tenant navigation must not silently switch security context;
+- authentication should preserve/return to the intended target;
+- each product owns failure handling for missing/deleted/inaccessible resources while shared conventions define understandable fallback behavior;
+- Admonk One does not need to know every specialist internal route;
+- a future composed/microfrontend shell remains an escalation option only if measured navigation/integration friction justifies its cost.
+
+**Accepted cost:** participating products maintain a small stable resource-link resolver and compatibility discipline, in exchange for durable Corporate Brain, notification, approval and audit navigation without coupling all products into one frontend.
 
 **Status:** LOCKED.

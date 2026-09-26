@@ -23,8 +23,10 @@
 
 | M2-14 | LOCKED | Dual-ledger AI Credit Economy: raw provider usage/cost internally; customer-facing Admonk AI Credits via a versioned rate card; monthly grants, top-ups, task-level metering, pre-run estimates, compatible-model choice, and user/tenant/product wallets. | Requires wallet/rate-card infrastructure, but creates transparent consumption control, top-up revenue and provider-independent commercial units. |
 
+| M2-15 | LOCKED | Tenant-aware suite navigation + stable cross-product Resource Link contract. Admonk One/family shell owns tenant/product switching; specialist products own internal navigation and resolve logical resource targets. | Requires per-product resource-link resolvers and compatibility discipline, but enables durable cross-product links without a giant composed frontend. |
+
 ## Current
-**M2-15 — Navigation / Deep-Link Contract**
+**M2-16 — Design / Theme Inheritance**
 
 
 ## M2-04 owner requirements — recorded, decision pending
