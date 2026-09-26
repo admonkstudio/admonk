@@ -506,6 +506,28 @@ Default principle:
 
 ---
 
+# 19B. Organization + Simplicity
+
+For project/repository knowledge architecture, canonical homes, duplicate/stale documentation, and evidence-backed reuse decisions, use:
+
+`.agents/skills/admonk-organization-reuse/SKILL.md`
+
+For scope/architecture/implementation complexity, abstraction pressure, dependency growth, connector/model/vendor additions, and simplicity review, use:
+
+`.agents/skills/admonk-simplicity-engineering/SKILL.md`
+
+These skills are cross-project disciplines and apply proportionally from discovery onward.
+
+Core rules:
+
+> **Reuse stable concepts, not merely similar-looking code.**
+
+> **Complexity is a cost that must earn its place.**
+
+The Product Supervisor decides when these reviews are required based on risk and change impact.
+
+---
+
 # 20. Final Principle
 
 Every agent working with Admonk should optimize for:
