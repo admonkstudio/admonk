@@ -33,7 +33,7 @@
 
 ## Current work
 
-Priority 1–3 research items R001–R016 are complete/locked. The retroactive Decision Cost audit for R001–R006 is accepted. Priority 4 tool decisions are active. T017 component workbench is decided: Storybook Adopt Conditionally. T018 visual regression is decided: targeted Playwright Adopt Conditionally; Chromatic deferred until shared-state/collaboration evidence justifies it. Current item: T019 Accessibility Automation.
+Priority 1–3 research items R001–R016 are complete/locked. The retroactive Decision Cost audit for R001–R006 is accepted. Priority 4 tool decisions are active. T017 component workbench is decided: Storybook Adopt Conditionally. T018 visual regression is decided: targeted Playwright Adopt Conditionally; Chromatic deferred until shared-state/collaboration evidence justifies it. T019 accessibility automation is decided: axe-core Adopt Conditionally; Lighthouse supplementary only. Current item: T020 Secret Scanning.
 
 ## FOUNDATION-M1 remaining gate
 
