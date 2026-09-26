@@ -182,3 +182,17 @@ Do not load unrelated React/Astro skills.
 # Final Rule
 
 > **More capability should make the system more precise, not more complicated.**
+
+
+## Additional cross-project routing
+
+Route to:
+- **Organization / reuse / repository knowledge architecture** → `admonk-organization-reuse`
+- **Complexity / overengineering / abstraction / dependency minimization** → `admonk-simplicity-engineering`
+
+These are cross-project disciplines, not platform substitutes.
+
+Use them proportionally:
+- organization can apply from discovery onward;
+- simplicity applies to scope/architecture decisions as well as meaningful implementation changes;
+- neither should force a heavyweight audit for trivial work.
