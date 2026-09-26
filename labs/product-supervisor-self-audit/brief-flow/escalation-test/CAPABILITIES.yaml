@@ -1,0 +1,40 @@
+version: 1
+project: BriefFlow
+capabilities:
+  - id: brief.generate
+    name: Generate content brief
+    action_class: DRAFT
+    agents: [content_brief_agent]
+    roles: [member, manager]
+    connector: ai_model
+    environment: prototype
+    scopes:
+      read: [brief_input]
+      write: [brief_draft]
+    approval:
+      required: false
+      approvers: []
+    data_sensitivity: internal
+    audit_required: true
+    rollback_or_recovery: "User may discard/regenerate draft"
+
+  - id: cms.publish
+    name: Publish approved article to production CMS
+    action_class: EXECUTE_CONSEQUENTIAL
+    agents: [content_publishing_agent]
+    roles: [manager]
+    connector: cms
+    environment: production
+    scopes:
+      read: [approved_content]
+      write: [production_content]
+    approval:
+      required: true
+      approvers: [named_manager]
+    data_sensitivity: public_content
+    limits:
+      rate: "1 confirmed publish action per approval"
+      spend: null
+      volume: "one approved item"
+    audit_required: true
+    rollback_or_recovery: "Required before enabling; CMS revision/unpublish procedure"
