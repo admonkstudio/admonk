@@ -191,6 +191,17 @@ Possible outcomes:
 
 Do not centralize for aesthetic architecture symmetry.
 
+A shared contract does not require a shared runtime service.
+
+Default sequence:
+1. prove the semantics in one product;
+2. observe a second real consumer or a security/consistency need;
+3. define the minimum shared contract;
+4. keep implementations separate if that is simpler;
+5. centralize runtime only when centralization reduces total operational/security/consistency cost.
+
+Preserve deliberate change seams around tenant identity, permissions, durable data, external providers and versioned cross-product contracts.
+
 ## 10. Standalone principle
 
 A specialist product intended to be sold separately should remain useful when enabled alone.
