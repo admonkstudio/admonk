@@ -1,6 +1,6 @@
 # FOUNDATION-M1 — Research & Population Work Queue
 
-**Status:** Active  
+**Status:** Decision queue complete — retained as research history  
 **Method:** `research/RESEARCH-OPERATING-PROTOCOL.md`
 
 This queue tracks the decision-sized research work required to populate and lock the Studio Foundation.
@@ -62,11 +62,11 @@ Tool choices begin only after the corresponding capability need is evidenced.
 | 21 | Static analysis | Choice / Direction Research | DECIDED — LAYERED (native checks now; CodeQL conditional; Semgrep targeted fallback) |
 | 22 | Dependency / supply-chain checks | Choice / Direction Research | DECIDED — LAYERED (Dependabot baseline; Socket conditional pilot) |
 | 23 | API contract validation | Choice / Direction Research | DECIDED — PROGRESSIVE (OpenAPI/Redocly conditional; Pact deferred) |
-| 24 | Migration validation | Choice / Direction Research | ACTIVE |
-| 25 | Error monitoring | Choice / Direction Research | Pending |
-| 26 | Feature flags | Choice / Direction Research | Pending |
-| 27 | AI evaluation / tracing | Choice / Direction Research | Pending |
-| 28 | Model / token cost monitoring | Choice / Direction Research | Pending |
+| 24 | Migration validation | Choice / Direction Research | DECIDED — native migration system + CI replay/invariant validation; staged rehearsal for risky changes |
+| 25 | Error monitoring | Choice / Direction Research | DECIDED — Better Stack from the beginning, capabilities enabled proportionally |
+| 26 | Feature flags | Choice / Direction Research | DECIDED — PostHog + OpenFeature; use only when risk/learning justifies flags |
+| 27 | AI evaluation / tracing | Choice / Direction Research | DECIDED — Langfuse + portable/OpenTelemetry-style tracing where practical |
+| 28 | Model / token cost monitoring | Choice / Direction Research | DECIDED — Langfuse operational attribution + provider billing reconciliation |
 
 Each ends in:
 Adopt now / Adopt conditionally / Pilot / Defer / Reject.

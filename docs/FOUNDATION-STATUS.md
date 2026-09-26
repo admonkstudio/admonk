@@ -3,10 +3,11 @@
 **Date:** 2026-09-26
 **Program:** Admonk Foundation Program
 **Current milestone:** **FOUNDATION-M1 — Populate & Lock Studio Foundation**
-**Current sub-milestone:** **Marketing Hub Revalidation**
+**Current sub-milestone:** **Repository Contradiction & Navigation Audit**
 **Milestone status:** Active
 **Foundation lock:** Not yet complete
-**Current stable Product Supervisor:** v1.1.0
+**Current stable Product Supervisor:** v1.1.0  
+**Working candidate:** Unreleased FOUNDATION-M1 candidate
 
 ## Completed
 - Product Supervisor lifecycle/gates, Organization & Reuse, Simplicity-First Engineering, Complexity Budget.
@@ -28,21 +29,29 @@ Two Foundation defects were found and fixed:
 
 Evidence: `docs/FOUNDATION-BRIEFFLOW-REVALIDATION-2026-09-26.md`.
 
-## Marketing Hub finding locked
+## Completed validation — Marketing Hub
+Marketing Hub revalidation: **PASS**.
+
+Foundation defect found and fixed:
 - **MH01 — Lifecycle and risk are separate:** lifecycle is Prototype/Production; risk overlays apply independently for real/sensitive data, consequential actions, regulated/high-impact exposure and elevated privilege/blast radius. “High-risk” is no longer a lifecycle/governance state.
 
-## Current work — Marketing Hub revalidation
-Re-run the Studio Foundation against Marketing Hub as the first serious product:
-- confirm Foundation rules stay proportional at larger scope;
-- identify conflicts between Studio Foundation and existing Marketing Hub governance;
-- verify product-specific domain truth remains authoritative;
-- test tool/AI/release/data/design rules against real discovery constraints;
-- record any Foundation defect separately from Marketing Hub product work.
+Accepted product-specific gap:
+- detailed Marketing Hub retention/export/deletion commitments remain open for the appropriate product/architecture gate; current discovery uses REAL_OR_SENSITIVE_DATA protections and minimizes sensitive copying.
+
+Evidence: `docs/FOUNDATION-MARKETING-HUB-REVALIDATION-2026-09-26.md`.
+
+## Current work — Repository contradiction & navigation audit
+Verify that:
+- `docs/FOUNDATION-INDEX.md` provides a deterministic normal-work path;
+- current status files reflect completed research/standards/playbooks/validations;
+- stale pre-Foundation instructions are either updated or clearly historical;
+- canonical links resolve;
+- no competing authority remains for lifecycle/risk, exceptions, design maturity, tools or playbooks;
+- the working Product Supervisor candidate is not mislabeled as stable v1.1.0.
 
 ## FOUNDATION-M1 remaining gate
-1. Marketing Hub revalidation;
-2. repository contradiction/navigation audit;
-3. version and lock Studio Foundation release.
+1. repository contradiction/navigation audit;
+2. assign version and lock Studio Foundation release.
 
 ## Explicitly not complete
 Do not describe the Studio Foundation as fully locked/completed until the remaining validation/audit gates pass. Product Platform Foundation is also not locked; current documents remain FOUNDATION-M2 direction/discovery.

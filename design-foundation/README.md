@@ -1,6 +1,6 @@
 # Admonk Design Foundation
 
-**Status:** Structural foundation only — doctrine/tokens/components are not yet populated  
+**Status:** FOUNDATION-M1 Level-1 baseline approved — rules/governance active; fixed tokens/shared component APIs are not yet populated  
 **Created:** 2026-09-26  
 **First serious consumer:** Marketing Hub (after Product Definition reaches the relevant design stage)
 
@@ -52,16 +52,21 @@ None of these should be treated as interchangeable.
 
 ## Current phase
 
-Do not build a large component library yet.
+The FOUNDATION-M1 design baseline is approved for:
+- WCAG 2.2 AA accessibility floor and proportional verification;
+- Local → Candidate → Trial → Stable promotion;
+- shared semantic-token meaning with product-specific visual values;
+- Figma as design-intent authority and code as runtime-behavior authority;
+- explicit drift handling without mandatory continuous synchronization.
 
-Current work is limited to:
-- researching the design-system doctrine;
-- defining document contracts;
-- defining semantic/token architecture questions;
-- defining component-governance questions;
-- defining what must remain product-specific.
+Use:
+- `../standards/STUDIO-STANDARDS.md` — especially S006 and S011–S013;
+- `../playbooks/PB04-accessibility-experience-review.md`;
+- `../playbooks/PB05-shared-component-promotion.md`.
 
-No fixed token values, visual style, component API or framework package is approved yet.
+Do not build a large shared component library yet.
+
+No fixed universal token values, one visual style, universal component API or framework package is approved. Those must emerge from real product evidence and the promotion ladder.
 
 ## Core boundary
 
@@ -111,7 +116,7 @@ Shared reuse requires contextual fit, not only technical compatibility.
 R008 approved:
 **Progressive evidence-gated maturity.**
 
-Current target: **Level 1 — Foundation rules**.
+Current maturity: **Level 1 — Foundation rules approved and active**.
 
 Marketing Hub may create product-owned **Local**, **Candidate**, or approved **Trial** assets as real product needs emerge.
 

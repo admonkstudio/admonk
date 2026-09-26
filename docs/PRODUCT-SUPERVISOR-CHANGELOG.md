@@ -1,5 +1,28 @@
 # Admonk Product Supervisor — Changelog
 
+## Unreleased — FOUNDATION-M1 candidate
+
+Material governance refinements discovered while populating and validating the full Studio Foundation. Final semantic version will be assigned only when FOUNDATION-M1 passes the final contradiction/navigation audit.
+
+### Added / changed
+- S001–S030 canonical Studio Standards and PB01–PB07 workflow playbooks.
+- BF01 — low-risk/simple Prototypes require the necessary information, not four mandatory separate files; one Prototype Definition may split progressively as complexity/risk/maturity grows.
+- BF02 — consequential approval is action-bound; one valid approval may authorize the exact action without ceremonial double confirmation; material action/target/content change, expiry or revocation requires re-approval.
+- MH01 — lifecycle and risk are separate dimensions:
+  - lifecycle: Prototype / Production;
+  - overlays: REAL_OR_SENSITIVE_DATA, CONSEQUENTIAL_ACTION, REGULATED_OR_HIGH_IMPACT, ELEVATED_PRIVILEGE_OR_BLAST_RADIUS.
+- “High-risk” is no longer a lifecycle/governance state; High remains valid for release risk and finding severity.
+- Temporary/Permanent exception semantics aligned to S030/PB07.
+- Product Brief, Release Audit, Exception Register, Prototype Definition, Project State and Complexity Budget templates reconciled to the Foundation.
+- Design Foundation Level-1 baseline approved for accessibility, promotion, semantic tokens and design↔code authority.
+
+### Validation
+- BriefFlow revalidation — **PASS** after BF01/BF02.
+- Marketing Hub revalidation — **PASS** after MH01.
+- Marketing Hub product-specific open gap retained: detailed retention/export/deletion commitments remain a product requirement and do not block Studio Foundation validation.
+
+---
+
 ## 1.1.0 — 2026-09-26
 
 Backward-compatible quality/governance expansion.
@@ -40,7 +63,7 @@ First stable governance baseline.
 
 ### Included
 - PS-0 through PS-7 lifecycle;
-- Prototype / Production / High-risk governance levels;
+- Prototype / Production / High-risk governance levels (historical model; superseded by the unreleased FOUNDATION-M1 lifecycle + risk-overlay model);
 - progressive project artifacts;
 - Build Readiness Gate;
 - Product Release Audit;
