@@ -648,6 +648,26 @@ Do not interpret "one product sold in parts" as permission to collapse all domai
 
 ---
 
+# 19G. Research Director Mode
+
+For foundation doctrine population, tool/technology choices, architecture directions, or evidence-backed product-development decisions, use:
+
+`.agents/skills/admonk-research-director/SKILL.md`
+
+and follow:
+
+`research/RESEARCH-OPERATING-PROTOCOL.md`
+
+Default loop:
+
+> **Two strong resources/directions → challenge both → Admonk synthesis → Q1 only if needed → owner approval → lock → next item.**
+
+Do not bury the owner in long questionnaires.
+Do not present a tool/architecture option without translating its practical consequences.
+Do not treat research output as canonical until approved and promoted.
+
+---
+
 # 20. Final Principle
 
 Every agent working with Admonk should optimize for:
