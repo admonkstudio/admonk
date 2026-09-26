@@ -56,8 +56,8 @@ Tool choices begin only after the corresponding capability need is evidenced.
 | Order | Tool capability decision | Mode | Status |
 |---:|---|---|---|
 | 17 | Component workbench / documentation | Choice / Direction Research | DECIDED — ADOPT CONDITIONALLY (Storybook) |
-| 18 | Visual regression | Choice / Direction Research | ACTIVE |
-| 19 | Accessibility automation | Choice / Direction Research | Pending |
+| 18 | Visual regression | Choice / Direction Research | DECIDED — ADOPT CONDITIONALLY (targeted Playwright; Chromatic deferred) |
+| 19 | Accessibility automation | Choice / Direction Research | ACTIVE |
 | 20 | Secret scanning | Choice / Direction Research | Pending |
 | 21 | Static analysis | Choice / Direction Research | Pending |
 | 22 | Dependency / supply-chain checks | Choice / Direction Research | Pending |
