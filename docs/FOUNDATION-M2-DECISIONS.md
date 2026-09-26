@@ -12,9 +12,10 @@
 | M2-05 | LOCKED | Default deny; applicable roles add capabilities; explicit ceilings/restrictions reduce access and win; provider limits and action approvals are final gates; every result is explainable through one shared evaluator. | Requires a central evaluator/explanation model, but avoids conflicting product-specific authorization logic. |
 | M2-06 | LOCKED | Atomic sellable SKU entitlement model: every independently sellable product/major add-on is ON/OFF; bundles compose SKUs; Corporate Brain is a cross-product add-on; permissions, flags and usage limits stay separate; billing providers do not own permanent SKU identity. | More catalog SKUs than a single-plan model, but much simpler runtime entitlement and more flexible packaging. |
 | M2-07 | LOCKED | Typed hierarchical settings: Platform Default → Tenant → Organizational Scope → Product → User/Product where applicable; settings declare valid levels/override rules; configuration may inherit/override while constraints cannot be weakened; UI shows source/inheritance/reset. | Requires a shared registry/resolver, but removes duplicated company settings and makes overrides safe/explainable. |
+| M2-08 | LOCKED | Shared Setup Center for common organization/people/security/product setup plus product-owned setup checklists; progressive Required/Recommended/Later tasks; resumable; only subscribed products shown; onboarding evolves into Setup & Health. | Requires shared setup-state/health contracts, but avoids duplicate onboarding and repeated tenant configuration. |
 
 ## Current
-**M2-08 — Shared Onboarding / Setup Shell**
+**M2-09 — Connector + Credential Ownership**
 
 
 ## M2-04 owner requirements — recorded, decision pending

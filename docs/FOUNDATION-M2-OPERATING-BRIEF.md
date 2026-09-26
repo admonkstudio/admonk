@@ -81,7 +81,7 @@ Do not select tools because a platform supports more features. Capability and ar
 5. **M2-05 Effective-permission precedence — LOCKED**
 6. **M2-06 Product / module entitlements — LOCKED**
 7. **M2-07 Settings inheritance/overrides — LOCKED**
-8. Shared onboarding shell
+8. **M2-08 Shared onboarding shell — LOCKED**
 9. Connector + credential ownership
 10. Knowledge/context hierarchy
 11. AI/agent capability authorization + approvals
@@ -418,5 +418,48 @@ The administration UI must show:
 - clear indication when a setting is constrained by higher-level policy and cannot be weakened.
 
 **Accepted cost:** a shared settings registry/resolver plus typed product-owned settings contracts, in exchange for one canonical company configuration, safe inheritance and no repeated per-product setup.
+
+**Status:** LOCKED.
+
+
+## Locked decision — M2-08 Shared Setup Center
+
+**Decision:** Use a shared Setup Center for common organization/people/security/product setup, with product-owned setup modules/checklists.
+
+### Structure
+- shared setup covers organization identity, scopes/departments, people/memberships, base role setup, enabled SKUs, shared security/policy defaults and other genuinely cross-product configuration;
+- specialist products contribute their own setup requirements and domain-specific configuration;
+- only subscribed/enabled products appear;
+- setup security uses the same shared authorization model rather than separate onboarding permissions;
+- existing valid information is reused/prefilled rather than repeatedly collected.
+
+### Progressive setup
+Each setup item is classified as:
+- **Required** — blocks safe activation/use;
+- **Recommended** — improves product quality or completeness;
+- **Later** — required only when the associated capability is used.
+
+Setup is resumable and does not force customers through irrelevant future configuration before receiving value.
+
+### Ongoing lifecycle
+Onboarding evolves into **Setup & Health** rather than becoming a dead one-time wizard:
+- progress/completion;
+- missing required configuration;
+- recommended improvements;
+- degraded/broken dependencies;
+- connector/configuration health;
+- product-specific follow-up items.
+
+### Department-learning requirement
+Product setup may learn/configure departmental structure, teams, role templates and operating patterns so the product model becomes more accurate as setup progresses.
+
+### UX requirement
+- checklist/progress-oriented rather than one giant mandatory wizard;
+- plain-language setup tasks;
+- minimal re-entry of already known information;
+- deep links into the relevant configuration area;
+- preserve product autonomy while keeping one recognizable suite setup experience.
+
+**Accepted cost:** shared setup-state/health contracts plus product-contributed setup definitions, in exchange for avoiding duplicate onboarding systems and repeated company configuration.
 
 **Status:** LOCKED.
