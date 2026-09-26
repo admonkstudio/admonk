@@ -1,0 +1,27 @@
+# Capability Permission Manifest
+# Provider-side permissions remain authoritative.
+
+version: 1
+project: ""
+capabilities:
+  - id: example.read.analytics
+    name: Read analytics
+    domain: example
+    action_class: READ
+    agents: []
+    roles: []
+    connector: ""
+    environment: production
+    scopes:
+      read: []
+      write: []
+    approval:
+      required: false
+      approvers: []
+    data_sensitivity: internal
+    limits:
+      rate: null
+      spend: null
+      volume: null
+    audit_required: true
+    rollback_or_recovery: "Not applicable for read-only action"
