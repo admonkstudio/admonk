@@ -7,7 +7,7 @@
 
 ## Current phase
 
-**Research setup complete; source gathering not yet started.**
+**Capability-discovery structure complete; current-coverage baseline established; authoritative source gathering not yet started.**
 
 ## Progress
 
@@ -20,6 +20,10 @@
 - [x] Create evidence-note / competing-framework / synthesis / proposed-doctrine workspaces.
 - [x] Create doctrine / standards / playbooks authority shells.
 - [x] Create Design Foundation research scaffold and document contracts.
+- [x] Create capability-discovery and tool-evaluation tracks.
+- [x] Create architecture-impact and feedback-loop research structures.
+- [x] Establish current Admonk capability coverage baseline.
+- [x] Create initial tool/technology candidate register without adoption.
 - [ ] Gather authoritative sources by research question.
 - [ ] Record competing viewpoints.
 - [ ] Produce evidence-backed syntheses.
@@ -35,3 +39,22 @@
 ## Constraint
 
 Do not use current generic template wording as evidence for the doctrine it is supposed to govern.
+
+
+## Research sequence
+
+1. Research questions.
+2. Capability and tooling discovery.
+3. Authoritative source gathering.
+4. Competing frameworks and alternatives.
+5. Evidence synthesis.
+6. Proposed doctrine.
+7. Tool and technology recommendations.
+8. Human approval.
+9. Standards and playbooks.
+10. Skill/template reconciliation.
+11. BriefFlow validation.
+12. Marketing Hub validation.
+13. Product Supervisor release.
+
+Research may run in parallel tracks; promotion/adoption remains gated.
