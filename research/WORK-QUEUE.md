@@ -33,8 +33,8 @@ This is a focused audit, not a full re-research. Reopen a decision only when the
 
 | Order | Artifact / decision | Mode | Status |
 |---:|---|---|---|
-| 7 | Shared vs product-specific design behavior | Document Population Research | AWAITING COST ACCEPTANCE |
-| 8 | Design-system maturity direction | Choice / Direction Research | Pending |
+| 7 | Shared vs product-specific design behavior | Document Population Research | LOCKED |
+| 8 | Design-system maturity direction | Choice / Direction Research | ACTIVE |
 | 9 | Token architecture direction | Choice / Direction Research | Pending |
 | 10 | Component promotion policy | Document Population Research | Pending |
 | 11 | Design/code/Figma drift policy | Choice / Direction Research | Pending |
