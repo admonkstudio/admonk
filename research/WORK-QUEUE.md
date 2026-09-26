@@ -14,7 +14,7 @@ This queue tracks the decision-sized research work required to populate and lock
 | 3 | Engineering simplicity doctrine | Document Population Research | LOCKED |
 | 4 | Security/privacy baseline doctrine | Document Population Research | LOCKED |
 | 5 | AI autonomy/agent authority doctrine | Document Population Research | LOCKED |
-| 6 | Operations / reliability / AI unit-economics doctrine | Document Population Research | ACTIVE |
+| 6 | Operations / reliability / AI unit-economics doctrine | Document Population Research | AWAITING Q1 |
 
 ## Priority 2 — Design Foundation
 
