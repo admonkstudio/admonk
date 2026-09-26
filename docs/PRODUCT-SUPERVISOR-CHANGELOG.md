@@ -1,8 +1,8 @@
 # Admonk Product Supervisor — Changelog
 
-## Unreleased — FOUNDATION-M1 candidate
+## 2.0.0 — 2026-09-26
 
-Material governance refinements discovered while populating and validating the full Studio Foundation. Final semantic version will be assigned only when FOUNDATION-M1 passes the final contradiction/navigation audit.
+Major governance release included in **Admonk Studio Foundation v1.0.0**. This release changes lifecycle classification, approval semantics and required governance behavior, so it is versioned as a major Product Supervisor release.
 
 ### Added / changed
 - S001–S030 canonical Studio Standards and PB01–PB07 workflow playbooks.
@@ -63,7 +63,7 @@ First stable governance baseline.
 
 ### Included
 - PS-0 through PS-7 lifecycle;
-- Prototype / Production / High-risk governance levels (historical model; superseded by the unreleased FOUNDATION-M1 lifecycle + risk-overlay model);
+- Prototype / Production / High-risk governance levels (historical model; superseded by Product Supervisor v2.0.0 lifecycle + risk-overlay model);
 - progressive project artifacts;
 - Build Readiness Gate;
 - Product Release Audit;

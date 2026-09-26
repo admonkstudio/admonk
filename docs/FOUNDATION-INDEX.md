@@ -1,16 +1,21 @@
 # Admonk Foundation — Read Me First
 
+**Current Studio Foundation release:** **v1.0.0**  
+**Product Supervisor:** **v2.0.0**  
+**Release manifest:** `docs/FOUNDATION-RELEASE-MANIFEST.yaml`
+
 ## A. Studio Foundation — normal product work
 Read in this order:
 1. `AGENTS.md`
 2. `docs/FOUNDATION-STATUS.md`
-3. `docs/FOUNDATION-PROGRAM.md`
-4. `docs/PRODUCT-SUPERVISOR.md`
-5. relevant approved `doctrine/`
-6. `standards/STUDIO-STANDARDS.md`
-7. relevant `playbooks/PB*.md`
-8. `design-foundation/README.md` when design-system work is relevant
-9. relevant specialist skills only when required
+3. `docs/FOUNDATION-RELEASE-MANIFEST.yaml`
+4. `docs/FOUNDATION-PROGRAM.md`
+5. `docs/PRODUCT-SUPERVISOR.md`
+6. relevant approved `doctrine/`
+7. `standards/STUDIO-STANDARDS.md`
+8. relevant `playbooks/PB*.md`
+9. `design-foundation/README.md` when design-system work is relevant
+10. relevant specialist skills only when required
 
 Do **not** load the research corpus for ordinary execution.
 

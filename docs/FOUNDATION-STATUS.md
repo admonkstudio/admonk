@@ -2,12 +2,12 @@
 
 **Date:** 2026-09-26
 **Program:** Admonk Foundation Program
-**Current milestone:** **FOUNDATION-M1 — Populate & Lock Studio Foundation**
-**Current sub-milestone:** **Version & Lock Decision**
-**Milestone status:** Active
-**Foundation lock:** Not yet complete
-**Current stable Product Supervisor:** v1.1.0  
-**Working candidate:** Unreleased FOUNDATION-M1 candidate
+**Current milestone:** **FOUNDATION-M1 — COMPLETE / LOCKED**
+**Current sub-milestone:** None — release locked
+**Milestone status:** **COMPLETE**
+**Foundation lock:** **LOCKED — Admonk Studio Foundation v1.0.0**
+**Current stable Product Supervisor:** **v2.0.0**  
+**Release mapping:** Studio Foundation v1.0.0 → Product Supervisor v2.0.0
 
 ## Completed
 - Product Supervisor lifecycle/gates, Organization & Reuse, Simplicity-First Engineering, Complexity Budget.
@@ -47,10 +47,26 @@ Evidence: `docs/FOUNDATION-CONTRADICTION-NAVIGATION-AUDIT-2026-09-26.md`.
 
 No unresolved current-authority contradiction or navigation blocker remains.
 
-## FOUNDATION-M1 remaining gate
-1. assign release/version scheme;
-2. record the release/changelog;
-3. lock Studio Foundation release.
+## FOUNDATION-M1 release lock
+**Release:** Admonk Studio Foundation **v1.0.0**  
+**Product Supervisor:** **v2.0.0**  
+**Release manifest:** `docs/FOUNDATION-RELEASE-MANIFEST.yaml`  
+**Release notes:** `docs/FOUNDATION-RELEASE-NOTES-v1.0.0.md`
 
-## Explicitly not complete
-Do not describe the Studio Foundation as fully locked/completed until the remaining validation/audit gates pass. Product Platform Foundation is also not locked; current documents remain FOUNDATION-M2 direction/discovery.
+All FOUNDATION-M1 exit gates passed:
+- research/decision program complete;
+- Standards/Playbooks locked;
+- skills/templates reconciled;
+- BriefFlow PASS;
+- Marketing Hub PASS;
+- contradiction/navigation audit PASS;
+- release/version recorded.
+
+Future changes to this baseline must be versioned; do not silently rewrite the locked release.
+
+## Next milestone
+**FOUNDATION-M2 — Define Shared Product Platform Foundation**
+
+Status: **Ready, not started.**
+
+The Product Platform Foundation is not locked. Existing M2 documents remain direction/architecture discovery until FOUNDATION-M2 decisions are completed.

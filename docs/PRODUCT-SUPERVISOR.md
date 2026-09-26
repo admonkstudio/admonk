@@ -1,11 +1,11 @@
 # Admonk Product Supervisor
 
-**Status:** FOUNDATION-M1 release candidate — validated, not yet version-locked  
-**Version:** Unreleased FOUNDATION-M1 candidate (latest stable release: v1.1.0)  
+**Status:** Stable — included in Admonk Studio Foundation v1.0.0  
+**Version:** **2.0.0**  
 **Owner:** Admonk Studio  
 **Purpose:** Keep every software/product project on a disciplined path toward a premium, scalable, secure product while starting as small and inexpensive as practical.  
 **v1.0.0 self-audit:** `labs/product-supervisor-self-audit/brief-flow/SELF-AUDIT-RESULT.md`  
-**FOUNDATION-M1 candidate validation:** BriefFlow PASS after BF01/BF02; Marketing Hub PASS after MH01
+**v2.0.0 validation:** BriefFlow PASS after BF01/BF02; Marketing Hub PASS after MH01; contradiction/navigation audit PASS
 
 ## 1. Why this exists
 

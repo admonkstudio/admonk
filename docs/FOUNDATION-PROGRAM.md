@@ -3,7 +3,10 @@
 **Status:** Active  
 **Established:** 2026-09-26  
 **Owner:** Admonk Studio  
-**Current milestone:** **FOUNDATION-M1 — Populate & Lock Studio Foundation**  
+**Current milestone:** **FOUNDATION-M1 — COMPLETE / LOCKED**  
+**Latest Studio Foundation release:** **v1.0.0**  
+**Included Product Supervisor:** **v2.0.0**  
+**Next milestone:** **FOUNDATION-M2 — Ready, not started**  
 **Implementation posture:** Research / architecture definition only unless an individual product gate explicitly authorizes implementation.
 
 ## 1. Purpose
@@ -169,9 +172,9 @@ A research result is not authority until it is approved and promoted into doctri
 
 ## 5. Milestones
 
-### FOUNDATION-M1 — Populate & Lock Studio Foundation
+### FOUNDATION-M1 — Populate & Lock Studio Foundation — COMPLETE
 
-**Goal:** complete the reusable product-development operating system before treating it as a finished foundation.
+**Goal:** complete the reusable product-development operating system before treating it as a finished foundation. **Completed and locked on 2026-09-26 as Studio Foundation v1.0.0.**
 
 Required work:
 - complete authoritative research across the parallel research tracks;
@@ -201,7 +204,7 @@ Required work:
 - a new person/model can navigate the foundation from `docs/FOUNDATION-INDEX.md`;
 - release/version and changelog are recorded.
 
-**Completion label:** Studio Foundation release/version to be assigned only after the gate passes.
+**Completion label:** **Admonk Studio Foundation v1.0.0 — LOCKED**. Component mapping is recorded in `docs/FOUNDATION-RELEASE-MANIFEST.yaml`.
 
 ### FOUNDATION-M2 — Define Shared Product Platform Foundation
 

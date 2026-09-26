@@ -1,0 +1,61 @@
+studio_foundation:
+  name: "Admonk Studio Foundation"
+  version: "1.0.0"
+  status: "locked"
+  release_date: "2026-09-26"
+  owner: "Admonk Studio"
+
+components:
+  product_supervisor:
+    version: "2.0.0"
+    status: "stable"
+    file: "docs/PRODUCT-SUPERVISOR.md"
+  doctrine:
+    status: "approved"
+    decisions: "R001-R016"
+  standards:
+    status: "locked"
+    range: "S001-S030"
+    file: "standards/STUDIO-STANDARDS.md"
+  playbooks:
+    status: "locked"
+    range: "PB01-PB07"
+    index: "playbooks/README.md"
+  tool_decisions:
+    status: "locked"
+    range: "T017-T028"
+    location: "research/tool-evaluation/"
+  design_foundation:
+    maturity: "Level 1"
+    status: "approved baseline"
+    file: "design-foundation/README.md"
+
+validation:
+  skills_templates_reconciliation:
+    result: "PASS"
+    evidence: "docs/FOUNDATION-SKILLS-TEMPLATES-RECONCILIATION-2026-09-26.md"
+  briefflow:
+    result: "PASS"
+    corrections:
+      - "BF01"
+      - "BF02"
+    evidence: "docs/FOUNDATION-BRIEFFLOW-REVALIDATION-2026-09-26.md"
+  marketing_hub:
+    result: "PASS"
+    corrections:
+      - "MH01"
+    evidence: "docs/FOUNDATION-MARKETING-HUB-REVALIDATION-2026-09-26.md"
+  contradiction_navigation_audit:
+    result: "PASS"
+    evidence: "docs/FOUNDATION-CONTRADICTION-NAVIGATION-AUDIT-2026-09-26.md"
+
+release_contract:
+  authority_entrypoint: "docs/FOUNDATION-INDEX.md"
+  normal_work_research_required: false
+  future_changes: "Versioned changes only; do not silently rewrite the locked v1.0.0 baseline."
+  component_versioning: "Components may version independently; this manifest records which component versions compose each Studio Foundation release."
+
+next_milestone:
+  id: "FOUNDATION-M2"
+  name: "Define Shared Product Platform Foundation"
+  status: "ready_not_started"

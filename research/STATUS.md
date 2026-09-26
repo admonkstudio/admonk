@@ -1,15 +1,15 @@
 # Product Supervisor Doctrine Research — Status
 
 **Started:** 2026-09-26
-**Stable Product Supervisor:** v1.1.0
-**Working Product Supervisor:** Unreleased FOUNDATION-M1 candidate
+**Stable Product Supervisor:** **v2.0.0**
+**Studio Foundation release:** **v1.0.0**
 **Structure baseline:** v1.0.0-structure
-**Doctrine release:** FOUNDATION-M1 approved doctrine baseline
-**Foundation Program milestone:** FOUNDATION-M1 — Populate & Lock Studio Foundation
+**Doctrine release:** included in Studio Foundation v1.0.0
+**Foundation Program milestone:** **FOUNDATION-M1 — COMPLETE / LOCKED**
 
 ## Current phase
 
-**Focused research/decision work and final contradiction/navigation audit are complete. Only versioning/release lock remains.**
+**FOUNDATION-M1 research, decisions, validation, audit and release lock are complete.**
 
 Research remains supporting evidence/history and is reopened only when a locked decision is challenged, materially changed or extended.
 
@@ -33,7 +33,7 @@ Research remains supporting evidence/history and is reopened only when a locked 
 - [x] Re-run BriefFlow validation — PASS after BF01/BF02 fixes.
 - [x] Re-run Marketing Hub validation — PASS after MH01 fix; one product-specific retention/export/deletion gap remains explicit.
 - [x] Complete repository contradiction/navigation audit — PASS.
-- [ ] Assign version and release the revised Studio Foundation / Product Supervisor candidate.
+- [x] Release **Studio Foundation v1.0.0** with **Product Supervisor v2.0.0**.
 
 ## Constraint
 
