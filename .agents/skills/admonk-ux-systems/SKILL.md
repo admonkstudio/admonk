@@ -657,3 +657,37 @@ The standard is:
 > Accessible enough to include.  
 > Responsive enough to work anywhere.  
 > Reliable enough to trust.**
+
+
+## Complete-Surface Requirement
+
+A meaningful surface is not complete merely because the ideal/default state looks correct.
+
+Review relevant states:
+- default;
+- loading;
+- empty;
+- error;
+- success;
+- disabled;
+- permission denied;
+- partial/stale data;
+- long/unexpected content;
+- small-screen/responsive behavior;
+- slow network;
+- destructive-action confirmation/recovery.
+
+Not every state applies to every component. If a state can materially occur, design and verify it intentionally.
+
+## UX Evidence
+
+Do not describe UX as "good" or "premium" without showing what was reviewed.
+
+Useful evidence:
+- critical user-flow walkthrough;
+- required-state inventory;
+- responsive checks;
+- keyboard/focus review;
+- accessibility test results;
+- error/recovery behavior;
+- browser evidence for implemented surfaces.
