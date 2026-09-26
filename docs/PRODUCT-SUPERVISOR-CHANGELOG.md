@@ -1,5 +1,39 @@
 # Admonk Product Supervisor — Changelog
 
+## 1.1.0 — 2026-09-26
+
+Backward-compatible quality/governance expansion.
+
+### Added
+- `admonk-organization-reuse`;
+- `admonk-simplicity-engineering`;
+- project `complexity-budget.md` template;
+- risk/change-impact specialist routing;
+- complete-state UI rule;
+- evidence-based quality rule;
+- stable-concept reuse policy;
+- early-lifecycle organization/simplicity participation;
+- explicit coordination principle: central coordination, specialized execution, shared canonical state, evidence-based gates, no duplicated authority.
+
+### Strengthened
+- UX Systems with complete-surface and evidence requirements;
+- Design Quality with evidence-based review;
+- Capability Router with organization/simplicity routing;
+- Product Supervisor skill with proportional specialist selection.
+
+### Validation
+BriefFlow:
+- `labs/product-supervisor-self-audit/brief-flow/ORGANIZATION-REUSE-AUDIT.md` — PASS
+- `labs/product-supervisor-self-audit/brief-flow/SIMPLICITY-ENGINEERING-AUDIT.md` — PASS
+
+Marketing Hub:
+- Product-level Organization & Reuse audit — PASS WITH FINDINGS
+- Product-level Simplicity-First Engineering audit — PASS WITH CONSTRAINTS
+- project complexity budget established before architecture freeze
+
+No additional runtime tools/connectors were added as part of this release.
+
+
 ## 1.0.0 — 2026-09-26
 
 First stable governance baseline.
