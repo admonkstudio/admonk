@@ -640,3 +640,143 @@ The release audit template lives under:
 > **Observe after launch.**
 >
 > **Scale only from evidence.**
+
+
+## 22. Control Matrix and capability action classes
+
+Every project with agents, automations, or external-system actions should maintain a Control Matrix.
+
+The Control Matrix maps each high-impact capability to:
+- action class;
+- external system;
+- data/action scope;
+- allowed actor/agent;
+- required approval;
+- required confirmation;
+- audit requirements;
+- rollback/recovery;
+- rate/spend/volume limits;
+- environment restrictions;
+- verification evidence.
+
+### Default action classes
+
+| Action class | Examples | Default rule |
+|---|---|---|
+| READ | Read analytics, inspect files, search knowledge | Least-privilege access; audit where sensitive |
+| DRAFT | Draft post, report, email, workflow, page | Allowed; clearly marked draft |
+| PROPOSE | Recommend optimization/change | Human decision required |
+| EXECUTE_REVERSIBLE | Create draft object, tag asset, stage a change | Explicit permission; approval based on risk; audit |
+| EXECUTE_CONSEQUENTIAL | Publish, send, change spend, modify production website | Named human approval, scoped permission, confirmation, audit, recovery/rollback where feasible |
+| DESTRUCTIVE | Delete, revoke, overwrite, purge | Deny by default; controlled manual procedure unless explicitly justified |
+
+Project-specific controls may be stricter.
+
+## 23. Capability Permission Manifest
+
+Projects with agent/tool execution should maintain a machine-readable permission manifest, recommended as:
+`project-governance/capabilities.yaml`
+
+The manifest should define:
+- capability ID;
+- owning domain;
+- allowed agents;
+- allowed roles;
+- connector/system;
+- action classes;
+- read/write scopes;
+- approval policy;
+- environment;
+- data sensitivity;
+- rate/spend/volume limits;
+- audit requirement;
+- rollback/recovery expectations.
+
+The manifest is an input to enforcement and review. It does not replace provider-side permissions.
+
+## 24. Exception Register
+
+Gate exceptions must be recorded separately from ordinary risks.
+
+Every exception must include:
+- exception ID;
+- gate/requirement waived or deferred;
+- owner;
+- reason;
+- compensating control;
+- expiration date;
+- mandatory re-review date;
+- current status.
+
+No permanent exceptions.
+
+Expired exceptions automatically return to unresolved status until re-reviewed.
+
+## 25. Evidence Index
+
+Each serious project should maintain:
+`project-governance/EVIDENCE.md`
+
+The Evidence Index links governance requirements to proof, including:
+- research;
+- approved product scope;
+- architecture decisions;
+- tests;
+- security review;
+- permission review;
+- monitoring;
+- backup/recovery verification;
+- deployment records;
+- release audit;
+- approvals;
+- production health checks.
+
+The Evidence Index should point to real evidence rather than restating conclusions.
+
+## 26. Supervisor Self-Audit
+
+Before declaring a new Product Supervisor release stable:
+
+1. choose a low-risk fictional product;
+2. run it through PS-0 to the Build Readiness Gate;
+3. verify the Supervisor asks only material questions;
+4. verify it creates only the minimum required artifacts;
+5. verify it blocks build when a critical unknown remains;
+6. add a consequential connector/action and verify governance is raised;
+7. verify decisions, assumptions, risks, exceptions, controls and evidence are easy for a new model/person to locate;
+8. record failures and update the Supervisor;
+9. only then version the Supervisor release.
+
+The first recommended self-audit fixture is:
+**BriefFlow — AI Content Brief Workspace**
+
+Baseline product:
+- small internal web app;
+- user enters campaign context and content goal;
+- AI drafts a structured content brief;
+- user edits/approves;
+- briefs are stored and searchable;
+- no external write connectors;
+- no sensitive customer data;
+- no autonomous actions.
+
+Escalation test:
+- connect a CMS;
+- add capability to publish an approved brief-derived article to production.
+
+Expected governance behavior:
+- baseline may remain Prototype;
+- CMS read can remain low-impact;
+- production publish becomes EXECUTE_CONSEQUENTIAL;
+- publish requires scoped connector permission, named approver, preview/confirmation, audit record and rollback/recovery method;
+- if those controls are unresolved, production publishing remains blocked.
+
+## 27. Versioning rule
+
+Use semantic versions for the Product Supervisor once the self-audit passes.
+
+- PATCH: wording/checklist/template corrections with no governance-semantic change;
+- MINOR: backward-compatible new controls, templates or review modes;
+- MAJOR: changes that alter lifecycle gates, authority, required evidence or project behavior materially.
+
+Do not label the framework v1.0.0 before its first recorded self-audit passes.
