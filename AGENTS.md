@@ -558,6 +558,41 @@ Approved doctrine requires accountable human review.
 
 ---
 
+# 19D. Product Design Foundation
+
+For reusable product/app design-system work, read:
+
+`design-foundation/README.md`
+
+Current boundary:
+
+```text
+Admonk Design Foundation
+        ↓
+Product Brand Theme
+        ↓
+Domain Patterns
+        ↓
+Product Screens
+```
+
+The Design Foundation standardizes reusable quality/behavior where justified. It must not impose one visual identity across products.
+
+Do not treat:
+- a Figma library as the whole design system;
+- a coded component folder as the whole design system;
+- Admonk's web-design aesthetic as a mandatory product-app theme.
+
+When a project already has an approved design system/component library:
+1. inspect it before creating a new component;
+2. reuse when behavior and semantics genuinely match;
+3. if a new component/pattern is required, document why the existing system is insufficient;
+4. define relevant states, accessibility behavior, responsive behavior and tests.
+
+The Design Foundation is currently in research/scaffolding. Do not invent token values or universal component APIs before the doctrine/standards research is approved.
+
+---
+
 # 20. Final Principle
 
 Every agent working with Admonk should optimize for:
