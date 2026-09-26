@@ -2,7 +2,7 @@
 
 **Date:** 2026-09-26  
 **Mode:** Document Population Research  
-**Status:** Awaiting product-owner Q1  
+**Status:** SELECTED B — awaiting explicit trade-off acceptance before lock  
 **Target:** future Design Foundation doctrine/standard and product-family design inheritance contract
 
 ## Research question
@@ -224,9 +224,108 @@ Technical compatibility is not enough.
 
 > **Standardize behavior when inconsistency creates user or system harm. Share domain patterns when semantics are proven common. Preserve product-specific expression wherever it improves fit, meaning or differentiation.**
 
-## Q1 required
+## Decision Cost Ledger — Option B
 
-How recognizable should products in the Admonk family be as members of the same family?
+**Decision type:** Layered choice, not a true hybrid.
+
+The Atlassian-like family behavior and Radix-like behavior-first freedom operate at different layers **only if the boundary remains strict**.
+
+### Benefit gained
+- coherent family behavior across modules;
+- lower relearning cost for multi-product customers;
+- shared accessibility/state/security UX;
+- preserved domain/product identity;
+- reduced reinvention of difficult interaction mechanics.
+
+### Price paid
+
+**Governance cost:** Moderate.  
+The system must continuously classify whether a design decision belongs to:
+- universal foundation;
+- family shell;
+- domain pattern;
+- product identity;
+- tenant adaptation.
+
+**QA cost:** Moderate and grows with consumers.  
+Changes to genuinely shared behavior require compatibility/regression checks across affected products.
+
+**Design-system maintenance cost:** Moderate.  
+Shared behaviors, product themes and domain patterns need clear ownership/versioning.
+
+**Speed cost:** Low initially, moderate later.  
+A local product can move quickly, but promotion or modification of shared behavior requires review.
+
+**Cognitive cost:** Moderate.  
+Humans/agents must understand which layer owns a decision rather than using one flat component library.
+
+**Flexibility cost:** Low/Moderate.  
+Products cannot freely reinvent shared shell/safety/accessibility behavior without an approved exception.
+
+**Differentiation cost:** Low if the boundary is respected; high if family cues expand into universal visual styling.
+
+**Migration cost:** Moderate.  
+Once several products consume a shared behavior/contract, changing it requires version/compatibility planning.
+
+### Residual problems inherited
+
+From the strong-family approach:
+- some central governance is unavoidable;
+- shared conventions can still expand too far if ownership is weak.
+
+From the behavior-first approach:
+- product visual drift remains possible;
+- duplicated wrappers/patterns can still emerge locally.
+
+### New layered-model failure mode
+
+**Boundary ambiguity.**
+
+If ownership is unclear, the layered model can become the worst of both worlds:
+- central rules that slow products;
+- local overrides that destroy consistency;
+- duplicated components plus shared-system bureaucracy.
+
+### Containment
+
+Option B is acceptable only if Admonk:
+1. keeps the universal layer intentionally small;
+2. defines ownership for each layer;
+3. uses the promotion ladder before moving local/domain patterns upward;
+4. versions shared contracts that have multiple consumers;
+5. tests only affected consumers rather than every product blindly;
+6. allows approved product exceptions;
+7. periodically removes shared rules whose central-maintenance cost exceeds value.
+
+### Revisit trigger
+
+Revisit B if:
+- cross-product QA/governance materially slows releases;
+- product teams repeatedly need exceptions;
+- customers experience the modules as disconnected;
+- the shared layer accumulates product-specific rules;
+- maintaining themes/variants costs more than separate implementations.
+
+### Total-system judgment
+
+Option B is still recommended **only because the user's commercial goal requires both composability and meaningful product identity**.
+
+If Admonk later decides visual/domain differentiation is not strategically valuable, Option A becomes cheaper.
+
+If products stop needing a unified cross-product experience, Option C becomes cheaper.
+
+Therefore B is not "the best of both worlds for free."
+
+It is:
+> **the higher-governance option whose extra cost buys both cross-product familiarity and product differentiation.**
+
+## Q1 — Trade-off acceptance
+
+The product-owner already selected **B — Shared behavior + subtle family cues + distinct product identity**.
+
+Before locking it, explicitly accept or reject the price:
+
+**Are we willing to pay a moderate ongoing governance + cross-product QA cost to preserve both family coherence and distinct product identity, provided the universal layer stays deliberately small?**
 
 ### A. Strong visual family
 Products share substantial visual language—typography, spacing, component appearance, navigation style and family shell—while domain screens differ.
@@ -246,9 +345,9 @@ Only accessibility/behavior contracts are shared. Visual identity, shell and mos
 **Benefit:** maximum creative/domain freedom.  
 **Risk:** customers who buy several modules may experience the family as disconnected products.
 
-## Research recommendation
+## Research recommendation after decision-cost review
 
-**B — Shared behavior + subtle family cues + distinct product identity.**
+**B remains recommended, conditionally on accepting the governance/QA price above.**
 
 This best matches the owner's direction:
 - one product family sold in parts;
