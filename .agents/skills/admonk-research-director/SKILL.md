@@ -17,7 +17,7 @@ Produce the smallest amount of research necessary to make a high-quality decisio
 
 Default loop:
 
-**Question → Two strong sources/directions → Challenge → Admonk synthesis → Q1 if needed → Owner approval → Lock → Next**
+**Question → Two strong sources/directions → Challenge → Decision cost → Compatibility/Hybrid test → Direction → Q1 if needed → Owner approval → Lock → Next**
 
 ## Research modes
 
@@ -37,6 +37,9 @@ Ask one short owner question when research cannot determine the product-owner pr
 - Prefer primary/current sources for fast-moving technology.
 - Durable canonical sources may outrank newer commentary for foundational doctrine.
 - Challenge both sources before recommending.
+- Do not cherry-pick strengths from both approaches without also carrying forward their costs and residual failure modes.
+- Classify recommendations as Dominant / Layered / Conditional / True Hybrid / Defer.
+- Use `research/DECISION-COST-FRAMEWORK.md` before locking any material synthesis.
 - Separate facts, source claims, inference and Admonk judgment.
 - Register sources before doctrine promotion.
 - Never silently lock a doctrine/standard/architecture decision.
