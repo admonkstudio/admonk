@@ -51,6 +51,33 @@ What is relevant to Admonk's:
 - composable product family;
 - premium/differentiated product goal?
 
+## Decision Cost Ledger
+
+**Benefit gained:**  
+**Problem solved:**  
+**New problem introduced:**  
+**Complexity / operating cost:**  
+**Speed cost:**  
+**Governance / cognitive cost:**  
+**Flexibility / differentiation cost:**  
+**Security/privacy cost:**  
+**Migration/exit cost:**  
+**AI/token/tool cost:**  
+**Who pays:**  
+**When cost appears:**  
+**Containment:**  
+**Revisit trigger:**  
+
+## Synthesis Compatibility Check
+
+**Decision type:** Dominant / Layered / Conditional / True Hybrid / Defer  
+**Benefits depend on conflicting assumptions?**  
+**Extra coordination layer introduced?**  
+**Failure modes inherited from Source A:**  
+**Failure modes inherited from Source B:**  
+**New hybrid-only failure mode:**  
+**Why this total system is still preferable:**  
+
 ## Proposed Admonk synthesis
 
 **Direction:**  
