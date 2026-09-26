@@ -37,6 +37,16 @@ Specialized execution/review behavior.
 ### Project governance
 Project-specific lifecycle truth, evidence, risks, decisions and exceptions.
 
+### Capability and tooling discovery
+What disciplines/feedback loops are needed and whether a tool/technology/connector is justified.
+
+Research areas:
+- `capability-map/`
+- `tool-evaluation/`
+- `architecture-impact/`
+- `feedback-loops.md`
+- `PARALLEL-TRACKS.md`
+
 ## Research source hierarchy
 
 Prefer:
