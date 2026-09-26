@@ -391,17 +391,21 @@ The supervisor should always be able to answer:
 > **Start small. Build correctly. Measure reality. Scale only when reality asks for it.**
 
 
-## 14. Governance level
+## 14. Lifecycle state + risk overlays
 
-Governance depth must match product risk and maturity.
+Governance depth is determined by **two independent dimensions**:
 
-### Prototype
-Use when all of the following are substantially true:
-- non-production or tightly controlled internal evaluation;
-- synthetic, disposable, or low-sensitivity data;
-- no consequential live writes to customer/business systems;
-- limited users and blast radius;
-- failure is cheap and reversible.
+1. **Lifecycle state** — is this still controlled/non-production work, or is it an operational Production system?
+2. **Risk overlays** — what sensitive data, consequential actions, regulatory/high-impact exposure, or privileged blast radius needs stronger protection?
+
+Do not use one label to answer both questions.
+
+### Lifecycle state
+
+#### Prototype
+Use when the work is non-production or controlled discovery/evaluation and is not relied upon as a live business service.
+
+A Prototype **may use real or sensitive data** when a risk overlay is active and the corresponding protections are applied. Real data alone does not make the lifecycle Production.
 
 Minimum expectation:
 - source control;
@@ -409,30 +413,26 @@ Minimum expectation:
 - basic architecture/risk note;
 - critical-path tests appropriate to the prototype;
 - no committed secrets;
-- explicit statement that the environment is not production.
+- explicit statement that the environment is not Production;
+- active risk overlays and their controls recorded.
 
-### Production
-Use when any of the following applies:
-- real users;
-- real company/customer data;
-- live connectors;
-- production writes/actions;
-- ongoing operational dependency;
-- customer-facing or business-critical workflow.
+#### Production
+Use when the product is relied upon by real users/business operations, or performs live external side effects as part of an operating workflow.
 
-This is the default audit level for a live SaaS release.
+Production activates the normal Production readiness/release/operations floor in addition to any active risk overlays.
 
-### High-risk
-Use when the product materially increases consequence or regulatory exposure, including examples such as:
-- regulated or highly sensitive data;
-- payments/financial movement;
-- safety-critical behavior;
-- privileged infrastructure/security control;
-- broad autonomous destructive/write capability;
-- high legal/compliance consequence;
-- large blast radius where rollback/recovery is difficult.
+### Risk overlays
 
-High-risk requires stricter independent review and cannot rely only on product-owner risk acceptance for critical security/reliability findings.
+Apply one or more overlays whenever the condition exists, regardless of lifecycle state:
+
+- **REAL_OR_SENSITIVE_DATA** — real business/confidential/personal/highly sensitive data or evidence. Increase confidentiality, minimization, provenance/integrity, least-privilege, retention and access controls as applicable.
+- **CONSEQUENTIAL_ACTION** — live write/send/publish/spend/permission/data-mutation or other external commitment. Require scoped permission, action-bound approval where applicable, auditability and recovery/containment.
+- **REGULATED_OR_HIGH_IMPACT** — legal/compliance, financial movement, safety-critical or similarly high-consequence behavior. Require stronger assurance, specialist review and approval appropriate to the domain.
+- **ELEVATED_PRIVILEGE_OR_BLAST_RADIUS** — privileged infrastructure/security controls, broad tenant/system authority or large hard-to-recover blast radius. Require stronger authorization, containment, independent review and recovery evidence where applicable.
+
+Risk overlays do **not** automatically change Prototype to Production. Lifecycle changes when operational use changes.
+
+The term **High** remains valid for release risk or finding severity. It is not a lifecycle/governance state.
 
 ## 15. Progressive governance artifacts
 
@@ -463,7 +463,7 @@ Before a real Production release, the relevant durable product, capability, arch
 ### Build Readiness Gate
 
 Implementation may begin only when:
-- the minimum required information for the current governance level exists in canonical form;
+- the minimum required information for the current lifecycle state and active risk overlays exists in canonical form;
 - major assumptions are visible;
 - the first milestone has acceptance criteria / learning evidence;
 - critical authorization/data/security questions are not unresolved;
@@ -536,7 +536,7 @@ Default authority:
 - Low/Medium product or delivery risk: named accountable product owner may accept it when documented.
 - High non-security risk: accountable owner + relevant specialist review.
 - Critical or High security/privacy finding for production: release remains blocked until mitigated, reclassified with evidence, or reviewed/accepted by an explicitly authorized security authority.
-- High-risk products may define stricter approval requirements.
+- Products with REGULATED_OR_HIGH_IMPACT or ELEVATED_PRIVILEGE_OR_BLAST_RADIUS overlays may define stricter approval requirements.
 
 Every accepted exception must include:
 - reason;
@@ -555,7 +555,7 @@ Possible decisions:
 - **PASS WITH ACCEPTED RISKS** — release allowed only with documented owners, mitigations and deadlines.
 - **BLOCKED** — one or more release-blocking gaps remain.
 
-Audit depth follows both the product governance level (Prototype / Production / High-risk) and the release-risk classification (Low / Medium / High) defined by PB02.
+Audit depth follows the lifecycle state (Prototype / Production), active risk overlays, and the separate release-risk classification (Low / Medium / High) defined by PB02.
 
 ### Audit domains
 
@@ -952,10 +952,10 @@ Approved doctrine:
 
 > **Risk changes the depth of assurance, not whether security/privacy matter.**
 
-All governance levels inherit the universal security/privacy floor.
-Production and High-risk products require progressively stronger verification according to data sensitivity, privilege, autonomy, consequence, external reach and recovery difficulty.
+All lifecycle states inherit the universal security/privacy floor.
+Production and active risk overlays require progressively stronger verification according to data sensitivity, privilege, autonomy, consequence, external reach and recovery difficulty.
 
-Do not interpret Prototype governance as permission to ignore authorization, secrets, tenant/data isolation, data purpose or other applicable baseline protections.
+Do not interpret Prototype lifecycle as permission to ignore authorization, secrets, tenant/data isolation, data purpose or other applicable baseline protections.
 
 
 ## AI unit-economics rule

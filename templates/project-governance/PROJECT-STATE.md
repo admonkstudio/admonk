@@ -3,7 +3,8 @@
 **Project:**  
 **Date:**  
 **Product owner:**  
-**Governance level:** Prototype / Production / High-risk  
+**Lifecycle state:** Prototype / Production  
+**Active risk overlays:**  
 **Product Supervisor stage:** PS-0 / PS-1 / PS-2 / PS-3 / PS-4 / PS-5 / PS-6 / PS-7  
 **Current milestone:**  
 **Implementation allowed:** Yes / No  

@@ -4,7 +4,8 @@
 
 **Release:**
 **Environment:**
-**Governance level:** Prototype / Production / High-risk
+**Lifecycle state:** Prototype / Production
+**Active risk overlays:** REAL_OR_SENSITIVE_DATA / CONSEQUENTIAL_ACTION / REGULATED_OR_HIGH_IMPACT / ELEVATED_PRIVILEGE_OR_BLAST_RADIUS / None
 **Release risk:** Low / Medium / High
 **Date:**
 **Accountable owner:**

@@ -1,6 +1,6 @@
 # Prototype Definition
 
-**Use when:** a low-risk Prototype needs enough canonical information to build and learn without creating several premature governance files.
+**Use when:** a Prototype needs enough canonical information to build and learn without creating several premature governance files. Real/sensitive data is allowed only with the applicable risk-overlay controls.
 
 **Playbook:** `playbooks/PB01-product-definition-scope.md`
 
@@ -41,7 +41,8 @@ Only list issues that could materially change the prototype or make it unsafe.
 
 ## Current state
 Stage:
-Governance level: Prototype
+Lifecycle state: Prototype
+Active risk overlays: None / REAL_OR_SENSITIVE_DATA / CONSEQUENTIAL_ACTION / REGULATED_OR_HIGH_IMPACT / ELEVATED_PRIVILEGE_OR_BLAST_RADIUS
 Implementation allowed: Yes / No
 Accountable owner:
 

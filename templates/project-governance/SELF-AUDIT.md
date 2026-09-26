@@ -23,7 +23,7 @@ A small internal web app where:
 | Question discipline | Asks only high-value missing questions | PB01 asks for user/problem/evidence/outcome/scope/material risks; S024 + Foundation usability rule reject unnecessary complexity | PASS |
 | Progressive artifacts | Low-risk BriefFlow can begin from one Prototype Definition; split only when complexity/risk/maturity justifies it | Product Supervisor §15 + `01-discovery/prototype-definition.md` | PASS — BF01 |
 | Critical unknown | Blocks build when a critical auth/data/security decision is unresolved | Product Supervisor Build Readiness Gate | PASS |
-| Low-risk baseline | Does not invent enterprise governance | Prototype governance level + S024 simplicity | PASS |
+| Low-risk baseline | Does not invent enterprise governance | Prototype lifecycle + S024 simplicity | PASS |
 | Connector escalation | CMS read does not automatically become publish permission | Control Matrix READ vs EXECUTE_CONSEQUENTIAL + least privilege | PASS |
 | Consequential action | Production publish becomes EXECUTE_CONSEQUENTIAL | Product Supervisor action-class table | PASS |
 | Required controls | Publish requires scoped permission, named action-bound approval, audit and recovery; no redundant second confirmation when valid approval already covers exact action | S004 + AI autonomy doctrine + Control Matrix/PB03 | PASS — BF02 |

@@ -30,13 +30,13 @@ GitHub Issues/Projects may track execution, but they do not silently replace app
 
 ## Minimum before implementation
 
-Require the information needed by the current governance level, not all files by default.
+Require the information needed by the current lifecycle state and active risk overlays, not all files by default.
 
-For a low-risk Prototype, start with:
+For a simple Prototype, start with:
 - `01-discovery/prototype-definition.md`
 
 Split into dedicated Product Brief, MVP/Capability Spec, Architecture & Risk Brief and Project State only when scope/risk/maturity makes that separation useful.
 
 Before a real Production release, the relevant durable information must exist in clear canonical form.
 
-Use `docs/PRODUCT-SUPERVISOR.md` for lifecycle gates and governance levels.
+Use `docs/PRODUCT-SUPERVISOR.md` for lifecycle gates, lifecycle state and risk overlays.

@@ -28,6 +28,9 @@ Two Foundation defects were found and fixed:
 
 Evidence: `docs/FOUNDATION-BRIEFFLOW-REVALIDATION-2026-09-26.md`.
 
+## Marketing Hub finding locked
+- **MH01 — Lifecycle and risk are separate:** lifecycle is Prototype/Production; risk overlays apply independently for real/sensitive data, consequential actions, regulated/high-impact exposure and elevated privilege/blast radius. “High-risk” is no longer a lifecycle/governance state.
+
 ## Current work — Marketing Hub revalidation
 Re-run the Studio Foundation against Marketing Hub as the first serious product:
 - confirm Foundation rules stay proportional at larger scope;

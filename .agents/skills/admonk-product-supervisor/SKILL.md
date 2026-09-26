@@ -104,22 +104,29 @@ For substantial supervisor reviews, report:
 Do not use a numeric health score unless each dimension is evidence-backed and explained.
 
 
-## Risk classification
+## Lifecycle + risk classification
 
-Before build/launch governance decisions, classify the current environment:
+Before build/launch governance decisions, classify separately:
+
+**Lifecycle state**
 - Prototype
 - Production
-- High-risk
+
+**Risk overlays — apply only when relevant**
+- REAL_OR_SENSITIVE_DATA
+- CONSEQUENTIAL_ACTION
+- REGULATED_OR_HIGH_IMPACT
+- ELEVATED_PRIVILEGE_OR_BLAST_RADIUS
 
 Use the definitions in `docs/PRODUCT-SUPERVISOR.md`.
 
-A project may use Prototype governance during controlled discovery/staging and Production governance for its first real-user release.
+A project may remain Prototype while using real/sensitive data if the corresponding overlay controls are applied. Production begins when the product becomes an operational service or performs live side effects as part of real business use.
 
 ## Mandatory build gate
 
 Require the minimum Product Supervisor **information**, not a fixed document count.
 
-A low-risk Prototype may use one compact Prototype Definition. Split Product Brief, MVP/Capability Spec, Architecture & Risk Brief and Project State only when scope, risk, duration or maturity makes them useful.
+A Prototype without material complexity may use one compact Prototype Definition. Split Product Brief, MVP/Capability Spec, Architecture & Risk Brief and Project State only when scope, risk, duration or maturity makes them useful.
 
 Before a real Production release, the relevant durable product, capability, architecture/risk and state information must exist in clear canonical form.
 
@@ -152,7 +159,8 @@ Do not load every production skill for every change.
 
 Select the smallest sufficient review set based on:
 - lifecycle stage;
-- governance level;
+- lifecycle state;
+- active risk overlays;
 - data/action sensitivity;
 - blast radius;
 - reversibility;

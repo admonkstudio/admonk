@@ -2,7 +2,8 @@
 
 **Project:**  
 **Owner:**  
-**Governance level:** Prototype / Production / High-risk  
+**Lifecycle state:** Prototype / Production  
+**Active risk overlays:**  
 **Last reviewed:**  
 
 ## Purpose
