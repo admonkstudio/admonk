@@ -73,6 +73,29 @@ Tenant Configuration
 └── domain-specific setup
 ```
 
+## AI economics as a first-class product constraint
+
+Product-owner direction:
+
+> **AI/token/tool usage must remain economically viable at the user and outcome level. An AI-native product that delivers value only at unsustainable per-user operating cost is not a successful product.**
+
+Therefore, every AI/agent product must eventually make visible:
+- token/model usage;
+- tool/action usage;
+- cost by tenant/product/agent/feature;
+- cost per active user;
+- cost per successful outcome;
+- failed/discarded-run cost;
+- budget/limit behavior;
+- cost trend as usage scales.
+
+Raw token reduction is not the objective by itself.
+
+The objective is:
+**meet the approved quality floor and product outcome at the lowest sustainable unit cost.**
+
+No fixed universal dollar threshold is locked yet. Thresholds belong to the commercial/product model and will be researched/approved explicitly.
+
 ## 3. Commercial composition principle
 
 The future offering should be commercially composable:
