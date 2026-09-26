@@ -2,7 +2,7 @@
 
 **Date:** 2026-09-26  
 **Mode:** Document Population Research  
-**Status:** Awaiting product-owner Q1  
+**Status:** LOCKED — product-owner approved 2026-09-26  
 **Target:** future product/design/quality doctrine and release evidence standards
 
 ## Research question
@@ -184,9 +184,9 @@ AI may increase output speed, but the foundation should prevent speed from reduc
 AI can help detect quality problems.
 AI cannot become the sole authority on whether the product feels appropriate, coherent or differentiated.
 
-## Q1 required
+## Product-owner decision
 
-How should Admonk distribute **craft/polish investment** across a product?
+**Approved direction: B — Universal quality floor + concentrated craft.**
 
 ### A. Uniform premium
 Every meaningful surface should receive approximately the same high polish standard.
@@ -208,7 +208,7 @@ Premium polish is concentrated mainly on customer-facing/product-facing areas; a
 **Benefit:** fastest commercial impact.  
 **Risk:** internal/admin friction can still damage operations, trust and support cost.
 
-## Research recommendation
+## Locked Admonk direction
 
 **B — Universal quality floor + concentrated craft.**
 
@@ -219,12 +219,10 @@ This is most compatible with:
 - sustainable scaling;
 - the principle that not every change needs the same review depth.
 
-## Lock plan after Q1
+## Lock result
 
-If B is approved:
-1. promote the premium-quality doctrine;
-2. separate universal quality floor from craft/differentiation guidance;
-3. use standards to make the floor evidence-testable;
-4. keep product-specific craft decisions outside universal visual rules;
-5. update Design Foundation and Product Release Audit contracts;
-6. lock R002 and move to R003 — Engineering Simplicity doctrine.
+- Premium product-quality doctrine promoted.
+- Universal quality floor separated from concentrated craft/differentiation.
+- Product-specific craft remains outside universal visual rules.
+- R002 locked.
+- Next item: R003 — Engineering Simplicity doctrine.
