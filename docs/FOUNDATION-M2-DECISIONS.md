@@ -17,8 +17,10 @@
 | M2-10 | LOCKED | Federated permission-aware Context Plane: keep approved knowledge, operational data, operational memory and temporary task context distinct; preserve domain authority, provenance and history; Corporate Brain composes only authorized context. | Requires shared context metadata/contracts and governed retrieval composition, but avoids duplicated truth and unsafe centralization. |
 | M2-11 | LOCKED | Shared intersection-based Agent Authority Envelope: effective agent authority is the intersection of delegator authority, agent capabilities, policy, context, provider scopes, runtime limits, action class and approval state; reuse M1 action classes; enforcement stays outside the model. | Requires capability/delegation metadata and deterministic evaluation, but avoids full user-permission inheritance and duplicate AI authorization systems. |
 
+| M2-12 | LOCKED | Shared versioned event, audit and provenance envelope with common identity, suite context and correlation metadata. Domain products retain state and domain-event ownership; audit, provenance and telemetry stay distinct. | Small shared schema/indexing cost in exchange for coherent cross-suite traceability without centralizing product state. |
+
 ## Current
-**M2-12 — Audit / Provenance / Event Model**
+**M2-13 — Notification / Communication Preferences**
 
 
 ## M2-04 owner requirements — recorded, decision pending
