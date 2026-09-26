@@ -562,7 +562,7 @@ Possible decisions:
 - **PASS WITH ACCEPTED RISKS** — release allowed only with documented owners, mitigations and deadlines.
 - **BLOCKED** — one or more release-blocking gaps remain.
 
-Audit depth follows Prototype / Production / High-risk classification.
+Audit depth follows both the product governance level (Prototype / Production / High-risk) and the release-risk classification (Low / Medium / High) defined by PB02.
 
 ### Audit domains
 
@@ -705,19 +705,23 @@ The manifest is an input to enforcement and review. It does not replace provider
 
 Gate exceptions must be recorded separately from ordinary risks.
 
-Every exception must include:
+Every material exception must include:
 - exception ID;
-- gate/requirement waived or deferred;
+- type: Temporary or Permanent;
+- gate/Standard/requirement waived or deferred;
 - owner;
 - reason;
-- compensating control;
-- expiration date;
-- mandatory re-review date;
-- current status.
+- accepted risk/cost;
+- compensating control where relevant;
+- approving authority;
+- current status;
+- expiry/re-review condition when Temporary, or revisit trigger when Permanent.
 
-No permanent exceptions.
+Temporary exceptions automatically return to unresolved status when their expiry/re-review condition is reached until explicitly re-reviewed.
 
-Expired exceptions automatically return to unresolved status until re-reviewed.
+Permanent exceptions are allowed only when explicitly approved. Permanent means there is no artificial expiry date; it does **not** mean forgotten or immune from review. A material change in context, risk, regulation, product scope or evidence reopens the decision.
+
+Use S030 and PB07 for the canonical exception model.
 
 ## 25. Evidence Index
 
@@ -1015,7 +1019,7 @@ Primary and consequential journeys require relevant manual accessibility verific
 
 Material accessibility failures on critical journeys are release-blocking by default.
 
-Non-critical gaps may be accepted only through the Exception Register with an owner, user impact, mitigation where relevant, and expiry/review date.
+Non-critical gaps may be accepted only through the Exception Register with an owner, user impact, accepted risk/cost and mitigation where relevant. Temporary exceptions require expiry/review; a Permanent exception requires explicit approval and remains reviewable. Do not make a formal WCAG conformance claim for a scope that knowingly fails required criteria.
 
 Deeper inclusive/user validation is routed by risk, novelty and observed exclusion rather than required universally.
 

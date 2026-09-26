@@ -3,42 +3,38 @@
 **Date:** 2026-09-26
 **Program:** Admonk Foundation Program
 **Current milestone:** **FOUNDATION-M1 — Populate & Lock Studio Foundation**
-**Current sub-milestone:** **Skills + Templates Reconciliation**
+**Current sub-milestone:** **BriefFlow Revalidation**
 **Milestone status:** Active
 **Foundation lock:** Not yet complete
 **Current stable Product Supervisor:** v1.1.0
 
 ## Completed
 - Product Supervisor lifecycle/gates, Organization & Reuse, Simplicity-First Engineering, Complexity Budget.
-- research/doctrine/standards/playbooks authority separation and research operating system.
+- Research/doctrine/standards/playbooks authority separation and research operating system.
 - Design Foundation scaffold/promotion ladder and Product Platform Foundation direction.
 - **R001–R016 complete/locked; retroactive R001–R006 costs accepted.**
 - **T017–T028 complete/locked.**
 - **S001–S030 complete/locked.**
 - **P001/P002 complete/locked.**
-- **PB01–PB07 core playbooks complete/locked.**
+- **PB01–PB07 complete/locked.**
+- **Skills + Templates reconciliation complete.** See `docs/FOUNDATION-SKILLS-TEMPLATES-RECONCILIATION-2026-09-26.md`.
 
-## Current work — Skills + Templates reconciliation
-Reconcile existing Studio skills, Product Supervisor/governance templates and Design Foundation artifacts against approved Standards/Playbooks.
+## Current work — BriefFlow revalidation
+Use BriefFlow as the controlled crash test of the Studio Foundation:
+- can a fresh human/model navigate it;
+- can it choose the right playbook/standards without loading everything;
+- does governance stay proportional;
+- does it avoid over-engineering;
+- are exception/tool/release/AI/design rules usable in a small real product;
+- do any contradictions or missing instructions appear.
 
-Immediate goals:
-- remove contradictions;
-- reference canonical Standards/Playbooks instead of competing copies;
-- update stale status/navigation;
-- preserve specialist skill detail where it adds execution value;
-- avoid rewriting healthy skills merely for stylistic consistency.
-
-Known first findings:
-- former **“No permanent exceptions”** conflicts with S030 and must use explicit Temporary/Permanent semantics;
-- Product Brief and Release Audit require small PB01/PB02 alignment;
-- Marketing Hub is a downstream validation target, not the canonical home for Studio Foundation rules.
+Foundation defects found here must be fixed before Marketing Hub revalidation.
 
 ## FOUNDATION-M1 remaining gate
-1. complete skill/template reconciliation;
-2. BriefFlow revalidation;
-3. Marketing Hub revalidation;
-4. repository contradiction/navigation audit;
-5. version and lock Studio Foundation release.
+1. BriefFlow revalidation;
+2. Marketing Hub revalidation;
+3. repository contradiction/navigation audit;
+4. version and lock Studio Foundation release.
 
 ## Explicitly not complete
 Do not describe the Studio Foundation as fully locked/completed until the remaining validation/audit gates pass. Product Platform Foundation is also not locked; current documents remain FOUNDATION-M2 direction/discovery.

@@ -7,7 +7,7 @@
 
 ## Core rule
 
-> **Production web products target WCAG 2.2 Level AA, verify material interactions manually, and use only documented time-bound exceptions for non-critical gaps.**
+> **Production web products target WCAG 2.2 Level AA, verify material interactions manually, and route any accepted non-critical gap through S030/PB07. Temporary exceptions are time-bound; explicitly approved Permanent exceptions remain reviewable.**
 
 Accessibility is a product-quality floor, not a scanner score.
 
@@ -62,11 +62,15 @@ Do not require bespoke accessibility user research for every low-level primitive
 Material accessibility failures on critical journeys are release-blocking by default.
 
 Non-critical gaps may be accepted only through the normal Exception Register with:
+- type: Temporary or Permanent;
 - owner;
 - affected experience/criterion;
 - user impact;
+- accepted risk/cost;
 - compensating measure where relevant;
-- expiry/review date.
+- expiry/review condition when Temporary, or revisit trigger when Permanent.
+
+A Permanent exception does not establish WCAG conformance for a scope that fails required criteria.
 
 ## 6. Conformance claims
 

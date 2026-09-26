@@ -589,7 +589,7 @@ When a project already has an approved design system/component library:
 3. if a new component/pattern is required, document why the existing system is insufficient;
 4. define relevant states, accessibility behavior, responsive behavior and tests.
 
-The Design Foundation is currently in research/scaffolding. Do not invent token values or universal component APIs before the doctrine/standards research is approved.
+The Design Foundation now has an approved FOUNDATION-M1 baseline for reuse, semantic tokens, design/code authority, accessibility and component promotion. Use `standards/STUDIO-STANDARDS.md` (especially S006 and S011–S013) plus PB04/PB05. Fixed token values, universal component APIs and one cross-product visual theme are still not approved; do not invent them.
 
 ---
 
