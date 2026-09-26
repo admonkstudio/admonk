@@ -2,7 +2,7 @@
 
 **Date:** 2026-09-26
 **Mode:** Document Population Research
-**Status:** Awaiting product-owner Q1 + cost acceptance
+**Status:** LOCKED — B selected and decision cost explicitly accepted 2026-09-26
 **Target:** `design-foundation/PROMOTION-LADDER.md` and future component-governance policy
 
 ## Research question
@@ -186,7 +186,7 @@ We do not require community voting, two products for every primitive, user studi
 
 > **Promotion is not a reward for reuse. It is Admonk accepting a maintenance and compatibility obligation. The evidence required should be proportional to the scope and consequence of that obligation.**
 
-## Q1 — promotion philosophy + price acceptance
+## Product-owner decision and cost acceptance
 
 ### A. Strict reuse-count gate
 Do not promote to shared status until at least two real products use the asset.
@@ -206,19 +206,19 @@ Use principles but let the foundation owner decide case-by-case without formal l
 **Benefit:** fastest governance.
 **Price:** less reproducible for future teams and AI.
 
-## Research recommendation
+## Locked Admonk direction
 
 **B — Proportional evidence-gated promotion.**
 
 Accepted price if chosen:
 > **Moderate classification and review judgment at promotion points so local work stays fast and shared assets carry evidence proportional to the obligation Admonk takes on.**
 
-## Lock plan after Q1
+## Lock result
 
-If B and its price are accepted:
-1. lock R010;
-2. replace the promotion scaffold with Local → Candidate → Trial → Stable → Deprecated;
-3. add proportional-evidence and earlier-centralization constraints;
-4. create `design-foundation/component-promotion-policy.md`;
-5. update component-governance contract;
-6. move to R011 — Design/code/Figma drift policy.
+- Proportional evidence-gated promotion locked.
+- Moderate classification/review judgment explicitly accepted as the price of proportional evidence.
+- Promotion ladder replaced with Local → Candidate → Trial → Stable → Deprecated.
+- Canonical component-promotion policy created.
+- Component-governance contract updated.
+- R010 locked under the Decision Cost & Coupling Framework.
+- Next item: R011 — Design/code/Figma drift policy.
