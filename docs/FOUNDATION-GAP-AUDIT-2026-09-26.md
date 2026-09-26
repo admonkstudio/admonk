@@ -253,6 +253,20 @@ First prove:
 
 Shared shell/settings/onboarding should not bake in one locale/timezone or accessibility assumption.
 
+### GAP-F21 — Existing Project OS build status predates the new foundation gate
+**Severity:** Governance consistency check
+
+`docs/PROJECT-OS-STATUS.md` currently states "Ready for implementation" and names a build milestone created before the Product Supervisor/Foundation Program matured.
+
+This does not automatically mean the Project OS architecture is wrong.
+
+Before new Project OS implementation work resumes, run a Product Supervisor intake against its current Product Brief/spec/architecture and decide one of:
+- proceed under the current Studio Foundation version with explicit accepted gaps;
+- pause until FOUNDATION-M1 completes;
+- treat it as a controlled pilot used to validate the foundation.
+
+Do not let an older "ready for implementation" label silently bypass newer governance.
+
 ## Architectural contradiction resolved
 
 Existing suite rule:
