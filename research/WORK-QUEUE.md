@@ -16,11 +16,24 @@ This queue tracks the decision-sized research work required to populate and lock
 | 5 | AI autonomy/agent authority doctrine | Document Population Research | LOCKED |
 | 6 | Operations / reliability / AI unit-economics doctrine | Document Population Research | LOCKED |
 
+## Decision-cost checkpoint
+
+Before FOUNDATION-M1 is locked:
+
+| Item | Mode | Status |
+|---|---|---|
+| Retroactive decision-cost audit for R001–R006 | Decision Cost Review | Pending |
+
+Purpose:
+Re-test previously locked doctrine decisions under `research/DECISION-COST-FRAMEWORK.md` so earlier syntheses are not grandfathered past the new trade-off gate.
+
+This is a focused audit, not a full re-research. Reopen a decision only when the newly explicit cost changes the conclusion.
+
 ## Priority 2 — Design Foundation
 
 | Order | Artifact / decision | Mode | Status |
 |---:|---|---|---|
-| 7 | Shared vs product-specific design behavior | Document Population Research | AWAITING Q1 |
+| 7 | Shared vs product-specific design behavior | Document Population Research | AWAITING COST ACCEPTANCE |
 | 8 | Design-system maturity direction | Choice / Direction Research | Pending |
 | 9 | Token architecture direction | Choice / Direction Research | Pending |
 | 10 | Component promotion policy | Document Population Research | Pending |
