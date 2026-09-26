@@ -2,7 +2,7 @@
 
 **Date:** 2026-09-26  
 **Mode:** Document Population Research  
-**Status:** Awaiting product-owner Q1 + cost acceptance  
+**Status:** LOCKED — B selected and decision cost explicitly accepted 2026-09-26  
 **Target:** `research/feedback-loops.md`, future production feedback-loop standard, Product Supervisor release/operate expectations
 
 ## Research question
@@ -340,7 +340,7 @@ OpenTelemetry remains a likely interoperability direction when richer instrument
 
 > **Instrument decisions, not curiosity. Every production product must be able to detect material failure, diagnose enough to act, verify recovery, observe its core outcome, and control variable AI cost. Richer observability is earned by operational evidence.**
 
-## Q1 — production feedback-loop cost acceptance
+## Product-owner decision and cost acceptance
 
 Which direction should Admonk lock?
 
@@ -359,19 +359,19 @@ Start with uptime/errors/recovery; defer product outcome and economics.
 
 **Price:** cheapest initial operations but unacceptable blind spots for AI-native/commercial products.
 
-## Research recommendation
+## Locked Admonk direction
 
 **B — Loop-first minimum + evidence-triggered observability.**
 
 Accepted price if chosen:
 > **Admonk accepts occasional later instrumentation retrofits and potentially slower diagnosis of novel early-production failures so it does not permanently pay to collect and operate telemetry that has no decision value.**
 
-## Lock plan after Q1
+## Lock result
 
-If B and its price are accepted:
-1. lock R012;
-2. promote the minimum loop contract into production governance;
-3. update `research/feedback-loops.md`;
-4. update Product Supervisor Production expectations/release audit as needed;
-5. keep specific observability vendors/tools for Priority 4 decisions;
-6. move to R013 — Accessibility Baseline.
+- Loop-first minimum + evidence-triggered observability locked.
+- Occasional slower diagnosis and later instrumentation retrofit cost explicitly accepted.
+- Minimum production loop contract promoted into governance.
+- Product Supervisor Production expectations aligned.
+- Vendor/tool selection remains deferred to Priority 4.
+- R012 locked under the Decision Cost & Coupling Framework.
+- Next item: R013 — Accessibility Baseline.
