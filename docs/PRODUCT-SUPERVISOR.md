@@ -1057,3 +1057,24 @@ Do not build a deep metric tree or large event taxonomy merely because the analy
 Expand analytics depth when repeated decisions, product/module complexity or segmentation needs prove that the additional instrumentation will change decisions.
 
 Product analytics must close a decision loop; dashboards with no owner/action do not satisfy PS-6/PS-7.
+
+
+## AI evaluation and regression rule
+
+Approved research:
+`research/synthesis/R016-ai-evaluation-regression-baseline.md`
+
+Material AI/agent capabilities require:
+- explicit success and unacceptable-failure definitions;
+- a small representative regression seed around critical dependable behavior;
+- relevant evaluation before material model/prompt/tool/routing/context/permission/orchestration changes;
+- production-failure feedback into future regression where generalizable and privacy-safe;
+- evaluation-cost tracking.
+
+Prefer deterministic outcome checks before model-based graders.
+
+Use model graders only where qualitative judgment is genuinely required and calibrate them against human/domain examples before treating them as release evidence.
+
+Trajectory/process evaluation is required only when tool choice, permissions, approvals, provenance, loops/retries or other process behavior materially affects safety, quality or economics.
+
+Do not require one vendor's eval platform or one aggregate score as release truth.
