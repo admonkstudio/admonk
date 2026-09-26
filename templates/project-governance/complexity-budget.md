@@ -33,6 +33,21 @@ This is not a numeric score. It is a set of boundaries, approvals and revisit tr
 - Shared extraction requires a stable concept and proven reuse or a security/consistency reason.
 - Temporary shortcuts must enter the Technical Debt & Scale Register when they create material future work.
 
+## Deliberate change seams
+
+Keep the core implementation minimal, but identify boundaries where later change would be disproportionately expensive.
+
+As relevant, protect:
+- external providers/vendors;
+- tenant/isolation boundaries;
+- authorization/permissions;
+- shared cross-product contracts;
+- durable identifiers and data migrations;
+- consequential action interfaces;
+- deployment/data recovery paths.
+
+Protection means explicit boundaries, migration/recovery thinking and appropriate tests—not generalized future-proofing everywhere.
+
 ## Approval triggers
 
 A specific approval/review is required before introducing:
