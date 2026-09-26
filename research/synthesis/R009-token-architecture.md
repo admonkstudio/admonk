@@ -2,7 +2,7 @@
 
 **Date:** 2026-09-26  
 **Mode:** Choice / Direction Research  
-**Status:** Awaiting product-owner Q1 + cost acceptance  
+**Status:** LOCKED — B selected and decision cost explicitly accepted 2026-09-26  
 **Target:** future `design-foundation/design-tokens.md`, Product Platform theme contract, Marketing Hub Level-2 token implementation
 
 ## Research question
@@ -265,9 +265,9 @@ When Level 2 implementation begins:
 
 > **Expose meaning, not raw values. Keep primitives behind the semantic contract. Add component tokens only when real customization/reuse proves their maintenance cost is worth paying.**
 
-## Q1 — token architecture + price acceptance
+## Product-owner decision and cost acceptance
 
-Which direction should Admonk lock?
+**Approved direction: B — Lean semantic-first + evidence-gated component tokens.**
 
 ### A. Full three-tier from Level 2
 Reference → Semantic → Component as a standard structure from the beginning.
@@ -284,18 +284,18 @@ Delay token architecture until several products exist.
 
 **Price:** minimum work now, larger theming/accessibility/cross-product migration risk later.
 
-## Research recommendation
+## Locked Admonk direction
 
 **B — Lean semantic-first + evidence-gated component tokens.**
 
 The cost is explicit:
 > **Admonk accepts limited product-local token/value debt and later migration so it does not pay permanent governance for component tokens that have not earned their existence.**
 
-## Lock plan after Q1
+## Lock result
 
-If B and its price are accepted:
-1. lock R009;
-2. update the Design Foundation token contract with the approved architecture;
-3. record DTCG 2025.10 as the preferred stable interchange direction, not a mandatory tool choice;
-4. preserve source-of-truth/sync decisions for R011;
-5. move to R010 — Component Promotion Policy.
+- Lean semantic-first architecture locked.
+- Limited local token/value debt and later migration explicitly accepted.
+- DTCG 2025.10 recorded as the preferred stable interchange direction, not a mandatory tooling decision.
+- Source-of-truth and synchronization remain intentionally deferred to R011.
+- R009 locked under the Decision Cost & Coupling Framework.
+- Next item: R010 — Component Promotion Policy.
