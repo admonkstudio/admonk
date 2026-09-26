@@ -14,9 +14,12 @@ They intentionally do **not** pre-populate design doctrine, token values, visual
 ## design-tokens.md
 
 **Purpose:** Define the token architecture and semantic roles used to express approved design decisions consistently.  
-**Must answer:** Which token layers exist? Which roles are semantic? Which values are product-theme-owned? How are platform/design-tool outputs synchronized?  
-**Required evidence:** Cross-platform implementation needs + design-system research.  
-**Must not contain yet:** Unresearched numeric scales or copied vendor token values.
+**Approved direction:** Lean semantic-first + evidence-gated component tokens.  
+**Architecture:** Reference/primitive values support themes; semantic roles are the normal public contract; component tokens are introduced only from proven customization/reuse need.  
+**Interchange direction:** Prefer the stable DTCG 2025.10 format where selected tools support the needed subset reliably. This is not a mandatory tooling/source-of-truth decision.  
+**Must answer:** Which semantic roles are justified? Which values are product-theme-owned? Which component-level needs have earned tokens? How are platform/design-tool outputs synchronized?  
+**Required evidence:** Cross-platform implementation needs + design-system research + real product usage.  
+**Must not contain yet:** Unresearched numeric scales, copied vendor token values, a speculative universal component-token layer, or a prematurely selected canonical token-management tool.
 
 ## component-governance.md
 
