@@ -1,51 +1,86 @@
-# Design-System Drift Research
+# Design-System Drift Model
 
-**Status:** Research scaffold; no synchronization policy approved.
+**Status:** APPROVED DIRECTION — standards/playbook conversion pending  
+**Approved:** 2026-09-26  
+**Research basis:** `synthesis/R011-design-code-figma-drift.md`
 
-## Research question
+## Core rule
 
-Which design-system elements require automated synchronization between design tools and code, and which are better governed through periodic review?
+> **One canonical authority per fact. Use mappings and tests to connect artifacts. Automate only material drift whose recurring cost exceeds the automation cost.**
 
-## Drift record contract
+## Authority matrix
 
-For each governed design-system area record:
+| Information | Canonical authority |
+|---|---|
+| Studio/product doctrine | Repository |
+| Stable shared token definitions at Level 2+ | Repository machine-readable token files |
+| Runtime component behavior/API | Production code |
+| Implemented states/evidence | Code + tests/workbench when justified |
+| Approved design intent/composition | Approved Figma or explicit product design artifact |
+| Design-to-code mapping | Mapping metadata such as Code Connect when justified |
+| Actual user-facing runtime behavior | Deployed product/runtime evidence |
+
+## Drift classes
+
+### Material drift
+Affects meaning, accessibility, behavior, state coverage, recovery, semantic token meaning, or an approved component contract.
+
+Must be tracked and resolved/accepted.
+
+### Intentional product variation
+Product/domain-specific density, layout, visual expression, copy, hierarchy or other explicitly owned differences.
+
+Not drift.
+
+### Cosmetic / non-material drift
+Differences that do not materially change behavior, accessibility, brand intent, meaning or quality.
+
+May be accepted until normal maintenance when correction costs more than the discrepancy matters.
+
+## Automation maturity
+
+### Level 1
+Manual authority declaration and review.
+
+### Level 2
+Machine-readable Stable token source plus basic mapping/version metadata and cheap targeted checks.
+
+### Level 3
+Targeted component workbench, accessibility/visual regression and drift reporting only where evidence justifies them.
+
+### Level 4
+Broader synchronization and consumer-impact automation only after multi-product change volume proves the value.
+
+## Drift record
+
+Record as relevant:
 
 **Design source:**  
 **Code source:**  
 **Token source:**  
-**Component owner:**  
+**Owner:**  
 **Version:**  
 **Last reviewed:**  
 **Known drift:**  
-**Material impact:**  
+**Class:** Material / Intentional variation / Cosmetic  
+**Impact:**  
 **Resolution owner:**  
 **Resolution target/review date:**  
+**Accepted until:**  
 
-## Areas to investigate
+## Cost rule
 
-- semantic tokens;
-- component names/variants;
-- component states;
-- accessibility behavior;
-- responsive behavior;
-- interaction patterns;
-- documentation/examples;
-- iconography/assets;
-- deprecated components.
+Perfect synchronization is not the objective.
 
-## Questions
+The objective is:
+**materially important design decisions remain consistent enough to preserve product quality without paying unnecessary tooling, vendor or process cost.**
 
-- Which source is authoritative for each type of information?
-- Is bidirectional synchronization actually necessary?
-- Which drift creates user risk versus cosmetic inconsistency?
-- What can be detected automatically?
-- What should be reviewed manually?
-- What is the operational cost of keeping tools perfectly synchronized?
-- At what maturity level does automated drift detection earn its complexity?
+## Revisit triggers
 
-## Principle under investigation
-
-Perfect synchronization is not automatically the goal.
-
-The desired outcome is:
-**materially important design decisions remain consistent enough to preserve product quality without creating unnecessary tooling overhead.**
+Increase automation when:
+- token mismatches recur;
+- design/code disputes recur;
+- shared assets change frequently across several products;
+- manual review becomes more expensive than automation;
+- a tooling plan/API becomes economically justified;
+- targeted automation demonstrably reduces defects/rework.
