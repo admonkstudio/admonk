@@ -2,7 +2,7 @@
 
 **Date:** 2026-09-26  
 **Mode:** Document Population Research  
-**Status:** SELECTED B — awaiting explicit trade-off acceptance before lock  
+**Status:** LOCKED — B selected and decision cost explicitly accepted 2026-09-26  
 **Target:** future Design Foundation doctrine/standard and product-family design inheritance contract
 
 ## Research question
@@ -319,11 +319,21 @@ Therefore B is not "the best of both worlds for free."
 It is:
 > **the higher-governance option whose extra cost buys both cross-product familiarity and product differentiation.**
 
-## Q1 — Trade-off acceptance
+## Product-owner trade-off acceptance
 
-The product-owner already selected **B — Shared behavior + subtle family cues + distinct product identity**.
+The product-owner selected and confirmed **B — Shared behavior + subtle family cues + distinct product identity**.
 
-Before locking it, explicitly accept or reject the price:
+**Decision-cost acceptance:** CONFIRMED
+
+Accepted price:
+- moderate ongoing design-governance cost;
+- shared-behavior ownership/versioning;
+- affected-consumer QA when shared behavior changes;
+- stronger layer-classification discipline.
+
+Accepted only under the condition that the universal/shared layer remains deliberately small.
+
+Original trade-off question:
 
 **Are we willing to pay a moderate ongoing governance + cross-product QA cost to preserve both family coherence and distinct product identity, provided the universal layer stays deliberately small?**
 
@@ -355,12 +365,11 @@ This best matches the owner's direction:
 - consistent roles/settings/onboarding;
 - unique views and identities derived from a coherent parent system.
 
-## Lock plan after Q1
+## Lock result
 
-If B is approved:
-1. create/promote the Design Foundation doctrine for shared-vs-product boundaries;
-2. update `design-foundation/SCOPE-BOUNDARIES.md`;
-3. strengthen the Product Platform Foundation design-inheritance contract;
-4. record family-cue vs product-identity rules;
-5. lock R007;
-6. move to R008 — Design-system maturity direction.
+- R007 decision and its price accepted.
+- Design doctrine promoted.
+- Design Foundation scope boundaries updated.
+- Product Platform design inheritance strengthened.
+- R007 locked under the Decision Cost & Coupling Framework.
+- Next item: R008 — Design-system maturity direction.
