@@ -38,8 +38,9 @@ They intentionally do **not** pre-populate design doctrine, token values, visual
 ## accessibility-rules.md
 
 **Purpose:** Translate approved accessibility doctrine and authoritative requirements into reusable design-system constraints.  
-**Must answer:** Which requirements are universal? Which depend on platform/context? What evidence proves compliance?  
-**Required evidence:** Current authoritative accessibility standards and real implementation tests.
+**Approved baseline:** Production web products target WCAG 2.2 AA; material interactions receive manual critical-journey verification; non-critical gaps require documented time-bound exceptions.  
+**Must answer:** Which requirements are universal? Which depend on platform/context? What automated/manual/user evidence is required? What is release-blocking?  
+**Required evidence:** Current authoritative accessibility standards plus real implementation/manual interaction evidence. Automated scanning alone is insufficient.
 
 ## responsive-rules.md
 
