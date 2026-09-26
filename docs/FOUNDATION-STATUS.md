@@ -3,7 +3,7 @@
 **Date:** 2026-09-26  
 **Program:** Admonk Foundation Program  
 **Current milestone:** **FOUNDATION-M1 — Populate & Lock Studio Foundation**
-**Current sub-milestone:** **M1-R1 — Execute researched document population**  
+**Current sub-milestone:** **M1-R2 — Tool / technology decisions**  
 **Milestone status:** Active  
 **Foundation lock:** Not yet complete  
 **Current stable Product Supervisor:** v1.1.0
@@ -33,7 +33,7 @@
 
 ## Current work
 
-Priority 1–3 research items R001–R016 are complete/locked. Current checkpoint: owner acceptance of the retroactive Decision Cost audit for R001–R006. Priority 4 tool decisions must not begin until this checkpoint is accepted.
+Priority 1–3 research items R001–R016 are complete/locked. The retroactive Decision Cost audit for R001–R006 is accepted. Priority 4 tool decisions are active. T017 component workbench is decided: Storybook Adopt Conditionally. Current item: T018 Visual Regression.
 
 ## FOUNDATION-M1 remaining gate
 
