@@ -2,7 +2,7 @@
 
 **Date:** 2026-09-26  
 **Mode:** Document Population Research  
-**Status:** Awaiting product-owner Q1  
+**Status:** LOCKED — product-owner approved 2026-09-26  
 **Target:** future `doctrine/engineering-principles.md`, complexity-budget standard, architecture review behavior
 
 ## Research question
@@ -228,9 +228,9 @@ For Admonk's composable product family:
 - preserve version/migration paths for genuine shared contracts;
 - promote shared runtime infrastructure only from real multi-product evidence.
 
-## Q1 required
+## Product-owner decision
 
-When future-change risk is uncertain, what should Admonk's default engineering bias be?
+**Approved direction: B — Simple core + deliberate change seams.**
 
 ### A. Minimum-now
 Build the absolute simplest current implementation and refactor only after pain appears.
@@ -250,18 +250,17 @@ Invest early in generalized interfaces, extensibility and automated architecture
 **Benefit:** broad future flexibility.  
 **Risk:** high speculative complexity and slower first delivery.
 
-## Research recommendation
+## Locked Admonk direction
 
 **B — Simple core + deliberate change seams.**
 
 It fits Admonk's principle:
 **start small, build correctly, scale only from evidence.**
 
-## Lock plan after Q1
+## Lock result
 
-If B is approved:
-1. promote the engineering-simplicity doctrine;
-2. update Complexity Budget guidance around deliberate change seams;
-3. strengthen Product Platform Foundation's shared-contract-before-shared-service rule;
-4. lock R003;
-5. move to R004 — Security / Privacy baseline doctrine.
+- Engineering-simplicity doctrine promoted.
+- Complexity Budget updated with deliberate change seams.
+- Product Platform Foundation strengthened around shared contracts before shared services.
+- R003 locked.
+- Next item: R004 — Security / Privacy baseline doctrine.
