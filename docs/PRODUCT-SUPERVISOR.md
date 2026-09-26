@@ -978,3 +978,25 @@ Raw token counts remain diagnostic telemetry.
 
 Do not optimize cost below the approved product-quality floor.
 Do not allow agent loops, retries or background execution to become unbounded spend.
+
+
+## Minimum production feedback-loop rule
+
+Approved research:
+`research/synthesis/R012-minimum-production-feedback-loops.md`
+
+Production products must maintain the applicable closed loops for:
+- critical journey health;
+- failure diagnosis;
+- change/recovery;
+- core product outcome;
+- AI/variable-cost economics where relevant;
+- incident/review learning.
+
+Each loop must identify signal, owner, trigger/cadence, decision, action, verification and collection/review cost.
+
+Do not require full distributed tracing or broad telemetry merely because a product is Production.
+
+Add richer observability when incidents, diagnosis cost, architecture complexity, risk or external requirements demonstrate that the evidence is worth its ongoing cost.
+
+Do not accept dashboards or telemetry streams with no owner and no plausible decision/action.
