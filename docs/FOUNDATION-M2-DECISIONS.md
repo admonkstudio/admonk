@@ -10,9 +10,10 @@
 | M2-03 | LOCKED | One global user account + tenant memberships + optional scope affiliations + shared suite shell/app launcher + layered shared settings. Product permissions remain domain-scoped; external contacts and machine identities stay separate. Ask Kalam is learning evidence, not validation evidence yet. | More relational structure than per-product user tables, but removes duplicate login/profile systems and enables one-account navigation across the suite. |
 | M2-04 | LOCKED | Layered scoped authorization with default role templates, tenant-defined custom roles, stable capability catalog, optional scope inheritance, delegation ceilings, and simple toggle-based setup UX. | More capability/scope metadata than a fixed role list, but avoids role explosion, product coupling and customer-specific code forks. |
 | M2-05 | LOCKED | Default deny; applicable roles add capabilities; explicit ceilings/restrictions reduce access and win; provider limits and action approvals are final gates; every result is explainable through one shared evaluator. | Requires a central evaluator/explanation model, but avoids conflicting product-specific authorization logic. |
+| M2-06 | LOCKED | Atomic sellable SKU entitlement model: every independently sellable product/major add-on is ON/OFF; bundles compose SKUs; Corporate Brain is a cross-product add-on; permissions, flags and usage limits stay separate; billing providers do not own permanent SKU identity. | More catalog SKUs than a single-plan model, but much simpler runtime entitlement and more flexible packaging. |
 
 ## Current
-**M2-06 — Product / Module Entitlements**
+**M2-07 — Shared Settings Inheritance / Overrides**
 
 
 ## M2-04 owner requirements — recorded, decision pending

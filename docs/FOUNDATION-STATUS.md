@@ -3,7 +3,7 @@
 **Date:** 2026-09-26
 **Program:** Admonk Foundation Program
 **Current milestone:** **FOUNDATION-M2 — Define Shared Product Platform Foundation**
-**Current sub-milestone:** **M2-06 — Product / Module Entitlements**
+**Current sub-milestone:** **M2-07 — Shared Settings Inheritance / Overrides**
 **Milestone status:** **ACTIVE**
 **Foundation lock:** **LOCKED — Admonk Studio Foundation v1.0.0**
 **Current stable Product Supervisor:** **v2.0.0**  

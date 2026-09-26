@@ -79,7 +79,7 @@ Do not select tools because a platform supports more features. Capability and ar
 3. **M2-03 User + membership model — LOCKED**
 4. **M2-04 Organization roles vs product/domain roles — LOCKED**
 5. **M2-05 Effective-permission precedence — LOCKED**
-6. Product/module entitlements
+6. **M2-06 Product / module entitlements — LOCKED**
 7. Settings inheritance/overrides
 8. Shared onboarding shell
 9. Connector + credential ownership
@@ -356,3 +356,33 @@ Direction to evaluate:
 - keep room for quantity/usage pricing later without forcing feature-level entitlement complexity into M2-06.
 
 Status: **OWNER DIRECTION RECORDED — M2-06 NOT YET LOCKED.**
+
+
+## Locked decision — M2-06 Atomic Sellable SKU Entitlements
+
+**Decision:** Every independently sellable product or major add-on capability receives a stable internal Admonk SKU and a simple ON/OFF tenant entitlement.
+
+### Core rules
+- runtime entitlement stays simple: a tenant either has a SKU or does not;
+- a product or major capability becomes its own SKU only when it has independent customer value, a credible standalone/add-on commercial proposition, and a meaningful provisioning boundary;
+- normal buttons/features remain inside the owning product and are governed by permissions/configuration rather than becoming separate SKUs;
+- bundles/plans are commercial packaging that resolve to a set of SKUs; they are not architectural dependencies;
+- approved commercial adjustments may add/remove SKUs without customer-specific code forks;
+- permissions remain separate from subscription entitlement;
+- feature flags remain separate from subscription entitlement;
+- usage limits, metering, budgets and overages remain separate and are handled by later usage/cost governance;
+- billing-provider objects synchronize commercial state but do not become Admonk's permanent product identifiers;
+- runtime should resolve effective entitlement from Admonk-owned local state rather than depend on live billing-provider availability for every request.
+
+### Corporate Brain
+- Corporate AI / Corporate Brain is a cross-product add-on SKU;
+- it may operate only across tenant products/sources that are themselves subscribed/enabled and authorized;
+- subscribing to Corporate Brain does not implicitly unlock specialist products or their capabilities;
+- its value may increase as more specialist product SKUs are enabled, without collapsing their data/domain ownership.
+
+### Bundles
+A bundle/plan may package several SKUs for sales, discounting or setup convenience, but runtime provisioning resolves to the underlying SKU set.
+
+**Accepted cost:** the commercial catalog may contain more SKUs than a single-plan model, but entitlement evaluation remains simple and packaging stays flexible/profitable without feature-level entitlement complexity.
+
+**Status:** LOCKED.
