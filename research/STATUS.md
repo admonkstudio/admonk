@@ -8,7 +8,7 @@
 
 ## Current phase
 
-**Capability-discovery structure complete; current-coverage baseline established; authoritative source gathering not yet started.**
+**Research mode ACTIVE. Operating protocol locked; first focused source research is starting with Product Principles / Product Definition.**
 
 ## Progress
 
@@ -27,6 +27,8 @@
 - [x] Create architecture-impact and feedback-loop research structures.
 - [x] Establish current Admonk capability coverage baseline.
 - [x] Create initial tool/technology candidate register without adoption.
+- [x] Create dual-source research + Q1 operating protocol.
+- [x] Create Research Director skill and decision-sized work queue.
 - [ ] Gather authoritative sources by research question.
 - [ ] Record competing viewpoints.
 - [ ] Produce evidence-backed syntheses.
