@@ -85,3 +85,21 @@ Standards and playbooks should be created only after the relevant doctrine is ap
 
 A standard must convert doctrine into testable expectations.
 A playbook must convert doctrine/standards into a repeatable procedure.
+
+
+## Design Foundation contracts
+
+The Design Foundation has its own document contracts in:
+`design-foundation/DOCUMENT-CONTRACTS.md`
+
+These contracts define the questions/evidence required before creating:
+- design principles;
+- token architecture;
+- component governance;
+- interaction-state guidance;
+- accessibility rules;
+- responsive rules;
+- content guidelines;
+- contribution/review rules.
+
+Do not populate those documents from generic templates before the relevant research is synthesized and approved.
