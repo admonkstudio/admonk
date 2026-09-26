@@ -23,10 +23,11 @@ They intentionally do **not** pre-populate design doctrine, token values, visual
 
 ## component-governance.md
 
-**Purpose:** Define when a component should be reused, extended, created, deprecated or extracted.  
-**Must answer:** What qualifies as a component? What evidence justifies a new shared component? Who owns it? How are breaking changes reviewed?  
-**Required evidence:** Real product usage and stable behavior.  
-**Must not contain:** Premature shared abstractions based only on visual similarity.
+**Purpose:** Define when a component should be reused, extended, created, promoted, deprecated or extracted.  
+**Approved governance:** Use `component-promotion-policy.md` with Local → Candidate → Trial → Stable → Deprecated.  
+**Must answer:** What qualifies as a component? What evidence is proportional to its scope/consequence? Who owns it? What maintenance/compatibility promise exists? How are breaking changes reviewed?  
+**Required evidence:** Real product usage, semantic fit, relevant quality evidence, and maintenance economics proportional to the promotion level.  
+**Must not contain:** Premature shared abstractions based only on visual similarity, mandatory user research for every primitive, or a fixed reuse-count rule for every asset.
 
 ## interaction-states.md
 
