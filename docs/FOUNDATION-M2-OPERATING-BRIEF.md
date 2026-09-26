@@ -87,7 +87,7 @@ Do not select tools because a platform supports more features. Capability and ar
 11. **M2-11 AI/agent capability authorization + approvals — LOCKED**
 12. **M2-12 Audit/provenance/event model — LOCKED**
 13. **M2-13 Notification/communication preferences — LOCKED**
-14. Usage/token/cost governance
+14. **M2-14 Usage/token/cost governance — LOCKED**
 15. Navigation/deep-link contract
 16. Design/theme inheritance
 17. Localization/timezone
@@ -634,5 +634,77 @@ User identity remains separate from delivery endpoints/subscriptions.
 External business communications (for example marketing campaigns, candidate WhatsApp or customer outbound messages) remain domain actions governed by normal authorization, provider/consent rules, approvals and audit. They are not swallowed into the shared notification plane.
 
 **Accepted cost:** a shared notification type contract, preference resolver, inbox and delivery abstraction, in exchange for one coherent suite notification experience without taking ownership of domain communication semantics.
+
+**Status:** LOCKED.
+
+
+## Locked decision — M2-14 Dual-Ledger AI Credit Economy
+
+**Decision:** Separate real provider consumption/economics from customer-facing commercial AI credits.
+
+### Raw usage ledger
+Track actual consumption and economics, including where relevant:
+- provider/model/tool;
+- input/output/cached tokens;
+- tool/API usage;
+- tenant/product/SKU;
+- agent/workflow/capability;
+- user/delegator where genuinely attributable;
+- retries/failures/discarded runs;
+- provider-estimated cost;
+- outcome/correlation references.
+
+Provider billing remains the financial source of truth and operational estimates are reconciled against it.
+
+### Admonk AI Credit ledger
+Customer-facing consumption uses **Admonk AI Credits**, not literal provider-token promises.
+
+Support:
+- monthly subscription grants;
+- purchased/top-up grants;
+- debits by task/run;
+- adjustments/refunds where required;
+- remaining balance;
+- user, tenant or product/add-on wallets;
+- low-balance alerts;
+- optional auto top-up with customer-controlled spend caps.
+
+### Versioned rate card
+A versioned Admonk rate card converts actual model/tool consumption into credits.
+This decouples commercial units from provider pricing, model changes, cache economics and provider changes.
+
+### Subscription integration
+Sellable SKUs may include monthly AI Credit allowances.
+Commercial billing may later use flat subscription, included usage, top-ups, credits, overage or other packaging without changing the raw usage architecture.
+
+### Model/reasoning choice
+Products define which models/reasoning levels are compatible with each task and select a recommended default.
+Users may choose among compatible options and should see expected credit consumption before execution where reasonable.
+
+### Transparency
+Users should be able to see:
+- current balance;
+- monthly grant and purchased credits;
+- task-by-task credit consumption;
+- model/reasoning used;
+- estimated consumption before eligible tasks;
+- usage history and top-up options.
+
+### Economics governance
+M1/R006 remains authoritative:
+- cost per successful outcome is the primary efficiency metric;
+- cost per active user/month and tenant/product/agent budgets remain guardrails;
+- failed/retried/discarded work counts;
+- quality floor must not be sacrificed simply to reduce cost.
+
+### Runtime controls
+Maintain layered controls:
+1. per-run safety envelope;
+2. operating budget/credit envelope;
+3. provider/emergency hard ceiling.
+
+No mandatory centralized AI gateway is locked by this decision; the shared metering contract comes first.
+
+**Accepted cost:** wallet ledger, versioned rate card, grant/debit logic and usage UI, in exchange for controlled consumption, transparent customer economics, top-up revenue and provider flexibility.
 
 **Status:** LOCKED.

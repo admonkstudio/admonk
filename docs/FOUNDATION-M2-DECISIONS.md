@@ -21,8 +21,10 @@
 
 | M2-13 | LOCKED | Shared Notification Plane with product-owned notification semantics. Shared platform owns suite inbox, preferences, quiet hours, routing, delivery, deduplication/digests and delivery health; external business communications remain domain actions. | Requires shared notification contracts and delivery infrastructure, but avoids duplicated notification machinery while preserving domain ownership. |
 
+| M2-14 | LOCKED | Dual-ledger AI Credit Economy: raw provider usage/cost internally; customer-facing Admonk AI Credits via a versioned rate card; monthly grants, top-ups, task-level metering, pre-run estimates, compatible-model choice, and user/tenant/product wallets. | Requires wallet/rate-card infrastructure, but creates transparent consumption control, top-up revenue and provider-independent commercial units. |
+
 ## Current
-**M2-14 — Usage / Token / Cost Governance**
+**M2-15 — Navigation / Deep-Link Contract**
 
 
 ## M2-04 owner requirements — recorded, decision pending
