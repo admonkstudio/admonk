@@ -60,8 +60,8 @@ Tool choices begin only after the corresponding capability need is evidenced.
 | 19 | Accessibility automation | Choice / Direction Research | DECIDED — ADOPT CONDITIONALLY (axe-core; Lighthouse supplementary) |
 | 20 | Secret scanning | Choice / Direction Research | DECIDED — ADOPT CONDITIONALLY (GitHub preferred; Gitleaks fallback) |
 | 21 | Static analysis | Choice / Direction Research | DECIDED — LAYERED (native checks now; CodeQL conditional; Semgrep targeted fallback) |
-| 22 | Dependency / supply-chain checks | Choice / Direction Research | ACTIVE |
-| 23 | API contract validation | Choice / Direction Research | Pending |
+| 22 | Dependency / supply-chain checks | Choice / Direction Research | DECIDED — LAYERED (Dependabot baseline; Socket conditional pilot) |
+| 23 | API contract validation | Choice / Direction Research | ACTIVE |
 | 24 | Migration validation | Choice / Direction Research | Pending |
 | 25 | Error monitoring | Choice / Direction Research | Pending |
 | 26 | Feature flags | Choice / Direction Research | Pending |
