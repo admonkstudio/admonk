@@ -378,6 +378,10 @@ The supervisor should always be able to answer:
 - biggest technical risk;
 - biggest security risk;
 - current infrastructure cost;
+- current AI/model/tool usage where applicable;
+- cost per successful outcome where measurable;
+- cost per active user/tenant/plan against approved ceiling where applicable;
+- failed/retried-run cost where material;
 - current usage/load;
 - next scale trigger;
 - next review date.
@@ -955,3 +959,22 @@ All governance levels inherit the universal security/privacy floor.
 Production and High-risk products require progressively stronger verification according to data sensitivity, privilege, autonomy, consequence, external reach and recovery difficulty.
 
 Do not interpret Prototype governance as permission to ignore authorization, secrets, tenant/data isolation, data purpose or other applicable baseline protections.
+
+
+## AI unit-economics rule
+
+Approved doctrine:
+`doctrine/operations-principles.md`
+
+For AI-native products, token/model/tool usage is a first-class operating constraint.
+
+Primary product/engineering metric:
+**cost per successful outcome**
+
+Commercial guardrail:
+**cost per active user/tenant/plan against an approved ceiling**
+
+Raw token counts remain diagnostic telemetry.
+
+Do not optimize cost below the approved product-quality floor.
+Do not allow agent loops, retries or background execution to become unbounded spend.
