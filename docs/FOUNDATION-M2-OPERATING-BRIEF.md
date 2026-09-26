@@ -82,7 +82,7 @@ Do not select tools because a platform supports more features. Capability and ar
 6. **M2-06 Product / module entitlements — LOCKED**
 7. **M2-07 Settings inheritance/overrides — LOCKED**
 8. **M2-08 Shared onboarding shell — LOCKED**
-9. Connector + credential ownership
+9. **M2-09 Connector + credential ownership — LOCKED**
 10. Knowledge/context hierarchy
 11. AI/agent capability authorization + approvals
 12. Audit/provenance/event model
@@ -482,3 +482,50 @@ This changes the connector direction:
 - avoid rebuilding the same ingestion/backfill/refresh pipeline per product.
 
 Status: **OWNER DIRECTION RECORDED — M2-09 NOT YET LOCKED.**
+
+
+## Locked decision — M2-09 Admonk One Shared Integration Control Plane
+
+**Decision:** Admonk One is the shared integration/control plane. Tenant/provider connections are established and managed centrally where practical; historical backfill and ongoing synchronization happen once; specialist products own domain semantics and expose governed data contracts; other products and Corporate Brain consume authorized domain data rather than reconnecting raw providers.
+
+### Control-plane ownership
+- Admonk One is the user-facing suite control plane for connectors, connection health, subscriptions, access and setup;
+- shared platform/runtime owns connector definitions/adapters, credential handling, sync/runtime mechanics and health contracts;
+- tenant owns the actual provider authorization/connection;
+- organizational scopes may steward connections operationally;
+- specialist products do not independently reimplement provider connection lifecycle when the shared connection safely serves the same provider account/purpose.
+
+### Connect once / sync once
+- establish a provider connection once where account, purpose and security boundary are compatible;
+- historical backfill happens once per connection/data domain where practical;
+- incremental synchronization/checkpointing happens once;
+- avoid duplicate API calls, rate-limit usage, storage, refresh jobs and repair workflows across products;
+- provider-specific ingestion may be shared, but domain interpretation remains with the authoritative specialist product.
+
+### Domain authority
+- shared ingestion/plumbing does not make the shared platform owner of specialist semantics;
+- Marketing Hub remains authoritative for marketing metric/strategy semantics;
+- Recruitment remains authoritative for recruitment semantics;
+- Support/Customer AI remains authoritative for support/customer-resolution semantics;
+- specialist products expose governed data contracts/views/events for cross-product consumption.
+
+### Corporate Brain
+- Corporate Brain normally consumes already-authorized department/product data contracts rather than reconnecting every provider;
+- granting Brain access to a department/domain does not grant raw provider credentials;
+- historical data already ingested for that domain is available to the Brain only within granted authorization/policy boundaries;
+- new/incremental domain updates can flow through the governed contract;
+- direct Brain/provider connections are an explicit exception for company-wide sources or capabilities not safely represented through a specialist/shared data contract.
+
+### Data vs action access
+- **data-read access** and **connector-action access** are authorized separately;
+- read access to normalized/governed data does not imply permission to execute provider actions;
+- provider actions still pass M2-05 authorization, connector/provider scope checks and approval gates.
+
+### Credential boundary
+- raw secrets/tokens remain centrally protected and server-side;
+- browsers, models and ordinary product data stores do not receive raw credentials;
+- connection reuse never means credential disclosure to consuming products.
+
+**Accepted cost:** Admonk One/shared platform must maintain reusable ingestion/sync and governed data contracts, but this prevents repeated provider integrations and enables efficient cross-product intelligence.
+
+**Status:** LOCKED.
