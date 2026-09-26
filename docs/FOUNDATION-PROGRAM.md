@@ -162,6 +162,9 @@ Three modes are used:
 Detailed work queue:
 `research/WORK-QUEUE.md`
 
+Decision trade-offs and synthesis compatibility:
+`research/DECISION-COST-FRAMEWORK.md`
+
 A research result is not authority until it is approved and promoted into doctrine/standards/playbooks or a canonical decision.
 
 ## 5. Milestones
@@ -188,6 +191,7 @@ Required work:
 
 **Exit gate:**
 - no foundational principle is authoritative solely because AI generated it;
+- material locked decisions have passed the Decision Cost & Coupling Framework, including explicit trade-off/price acceptance where needed;
 - required doctrine has human approval;
 - standards are evidence-testable;
 - playbooks are actionable;
