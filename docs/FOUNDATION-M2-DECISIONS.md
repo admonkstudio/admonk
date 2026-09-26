@@ -19,8 +19,10 @@
 
 | M2-12 | LOCKED | Shared versioned event, audit and provenance envelope with common identity, suite context and correlation metadata. Domain products retain state and domain-event ownership; audit, provenance and telemetry stay distinct. | Small shared schema/indexing cost in exchange for coherent cross-suite traceability without centralizing product state. |
 
+| M2-13 | LOCKED | Shared Notification Plane with product-owned notification semantics. Shared platform owns suite inbox, preferences, quiet hours, routing, delivery, deduplication/digests and delivery health; external business communications remain domain actions. | Requires shared notification contracts and delivery infrastructure, but avoids duplicated notification machinery while preserving domain ownership. |
+
 ## Current
-**M2-13 — Notification / Communication Preferences**
+**M2-14 — Usage / Token / Cost Governance**
 
 
 ## M2-04 owner requirements — recorded, decision pending

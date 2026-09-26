@@ -86,7 +86,7 @@ Do not select tools because a platform supports more features. Capability and ar
 10. **M2-10 Knowledge/context hierarchy — LOCKED**
 11. **M2-11 AI/agent capability authorization + approvals — LOCKED**
 12. **M2-12 Audit/provenance/event model — LOCKED**
-13. Notification/communication preferences
+13. **M2-13 Notification/communication preferences — LOCKED**
 14. Usage/token/cost governance
 15. Navigation/deep-link contract
 16. Design/theme inheritance
@@ -602,5 +602,37 @@ Do not create a second AI-specific permission model.
 - each executed/denied action should produce an explainable authorization/action receipt suitable for M2-12 audit/provenance.
 
 **Accepted cost:** agent capability manifests, delegation records and deterministic intersection evaluation, in exchange for useful cross-product AI without broad inherited authority or duplicate authorization systems.
+
+**Status:** LOCKED.
+
+
+## Locked decision — M2-13 Shared Notification Plane
+
+**Decision:** Products own notification meaning; the shared platform owns common notification delivery behavior.
+
+Products own:
+- notification types and business meaning;
+- candidate audience;
+- importance/class;
+- domain deep links.
+
+Shared platform owns:
+- suite inbox;
+- tenant defaults and user preferences;
+- quiet hours;
+- channel/endpoints;
+- routing and delivery;
+- deduplication/digests;
+- delivery health.
+
+Use a small notification-class model: **REQUIRED, ACTION_REQUIRED, ACTIVITY, DIGEST**.
+
+Ordinary notification preferences resolve through platform constraints, tenant defaults, product defaults, user preferences, quiet hours and channel availability. Required/security notices may restrict opt-out.
+
+User identity remains separate from delivery endpoints/subscriptions.
+
+External business communications (for example marketing campaigns, candidate WhatsApp or customer outbound messages) remain domain actions governed by normal authorization, provider/consent rules, approvals and audit. They are not swallowed into the shared notification plane.
+
+**Accepted cost:** a shared notification type contract, preference resolver, inbox and delivery abstraction, in exchange for one coherent suite notification experience without taking ownership of domain communication semantics.
 
 **Status:** LOCKED.
