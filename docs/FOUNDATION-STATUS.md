@@ -33,7 +33,7 @@
 
 ## Current work
 
-Priority 1–3 research items R001–R016 are complete/locked. The retroactive Decision Cost audit for R001–R006 is accepted. Priority 4 tool decisions are active. T017 component workbench is decided: Storybook Adopt Conditionally. T018 visual regression is decided: targeted Playwright Adopt Conditionally; Chromatic deferred until shared-state/collaboration evidence justifies it. T019 accessibility automation is decided: axe-core Adopt Conditionally; Lighthouse supplementary only. T020 secret scanning is decided: GitHub Secret Protection preferred when economically available; Gitleaks portable fallback. Current item: T021 Static Analysis.
+Priority 1–3 research items R001–R016 are complete/locked. The retroactive Decision Cost audit for R001–R006 is accepted. Priority 4 tool decisions are active. T017 component workbench is decided: Storybook Adopt Conditionally. T018 visual regression is decided: targeted Playwright Adopt Conditionally; Chromatic deferred until shared-state/collaboration evidence justifies it. T019 accessibility automation is decided: axe-core Adopt Conditionally; Lighthouse supplementary only. T020 secret scanning is decided: GitHub Secret Protection preferred when economically available; Gitleaks portable fallback. T021 static analysis is decided: language-native checks Adopt Now; CodeQL preferred conditionally for deeper SAST; Semgrep CE targeted portable fallback; paid Semgrep deferred. Current item: T022 Dependency / Supply-Chain Checks.
 
 ## FOUNDATION-M1 remaining gate
 
