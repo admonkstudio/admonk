@@ -90,7 +90,7 @@ Do not select tools because a platform supports more features. Capability and ar
 14. **M2-14 Usage/token/cost governance — LOCKED**
 15. **M2-15 Navigation/deep-link contract — LOCKED**
 16. **M2-16 Design/theme inheritance — LOCKED**
-17. Localization/timezone
+17. **M2-17 Localization/timezone — LOCKED**
 18. Data sensitivity/retention/export/deletion
 19. Version/compatibility/migration
 20. Runtime boundary decisions: shared contract vs package vs service vs domain-owned implementation
@@ -782,5 +782,25 @@ Products resolve that logical target to their own current route/UI.
 - stable DTCG 2025.10 remains the preferred interchange direction when implementation reaches that stage.
 
 **Accepted cost:** product-theme ownership, tenant-override metadata, accessibility validation across supported overlays and affected-theme QA, in exchange for Admonk family coherence + distinct product identity + bounded customer branding.
+
+**Status:** LOCKED.
+
+
+## Locked decision — M2-17 Layered Locale + Time Semantics
+
+**Decision:** Keep language, locale, timezone and business-time context distinct.
+
+Rules:
+- use stable locale identifiers and named IANA time zones;
+- preserve absolute instants neutrally where appropriate;
+- preserve local wall-clock intent plus named timezone for future/recurring schedules whose meaning depends on civil time;
+- user display preferences must not silently change business schedules, reporting periods or domain time semantics;
+- reuse M2-07 for platform/tenant/product/user preference inheritance;
+- shared platform owns locale/timezone contracts and fallback/resolution behavior;
+- products own supported languages, translations, terminology and domain-specific temporal rules;
+- external contacts/candidates/customers keep domain-specific communication-language/time preferences rather than inheriting platform-user settings;
+- RTL includes direction, typography, mixed-direction content and component behavior, not only string translation.
+
+**Accepted cost:** richer locale/time context and targeted localization/timezone QA.
 
 **Status:** LOCKED.
