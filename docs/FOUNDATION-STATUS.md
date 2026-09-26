@@ -2,9 +2,9 @@
 
 **Date:** 2026-09-26
 **Program:** Admonk Foundation Program
-**Current milestone:** **FOUNDATION-M1 — COMPLETE / LOCKED**
-**Current sub-milestone:** None — release locked
-**Milestone status:** **COMPLETE**
+**Current milestone:** **FOUNDATION-M2 — Define Shared Product Platform Foundation**
+**Current sub-milestone:** **M2 Research & Architecture Decisions**
+**Milestone status:** **ACTIVE**
 **Foundation lock:** **LOCKED — Admonk Studio Foundation v1.0.0**
 **Current stable Product Supervisor:** **v2.0.0**  
 **Release mapping:** Studio Foundation v1.0.0 → Product Supervisor v2.0.0
@@ -64,9 +64,14 @@ All FOUNDATION-M1 exit gates passed:
 
 Future changes to this baseline must be versioned; do not silently rewrite the locked release.
 
-## Next milestone
+## Current milestone — FOUNDATION-M2
 **FOUNDATION-M2 — Define Shared Product Platform Foundation**
 
-Status: **Ready, not started.**
+Status: **ACTIVE — research/architecture decisions started.**
+
+Operating brief:
+`docs/FOUNDATION-M2-OPERATING-BRIEF.md`
+
+Current decision sequence starts with repository/code organization and shared-code boundaries before runtime/platform contracts.
 
 The Product Platform Foundation is not locked. Existing M2 documents remain direction/architecture discovery until FOUNDATION-M2 decisions are completed.

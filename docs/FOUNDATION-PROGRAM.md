@@ -6,7 +6,7 @@
 **Current milestone:** **FOUNDATION-M1 — COMPLETE / LOCKED**  
 **Latest Studio Foundation release:** **v1.0.0**  
 **Included Product Supervisor:** **v2.0.0**  
-**Next milestone:** **FOUNDATION-M2 — Ready, not started**  
+**Current milestone after M1:** **FOUNDATION-M2 — ACTIVE**  
 **Implementation posture:** Research / architecture definition only unless an individual product gate explicitly authorizes implementation.
 
 ## 1. Purpose
