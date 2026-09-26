@@ -27,8 +27,10 @@
 
 | M2-16 | LOCKED | Layered semantic theme inheritance: Admonk Foundation → Product Brand Theme → bounded Tenant Brand Overlay → User Display Preference. Products own identity and declare safe tenant overrides; protected accessibility/safety semantics cannot be weakened; reuse M2-07 inheritance. | Requires product theme ownership, override metadata and affected-theme QA, but preserves family coherence, product identity and bounded customer branding. |
 
+| M2-17 | LOCKED | Layered Locale + Time Semantics: language, locale, personal timezone and business-time context stay distinct; use stable locale identifiers and IANA zones; user display preferences do not silently rewrite business schedules; products own translation/domain temporal semantics. | Requires richer time/locale context and targeted QA, but supports international users without corrupting business-time meaning. |
+
 ## Current
-**M2-17 — Localization / Timezone**
+**M2-18 — Data Sensitivity / Retention / Export / Deletion**
 
 
 ## M2-04 owner requirements — recorded, decision pending
