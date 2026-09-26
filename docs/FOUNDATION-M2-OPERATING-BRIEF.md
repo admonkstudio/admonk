@@ -75,7 +75,7 @@ Do not select tools because a platform supports more features. Capability and ar
 ## Initial M2 decision sequence
 
 1. **M2-01 Repository, code reuse and shared-package boundary — LOCKED**
-2. Tenant/company identity model
+2. **M2-02 Tenant/company identity model — LOCKED**
 3. User + membership model
 4. Organization roles vs product/domain roles
 5. Effective-permission precedence
@@ -122,5 +122,49 @@ Rules:
 - monorepo migration is explicitly deferred until measured cross-repository friction (synchronized changes, package-version churn, duplicated CI, cross-product refactor cost, or navigation burden) outweighs independent-repository benefits.
 
 **Accepted cost:** temporary duplication may exist while semantics are still unproven; once genuinely shared semantics are established, copy/paste duplication should end.
+
+**Status:** LOCKED.
+
+
+## Locked decision — M2-02 Tenant / Company Identity Model
+
+**Decision:** Tenant is the hard customer/security/commercial boundary. Internal company structure is represented by lightweight recursive organizational scopes. Products are a separate dimension. Shared platform capabilities are versioned/reusable. Ask Kalam is the first M2 reference implementation.
+
+### Core model
+
+```text
+Tenant / Customer Organization
+├── Organizational scopes
+│   ├── company-wide
+│   ├── departments
+│   ├── teams / regions / business units only when needed
+│   └── recursive through parent_scope_id
+├── Products
+│   ├── Corporate AI Assistant
+│   ├── Ask Kalam / Customer AI
+│   ├── Marketing Hub
+│   ├── Recruitment
+│   └── future products
+└── Shared platform capabilities
+    ├── identity / memberships
+    ├── permissions / entitlements
+    ├── connectors / credentials
+    ├── approvals / audit / provenance
+    ├── knowledge/context rules
+    ├── notifications
+    └── usage / AI cost
+```
+
+### Rules
+- tenant is the hard isolation boundary;
+- organizational scopes are not separate tenants by default;
+- products and organizational scopes are orthogonal: one product may serve several scopes and one scope may use several products;
+- use one recursive `organizational_scope` concept rather than separate duplicated tables for departments/teams/regions unless proven necessary;
+- tenant, scope and product context must remain available where authorization, audit, usage, cost or provenance depend on them;
+- Corporate AI operates across authorized scopes through governed contracts; it does not become owner of specialist-domain data;
+- Ask Kalam is the first reference implementation from which genuinely reusable organization/agent/connector/policy/audit/usage concepts are extracted;
+- Marketing Hub, Corporate AI and Recruitment challenge those extracted contracts before they are treated as universally shared.
+
+**Accepted cost:** slightly richer identity/context than a flat tenant model, in exchange for supporting the already-known multi-product/company structure without building a giant enterprise hierarchy.
 
 **Status:** LOCKED.
