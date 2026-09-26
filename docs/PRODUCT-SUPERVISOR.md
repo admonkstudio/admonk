@@ -1018,3 +1018,26 @@ Material accessibility failures on critical journeys are release-blocking by def
 Non-critical gaps may be accepted only through the Exception Register with an owner, user impact, mitigation where relevant, and expiry/review date.
 
 Deeper inclusive/user validation is routed by risk, novelty and observed exclusion rather than required universally.
+
+
+## Risk-routed testing and release-evidence rule
+
+Approved research:
+`research/synthesis/R014-testing-release-evidence.md`
+
+Release confidence comes from relevant evidence rather than test volume.
+
+For material Production changes, verify:
+- the change and its material risks;
+- affected critical journeys;
+- important integration/boundary behavior;
+- lower-level logic where that is the cheapest reliable proof;
+- specialist concerns such as security, accessibility, data, performance and AI when relevant;
+- recovery/rollback;
+- post-release health.
+
+Do not impose one universal unit/integration/E2E ratio or code-coverage percentage.
+
+A flaky test is degraded evidence and should be fixed, time-bound/quarantined, or replaced rather than routinely ignored.
+
+Testing effort should increase with failure consequence, change scope and uncertainty.
