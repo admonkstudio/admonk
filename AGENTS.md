@@ -585,7 +585,7 @@ Do not treat:
 
 When a project already has an approved design system/component library:
 1. inspect it before creating a new component;
-2. reuse when behavior and semantics genuinely match;
+2. reuse only when semantics, behavior, accessibility, density, and interaction model genuinely fit the product context;
 3. if a new component/pattern is required, document why the existing system is insufficient;
 4. define relevant states, accessibility behavior, responsive behavior and tests.
 
