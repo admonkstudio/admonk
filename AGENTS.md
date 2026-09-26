@@ -593,6 +593,39 @@ The Design Foundation is currently in research/scaffolding. Do not invent token 
 
 ---
 
+# 19E. Capability and Tool Research
+
+Before standardizing a new development tool, technology, connector, automation layer or external service, use the capability-discovery research system:
+
+- `research/capability-map/`
+- `research/tool-evaluation/evaluation-framework.md`
+- `research/architecture-impact/`
+- `research/feedback-loops.md`
+
+Core rule:
+
+> **Admonk should standardize quality feedback loops, not standardize a fixed technology stack.**
+
+A tool should not be adopted merely because it is popular or considered industry standard.
+
+It must:
+- address a validated capability gap;
+- produce evidence that informs a decision/action;
+- have clear ownership;
+- justify its complexity/cost/security impact;
+- have a reasonable replacement/exit path.
+
+Allowed research outcomes:
+- Adopt now
+- Adopt conditionally
+- Pilot
+- Defer
+- Reject
+
+Research/candidate status does not grant adoption authority.
+
+---
+
 # 20. Final Principle
 
 Every agent working with Admonk should optimize for:
