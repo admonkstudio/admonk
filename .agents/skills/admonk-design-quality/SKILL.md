@@ -486,3 +486,22 @@ Those decisions belong to the project's objective, identity, and Admonk's design
 ## 20. Final Principle
 
 > **First make the idea specific. Then make the execution complete. Then remove everything that feels accidental, generic, fake, or unfinished.**
+
+
+## Evidence-Based Design Quality
+
+Do not reduce design review to an unexplained numeric "premium" score.
+
+For meaningful findings, point to inspectable evidence such as:
+- hierarchy/alignment inconsistency;
+- token/component-system mismatch;
+- typography/spacing drift;
+- unclear action hierarchy;
+- broken responsive composition;
+- missing feedback/state;
+- accessibility issue;
+- real rendered/browser evidence.
+
+Core rule:
+
+> **Premium is not the quantity of visual effects. It is the absence of avoidable confusion, inconsistency and unfinished states while preserving a strong intentional visual idea.**
