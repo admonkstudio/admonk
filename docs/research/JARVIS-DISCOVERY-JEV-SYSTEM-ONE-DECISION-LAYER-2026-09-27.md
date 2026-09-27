@@ -1,7 +1,7 @@
 # Jarvis Discovery Spike — Jev / System-One Decision Layer
 
 **Date:** 2026-09-27  
-**Status:** RESEARCH COMPLETE — DIRECTION RECOMMENDED  
+**Status:** LOCKED DIRECTION — OWNER ACCEPTED  
 **Related locked decisions:** RQ-01, RQ-02, RQ-03, RQ-04, RQ-05  
 **Purpose:** Investigate whether Jev/System-One-style decision models materially improve Jarvis's target of high speed, low AI cost/token usage, reliable software control and high delivery quality.
 
