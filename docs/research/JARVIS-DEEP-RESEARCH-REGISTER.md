@@ -31,8 +31,8 @@ After all questions:
 | RQ-06 | How do we make dynamic UI scalable without allowing arbitrary AI-generated product UI? | **LOCKED** |
 | RQ-07 | What happens when Jarvis starts real work? | **LOCKED** |
 | RQ-08 | How should Admonk-owned connectors and integration runtime work? | **LOCKED** |
-| RQ-09 | What role should OpenJarvis ultimately have? | **RESEARCH COMPLETE — OWNER LOCK PENDING** |
-| RQ-10 | Where does context live and how does Jarvis assemble the right effective context? | Pending |
+| RQ-09 | What role should OpenJarvis ultimately have? | **LOCKED** |
+| RQ-10 | Where does context live and how does Jarvis assemble the right effective context? | **RESEARCH COMPLETE — OWNER LOCK PENDING** |
 | RQ-11 | What is the real difference between Department Jarvis and Executive Jarvis? | Pending |
 | RQ-12 | How should agents be structured? | Pending |
 | RQ-13 | How do models/providers remain replaceable? | Pending |
@@ -60,7 +60,7 @@ Owner thought preserved for JX-03/JX-04: the Jarvis circle may become a semantic
 **Reflex Decision Plane direction is LOCKED; Jev remains a Lab candidate, not a vendor dependency.**
 
 Current gate:
-**RQ-09 — OpenJarvis disposition — RESEARCH COMPLETE, OWNER LOCK PENDING.**
+**RQ-10 — federated just-in-time context assembly — RESEARCH COMPLETE, OWNER LOCK PENDING.**
 
 ## Supporting discovery threads
 
