@@ -3,7 +3,7 @@
 **Date:** 2026-09-28  
 **Track:** Jarvis Deep Question Register  
 **Question:** When may Jarvis surface something without being asked, and how should it decide whether to stay ambient, notify, interrupt or act?  
-**Status:** RESEARCH COMPLETE — RECOMMENDED FOR OWNER LOCK  
+**Status:** LOCKED — OWNER ACCEPTED  
 **Implementation authority:** None. Product/attention/notification architecture research only.
 
 ## 1. Decision problem
