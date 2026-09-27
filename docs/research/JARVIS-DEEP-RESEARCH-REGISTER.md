@@ -1,0 +1,63 @@
+# Jarvis Deep Research Register
+
+**Date:** 2026-09-27  
+**Purpose:** Track the gated research program that will produce the final Jarvis concept, then feed the concept audit, whole-project audit and master-plan continuation.
+
+## Research protocol
+
+For each question:
+1. review locked Admonk/Foundation/Product constraints;
+2. research only material external evidence;
+3. distinguish what is known from what needs Jarvis Lab measurement;
+4. produce a concrete recommended decision;
+5. obtain owner lock before advancing the decision into canonical architecture;
+6. preserve unresolved implementation choices for the correct later question.
+
+After all questions:
+1. Jarvis concept audit and refinement;
+2. whole Admonk/Marketing Hub project audit and refinement;
+3. reconcile product/documentation debt;
+4. resume the master plan from the canonical checkpoint.
+
+## Register
+
+| ID | Question | Status |
+|---|---|---|
+| RQ-01 | What exactly is Jarvis responsible for? | **LOCKED** |
+| RQ-02 | What should feel instantaneous, and what may legitimately take time? | **LOCKED** |
+| RQ-03 | How should Jarvis decide how much intelligence a task needs? | **RESEARCH COMPLETE — OWNER LOCK PENDING** |
+| RQ-04 | What is the correct architecture for voice? | Pending |
+| RQ-05 | How does Jarvis know when conversation is no longer the right interface? | Pending |
+| RQ-06 | How do we make dynamic UI scalable without allowing arbitrary AI-generated product UI? | Pending |
+| RQ-07 | What happens when Jarvis starts real work? | Pending |
+| RQ-08 | What role should n8n ultimately have? | Pending |
+| RQ-09 | What role should OpenJarvis ultimately have? | Pending |
+| RQ-10 | Where does context live and how does Jarvis assemble the right effective context? | Pending |
+| RQ-11 | What is the real difference between Department Jarvis and Executive Jarvis? | Pending |
+| RQ-12 | How should agents be structured? | Pending |
+| RQ-13 | How do models/providers remain replaceable? | Pending |
+| RQ-14 | How do long-running tasks work? | Pending |
+| RQ-15 | What is Jarvis's failure and recovery philosophy? | Pending |
+| RQ-16 | How will we know Jarvis is actually good? | Pending |
+| RQ-17 | How do we measure speed scientifically? | Pending |
+| RQ-18 | How do we make AI economics sustainable? | Pending |
+| RQ-19 | How does the product scale technically? | Pending |
+| RQ-20 | How does Jarvis stay secure as capability increases? | Pending |
+| RQ-21 | What should be proactive? | Pending |
+| RQ-22 | What becomes persistent product state versus temporary AI output? | Pending |
+| RQ-23 | How should Jarvis learn without creating uncontrolled memory? | Pending |
+| RQ-24 | What should the first Jarvis Lab actually prove? | Pending |
+| RQ-25 | What is the minimum Production architecture that survives all prior decisions? | Pending |
+
+## Supporting hypothesis
+
+`docs/research/JARVIS-INTERACTION-GRAPH-HYPOTHESIS-2026-09-27.md`
+
+Owner thought preserved for JX-03/JX-04: the Jarvis circle may become a semantic map of connected products/capabilities/automations/sources and zoom into the active path rather than acting as a decorative waiting orb.
+
+## Current resume point
+
+**Await owner decision on RQ-03.**
+
+If locked, proceed to:
+**RQ-04 — correct architecture for voice.**
