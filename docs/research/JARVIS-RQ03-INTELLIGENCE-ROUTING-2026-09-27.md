@@ -3,7 +3,7 @@
 **Date:** 2026-09-27  
 **Track:** Jarvis Deep Question Register  
 **Question:** How should Jarvis decide how much intelligence a task needs?  
-**Status:** RESEARCH COMPLETE — RECOMMENDED FOR OWNER LOCK  
+**Status:** LOCKED — OWNER ACCEPTED  
 **Implementation authority:** None. Product/architecture research only.
 
 ## 1. Decision problem
