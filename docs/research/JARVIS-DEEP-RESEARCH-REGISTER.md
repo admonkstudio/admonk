@@ -60,7 +60,7 @@ Owner thought preserved for JX-03/JX-04: the Jarvis circle may become a semantic
 **Reflex Decision Plane direction is LOCKED; Jev remains a Lab candidate, not a vendor dependency.**
 
 Current gate:
-**RQ-13 — model/provider replaceability & runtime contract — RESEARCH COMPLETE, OWNER LOCK PENDING.**
+**RQ-14 — durable long-running task architecture — RESEARCH COMPLETE, OWNER LOCK PENDING.**
 
 ## Supporting discovery threads
 
