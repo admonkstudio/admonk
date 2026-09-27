@@ -3,7 +3,7 @@
 **Date:** 2026-09-27  
 **Track:** Jarvis Deep Question Register  
 **Question:** What happens when Jarvis starts real work?  
-**Status:** RESEARCH COMPLETE — RECOMMENDED FOR OWNER LOCK  
+**Status:** LOCKED — OWNER ACCEPTED  
 **Implementation authority:** None. Product/action architecture research only.
 
 ## 1. Decision problem
@@ -533,11 +533,11 @@ Approval workspace
 
 The approval component binds to the Prepared Action ID/version, not free-form chat text.
 
-## 22. n8n implication
+## 22. Connector / execution-adapter implication
 
-n8n may execute the implementation behind a capability during the Lab.
+Admonk-owned connectors and domain capability adapters execute provider-facing work behind the capability boundary.
 
-But the architecture is:
+The Production architecture is:
 
 ```text
 Jarvis
@@ -546,18 +546,16 @@ Prepared Action
   ↓
 Admonk authority/approval
   ↓
-Capability Adapter
+Admonk Capability Adapter
   ↓
-n8n today / native service tomorrow
+Admonk-owned Provider Connector
+  ↓
+Provider API
 ```
 
-Not:
+Third-party workflow engines such as n8n are **not part of the Product architecture**. Any prior use of n8n is only historical/lab evidence from existing Kalam automation experiments.
 
-```text
-Jarvis → arbitrary n8n workflow
-```
-
-RQ-08 will decide n8n's long-term role.
+RQ-08 defines the Admonk-owned connector, onboarding and integration runtime architecture.
 
 ## 23. Evaluation
 
@@ -611,7 +609,7 @@ Jarvis Lab action tests must measure:
 >
 > Every action attempt produces a structured Action Receipt suitable for audit/provenance, usage/cost tracing and user-visible explanation.
 >
-> Jarvis invokes stable business capability keys, never arbitrary workflow/provider endpoints. n8n or another engine is an implementation adapter behind the capability boundary.
+> Jarvis invokes stable business capability keys, never arbitrary provider endpoints or workflow identifiers. Admonk-owned connectors/capability adapters implement provider execution behind that boundary.
 >
 > **The model may propose work. Only governed software may authorize and commit it.**
 
