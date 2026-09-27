@@ -196,3 +196,21 @@ Initial proof moments:
 - consequential action through explicit approval and n8n execution.
 
 **Lock statement:** Jarvis is the shared adaptive intelligent experience layer above subscribed/authorized Admonk capabilities; dashboards remain the structured operating surface. Admonk develops its own product experience while learning from the strongest market implementations.
+
+
+## JX-01 — Jarvis Surface Contract — LOCKED
+
+**Decision:** Use three progressive experience levels:
+
+1. **Conversation** — simple questions, commands, guidance and lightweight actions.
+2. **Dynamic Jarvis Workspace** — Jarvis composes approved interactive cards/charts/comparisons/recommendations/approvals/workflow views when the task benefits from visual interaction.
+3. **Full Dashboard** — the owning specialist product remains the durable surface for dense data, bulk operations, detailed configuration, administration, audit and repeated precise work.
+
+Core journey:
+**Ask → Understand → Work → Drill down.**
+
+Jarvis should not force everything into chat and should not generate arbitrary production UI code. Dynamic workspaces should compose approved Admonk interface primitives.
+
+Users can move between Jarvis and the specialist dashboard while preserving tenant/product/resource context.
+
+**Status:** LOCKED.
