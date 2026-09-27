@@ -3,7 +3,7 @@
 **Date:** 2026-09-28  
 **Track:** Jarvis Deep Question Register  
 **Question:** How does Jarvis remain secure as it gains more context, tools, connectors, autonomy and cross-product capability?  
-**Status:** RESEARCH COMPLETE — RECOMMENDED FOR OWNER LOCK  
+**Status:** LOCKED — OWNER ACCEPTED  
 **Implementation authority:** None. Security/product/runtime architecture research only.
 
 ## 1. Decision problem
