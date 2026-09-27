@@ -109,7 +109,7 @@ No locked M2 decision is reopened merely because Jarvis exists.
 
 ## Pilot direction
 
-Prototype Jarvis against existing n8n automations before full product implementation.
+Prototype Jarvis through Admonk-owned capability contracts and controlled Lab adapters before full product implementation. Existing Kalam n8n automations may be consulted as historical workflow evidence only; they are not part of the Jarvis Lab or Production action architecture.
 
 Pilot goals:
 1. validate voice/text interaction;
@@ -122,7 +122,7 @@ Pilot goals:
 8. measure AI-credit/usage visibility;
 9. capture user confusion/failures as evidence.
 
-Use existing automations as test harnesses, not as the permanent Jarvis runtime architecture.
+Use controlled fixture/sandbox Lab adapters as test harnesses. Any later real-provider Lab test must use an Admonk-owned connector boundary against an explicitly approved read-only/non-Production/test resource.
 
 ## Current research evidence
 
@@ -178,7 +178,7 @@ Third-party products/repositories are pattern libraries and test references, not
 
 Continue FOUNDATION-M2 in parallel with a deliberately small **Jarvis Lab**.
 
-Use existing n8n workflows as temporary real-action test harnesses while the permanent product/platform foundation is still being defined.
+Use Admonk capability contracts with controlled fixture/sandbox Lab adapters while the permanent product/platform foundation is still being defined. Kalam n8n workflows remain historical workflow evidence only and are not Jarvis execution infrastructure.
 
 The pilot must optimize for:
 1. speed/perceived responsiveness;
@@ -193,7 +193,7 @@ The pilot must optimize for:
 Initial proof moments:
 - priority/morning brief;
 - investigation/diagnosis with interactive evidence;
-- consequential action through explicit approval and n8n execution.
+- consequential action through explicit approval and a controlled Admonk Lab capability adapter.
 
 **Lock statement:** Jarvis is the shared adaptive intelligent experience layer above subscribed/authorized Admonk capabilities; dashboards remain the structured operating surface. Admonk develops its own product experience while learning from the strongest market implementations.
 
@@ -232,7 +232,7 @@ Current research distinguishes:
 
 The current working architecture uses a realtime experience plus a **Reflex Router** that can select **FAST**, **DEEP** or **ACTION** paths according to task complexity, authority and quality requirements.
 
-The exact `open-jarvis/OpenJarvis` repository is an **Apache-2.0** selective lab/runtime/evaluation candidate, not the Admonk governance or product authority. Existing n8n automations remain temporary allowlisted test harnesses.
+The exact `open-jarvis/OpenJarvis` repository is an **Apache-2.0** selective lab/runtime/evaluation candidate, not the Admonk governance or product authority. Existing Kalam n8n automations are historical workflow evidence only; they are not Jarvis Lab or Production execution infrastructure.
 
 Canonical active checkpoint:
 `docs/checkpoints/JARVIS-JX02-DISCOVERY-CHECKPOINT-2026-09-27.md`
