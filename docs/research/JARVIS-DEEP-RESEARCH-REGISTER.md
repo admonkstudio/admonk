@@ -41,8 +41,8 @@ After all questions:
 | RQ-16 | How will we know Jarvis is actually good? | **LOCKED** |
 | RQ-17 | How do we measure speed scientifically? | **LOCKED** |
 | RQ-18 | How do we make AI economics sustainable? | **LOCKED** |
-| RQ-19 | How does the product scale technically? | **RESEARCH COMPLETE — OWNER LOCK PENDING** |
-| RQ-20 | How does Jarvis stay secure as capability increases? | Pending |
+| RQ-19 | How does the product scale technically? | **LOCKED** |
+| RQ-20 | How does Jarvis stay secure as capability increases? | **RESEARCH COMPLETE — OWNER LOCK PENDING** |
 | RQ-21 | What should be proactive? | Pending |
 | RQ-22 | What becomes persistent product state versus temporary AI output? | Pending |
 | RQ-23 | How should Jarvis learn without creating uncontrolled memory? | Pending |
@@ -60,7 +60,7 @@ Owner thought preserved for JX-03/JX-04: the Jarvis circle may become a semantic
 **Reflex Decision Plane direction is LOCKED; Jev remains a Lab candidate, not a vendor dependency.**
 
 Current gate:
-**RQ-19 — technical scaling architecture — RESEARCH COMPLETE, OWNER LOCK PENDING.**
+**RQ-20 — security architecture as capability increases — RESEARCH COMPLETE, OWNER LOCK PENDING.**
 
 ## Supporting discovery threads
 
