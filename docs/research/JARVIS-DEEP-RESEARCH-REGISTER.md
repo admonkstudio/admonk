@@ -44,8 +44,8 @@ After all questions:
 | RQ-19 | How does the product scale technically? | **LOCKED** |
 | RQ-20 | How does Jarvis stay secure as capability increases? | **LOCKED** |
 | RQ-21 | What should be proactive? | **LOCKED** |
-| RQ-22 | What becomes persistent product state versus temporary AI output? | **RESEARCH COMPLETE — OWNER LOCK PENDING** |
-| RQ-23 | How should Jarvis learn without creating uncontrolled memory? | Pending |
+| RQ-22 | What becomes persistent product state versus temporary AI output? | **LOCKED** |
+| RQ-23 | How should Jarvis learn without creating uncontrolled memory? | **RESEARCH COMPLETE — OWNER LOCK PENDING** |
 | RQ-24 | What should the first Jarvis Lab actually prove? | Pending |
 | RQ-25 | What is the minimum Production architecture that survives all prior decisions? | Pending |
 
@@ -60,7 +60,7 @@ Owner thought preserved for JX-03/JX-04: the Jarvis circle may become a semantic
 **Reflex Decision Plane direction is LOCKED; Jev remains a Lab candidate, not a vendor dependency.**
 
 Current gate:
-**RQ-22 — persistent product state & artifact architecture — RESEARCH COMPLETE, OWNER LOCK PENDING.**
+**RQ-23 — memory, learning & knowledge governance — RESEARCH COMPLETE, OWNER LOCK PENDING.**
 
 ## Supporting discovery threads
 
