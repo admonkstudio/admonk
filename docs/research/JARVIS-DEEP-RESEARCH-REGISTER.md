@@ -26,8 +26,8 @@ After all questions:
 | RQ-01 | What exactly is Jarvis responsible for? | **LOCKED** |
 | RQ-02 | What should feel instantaneous, and what may legitimately take time? | **LOCKED** |
 | RQ-03 | How should Jarvis decide how much intelligence a task needs? | **LOCKED** |
-| RQ-04 | What is the correct architecture for voice? | **RESEARCH COMPLETE — OWNER LOCK PENDING** |
-| RQ-05 | How does Jarvis know when conversation is no longer the right interface? | Pending |
+| RQ-04 | What is the correct architecture for voice? | **LOCKED** |
+| RQ-05 | How does Jarvis know when conversation is no longer the right interface? | **RESEARCH COMPLETE — OWNER LOCK PENDING** |
 | RQ-06 | How do we make dynamic UI scalable without allowing arbitrary AI-generated product UI? | Pending |
 | RQ-07 | What happens when Jarvis starts real work? | Pending |
 | RQ-08 | What role should n8n ultimately have? | Pending |
@@ -57,7 +57,7 @@ Owner thought preserved for JX-03/JX-04: the Jarvis circle may become a semantic
 
 ## Current resume point
 
-**Await owner decision on RQ-04.**
+**Await owner decision on RQ-05.**
 
 If locked, proceed to:
-**RQ-05 — when conversation is no longer the right interface.**
+**RQ-06 — scalable dynamic UI/component grammar.**
