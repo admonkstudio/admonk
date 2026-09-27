@@ -132,16 +132,16 @@ Two primary current directions are being used:
 
 Implementation experiments with third-party/open-source Jarvis repositories are separate from architecture authority and require repository/license/code review before reuse.
 
-## Next decisions
+## Jarvis Experience decision sequence
 
-1. Jarvis vs Dashboard surface contract.
-2. Voice/realtime latency and quality target.
-3. Jarvis state/animation language.
-4. Dynamic UI/workspace contract.
-5. Department vs executive context composition.
-6. n8n pilot boundary and evaluation criteria.
-7. Failure/fallback behavior.
-8. Production integration gate.
+1. **JX-01 — Jarvis vs Dashboard surface contract — LOCKED.**
+2. **JX-02 — Voice/realtime latency and quality — ACTIVE RESEARCH / NOT LOCKED.**
+3. JX-03 — Jarvis state/animation language.
+4. JX-04 — Dynamic UI/workspace contract.
+5. JX-05 — Department vs executive context composition.
+6. JX-06 — n8n pilot boundary and evaluation criteria.
+7. JX-07 — Failure/fallback behavior.
+8. JX-08 — Production integration gate.
 
 
 ## Locked experience language
