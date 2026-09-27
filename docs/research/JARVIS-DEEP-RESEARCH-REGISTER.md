@@ -27,7 +27,7 @@ After all questions:
 | RQ-02 | What should feel instantaneous, and what may legitimately take time? | **LOCKED** |
 | RQ-03 | How should Jarvis decide how much intelligence a task needs? | **LOCKED** |
 | RQ-04 | What is the correct architecture for voice? | **LOCKED** |
-| RQ-05 | How does Jarvis know when conversation is no longer the right interface? | **RESEARCH COMPLETE — OWNER LOCK PENDING** |
+| RQ-05 | How does Jarvis know when conversation is no longer the right interface? | **LOCKED** |
 | RQ-06 | How do we make dynamic UI scalable without allowing arbitrary AI-generated product UI? | Pending |
 | RQ-07 | What happens when Jarvis starts real work? | Pending |
 | RQ-08 | What role should n8n ultimately have? | Pending |
@@ -57,7 +57,13 @@ Owner thought preserved for JX-03/JX-04: the Jarvis circle may become a semantic
 
 ## Current resume point
 
-**Await owner decision on RQ-05.**
+**Jev/System-One discovery spike completed; Reflex Decision Plane recommended, Jev vendor dependency not locked.**
 
-If locked, proceed to:
+Current next gate:
 **RQ-06 — scalable dynamic UI/component grammar.**
+
+## Supporting discovery threads
+
+- `JARVIS-INTERACTION-GRAPH-HYPOTHESIS-2026-09-27.md` — semantic zoom / connected capability environment.
+- `JARVIS-PERSISTENT-SIDE-PANEL-HYPOTHESIS-2026-09-27.md` — persistent Jarvis control channel inside S2 dashboards.
+- `JARVIS-DISCOVERY-JEV-SYSTEM-ONE-DECISION-LAYER-2026-09-27.md` — provider-neutral Reflex Decision Plane; Jev as current Lab candidate.
