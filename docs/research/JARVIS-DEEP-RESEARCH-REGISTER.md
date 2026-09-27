@@ -38,8 +38,8 @@ After all questions:
 | RQ-13 | How do models/providers remain replaceable? | **LOCKED** |
 | RQ-14 | How do long-running tasks work? | **LOCKED** |
 | RQ-15 | What is Jarvis's failure and recovery philosophy? | **LOCKED** |
-| RQ-16 | How will we know Jarvis is actually good? | **RESEARCH COMPLETE — OWNER LOCK PENDING** |
-| RQ-17 | How do we measure speed scientifically? | Pending |
+| RQ-16 | How will we know Jarvis is actually good? | **LOCKED** |
+| RQ-17 | How do we measure speed scientifically? | **RESEARCH COMPLETE — OWNER LOCK PENDING** |
 | RQ-18 | How do we make AI economics sustainable? | Pending |
 | RQ-19 | How does the product scale technically? | Pending |
 | RQ-20 | How does Jarvis stay secure as capability increases? | Pending |
@@ -60,7 +60,7 @@ Owner thought preserved for JX-03/JX-04: the Jarvis circle may become a semantic
 **Reflex Decision Plane direction is LOCKED; Jev remains a Lab candidate, not a vendor dependency.**
 
 Current gate:
-**RQ-16 — evaluation & quality-gate architecture — RESEARCH COMPLETE, OWNER LOCK PENDING.**
+**RQ-17 — scientific latency & responsiveness measurement — RESEARCH COMPLETE, OWNER LOCK PENDING.**
 
 ## Supporting discovery threads
 
