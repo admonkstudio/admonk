@@ -1,6 +1,6 @@
 # Admonk Foundation — Status
 
-**Date:** 2026-09-26
+**Date:** 2026-09-27
 **Program:** Admonk Foundation Program
 **Current milestone:** **FOUNDATION-M2 — Define Shared Product Platform Foundation**
 **Current sub-milestone:** **M2-19 — Version / Compatibility / Migration**
@@ -75,3 +75,23 @@ Operating brief:
 Current decision sequence starts with repository/code organization and shared-code boundaries before runtime/platform contracts.
 
 The Product Platform Foundation is not locked. Existing M2 documents remain direction/architecture discovery until FOUNDATION-M2 decisions are completed.
+
+
+## Parallel Jarvis experience track
+
+Jarvis research is running in parallel with FOUNDATION-M2 and does not replace the current M2 sequence.
+
+Current state:
+- Jarvis strategic experience direction — **LOCKED**;
+- JX-01 Jarvis Surface Contract — **LOCKED**;
+- JX-02 Voice / Realtime Speed & Quality — **ACTIVE RESEARCH / NOT LOCKED**;
+- Jarvis Lab + n8n pilot direction — **LOCKED as a discovery/test strategy**, not as Production architecture.
+
+Owner-approved JX-02 constraint:
+**users receive immediate visible feedback even when legitimate work takes longer.**
+
+Current checkpoint:
+`docs/checkpoints/JARVIS-JX02-DISCOVERY-CHECKPOINT-2026-09-27.md`
+
+FOUNDATION-M2 remains at:
+**M2-19 — Version / Compatibility / Migration**.
