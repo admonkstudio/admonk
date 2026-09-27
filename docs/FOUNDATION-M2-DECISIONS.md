@@ -29,8 +29,10 @@
 
 | M2-17 | LOCKED | Layered Locale + Time Semantics: language, locale, personal timezone and business-time context stay distinct; use stable locale identifiers and IANA zones; user display preferences do not silently rewrite business schedules; products own translation/domain temporal semantics. | Requires richer time/locale context and targeted QA, but supports international users without corrupting business-time meaning. |
 
+| M2-18 | LOCKED | Shared Data Governance Contract + domain-owned policy and execution. Foundation standardizes sensitivity/purpose/lifecycle/export/delete contracts; products retain actual policy schedules, domain meaning and execution against their stores. | Requires domain inventories and cross-product orchestration, but preserves domain ownership while enabling consistent governance and offboarding. |
+
 ## Current
-**M2-18 — Data Sensitivity / Retention / Export / Deletion**
+**M2-19 — Version / Compatibility / Migration**
 
 
 ## M2-04 owner requirements — recorded, decision pending
