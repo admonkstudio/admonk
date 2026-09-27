@@ -1,6 +1,6 @@
 # Jarvis Experience Direction
 
-**Status:** OWNER DIRECTION — research/pilot track  
+**Status:** LOCKED STRATEGIC DIRECTION — pilot/research track  
 **Date:** 2026-09-27  
 **Relationship to FOUNDATION-M2:** Parallel experience-validation track; does not silently rewrite locked M2 decisions.
 
@@ -31,7 +31,7 @@ Executive/company Jarvis combines authorized department capabilities with compan
 Jarvis may use:
 - text conversation;
 - voice;
-- animated AI-state presence;
+- a premium abstract interactive orb/circle or equivalent AI-state presence (not an Iron Man imitation);
 - proactive briefings;
 - dynamic cards/workspaces;
 - charts and data views;
@@ -142,3 +142,57 @@ Implementation experiments with third-party/open-source Jarvis repositories are 
 6. n8n pilot boundary and evaluation criteria.
 7. Failure/fallback behavior.
 8. Production integration gate.
+
+
+## Locked experience language
+
+Jarvis should feel premium, intelligent and alive without copying Iron Man aesthetics.
+
+The core presence should use an original abstract interactive circle/orb or equivalent motion system whose color, motion and surrounding environment communicate state such as:
+- idle/ready;
+- listening;
+- understanding/thinking;
+- working/tool execution;
+- waiting for approval/input;
+- speaking/presenting;
+- success;
+- warning/error.
+
+The surrounding background and content may react subtly to state. Interactive cards, charts, simulations and workspaces appear when information is better seen than spoken.
+
+No theatrical Iron Man sounds/music or imitation branding are part of the default experience. Media may be played only as an explicit user-requested action.
+
+## Market benchmark conclusion
+
+Admonk will build its own Jarvis experience rather than adopting one third-party Jarvis application wholesale.
+
+Benchmark and pattern sources include:
+- SAP Joule Work for AI-first enterprise work orchestration;
+- OpenAI Apps/interactive UI patterns;
+- Jarvis Institute for commercial voice + command-center + action/audit patterns;
+- selected open-source Jarvis projects for voice-state, latency, memory, tool-routing and implementation lessons.
+
+Third-party products/repositories are pattern libraries and test references, not architectural authority.
+
+## Pilot strategy — LOCKED
+
+Continue FOUNDATION-M2 in parallel with a deliberately small **Jarvis Lab**.
+
+Use existing n8n workflows as temporary real-action test harnesses while the permanent product/platform foundation is still being defined.
+
+The pilot must optimize for:
+1. speed/perceived responsiveness;
+2. output quality;
+3. reliable intent-to-action completion;
+4. clear state feedback;
+5. dynamic UI usefulness;
+6. safe approval/fallback;
+7. dashboard handoff;
+8. credit/cost visibility.
+
+Initial proof moments:
+- priority/morning brief;
+- investigation/diagnosis with interactive evidence;
+- consequential action through explicit approval and n8n execution.
+
+**Lock statement:** Jarvis is the shared adaptive intelligent experience layer above subscribed/authorized Admonk capabilities; dashboards remain the structured operating surface. Admonk develops its own product experience while learning from the strongest market implementations.
