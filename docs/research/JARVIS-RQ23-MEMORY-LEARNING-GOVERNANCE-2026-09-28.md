@@ -3,7 +3,7 @@
 **Date:** 2026-09-28  
 **Track:** Jarvis Deep Question Register  
 **Question:** How should Jarvis learn across time without creating uncontrolled memory, stale truth or poisoned organizational knowledge?  
-**Status:** RESEARCH COMPLETE — RECOMMENDED FOR OWNER LOCK  
+**Status:** LOCKED — OWNER ACCEPTED  
 **Implementation authority:** None. Product/context/memory governance research only.
 
 ## 1. Decision problem
