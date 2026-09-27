@@ -28,7 +28,7 @@ After all questions:
 | RQ-03 | How should Jarvis decide how much intelligence a task needs? | **LOCKED** |
 | RQ-04 | What is the correct architecture for voice? | **LOCKED** |
 | RQ-05 | How does Jarvis know when conversation is no longer the right interface? | **LOCKED** |
-| RQ-06 | How do we make dynamic UI scalable without allowing arbitrary AI-generated product UI? | Pending |
+| RQ-06 | How do we make dynamic UI scalable without allowing arbitrary AI-generated product UI? | **RESEARCH COMPLETE — OWNER LOCK PENDING** |
 | RQ-07 | What happens when Jarvis starts real work? | Pending |
 | RQ-08 | What role should n8n ultimately have? | Pending |
 | RQ-09 | What role should OpenJarvis ultimately have? | Pending |
@@ -57,10 +57,10 @@ Owner thought preserved for JX-03/JX-04: the Jarvis circle may become a semantic
 
 ## Current resume point
 
-**Jev/System-One discovery spike completed; Reflex Decision Plane recommended, Jev vendor dependency not locked.**
+**Reflex Decision Plane direction is LOCKED; Jev remains a Lab candidate, not a vendor dependency.**
 
-Current next gate:
-**RQ-06 — scalable dynamic UI/component grammar.**
+Current gate:
+**RQ-06 — scalable dynamic UI/component grammar — RESEARCH COMPLETE, OWNER LOCK PENDING.**
 
 ## Supporting discovery threads
 
