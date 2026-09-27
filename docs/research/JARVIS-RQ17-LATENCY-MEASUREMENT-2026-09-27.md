@@ -3,7 +3,7 @@
 **Date:** 2026-09-27  
 **Track:** Jarvis Deep Question Register  
 **Question:** How do we measure Jarvis speed scientifically rather than treating one API duration as `latency`?  
-**Status:** RESEARCH COMPLETE — RECOMMENDED FOR OWNER LOCK  
+**Status:** LOCKED — OWNER ACCEPTED  
 **Implementation authority:** None. Performance/observability architecture research only.
 
 ## 1. Decision problem
