@@ -35,9 +35,9 @@ After all questions:
 | RQ-10 | Where does context live and how does Jarvis assemble the right effective context? | **LOCKED** |
 | RQ-11 | What is the real difference between Department Jarvis and Executive Jarvis? | **LOCKED** |
 | RQ-12 | How should agents be structured? | **LOCKED** |
-| RQ-13 | How do models/providers remain replaceable? | Pending |
-| RQ-14 | How do long-running tasks work? | Pending |
-| RQ-15 | What is Jarvis's failure and recovery philosophy? | Pending |
+| RQ-13 | How do models/providers remain replaceable? | **LOCKED** |
+| RQ-14 | How do long-running tasks work? | **LOCKED** |
+| RQ-15 | What is Jarvis's failure and recovery philosophy? | **RESEARCH COMPLETE — OWNER LOCK PENDING** |
 | RQ-16 | How will we know Jarvis is actually good? | Pending |
 | RQ-17 | How do we measure speed scientifically? | Pending |
 | RQ-18 | How do we make AI economics sustainable? | Pending |
@@ -60,7 +60,7 @@ Owner thought preserved for JX-03/JX-04: the Jarvis circle may become a semantic
 **Reflex Decision Plane direction is LOCKED; Jev remains a Lab candidate, not a vendor dependency.**
 
 Current gate:
-**RQ-14 — durable long-running task architecture — RESEARCH COMPLETE, OWNER LOCK PENDING.**
+**RQ-15 — failure & recovery philosophy — RESEARCH COMPLETE, OWNER LOCK PENDING.**
 
 ## Supporting discovery threads
 
