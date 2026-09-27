@@ -3,7 +3,7 @@
 **Date:** 2026-09-28  
 **Track:** Jarvis Deep Question Register  
 **Question:** What should the first Jarvis Lab actually prove before Production architecture is selected?  
-**Status:** RESEARCH COMPLETE — RECOMMENDED FOR OWNER LOCK  
+**Status:** LOCKED — OWNER ACCEPTED  
 **Implementation authority:** Lab/prototype only after explicit implementation authorization. No Production runtime is authorized by this research decision.
 
 ## 1. Decision problem
