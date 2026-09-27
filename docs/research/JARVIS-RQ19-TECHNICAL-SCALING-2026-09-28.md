@@ -3,7 +3,7 @@
 **Date:** 2026-09-28  
 **Track:** Jarvis Deep Question Register  
 **Question:** How should Jarvis/Admonk scale technically without prematurely turning the product into a distributed-systems project?  
-**Status:** RESEARCH COMPLETE — RECOMMENDED FOR OWNER LOCK  
+**Status:** LOCKED — OWNER ACCEPTED  
 **Implementation authority:** None. Product/platform/runtime architecture research only.
 
 ## 1. Decision problem
