@@ -3,7 +3,7 @@
 **Date:** 2026-09-27  
 **Track:** Jarvis Deep Question Register  
 **Question:** What is the correct architecture for voice?  
-**Status:** RESEARCH COMPLETE — RECOMMENDED FOR OWNER LOCK  
+**Status:** LOCKED — OWNER ACCEPTED  
 **Implementation authority:** None. Product/architecture research only.
 
 ## 1. Decision problem
