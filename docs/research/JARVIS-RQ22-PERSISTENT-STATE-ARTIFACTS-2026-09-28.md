@@ -3,7 +3,7 @@
 **Date:** 2026-09-28  
 **Track:** Jarvis Deep Question Register  
 **Question:** What becomes persistent product state versus temporary AI output?  
-**Status:** RESEARCH COMPLETE — RECOMMENDED FOR OWNER LOCK  
+**Status:** LOCKED — OWNER ACCEPTED  
 **Implementation authority:** None. Product/state/artifact architecture research only.
 
 ## 1. Decision problem
