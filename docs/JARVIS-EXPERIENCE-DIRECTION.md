@@ -214,3 +214,27 @@ Jarvis should not force everything into chat and should not generate arbitrary p
 Users can move between Jarvis and the specialist dashboard while preserving tenant/product/resource context.
 
 **Status:** LOCKED.
+
+
+## JX-02 — Voice / Realtime Speed & Quality — ACTIVE RESEARCH
+
+**Status:** NOT LOCKED.
+
+Owner-approved product constraint:
+
+> **Users should always get immediate visible feedback even when the actual task legitimately takes longer.**
+
+Current research distinguishes:
+- immediate interaction acknowledgement;
+- first useful response/value;
+- progressive truthful work feedback;
+- total completion time.
+
+The current working architecture uses a realtime experience plus a **Reflex Router** that can select **FAST**, **DEEP** or **ACTION** paths according to task complexity, authority and quality requirements.
+
+The exact `open-jarvis/OpenJarvis` repository is an **Apache-2.0** selective lab/runtime/evaluation candidate, not the Admonk governance or product authority. Existing n8n automations remain temporary allowlisted test harnesses.
+
+Canonical active checkpoint:
+`docs/checkpoints/JARVIS-JX02-DISCOVERY-CHECKPOINT-2026-09-27.md`
+
+Do not lock JX-02 latency/model/voice targets until the remaining research questions and measured Jarvis Lab evidence are reviewed.
