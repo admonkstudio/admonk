@@ -3,7 +3,7 @@
 **Date:** 2026-09-27  
 **Track:** Jarvis Deep Question Register  
 **Question:** What role, if any, should `open-jarvis/OpenJarvis` have in the final Admonk/Jarvis system?  
-**Status:** RESEARCH COMPLETE — RECOMMENDED FOR OWNER LOCK  
+**Status:** LOCKED — OWNER ACCEPTED  
 **Implementation authority:** None. Product/runtime research only.
 
 ## 1. Decision problem
