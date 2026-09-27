@@ -3,7 +3,7 @@
 **Date:** 2026-09-27  
 **Track:** Jarvis Deep Question Register  
 **Question:** How will we know Jarvis is actually good, and prevent improvements in one area from silently breaking another?  
-**Status:** RESEARCH COMPLETE — RECOMMENDED FOR OWNER LOCK  
+**Status:** LOCKED — OWNER ACCEPTED  
 **Implementation authority:** None. Evaluation/product-quality architecture research only.
 
 ## 1. Decision problem
