@@ -3,7 +3,7 @@
 **Date:** 2026-09-27  
 **Track:** Jarvis Deep Question Register  
 **Question:** How do we make every AI model/provider replaceable without reducing Jarvis to a lowest-common-denominator abstraction?  
-**Status:** RESEARCH COMPLETE — RECOMMENDED FOR OWNER LOCK  
+**Status:** LOCKED — OWNER ACCEPTED  
 **Implementation authority:** None. Product/runtime architecture research only.
 
 ## 1. Decision problem
