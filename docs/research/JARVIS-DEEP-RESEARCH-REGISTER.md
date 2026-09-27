@@ -29,8 +29,8 @@ After all questions:
 | RQ-04 | What is the correct architecture for voice? | **LOCKED** |
 | RQ-05 | How does Jarvis know when conversation is no longer the right interface? | **LOCKED** |
 | RQ-06 | How do we make dynamic UI scalable without allowing arbitrary AI-generated product UI? | **LOCKED** |
-| RQ-07 | What happens when Jarvis starts real work? | **RESEARCH COMPLETE — OWNER LOCK PENDING** |
-| RQ-08 | What role should n8n ultimately have? | Pending |
+| RQ-07 | What happens when Jarvis starts real work? | **LOCKED** |
+| RQ-08 | How should Admonk-owned connectors and integration runtime work? | **RESEARCH COMPLETE — OWNER LOCK PENDING** |
 | RQ-09 | What role should OpenJarvis ultimately have? | Pending |
 | RQ-10 | Where does context live and how does Jarvis assemble the right effective context? | Pending |
 | RQ-11 | What is the real difference between Department Jarvis and Executive Jarvis? | Pending |
@@ -60,7 +60,7 @@ Owner thought preserved for JX-03/JX-04: the Jarvis circle may become a semantic
 **Reflex Decision Plane direction is LOCKED; Jev remains a Lab candidate, not a vendor dependency.**
 
 Current gate:
-**RQ-07 — governed action / real-work contract — RESEARCH COMPLETE, OWNER LOCK PENDING.**
+**RQ-08 — Admonk-owned connector & integration architecture — RESEARCH COMPLETE, OWNER LOCK PENDING.**
 
 ## Supporting discovery threads
 
@@ -69,3 +69,8 @@ Current gate:
 - `JARVIS-DISCOVERY-JEV-SYSTEM-ONE-DECISION-LAYER-2026-09-27.md` — provider-neutral Reflex Decision Plane; Jev as current Lab candidate.
 
 - `JARVIS-WORKSPACE-REUSE-DIRECTION-2026-09-27.md` — predetermined library + cached/versioned task/workspace plans to avoid repeat AI planning.
+
+
+## Connector correction
+
+The owner clarified that n8n is **not part of the Admonk Product architecture**. Admonk-owned connectors are configured through onboarding/setup. Any historic n8n work belongs only to Kalam automation/lab evidence and must not be treated as the production connector runtime.
