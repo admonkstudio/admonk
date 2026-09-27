@@ -34,7 +34,7 @@ After all questions:
 | RQ-09 | What role should OpenJarvis ultimately have? | **LOCKED** |
 | RQ-10 | Where does context live and how does Jarvis assemble the right effective context? | **LOCKED** |
 | RQ-11 | What is the real difference between Department Jarvis and Executive Jarvis? | **LOCKED** |
-| RQ-12 | How should agents be structured? | **RESEARCH COMPLETE — OWNER LOCK PENDING** |
+| RQ-12 | How should agents be structured? | **LOCKED** |
 | RQ-13 | How do models/providers remain replaceable? | Pending |
 | RQ-14 | How do long-running tasks work? | Pending |
 | RQ-15 | What is Jarvis's failure and recovery philosophy? | Pending |
@@ -60,7 +60,7 @@ Owner thought preserved for JX-03/JX-04: the Jarvis circle may become a semantic
 **Reflex Decision Plane direction is LOCKED; Jev remains a Lab candidate, not a vendor dependency.**
 
 Current gate:
-**RQ-12 — agent topology & specialist worker contract — RESEARCH COMPLETE, OWNER LOCK PENDING.**
+**RQ-13 — model/provider replaceability & runtime contract — RESEARCH COMPLETE, OWNER LOCK PENDING.**
 
 ## Supporting discovery threads
 
