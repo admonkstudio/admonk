@@ -91,7 +91,7 @@ Do not select tools because a platform supports more features. Capability and ar
 15. **M2-15 Navigation/deep-link contract — LOCKED**
 16. **M2-16 Design/theme inheritance — LOCKED**
 17. **M2-17 Localization/timezone — LOCKED**
-18. Data sensitivity/retention/export/deletion
+18. **M2-18 Data sensitivity/retention/export/deletion — LOCKED**
 19. Version/compatibility/migration
 20. Runtime boundary decisions: shared contract vs package vs service vs domain-owned implementation
 
@@ -802,5 +802,20 @@ Rules:
 - RTL includes direction, typography, mixed-direction content and component behavior, not only string translation.
 
 **Accepted cost:** richer locale/time context and targeted localization/timezone QA.
+
+**Status:** LOCKED.
+
+
+## Locked decision — M2-18 Shared Data Governance Contract
+
+**Decision:** Use a shared data-governance contract while specialist products retain domain policy ownership and execution.
+
+Foundation standardizes common sensitivity/purpose metadata, lifecycle/disposition states, export/delete request contracts, exception/hold representation, cross-product status and audit evidence.
+
+Products own data meaning, retention schedules, export contents, delete/anonymize/archive behavior, derived-data handling, applicable domain/jurisdiction rules and execution against their stores.
+
+Admonk One may coordinate tenant-wide export/deletion without becoming owner of every domain database. AI-derived context, indexes, traces and memories participate in governance lineage.
+
+**Accepted cost:** domain data inventories and cross-product orchestration in exchange for consistent governance, reliable offboarding and preserved domain ownership.
 
 **Status:** LOCKED.
