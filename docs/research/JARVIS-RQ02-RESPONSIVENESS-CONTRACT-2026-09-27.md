@@ -3,7 +3,7 @@
 **Date:** 2026-09-27  
 **Track:** Jarvis Deep Question Register  
 **Question:** What should feel instantaneous, and what may legitimately take time?  
-**Status:** RESEARCH COMPLETE — RECOMMENDED FOR OWNER LOCK  
+**Status:** LOCKED — OWNER ACCEPTED  
 **Implementation authority:** None. Product/experience architecture research only.
 
 ## 1. Decision problem
