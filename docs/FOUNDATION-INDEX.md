@@ -3,6 +3,9 @@
 **Current Studio Foundation release:** **v1.0.0**  
 **Product Supervisor:** **v2.0.0**  
 **Release manifest:** `docs/FOUNDATION-RELEASE-MANIFEST.yaml`
+**Current Foundation milestone:** **FOUNDATION-M3 — Main Product Master Plan**
+**Current resume checkpoint:** `docs/checkpoints/FOUNDATION-M3-HANDOVER-2026-09-28.md`
+**Shared Product Platform Foundation:** **FOUNDATION-M2 COMPLETE / LOCKED**
 
 ## A. Studio Foundation — normal product work
 Read in this order:
@@ -24,10 +27,13 @@ Additionally read `research/STATUS.md`, research charter/queue, relevant synthes
 
 ## C. Product family / suite work
 Then read:
-1. `docs/PRODUCT-PLATFORM-FOUNDATION.md`
-2. `docs/AI-SUITE.md`
-3. repository map/manifest
-4. relevant product repository canonical docs
+1. `docs/checkpoints/FOUNDATION-M3-HANDOVER-2026-09-28.md`
+2. `docs/FOUNDATION-M2-DECISIONS.md`
+3. `docs/PRODUCT-PLATFORM-FOUNDATION.md`
+4. `docs/JARVIS-EXPERIENCE-DIRECTION.md`
+5. `docs/AI-SUITE.md` only as legacy/current coordination context until M3 resolves product-family naming
+6. repository map/manifest
+7. relevant product repository canonical docs
 
 ## D. Product-specific work
 Inside a product repository:
