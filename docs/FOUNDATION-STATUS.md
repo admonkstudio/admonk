@@ -3,7 +3,7 @@
 **Date:** 2026-09-28
 **Program:** Admonk Foundation Program
 **Current milestone:** **FOUNDATION-M3 — Main Product Master Plan**
-**Current sub-milestone:** **M3-12 Release / Compatibility Expectations Visible to Customers — RESEARCH COMPLETE / OWNER DECISION PENDING**
+**Current sub-milestone:** **M3-13 Product-Family Naming / Legacy AI Suite Disposition — NEXT**
 **Milestone status:** **FOUNDATION-M2 COMPLETE / LOCKED; FOUNDATION-M3 ACTIVE**
 **Foundation lock:** **LOCKED — Admonk Studio Foundation v1.0.0**
 **Current stable Product Supervisor:** **v2.0.0**  
