@@ -3,7 +3,7 @@
 **Status:** CANONICAL RESUME CHECKPOINT  
 **Repository:** admonkstudio/admonk  
 **Implementation posture:** Discovery / architecture only. No Production implementation is authorized by this checkpoint.  
-**Exact resume gate:** **FOUNDATION-M2 EXIT RECONCILIATION / COMPLETENESS AUDIT**  
+**Exact resume gate:** **FOUNDATION-M2 EXIT AUDIT COMPLETE — OWNER LOCK PENDING**  
 **Parallel Foundation gate:** **FOUNDATION-M2 remains active at M2-19 — Version / Compatibility / Migration**
 
 ## Current architecture audit
@@ -94,6 +94,21 @@ Status:
 
 Current next gate:
 **M2-19A — Platform Operator Identity, Support Access & Environment Authority.**
+
+## Current M2 exit gate
+
+Canonical audit:
+`docs/audits/FOUNDATION-M2-EXIT-RECONCILIATION-2026-09-28.md`
+
+Verdict:
+**PASS WITH TWO REQUIRED RECONCILIATIONS — OWNER LOCK PENDING**
+
+Required before closure:
+- Workload/Machine Identity Foundation addendum;
+- Tenant/Product Operational Lifecycle Foundation addendum;
+- stale open-question reclassification.
+
+If owner locks this audit, apply the three reconciliation actions and advance FOUNDATION-M2 to COMPLETE/LOCKED, then resume at FOUNDATION-M3 — Main Product Master Plan.
 
 ## 1. Purpose
 
@@ -675,7 +690,7 @@ If this checkpoint conflicts with a later explicitly locked/versioned repository
 
 ## 18. Exact resume statement
 
-> **Resume at the FOUNDATION-M2 Exit Reconciliation / completeness audit.**
+> **Resume at the FOUNDATION-M2 exit-audit owner lock decision.**
 >
 > RQ-01 through RQ-25 are locked.
 >
