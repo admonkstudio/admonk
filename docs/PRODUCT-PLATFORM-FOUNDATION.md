@@ -166,12 +166,14 @@ Products may vary:
 - motion character;
 - domain workflows.
 
-## 8. Corporate/company layer
+## 8. Harvey Company Intelligence / cross-domain layer
+
+Company-level intelligence is delivered by the **same Harvey core** under an authorized Company/Executive Operating Lens. It is not a second brain or separate assistant authority.
 
 The company layer should:
-- coordinate organization-level setup;
+- coordinate organization-level setup through the shared platform;
 - expose cross-department summaries only when permitted;
-- provide company-level assistant/orchestration;
+- provide company-level Harvey orchestration across subscribed/authorized capabilities;
 - link to specialist products;
 - route cross-domain work through governed contracts.
 
@@ -179,7 +181,8 @@ It should not:
 - become the source of truth for every specialist domain;
 - bypass specialist authorization;
 - copy every specialist database;
-- erase department-specific experiences.
+- erase department-specific experiences;
+- create a separate company-wide memory, permission model or orchestration brain.
 
 ## 9. Shared services vs shared contracts
 
@@ -248,7 +251,7 @@ Must be resolved before foundation lock:
 - module installation/activation lifecycle;
 - data export/offboarding;
 - legal/privacy geography requirements;
-- shared operational observability;
+- shared operational observability / Admonk Control Room backend boundary (experience direction locked by RQ-25; physical/runtime packaging remains an M2-20 decision);
 - shared release channels/feature flags.
 
 ## 12A. AI usage and unit economics
