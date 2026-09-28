@@ -228,3 +228,10 @@ docs/research/FOUNDATION-M3-13-PRODUCT-FAMILY-NAMING-LEGACY-AI-SUITE-DISPOSITION
 
 Current M3 completeness audit:
 `docs/research/FOUNDATION-M3-COMPLETENESS-AUDIT-2026-09-28.md`
+
+
+### Permanent masterbrand research
+- **SIA — Candidate #1 / leading potential candidate**
+- Not a final brand lock.
+- Requires formal clearance.
+- Alternative research continues using SIA as the quality benchmark.
