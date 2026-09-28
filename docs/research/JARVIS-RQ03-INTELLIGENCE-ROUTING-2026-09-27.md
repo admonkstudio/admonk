@@ -6,6 +6,8 @@
 **Status:** LOCKED — OWNER ACCEPTED  
 **Implementation authority:** None. Product/architecture research only.
 
+**Authority terminology supersession — 2026-09-28:** A0/A1/A2/A3 shorthand in this historical research record is retired. Production uses the single M2-11/RQ-07 action-class vocabulary: READ, DRAFT, PROPOSE, EXECUTE_REVERSIBLE, EXECUTE_CONSEQUENTIAL, DESTRUCTIVE. The locked principle that cognitive depth and execution authority are orthogonal remains unchanged.
+
 ## 1. Decision problem
 
 Jarvis must not send every request through the same AI path.
@@ -472,7 +474,7 @@ This will be evaluated in JX-03/JX-04.
 >
 > Complexity is added only when evidence/evaluations show that the simpler route does not meet the quality floor.
 >
-> **Action authority is a separate axis**, classified independently as A0/A1/A2/A3. Model intelligence never grants execution authority. Permission, policy, approval and audit remain deterministic governed gates.
+> **Action authority is a separate axis**, classified independently through the canonical M2-11/RQ-07 action classes. Model intelligence never grants execution authority. Permission, policy, approval and audit remain deterministic governed gates.
 >
 > Routing should use deterministic signals first, lightweight semantic classification only when necessary, and preserve task/evidence state during escalation.
 >
