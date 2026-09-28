@@ -444,3 +444,205 @@ Alternative formulation:
 > **One company. One SIA. Every role gets the right lens.**
 
 Jarvis is the intelligent operator across those lenses.
+
+
+---
+
+## 15. Three customer operating-maturity modes
+
+SIA should support three fundamentally different starting states without creating three products.
+
+### Mode A — Adapt to us
+
+Customer already has mature, unique processes.
+
+SIA should:
+- observe/import the current process;
+- map it against the SIA reference model;
+- preserve deliberate deviations;
+- identify contradictions, inefficiencies and gaps;
+- adapt playbooks/components/workflows around the customer's validated operating model;
+- never force “best practice” where the company has a justified custom process.
+
+Core message:
+> **Keep what makes your company work; SIA makes it visible, connected and intelligent.**
+
+### Mode B — Help us build our system
+
+Customer has people and tools but weak/inconsistent operating processes.
+
+SIA should:
+- recommend role/department archetypes;
+- propose responsibilities;
+- propose common process templates;
+- guide configuration;
+- train users in context;
+- track adoption;
+- gradually move from recommended process → company-confirmed operating model.
+
+Core message:
+> **SIA helps you build the operating system your company is missing.**
+
+### Mode C — Start with the standard
+
+Customer wants a fast default based on a common role/process.
+
+SIA should:
+- activate predefined role/department operating models;
+- preconfigure standard workflows, reports, metrics, components and onboarding;
+- connect available providers;
+- let the customer tailor only where necessary.
+
+Core message:
+> **Start from a proven operating model instead of a blank page.**
+
+All three use the same SIA architecture.
+
+---
+
+## 16. Solo / multi-role mode
+
+A single-person company should not require fake departments or enterprise ceremony.
+
+One person may select multiple role archetypes:
+- founder/CEO;
+- marketing manager;
+- sales;
+- finance;
+- operations;
+- social media;
+- support.
+
+SIA assembles one coherent personal/company operating lens from those responsibilities.
+
+Relationships that would be cross-department in a larger company become relationships between the person's own work areas.
+
+Example:
+- marketing campaign produces leads;
+- sales follows leads;
+- meetings create actions;
+- finance records spend;
+- social work feeds campaign performance.
+
+The model scales by adding people/scopes later without migrating to a different product.
+
+---
+
+## 17. Free-entry / trial thesis
+
+A free entry experience can function as product-led marketing if the “SIA + Jarvis” magic is visible before payment.
+
+Do not expose raw provider token counts as the primary customer concept.
+
+Use the customer-facing AI credit abstraction defined in the Foundation.
+
+Potential free starter constraints to validate:
+- one company;
+- one user;
+- limited role lenses/responsibilities;
+- small number of connectors;
+- limited historical ingestion/backfill;
+- limited monthly AI credits;
+- limited active playbooks/automations;
+- no high-risk autonomous actions;
+- constrained meeting recording/transcription because of provider/storage cost;
+- full access to the core SIA interaction language and Jarvis experience.
+
+The free tier should not be a crippled dashboard.
+
+It should let a user experience at least one complete “magic loop”:
+
+```
+connect
+→ SIA organizes
+→ Jarvis finds something useful
+→ interactive workspace appears
+→ user explores it
+→ one safe action completes
+```
+
+The free AI/compute/infrastructure cost is treated as customer-acquisition/marketing spend with explicit caps and conversion measurement.
+
+---
+
+## 18. Differentiation thesis
+
+The category itself is not novel.
+
+Current market products already demonstrate pieces such as:
+- permission-aware enterprise indexing/knowledge graphs;
+- assistants and agents;
+- governed workflows;
+- reusable process templates;
+- cross-system agent orchestration;
+- enterprise governance.
+
+SIA must not position its moat as “we have AI agents.”
+
+Potential differentiation is the integrated combination:
+
+1. **one company operating model** rather than many disconnected assistant/product islands;
+2. **role/responsibility archetypes** that provide immediate useful structure;
+3. **three onboarding modes**: adapt, establish, or start from standard;
+4. **Jarvis interactive experience** rather than primarily chat/search/builder surfaces;
+5. **SIA Interactive Workspace Runtime** with prebuilt composable software surfaces;
+6. **predetermined analysis/playbooks** rather than open-ended prompting;
+7. **persistent artifacts and company relationships** across work;
+8. **same experience from solo user to enterprise**, with complexity progressively revealed;
+9. **provider-neutral connections** rather than requiring a single SaaS ecosystem;
+10. **governed action** with the same context used for analysis and presentation.
+
+The product thesis is therefore not that SIA invented agents.
+
+It is:
+
+> **SIA turns a company into one coherent, interactive operating environment in which Jarvis can understand, present and act.**
+
+---
+
+## 19. Competitive caution
+
+Competitors validate the market and also raise the quality bar.
+
+Current examples show:
+- Microsoft combining deterministic workflow structure with agent reasoning;
+- Salesforce Agentforce Operations using reusable process blueprints and pre-built process libraries;
+- ServiceNow combining data, workflow, orchestration and governance across enterprise agents;
+- Glean combining permission-aware enterprise knowledge/context with assistant and agent experiences.
+
+Therefore SIA should assume these capabilities will become increasingly common.
+
+Long-term defensibility must come from:
+- operating-model depth;
+- role/responsibility library quality;
+- interaction/runtime quality;
+- cross-role/company graph;
+- reusable component/playbook ecosystem;
+- onboarding speed;
+- accumulated domain operating knowledge;
+- safe orchestration;
+- quality/cost efficiency.
+
+---
+
+## 20. Emerging GTM formula
+
+A useful working model:
+
+```
+One SIA product
+× many role entry points
+× many company operating modes
+× usage/capability entitlements
+```
+
+Marketing pages can be highly specific:
+- SIA for Marketing Managers
+- SIA for SEO Specialists
+- SIA for Founders
+- SIA for Recruiters
+- SIA for Support Managers
+
+without creating separate codebases/products.
+
+This preserves product simplicity while letting acquisition messaging speak directly to the user's job.
