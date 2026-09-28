@@ -143,7 +143,7 @@ Sequence may be adjusted if an earlier decision exposes a dependency.
 
 ## 8. Exact resume instruction
 
-> **Resume at FOUNDATION-M3 — Main Product Master Plan, starting with product-family identity/promise and customer/buying-unit definition. Do not reopen FOUNDATION-M2 unless new evidence demonstrates a contradiction.**
+> **Resume at M3-01 owner decision — Product-Family Identity & Promise. If locked, proceed to M3-02 Customer / Organization Archetype & Buying Unit. Do not reopen FOUNDATION-M2 unless new evidence demonstrates a contradiction.**
 
 
 ## 9. M3 evidence decision protocol
@@ -182,3 +182,20 @@ Owner-approved method for every M3 decision and the downstream Foundation milest
    - once accepted, promote the decision into the canonical M3 artifact and immediately proceed.
 
 This protocol inherits the Studio Foundation evidence-first / Decision Cost discipline but is optimized for faster product-family decisions.
+
+
+## 10. Current M3 gate
+
+**M3-01 — Product-Family Identity & Promise**
+
+Canonical research:
+`docs/research/FOUNDATION-M3-01-PRODUCT-FAMILY-IDENTITY-PROMISE-2026-09-28.md`
+
+Status:
+**RESEARCH COMPLETE — OWNER DECISION PENDING**
+
+Recommended direction:
+**Specialist-first. Platform-backed. Progressively unified.**
+
+If accepted, proceed to:
+**M3-02 — Customer / Organization Archetype & Buying Unit.**
