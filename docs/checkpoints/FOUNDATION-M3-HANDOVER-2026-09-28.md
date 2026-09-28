@@ -143,7 +143,7 @@ Sequence may be adjusted if an earlier decision exposes a dependency.
 
 ## 8. Exact resume instruction
 
-> **Resume at M3-05 — Standalone vs Connected Product Value. M3-01 through M3-04 are locked.**
+> **Resume at the M3-05 owner decision — Standalone vs Connected Product Value. M3-01 through M3-04 are locked. If accepted, proceed to M3-06 Packaging: SKUs, Add-ons, Bundles & Plan Composition.**
 
 
 ## 9. M3 evidence decision protocol
@@ -235,3 +235,18 @@ Status:
 
 Current next gate:
 **M3-05 — Standalone vs Connected Product Value.**
+
+
+## 14. Current M3-05 gate
+
+Canonical research:
+`docs/research/FOUNDATION-M3-05-STANDALONE-VS-CONNECTED-VALUE-2026-09-28.md`
+
+Status:
+**RESEARCH COMPLETE — OWNER DECISION PENDING**
+
+Recommended direction:
+**Complete standalone outcomes; compounding connected value.**
+
+If accepted:
+**M3-06 — Packaging: SKUs, Add-ons, Bundles & Plan Composition.**
