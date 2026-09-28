@@ -47,7 +47,7 @@ After all questions:
 | RQ-22 | What becomes persistent product state versus temporary AI output? | **LOCKED** |
 | RQ-23 | How should Jarvis learn without creating uncontrolled memory? | **LOCKED** |
 | RQ-24 | What should the first Jarvis Lab actually prove? | **LOCKED** |
-| RQ-25 | What is the minimum Production architecture, planned scaling sequence and visual control system that survives all prior decisions? | **RESEARCH COMPLETE — OWNER LOCK PENDING** |
+| RQ-25 | What is the minimum Production architecture, planned scaling sequence and visual control system that survives all prior decisions? | **LOCKED** |
 
 ## Supporting hypothesis
 
@@ -63,7 +63,7 @@ Canonical handover checkpoint:
 **Reflex Decision Plane direction is LOCKED; Jev remains a Lab candidate, not a vendor dependency.**
 
 Current gate:
-**RQ-25 — Production evolution architecture, scaling milestones & Admonk Control Room — RESEARCH COMPLETE, OWNER LOCK PENDING.**
+**Deep Research RQ-01 through RQ-25 — COMPLETE / LOCKED. Next gate: FULL JARVIS ARCHITECTURE AUDIT.**
 
 ## Supporting discovery threads
 
@@ -79,3 +79,10 @@ Current gate:
 The owner clarified that n8n is **not part of the Admonk Product architecture**. Admonk-owned connectors are configured through onboarding/setup. Any historic n8n work belongs only to Kalam automation/lab evidence and must not be treated as the production connector runtime.
 
 - `JARVIS-RQ25-PRODUCTION-SCALING-CONTROL-SYSTEM-2026-09-28.md` — minimum Production topology + SCALE-0..6 structural roadmap + Scale Gates + Admonk Control Room.
+
+
+## Deep Research completion
+
+- **RQ-01 through RQ-25: LOCKED**
+- Next gate: **FULL JARVIS ARCHITECTURE AUDIT**
+- The audit must test the combined system for contradictions, duplicated machinery, missing boundaries, unnecessary complexity, hidden implementation assumptions and unresolved Foundation dependencies before Lab implementation or Production planning proceeds.
