@@ -3,7 +3,7 @@
 **Status:** CANONICAL RESUME CHECKPOINT  
 **Repository:** admonkstudio/admonk  
 **Implementation posture:** Discovery / architecture only. No Production implementation is authorized by this checkpoint.  
-**Exact resume gate:** **RQ-25 — Production Evolution Architecture, Scaling Milestones & Admonk Control Room — RESEARCH COMPLETE / OWNER LOCK PENDING**  
+**Exact resume gate:** **FULL JARVIS ARCHITECTURE AUDIT — RQ-01 through RQ-25 are LOCKED**  
 **Parallel Foundation gate:** **FOUNDATION-M2 remains active at M2-19 — Version / Compatibility / Migration**
 
 ## 1. Purpose
@@ -86,7 +86,7 @@ Consequences:
 
 ## 5. Locked Deep Research sequence
 
-**RQ-01 through RQ-24 are LOCKED. RQ-25 research is COMPLETE and awaits owner lock.**
+**RQ-01 through RQ-25 are LOCKED. Deep Research is COMPLETE.**
 
 ### RQ-01 — Responsibility Boundary
 Jarvis owns interaction/orchestration, not authority or systems of record.
@@ -327,9 +327,9 @@ Rules:
 
 File: docs/research/JARVIS-RQ24-FIRST-LAB-PROOF-PROGRAM-2026-09-28.md
 
-## 6. Current gate — RQ-25 owner lock
+## 6. Current gate — Full Jarvis architecture audit
 
-**Do not start the post-RQ architecture audit until the owner accepts/revises RQ-25.**
+**RQ-25 is accepted. Begin the full Jarvis architecture audit; do not start Production implementation or broad Lab implementation yet.**
 
 Canonical research file:
 
@@ -585,10 +585,25 @@ If this checkpoint conflicts with a later explicitly locked/versioned repository
 
 ## 18. Exact resume statement
 
-> **Resume at RQ-25 owner decision.**
+> **Resume at the FULL JARVIS ARCHITECTURE AUDIT.**
 >
-> RQ-01 through RQ-24 are locked.
+> RQ-01 through RQ-25 are locked.
 >
-> RQ-25 research is complete in docs/research/JARVIS-RQ25-PRODUCTION-SCALING-CONTROL-SYSTEM-2026-09-28.md and awaits owner lock/revision. It now includes minimum Production topology, SCALE-0 through SCALE-6 structural milestones, Scale Gates and the Admonk Control Room.
+> Deep Research is complete. Audit the entire Jarvis architecture as one system, including the minimum Production topology, SCALE-0 through SCALE-6 structural milestones, Scale Gates and Admonk Control Room.
 >
 > Do not start Production implementation, select implementation vendors, reopen prior RQs, or resume Marketing Hub application development until the relevant architecture/owner gates explicitly authorize it.
+
+
+## 19. RQ-25 — Production Evolution Architecture, Scaling Milestones & Admonk Control Room — LOCKED
+
+Canonical file:
+`docs/research/JARVIS-RQ25-PRODUCTION-SCALING-CONTROL-SYSTEM-2026-09-28.md`
+
+Key lock:
+- SCALE-0 Lab → SCALE-1 Production Seed → SCALE-2 Workload Isolation → SCALE-3 Tenant-Aware Capacity/Data Scale → SCALE-4 Cell/Deployment-Stamp Scale → SCALE-5 Regional/Residency Scale → SCALE-6 Mission-Critical Multi-Region only when justified;
+- structural scaling occurs through evidence-based Scale Gates;
+- Production Seed separates Shared Control Runtime, Interactive Runtime, Durable/Async Workers and Connector Runtime;
+- Production is not operationally complete without Admonk Control Room;
+- Control Room is the owner-facing Operations, Quality and Architecture control plane using specialist telemetry/eval backends behind replaceable adapters;
+- Platform Operator Jarvis explains evidence and proposes governed actions but does not bypass RQ-07/M2-11 authority;
+- Production Scaling Plan is a first-class versioned lifecycle artifact.
