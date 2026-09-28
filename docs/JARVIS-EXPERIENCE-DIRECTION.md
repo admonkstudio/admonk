@@ -1,5 +1,23 @@
 # Jarvis Experience Direction
 
+## 2026-09-29 supersession notice
+
+**HISTORICAL EXPERIENCE AUTHORITY.**
+
+Jarvis has been retired from active product naming. The intelligent operator is now **SIA**.
+
+The current experience authority is:
+`docs/SIA-EXPERIENCE-DIRECTION.md`
+
+The detailed research below remains valuable historical evidence. Where it says:
+- Jarvis → read **SIA**;
+- Admonk/product family → reconcile through the current unified operating-environment Master Plan;
+- specialist product dashboard → read as the relevant durable domain/workspace surface where still applicable.
+
+Do not use this historical document to restore the superseded specialist-product-family customer model.
+
+---
+
 **Canonical current product identity:** Jarvis.
 
 **Status:** LOCKED STRATEGIC DIRECTION — updated through RQ-25 + full architecture audit  
