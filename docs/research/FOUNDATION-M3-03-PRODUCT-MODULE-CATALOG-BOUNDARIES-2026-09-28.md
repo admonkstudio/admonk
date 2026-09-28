@@ -1,7 +1,7 @@
 # FOUNDATION-M3-03 — Product / Module Catalog & Boundaries
 
 **Date:** 2026-09-28  
-**Status:** RESEARCH COMPLETE — OWNER DECISION PENDING  
+**Status:** LOCKED — OWNER SELECTED SCENARIO B  
 **Milestone:** FOUNDATION-M3 — Main Product Master Plan  
 **Method:** quick internal scan → two high-value sources → two scenarios → challenge → synthesis  
 **Implementation authority:** None
@@ -183,4 +183,4 @@ Architecture can contain many capabilities; the customer catalog should contain 
 >
 > **Composability belongs underneath the catalog; customer value determines what earns a product name.**
 
-**Recommendation:** LOCK Scenario B.
+**Recommendation:** LOCKED — Scenario B.
