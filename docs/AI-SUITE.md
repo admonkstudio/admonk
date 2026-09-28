@@ -15,7 +15,7 @@ Each product keeps its own repository, product model, AGENTS.md, skills, milesto
 
 ## Product family
 
-### 1. Harvey — Company Intelligence capability
+### 1. Jarvis — Company Intelligence capability
 **Role:** the same Harvey experience/core operating through an authorized Company/Executive Operating Lens across subscribed specialist products.
 
 Intended responsibilities:
@@ -31,7 +31,7 @@ Historical repository:
 
 The repository name reflects the earlier architecture phase. It is retained as transition/history material until the planned product-family audit determines migration/code disposition.
 
-**Current architecture rule:** there is no second “company brain.” Company Intelligence is a Harvey cross-domain capability/Operating Lens. Harvey consumes specialist products through governed contracts and never silently becomes owner of specialist product truth.
+**Current architecture rule:** there is no second “company brain.” Company Intelligence is a Jarvis cross-domain capability/Operating Lens. Harvey consumes specialist products through governed contracts and never silently becomes owner of specialist product truth.
 
 ### 2. Support Platform / Ask Kalam
 **Role:** support/customer-resolution arm.
@@ -76,7 +76,7 @@ Admonk's current product-owner direction is to make the suite commercially behav
 A customer may enable:
 - one specialist product;
 - several specialist products;
-- the Harvey Company Intelligence capability/add-on;
+- the Jarvis Company Intelligence capability/add-on;
 - later optional modules/capabilities.
 
 This commercial unity does **not** replace the technical boundary rule below.
@@ -119,7 +119,7 @@ The specialist application remains authoritative for its own domain.
 Examples:
 - Marketing Hub is authoritative for governed marketing strategy/metrics/evidence.
 - Support Platform is authoritative for customer-resolution/support cases and verified support outcomes.
-- Harvey under an authorized Company/Executive Operating Lens can read/call those systems only through approved contracts and permissions.
+- Jarvis under an authorized Company/Executive Operating Lens can read/call those systems only through approved contracts and permissions.
 
 ## Shared suite contracts
 
@@ -152,7 +152,7 @@ admonkstudio/admonk
     └── .agents/skills/admonk-ai-suite/SKILL.md
 
 Product repositories
-├── Harvey / Company Intelligence  (legacy transition repo: admonkstudio/corporate-ai-assistant)
+├── Jarvis / Company Intelligence  (legacy transition repo: admonkstudio/corporate-ai-assistant)
 ├── Support Platform             kalamcx/kalam-digital-platform
 └── Marketing Hub                admonkstudio/marketing-hub
 ```
@@ -184,7 +184,7 @@ Stay in the product repository and outrank suite convenience.
 Examples:
 - Support: resolution integrity, Case/Outcome semantics, provider action safety.
 - Marketing: metric governance, evidence governance, strategy/analytics linkage.
-- Harvey Company Intelligence: cross-domain orchestration, governed capability routing, company-level Operating Lens.
+- Jarvis Company Intelligence: cross-domain orchestration, governed capability routing, company-level Operating Lens.
 
 ## GitHub organization model
 
@@ -215,7 +215,7 @@ No specialist product may silently write directly to another specialist product'
 Preferred pattern:
 
 ```text
-Harvey — Company/Executive Lens
+Jarvis — Company/Executive Lens
         │
         ├── governed API/tool access ──> Support Platform
         │
