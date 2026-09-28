@@ -146,3 +146,23 @@ Principle:
 > **Shared orientation; specialist navigation.**
 
 **Status:** LOCKED.
+
+### M3-09 — Federated Domain Authority with a Governed Cross-Product Interaction Layer
+
+**Decision:** Specialist products remain authoritative for their business records, workflows and domain semantics. Cross-product value is delivered through explicit versioned interaction contracts rather than direct database access or duplicated source ownership.
+
+Rules:
+- each product exposes a discoverable capability manifest describing governed reads, governed actions, Resource Link types, domain events, supported context/artifact types and compatibility metadata;
+- cross-product reads use permission-aware product-owned read contracts and preserve source identity, provenance and freshness;
+- cross-product writes are governed action invocations against the owning product; one specialist product never writes directly into another product's store;
+- Jarvis composes authorized product capabilities through the federated Context Plane and M2-11 Agent Authority Envelope rather than becoming a second source of truth;
+- domain events support asynchronous coordination and derived views without transferring ownership of the underlying record;
+- Admonk may maintain selective shared relationship indexes, search metadata, entity links, company rollups and other derived projections where evidence shows cross-product value;
+- shared projections remain non-authoritative, source-linked, tenant/scope-aware, permission-aware, provenance-aware, freshness-aware, lifecycle-governed and rebuildable;
+- provider/data reads and provider/action authority remain separate;
+- all cross-product interaction contracts participate in shared versioning, compatibility and governance rules.
+
+Principle:
+> **Share capabilities and relationships; keep truth with its owner.**
+
+**Status:** LOCKED.
