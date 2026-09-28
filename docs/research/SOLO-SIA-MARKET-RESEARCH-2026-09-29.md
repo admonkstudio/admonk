@@ -1,7 +1,7 @@
 # SOLO / SIA — Market Research & Competitive Learning
 
 **Date:** 2026-09-29  
-**Status:** ACTIVE RESEARCH — first comprehensive competitive pass complete  
+**Status:** BASELINE FINDINGS LOCKED — CONTINUOUS COMPETITIVE RESEARCH MAY CONTINUE  
 **Purpose:** Determine how much of the SOLO/SIA thesis already exists in the 2026 market, what current leaders have learned, what should become table stakes, and where SOLO can still differentiate.
 
 ---
@@ -808,3 +808,21 @@ The stronger target is:
 > **Take the best proven context, workflow, governance and artifact patterns already validated by the market, then make them disappear behind a radically simpler role-first operating experience led by SIA.**
 
 That is the current hypothesis to challenge in the full architecture/cost audit.
+
+
+---
+
+# 11. Locked discovery baseline
+
+The owner accepted the first competitive research pass as a product-discovery baseline.
+
+Locked conclusions:
+- do not position the product as novel merely because it uses agents, enterprise context, graphs, workflow blueprints or interactive artifacts;
+- treat those capabilities as current market baseline/trajectory;
+- prioritize differentiation around role/responsibility operating models, one intelligent identity, company-wide continuity, process diagnosis and interactive operating experience;
+- maintain a strong governance/control plane beneath a simple user experience;
+- use the market's current endpoint as a starting line rather than rediscovering it.
+
+Naming note:
+- **SOLO is a temporary working environment name and is not the final external brand.**
+- SIA remains the intelligent-operator name subject to formal legal clearance.
