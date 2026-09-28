@@ -1,7 +1,7 @@
 # FOUNDATION-M3-09 — Cross-Product Capability / Data Interaction Map
 
 **Date:** 2026-09-28  
-**Status:** RESEARCH COMPLETE — OWNER DECISION PENDING  
+**Status:** LOCKED — OWNER SELECTED SCENARIO B  
 **Milestone:** FOUNDATION-M3 — Main Product Master Plan  
 **Method:** quick internal scan → two high-value sources → two scenarios → challenge → synthesis  
 **Implementation authority:** None
@@ -231,4 +231,4 @@ This preserves the strongest Microsoft Graph lesson—one coherent interaction s
 >
 > **Share capabilities and relationships; keep truth with its owner.**
 
-**Recommendation:** LOCK Scenario B.
+**Recommendation:** LOCKED — Scenario B.
