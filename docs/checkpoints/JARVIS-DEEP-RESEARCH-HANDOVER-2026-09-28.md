@@ -3,8 +3,18 @@
 **Status:** CANONICAL RESUME CHECKPOINT  
 **Repository:** admonkstudio/admonk  
 **Implementation posture:** Discovery / architecture only. No Production implementation is authorized by this checkpoint.  
-**Exact resume gate:** **FULL JARVIS ARCHITECTURE AUDIT — RQ-01 through RQ-25 are LOCKED**  
+**Exact resume gate:** **FULL JARVIS ARCHITECTURE AUDIT COMPLETE — REMEDIATION PACKAGE OWNER LOCK PENDING**  
 **Parallel Foundation gate:** **FOUNDATION-M2 remains active at M2-19 — Version / Compatibility / Migration**
+
+## Current architecture audit
+
+Canonical audit:
+`docs/audits/JARVIS-FULL-ARCHITECTURE-AUDIT-2026-09-28.md`
+
+Verdict:
+**PASS WITH REQUIRED REMEDIATIONS — OWNER LOCK PENDING**
+
+The audit does not reopen RQ-01..25. It recommends documentation reconciliation, operator-plane hardening, explicit signal taxonomy, telemetry privacy/environment rules, and feeding version/runtime findings into M2-19/M2-20.
 
 ## 1. Purpose
 
@@ -585,11 +595,11 @@ If this checkpoint conflicts with a later explicitly locked/versioned repository
 
 ## 18. Exact resume statement
 
-> **Resume at the FULL JARVIS ARCHITECTURE AUDIT.**
+> **Resume at the Jarvis architecture audit remediation decision.**
 >
 > RQ-01 through RQ-25 are locked.
 >
-> Deep Research is complete. Audit the entire Jarvis architecture as one system, including the minimum Production topology, SCALE-0 through SCALE-6 structural milestones, Scale Gates and Admonk Control Room.
+> Deep Research is complete and the full Jarvis architecture audit has passed with required remediations. Review/lock `docs/audits/JARVIS-FULL-ARCHITECTURE-AUDIT-2026-09-28.md`, then apply the approved reconciliation and feed M2-19/M2-20.
 >
 > Do not start Production implementation, select implementation vendors, reopen prior RQs, or resume Marketing Hub application development until the relevant architecture/owner gates explicitly authorize it.
 
