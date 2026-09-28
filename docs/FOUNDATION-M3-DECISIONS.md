@@ -32,3 +32,26 @@ Buying model:
 - exact firmographic thresholds, pricing bands and segmentation remain later evidence questions.
 
 **Status:** LOCKED.
+
+
+### M3-03 — Outcome-Owned Product Catalog with Selective Modules & Cross-Product Add-ons
+
+**Decision:** Keep the top-level Admonk catalog small and tied to distinct measurable business outcomes.
+
+Rules:
+- a specialist product must have a distinct customer/business outcome, recognizable economic champion, meaningful standalone value, durable domain semantics/workflows, a durable operating surface, and enough independent roadmap/lifecycle to justify product ownership;
+- capabilities that extend the same product outcome remain modules/features, even when optionally entitled;
+- cross-product capabilities whose value depends on subscribed products are add-ons rather than new domain products;
+- shared Product Platform/Foundation capabilities are normally included infrastructure rather than separate specialist SKUs;
+- current directional catalog:
+  - Admonk Platform / Admonk One — shared included platform/admin foundation;
+  - Marketing Hub — specialist product;
+  - Support Platform / Ask Kalam — specialist product;
+  - Jarvis Company Intelligence — cross-product add-on;
+- future specialist products must pass the Product Boundary Test;
+- internal architecture granularity must not be exposed directly as commercial catalog granularity.
+
+Principle:
+> **Composability belongs underneath the catalog; customer value determines what earns a product name.**
+
+**Status:** LOCKED.
