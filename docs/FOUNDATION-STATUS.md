@@ -3,7 +3,7 @@
 **Date:** 2026-09-27
 **Program:** Admonk Foundation Program
 **Current milestone:** **FOUNDATION-M2 — Define Shared Product Platform Foundation**
-**Current sub-milestone:** **M2-19 — Version / Compatibility / Migration**
+**Current sub-milestone:** **M2-19 — Version / Compatibility / Migration — RESEARCH COMPLETE / OWNER LOCK PENDING**
 **Milestone status:** **ACTIVE**
 **Foundation lock:** **LOCKED — Admonk Studio Foundation v1.0.0**
 **Current stable Product Supervisor:** **v2.0.0**  
@@ -72,6 +72,9 @@ Status: **ACTIVE — research/architecture decisions started.**
 Operating brief:
 `docs/FOUNDATION-M2-OPERATING-BRIEF.md`
 
+Current M2-19 research:
+`docs/research/FOUNDATION-M2-19-VERSION-COMPATIBILITY-MIGRATION-2026-09-28.md`
+
 Current decision sequence starts with repository/code organization and shared-code boundaries before runtime/platform contracts.
 
 The Product Platform Foundation is not locked. Existing M2 documents remain direction/architecture discovery until FOUNDATION-M2 decisions are completed.
@@ -118,7 +121,7 @@ Audit:
 `docs/audits/ADMONK-PRODUCT-PLATFORM-FOUNDATION-AUDIT-2026-09-28.md`
 
 Official next sequence:
-**M2-19 Version/Compatibility/Migration → M2-19A Platform Operator Identity/Support Access/Environment Authority → M2-20 Runtime Boundaries.**
+**Owner lock M2-19 → M2-19A Platform Operator Identity/Support Access/Environment Authority → M2-20 Runtime Boundaries.**
 
 ## External challenge audit
 
