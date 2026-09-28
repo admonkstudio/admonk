@@ -143,7 +143,7 @@ Sequence may be adjusted if an earlier decision exposes a dependency.
 
 ## 8. Exact resume instruction
 
-> **Resume at M3-08 — Cross-Product Navigation & Shared Shell. M3-01 through M3-07 are locked.**
+> **Resume at the M3-08 owner decision — Cross-Product Navigation & Shared Shell. M3-01 through M3-07 are locked. If accepted, proceed to M3-09 Cross-Product Capability/Data Interaction Map.**
 
 
 ## 9. M3 evidence decision protocol
@@ -271,3 +271,18 @@ Status:
 
 Current next gate:
 **M3-08 — Cross-Product Navigation & Shared Shell.**
+
+
+## 17. Current M3-08 gate
+
+Canonical research:
+`docs/research/FOUNDATION-M3-08-CROSS-PRODUCT-NAVIGATION-SHARED-SHELL-2026-09-28.md`
+
+Status:
+**RESEARCH COMPLETE — OWNER DECISION PENDING**
+
+Recommended direction:
+**Thin shared family shell + product-owned navigation.**
+
+If accepted:
+**M3-09 — Cross-Product Capability/Data Interaction Map.**
