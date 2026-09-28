@@ -3,7 +3,7 @@
 **Date:** 2026-09-28
 **Program:** Admonk Foundation Program
 **Current milestone:** **FOUNDATION-M3 — Main Product Master Plan**
-**Current sub-milestone:** **M3-06 Packaging: SKUs, Add-ons, Bundles & Plan Composition — RESEARCH IN PROGRESS**
+**Current sub-milestone:** **M3-06 Packaging: SKUs, Add-ons, Bundles & Plan Composition — RESEARCH COMPLETE / OWNER DECISION PENDING**
 **Milestone status:** **FOUNDATION-M2 COMPLETE / LOCKED; FOUNDATION-M3 ACTIVE**
 **Foundation lock:** **LOCKED — Admonk Studio Foundation v1.0.0**
 **Current stable Product Supervisor:** **v2.0.0**  
@@ -113,6 +113,9 @@ Current M3-04 research:
 
 Current M3-05 research:
 `docs/research/FOUNDATION-M3-05-STANDALONE-VS-CONNECTED-VALUE-2026-09-28.md`
+
+Current M3-06 research:
+`docs/research/FOUNDATION-M3-06-PACKAGING-SKUS-ADDONS-BUNDLES-2026-09-28.md`
 
 M3-01 status: **LOCKED — Scenario B selected**.
 
