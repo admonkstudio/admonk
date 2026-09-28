@@ -3,7 +3,7 @@
 **Date:** 2026-09-27
 **Program:** Admonk Foundation Program
 **Current milestone:** **FOUNDATION-M2 — Define Shared Product Platform Foundation**
-**Current sub-milestone:** **M2-19A — Platform Operator Identity, Support Access & Environment Authority — RESEARCH COMPLETE / OWNER LOCK PENDING**
+**Current sub-milestone:** **M2-20 — Runtime Boundaries — NEXT / research not started**
 **Milestone status:** **ACTIVE**
 **Foundation lock:** **LOCKED — Admonk Studio Foundation v1.0.0**
 **Current stable Product Supervisor:** **v2.0.0**  
@@ -124,7 +124,7 @@ Audit:
 `docs/audits/ADMONK-PRODUCT-PLATFORM-FOUNDATION-AUDIT-2026-09-28.md`
 
 Official next sequence:
-**M2-19 LOCKED → M2-19A Platform Operator Identity/Support Access/Environment Authority → M2-20 Runtime Boundaries.**
+**M2-19 LOCKED → M2-19A LOCKED → M2-20 Runtime Boundaries — NEXT.**
 
 ## External challenge audit
 
@@ -143,3 +143,5 @@ Resolved verdict:
 External challenge audit resolved by owner: Jarvis restored; characters parked; architecture findings accepted.
 
 - M2-19 — **LOCKED**: Contract-Centered Versioning, Explicit Compatibility & Managed Migration.
+
+- M2-19A — **LOCKED**: Separate Platform-Operator Authority with JIT Privilege, Scoped Support Access & Explicit Environment.
