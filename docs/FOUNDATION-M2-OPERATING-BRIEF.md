@@ -868,3 +868,15 @@ Admonk One may coordinate tenant-wide export/deletion without becoming owner of 
 **Accepted cost:** domain data inventories and cross-product orchestration in exchange for consistent governance, reliable offboarding and preserved domain ownership.
 
 **Status:** LOCKED.
+
+
+## Current M2-19 research — 2026-09-28
+
+Status: **RESEARCH COMPLETE — OWNER LOCK PENDING**
+
+Canonical research:
+`docs/research/FOUNDATION-M2-19-VERSION-COMPATIBILITY-MIGRATION-2026-09-28.md`
+
+Do not record M2-19 as locked in this brief until the owner accepts the recommended lock.
+
+If accepted, insert the canonical M2-19 lock here and proceed to the audit-added M2-19A operator-authority decision before M2-20 runtime packaging.
