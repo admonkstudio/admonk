@@ -3,10 +3,10 @@
 **Status:** Active  
 **Established:** 2026-09-26  
 **Owner:** Admonk Studio  
-**Current milestone:** **FOUNDATION-M1 — COMPLETE / LOCKED**  
+**Current milestone:** **FOUNDATION-M3 — Main Product Master Plan**  
 **Latest Studio Foundation release:** **v1.0.0**  
 **Included Product Supervisor:** **v2.0.0**  
-**Current milestone after M1:** **FOUNDATION-M2 — ACTIVE**  
+**FOUNDATION-M2:** **COMPLETE / LOCKED — 2026-09-28**  
 **Implementation posture:** Research / architecture definition only unless an individual product gate explicitly authorizes implementation.
 
 ## 1. Purpose
@@ -206,7 +206,7 @@ Required work:
 
 **Completion label:** **Admonk Studio Foundation v1.0.0 — LOCKED**. Component mapping is recorded in `docs/FOUNDATION-RELEASE-MANIFEST.yaml`.
 
-### FOUNDATION-M2 — Define Shared Product Platform Foundation
+### FOUNDATION-M2 — Define Shared Product Platform Foundation — COMPLETE / LOCKED
 
 **Goal:** define the reusable application/product chassis inherited by the company and department products.
 
@@ -234,7 +234,12 @@ Required decisions:
 
 **Gate:** no shared runtime service is created merely because two products have similarly named concepts.
 
-### FOUNDATION-M3 — Main Product Master Plan
+**Completion:** FOUNDATION-M2 closed on 2026-09-28 after M2-01 through M2-20 plus Exit Addenda R-01 Workload/Machine Identity and R-02 Tenant/Product Operational Lifecycle passed the exit reconciliation audit.
+
+Canonical decisions: `docs/FOUNDATION-M2-DECISIONS.md`  
+Exit audit: `docs/audits/FOUNDATION-M2-EXIT-RECONCILIATION-2026-09-28.md`
+
+### FOUNDATION-M3 — Main Product Master Plan — CURRENT
 
 **Goal:** define the complete product family as one commercially composable offering.
 
@@ -246,7 +251,7 @@ The plan must define:
 - packaging/entitlements;
 - common setup/admin experience;
 - cross-product navigation;
-- Corporate AI Assistant/company-brain role;
+- Jarvis Company Intelligence / cross-domain Operating Lens role;
 - shared intelligence boundaries;
 - data/ownership boundaries;
 - commercial composition;
