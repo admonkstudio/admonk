@@ -1,7 +1,7 @@
 # FOUNDATION-M3-05 — Standalone vs Connected Product Value
 
 **Date:** 2026-09-28  
-**Status:** RESEARCH COMPLETE — OWNER DECISION PENDING  
+**Status:** LOCKED — OWNER SELECTED SCENARIO B  
 **Milestone:** FOUNDATION-M3 — Main Product Master Plan  
 **Method:** quick internal scan → two high-value sources → two scenarios → challenge → synthesis  
 **Implementation authority:** None
@@ -132,4 +132,4 @@ Do **not** put ordinary product features behind multi-product subscription simpl
 >
 > **Standalone value is complete. Connected value compounds.**
 
-**Recommendation:** LOCK Scenario B.
+**Recommendation:** LOCKED — Scenario B.
