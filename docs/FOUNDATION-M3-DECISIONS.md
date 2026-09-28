@@ -73,3 +73,19 @@ Principle:
 > **Customers should not pay extra merely to make a specialist product intelligent; they pay extra when intelligence expands beyond the product they bought.**
 
 **Status:** LOCKED.
+
+
+### M3-05 — Complete Standalone Outcomes, Compounding Connected Value
+
+**Decision:** Every Admonk specialist product independently delivers its full promised domain outcome. Connected products unlock materially new value only where that value logically requires multiple authorized domains.
+
+Rules:
+- standalone customers receive a complete specialist product;
+- multi-product customers gain cross-domain context, workflow coordination, company/executive aggregation, relationship intelligence and Jarvis Company Intelligence;
+- ordinary specialist-product capabilities are not withheld merely to force bundle expansion;
+- connected value must be explainable as something that genuinely requires multiple products/domains.
+
+Principle:
+> **Standalone value is complete. Connected value compounds.**
+
+**Status:** LOCKED.
