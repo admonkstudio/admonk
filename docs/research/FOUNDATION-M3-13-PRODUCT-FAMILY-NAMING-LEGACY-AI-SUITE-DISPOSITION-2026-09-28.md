@@ -1,7 +1,7 @@
 # FOUNDATION-M3-13 — Product-Family Naming / Legacy AI Suite Disposition
 
 **Date:** 2026-09-28  
-**Status:** RESEARCH COMPLETE — OWNER DECISION PENDING  
+**Status:** LOCKED — OWNER SELECTED SCENARIO B; MASTERBRAND NAME REMAINS TEMPORARY  
 **Milestone:** FOUNDATION-M3 — Main Product Master Plan  
 **Research depth:** Deep decision research  
 **Implementation authority:** None
@@ -566,4 +566,35 @@ Keeping it as a permanent product-family brand would preserve historical termino
 >
 > **Admonk is the family. Products define the outcome. Jarvis supplies the intelligence.**
 
-**Recommendation:** LOCK Scenario B.
+**Recommendation:** LOCKED — Scenario B. The current name “Admonk” remains a temporary working/masterbrand placeholder; final naming is deferred.
+
+
+---
+
+## 12. Owner clarification — working name only
+
+The owner accepted Scenario B with an explicit naming constraint:
+
+> **“Admonk” is a temporary working name.**
+
+Therefore M3-13 locks the **brand architecture**, not the permanent commercial name.
+
+What is locked:
+- there is one family/masterbrand identity;
+- specialist products remain named outcome products underneath it;
+- Jarvis remains the named intelligent experience;
+- the shared administration experience remains a separate named role/surface;
+- “AI Suite” is retired as the active family architecture label;
+- future bundles do not become the permanent family identity by default.
+
+What is **not** locked:
+- the final permanent family/masterbrand name;
+- whether the eventual replacement for “Admonk” keeps, changes or eliminates the current wordmark;
+- final naming of any still-unresolved specialist product;
+- final customer-facing name of the shared administration surface if later brand research recommends a rename.
+
+Until a dedicated naming/GTM exercise selects the permanent name, **“Admonk” functions only as the canonical working placeholder used to keep architecture/docs coherent.**
+
+Principle:
+
+> **Lock the naming architecture now; defer the permanent name until evidence supports it.**
