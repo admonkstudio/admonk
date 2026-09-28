@@ -1,7 +1,7 @@
 # FOUNDATION-M3-10 — Product Activation / Deactivation / Offboarding Experience
 
 **Date:** 2026-09-28  
-**Status:** RESEARCH COMPLETE — OWNER DECISION PENDING  
+**Status:** LOCKED — OWNER SELECTED SCENARIO B  
 **Milestone:** FOUNDATION-M3 — Main Product Master Plan  
 **Method:** quick internal scan → two high-value sources → two scenarios → challenge → synthesis  
 **Implementation authority:** None
@@ -260,4 +260,4 @@ Internal systems may retain more precise states, but Admonk One should normalize
 >
 > **Turning a product off should be safe and reversible until the customer deliberately crosses the irreversible boundary.**
 
-**Recommendation:** LOCK Scenario B.
+**Recommendation:** LOCKED — Scenario B.
