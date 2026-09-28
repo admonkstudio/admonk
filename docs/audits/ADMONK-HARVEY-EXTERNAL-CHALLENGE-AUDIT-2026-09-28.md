@@ -1,9 +1,20 @@
 # Admonk / Harvey External Challenge Validation Audit — 2026-09-28
 
-**Status:** AUDIT COMPLETE — CHALLENGE FINDINGS / OWNER DECISION PENDING  
+**Status:** RESOLVED — OWNER ACCEPTED ARCHITECTURE FINDINGS / RESTORED JARVIS / PARKED CHARACTERS  
 **Method:** post-reconciliation internal architecture audit challenged against high-value external sources  
 **Scope:** Harvey identity/characters, RQ-01..25 architecture, Product Platform Foundation, Control Room, SCALE roadmap, Product Supervisor integration  
 **Implementation authority:** None
+
+## Owner resolution — 2026-09-28
+
+The owner accepted the architecture/scaling/Control Room challenge findings and resolved the product questions as follows:
+- restore **Jarvis** as the canonical current product name;
+- do not proceed with Harvey as a product identity;
+- remove character profiles from the active architecture;
+- park character/persona variants as a possible future add-on only if the gender/persona concerns are later resolved;
+- resume the official Foundation sequence at **M2-19 — Version / Compatibility / Migration**.
+
+This audit remains valuable historical validation but is no longer an open decision gate.
 
 ## 1. Audit method
 
