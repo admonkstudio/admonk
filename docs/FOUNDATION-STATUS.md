@@ -3,7 +3,7 @@
 **Date:** 2026-09-28
 **Program:** Admonk Foundation Program
 **Current milestone:** **FOUNDATION-M3 — Main Product Master Plan**
-**Current sub-milestone:** **M3-12 Release / Compatibility Expectations Visible to Customers — NEXT**
+**Current sub-milestone:** **M3-12 Release / Compatibility Expectations Visible to Customers — RESEARCH COMPLETE / OWNER DECISION PENDING**
 **Milestone status:** **FOUNDATION-M2 COMPLETE / LOCKED; FOUNDATION-M3 ACTIVE**
 **Foundation lock:** **LOCKED — Admonk Studio Foundation v1.0.0**
 **Current stable Product Supervisor:** **v2.0.0**  
@@ -216,3 +216,7 @@ Current M3-10 research:
 
 Current M3-11 research:
 `docs/research/FOUNDATION-M3-11-SUPPORT-OPERATIONS-TENANT-VISIBLE-HEALTH-2026-09-28.md`
+
+
+Current M3-12 research:
+`docs/research/FOUNDATION-M3-12-CUSTOMER-VISIBLE-RELEASE-COMPATIBILITY-2026-09-28.md`
