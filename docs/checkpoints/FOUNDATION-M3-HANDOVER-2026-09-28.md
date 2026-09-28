@@ -143,7 +143,7 @@ Sequence may be adjusted if an earlier decision exposes a dependency.
 
 ## 8. Exact resume instruction
 
-> **Resume at the M3-13 owner decision — Product-Family Naming / Legacy AI Suite Disposition. M3-01 through M3-12 are locked. If accepted, proceed to the M3 completeness audit / Product Master Plan lock.**
+> **Resume at the M3 completeness audit / Product Master Plan lock. M3-01 through M3-13 are locked. “Admonk” remains a temporary working masterbrand name; M3-13 locks the brand architecture, not the permanent name.**
 
 
 ## 9. M3 evidence decision protocol
@@ -353,10 +353,7 @@ Canonical research:
 docs/research/FOUNDATION-M3-13-PRODUCT-FAMILY-NAMING-LEGACY-AI-SUITE-DISPOSITION-2026-09-28.md
 
 Status:
-**RESEARCH COMPLETE — OWNER DECISION PENDING**
+**LOCKED — OWNER SELECTED SCENARIO B WITH TEMPORARY-NAME CAVEAT**
 
-Recommended direction:
-**Admonk as the canonical product-family/masterbrand; retire “Admonk AI Suite” to historical/legacy terminology; preserve specialist product identity, Jarvis as the intelligent experience and Admonk One as shared administration.**
-
-If accepted:
+Current next gate:
 **M3 completeness audit / Product Master Plan lock.**
