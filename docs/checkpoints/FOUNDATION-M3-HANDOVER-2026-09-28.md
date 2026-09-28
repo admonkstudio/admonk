@@ -143,7 +143,7 @@ Sequence may be adjusted if an earlier decision exposes a dependency.
 
 ## 8. Exact resume instruction
 
-> **Resume at M3-01 owner decision — Product-Family Identity & Promise. If locked, proceed to M3-02 Customer / Organization Archetype & Buying Unit. Do not reopen FOUNDATION-M2 unless new evidence demonstrates a contradiction.**
+> **Resume at M3-02 — Customer / Organization Archetype & Buying Unit. M3-01 is locked as Specialist-first, Platform-backed, Progressively Unified. Do not reopen FOUNDATION-M2 unless new evidence demonstrates a contradiction.**
 
 
 ## 9. M3 evidence decision protocol
@@ -192,10 +192,10 @@ Canonical research:
 `docs/research/FOUNDATION-M3-01-PRODUCT-FAMILY-IDENTITY-PROMISE-2026-09-28.md`
 
 Status:
-**RESEARCH COMPLETE — OWNER DECISION PENDING**
+**LOCKED — OWNER SELECTED SCENARIO B**
 
 Recommended direction:
 **Specialist-first. Platform-backed. Progressively unified.**
 
-If accepted, proceed to:
+Current next gate:
 **M3-02 — Customer / Organization Archetype & Buying Unit.**
