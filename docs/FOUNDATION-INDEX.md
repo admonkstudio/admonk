@@ -4,7 +4,7 @@
 **Product Supervisor:** **v2.0.0**  
 **Release manifest:** `docs/FOUNDATION-RELEASE-MANIFEST.yaml`
 **Current Foundation milestone:** **FOUNDATION-M3 — Main Product Master Plan**
-**Current resume checkpoint:** `docs/checkpoints/FOUNDATION-M3-HANDOVER-2026-09-28.md`
+**Current product authority:** `docs/PRODUCT-MASTER-PLAN.md`
 **Shared Product Platform Foundation:** **FOUNDATION-M2 COMPLETE / LOCKED**
 
 ## A. Studio Foundation — normal product work
@@ -25,15 +25,16 @@ Do **not** load the research corpus for ordinary execution.
 ## B. Foundation research/change work
 Additionally read `research/STATUS.md`, research charter/queue, relevant synthesis/tool/source records and the Decision Cost Framework. Research is supporting evidence/history; it becomes authority only after human approval and promotion.
 
-## C. Product family / suite work
+## C. Unified operating-environment / SIA work
 Then read:
-1. `docs/checkpoints/FOUNDATION-M3-HANDOVER-2026-09-28.md`
-2. `docs/FOUNDATION-M2-DECISIONS.md`
-3. `docs/PRODUCT-PLATFORM-FOUNDATION.md`
-4. `docs/JARVIS-EXPERIENCE-DIRECTION.md`
-5. `docs/AI-SUITE.md` only as legacy/current coordination context until M3 resolves product-family naming
-6. repository map/manifest
-7. relevant product repository canonical docs
+1. `docs/PRODUCT-MASTER-PLAN.md`
+2. `docs/SIA-EXPERIENCE-DIRECTION.md`
+3. `docs/audits/FOUNDATION-M3-FINAL-RECONCILIATION-2026-09-29.md`
+4. `docs/FOUNDATION-M2-DECISIONS.md`
+5. `docs/FOUNDATION-M2-PRODUCT-MODEL-RECONCILIATION-2026-09-29.md`
+6. `docs/PRODUCT-PLATFORM-FOUNDATION.md`
+7. current research only when the task requires unresolved discovery/evidence
+8. relevant domain/product repositories only as historical/domain evidence, not as proof that a separate customer-facing product must exist
 
 ## D. Product-specific work
 Inside a product repository:
@@ -45,11 +46,12 @@ Inside a product repository:
 6. inherited Admonk Foundation references as needed.
 
 ## Authority
-Shared Admonk foundations govern reusable quality/process/contracts. Specialist products remain authoritative for their own domain semantics unless an approved shared contract applies. Prefer references to canonical sources over copied competing instructions.
+Shared Foundation contracts govern reusable quality, authority, security and interoperability. Domain/provider sources remain authoritative for their own semantics/data unless an approved shared contract says otherwise. The current customer product model is one unified operating environment with SIA as the intelligent operator; domain boundaries do not automatically imply separate applications.
 
 ```text
-Studio Foundation = how we build products
-Product Platform Foundation = what all products share
-Product Foundation = what one product owns and how it inherits/extends the platform
-Tenant Configuration = how one customer uses/configures the product
+Studio Foundation = how we build
+Product Platform Foundation = shared boundaries/contracts
+Product Master Plan = how the unified customer product is assembled
+Domain Capability Model = what one business domain/role contributes
+Tenant Configuration = how one company adapts the environment
 ```
