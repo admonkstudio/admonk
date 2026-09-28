@@ -1,7 +1,7 @@
 # FOUNDATION-M2-19 — Version / Compatibility / Migration
 
 **Date:** 2026-09-28  
-**Status:** RESEARCH COMPLETE — RECOMMENDED FOR OWNER LOCK  
+**Status:** LOCKED — OWNER ACCEPTED  
 **Program:** FOUNDATION-M2 — Shared Product Platform Foundation  
 **Implementation authority:** None. Architecture/contract decision only.
 
