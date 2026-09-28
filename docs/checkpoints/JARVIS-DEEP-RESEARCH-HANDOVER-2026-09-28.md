@@ -3,7 +3,7 @@
 **Status:** CANONICAL RESUME CHECKPOINT  
 **Repository:** admonkstudio/admonk  
 **Implementation posture:** Discovery / architecture only. No Production implementation is authorized by this checkpoint.  
-**Exact resume gate:** **RQ-25 — Minimum Production Architecture that survives RQ-01 through RQ-24**  
+**Exact resume gate:** **RQ-25 — Production Evolution Architecture, Scaling Milestones & Admonk Control Room — RESEARCH COMPLETE / OWNER LOCK PENDING**  
 **Parallel Foundation gate:** **FOUNDATION-M2 remains active at M2-19 — Version / Compatibility / Migration**
 
 ## 1. Purpose
@@ -86,7 +86,7 @@ Consequences:
 
 ## 5. Locked Deep Research sequence
 
-**RQ-01 through RQ-24 are LOCKED. RQ-25 is NEXT and research has not started.**
+**RQ-01 through RQ-24 are LOCKED. RQ-25 research is COMPLETE and awaits owner lock.**
 
 ### RQ-01 — Responsibility Boundary
 Jarvis owns interaction/orchestration, not authority or systems of record.
@@ -327,13 +327,17 @@ Rules:
 
 File: docs/research/JARVIS-RQ24-FIRST-LAB-PROOF-PROGRAM-2026-09-28.md
 
-## 6. Exact next task — RQ-25
+## 6. Current gate — RQ-25 owner lock
 
-**Do not start another concept track before RQ-25.**
+**Do not start the post-RQ architecture audit until the owner accepts/revises RQ-25.**
 
-Question:
+Canonical research file:
 
-> **What is the minimum Production architecture that survives all prior decisions?**
+docs/research/JARVIS-RQ25-PRODUCTION-SCALING-CONTROL-SYSTEM-2026-09-28.md
+
+Expanded question:
+
+> **What is the minimum Production architecture, how does it evolve through evidence-triggered scaling milestones, and what visual Control Room lets the owner understand and govern the platform without coding expertise?**
 
 RQ-25 must synthesize rather than reopen RQ-01 through RQ-24.
 
@@ -581,10 +585,10 @@ If this checkpoint conflicts with a later explicitly locked/versioned repository
 
 ## 18. Exact resume statement
 
-> **Resume at RQ-25 — Minimum Production Architecture.**
+> **Resume at RQ-25 owner decision.**
 >
 > RQ-01 through RQ-24 are locked.
 >
-> RQ-25 must synthesize the smallest Production architecture satisfying all Jarvis and Foundation constraints while minimizing unnecessary runtime/service complexity.
+> RQ-25 research is complete in docs/research/JARVIS-RQ25-PRODUCTION-SCALING-CONTROL-SYSTEM-2026-09-28.md and awaits owner lock/revision. It now includes minimum Production topology, SCALE-0 through SCALE-6 structural milestones, Scale Gates and the Admonk Control Room.
 >
 > Do not start Production implementation, select implementation vendors, reopen prior RQs, or resume Marketing Hub application development until the relevant architecture/owner gates explicitly authorize it.
