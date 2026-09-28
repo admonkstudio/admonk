@@ -15,23 +15,23 @@ Each product keeps its own repository, product model, AGENTS.md, skills, milesto
 
 ## Product family
 
-### 1. Corporate AI Assistant
-**Role:** company brain / intelligence and orchestration layer.
+### 1. Harvey — Company Intelligence capability
+**Role:** the same Harvey experience/core operating through an authorized Company/Executive Operating Lens across subscribed specialist products.
 
 Intended responsibilities:
-- company-wide knowledge access;
+- company-wide knowledge access where authorized;
 - executive/company Q&A;
 - cross-department context;
 - permitted orchestration across specialist products;
 - company-level alerts, summaries and decision support;
-- tool routing across approved company systems.
+- governed capability/tool routing across approved company systems.
 
-Repository:
+Historical repository:
 `admonkstudio/corporate-ai-assistant`
 
-Canonical product planning now lives in that repository. Historical recovery material in this suite repository is retained only as migration/history evidence.
+The repository name reflects the earlier architecture phase. It is retained as transition/history material until the planned product-family audit determines migration/code disposition.
 
-The Corporate AI Assistant must not silently become the owner of specialist product data. It should call specialist systems through governed interfaces.
+**Current architecture rule:** there is no second “company brain.” Company Intelligence is a Harvey cross-domain capability/Operating Lens. Harvey consumes specialist products through governed contracts and never silently becomes owner of specialist product truth.
 
 ### 2. Support Platform / Ask Kalam
 **Role:** support/customer-resolution arm.
@@ -76,7 +76,7 @@ Admonk's current product-owner direction is to make the suite commercially behav
 A customer may enable:
 - one specialist product;
 - several specialist products;
-- the company/corporate intelligence layer;
+- the Harvey Company Intelligence capability/add-on;
 - later optional modules/capabilities.
 
 This commercial unity does **not** replace the technical boundary rule below.
@@ -119,7 +119,7 @@ The specialist application remains authoritative for its own domain.
 Examples:
 - Marketing Hub is authoritative for governed marketing strategy/metrics/evidence.
 - Support Platform is authoritative for customer-resolution/support cases and verified support outcomes.
-- Corporate AI Assistant can read/call those systems only through approved contracts and permissions.
+- Harvey under an authorized Company/Executive Operating Lens can read/call those systems only through approved contracts and permissions.
 
 ## Shared suite contracts
 
@@ -152,7 +152,7 @@ admonkstudio/admonk
     └── .agents/skills/admonk-ai-suite/SKILL.md
 
 Product repositories
-├── Corporate AI Assistant       TBD
+├── Harvey / Company Intelligence  (legacy transition repo: admonkstudio/corporate-ai-assistant)
 ├── Support Platform             kalamcx/kalam-digital-platform
 └── Marketing Hub                admonkstudio/marketing-hub
 ```
@@ -184,7 +184,7 @@ Stay in the product repository and outrank suite convenience.
 Examples:
 - Support: resolution integrity, Case/Outcome semantics, provider action safety.
 - Marketing: metric governance, evidence governance, strategy/analytics linkage.
-- Corporate Assistant: company-wide orchestration, tool routing, company permissions.
+- Harvey Company Intelligence: cross-domain orchestration, governed capability routing, company-level Operating Lens.
 
 ## GitHub organization model
 
@@ -215,7 +215,7 @@ No specialist product may silently write directly to another specialist product'
 Preferred pattern:
 
 ```text
-Corporate AI Assistant
+Harvey — Company/Executive Lens
         │
         ├── governed API/tool access ──> Support Platform
         │
@@ -228,7 +228,7 @@ Cross-product actions require explicit authorization, auditability, and source o
 
 1. Preserve the existing Support Platform reconstruction without interference.
 2. Continue Marketing Hub discovery and provider/evidence verification.
-3. Continue Corporate AI Assistant CAI-P0 scope freeze in its dedicated repository.
+3. Preserve the legacy Corporate AI Assistant repository as transition evidence; do not expand it into a second brain/runtime before the product-family audit determines migration.
 4. Define the minimum shared tenant/user/app-to-app contract only when concrete integration work begins.
 5. Create the cross-repository GitHub Project board when UI/admin access is available.
 6. Avoid premature shared runtime packages.
