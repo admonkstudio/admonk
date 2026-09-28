@@ -598,3 +598,33 @@ Until a dedicated naming/GTM exercise selects the permanent name, **“Admonk”
 Principle:
 
 > **Lock the naming architecture now; defer the permanent name until evidence supports it.**
+
+
+---
+
+## 13. Permanent masterbrand candidate research
+
+### Candidate #1 — SIA
+
+**Status:** LEADING POTENTIAL CANDIDATE — LOCKED FOR FURTHER CLEARANCE, NOT FINAL BRAND SELECTION
+
+The owner selected **SIA** as the first serious permanent-masterbrand candidate.
+
+Why it qualifies:
+- extremely short and memorable;
+- easy to pronounce in English and Arabic;
+- visually strong;
+- culturally meaningful;
+- Ancient Egyptian association with perception, insight and understanding;
+- conceptually compatible with the product-family architecture and Jarvis;
+- does not depend on the temporary “Admonk” name or on the word “AI”.
+
+Commercial caution:
+- active technology/software/AI uses of SIA exist;
+- formal trademark/domain/company-name clearance is required before any final brand lock;
+- Candidate #1 status does not authorize public rebrand, repository rename, domain migration or customer-facing rollout.
+
+Research rule from this point:
+> **SIA is the benchmark. Alternatives should only be surfaced if they are comparably short, pronounceable, memorable, meaningful and credible as a global technology masterbrand.**
+
+Research continues across Ancient Egyptian and other ancient-language traditions before final owner selection.
