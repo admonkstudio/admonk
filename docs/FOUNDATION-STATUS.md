@@ -271,3 +271,7 @@ Current orchestration thesis:
 > **One brain. Many specialist capabilities. Spawn workers when the work justifies them.**
 
 SOLO remains a temporary environment name.
+
+
+Current M3 handover:
+`docs/checkpoints/FOUNDATION-M3-HANDOVER-2026-09-29.md`
