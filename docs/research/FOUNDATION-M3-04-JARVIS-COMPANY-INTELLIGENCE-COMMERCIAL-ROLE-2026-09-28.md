@@ -1,7 +1,7 @@
 # FOUNDATION-M3-04 — Jarvis Company Intelligence Commercial/Product Role
 
 **Date:** 2026-09-28  
-**Status:** RESEARCH COMPLETE — OWNER DECISION PENDING  
+**Status:** LOCKED — OWNER SELECTED SCENARIO B  
 **Milestone:** FOUNDATION-M3 — Main Product Master Plan  
 **Method:** quick internal scan → two high-value sources → two scenarios → challenge → synthesis  
 **Implementation authority:** None
@@ -129,4 +129,4 @@ High-cost specialist agents, advanced automation or heavy research modes may lat
 >
 > **The customer should never have to pay extra merely to make a specialist product feel intelligent; they pay extra when intelligence becomes broader than the product they bought.**
 
-**Recommendation:** LOCK Scenario B.
+**Recommendation:** LOCKED — Scenario B.
