@@ -94,7 +94,8 @@ Do not select tools because a platform supports more features. Capability and ar
 16. **M2-16 Design/theme inheritance — LOCKED**
 17. **M2-17 Localization/timezone — LOCKED**
 18. **M2-18 Data sensitivity/retention/export/deletion — LOCKED**
-19. Version/compatibility/migration
+19. **M2-19 Version / compatibility / migration — LOCKED**
+19A. **M2-19A Platform Operator Identity, Support Access & Environment Authority — NEXT**
 20. Runtime boundary decisions: shared contract vs package vs service vs domain-owned implementation
 
 Sequence may be adjusted when an earlier decision proves a dependency.
@@ -870,13 +871,29 @@ Admonk One may coordinate tenant-wide export/deletion without becoming owner of 
 **Status:** LOCKED.
 
 
-## Current M2-19 research — 2026-09-28
+## Locked decision — M2-19 Contract-Centered Versioning, Explicit Compatibility & Managed Migration
 
-Status: **RESEARCH COMPLETE — OWNER LOCK PENDING**
+**Decision:** Version stable contracts, schemas and immutable definitions that other components depend on. Do not force one universal versioning scheme onto packages, APIs, events, database migrations, tasks, artifacts and AI definitions.
+
+Core model:
+- release version != contract/schema version != definition revision != migration version;
+- stability lifecycle: DEVELOPMENT → PREVIEW → STABLE → DEPRECATED → RETIRED;
+- compatibility: COMPATIBLE / COMPATIBLE_WITH_DEPRECATION / MIGRATION_REQUIRED / BLOCKED / UNSUPPORTED;
+- federated products may release independently within tested declared compatibility windows;
+- breaking shared-contract/data changes use Expand → Coexist → Migrate → Verify → Contract where practical;
+- Durable Tasks pin compatible definitions/contracts;
+- approvals/actions remain bound to the contract semantics approved;
+- connector adapter, provider API, connection config and Admonk capability contract are versioned independently;
+- deprecation/retirement is evidence-driven and observable;
+- material migrations record verification and honest recovery class;
+- feature flags are rollout tools, not contract versions;
+- Versioned Definition Envelope standardizes common lifecycle metadata without requiring a central runtime service.
 
 Canonical research:
 `docs/research/FOUNDATION-M2-19-VERSION-COMPATIBILITY-MIGRATION-2026-09-28.md`
 
-Do not record M2-19 as locked in this brief until the owner accepts the recommended lock.
+**Status:** LOCKED.
 
-If accepted, insert the canonical M2-19 lock here and proceed to the audit-added M2-19A operator-authority decision before M2-20 runtime packaging.
+## Current gate — M2-19A Platform Operator Identity, Support Access & Environment Authority
+
+This decision was added by the Jarvis/Control Room Foundation audit and must be resolved before M2-20 runtime packaging.
