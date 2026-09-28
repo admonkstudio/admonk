@@ -16,7 +16,7 @@ Admonk is building two related foundations:
 1. **Studio Foundation** — how Admonk researches, plans, designs, builds, verifies, launches and scales products.
 2. **Product Platform Foundation** — the reusable application chassis/contracts that future company and department products inherit.
 
-The long-term goal is a **composable product family** that can be sold in parts and configured per customer while preserving one coherent architectural foundation.
+The long-term goal is a **unified company operating environment** that can start with one person, grow to enterprise scale, and activate composable role/domain capabilities without duplicating the core product.
 
 The goal is not:
 - one giant monolith;
@@ -27,7 +27,7 @@ The goal is not:
 
 The goal is:
 
-> **One product foundation, multiple product surfaces, shared contracts, domain authority, tenant configuration, and product-specific expression.**
+> **One company operating environment, one intelligent operator, many role/domain lenses, shared contracts, preserved domain authority and progressive tenant configuration.**
 
 ## 2. Foundation stack
 
@@ -60,14 +60,17 @@ Shared Product Platform Foundation
 ├── design/theme inheritance
 └── version / compatibility contracts
             ↓
-Product Foundations
-├── Company / corporate layer
-├── Marketing
-├── Support
-└── future department/domain products
+Unified Operating Environment
+├── SIA intelligent operator
+├── Company Graph / Context
+├── interactive workspace runtime
+├── artifacts
+├── deterministic workflows
+├── specialist registry/workers
+└── role/domain capability packs
             ↓
 Tenant Configuration
-├── enabled products/modules
+├── enabled capabilities/lenses
 ├── roles + user overrides
 ├── connectors
 ├── policies/approvals
@@ -75,6 +78,17 @@ Tenant Configuration
 ├── workflows
 └── domain-specific setup
 ```
+
+## 2A. 2026-09-29 Product-Model Reconciliation
+
+Current product authority:
+- `docs/PRODUCT-MASTER-PLAN.md`
+- `docs/SIA-EXPERIENCE-DIRECTION.md`
+- `docs/audits/FOUNDATION-M3-FINAL-RECONCILIATION-2026-09-29.md`
+
+Historical references to a multi-application product family should not override the reconciled one-environment model.
+
+**SOLO is a temporary environment name.**
 
 ## AI economics as a first-class product constraint
 
@@ -101,17 +115,17 @@ No fixed universal dollar threshold is locked yet. Thresholds belong to the comm
 
 ## 3. Commercial composition principle
 
-The future offering should be commercially composable:
+The future offering remains commercially composable without requiring separate applications:
 
-- a customer may activate one specialist product;
-- a customer may activate several specialist products;
-- the company/corporate layer may be added for cross-department intelligence/orchestration;
-- specialist products remain independently useful;
-- when several are enabled, users experience one coherent family rather than disconnected tools.
+- one company uses one unified environment;
+- commercial packages may enable role/domain capability packs, connectors, specialist capacity, advanced analytics/AI and enterprise governance;
+- role-specific acquisition offers may be marketed independently;
+- entitlements remain separate from permissions;
+- domain semantics remain explicit even when the customer experience is unified.
 
-Shared foundation capabilities should not be duplicated per product when their semantics are genuinely the same.
+Shared capabilities should not be duplicated by department when their semantics are genuinely the same.
 
-Product-specific domain logic remains inside the owning product.
+Domain-specific logic remains inside the owning domain/capability boundary.
 
 ## 4. Customization principle
 
@@ -241,63 +255,61 @@ Exit audit: `docs/audits/FOUNDATION-M2-EXIT-RECONCILIATION-2026-09-28.md`
 
 ### FOUNDATION-M3 — Main Product Master Plan — CURRENT
 
-**Goal:** define the complete product family as one commercially composable offering.
+**Goal:** define the unified company operating environment, SIA company-brain experience, role/responsibility operating model, capability composition and commercial entry model.
 
 The plan must define:
 - product promise;
-- target organization/customer;
-- company-level experience;
-- product/module catalog;
+- solo-to-enterprise customer model;
+- company-level operating environment;
+- role/responsibility lenses;
+- domain/capability composition;
 - packaging/entitlements;
-- common setup/admin experience;
-- cross-product navigation;
-- Jarvis Company Intelligence / cross-domain Operating Lens role;
-- shared intelligence boundaries;
-- data/ownership boundaries;
-- commercial composition;
-- what works standalone vs only when multiple modules are connected;
-- release/version compatibility model;
-- support/operations model.
+- setup/admin/health;
+- SIA company-brain role;
+- interactive workspace/artifact model;
+- specialist/deterministic execution architecture;
+- data/authority boundaries;
+- human/digital workforce lifecycle;
+- commercial entry points;
+- cost/economics;
+- release/version compatibility;
+- support/operations.
 
-### FOUNDATION-M4 — Product / Department Foundation Template
+### FOUNDATION-M4 — Operating-Model / Capability Template
 
-**Goal:** make every company/department product inherit the shared foundation consistently.
+**Goal:** define the reusable contract for departments, roles, responsibilities, processes, domain capabilities and SIA specialist profiles.
 
-Each product must define:
-- role in the family;
+Each domain/role pack must define:
+- purpose/outcomes;
 - domain authority;
-- domain entities;
-- domain roles/capabilities;
-- domain onboarding;
-- domain knowledge;
-- domain agents;
-- connectors;
-- action classes/approvals;
-- evidence/metrics;
-- product-specific views;
-- domain patterns;
-- brand/theme expression;
-- cross-product contracts;
-- dependencies on shared platform services/contracts;
-- standalone behavior;
-- integration behavior when other products are enabled.
+- entities/semantics;
+- role archetypes;
+- responsibilities;
+- process templates;
+- metrics/evidence;
+- artifacts;
+- connectors/actions;
+- approval/risk classes;
+- interactive components/workspace patterns;
+- diagnostic playbooks;
+- eligible specialist profiles;
+- authority/escalation;
+- versioning;
+- tenant customization boundaries.
 
-Reusable template:
-`templates/product-foundation/`
+### FOUNDATION-M5 — Reference Domain / Role Models
 
-### FOUNDATION-M5 — Individual Product Foundations
+Validate the template with a deliberately small representative set, e.g.:
+1. Marketing Manager / Marketing domain;
+2. Recruiter / Recruiting workflow;
+3. Support Manager / Support domain;
+4. Founder / multi-role solo mode.
 
-Apply the template to:
-1. Corporate AI Assistant / company layer;
-2. Marketing Hub;
-3. Support Platform;
-4. later department products only when their domain is understood.
+The goal is not to recreate separate products. It is to prove that the same environment can deliver deep role/domain value without flattening semantics.
 
-Do not copy Marketing semantics into other departments.
+### FOUNDATION-M6 — Cross-Domain / SIA Contract Freeze
 
-### FOUNDATION-M6 — Cross-Product Contract Freeze
-
-**Goal:** freeze the minimum contracts required for products to behave as one family.
+**Goal:** freeze the minimum contracts required for SIA, domain capabilities, artifacts, workflows and specialist workers to behave as one coherent environment.
 
 Candidate shared contracts:
 - organization/tenant identity;
@@ -318,18 +330,21 @@ Candidate shared contracts:
 ### FOUNDATION-M7 — Integrated Reference Validation
 
 Validate with at least:
-- Marketing Hub;
-- Support Platform;
-- Corporate/company layer.
+- one-person / multi-role company;
+- Marketing Manager joining an existing company;
+- Recruiting workflow with specialist execution;
+- Support/domain workflow;
+- mature custom-process company.
 
 Success requires proving:
-- shared concepts are genuinely shared;
-- domain concepts remain domain-owned;
-- one tenant can enable different product combinations;
-- user/role/settings behavior is coherent;
-- visual identity can differ without breaking shared UX/accessibility rules;
-- one module can operate without unrelated modules;
-- cross-product orchestration respects authority and permissions.
+- one company model remains coherent;
+- role/domain semantics stay explicit;
+- users receive different authorized lenses over the same company;
+- capabilities can be enabled without separate-app duplication;
+- SIA routing respects authority/cost;
+- deterministic and specialist execution cooperate;
+- interactive artifacts/workspaces remain consistent;
+- process discovery and customization do not corrupt authoritative truth.
 
 ### FOUNDATION-M8 — Platform Foundation Lock
 
@@ -360,4 +375,4 @@ It is complete when:
 
 ## 8. Final principle
 
-> **Build the studio foundation once. Build the product platform once. Let each product inherit the strengths and earn its differences.**
+> **Build the foundation once. Build one coherent operating environment. Let every role/domain inherit the strengths and earn only the complexity it needs.**
