@@ -143,7 +143,7 @@ Sequence may be adjusted if an earlier decision exposes a dependency.
 
 ## 8. Exact resume instruction
 
-> **Resume at M3-02 — Customer / Organization Archetype & Buying Unit. M3-01 is locked as Specialist-first, Platform-backed, Progressively Unified. Do not reopen FOUNDATION-M2 unless new evidence demonstrates a contradiction.**
+> **Resume at the M3-02 owner decision — Customer / Organization Archetype & Buying Unit. M3-01 is locked. If M3-02 is accepted, proceed to M3-03 Product / Module Catalog & Boundaries.**
 
 
 ## 9. M3 evidence decision protocol
@@ -199,3 +199,18 @@ Recommended direction:
 
 Current next gate:
 **M3-02 — Customer / Organization Archetype & Buying Unit.**
+
+
+## 11. Current M3-02 gate
+
+Canonical research:
+`docs/research/FOUNDATION-M3-02-CUSTOMER-ARCHETYPE-BUYING-UNIT-2026-09-28.md`
+
+Status:
+**RESEARCH COMPLETE — OWNER DECISION PENDING**
+
+Recommended direction:
+**Business-led, cross-functional buying unit.**
+
+If accepted:
+**M3-03 — Product / Module Catalog & Boundaries.**
