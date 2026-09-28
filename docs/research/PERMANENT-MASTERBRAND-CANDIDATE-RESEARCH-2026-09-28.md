@@ -1,17 +1,15 @@
 # Permanent Masterbrand Candidate Research
 
 **Date:** 2026-09-28  
-**Status:** ACTIVE RESEARCH  
+**Status:** CLOSED — SIA SELECTED  
 **Purpose:** Find a permanent family/masterbrand to replace the temporary working name “Admonk”.  
-**Benchmark candidate:** **SIA**
+**Selected permanent masterbrand:** **SIA**
 
 ---
 
 ## 1. Research rule
 
-The owner has locked **SIA** as the first potential candidate.
-
-SIA is **not** the final brand selection and no rebrand/migration is authorized yet.
+The owner has selected **SIA** as the permanent masterbrand. This closes comparative name research. Public rebrand/migration remains subject to legal/domain/company-name clearance and controlled rollout.
 
 All alternatives must compete with SIA on the same standard:
 
@@ -37,7 +35,7 @@ Research principle:
 **Origin:** Ancient Egyptian  
 **Core meaning territory:** perception, discernment, insight, intellect / thoughtful understanding  
 **Pronunciation:** SEE-ah  
-**Status:** **LEADING POTENTIAL CANDIDATE**
+**Status:** **FINAL OWNER SELECTION / LOCKED**
 
 Strengths:
 - 3 letters;
@@ -58,7 +56,7 @@ Risks:
 - formal jurisdiction/class clearance required before final selection.
 
 Decision:
-**Keep as benchmark #1.**
+**Selected as permanent masterbrand.**
 
 ---
 
@@ -409,7 +407,7 @@ No candidate should be promoted merely because it is available.
 - DAAT
 - FAHM
 
-**Research remains open.**
+**Research closed.**
 
 
 ---
@@ -548,3 +546,23 @@ Current conclusion:
 > **No Wave 1 or Wave 2 alternative has earned promotion beside SIA.**
 
 Research remains open.
+
+
+---
+
+## 10. Final selection
+
+**SIA is the permanent family/masterbrand selected by the owner.**
+
+The comparative naming exercise is closed.
+
+Implementation constraints:
+- formal trademark clearance remains mandatory;
+- domain strategy remains to be determined;
+- company/entity naming may require jurisdiction-specific decisions;
+- repository/file renames must be controlled and must not break active systems;
+- legacy “Admonk” references should be normalized gradually rather than mass-renamed blindly.
+
+Canonical principle:
+
+> **SIA is the family. Products define the outcome. Jarvis supplies the intelligence.**
