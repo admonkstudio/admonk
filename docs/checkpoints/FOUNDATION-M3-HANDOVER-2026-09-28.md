@@ -143,7 +143,7 @@ Sequence may be adjusted if an earlier decision exposes a dependency.
 
 ## 8. Exact resume instruction
 
-> **Resume at M3-09 — Cross-Product Capability/Data Interaction Map. M3-01 through M3-08 are locked.**
+> **Resume at the M3-09 owner decision — Cross-Product Capability/Data Interaction Map. M3-01 through M3-08 are locked. If accepted, proceed to M3-10 Product Activation/Deactivation/Offboarding Experience.**
 
 
 ## 9. M3 evidence decision protocol
@@ -283,3 +283,18 @@ Status:
 
 Current next gate:
 **M3-09 — Cross-Product Capability/Data Interaction Map.**
+
+
+## 18. Current M3-09 gate
+
+Canonical research:
+`docs/research/FOUNDATION-M3-09-CROSS-PRODUCT-CAPABILITY-DATA-INTERACTION-MAP-2026-09-28.md`
+
+Status:
+**RESEARCH COMPLETE — OWNER DECISION PENDING**
+
+Recommended direction:
+**Federated domain authority + governed cross-product interaction layer + selective shared relationship/projection intelligence.**
+
+If accepted:
+**M3-10 — Product Activation / Deactivation / Offboarding Experience.**
