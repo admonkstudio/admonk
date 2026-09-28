@@ -128,3 +128,21 @@ Principle:
 > **One place to administer Admonk; the right product remains the place to configure specialist work.**
 
 **Status:** LOCKED.
+
+### M3-08 — Thin Shared Family Shell + Product-Owned Navigation
+
+**Decision:** Admonk uses a compact, tenant-aware and entitlement-aware shared family shell across the product family while specialist products retain ownership of their primary/internal navigation and workspace structure.
+
+Rules:
+- the shared shell owns tenant/product switching, current product identity and a deliberately small set of family utilities such as notifications, help, account/profile, authorized Admonk One access and applicable Jarvis entry points;
+- specialist products own primary section navigation, product breadcrumbs, tabs, domain command bars, specialist settings, domain workflows and terminology;
+- cross-product movement uses stable Resource Links that preserve tenant/product/resource context and resolve inside the owning product;
+- only entitled/authorized products appear in switching/navigation surfaces;
+- Admonk One remains the family administration/setup surface and is not a heavy permanent wrapper around specialist products;
+- responsive behavior prioritizes one clear active product navigation model rather than stacked suite + product navigation, especially on mobile;
+- the shared shell stays intentionally small, accessible and slow-changing to preserve standalone value, product identity and low release coupling.
+
+Principle:
+> **Shared orientation; specialist navigation.**
+
+**Status:** LOCKED.
