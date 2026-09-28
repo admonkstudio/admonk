@@ -110,3 +110,21 @@ Principle:
 > **The customer buys a simple offer; the platform resolves it into precise entitlements underneath.**
 
 **Status:** LOCKED.
+
+### M3-07 — Admonk One as the Tenant Administration & Setup/Health Center
+
+**Decision:** Admonk One is the single customer-facing administration destination for shared tenant concerns across the Admonk product family, while specialist products retain ownership of domain-specific configuration and workflows.
+
+Rules:
+- Admonk One owns tenant/company setup, people/access, subscriptions/entitlements, shared integrations, shared security/policy, AI usage/credits, coordinated lifecycle/offboarding and suite-level Setup & Health;
+- specialist products own domain workflows, terminology, detailed settings, domain-specific roles/configuration and specialist setup;
+- Setup is a guided graph of **Required / Recommended / Later** tasks rather than one giant wizard;
+- setup is resumable, role-aware, product-aware and dependency-aware;
+- Admonk One deep-links into the owning product for specialist configuration instead of duplicating product UI;
+- onboarding evolves into persistent **Setup & Health** so configuration, connection, activation and governance issues remain visible after launch;
+- administration surfaces are capability-aware and least-privilege rather than universal super-admin screens.
+
+Principle:
+> **One place to administer Admonk; the right product remains the place to configure specialist work.**
+
+**Status:** LOCKED.
