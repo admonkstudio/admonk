@@ -646,3 +646,14 @@ Marketing pages can be highly specific:
 without creating separate codebases/products.
 
 This preserves product simplicity while letting acquisition messaging speak directly to the user's job.
+
+
+---
+
+## Naming supersession
+
+Following owner naming refinement:
+- **SOLO** = unified company operating environment;
+- **SIA** = intelligent operator/presence inside SOLO.
+
+All architectural ideas in this document remain active research. References to “SIA” as the environment should be read as SOLO; references to Jarvis as the intelligent operator should be read as SIA until controlled documentation normalization is completed.
