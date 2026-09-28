@@ -121,3 +121,19 @@ Audit:
 
 Proposed sequence if locked:
 **M2-19 Version/Compatibility/Migration → M2-19A Platform Operator Identity/Support Access/Environment Authority → M2-20 Runtime Boundaries.**
+
+## Current external challenge audit
+
+**Status:** COMPLETE — OWNER DECISION PENDING
+
+Canonical audit:
+`docs/audits/ADMONK-HARVEY-EXTERNAL-CHALLENGE-AUDIT-2026-09-28.md`
+
+Current verdict:
+- architecture — **GREEN / KEEP**;
+- scaling roadmap — **GREEN / KEEP**;
+- Admonk Control Room — **GREEN / KEEP WITH STRICT CONTROL-SPINE SCOPE**;
+- Harvey character system — **AMBER / KEEP WITH PRODUCT-FRAMING REFINEMENT + Lab validation**;
+- Harvey external product name — **RED / working name only until professional trademark/brand clearance**.
+
+Do not resume M2-19 until the owner accepts/revises this challenge-audit conclusion.
