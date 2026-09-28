@@ -6,6 +6,8 @@
 **Inherits:** Admonk Studio Foundation v1.0.0 / Product Supervisor v2.0.0  
 **Implementation:** Not authorized by this brief
 
+**Terminology compatibility — Harvey (2026-09-28):** references in earlier locked M2 decisions to `Corporate Brain` or `Corporate AI Assistant` mean the current Harvey Company Intelligence / Company-Executive Operating Lens. They do not define a second brain, memory system, runtime or authority model.
+
 ## Purpose
 
 Define the minimum reusable platform contracts/chassis that genuinely belong across Admonk products while preserving domain ownership, independent evolution and low operating cost.
@@ -486,6 +488,8 @@ Status: **OWNER DIRECTION RECORDED — M2-09 NOT YET LOCKED.**
 
 ## Locked decision — M2-09 Admonk One Shared Integration Control Plane
 
+**Plane naming clarification — 2026-09-28:** Admonk One is the **Tenant Administration Plane** for customer/tenant setup, integrations, access and subscriptions. The underlying shared platform APIs/state form the **Platform Management Plane**. The later Admonk Control Room is a distinct internal **Platform Operations Plane**. These experiences must not share permissions merely because they observe some of the same resources.
+
 **Decision:** Admonk One is the shared integration/control plane. Tenant/provider connections are established and managed centrally where practical; historical backfill and ongoing synchronization happen once; specialist products own domain semantics and expose governed data contracts; other products and Corporate Brain consume authorized domain data rather than reconnecting raw providers.
 
 ### Control-plane ownership
@@ -602,6 +606,51 @@ Do not create a second AI-specific permission model.
 - each executed/denied action should produce an explainable authorization/action receipt suitable for M2-12 audit/provenance.
 
 **Accepted cost:** agent capability manifests, delegation records and deterministic intersection evaluation, in exchange for useful cross-product AI without broad inherited authority or duplicate authorization systems.
+
+**Status:** LOCKED.
+
+
+## Locked decision — M2-12 Shared Event, Audit & Provenance Envelope
+
+**Decision:** Use a shared versioned envelope for cross-suite event, audit and provenance correlation while keeping domain state ownership and signal semantics separate.
+
+### Shared envelope
+Common correlation metadata may include where relevant:
+- tenant;
+- actor / delegator / machine identity;
+- product/domain;
+- organizational scope;
+- resource reference;
+- task / trace / operation correlation;
+- event/schema version;
+- timestamp/effective time;
+- sensitivity classification;
+- source/provenance references.
+
+### Semantic separation
+The following are related but are **not one storage model or one event type**:
+- audit records;
+- provenance records;
+- domain events;
+- Durable Task lifecycle events;
+- notification candidate/delivery events;
+- operational telemetry (metrics/traces/logs/profiles);
+- usage/economic records.
+
+Correlation IDs may connect them, but retention, authority, sampling and ownership differ.
+
+### Ownership
+- domain products own domain state and domain event meaning;
+- Durable Task runtime owns task lifecycle semantics;
+- products/shared platform own their audit obligations;
+- provenance remains derivation/evidence lineage rather than generic logging;
+- telemetry is operational evidence and may be sampled/aggregated according to policy;
+- usage/economic records follow M2-14 accounting semantics.
+
+### Rule
+Do not create one universal event bus/table merely because all systems need timestamps and IDs.
+
+**Accepted cost:** a small shared correlation/version envelope and indexing discipline, in exchange for cross-suite traceability without collapsing distinct operational/business records.
 
 **Status:** LOCKED.
 
