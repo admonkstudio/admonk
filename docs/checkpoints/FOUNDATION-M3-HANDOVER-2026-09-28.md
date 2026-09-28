@@ -143,7 +143,7 @@ Sequence may be adjusted if an earlier decision exposes a dependency.
 
 ## 8. Exact resume instruction
 
-> **Resume at M3-06 — Packaging: SKUs, Add-ons, Bundles & Plan Composition. M3-01 through M3-05 are locked.**
+> **Resume at the M3-06 owner decision — Packaging: SKUs, Add-ons, Bundles & Plan Composition. M3-01 through M3-05 are locked. If accepted, proceed to M3-07 Admonk One Administration & Setup Experience.**
 
 
 ## 9. M3 evidence decision protocol
@@ -247,3 +247,18 @@ Status:
 
 Current next gate:
 **M3-06 — Packaging: SKUs, Add-ons, Bundles & Plan Composition.**
+
+
+## 15. Current M3-06 gate
+
+Canonical research:
+`docs/research/FOUNDATION-M3-06-PACKAGING-SKUS-ADDONS-BUNDLES-2026-09-28.md`
+
+Status:
+**RESEARCH COMPLETE — OWNER DECISION PENDING**
+
+Recommended direction:
+**Simple commercial packages over atomic SKU entitlements.**
+
+If accepted:
+**M3-07 — Admonk One Administration & Setup Experience.**
