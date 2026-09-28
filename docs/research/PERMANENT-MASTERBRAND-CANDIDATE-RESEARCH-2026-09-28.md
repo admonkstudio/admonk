@@ -410,3 +410,141 @@ No candidate should be promoted merely because it is available.
 - FAHM
 
 **Research remains open.**
+
+
+---
+
+## 8. Wave 2 — additional ancient-language screening
+
+### CERNO
+
+**Origin:** Latin  
+**Meaning territory:** separate/sift; discern, perceive, comprehend; decide/determine.
+
+Why it was interesting:
+- excellent conceptual fit with governed intelligence: perceive → distinguish → decide;
+- five letters;
+- relatively easy pronunciation;
+- strong product/company sound.
+
+Blocker:
+- an active company already uses **Cerno** specifically for AI decision-making and explicitly markets the same Latin meaning: “sift, discern, decide.”
+
+Status: **SCREENED OUT — direct semantic + market collision.**
+
+---
+
+### SAPIO
+
+**Origin:** Latin  
+**Meaning territory:** wisdom/understanding/knowing.
+
+Why it was interesting:
+- five letters;
+- simple sound;
+- directly intelligence-related.
+
+Blocker:
+- active enterprise AI/software companies already use Sapio;
+- current positioning includes AI-native platforms and enterprise AI understanding/knowledge.
+
+Status: **SCREENED OUT.**
+
+---
+
+### NOEMA
+
+**Origin:** Ancient Greek  
+**Meaning territory:** thought / what is perceived or understood by the mind.
+
+Why it was interesting:
+- five letters;
+- strong intellectual meaning;
+- elegant wordmark.
+
+Blocker:
+- active AI-native software already uses Noema;
+- less immediate pronunciation certainty than SIA.
+
+Status: **SCREENED OUT.**
+
+---
+
+### BODHA
+
+**Origin:** Sanskrit  
+**Meaning territory:** understanding, knowledge, awakening/intelligence.
+
+Why it was interesting:
+- five letters;
+- excellent semantic fit;
+- strong ancient-language grounding.
+
+Blocker:
+- multiple active Bodha AI offerings already exist;
+- one explicitly builds enterprise AI, agentic systems, RAG and cognitive services.
+
+Status: **SCREENED OUT.**
+
+---
+
+### BINAH
+
+Reconfirmed in Wave 2.
+
+**Meaning:** understanding / discernment / insight.
+
+Blocker:
+- established `binah.ai` technology company already exists.
+
+Status: **SCREENED OUT.**
+
+---
+
+### DAAT
+
+Reconfirmed in Wave 2.
+
+Blocker:
+- active `daat.ai` already positions itself around operational intelligence, AI systems and agentic deployment.
+
+Status: **SCREENED OUT.**
+
+---
+
+### FAHM
+
+Reconfirmed in Wave 2.
+
+**Meaning:** Arabic understanding/comprehension.
+
+Blocker:
+- active FahmAI product already exists with AI-guided workflow + human approval positioning.
+
+Status: **SCREENED OUT.**
+
+---
+
+## 9. Research signal after two waves
+
+A consistent pattern is now visible:
+
+1. the ancient-language semantic territory is highly attractive to AI founders;
+2. most obvious short words meaning wisdom, mind, understanding, knowledge, discernment or order are already occupied;
+3. many collisions are not merely nominal — their product positioning is close to governed enterprise AI, agents, knowledge or decision support;
+4. picking the “next available ancient word” would likely produce a weaker brand without eliminating commercial risk.
+
+Therefore SIA remains the benchmark.
+
+The next research wave should emphasize:
+- less obvious but authentic Ancient Egyptian vocabulary;
+- terms whose original meaning is broad enough to grow beyond AI;
+- phonetic simplicity before literal semantic perfection;
+- commercial whitespace rather than dictionary novelty alone;
+- possible authentic derivations only if the derivation can be explained honestly and does not pretend to be an original ancient word.
+
+Current conclusion:
+
+> **No Wave 1 or Wave 2 alternative has earned promotion beside SIA.**
+
+Research remains open.
