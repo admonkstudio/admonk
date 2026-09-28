@@ -79,3 +79,31 @@ Core rules:
 **Accepted cost:** compatibility metadata, contract tests, overlap windows, migration state and deprecation tracking in exchange for independent releases, safer federated repositories and controlled migrations.
 
 **Status:** LOCKED.
+
+
+### M2-19A — Separate Platform-Operator Authority with Just-in-Time Privilege, Scoped Support Access & Explicit Environment
+
+**Decision:** Platform Operator is a distinct Admonk/platform authorization domain, not a tenant role and never a universal `super_admin`.
+
+Core rules:
+- a global human identity may have tenant memberships and a separate Platform Operator Assignment; the contexts are evaluated independently;
+- platform operators hold standing identity/eligibility, not standing unlimited privilege;
+- privileged Production capabilities activate through explicit time-bound Operator Sessions with environment, capability scope, business justification, stronger authentication/session assurance, automatic expiry and approval where policy requires it;
+- operational visibility, tenant business-content access and action authority are separate;
+- tenant business content requires a scoped, time-bound, revocable and auditable Support Access Grant tied to a case/incident/business justification;
+- Control Room visibility classes distinguish aggregate telemetry, tenant-identifiable operational metadata, tenant business content and secrets;
+- secrets/credentials are never directly readable through ordinary support access; operators use governed reconnect/rotate/revoke actions instead;
+- M2-11/RQ-07 remains the only action-authority model;
+- environment is a first-class authorization dimension; lower-environment authority does not imply Production authority;
+- operators act as themselves, not as customer users; no silent impersonation;
+- use risk-based JIT elevation rather than approval for every operator click;
+- break-glass is a dedicated emergency recovery path, strongly protected, immediately alerted/audited and reviewed after every use;
+- operator eligibility is lifecycle-managed, periodically reviewed and revocable;
+- high-risk policy may require separation of duties/self-approval prevention;
+- Admonk One should eventually expose tenant-scoped support-access transparency and optional stronger customer-approval controls where required;
+- Jarvis Platform Operator Lens may explain/propose/request access but cannot grant privilege, approve support access, switch authority context, invoke break-glass or reveal secrets;
+- privilege activation, support grants, privileged accesses and emergency sessions produce reconstructable Privileged Access Receipts linked to M2-12/RQ-07 evidence.
+
+**Accepted cost:** operator eligibility metadata, JIT sessions, support-access grants, expiry/reviews, emergency procedures and additional audit evidence in exchange for strong tenant isolation and safe cross-tenant platform operations.
+
+**Status:** LOCKED.
