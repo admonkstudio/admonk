@@ -3,7 +3,7 @@
 **Status:** Active  
 **Established:** 2026-09-26  
 **Owner:** Admonk Studio  
-**Current milestone:** **FOUNDATION-M3 — Main Product Master Plan**  
+**Current milestone:** **FOUNDATION-M4 — Operating-Model / Capability Template**  
 **Latest Studio Foundation release:** **v1.0.0**  
 **Included Product Supervisor:** **v2.0.0**  
 **FOUNDATION-M2:** **COMPLETE / LOCKED — 2026-09-28**  
