@@ -3,16 +3,25 @@
 **Status:** CANONICAL RESUME CHECKPOINT  
 **Repository:** admonkstudio/admonk  
 **Implementation posture:** Discovery / architecture only. No Production implementation is authorized by this checkpoint.  
-**Exact resume gate:** **FULL JARVIS ARCHITECTURE AUDIT COMPLETE — REMEDIATION PACKAGE OWNER LOCK PENDING**  
+**Exact resume gate:** **FULL HARVEY ARCHITECTURE AUDIT LOCKED + RECONCILED — NEXT: FULL ADMONK PRODUCT PLATFORM/FOUNDATION AUDIT**  
 **Parallel Foundation gate:** **FOUNDATION-M2 remains active at M2-19 — Version / Compatibility / Migration**
 
 ## Current architecture audit
 
-Canonical audit:
+Canonical audit (historical filename retained):
 `docs/audits/JARVIS-FULL-ARCHITECTURE-AUDIT-2026-09-28.md`
 
 Verdict:
-**PASS WITH REQUIRED REMEDIATIONS — OWNER LOCK PENDING**
+**LOCKED — PASS WITH REQUIRED REMEDIATIONS / reconciliation applied**
+
+Canonical current product identity:
+**Harvey**
+
+Current Harvey experience:
+`docs/HARVEY-EXPERIENCE-DIRECTION.md`
+
+Harvey character system:
+`docs/HARVEY-IDENTITY-CHARACTER-DIRECTION.md`
 
 The audit does not reopen RQ-01..25. It recommends documentation reconciliation, operator-plane hardening, explicit signal taxonomy, telemetry privacy/environment rules, and feeding version/runtime findings into M2-19/M2-20.
 
@@ -32,8 +41,9 @@ Chat history is not the canonical source of truth for these decisions.
 ## 2. Resume reading order
 
 1. docs/checkpoints/JARVIS-DEEP-RESEARCH-HANDOVER-2026-09-28.md
-2. docs/research/JARVIS-DEEP-RESEARCH-REGISTER.md
-3. docs/JARVIS-EXPERIENCE-DIRECTION.md
+2. docs/HARVEY-EXPERIENCE-DIRECTION.md
+3. docs/HARVEY-IDENTITY-CHARACTER-DIRECTION.md
+4. docs/research/JARVIS-DEEP-RESEARCH-REGISTER.md
 4. docs/FOUNDATION-M2-OPERATING-BRIEF.md
 5. docs/PRODUCT-PLATFORM-FOUNDATION.md
 6. docs/FOUNDATION-STATUS.md
@@ -595,11 +605,11 @@ If this checkpoint conflicts with a later explicitly locked/versioned repository
 
 ## 18. Exact resume statement
 
-> **Resume at the Jarvis architecture audit remediation decision.**
+> **Resume at the full Admonk Product Platform/Foundation audit using the reconciled Harvey architecture.**
 >
 > RQ-01 through RQ-25 are locked.
 >
-> Deep Research is complete and the full Jarvis architecture audit has passed with required remediations. Review/lock `docs/audits/JARVIS-FULL-ARCHITECTURE-AUDIT-2026-09-28.md`, then apply the approved reconciliation and feed M2-19/M2-20.
+> Deep Research is complete; the full Harvey architecture audit is locked and its documentation reconciliation is applied. Continue with the full Admonk Product Platform/Foundation audit and feed version/runtime findings into M2-19/M2-20.
 >
 > Do not start Production implementation, select implementation vendors, reopen prior RQs, or resume Marketing Hub application development until the relevant architecture/owner gates explicitly authorize it.
 
