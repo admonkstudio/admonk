@@ -77,17 +77,18 @@ Current decision sequence starts with repository/code organization and shared-co
 The Product Platform Foundation is not locked. Existing M2 documents remain direction/architecture discovery until FOUNDATION-M2 decisions are completed.
 
 
-## Parallel Jarvis experience track
+## Parallel Harvey experience track
 
 Jarvis research is running in parallel with FOUNDATION-M2 and does not replace the current M2 sequence.
 
 Current state:
-- Jarvis strategic experience direction — **LOCKED**;
+- Harvey strategic experience direction — **LOCKED**;
 - JX-01 Jarvis Surface Contract — **LOCKED**;
 - Deep Research Register **RQ-01 through RQ-25 — COMPLETE / LOCKED**;
-- Full Jarvis architecture audit — **COMPLETE: PASS WITH REQUIRED REMEDIATIONS / OWNER LOCK PENDING**;
-- Jarvis Lab proof program — **LOCKED as a Lab/discovery program**, not yet authorized for implementation;
+- Full Harvey architecture audit — **LOCKED: PASS WITH REQUIRED REMEDIATIONS / reconciliation applied**;
+- Harvey Lab proof program — **LOCKED as a Lab/discovery program**, not yet authorized for implementation;
 - RQ-25 Production Evolution Architecture + SCALE-0..6 roadmap + Admonk Control Room — **LOCKED**;
+- Harvey product identity + initial Male/Female × Professional/Friendly character system — **LOCKED OWNER DIRECTION**;
 - n8n is historical Kalam workflow evidence only and is **not** Jarvis Lab or Production execution infrastructure;
 - JX-03/JX-04 final visual/motion design direction remains open and is accumulating owner-selected references.
 
@@ -97,11 +98,20 @@ Owner-approved responsiveness constraint:
 Canonical current checkpoint:
 `docs/checkpoints/JARVIS-DEEP-RESEARCH-HANDOVER-2026-09-28.md`
 
-Current Jarvis architecture audit:
+Current Harvey architecture audit (historical filename retained):
 `docs/audits/JARVIS-FULL-ARCHITECTURE-AUDIT-2026-09-28.md`
+
+Canonical Harvey experience:
+`docs/HARVEY-EXPERIENCE-DIRECTION.md`
+
+Harvey identity/characters:
+`docs/HARVEY-IDENTITY-CHARACTER-DIRECTION.md`
 
 Older JX-02 checkpoint remains historical discovery evidence:
 `docs/checkpoints/JARVIS-JX02-DISCOVERY-CHECKPOINT-2026-09-27.md`
 
 FOUNDATION-M2 remains at:
 **M2-19 — Version / Compatibility / Migration**.
+
+Next Harvey/Foundation gate:
+**Full Admonk Product Platform/Foundation audit using the reconciled Harvey architecture, with findings fed into M2-19/M2-20.**
