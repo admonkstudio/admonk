@@ -143,7 +143,7 @@ Sequence may be adjusted if an earlier decision exposes a dependency.
 
 ## 8. Exact resume instruction
 
-> **Resume at M3-07 — Admonk One Administration & Setup Experience. M3-01 through M3-06 are locked.**
+> **Resume at the M3-07 owner decision — Admonk One Administration & Setup Experience. M3-01 through M3-06 are locked. If accepted, proceed to M3-08 Cross-Product Navigation & Shared Shell.**
 
 
 ## 9. M3 evidence decision protocol
@@ -259,3 +259,18 @@ Status:
 
 Current next gate:
 **M3-07 — Admonk One Administration & Setup Experience.**
+
+
+## 16. Current M3-07 gate
+
+Canonical research:
+`docs/research/FOUNDATION-M3-07-ADMONK-ONE-ADMIN-SETUP-EXPERIENCE-2026-09-28.md`
+
+Status:
+**RESEARCH COMPLETE — OWNER DECISION PENDING**
+
+Recommended direction:
+**Central Admonk One administration + federated product setup.**
+
+If accepted:
+**M3-08 — Cross-Product Navigation & Shared Shell.**
