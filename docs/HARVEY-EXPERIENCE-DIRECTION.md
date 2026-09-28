@@ -173,7 +173,7 @@ Admonk will build its own Harvey experience rather than adopting one third-party
 Benchmark and pattern sources include:
 - SAP Joule Work for AI-first enterprise work orchestration;
 - OpenAI Apps/interactive UI patterns;
-- Harvey Institute for commercial voice + command-center + action/audit patterns;
+- Jarvis Institute for commercial voice + command-center + action/audit patterns;
 - selected open-source Harvey projects for voice-state, latency, memory, tool-routing and implementation lessons.
 
 Third-party products/repositories are pattern libraries and test references, not architectural authority.
@@ -236,7 +236,7 @@ Current research distinguishes:
 
 The current working architecture uses a realtime experience plus a **Reflex Router** that can select **FAST**, **DEEP** or **ACTION** paths according to task complexity, authority and quality requirements.
 
-The exact `open-jarvis/OpenHarvey` repository is an **Apache-2.0** selective lab/runtime/evaluation candidate, not the Admonk governance or product authority. Existing Kalam n8n automations are historical workflow evidence only; they are not Harvey Lab or Production execution infrastructure.
+The exact `open-jarvis/OpenJarvis` repository is an **Apache-2.0** selective lab/runtime/evaluation candidate, not the Admonk governance or product authority. Existing Kalam n8n automations are historical workflow evidence only; they are not Harvey Lab or Production execution infrastructure.
 
 Canonical active checkpoint:
 `docs/checkpoints/JARVIS-JX02-DISCOVERY-CHECKPOINT-2026-09-27.md`
