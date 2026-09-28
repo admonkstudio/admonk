@@ -143,7 +143,7 @@ Sequence may be adjusted if an earlier decision exposes a dependency.
 
 ## 8. Exact resume instruction
 
-> **Resume at the M3-03 owner decision — Product / Module Catalog & Boundaries. M3-01 and M3-02 are locked. If M3-03 is accepted, proceed to M3-04 Jarvis Company Intelligence Commercial/Product Role.**
+> **Resume at M3-04 — Jarvis Company Intelligence Commercial/Product Role. M3-01 through M3-03 are locked.**
 
 
 ## 9. M3 evidence decision protocol
@@ -219,10 +219,7 @@ Canonical research:
 `docs/research/FOUNDATION-M3-03-PRODUCT-MODULE-CATALOG-BOUNDARIES-2026-09-28.md`
 
 Status:
-**RESEARCH COMPLETE — OWNER DECISION PENDING**
+**LOCKED — OWNER SELECTED SCENARIO B**
 
-Recommended direction:
-**Outcome-owned products + selective modules/add-ons.**
-
-If accepted:
+Current next gate:
 **M3-04 — Jarvis Company Intelligence Commercial/Product Role.**
