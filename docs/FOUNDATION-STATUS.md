@@ -243,3 +243,10 @@ Current M3 completeness audit:
 - Company/context graphs, interactive artifacts, deterministic workflows, governance, process templates, meeting lifecycle, agent control and ROI measurement are treated as current market table stakes or near-table-stakes.
 - Differentiation research centers on role/responsibility operating models, three onboarding modes, expected/configured/observed process comparison, one SIA identity, controlled interactive runtime and solo-to-enterprise continuity.
 - **SOLO remains a temporary working name.**
+
+
+### SIA company-brain thesis
+- SIA is the intelligent operator over the whole company operating model.
+- SIA may suggest, follow authorized orders, coordinate work, instantiate digital specialists and temporarily cover missing operational capacity.
+- Long-term target: **no artificial functional ceiling; bounded authority always**.
+- Company-brain / digital-department scenarios are **major research inputs for the upcoming Master Plan re-audit**, not yet permission to bypass M2 governance.
