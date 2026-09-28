@@ -2,9 +2,9 @@
 
 **Date:** 2026-09-27
 **Program:** Admonk Foundation Program
-**Current milestone:** **FOUNDATION-M2 — Define Shared Product Platform Foundation**
-**Current sub-milestone:** **FOUNDATION-M2 Exit Reconciliation / Completeness Audit — COMPLETE / OWNER LOCK PENDING**
-**Milestone status:** **ACTIVE**
+**Current milestone:** **FOUNDATION-M3 — Main Product Master Plan**
+**Current sub-milestone:** **M3 kickoff / master-plan synthesis — NEXT**
+**Milestone status:** **FOUNDATION-M2 COMPLETE / LOCKED; FOUNDATION-M3 ACTIVE**
 **Foundation lock:** **LOCKED — Admonk Studio Foundation v1.0.0**
 **Current stable Product Supervisor:** **v2.0.0**  
 **Release mapping:** Studio Foundation v1.0.0 → Product Supervisor v2.0.0
@@ -64,31 +64,47 @@ All FOUNDATION-M1 exit gates passed:
 
 Future changes to this baseline must be versioned; do not silently rewrite the locked release.
 
-## Current milestone — FOUNDATION-M2
+## FOUNDATION-M2 — COMPLETE / LOCKED
+
 **FOUNDATION-M2 — Define Shared Product Platform Foundation**
 
-Status: **ACTIVE — research/architecture decisions started.**
+Status: **COMPLETE / LOCKED — 2026-09-28**
 
-Operating brief:
+Canonical operating brief:
 `docs/FOUNDATION-M2-OPERATING-BRIEF.md`
 
-Current M2-19 research:
-`docs/research/FOUNDATION-M2-19-VERSION-COMPATIBILITY-MIGRATION-2026-09-28.md`
+Canonical decisions:
+`docs/FOUNDATION-M2-DECISIONS.md`
 
-Current M2-19A research:
-`docs/research/FOUNDATION-M2-19A-PLATFORM-OPERATOR-AUTHORITY-2026-09-28.md`
+Exit audit:
+`docs/audits/FOUNDATION-M2-EXIT-RECONCILIATION-2026-09-28.md`
 
-Current M2-20 research:
-`docs/research/FOUNDATION-M2-20-RUNTIME-BOUNDARIES-2026-09-28.md`
+M2-01 through M2-20 are locked.
 
-Current decision sequence starts with repository/code organization and shared-code boundaries before runtime/platform contracts.
+Exit reconciliations applied:
+- **R-01 Workload/Machine Identity** — explicit workload identity for protected internal service/worker access; no implicit internal-network trust;
+- **R-02 Tenant/Product Operational Lifecycle** — commercial entitlement remains separate from provisioning/active/suspended/offboarding/retained lifecycle state.
 
-The Product Platform Foundation is not locked. Existing M2 documents remain direction/architecture discovery until FOUNDATION-M2 decisions are completed.
+Former Product Platform “open questions” were reclassified:
+- resolved architecture semantics — closed by M2;
+- runtime/vendor implementation — intentionally deferred;
+- commercial/product policy — M3/M4;
+- market/legal/Production-readiness policy — later launch/operations gates.
 
+No M2-21 is required.
+
+## Current milestone — FOUNDATION-M3
+
+**FOUNDATION-M3 — Main Product Master Plan**
+
+Status: **ACTIVE — kickoff / synthesis next.**
+
+Goal:
+define the complete product family as one commercially composable offering using the now-locked Shared Product Platform Foundation.
 
 ## Parallel Jarvis experience track
 
-Harvey research/design is running in parallel with FOUNDATION-M2 and does not replace the current M2 sequence.
+Jarvis research/design remains a supporting product-experience track and does not replace the current Foundation milestone sequence.
 
 Current state:
 - Jarvis strategic experience direction — **LOCKED**;
@@ -118,16 +134,14 @@ Canonical Jarvis experience:
 Older JX-02 checkpoint remains historical discovery evidence:
 `docs/checkpoints/JARVIS-JX02-DISCOVERY-CHECKPOINT-2026-09-27.md`
 
-FOUNDATION-M2 remains at:
-**M2-19 — Version / Compatibility / Migration**.
+FOUNDATION-M2 is **COMPLETE / LOCKED**. Current Foundation milestone is **FOUNDATION-M3 — Main Product Master Plan**.
 
 Product Platform/Foundation audit — **LOCKED: PASS WITH REQUIRED FOUNDATION REFINEMENTS / owner accepted**.
 
 Audit:
 `docs/audits/ADMONK-PRODUCT-PLATFORM-FOUNDATION-AUDIT-2026-09-28.md`
 
-Official next sequence:
-**M2-19 LOCKED → M2-19A LOCKED → M2-20 LOCKED → FOUNDATION-M2 Exit Reconciliation — NEXT.**
+Official M2 sequence is complete. Next: **FOUNDATION-M3 — Main Product Master Plan**.
 
 ## External challenge audit
 
@@ -157,11 +171,11 @@ Canonical audit:
 `docs/audits/FOUNDATION-M2-EXIT-RECONCILIATION-2026-09-28.md`
 
 Verdict:
-**PASS WITH TWO REQUIRED RECONCILIATIONS — OWNER LOCK PENDING**
+**LOCKED — PASS / required reconciliations applied**
 
-Required before M2 closure:
-- R-01 Workload/Machine Identity promotion;
-- R-02 Tenant/Product Operational Lifecycle contract;
-- stale Product Platform open-question list reclassification.
+Closure actions completed:
+- R-01 Workload/Machine Identity promoted;
+- R-02 Tenant/Product Operational Lifecycle promoted;
+- stale Product Platform open questions reclassified.
 
-If accepted, apply these reconciliations, mark FOUNDATION-M2 COMPLETE/LOCKED, and advance to FOUNDATION-M3 — Main Product Master Plan.
+FOUNDATION-M2 is COMPLETE / LOCKED.
