@@ -211,3 +211,25 @@ Principle:
 > **Show customers the health they need to act; keep operator complexity behind the boundary.**
 
 **Status:** LOCKED.
+
+### M3-12 — Managed Evergreen Releases with Bounded Customer Change Control
+
+**Decision:** Admonk remains an evergreen SaaS platform with one supported product lineage while giving customers bounded preparation, preview and change-management controls for material changes.
+
+Rules:
+- Standard/Stable is the default customer release experience;
+- material changes may use controlled Preview for selected users, tenants or test environments so customers can validate workflows, training, governance and support readiness before broader adoption;
+- Admonk One provides a shared Changes & Compatibility view for material upcoming changes, rollout timing, affected scope, required actions, compatibility/deprecation state and tenant readiness;
+- specialist products remain independently releasable and own domain-specific release impact and migration guidance;
+- Shared Platform owns the common change/compatibility presentation contract and cross-product readiness aggregation;
+- stable externally consumable contracts never break silently; deprecation, replacement and migration expectations follow M2-19;
+- customer deferral, freeze windows or bundled release cadence may be added only as bounded capabilities when real customer evidence justifies their cost;
+- release controls never become indefinite version pinning, tenant-specific software forks or permanent compatibility branches;
+- security, critical reliability, legal/compliance or provider-forced changes may bypass ordinary deferral according to declared policy;
+- routine backward-compatible improvements remain evergreen and do not create unnecessary change-management overhead;
+- customer-visible release audiences are distinct from internal software/package/service versions.
+
+Principle:
+> **Customers can prepare for change; they do not own a permanent fork of Admonk.**
+
+**Status:** LOCKED.
