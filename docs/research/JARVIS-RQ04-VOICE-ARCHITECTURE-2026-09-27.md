@@ -6,6 +6,8 @@
 **Status:** LOCKED — OWNER ACCEPTED  
 **Implementation authority:** None. Product/architecture research only.
 
+**Authority terminology supersession — 2026-09-28:** A0/A1/A2/A3 references in this historical voice research are retired. Voice uses the same canonical M2-11/RQ-07 action classes as every other Harvey surface.
+
 ## 1. Decision problem
 
 Jarvis voice must feel like a natural part of the software experience without:
@@ -151,7 +153,7 @@ The Jarvis backend owns:
 - C0/C1/C2/C3 routing;
 - evidence/context retrieval;
 - specialist orchestration;
-- A0/A1/A2/A3 authority;
+- M2-11/RQ-07 action authority;
 - permissions/approvals;
 - durable task state;
 - tool execution;
@@ -184,7 +186,7 @@ This allows Jarvis to keep the conversation alive while deeper work proceeds ind
         │ task contract                    │
         │ C0/C1/C2/C3 cognitive routing    │
         │ governed context/evidence        │
-        │ A0/A1/A2/A3 authority            │
+        │ M2-11/RQ-07 action authority            │
         │ tools / workflows                │
         │ durable/background work          │
         │ audit/provenance                 │
@@ -511,7 +513,7 @@ The purpose is not to choose the provider with the prettiest demo. It is to meas
 >
 > Jarvis uses a **dual-plane architecture**:
 > 1. a low-latency realtime conversation plane for audio, turn-taking, interruption, transcripts/events and concise spoken interaction;
-> 2. an independent governed Jarvis task/backend plane for C0–C3 cognition, context/evidence, A0–A3 authority, tools, actions and durable work.
+> 2. an independent governed Jarvis task/backend plane for C0–C3 cognition, context/evidence, M2-11/RQ-07 action authority, tools, actions and durable work.
 >
 > Realtime voice may handle bounded conversational turns directly, but deeper analysis/actions are delegated without blocking the conversation.
 >
