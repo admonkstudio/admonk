@@ -1,7 +1,7 @@
 # FOUNDATION-M3-11 — Support / Operations Model and Tenant-Visible Health
 
 **Date:** 2026-09-28  
-**Status:** RESEARCH COMPLETE — OWNER DECISION PENDING  
+**Status:** LOCKED — OWNER SELECTED SCENARIO B  
 **Milestone:** FOUNDATION-M3 — Main Product Master Plan  
 **Method:** quick internal scan → two high-value sources → two scenarios → challenge → synthesis  
 **Implementation authority:** None
@@ -304,4 +304,4 @@ And the support team should not need to manually reconstruct context that Admonk
 >
 > **Show customers the health they need to act; keep operator complexity behind the boundary.**
 
-**Recommendation:** LOCK Scenario B.
+**Recommendation:** LOCKED — Scenario B.
