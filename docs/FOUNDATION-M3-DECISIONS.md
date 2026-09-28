@@ -259,3 +259,24 @@ Canonical family shorthand:
 > **SIA is the family. Products define the outcome. Jarvis supplies the intelligence.**
 
 **Status:** LOCKED.
+
+
+### M3-14 — SOLO Environment + SIA Intelligent Operator Naming
+
+**Decision:** The active naming architecture is now:
+
+- **SOLO** — the unified company operating environment / primary software product.
+- **SIA** — the intelligent operator/presence inside SOLO.
+- **Jarvis** — historical discovery/prototype terminology only; retire from active customer-facing product naming.
+- **Admonk** — historical/working masterbrand terminology only; retire from active customer-facing product naming.
+
+Interpretation:
+- SOLO is the environment where company people, roles, responsibilities, processes, systems, data, artifacts, meetings, actions and relationships are modeled and operated.
+- SIA is the intelligence that understands context, selects approved capabilities/components/playbooks, explains, coordinates and acts under authority.
+- role/domain offers such as “SOLO for Marketing Managers” or equivalent are commercial entry points/lenses rather than separate software products by default.
+- legal trademark, domain and entity clearance remains mandatory before public launch and may affect rollout mechanics or force a later naming reconsideration if a blocking conflict is found.
+
+Principle:
+> **Open SOLO. Ask SIA.**
+
+**Status:** LOCKED BY OWNER — COMMERCIAL/LEGAL CLEARANCE PENDING.
