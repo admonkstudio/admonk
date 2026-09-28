@@ -3,7 +3,7 @@
 **Status:** CANONICAL RESUME CHECKPOINT  
 **Repository:** admonkstudio/admonk  
 **Implementation posture:** Discovery / architecture only. No Production implementation is authorized by this checkpoint.  
-**Exact resume gate:** **FOUNDATION-M2 M2-19 — VERSION / COMPATIBILITY / MIGRATION**  
+**Exact resume gate:** **FOUNDATION-M2 M2-19 — RESEARCH COMPLETE / OWNER LOCK PENDING**  
 **Parallel Foundation gate:** **FOUNDATION-M2 remains active at M2-19 — Version / Compatibility / Migration**
 
 ## Current architecture audit
@@ -61,6 +61,17 @@ Verdict:
 
 Key proposed sequence:
 **M2-19 → M2-19A Platform Operator Identity/Support Access/Environment Authority → M2-20**
+
+## Current M2-19 gate
+
+Canonical research:
+`docs/research/FOUNDATION-M2-19-VERSION-COMPATIBILITY-MIGRATION-2026-09-28.md`
+
+Status:
+**RESEARCH COMPLETE — RECOMMENDED FOR OWNER LOCK**
+
+If locked, the next gate is:
+**M2-19A — Platform Operator Identity, Support Access & Environment Authority.**
 
 ## 1. Purpose
 
@@ -642,7 +653,7 @@ If this checkpoint conflicts with a later explicitly locked/versioned repository
 
 ## 18. Exact resume statement
 
-> **Resume at FOUNDATION-M2 M2-19 — Version / Compatibility / Migration.**
+> **Resume at the M2-19 owner lock decision.**
 >
 > RQ-01 through RQ-25 are locked.
 >
