@@ -3,7 +3,7 @@
 **Status:** CANONICAL RESUME CHECKPOINT  
 **Repository:** admonkstudio/admonk  
 **Implementation posture:** Discovery / architecture only. No Production implementation is authorized by this checkpoint.  
-**Exact resume gate:** **FULL HARVEY ARCHITECTURE AUDIT LOCKED + RECONCILED — NEXT: FULL ADMONK PRODUCT PLATFORM/FOUNDATION AUDIT**  
+**Exact resume gate:** **ADMONK PRODUCT PLATFORM/FOUNDATION AUDIT COMPLETE — OWNER LOCK PENDING**  
 **Parallel Foundation gate:** **FOUNDATION-M2 remains active at M2-19 — Version / Compatibility / Migration**
 
 ## Current architecture audit
@@ -24,6 +24,17 @@ Harvey character system:
 `docs/HARVEY-IDENTITY-CHARACTER-DIRECTION.md`
 
 The audit does not reopen RQ-01..25. It recommends documentation reconciliation, operator-plane hardening, explicit signal taxonomy, telemetry privacy/environment rules, and feeding version/runtime findings into M2-19/M2-20.
+
+## Current Foundation audit
+
+Canonical audit:
+`docs/audits/ADMONK-PRODUCT-PLATFORM-FOUNDATION-AUDIT-2026-09-28.md`
+
+Verdict:
+**PASS WITH REQUIRED FOUNDATION REFINEMENTS — OWNER LOCK PENDING**
+
+Key proposed sequence:
+**M2-19 → M2-19A Platform Operator Identity/Support Access/Environment Authority → M2-20**
 
 ## 1. Purpose
 
@@ -605,11 +616,11 @@ If this checkpoint conflicts with a later explicitly locked/versioned repository
 
 ## 18. Exact resume statement
 
-> **Resume at the full Admonk Product Platform/Foundation audit using the reconciled Harvey architecture.**
+> **Resume at the Admonk Product Platform/Foundation audit owner decision.**
 >
 > RQ-01 through RQ-25 are locked.
 >
-> Deep Research is complete; the full Harvey architecture audit is locked and its documentation reconciliation is applied. Continue with the full Admonk Product Platform/Foundation audit and feed version/runtime findings into M2-19/M2-20.
+> Deep Research and the Harvey architecture audit are complete. The full Product Platform/Foundation audit is also complete and awaits owner lock. If accepted, apply its safe refinements and resume M2-19.
 >
 > Do not start Production implementation, select implementation vendors, reopen prior RQs, or resume Marketing Hub application development until the relevant architecture/owner gates explicitly authorize it.
 
