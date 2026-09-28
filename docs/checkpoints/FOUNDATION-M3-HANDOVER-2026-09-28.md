@@ -143,7 +143,7 @@ Sequence may be adjusted if an earlier decision exposes a dependency.
 
 ## 8. Exact resume instruction
 
-> **Resume at M3-11 — Support / Operations Model and Tenant-Visible Health. M3-01 through M3-10 are locked.**
+> **Resume at the M3-11 owner decision — Support / Operations Model and Tenant-Visible Health. M3-01 through M3-10 are locked. If accepted, proceed to M3-12 Release / Compatibility Expectations Visible to Customers.**
 
 
 ## 9. M3 evidence decision protocol
@@ -307,3 +307,18 @@ Status:
 
 Current next gate:
 **M3-11 — Support / Operations Model and Tenant-Visible Health.**
+
+
+## 20. Current M3-11 gate
+
+Canonical research:
+`docs/research/FOUNDATION-M3-11-SUPPORT-OPERATIONS-TENANT-VISIBLE-HEALTH-2026-09-28.md`
+
+Status:
+**RESEARCH COMPLETE — OWNER DECISION PENDING**
+
+Recommended direction:
+**Layered tenant health + contextual guided support, with public status and internal Control Room kept distinct.**
+
+If accepted:
+**M3-12 — Release / Compatibility Expectations Visible to Customers.**
