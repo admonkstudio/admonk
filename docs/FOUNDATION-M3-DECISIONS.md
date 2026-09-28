@@ -166,3 +166,26 @@ Principle:
 > **Share capabilities and relationships; keep truth with its owner.**
 
 **Status:** LOCKED.
+
+### M3-10 — Guided, Staged, Dependency-Aware Product Lifecycle
+
+**Decision:** Admonk separates commercial entitlement, operational lifecycle, user access and data retention in both runtime behavior and customer-facing administration.
+
+Rules:
+- entitlement acquisition starts provisioning; a product is not treated as fully active until required readiness conditions are satisfied;
+- customer-facing lifecycle distinguishes activation/setup, active operation, degraded/suspended states, offboarding, retained state and irreversible closure;
+- scheduled commercial cancellation, administrative suspension, security/risk suspension and permanent product offboarding are distinct actions/states;
+- Admonk One owns the customer-visible lifecycle plan, impact preview and cross-product coordination while specialist products own domain-specific lifecycle hooks/readiness/retention execution;
+- before destructive offboarding, Admonk One shows affected users, integrations, automations/durable work, Jarvis/cross-product dependencies, exports and retention/deletion consequences;
+- product deactivation stops ordinary product operation without automatically deleting retained domain data or shared resources still required by other products;
+- shared resources are released only when no remaining active/retained dependency and no governance requirement still needs them;
+- retained products remain visible to authorized administrators with clear export/reactivation/retention status where policy permits;
+- permanent or accelerated deletion is a separate higher-friction destructive action with stronger authorization/confirmation than routine cancellation;
+- reactivation must re-run applicable compatibility, setup, security and readiness checks rather than silently restoring normal operation;
+- lifecycle transitions are auditable and coordinated through Setup & Health;
+- exact retention duration remains product/domain/legal-policy governed rather than one universal family rule.
+
+Principle:
+> **Turning a product off should be safe and reversible until the customer deliberately crosses the irreversible boundary.**
+
+**Status:** LOCKED.
