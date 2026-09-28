@@ -2,9 +2,9 @@
 
 **Date:** 2026-09-29
 **Program:** Admonk Foundation Program
-**Current milestone:** **FOUNDATION-M3 — Main Product Master Plan**
-**Current sub-milestone:** **M3 final reconciliation — COMPLETE / REVISED MASTER PLAN CURRENT / OWNER FINAL LOCK PENDING**
-**Milestone status:** **FOUNDATION-M2 COMPLETE / LOCKED; FOUNDATION-M3 ACTIVE**
+**Current milestone:** **FOUNDATION-M4 — Operating-Model / Capability Template**
+**Current sub-milestone:** **M4 preparation — ACTIVE**
+**Milestone status:** **FOUNDATION-M2 COMPLETE / LOCKED; FOUNDATION-M3 COMPLETE / LOCKED; FOUNDATION-M4 ACTIVE**
 **Foundation lock:** **LOCKED — Admonk Studio Foundation v1.0.0**
 **Current stable Product Supervisor:** **v2.0.0**  
 **Release mapping:** Studio Foundation v1.0.0 → Product Supervisor v2.0.0
@@ -275,3 +275,17 @@ SOLO remains a temporary environment name.
 
 Current M3 handover:
 `docs/checkpoints/FOUNDATION-M3-HANDOVER-2026-09-29.md`
+
+
+## FOUNDATION-M3 — COMPLETE / LOCKED
+
+**Owner approved the reconciled Product Master Plan on 2026-09-29.**
+
+Canonical authority:
+- `docs/PRODUCT-MASTER-PLAN.md`
+- `docs/SIA-EXPERIENCE-DIRECTION.md`
+- `docs/audits/FOUNDATION-M3-FINAL-RECONCILIATION-2026-09-29.md`
+- `docs/FOUNDATION-M2-PRODUCT-MODEL-RECONCILIATION-2026-09-29.md`
+
+Next milestone:
+**FOUNDATION-M4 — Operating-Model / Capability Template**
