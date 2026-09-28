@@ -932,3 +932,18 @@ Canonical research:
 ## Current gate — FOUNDATION-M2 Exit Reconciliation / Completeness Audit
 
 Audit all locked M2-01..M2-20 decisions as one platform architecture, reconcile remaining open questions into semantic/runtime/vendor/product-policy categories, detect contradictions or missing boundaries, and determine whether FOUNDATION-M2 is ready to close.
+
+
+## Current gate — M2 Exit Reconciliation
+
+Canonical audit:
+`docs/audits/FOUNDATION-M2-EXIT-RECONCILIATION-2026-09-28.md`
+
+Status: **AUDIT COMPLETE — PASS WITH TWO REQUIRED RECONCILIATIONS / OWNER LOCK PENDING**
+
+Required before formal M2 closure:
+1. promote explicit Workload/Machine Identity contract from locked RQ-20;
+2. add Tenant/Product Operational Lifecycle contract tying M2-06/M2-08/M2-18;
+3. reclassify stale Product Platform open questions into resolved architecture vs deferred implementation/vendor/product/legal policy.
+
+No M2-21 is recommended.
