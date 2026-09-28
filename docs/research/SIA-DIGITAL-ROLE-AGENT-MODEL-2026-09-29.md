@@ -471,3 +471,219 @@ The master-plan audit must evaluate:
 - employee trust/adoption.
 
 Do not lock full autonomous workforce behavior until those areas are tested.
+
+
+---
+
+## 18. SIA as Company Brain
+
+The owner clarified the intended ceiling:
+
+> **SIA is the company brain. It may suggest, follow orders, coordinate work, temporarily fill missing capacity, operate specialist functions, analyze outcomes and report upward for decision-making.**
+
+This should be interpreted as:
+
+> **No artificial functional ceiling, but always bounded authority.**
+
+SIA may potentially:
+- advise;
+- answer;
+- analyze;
+- investigate;
+- audit;
+- prepare;
+- communicate;
+- coordinate;
+- schedule;
+- delegate;
+- assign;
+- monitor;
+- execute;
+- temporarily staff roles/functions;
+- instantiate specialist digital workers;
+- supervise digital workers;
+- request human decisions;
+- escalate;
+- summarize/report to owners/managers;
+- hand work back to humans.
+
+SIA must still be constrained by:
+- explicit tenant/company policy;
+- user/delegator authority;
+- role/capability scope;
+- provider limits;
+- legal/regulatory requirements;
+- privacy/data boundaries;
+- approval thresholds;
+- risk classification;
+- runtime/credit budgets;
+- auditable action receipts.
+
+SIA's ambition is broad capability, not unrestricted authority.
+
+---
+
+## 19. Department continuity / emergency staffing
+
+A department or function can become temporarily under-capacity or fully unstaffed.
+
+Example:
+- recruiting team resigns;
+- core recruiting workflows must continue;
+- company owner authorizes temporary digital coverage.
+
+Potential SIA response:
+
+1. identify responsibilities that must continue;
+2. identify which are safely executable by deterministic automation;
+3. identify which can be assigned to SIA Specialists;
+4. identify which legally/policy-wise require humans;
+5. instantiate a temporary Recruiting Department coverage plan;
+6. assign digital specialists to bounded responsibilities;
+7. keep approval/escalation paths to the owner or authorized manager;
+8. produce daily/weekly operating reports;
+9. maintain complete audit/provenance;
+10. allow new human hires to progressively take over responsibilities.
+
+The digital department is **temporary operating capacity**, not a permanent replacement assumption.
+
+Human re-entry should be first-class:
+- shadow SIA;
+- review history/artifacts;
+- accept responsibility transfer;
+- reduce digital authority;
+- retire temporary specialists when appropriate.
+
+---
+
+## 20. User-directed orchestration
+
+SIA must also support direct operational delegation from ordinary authorized users.
+
+Example:
+A recruiter asks:
+
+> "Report today's meeting. Call the first five candidates, capture the findings and recordings, then audit the collected documents and send the package to the next department for verification."
+
+SIA should decompose this into governed work:
+
+```
+meeting context
+→ identify candidate list
+→ verify call/contact permissions
+→ schedule/place calls through approved channel
+→ capture permitted recording/transcript
+→ extract structured findings
+→ audit collected documents
+→ flag missing/inconsistent items
+→ prepare verification package
+→ request approval if required
+→ send/route to next department
+→ create completion receipt/report
+```
+
+The user experiences one request to SIA.
+
+Internally, SIA may use:
+- deterministic workflows;
+- communication capabilities;
+- document audit specialist;
+- meeting/recording capability;
+- recruitment specialist;
+- routing/escalation logic.
+
+The user should not need to manually orchestrate those sub-agents.
+
+---
+
+## 21. Company-brain operating loop
+
+SIA's core operating loop can be modeled as:
+
+```
+Observe
+→ Understand
+→ Compare against company/reference model
+→ Decide what kind of response is appropriate
+→ Suggest OR act according to delegated authority
+→ Coordinate humans/software/digital specialists
+→ Verify outcome
+→ Record evidence
+→ Report upward/outward
+→ Learn/update operating context
+```
+
+The "decide" step does not mean SIA has sovereign authority.
+
+It means SIA selects an allowed next step inside the current authority envelope.
+
+---
+
+## 22. No-limits principle — precise wording
+
+Do not use:
+> "SIA can do anything."
+
+Use:
+
+> **SIA should have no arbitrary product-imposed ceiling on the kinds of business work it can understand and coordinate, while every action remains bounded by explicit authority, policy, evidence and risk controls.**
+
+This preserves the long-term ambition without weakening safety, governance or enterprise trust.
+
+---
+
+## 23. Why this differs from a collection of AI employees
+
+The architecture is not:
+
+```
+AI Recruiter
+AI Marketer
+AI Finance Agent
+AI Support Agent
+```
+
+with users selecting bots.
+
+The architecture is:
+
+```
+                 SIA
+          Company Brain / Operator
+                    │
+          Company Operating Model
+                    │
+      ┌─────────────┼─────────────┐
+      │             │             │
+    Humans     Automations    SIA Specialists
+      │             │             │
+      └─────────────┴─────────────┘
+              Business Work
+```
+
+SIA remains the coherent intelligence visible to the user.
+
+Specialists are bounded execution roles beneath it.
+
+---
+
+## 24. Strategic consequence
+
+SIA can support:
+- one-person companies;
+- normal human-led teams;
+- hybrid human/digital teams;
+- temporary capacity expansion;
+- temporary department continuity;
+- eventually more autonomous operating functions where evidence, law, policy and authority permit.
+
+This makes workforce composition dynamic while preserving one company model.
+
+The company can move continuously between:
+- human-led;
+- hybrid;
+- digitally augmented;
+- temporarily digital-heavy;
+- back to human-led
+
+without migrating to another product or rebuilding the process model.
