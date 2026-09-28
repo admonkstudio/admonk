@@ -79,11 +79,11 @@ The Product Platform Foundation is not locked. Existing M2 documents remain dire
 
 ## Parallel Harvey experience track
 
-Jarvis research is running in parallel with FOUNDATION-M2 and does not replace the current M2 sequence.
+Harvey research/design is running in parallel with FOUNDATION-M2 and does not replace the current M2 sequence.
 
 Current state:
 - Harvey strategic experience direction — **LOCKED**;
-- JX-01 Jarvis Surface Contract — **LOCKED**;
+- JX-01 historical Jarvis/Harvey Surface Contract — **LOCKED**;
 - Deep Research Register **RQ-01 through RQ-25 — COMPLETE / LOCKED**;
 - Full Harvey architecture audit — **LOCKED: PASS WITH REQUIRED REMEDIATIONS / reconciliation applied**;
 - Harvey Lab proof program — **LOCKED as a Lab/discovery program**, not yet authorized for implementation;
@@ -113,5 +113,11 @@ Older JX-02 checkpoint remains historical discovery evidence:
 FOUNDATION-M2 remains at:
 **M2-19 — Version / Compatibility / Migration**.
 
-Next Harvey/Foundation gate:
-**Full Admonk Product Platform/Foundation audit using the reconciled Harvey architecture, with findings fed into M2-19/M2-20.**
+Current Harvey/Foundation gate:
+**Full Admonk Product Platform/Foundation audit — COMPLETE: PASS WITH REQUIRED FOUNDATION REFINEMENTS / OWNER LOCK PENDING.**
+
+Audit:
+`docs/audits/ADMONK-PRODUCT-PLATFORM-FOUNDATION-AUDIT-2026-09-28.md`
+
+Proposed sequence if locked:
+**M2-19 Version/Compatibility/Migration → M2-19A Platform Operator Identity/Support Access/Environment Authority → M2-20 Runtime Boundaries.**
