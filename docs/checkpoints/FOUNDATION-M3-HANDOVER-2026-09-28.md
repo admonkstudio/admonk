@@ -143,7 +143,7 @@ Sequence may be adjusted if an earlier decision exposes a dependency.
 
 ## 8. Exact resume instruction
 
-> **Resume at M3-12 — Release / Compatibility Expectations Visible to Customers. M3-01 through M3-11 are locked.**
+> **Resume at the M3-12 owner decision — Release / Compatibility Expectations Visible to Customers. M3-01 through M3-11 are locked. If accepted, proceed to M3-13 Product-Family Naming / Legacy AI Suite Disposition.**
 
 
 ## 9. M3 evidence decision protocol
@@ -335,3 +335,17 @@ Research artifacts should be detailed enough to preserve the reasoning and evide
 
 **Title → topic overview → source lessons → Scenario A → Scenario B → challenge → conclusion/recommendation.**
 
+
+## 21. Current M3-12 gate
+
+Canonical research:
+`docs/research/FOUNDATION-M3-12-CUSTOMER-VISIBLE-RELEASE-COMPATIBILITY-2026-09-28.md`
+
+Status:
+**RESEARCH COMPLETE — OWNER DECISION PENDING**
+
+Recommended direction:
+**Managed evergreen releases with bounded customer change control and explicit compatibility/deprecation visibility.**
+
+If accepted:
+**M3-13 — Product-Family Naming / Legacy AI Suite Disposition.**
