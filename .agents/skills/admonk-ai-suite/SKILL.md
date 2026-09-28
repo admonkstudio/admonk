@@ -4,7 +4,7 @@
 
 Use this skill when a task spans more than one of these products:
 
-- Corporate AI Assistant
+- Harvey / Company Intelligence
 - Support Platform / Ask Kalam
 - Marketing Hub
 
@@ -14,12 +14,14 @@ Do not use this skill for ordinary product-specific work that can be handled ent
 
 Identify the owning product.
 
-### Corporate AI Assistant owns
-- company-wide intelligence;
-- cross-department knowledge;
-- company-level orchestration;
-- cross-app tool routing;
+### Harvey Company Intelligence owns
+- the cross-domain Harvey experience under an authorized Company/Executive Operating Lens;
+- company-wide intelligence where authorized;
+- cross-department context composition;
+- company-level orchestration through governed specialist capabilities;
 - executive/company summaries and queries.
+
+Harvey does not own specialist-domain truth and is not a second brain separate from department-level Harvey.
 
 ### Support Platform owns
 - customer/support conversations;
@@ -83,7 +85,7 @@ If not, keep the skill local to the product.
 - bypass one product's API/authorization to read another database directly;
 - merge product repos for convenience;
 - move product-specific roadmap items into suite docs;
-- let the Corporate Assistant become an ungoverned super-admin;
+- let Harvey Company Intelligence or a Platform Operator Lens become an ungoverned super-admin;
 - let analytics become a fourth standalone product when it belongs to Marketing Hub.
 
 ## Completion output for cross-product work
