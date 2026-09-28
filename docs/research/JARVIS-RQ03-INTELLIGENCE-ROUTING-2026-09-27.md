@@ -102,24 +102,28 @@ C2 Deep AI
 C3 Orchestrated / Specialist AI
 
 AXIS 2 — EXECUTION AUTHORITY
-A0 Read-only / no side effect
-A1 Low-risk reversible action
-A2 Consequential action requiring explicit approval/policy gate
-A3 Restricted / manual-only / prohibited
+READ
+DRAFT
+PROPOSE
+EXECUTE_REVERSIBLE
+EXECUTE_CONSEQUENTIAL
+DESTRUCTIVE
+
+Exact permission/policy/approval handling follows the canonical M2-11/RQ-07 action model.
 ```
 
 Examples:
 
 | Task | Cognitive route | Authority |
 |---|---|---|
-| Open campaign dashboard | C0 | A0 |
-| What was Meta spend last month? | C1 | A0 |
-| Explain why CPL rose across channels | C2 | A0 |
-| Draft a corrective campaign plan | C1/C2 | A0 until saved/published |
-| Pause an ad set | C1 may be enough | A2 |
-| Reconfigure account permissions | C0/C1 | A3 or tightly governed A2 |
-| Cross-product strategic diagnosis | C2/C3 | A0 |
-| Execute an approved multi-system remediation | C2/C3 | A2 |
+| Open campaign dashboard | C0 | READ |
+| What was Meta spend last month? | C1 | READ |
+| Explain why CPL rose across channels | C2 | READ |
+| Draft a corrective campaign plan | C1/C2 | DRAFT |
+| Pause an ad set | C1 may be enough | EXECUTE_CONSEQUENTIAL |
+| Reconfigure account permissions | C0/C1 | EXECUTE_CONSEQUENTIAL or DESTRUCTIVE according to the exact operation/policy |
+| Cross-product strategic diagnosis | C2/C3 | READ |
+| Execute an approved multi-system remediation | C2/C3 | EXECUTE_CONSEQUENTIAL |
 
 **Key consequence:** a dangerous action must never become permitted because a model is "smart enough." Authority remains a deterministic governance decision.
 
@@ -255,7 +259,7 @@ TASK CONTRACT BUILDER
     ├───────────────┐
     ▼               ▼
 COGNITIVE ROUTER    AUTHORITY CLASSIFIER
-C0/C1/C2/C3         A0/A1/A2/A3
+C0/C1/C2/C3         M2-11/RQ-07 ACTION CLASS
     │               │
     └───────┬───────┘
             ▼
@@ -358,9 +362,9 @@ Jarvis should normally route automatically, but user intent should be honored wh
 Examples:
 - "give me the quick answer" can bias toward C1 if the quality/risk floor permits;
 - "investigate this deeply" can bias toward C2/C3;
-- "don't take action" forces A0;
-- "draft only" remains non-executing until an explicit save/publish action;
-- "go ahead" does not override a required A2 approval interface/policy.
+- "don't take action" restricts the task to non-executing READ/DRAFT/PROPOSE behavior;
+- "draft only" remains DRAFT until an explicit persist/publish action is separately classified;
+- "go ahead" does not override a required EXECUTE_CONSEQUENTIAL approval interface/policy.
 
 The system, not the user wording alone, still enforces safety/authority boundaries.
 
@@ -420,33 +424,33 @@ A routing change should not ship merely because average model cost decreases.
 ### "Open the campaign for Arabic interpreters."
 Likely:
 - C0 deterministic resource navigation;
-- A0.
+- READ.
 
 ### "How much did we spend on Meta last month?"
 Likely:
 - C0 retrieval/query + possibly C1 natural-language presentation;
-- A0.
+- READ.
 
 ### "Why did recruitment CPL increase despite higher spend?"
 Likely:
 - C2 evidence-backed diagnosis;
-- A0.
+- READ.
 
 ### "Compare Meta, LinkedIn and organic acquisition and recommend what to test next."
 Likely:
 - C2;
-- A0.
+- PROPOSE.
 
 ### "Create a draft campaign from that recommendation."
 Likely:
 - C1/C2 composition;
-- remains A0 while only generating a draft artifact;
-- becomes A1/A2 only when persisting/publishing according to policy.
+- remains DRAFT while only generating a draft artifact;
+- any persist/publish action is separately classified as EXECUTE_REVERSIBLE, EXECUTE_CONSEQUENTIAL or DESTRUCTIVE according to its actual side effect and policy.
 
 ### "Pause the campaigns that meet the criteria we just discussed."
 Likely:
 - cognitive route determined by whether the criteria are already explicit;
-- A2 consequential action;
+- EXECUTE_CONSEQUENTIAL;
 - deterministic permission/policy/approval gate before execution.
 
 ## 13. Consequences for the circle / semantic zoom hypothesis
