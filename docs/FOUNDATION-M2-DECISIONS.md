@@ -107,3 +107,44 @@ Core rules:
 **Accepted cost:** operator eligibility metadata, JIT sessions, support-access grants, expiry/reviews, emergency procedures and additional audit evidence in exchange for strong tenant isolation and safe cross-tenant platform operations.
 
 **Status:** LOCKED.
+
+
+### M2-20 — Coarse-Grained Runtime Architecture with Evidence-Promoted Isolation
+
+**Decision:** Separate logical contract boundaries, scaling units and physical runtime/deployment boundaries. Do not create a microservice merely because a logical component has a name or shared contract.
+
+Core rules:
+- use five implementation forms: **Shared Contract, Shared Package/Module, Separate Process/Worker Role, Shared Platform Service/Runtime, Domain-Owned Product Runtime**;
+- deterministic reusable behavior normally stays in shared packages/modules;
+- asynchronous, bursty, resource-heavy or special-runtime work uses separate worker/process roles;
+- shared platform services exist only when authoritative shared state, hard security/credential boundaries, independent availability/scale, shared ingress, durable coordination or independent lifecycle makes the network boundary valuable;
+- specialist business semantics/state remain domain-owned;
+- two consumers justify a shared contract, not automatically a shared service;
+- Platform Management begins as one coarse-grained shared runtime containing modular tenant/account/entitlement/settings/setup/operator/registry/version/governance capabilities;
+- Jarvis Interactive/Orchestration remains a Jarvis-owned runtime separate from Platform Management and specialist products;
+- specialist products remain domain-owned runtimes exposing governed capability contracts;
+- Context Plane remains federated contracts + shared composition package + domain providers; no generic Context Service at SCALE-1;
+- authorization evaluation remains deterministic contracts/packages over authoritative state; no mandatory authorization microservice at SCALE-1;
+- provider-neutral model execution uses shared adapters inside Jarvis/worker runtimes; no centralized AI Gateway at SCALE-1;
+- Durable Task orchestration is a shared durable runtime capability independent of interactive process memory, but does not require a dedicated microservice on day one;
+- Async execution uses separate worker/process roles with independent queues/concurrency/budgets while allowing multiple worker classes to share one deployment initially;
+- Connector Runtime is an intentional shared runtime/isolation boundary from SCALE-1 because of credentials, external ingress, provider quotas/failures, backfills and cross-product connection reuse;
+- Shared Notification Plane keeps preferences/inbox/control in Platform Management and delivery in async workers at SCALE-1;
+- audit/economic ledgers may begin as authoritative modules/stores plus ingestion workers rather than standalone services;
+- Resource Links remain shared contract + helper package + product-owned resolvers;
+- Artifacts remain shared contracts/helpers with producing-product/Jarvis ownership; no universal Artifact Service at SCALE-1;
+- Memory/knowledge remains ownership-specific; no generic Memory Service/company-brain database;
+- compatibility metadata may live in repositories/CI/Platform Management; no Compatibility Service required;
+- feature flags use a replaceable provider-neutral contract/client; no custom Feature Flag Service required;
+- Admonk Control Room has its own Platform Operations runtime separate from tenant application runtimes and distinct from Platform Management;
+- telemetry/observability is operational infrastructure, not a business microservice;
+- voice remains optional and splits only when realtime transport/concurrency/failure evidence justifies it;
+- browser/computer/code execution, when enabled, always runs in a hard-isolated sandbox runtime;
+- Product Supervisor remains governance/process plus automated checks, not a Production microservice;
+- SCALE-1 coarse runtime estates: **Platform Management, Jarvis Interactive, specialist product runtimes, Execution/Workers, Connector Runtime, Platform Operations**, plus optional Voice/Sandbox where enabled;
+- physical databases are not assigned one-per-service; logical ownership/write boundaries are explicit and physical isolation follows evidence;
+- service extraction is evidence-driven and reversible.
+
+**Accepted cost:** coarse-grained runtimes with strong internal module discipline and some later extraction work in exchange for avoiding premature distributed-system complexity.
+
+**Status:** LOCKED.
