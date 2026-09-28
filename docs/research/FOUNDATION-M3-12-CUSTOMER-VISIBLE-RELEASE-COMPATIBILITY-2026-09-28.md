@@ -1,7 +1,7 @@
 # FOUNDATION-M3-12 — Release / Compatibility Expectations Visible to Customers
 
 **Date:** 2026-09-28  
-**Status:** RESEARCH COMPLETE — OWNER DECISION PENDING  
+**Status:** LOCKED — OWNER SELECTED SCENARIO B  
 **Milestone:** FOUNDATION-M3 — Main Product Master Plan  
 **Research depth:** Deep decision research  
 **Implementation authority:** None
@@ -643,4 +643,4 @@ They should **not** need to know:
 >
 > **Customers can prepare for change; they do not own a permanent fork of Admonk.**
 
-**Recommendation:** LOCK Scenario B.
+**Recommendation:** LOCKED — Scenario B.
