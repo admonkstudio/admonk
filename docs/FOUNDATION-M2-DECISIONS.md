@@ -1,7 +1,7 @@
 # FOUNDATION-M2 — Decision Log
 
 **Milestone:** FOUNDATION-M2 — Define Shared Product Platform Foundation  
-**Status:** Active
+**Status:** COMPLETE / LOCKED
 
 **Terminology compatibility — Jarvis (2026-09-28):** references in locked M2 decisions to `Corporate Brain` or `Corporate AI Assistant` map to the current Jarvis Company Intelligence / Company-Executive Operating Lens. They do not define a second brain, runtime, memory system or permission authority.
 
@@ -34,7 +34,7 @@
 | M2-18 | LOCKED | Shared Data Governance Contract + domain-owned policy and execution. Foundation standardizes sensitivity/purpose/lifecycle/export/delete contracts; products retain actual policy schedules, domain meaning and execution against their stores. | Requires domain inventories and cross-product orchestration, but preserves domain ownership while enabling consistent governance and offboarding. |
 
 ## Current
-**M2-19 — Version / Compatibility / Migration**
+**FOUNDATION-M2 — COMPLETE / LOCKED**
 
 
 ## M2-04 owner requirements — recorded, decision pending
@@ -146,5 +146,48 @@ Core rules:
 - service extraction is evidence-driven and reversible.
 
 **Accepted cost:** coarse-grained runtimes with strong internal module discipline and some later extraction work in exchange for avoiding premature distributed-system complexity.
+
+**Status:** LOCKED.
+
+
+### M2 Exit Addendum R-01 — Workload / Machine Identity
+
+**Decision:** Every protected internal runtime/service/worker uses explicit workload identity and authorization context. Internal network placement is never treated as authority.
+
+Core rules:
+- runtime/service/worker identity is distinct from human user identity and from Jarvis Agent Profile;
+- protected service-to-service access evaluates workload identity plus environment, tenant/task delegation, requested capability, resource and applicable policy;
+- background workers re-authorize from durable identity/context rather than trusting queue payload authority claims blindly;
+- workload identity does not itself grant tenant/business authority;
+- service credentials/tokens should be scoped and short-lived where implementation supports it;
+- network segmentation/bulkheads are defense-in-depth, not substitutes for identity/authorization;
+- exact mTLS/SPIFFE/service-mesh/IdP technology remains an implementation choice.
+
+**Origin:** promoted from locked RQ-20 security architecture during M2 exit reconciliation.
+
+**Status:** LOCKED.
+
+
+### M2 Exit Addendum R-02 — Tenant / Product Operational Lifecycle
+
+**Decision:** Commercial entitlement and operational lifecycle are separate contracts.
+
+Commercial entitlement answers whether a tenant is entitled to a SKU/product/add-on. Operational lifecycle answers whether the tenant/product instance is provisioning, active, suspended, offboarding, retained/closed, or otherwise not ready for normal operation.
+
+Core rules:
+- entitlement ON/OFF never doubles as provisioning/offboarding state;
+- tenant/product lifecycle transitions are auditable;
+- setup/readiness may block ACTIVE readiness without changing commercial entitlement;
+- temporary suspension does not imply deletion;
+- offboarding invokes M2-18 export/retention/delete policy;
+- connectors, Durable Tasks, notifications and other runtime behavior follow lifecycle policy rather than inferring state from entitlement alone;
+- resource placement/stamp capacity may be released/rebalanced only after lifecycle/data policy permits it;
+- exact lifecycle labels may be normalized in implementation, but commercial entitlement and operational lifecycle remain distinct.
+
+Candidate tenant lifecycle:
+PROVISIONING → ACTIVE → SUSPENDED → OFFBOARDING → RETAINED → CLOSED
+
+Candidate tenant-product lifecycle:
+NOT_ENABLED → PROVISIONING → ACTIVE → DEGRADED/SUSPENDED → DEPROVISIONING → RETAINED/CLOSED where applicable.
 
 **Status:** LOCKED.
