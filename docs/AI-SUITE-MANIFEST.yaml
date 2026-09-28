@@ -13,13 +13,12 @@ suite:
     platform_foundation: docs/PRODUCT-PLATFORM-FOUNDATION.md
 
 products:
-  harvey_company_intelligence:
-    role: same Harvey core under an authorized Company/Executive Operating Lens
+  jarvis_company_intelligence:
+    role: same Jarvis core under an authorized Company/Executive Operating Lens
     legacy_repository: admonkstudio/corporate-ai-assistant
     repository_status: transition/history; no separate-brain expansion pending product-family migration decision
-    current_experience_direction: docs/HARVEY-EXPERIENCE-DIRECTION.md
-    character_direction: docs/HARVEY-IDENTITY-CHARACTER-DIRECTION.md
-    authority: shared Harvey architecture plus specialist product domain authorities
+    current_experience_direction: docs/JARVIS-EXPERIENCE-DIRECTION.md
+    authority: shared Jarvis architecture plus specialist product domain authorities
   support_platform:
     role: support/customer-resolution arm
     repository: kalamcx/kalam-digital-platform
