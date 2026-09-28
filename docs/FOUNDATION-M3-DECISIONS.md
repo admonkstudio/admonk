@@ -18,3 +18,17 @@ Commercial direction:
 - do not position Admonk primarily as one giant generic AI platform.
 
 **Status:** LOCKED.
+
+
+### M3-02 — Business-led, Cross-Functional Buying Unit
+
+**Decision:** Admonk targets organizations with sufficient workflow, systems and governance complexity for the shared platform to create value, rather than defining the ICP primarily by employee count.
+
+Buying model:
+- initial champion is normally the business/function leader accountable for the specialist product's outcome;
+- IT, security, data/integration, finance and procurement are treated as part of the buying group as relevant;
+- CIO/CTO/COO/executive sponsorship becomes progressively more important as the customer expands into multiple products and Jarvis Company Intelligence;
+- GTM motion: **business outcome entry → cross-functional validation → specialist-product proof → platform expansion → executive/company intelligence**;
+- exact firmographic thresholds, pricing bands and segmentation remain later evidence questions.
+
+**Status:** LOCKED.
