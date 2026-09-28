@@ -230,8 +230,8 @@ Current M3 completeness audit:
 `docs/research/FOUNDATION-M3-COMPLETENESS-AUDIT-2026-09-28.md`
 
 
-### Permanent masterbrand research
-- **SIA — Candidate #1 / leading potential candidate**
-- Not a final brand lock.
-- Requires formal clearance.
-- Alternative research continues using SIA as the quality benchmark.
+### Permanent masterbrand
+- **SIA — FINAL OWNER SELECTION / LOCKED**
+- “Admonk” is superseded as the active masterbrand and remains only historical/working terminology during controlled migration.
+- Trademark/domain/company-name clearance remains a rollout gate.
+- Alternative-name research is closed unless legal clearance produces a blocking conflict.
