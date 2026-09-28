@@ -143,7 +143,7 @@ Sequence may be adjusted if an earlier decision exposes a dependency.
 
 ## 8. Exact resume instruction
 
-> **Resume at the M3-11 owner decision — Support / Operations Model and Tenant-Visible Health. M3-01 through M3-10 are locked. If accepted, proceed to M3-12 Release / Compatibility Expectations Visible to Customers.**
+> **Resume at M3-12 — Release / Compatibility Expectations Visible to Customers. M3-01 through M3-11 are locked.**
 
 
 ## 9. M3 evidence decision protocol
@@ -315,10 +315,23 @@ Canonical research:
 `docs/research/FOUNDATION-M3-11-SUPPORT-OPERATIONS-TENANT-VISIBLE-HEALTH-2026-09-28.md`
 
 Status:
-**RESEARCH COMPLETE — OWNER DECISION PENDING**
+**LOCKED — OWNER SELECTED SCENARIO B**
 
-Recommended direction:
-**Layered tenant health + contextual guided support, with public status and internal Control Room kept distinct.**
-
-If accepted:
+Current next gate:
 **M3-12 — Release / Compatibility Expectations Visible to Customers.**
+
+## M3 deep-research decision protocol — OWNER CONFIRMED
+
+Every remaining M3 research gate must use this sequence before asking for owner approval:
+
+1. **Topic overview** — explain the decision in plain product/business language, why it matters, what is already locked, and what remains genuinely open.
+2. **Two high-authority external sources** — prefer current primary documentation, standards, or first-party product/platform evidence. Research both deeply enough to extract the useful operating model, not just a headline analogy.
+3. **Two strongest viable answers/scenarios** — present two realistic directions that could actually be chosen for Admonk. Do not create a weak straw-man option merely to make the recommendation obvious.
+4. **Challenge both scenarios** — test each against customer clarity, product value, security/governance, scalability, operating complexity, cost, release coupling, standalone-product integrity, cross-product value, Jarvis/Admonk One contracts and all prior locked Foundation decisions.
+5. **Admonk synthesis** — identify what to adopt, reject, combine, defer or condition from the external evidence. The recommendation must fit the already-locked Admonk product/foundation plan rather than following an external vendor pattern blindly.
+6. **Owner approval gate** — end with one concise recommendation and principle. Do not promote the new M3 decision into the canonical decision log until the owner explicitly accepts it.
+
+Research artifacts should be detailed enough to preserve the reasoning and evidence for later implementation/product planning. Conversation presentation should remain concise and decision-friendly:
+
+**Title → topic overview → source lessons → Scenario A → Scenario B → challenge → conclusion/recommendation.**
+
