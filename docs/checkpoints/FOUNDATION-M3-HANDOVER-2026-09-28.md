@@ -144,3 +144,41 @@ Sequence may be adjusted if an earlier decision exposes a dependency.
 ## 8. Exact resume instruction
 
 > **Resume at FOUNDATION-M3 — Main Product Master Plan, starting with product-family identity/promise and customer/buying-unit definition. Do not reopen FOUNDATION-M2 unless new evidence demonstrates a contradiction.**
+
+
+## 9. M3 evidence decision protocol
+
+Owner-approved method for every M3 decision and the downstream Foundation milestones unless explicitly changed:
+
+1. **Quick internal scan**
+   - current canonical Admonk/Foundation decisions;
+   - relevant product evidence;
+   - only enough repository context to identify the real decision.
+
+2. **Two high-value external sources**
+   - prefer primary, authoritative, current sources;
+   - select sources that materially challenge or validate the decision;
+   - avoid source-volume for its own sake.
+
+3. **Two strongest scenarios**
+   - model the two strongest realistic directions;
+   - state the benefit each is optimizing for.
+
+4. **Challenge both**
+   - test failure modes, cost, complexity, commercial clarity, scalability and compatibility with locked Foundation decisions;
+   - do not confirm the preferred option by default.
+
+5. **Admonk synthesis**
+   - choose, condition or defer;
+   - preserve the smallest direction that meets product value and Foundation constraints.
+
+6. **Conversation output**
+   - **very brief**;
+   - format: **Title → Summary bullets → Conclusion**;
+   - cite the two high-value sources close to the claims they support.
+
+7. **Authority**
+   - research is not locked until owner accepts it;
+   - once accepted, promote the decision into the canonical M3 artifact and immediately proceed.
+
+This protocol inherits the Studio Foundation evidence-first / Decision Cost discipline but is optimized for faster product-family decisions.
