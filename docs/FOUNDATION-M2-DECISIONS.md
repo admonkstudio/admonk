@@ -47,3 +47,35 @@ Prefer atomic sellable subscription SKUs with simple ON/OFF entitlement. A comme
 
 ## M2-09 owner direction — Admonk One control plane, decision pending
 Future Admonk One should centralize suite access, connector administration and reusable ingestion. Connect providers once where practical; historical backfill + incremental sync happen once; products consume governed data contracts. Corporate Brain normally reads authorized department/product data rather than reconnecting raw providers, while direct connector access remains an explicit exception for capabilities not safely exposed through shared/domain contracts.
+
+
+### M2-19 — Contract-Centered Versioning, Explicit Compatibility & Managed Migration
+
+**Decision:** Admonk versions the contracts, schemas and immutable definitions that other components depend on rather than forcing one universal versioning scheme onto every object.
+
+Core rules:
+- keep **release version**, **contract/schema version**, **definition revision** and **migration version** separate;
+- shared stability lifecycle: **DEVELOPMENT → PREVIEW → STABLE → DEPRECATED → RETIRED**;
+- compatibility states: **COMPATIBLE, COMPATIBLE_WITH_DEPRECATION, MIGRATION_REQUIRED, BLOCKED, UNSUPPORTED**;
+- federated products may release independently, but each stable shared contract explicitly declares and tests supported producer/consumer combinations;
+- no universal N-1 rule;
+- stable shared packages use Semantic Versioning where appropriate;
+- stable service/capability APIs use explicit major compatibility boundaries;
+- database migrations use ordered immutable migration history rather than SemVer;
+- breaking shared-contract and persistent-schema changes use **Expand → Coexist → Migrate → Verify → Contract** whenever practical;
+- destructive removal waits until supported consumers have migrated and evidence shows the old path is no longer required;
+- Durable Tasks pin TaskDefinition and relevant contract revisions; running/waiting work never silently resumes under incompatible current definitions;
+- RouteProfiles, ModelBindings, AgentProfiles, TaskDefinitions, ProactivityContracts and ScaleGates use stable keys with immutable revisions;
+- governed actions and approval receipts bind to the action/capability contract version under which their meaning was approved;
+- Artifacts preserve immutable historical revisions independently from storage/schema migration;
+- connector compatibility tracks adapter release, provider API version, connection-config schema and Admonk domain/capability contract independently;
+- deprecation is explicit metadata with replacement, owner, usage, migration path and sunset/review state;
+- retirement occurs only after migration/usage/compatibility evidence satisfies the retirement gate;
+- material migrations declare scope, checkpoints, verification and an honest recovery class: **REVERSIBLE, RESTORE_BASED or FORWARD_FIX_ONLY**;
+- feature flags may stage migrations/rollouts but are not contract versions and must not become permanent tenant-specific compatibility forks;
+- Product Supervisor owns release/migration governance; future Control Room consumes version/compatibility/migration metadata and evidence;
+- the shared Versioned Definition Envelope standardizes lifecycle/version metadata only; it does not require a centralized Definition Service.
+
+**Accepted cost:** compatibility metadata, contract tests, overlap windows, migration state and deprecation tracking in exchange for independent releases, safer federated repositories and controlled migrations.
+
+**Status:** LOCKED.
