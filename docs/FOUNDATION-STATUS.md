@@ -85,7 +85,7 @@ Current state:
 - Jarvis strategic experience direction — **LOCKED**;
 - JX-01 Jarvis Surface Contract — **LOCKED**;
 - Deep Research Register **RQ-01 through RQ-25 — COMPLETE / LOCKED**;
-- **Next Jarvis gate — Full architecture audit across RQ-01..25**;
+- Full Jarvis architecture audit — **COMPLETE: PASS WITH REQUIRED REMEDIATIONS / OWNER LOCK PENDING**;
 - Jarvis Lab proof program — **LOCKED as a Lab/discovery program**, not yet authorized for implementation;
 - RQ-25 Production Evolution Architecture + SCALE-0..6 roadmap + Admonk Control Room — **LOCKED**;
 - n8n is historical Kalam workflow evidence only and is **not** Jarvis Lab or Production execution infrastructure;
@@ -96,6 +96,9 @@ Owner-approved responsiveness constraint:
 
 Canonical current checkpoint:
 `docs/checkpoints/JARVIS-DEEP-RESEARCH-HANDOVER-2026-09-28.md`
+
+Current Jarvis architecture audit:
+`docs/audits/JARVIS-FULL-ARCHITECTURE-AUDIT-2026-09-28.md`
 
 Older JX-02 checkpoint remains historical discovery evidence:
 `docs/checkpoints/JARVIS-JX02-DISCOVERY-CHECKPOINT-2026-09-27.md`
