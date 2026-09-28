@@ -233,3 +233,29 @@ Principle:
 > **Customers can prepare for change; they do not own a permanent fork of Admonk.**
 
 **Status:** LOCKED.
+
+### M3-13 — Single Masterbrand Family Architecture; Retire “AI Suite” to Legacy Terminology
+
+**Decision:** Use one canonical family/masterbrand layer above specialist products, with Jarvis as the intelligent experience and the shared administration surface kept distinct. Retire “Admonk AI Suite” from active architecture/customer-facing terminology.
+
+**Important naming constraint:** the current word **“Admonk” is a temporary working/masterbrand placeholder, not a permanently locked commercial name.** M3-13 locks the hierarchy and naming roles, not the final brand name.
+
+Rules:
+- one family/masterbrand identity sits above specialist products;
+- specialist products retain durable outcome-owned identities;
+- Jarvis is the single named intelligent experience across products;
+- Jarvis Company Intelligence remains the separately entitled cross-product add-on/operating lens;
+- the shared administration/setup/health experience remains a distinct role/surface and is not another specialist product;
+- “Admonk AI Suite” becomes legacy/historical terminology and is removed from new canonical/customer-facing architecture language;
+- historical AI-SUITE documents remain for provenance but are marked superseded and removed from active authority/navigation through controlled cleanup;
+- future bundles/collections may receive names only when GTM evidence justifies them and do not replace the family/masterbrand architecture;
+- no mass repository/file rename is required solely for cosmetic consistency;
+- final permanent family/masterbrand naming is deferred to a dedicated evidence-based naming/GTM exercise.
+
+Principle:
+> **Lock the naming architecture now; defer the permanent name until evidence supports it.**
+
+Working shorthand while discovery continues:
+> **Admonk is the temporary family name. Products define the outcome. Jarvis supplies the intelligence.**
+
+**Status:** LOCKED.
