@@ -55,3 +55,21 @@ Principle:
 > **Composability belongs underneath the catalog; customer value determines what earns a product name.**
 
 **Status:** LOCKED.
+
+
+### M3-04 — Product Jarvis Included; Company Intelligence as Cross-Product Add-on
+
+**Decision:** Product-scoped Jarvis is included as part of every subscribed specialist product's core experience. Jarvis Company Intelligence is the separately entitled cross-product add-on.
+
+Rules:
+- product-scoped Jarvis is not sold as a separate product;
+- each specialist product grants Jarvis only that product's authorized context, capabilities and governed actions;
+- Jarvis Company Intelligence unlocks authorized company/executive context, cross-domain synthesis and orchestration across subscribed products;
+- Company Intelligence is the same Jarvis core under a broader authorized Operating Lens, not a second assistant or source of truth;
+- included Jarvis may still be governed by credits/usage limits under M2-14;
+- future high-cost AI/agent capabilities may be separately packaged or metered when value/cost evidence justifies it.
+
+Principle:
+> **Customers should not pay extra merely to make a specialist product intelligent; they pay extra when intelligence expands beyond the product they bought.**
+
+**Status:** LOCKED.
