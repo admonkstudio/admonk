@@ -6,7 +6,7 @@
 **Inherits:** Admonk Studio Foundation v1.0.0 / Product Supervisor v2.0.0  
 **Implementation:** Not authorized by this brief
 
-**Terminology compatibility — Harvey (2026-09-28):** references in earlier locked M2 decisions to `Corporate Brain` or `Corporate AI Assistant` mean the current Harvey Company Intelligence / Company-Executive Operating Lens. They do not define a second brain, memory system, runtime or authority model.
+**Terminology compatibility — Jarvis (2026-09-28):** references in earlier locked M2 decisions to `Corporate Brain` or `Corporate AI Assistant` mean the current Jarvis Company Intelligence / Company-Executive Operating Lens. They do not define a second brain, memory system, runtime or authority model.
 
 ## Purpose
 
