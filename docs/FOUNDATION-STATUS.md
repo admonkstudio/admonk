@@ -84,9 +84,10 @@ Jarvis research is running in parallel with FOUNDATION-M2 and does not replace t
 Current state:
 - Jarvis strategic experience direction — **LOCKED**;
 - JX-01 Jarvis Surface Contract — **LOCKED**;
-- Deep Research Register **RQ-01 through RQ-24 — LOCKED**;
-- **RQ-25 — Minimum Production Architecture — NEXT / research not started**;
-- Jarvis Lab proof program — **LOCKED as a Lab/discovery program**, not as Production architecture;
+- Deep Research Register **RQ-01 through RQ-25 — COMPLETE / LOCKED**;
+- **Next Jarvis gate — Full architecture audit across RQ-01..25**;
+- Jarvis Lab proof program — **LOCKED as a Lab/discovery program**, not yet authorized for implementation;
+- RQ-25 Production Evolution Architecture + SCALE-0..6 roadmap + Admonk Control Room — **LOCKED**;
 - n8n is historical Kalam workflow evidence only and is **not** Jarvis Lab or Production execution infrastructure;
 - JX-03/JX-04 final visual/motion design direction remains open and is accumulating owner-selected references.
 
