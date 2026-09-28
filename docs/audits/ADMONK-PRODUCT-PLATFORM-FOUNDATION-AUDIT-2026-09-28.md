@@ -1,17 +1,21 @@
-# Admonk Product Platform / Foundation Audit — Harvey Integration
+# Admonk Product Platform / Foundation Audit — Jarvis Integration
 
 **Date:** 2026-09-28  
-**Status:** AUDIT COMPLETE — PASS WITH REQUIRED FOUNDATION REFINEMENTS / OWNER LOCK PENDING  
-**Scope:** Studio Foundation v1.0.0, Product Supervisor v2.0.0, FOUNDATION-M2 M2-01..18, Product Platform Foundation, suite coordination, Harvey RQ-01..25 + architecture audit  
+**Status:** LOCKED — PASS WITH REQUIRED FOUNDATION REFINEMENTS / OWNER ACCEPTED  
+**Scope:** Studio Foundation v1.0.0, Product Supervisor v2.0.0, FOUNDATION-M2 M2-01..18, Product Platform Foundation, suite coordination, Jarvis RQ-01..25 + architecture audit  
 **Implementation authority:** None
+
+## Owner update — 2026-09-28
+
+Jarvis is restored as the canonical product identity. Character/persona variants are parked as a future optional add-on and are not part of current Foundation architecture. Any Harvey-specific naming in the original audit should be read as the temporary naming branch only.
 
 ## 1. Audit question
 
 Does the Admonk shared Product Platform Foundation still have the correct boundaries after integrating:
 
-- Harvey as the single adaptive intelligent experience;
+- Jarvis as the single adaptive intelligent experience;
 - Company/Executive Operating Lens rather than a second company brain;
-- Harvey Character Profiles;
+- Jarvis Character Profiles;
 - Admonk Control Room;
 - SCALE-0..6 milestone-driven evolution;
 - Durable Tasks, Artifacts and governed Memory;
@@ -26,12 +30,12 @@ The Foundation architecture remains sound.
 
 No M2-01..18 decision needs to be discarded.
 
-However Harvey and Control Room expose several missing or stale areas that should be resolved before Production runtime packaging:
+However Jarvis and Control Room expose several missing or stale areas that should be resolved before Production runtime packaging:
 
 1. explicit platform-operator identity/support-access authority;
 2. version/compatibility/migration contract strong enough for independent product repos;
 3. exact separation of tenant administration, platform management and platform operations;
-4. clearer separation of entitlement, settings, feature flags and Harvey character preferences;
+4. clearer separation of entitlement, settings, feature flags and Jarvis character preferences;
 5. retirement of stale Corporate Brain/AI Suite wording;
 6. clarification of M2-10 “operational memory” after RQ-14/RQ-23;
 7. Product Supervisor integration with live Scale Gates;
@@ -50,10 +54,10 @@ Independent product repositories remain the correct direction.
 Why it still fits:
 - Marketing Hub, Ask Kalam and the shared platform have different lifecycles;
 - shared contracts are now more important, not less;
-- Harvey crosses products through contracts rather than by merging codebases;
+- Jarvis crosses products through contracts rather than by merging codebases;
 - RQ-25 deliberately leaves physical runtime packaging open.
 
-Do not move to a monorepo merely because Harvey spans products.
+Do not move to a monorepo merely because Jarvis spans products.
 
 ### New requirement for M2-19
 
@@ -78,7 +82,7 @@ Sources:
 - https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/tenant-isolation.html
 - https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/isolation-mindset.html
 
-Harvey never changes tenant.
+Jarvis never changes tenant.
 
 Company/Executive Lens expands eligible domains only within current authorization.
 
@@ -99,7 +103,7 @@ The capability-based authorization model is correct for:
 - organizational scopes;
 - products;
 - users;
-- Harvey agents.
+- Jarvis agents.
 
 But Admonk Control Room introduces a vendor/operator case that is semantically different.
 
@@ -116,12 +120,12 @@ See F-01.
 
 Atomic SKU ON/OFF remains correct.
 
-Harvey Company Intelligence should replace legacy “Corporate Brain” wording but remains the same commercial concept:
+Jarvis Company Intelligence should replace legacy “Corporate Brain” wording but remains the same commercial concept:
 - cross-product add-on/capability;
-- expands eligible Harvey capability set;
+- expands eligible Jarvis capability set;
 - does not create another runtime identity.
 
-Harvey Character Profiles are **not entitlements by default**.
+Jarvis Character Profiles are **not entitlements by default**.
 
 If future premium characters/voices are monetized, entitlement may control availability, but selection itself remains a preference.
 
@@ -133,7 +137,7 @@ The current hierarchy remains useful:
 
 Platform → Tenant → Organizational Scope → Product → User/Product.
 
-Harvey Character selection fits naturally as a User/Product preference.
+Jarvis Character selection fits naturally as a User/Product preference.
 
 Candidate character-setting rules:
 - platform defines valid profiles;
@@ -185,7 +189,7 @@ Connect once/sync once where compatible remains correct.
 
 Admonk-owned provider connectors remain canonical.
 
-Harvey:
+Jarvis:
 - consumes governed domain capabilities;
 - never receives raw secrets;
 - does not reconnect providers simply because a new character/lens is selected.
@@ -224,7 +228,7 @@ This remains the single action/authority vocabulary.
 
 Do not create:
 - character permissions;
-- Harvey-specific permissions;
+- Jarvis-specific permissions;
 - Control Room AI permissions;
 - voice permissions.
 
@@ -236,7 +240,7 @@ Platform operators need a distinct authority source, but final action evaluation
 
 ## 12. M2-12 Audit / Provenance / Events — PASS
 
-The restored M2-12 detail is now correctly aligned with the Harvey audit.
+The restored M2-12 detail is now correctly aligned with the Jarvis audit.
 
 Keep separate:
 - audit;
@@ -265,7 +269,7 @@ This is a reliability boundary, not a new user notification architecture.
 
 Raw usage + Admonk Credits remains correct.
 
-Harvey characters do not imply different intelligence pricing.
+Jarvis characters do not imply different intelligence pricing.
 
 If voice/avatar providers have different real costs:
 - raw ledger records actual provider cost;
@@ -283,7 +287,7 @@ Control Room should expose:
 ## 15. M2-15 navigation/resource links — PASS
 
 Stable Resource Link is increasingly important:
-- Harvey S0/S1 → S2 specialist dashboard;
+- Jarvis S0/S1 → S2 specialist dashboard;
 - notifications;
 - approvals;
 - artifacts;
@@ -295,7 +299,7 @@ Control Room links must never grant tenant/resource access.
 
 ## 16. M2-16 theme inheritance — PASS WITH HARVEY CHARACTER EXTENSION
 
-Do not put Harvey character semantics inside tenant theme tokens.
+Do not put Jarvis character semantics inside tenant theme tokens.
 
 Separate:
 
@@ -305,7 +309,7 @@ Separate:
 - product identity;
 - safe tenant visual overlay.
 
-### Harvey Character Profile
+### Jarvis Character Profile
 - voice identity;
 - avatar/character binding;
 - Professional/Friendly style;
@@ -317,7 +321,7 @@ A Character Profile may consume approved design tokens, but it is not itself a t
 
 ## 17. M2-17 locale/time — PASS
 
-Harvey character localization strengthens this decision.
+Jarvis character localization strengthens this decision.
 
 Professional/Friendly needs locale-aware expression.
 
@@ -416,7 +420,7 @@ The product family has:
 - Agent Profiles;
 - Proactivity Contracts;
 - Artifact schemas;
-- Harvey Character Profiles;
+- Jarvis Character Profiles;
 - ScaleGates;
 - telemetry schemas.
 
@@ -531,8 +535,8 @@ Should this code path be active for rollout/testing?
 Example:
 new workspace planner enabled for Ring 1.
 
-### Harvey Character preference
-How should Harvey present itself?
+### Jarvis Character preference
+How should Jarvis present itself?
 Example:
 Female Friendly.
 
@@ -617,7 +621,7 @@ Control Room may display Product Supervisor gate state but must not invent its o
 
 **Severity:** HIGH
 
-Harvey/RQ-25 now gives logical runtime roles:
+Jarvis/RQ-25 now gives logical runtime roles:
 - Platform Management;
 - Interactive;
 - Durable Task orchestration;
@@ -645,7 +649,7 @@ Decision factors:
 - network/transport requirement;
 - operational cost.
 
-Do not turn the six logical Harvey layers or runtime roles into one-service-per-box architecture.
+Do not turn the six logical Jarvis layers or runtime roles into one-service-per-box architecture.
 
 ---
 
@@ -682,7 +686,7 @@ The system is no longer conceptually:
 > a set of AI assistants.
 
 It is:
-> a composable software product family using AI deliberately, with Harvey as the intelligent experience layer.
+> a composable software product family using AI deliberately, with Jarvis as the intelligent experience layer.
 
 The current `Admonk AI Suite` filename/manifest may remain for compatibility, but the product-family audit should decide whether the forward name becomes:
 - Admonk Product Suite;
@@ -691,7 +695,7 @@ The current `Admonk AI Suite` filename/manifest may remain for compatibility, bu
 
 Do not rename automatically in this audit.
 
-Harvey itself is now canonical.
+Jarvis itself is now canonical.
 
 ---
 
@@ -714,7 +718,7 @@ This avoids future agents treating product-platform work as off-brand/invalid.
 
 ---
 
-## F-11 — Harvey Characters belong to presentation configuration, not model architecture
+## F-11 — Jarvis Characters belong to presentation configuration, not model architecture
 
 **Severity:** MEDIUM
 
@@ -725,7 +729,7 @@ No:
 - one permission set per character.
 
 Use:
-- shared Harvey core;
+- shared Jarvis core;
 - versioned Character Profile;
 - voice/avatar binding;
 - style overlay;
@@ -745,11 +749,11 @@ Current state is now documented as transition/history.
 
 A future product-family audit should decide:
 - archive entirely;
-- migrate useful code/contracts into shared Harvey/platform runtime;
+- migrate useful code/contracts into shared Jarvis/platform runtime;
 - retain only historical docs;
 - preserve a temporary branch for migration.
 
-Do not allow both Harvey and Corporate AI Assistant to continue active independent architecture programs.
+Do not allow both Jarvis and Corporate AI Assistant to continue active independent architecture programs.
 
 ---
 
@@ -817,7 +821,7 @@ The platform becomes easier to reason about as four planes:
 ### 1. Tenant Experience Plane
 Customer work:
 - specialist products;
-- Harvey S0/S1;
+- Jarvis S0/S1;
 - dashboards;
 - domain workflows.
 
@@ -856,19 +860,19 @@ Product Supervisor governs lifecycle/gates across all four; it is not another ru
 
 ---
 
-## 20. Harvey fits across planes without owning them
+## 20. Jarvis fits across planes without owning them
 
 ### Tenant Experience
-Harvey is user-facing intelligent orchestration.
+Jarvis is user-facing intelligent orchestration.
 
 ### Tenant Administration
-Harvey may explain/setup-assist but does not own settings/connection truth.
+Jarvis may explain/setup-assist but does not own settings/connection truth.
 
 ### Platform Operations
-Harvey Platform Operator Lens explains operational evidence and proposes governed runbooks.
+Jarvis Platform Operator Lens explains operational evidence and proposes governed runbooks.
 
 ### Platform Management
-Harvey may query/propose but deterministic platform controls remain authoritative.
+Jarvis may query/propose but deterministic platform controls remain authoritative.
 
 ---
 
@@ -915,8 +919,8 @@ Before FOUNDATION-M2 lock:
 - reclassify remaining open questions;
 - update suite terminology;
 - decide legacy Corporate AI repo disposition path;
-- ensure Control Room/Harvey contracts map to Foundation;
-- validate against Ask Kalam + Marketing Hub + Harvey Lab requirements.
+- ensure Control Room/Jarvis contracts map to Foundation;
+- validate against Ask Kalam + Marketing Hub + Jarvis Lab requirements.
 
 ---
 
@@ -929,7 +933,7 @@ After owner lock:
 1. update `docs/PRODUCT-PLATFORM-FOUNDATION.md` open-question classification;
 2. add AGENTS.md owned-product scope clarification;
 3. clarify M2-10 operational-memory terminology;
-4. integrate Harvey Character Profile into M2-07/M2-16 documentation;
+4. integrate Jarvis Character Profile into M2-07/M2-16 documentation;
 5. integrate ScaleGate into Product Supervisor PS-7 rather than creating parallel governance;
 6. mark AI Suite as legacy coordination terminology pending final family-name choice;
 7. keep legacy Corporate AI repository frozen as transition/history;
@@ -945,15 +949,15 @@ After owner lock:
 >
 > Studio Foundation v1.0.0, Product Supervisor v2.0.0 and M2-01 through M2-18 remain valid.
 >
-> Harvey integrates cleanly into the Product Platform Foundation and does not require a second company-brain architecture, separate permission model, separate memory system or separate product truth store.
+> Jarvis integrates cleanly into the Product Platform Foundation and does not require a second company-brain architecture, separate permission model, separate memory system or separate product truth store.
 >
 > Add one new Foundation decision before runtime packaging: **M2-19A Platform Operator Identity, Support Access & Environment Authority**.
 >
 > Complete M2-19 as a real version/compatibility/migration system supporting federated repositories, shared contracts, typed definitions, controlled version skew, deprecation and migration evidence.
 >
-> Keep entitlement, permission, settings, feature flags and Harvey Character preferences as distinct mechanisms.
+> Keep entitlement, permission, settings, feature flags and Jarvis Character preferences as distinct mechanisms.
 >
-> Treat Harvey Character Profiles as presentation configuration over the same Harvey core, integrating through M2-07/M2-16 rather than new AI architecture.
+> Treat Jarvis Character Profiles as presentation configuration over the same Jarvis core, integrating through M2-07/M2-16 rather than new AI architecture.
 >
 > Product Supervisor remains governance authority; ScaleGate is the structured/live PS-7 scaling mechanism, not a second governance system.
 >
@@ -967,7 +971,7 @@ After owner lock:
 >
 > Independent repositories may evolve independently only within explicit compatibility contracts and supported version-skew/migration rules.
 >
-> Legacy “Corporate AI Assistant / Corporate Brain” becomes transition/history terminology. Harvey Company Intelligence is the current architecture.
+> Legacy “Corporate AI Assistant / Corporate Brain” becomes transition/history terminology. Jarvis Company Intelligence is the current architecture.
 >
 > “Admonk AI Suite” is now a naming-debt item for the later product-family audit; do not rename it automatically without an owner naming decision.
 >
@@ -985,4 +989,4 @@ After lock:
 5. resolve M2-20;
 6. run final M2 exit reconciliation;
 7. create the Control Room Product Requirements;
-8. decide Harvey Lab implementation authorization.
+8. decide Jarvis Lab implementation authorization.
