@@ -143,7 +143,7 @@ Sequence may be adjusted if an earlier decision exposes a dependency.
 
 ## 8. Exact resume instruction
 
-> **Resume at M3-04 — Jarvis Company Intelligence Commercial/Product Role. M3-01 through M3-03 are locked.**
+> **Resume at the M3-04 owner decision — Jarvis Company Intelligence Commercial/Product Role. M3-01 through M3-03 are locked. If accepted, proceed to M3-05 Standalone vs Connected Product Value.**
 
 
 ## 9. M3 evidence decision protocol
@@ -223,3 +223,18 @@ Status:
 
 Current next gate:
 **M3-04 — Jarvis Company Intelligence Commercial/Product Role.**
+
+
+## 13. Current M3-04 gate
+
+Canonical research:
+`docs/research/FOUNDATION-M3-04-JARVIS-COMPANY-INTELLIGENCE-COMMERCIAL-ROLE-2026-09-28.md`
+
+Status:
+**RESEARCH COMPLETE — OWNER DECISION PENDING**
+
+Recommended direction:
+**Product Jarvis included; Jarvis Company Intelligence as separately entitled cross-product add-on.**
+
+If accepted:
+**M3-05 — Standalone vs Connected Product Value.**
