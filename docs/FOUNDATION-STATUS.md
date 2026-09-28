@@ -231,8 +231,15 @@ Current M3 completeness audit:
 
 
 ### Active product naming
-- **SOLO — unified company operating environment / software product — OWNER LOCKED**
+- **SOLO — TEMPORARY working name for the unified company operating environment / software product — ROLE LOCKED, NAME NOT FINAL**
 - **SIA — intelligent operator/presence inside SOLO — OWNER LOCKED**
 - **Jarvis — historical discovery/prototype terminology; retire from active naming**
 - **Admonk — historical/working terminology; retire from active naming**
 - Trademark/domain/company-name clearance remains a launch gate for SOLO and SIA.
+
+
+### Competitive baseline
+- 2026 market research findings are **LOCKED AS DISCOVERY BASELINE**.
+- Company/context graphs, interactive artifacts, deterministic workflows, governance, process templates, meeting lifecycle, agent control and ROI measurement are treated as current market table stakes or near-table-stakes.
+- Differentiation research centers on role/responsibility operating models, three onboarding modes, expected/configured/observed process comparison, one SIA identity, controlled interactive runtime and solo-to-enterprise continuity.
+- **SOLO remains a temporary working name.**
