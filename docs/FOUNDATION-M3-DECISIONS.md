@@ -189,3 +189,25 @@ Principle:
 > **Turning a product off should be safe and reversible until the customer deliberately crosses the irreversible boundary.**
 
 **Status:** LOCKED.
+
+### M3-11 — Layered Tenant Health + Contextual Guided Support
+
+**Decision:** Admonk separates public platform status, tenant-specific health and internal platform operations into three distinct layers, with contextual guided support connected directly to product/resource/health context.
+
+Rules:
+- public Admonk status covers broad incidents/maintenance that may affect many customers and remains available independently of tenant admin access;
+- Admonk One / Setup & Health is the tenant's authoritative customer-facing health surface for subscribed products, shared integrations, automations, lifecycle, usage blockers and relevant incidents;
+- specialist products retain domain-specific health meaning, readiness and remediation while Shared Platform aggregates them through a small normalized health contract;
+- customer-visible issues identify affected scope, impact, source/owner, who must act, last update, available remediation and escalation path;
+- known incidents and known self-remediable conditions are surfaced before duplicate support cases are created;
+- support initiated from a product/resource/health issue carries safe tenant/product/resource and diagnostic context into the case;
+- support case status remains visible through authorized tenant/admin surfaces and shared notifications;
+- Admonk Control Room remains an internal platform-operations surface materially richer than the customer health view;
+- tenant business-content access for support remains governed by scoped, time-bound, revocable and auditable Support Access Grants under M2-19A;
+- Jarvis may explain, guide and escalate health/support issues but cannot become the authority for incident state, grant privileged support access or reveal protected operator/secret data;
+- customer-facing health states stay small and understandable while product/internal systems may retain richer operational states.
+
+Principle:
+> **Show customers the health they need to act; keep operator complexity behind the boundary.**
+
+**Status:** LOCKED.
