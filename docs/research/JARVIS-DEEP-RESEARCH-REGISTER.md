@@ -57,6 +57,9 @@ Owner thought preserved for JX-03/JX-04: the Jarvis circle may become a semantic
 
 ## Current resume point
 
+Canonical handover checkpoint:
+`docs/checkpoints/JARVIS-DEEP-RESEARCH-HANDOVER-2026-09-28.md`
+
 **Reflex Decision Plane direction is LOCKED; Jev remains a Lab candidate, not a vendor dependency.**
 
 Current gate:
