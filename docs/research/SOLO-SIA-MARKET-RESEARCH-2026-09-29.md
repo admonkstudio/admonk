@@ -826,3 +826,28 @@ Locked conclusions:
 Naming note:
 - **SOLO is a temporary working environment name and is not the final external brand.**
 - SIA remains the intelligent-operator name subject to formal legal clearance.
+
+
+---
+
+# 12. Digital-role / autonomous-workforce finding
+
+Current market evidence confirms that role-scoped digital workers are becoming a major platform pattern.
+
+- Glean Transform maps recurring work by role/function and drafts agent/skill blueprints from discovered workflow opportunities.
+- ServiceNow Autonomous Workforce deploys role-scoped AI specialists with defined authority/governance to execute end-to-end work.
+- Salesforce Agentforce Operations allows workflow tasks to be assigned to AI agents, tests/locks their plans and supports human co-assignees/fallbacks.
+- Microsoft Research CORPGEN explicitly explores "digital employees" for multi-horizon workplace execution.
+
+SOLO/SIA should therefore treat "AI employee" as a validated market pattern, not a novel category.
+
+Potential differentiation:
+- the same role/responsibility ontology configures humans and digital specialists;
+- SIA can detect unfilled/overloaded process capacity and recommend options;
+- agent creation is downstream of process diagnosis;
+- explicit Simulation → Shadow → Supervised → Bounded Autonomous lifecycle;
+- outcome/cost evidence determines promotion;
+- the user experiences one SIA rather than managing a visible cast of AI personalities.
+
+Canonical follow-up:
+`docs/research/SIA-DIGITAL-ROLE-AGENT-MODEL-2026-09-29.md`
