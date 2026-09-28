@@ -238,7 +238,7 @@ Principle:
 
 **Decision:** Use one canonical family/masterbrand layer above specialist products, with Jarvis as the intelligent experience and the shared administration surface kept distinct. Retire “Admonk AI Suite” from active architecture/customer-facing terminology.
 
-**Important naming constraint:** the current word **“Admonk” is a temporary working/masterbrand placeholder, not a permanently locked commercial name.** M3-13 locks the hierarchy and naming roles, not the final brand name.
+**Permanent masterbrand:** **SIA**. The previous working name “Admonk” is superseded as active brand terminology. M3-13 locks both the family hierarchy and the SIA masterbrand selection.
 
 Rules:
 - one family/masterbrand identity sits above specialist products;
@@ -250,12 +250,12 @@ Rules:
 - historical AI-SUITE documents remain for provenance but are marked superseded and removed from active authority/navigation through controlled cleanup;
 - future bundles/collections may receive names only when GTM evidence justifies them and do not replace the family/masterbrand architecture;
 - no mass repository/file rename is required solely for cosmetic consistency;
-- final permanent family/masterbrand naming is deferred to a dedicated evidence-based naming/GTM exercise.
+- SIA is the selected permanent masterbrand; legal trademark/domain/entity clearance remains a rollout gate rather than an architecture decision.
 
 Principle:
-> **Lock the naming architecture now; defer the permanent name until evidence supports it.**
+> **SIA is the family. Products define the outcome. Jarvis supplies the intelligence.**
 
-Working shorthand while discovery continues:
-> **Admonk is the temporary family name. Products define the outcome. Jarvis supplies the intelligence.**
+Canonical family shorthand:
+> **SIA is the family. Products define the outcome. Jarvis supplies the intelligence.**
 
 **Status:** LOCKED.
