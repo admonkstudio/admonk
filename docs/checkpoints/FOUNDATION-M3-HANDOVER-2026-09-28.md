@@ -143,7 +143,7 @@ Sequence may be adjusted if an earlier decision exposes a dependency.
 
 ## 8. Exact resume instruction
 
-> **Resume at the M3-02 owner decision — Customer / Organization Archetype & Buying Unit. M3-01 is locked. If M3-02 is accepted, proceed to M3-03 Product / Module Catalog & Boundaries.**
+> **Resume at M3-03 — Product / Module Catalog & Boundaries. M3-01 and M3-02 are locked.**
 
 
 ## 9. M3 evidence decision protocol
@@ -207,10 +207,7 @@ Canonical research:
 `docs/research/FOUNDATION-M3-02-CUSTOMER-ARCHETYPE-BUYING-UNIT-2026-09-28.md`
 
 Status:
-**RESEARCH COMPLETE — OWNER DECISION PENDING**
+**LOCKED — OWNER SELECTED SCENARIO B**
 
-Recommended direction:
-**Business-led, cross-functional buying unit.**
-
-If accepted:
+Current next gate:
 **M3-03 — Product / Module Catalog & Boundaries.**
