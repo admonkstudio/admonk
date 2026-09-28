@@ -3,7 +3,7 @@
 **Milestone:** FOUNDATION-M2 — Define Shared Product Platform Foundation  
 **Status:** Active
 
-**Terminology compatibility — Harvey (2026-09-28):** references in locked M2 decisions to `Corporate Brain` or `Corporate AI Assistant` map to the current Harvey Company Intelligence / Company-Executive Operating Lens. They do not define a second brain, runtime, memory system or permission authority.
+**Terminology compatibility — Jarvis (2026-09-28):** references in locked M2 decisions to `Corporate Brain` or `Corporate AI Assistant` map to the current Jarvis Company Intelligence / Company-Executive Operating Lens. They do not define a second brain, runtime, memory system or permission authority.
 
 | ID | Status | Decision | Accepted cost / tradeoff |
 |---|---|---|---|
