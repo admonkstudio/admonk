@@ -1127,3 +1127,21 @@ Two customers may use the exact same SIA runtime/components yet see very differe
 are different.
 
 That is the desired form of personalization.
+
+
+---
+
+## Naming supersession — 2026-09-29
+
+The owner subsequently refined the naming model:
+
+- **SOLO** is the unified company operating environment.
+- **SIA** is the intelligent operator/presence within SOLO.
+- references in this document that describe “SIA” as the operating environment should be read as **SOLO**;
+- references that describe “Jarvis” as the intelligent operator should be read as **SIA**.
+
+This is a naming-role supersession, not a rejection of the interaction architecture.
+
+Canonical shorthand:
+
+> **SOLO is the environment. SIA is the intelligence.**
