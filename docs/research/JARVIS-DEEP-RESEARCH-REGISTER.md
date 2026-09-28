@@ -1,5 +1,8 @@
 # Jarvis Deep Research Register
 
+**Historical research name:** Jarvis  
+**Current product name: Harvey** — renamed by owner on 2026-09-28. RQ-01 through RQ-25 filenames remain `JARVIS-*` for traceability; they describe the architecture now carried forward as Harvey.
+
 **Date:** 2026-09-27  
 **Purpose:** Track the gated research program that will produce the final Jarvis concept, then feed the concept audit, whole-project audit and master-plan continuation.
 
