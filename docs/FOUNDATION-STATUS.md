@@ -3,7 +3,7 @@
 **Date:** 2026-09-28
 **Program:** Admonk Foundation Program
 **Current milestone:** **FOUNDATION-M3 — Main Product Master Plan**
-**Current sub-milestone:** **M3-08 Cross-Product Navigation & Shared Shell — NEXT**
+**Current sub-milestone:** **M3-08 Cross-Product Navigation & Shared Shell — RESEARCH COMPLETE / OWNER DECISION PENDING**
 **Milestone status:** **FOUNDATION-M2 COMPLETE / LOCKED; FOUNDATION-M3 ACTIVE**
 **Foundation lock:** **LOCKED — Admonk Studio Foundation v1.0.0**
 **Current stable Product Supervisor:** **v2.0.0**  
@@ -119,6 +119,9 @@ Current M3-06 research:
 
 Current M3-07 research:
 `docs/research/FOUNDATION-M3-07-ADMONK-ONE-ADMIN-SETUP-EXPERIENCE-2026-09-28.md`
+
+Current M3-08 research:
+`docs/research/FOUNDATION-M3-08-CROSS-PRODUCT-NAVIGATION-SHARED-SHELL-2026-09-28.md`
 
 M3-01 status: **LOCKED — Scenario B selected**.
 
