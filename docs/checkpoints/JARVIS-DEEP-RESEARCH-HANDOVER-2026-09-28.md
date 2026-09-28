@@ -3,7 +3,7 @@
 **Status:** CANONICAL RESUME CHECKPOINT  
 **Repository:** admonkstudio/admonk  
 **Implementation posture:** Discovery / architecture only. No Production implementation is authorized by this checkpoint.  
-**Exact resume gate:** **ADMONK PRODUCT PLATFORM/FOUNDATION AUDIT COMPLETE — OWNER LOCK PENDING**  
+**Exact resume gate:** **EXTERNAL CHALLENGE AUDIT COMPLETE — OWNER DECISION PENDING**  
 **Parallel Foundation gate:** **FOUNDATION-M2 remains active at M2-19 — Version / Compatibility / Migration**
 
 ## Current architecture audit
@@ -24,6 +24,22 @@ Harvey character system:
 `docs/HARVEY-IDENTITY-CHARACTER-DIRECTION.md`
 
 The audit does not reopen RQ-01..25. It recommends documentation reconciliation, operator-plane hardening, explicit signal taxonomy, telemetry privacy/environment rules, and feeding version/runtime findings into M2-19/M2-20.
+
+## Current external challenge audit
+
+Canonical audit:
+`docs/audits/ADMONK-HARVEY-EXTERNAL-CHALLENGE-AUDIT-2026-09-28.md`
+
+Verdict:
+- Architecture: GREEN / KEEP
+- Scaling: GREEN / KEEP
+- Control Room: GREEN / KEEP, control-spine scope
+- Character system: AMBER / refine + Lab-test
+- Harvey public name: RED until professional clearance
+
+This audit challenges the post-reconciliation architecture against AWS, Azure, Google SRE, NIST, OpenTelemetry, OpenAI, Anthropic, Microsoft Human-AI guidance, Google Conversation Design and current Harvey AI brand/trademark evidence.
+
+**Do not resume M2-19 until the owner accepts/revises this challenge conclusion.**
 
 ## Current Foundation audit
 
@@ -616,7 +632,7 @@ If this checkpoint conflicts with a later explicitly locked/versioned repository
 
 ## 18. Exact resume statement
 
-> **Resume at the Admonk Product Platform/Foundation audit owner decision.**
+> **Resume at the external challenge-audit owner decision.**
 >
 > RQ-01 through RQ-25 are locked.
 >
