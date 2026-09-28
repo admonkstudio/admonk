@@ -1,7 +1,7 @@
 # FOUNDATION-M3-07 — Admonk One Administration & Setup Experience
 
 **Date:** 2026-09-28  
-**Status:** RESEARCH COMPLETE — OWNER DECISION PENDING  
+**Status:** LOCKED — OWNER SELECTED SCENARIO B  
 **Milestone:** FOUNDATION-M3 — Main Product Master Plan  
 **Method:** quick internal scan → two high-value sources → two scenarios → challenge → synthesis  
 **Implementation authority:** None
@@ -192,4 +192,4 @@ Otherwise, Admonk One should link to the owning product rather than duplicate it
 >
 > **One place to administer Admonk; the right product remains the place to configure specialist work.**
 
-**Recommendation:** LOCK Scenario B.
+**Recommendation:** LOCKED — Scenario B.
