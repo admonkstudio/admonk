@@ -1,22 +1,38 @@
 # Admonk Product Platform Foundation
 
+## 2026-09-29 product-model reconciliation
+
+FOUNDATION-M2 remains the locked shared technical/platform architecture.
+
+The later M3 discovery changed the customer-facing product model to **one unified company operating environment with SIA as the company brain**.
+
+Read this document through:
+- `docs/FOUNDATION-M2-PRODUCT-MODEL-RECONCILIATION-2026-09-29.md`
+- `docs/PRODUCT-MASTER-PLAN.md`
+
+Historical references to a composable family of separately operated specialist products describe the earlier consumer model, not current product authority.
+
+Domain ownership, capability boundaries, permissions, settings, integrations, context, audit, versioning and runtime-separation principles remain active.
+
+---
+
 **Status:** FOUNDATION-M2 COMPLETE / LOCKED — shared platform architecture  
 **Date:** 2026-09-26  
 **Implementation:** Not authorized by this document
 
 ## 1. Product model
 
-Admonk's long-term software direction is a **composable product family**:
+The current software direction is a **unified company operating environment with composable domain/role capabilities**:
 
-> **One coherent product foundation that can be sold in parts, enabled by need, and customized through configuration—while each domain keeps the views, workflows and identity required by its users.**
+> **One coherent environment, enabled by need and customized through configuration, while domain authority and specialist semantics remain explicit underneath.**
 
 This does not require one monolithic codebase or one database.
 
 The architecture should distinguish:
 
 - **shared product foundation** — semantics/contracts/services that are genuinely common;
-- **company/corporate layer** — organization-wide intelligence and coordination;
-- **department/domain products** — Marketing, Support and future specialist workspaces;
+- **company operating model** — organization-wide people/role/process/context relationships;
+- **domain/capability layers** — Marketing, Support, Recruiting and future specialist semantics/workflows, whether or not they have dedicated runtime surfaces;
 - **tenant configuration** — modules, roles, permissions, connectors, policies and themes.
 
 ## 2. Shared vs domain ownership
@@ -82,17 +98,21 @@ Effective access must never exceed the upstream provider's own permission.
 
 Explicit restrictions should normally outrank broad grants.
 
-## 4. Product packaging / entitlements
+## 4. Capability packaging / entitlements
 
 A tenant may enable:
-- company/corporate layer;
-- Marketing;
-- Support;
-- future department modules.
+- role/domain capability packs;
+- advanced connectors/actions;
+- specialist-worker capacity;
+- premium AI/analytics capability;
+- enterprise governance/security capability;
+- storage/history/usage capacity.
 
-The entitlement system should determine which products/modules/features are active.
+The entitlement system determines which capabilities/features are active.
 
-Do not fork the product per customer to represent packaging.
+Entitlements do not decide user permission by themselves.
+
+Do not fork the environment per customer to represent packaging.
 
 ## 5. Shared setup shell
 
@@ -110,7 +130,7 @@ Reusable setup mechanics may include:
 - activation review;
 - setup health.
 
-Each domain then contributes its own onboarding.
+Each domain/role then contributes archetypes, responsibilities and playbooks into the shared onboarding engine.
 
 ## 6. Knowledge inheritance
 
@@ -119,7 +139,7 @@ Candidate hierarchy:
 ```text
 Company knowledge
     ↓
-Department/product knowledge
+Department/domain knowledge
     ↓
 Role/team context
     ↓
@@ -137,14 +157,14 @@ Rules:
 
 ## 7. Design inheritance
 
-Approved family design direction: **shared behavior + subtle family cues + distinct product identity**.
+Current design direction: **one coherent interaction language + role/domain-appropriate workspace expression**.
 
 ```text
 Admonk Design Foundation
         ↓
-Product-family shell behavior
+Unified environment behavior
         ↓
-Product/domain theme + patterns
+Role/domain patterns
         ↓
 Tenant brand/theme configuration
         ↓
@@ -166,15 +186,15 @@ Products may vary:
 - motion character;
 - domain workflows.
 
-## 8. Jarvis Company Intelligence / cross-domain layer
+## 8. SIA company-brain / cross-domain layer
 
-Company-level intelligence is delivered by the **same Jarvis core** under an authorized Company/Executive Operating Lens. It is not a second brain or separate assistant authority.
+Company-level intelligence is delivered by the **same SIA core** under an authorized Company/Executive Operating Lens. It is not a second brain or separate assistant authority.
 
-The company layer should:
-- coordinate organization-level setup through the shared platform;
+SIA should:
+- coordinate organization-level work only within authorized context/capabilities;
 - expose cross-department summaries only when permitted;
-- provide company-level Jarvis orchestration across subscribed/authorized capabilities;
-- link to specialist products;
+- orchestrate deterministic workflows and dynamic specialists;
+- navigate artifacts/resources/workspaces without requiring a product switch;
 - route cross-domain work through governed contracts.
 
 It should not:
@@ -211,14 +231,17 @@ Default sequence:
 
 Preserve deliberate change seams around tenant identity, permissions, durable data, external providers and versioned cross-product contracts.
 
-## 10. Standalone principle
+## 10. Progressive-capability principle
 
-A specialist product intended to be sold separately should remain useful when enabled alone.
+The environment must remain useful with a small capability set.
 
-When multiple products are enabled:
-- shared identity/settings/navigation reduce duplication;
-- cross-product intelligence may increase;
-- domain authority remains local.
+As additional roles, domains, connectors, users and capabilities are enabled:
+- the same company model becomes richer;
+- SIA gains only the authorized context/capabilities;
+- the interface reveals more complexity only where useful;
+- domain authority remains explicit.
+
+One-person simplicity and enterprise governance are different configurations of the same conceptual product.
 
 ## 11. Customization without fragmentation
 
@@ -311,4 +334,4 @@ The target is:
 
 ## 13. Principle
 
-> **Commercial unity does not require technical collapse. Shared foundations should unify the experience and contracts while preserving domain authority and independent evolution.**
+> **One customer environment does not require technical collapse. Unify the experience while preserving domain authority, explicit contracts and independently scalable capability boundaries.**
