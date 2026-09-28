@@ -3,7 +3,7 @@
 **Date:** 2026-09-28
 **Program:** Admonk Foundation Program
 **Current milestone:** **FOUNDATION-M3 — Main Product Master Plan**
-**Current sub-milestone:** **M3-11 Support / Operations Model and Tenant-Visible Health — NEXT**
+**Current sub-milestone:** **M3-11 Support / Operations Model and Tenant-Visible Health — RESEARCH COMPLETE / OWNER DECISION PENDING**
 **Milestone status:** **FOUNDATION-M2 COMPLETE / LOCKED; FOUNDATION-M3 ACTIVE**
 **Foundation lock:** **LOCKED — Admonk Studio Foundation v1.0.0**
 **Current stable Product Supervisor:** **v2.0.0**  
@@ -212,3 +212,7 @@ FOUNDATION-M2 is COMPLETE / LOCKED.
 
 Current M3-10 research:
 `docs/research/FOUNDATION-M3-10-PRODUCT-ACTIVATION-DEACTIVATION-OFFBOARDING-EXPERIENCE-2026-09-28.md`
+
+
+Current M3-11 research:
+`docs/research/FOUNDATION-M3-11-SUPPORT-OPERATIONS-TENANT-VISIBLE-HEALTH-2026-09-28.md`
