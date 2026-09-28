@@ -1,7 +1,7 @@
 # FOUNDATION-M3-01 — Product-Family Identity & Promise
 
 **Date:** 2026-09-28  
-**Status:** RESEARCH COMPLETE — OWNER DECISION PENDING  
+**Status:** LOCKED — OWNER SELECTED SCENARIO B  
 **Milestone:** FOUNDATION-M3 — Main Product Master Plan  
 **Method:** quick internal scan → two high-value external sources → two scenarios → challenge → synthesis  
 **Implementation authority:** None
@@ -105,7 +105,7 @@ The wording is directional, not yet the final brand tagline.
 
 ## Recommendation
 
-**Choose Scenario B — Specialist-first, platform-backed product family.**
+**LOCKED: Scenario B — Specialist-first, platform-backed product family.**
 
 Lock the commercial/product identity around:
 - independently valuable specialist products;
