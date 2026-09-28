@@ -918,3 +918,24 @@ Determine what remains:
 - a domain-owned runtime;
 
 without turning every logical boundary into a microservice.
+
+
+## Current M2-20 research — 2026-09-28
+
+Status: **RESEARCH COMPLETE — OWNER LOCK PENDING**
+
+Canonical research:
+`docs/research/FOUNDATION-M2-20-RUNTIME-BOUNDARIES-2026-09-28.md`
+
+Core recommendation:
+- separate logical contract boundaries, scaling units and physical deployment boundaries;
+- prefer contract/module reuse for deterministic shared logic;
+- use worker/process roles for async/bursty/resource-heavy work;
+- use shared runtime services only when state/security/scale/availability/ingress/lifecycle makes the network boundary valuable;
+- keep specialist domain semantics in domain-owned runtimes;
+- SCALE-1 remains coarse-grained: Platform Management, Jarvis Interactive, specialist products, Execution/Workers, Connector Runtime and Platform Operations;
+- no centralized Context Service, AI Gateway, Notification Service, Artifact Service, Memory Service, Compatibility Service or Feature Flag Service at SCALE-1;
+- browser/computer/code execution is hard-isolated whenever enabled;
+- service extraction remains evidence-driven and reversible.
+
+Do not record M2-20 as locked until owner acceptance.
