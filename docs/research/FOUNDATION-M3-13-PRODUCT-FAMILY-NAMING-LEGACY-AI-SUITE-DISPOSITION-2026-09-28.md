@@ -1,7 +1,7 @@
 # FOUNDATION-M3-13 — Product-Family Naming / Legacy AI Suite Disposition
 
 **Date:** 2026-09-28  
-**Status:** LOCKED — OWNER SELECTED SCENARIO B; MASTERBRAND NAME REMAINS TEMPORARY  
+**Status:** LOCKED — OWNER SELECTED SCENARIO B; PERMANENT MASTERBRAND SELECTED: SIA  
 **Milestone:** FOUNDATION-M3 — Main Product Master Plan  
 **Research depth:** Deep decision research  
 **Implementation authority:** None
@@ -573,11 +573,11 @@ Keeping it as a permanent product-family brand would preserve historical termino
 
 ## 12. Owner clarification — working name only
 
-The owner accepted Scenario B with an explicit naming constraint:
+The owner accepted Scenario B and subsequently selected the permanent masterbrand:
 
-> **“Admonk” is a temporary working name.**
+> **SIA**
 
-Therefore M3-13 locks the **brand architecture**, not the permanent commercial name.
+Therefore M3-13 now locks both the **brand architecture** and the permanent family/masterbrand name **SIA**.
 
 What is locked:
 - there is one family/masterbrand identity;
@@ -587,28 +587,27 @@ What is locked:
 - “AI Suite” is retired as the active family architecture label;
 - future bundles do not become the permanent family identity by default.
 
-What is **not** locked:
-- the final permanent family/masterbrand name;
-- whether the eventual replacement for “Admonk” keeps, changes or eliminates the current wordmark;
+What remains **not** locked:
 - final naming of any still-unresolved specialist product;
-- final customer-facing name of the shared administration surface if later brand research recommends a rename.
+- whether working names such as SIA One, SIA Platform or SIA Credits are the best permanent customer-facing nouns;
+- final visual identity, trademark registration scope, domains and legal rollout sequence.
 
-Until a dedicated naming/GTM exercise selects the permanent name, **“Admonk” functions only as the canonical working placeholder used to keep architecture/docs coherent.**
+**“Admonk” is now legacy/working terminology and should be retired from active customer-facing architecture through controlled documentation and repository cleanup.**
 
 Principle:
 
-> **Lock the naming architecture now; defer the permanent name until evidence supports it.**
+> **SIA is the family. Products define the outcome. Jarvis supplies the intelligence.**
 
 
 ---
 
 ## 13. Permanent masterbrand candidate research
 
-### Candidate #1 — SIA
+### Permanent masterbrand — SIA
 
-**Status:** LEADING POTENTIAL CANDIDATE — LOCKED FOR FURTHER CLEARANCE, NOT FINAL BRAND SELECTION
+**Status:** FINAL OWNER BRAND SELECTION — LOCKED
 
-The owner selected **SIA** as the first serious permanent-masterbrand candidate.
+The owner selected **SIA** as the permanent family/masterbrand.
 
 Why it qualifies:
 - extremely short and memorable;
@@ -619,12 +618,9 @@ Why it qualifies:
 - conceptually compatible with the product-family architecture and Jarvis;
 - does not depend on the temporary “Admonk” name or on the word “AI”.
 
-Commercial caution:
+Commercial/legal implementation caution:
 - active technology/software/AI uses of SIA exist;
-- formal trademark/domain/company-name clearance is required before any final brand lock;
-- Candidate #1 status does not authorize public rebrand, repository rename, domain migration or customer-facing rollout.
+- final naming selection is locked by the owner, but formal trademark/domain/company-name clearance remains mandatory before public rollout;
+- legal clearance may constrain jurisdictions, classes, stylization, entity naming or rollout mechanics without reopening the product architecture.
 
-Research rule from this point:
-> **SIA is the benchmark. Alternatives should only be surfaced if they are comparably short, pronounceable, memorable, meaningful and credible as a global technology masterbrand.**
-
-Research continues across Ancient Egyptian and other ancient-language traditions before final owner selection.
+Research is closed for masterbrand selection. Alternative-name research becomes historical evidence only unless legal clearance later creates a blocking conflict.
