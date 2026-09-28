@@ -3,7 +3,7 @@
 **Date:** 2026-09-27
 **Program:** Admonk Foundation Program
 **Current milestone:** **FOUNDATION-M2 — Define Shared Product Platform Foundation**
-**Current sub-milestone:** **M2-19A — Platform Operator Identity, Support Access & Environment Authority — NEXT / research not started**
+**Current sub-milestone:** **M2-19A — Platform Operator Identity, Support Access & Environment Authority — RESEARCH COMPLETE / OWNER LOCK PENDING**
 **Milestone status:** **ACTIVE**
 **Foundation lock:** **LOCKED — Admonk Studio Foundation v1.0.0**
 **Current stable Product Supervisor:** **v2.0.0**  
@@ -74,6 +74,9 @@ Operating brief:
 
 Current M2-19 research:
 `docs/research/FOUNDATION-M2-19-VERSION-COMPATIBILITY-MIGRATION-2026-09-28.md`
+
+Current M2-19A research:
+`docs/research/FOUNDATION-M2-19A-PLATFORM-OPERATOR-AUTHORITY-2026-09-28.md`
 
 Current decision sequence starts with repository/code organization and shared-code boundaries before runtime/platform contracts.
 
