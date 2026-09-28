@@ -95,8 +95,8 @@ Do not select tools because a platform supports more features. Capability and ar
 17. **M2-17 Localization/timezone — LOCKED**
 18. **M2-18 Data sensitivity/retention/export/deletion — LOCKED**
 19. **M2-19 Version / compatibility / migration — LOCKED**
-19A. **M2-19A Platform Operator Identity, Support Access & Environment Authority — NEXT**
-20. Runtime boundary decisions: shared contract vs package vs service vs domain-owned implementation
+19A. **M2-19A Platform Operator Identity, Support Access & Environment Authority — LOCKED**
+20. **M2-20 Runtime boundary decisions: shared contract vs package/module vs process/worker vs shared platform service vs domain-owned runtime — NEXT**
 
 Sequence may be adjusted when an earlier decision proves a dependency.
 
@@ -899,21 +899,22 @@ Canonical research:
 This decision was added by the Jarvis/Control Room Foundation audit and must be resolved before M2-20 runtime packaging.
 
 
-## Current M2-19A research — 2026-09-28
+## Locked decision — M2-19A Platform Operator Identity, Support Access & Environment Authority
 
-Status: **RESEARCH COMPLETE — OWNER LOCK PENDING**
+**Decision:** Platform Operator is a separate platform authorization domain. Operators have standing eligibility, then activate time-bound privileged sessions when needed. Tenant business-content access requires scoped Support Access Grants. Environment is explicit. Operators never silently impersonate customers. Break-glass is a separate emergency path. M2-11/RQ-07 remains the only action-authority model.
 
 Canonical research:
 `docs/research/FOUNDATION-M2-19A-PLATFORM-OPERATOR-AUTHORITY-2026-09-28.md`
 
-Core recommendation:
-- separate Platform Operator authority from tenant roles;
-- JIT time-bound privileged Operator Sessions;
-- Support Access Grants for tenant business content;
-- explicit environment authority;
-- no silent impersonation;
-- dedicated break-glass recovery;
-- M2-11/RQ-07 remains the action-authority model;
-- Control Room visibility/content/action authority remain separate.
+**Status:** LOCKED.
 
-Do not record M2-19A as locked until owner acceptance.
+## Current gate — M2-20 Runtime Boundaries
+
+Determine what remains:
+- a shared contract only;
+- a shared package/module;
+- a separate process/worker role;
+- a shared platform service;
+- a domain-owned runtime;
+
+without turning every logical boundary into a microservice.
