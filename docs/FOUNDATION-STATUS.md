@@ -230,8 +230,9 @@ Current M3 completeness audit:
 `docs/research/FOUNDATION-M3-COMPLETENESS-AUDIT-2026-09-28.md`
 
 
-### Permanent masterbrand
-- **SIA — FINAL OWNER SELECTION / LOCKED**
-- “Admonk” is superseded as the active masterbrand and remains only historical/working terminology during controlled migration.
-- Trademark/domain/company-name clearance remains a rollout gate.
-- Alternative-name research is closed unless legal clearance produces a blocking conflict.
+### Active product naming
+- **SOLO — unified company operating environment / software product — OWNER LOCKED**
+- **SIA — intelligent operator/presence inside SOLO — OWNER LOCKED**
+- **Jarvis — historical discovery/prototype terminology; retire from active naming**
+- **Admonk — historical/working terminology; retire from active naming**
+- Trademark/domain/company-name clearance remains a launch gate for SOLO and SIA.
