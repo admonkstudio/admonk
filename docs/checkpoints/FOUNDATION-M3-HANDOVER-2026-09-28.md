@@ -143,7 +143,7 @@ Sequence may be adjusted if an earlier decision exposes a dependency.
 
 ## 8. Exact resume instruction
 
-> **Resume at M3-10 — Product Activation / Deactivation / Offboarding Experience. M3-01 through M3-09 are locked.**
+> **Resume at the M3-10 owner decision — Product Activation / Deactivation / Offboarding Experience. M3-01 through M3-09 are locked. If accepted, proceed to M3-11 Support / Operations Model and Tenant-Visible Health.**
 
 
 ## 9. M3 evidence decision protocol
@@ -295,3 +295,18 @@ Status:
 
 Current next gate:
 **M3-10 — Product Activation / Deactivation / Offboarding Experience.**
+
+
+## 19. Current M3-10 gate
+
+Canonical research:
+`docs/research/FOUNDATION-M3-10-PRODUCT-ACTIVATION-DEACTIVATION-OFFBOARDING-EXPERIENCE-2026-09-28.md`
+
+Status:
+**RESEARCH COMPLETE — OWNER DECISION PENDING**
+
+Recommended direction:
+**Guided, staged, dependency-aware product lifecycle with explicit retention/reactivation and irreversible closure boundary.**
+
+If accepted:
+**M3-11 — Support / Operations Model and Tenant-Visible Health.**
