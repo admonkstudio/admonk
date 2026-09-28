@@ -3,7 +3,7 @@
 **Status:** CANONICAL RESUME CHECKPOINT  
 **Repository:** admonkstudio/admonk  
 **Implementation posture:** Discovery / architecture only. No Production implementation is authorized by this checkpoint.  
-**Exact resume gate:** **EXTERNAL CHALLENGE AUDIT COMPLETE — OWNER DECISION PENDING**  
+**Exact resume gate:** **FOUNDATION-M2 M2-19 — VERSION / COMPATIBILITY / MIGRATION**  
 **Parallel Foundation gate:** **FOUNDATION-M2 remains active at M2-19 — Version / Compatibility / Migration**
 
 ## Current architecture audit
@@ -17,29 +17,39 @@ Verdict:
 Canonical current product identity:
 **Harvey**
 
-Current Harvey experience:
-`docs/HARVEY-EXPERIENCE-DIRECTION.md`
+Current Jarvis experience:
+`docs/JARVIS-EXPERIENCE-DIRECTION.md`
 
-Harvey character system:
-`docs/HARVEY-IDENTITY-CHARACTER-DIRECTION.md`
 
 The audit does not reopen RQ-01..25. It recommends documentation reconciliation, operator-plane hardening, explicit signal taxonomy, telemetry privacy/environment rules, and feeding version/runtime findings into M2-19/M2-20.
+
+## Owner resolution — Jarvis restored / characters parked
+
+On 2026-09-28 the owner resolved the external challenge audit:
+- Jarvis is again the canonical current product identity;
+- Harvey is a historical naming branch only;
+- character/persona variants are parked as a possible future add-on and are not active architecture;
+- Product Platform/Foundation audit findings are accepted;
+- official sequence resumes at M2-19.
+
+Future character hold:
+`docs/research/JARVIS-FUTURE-CHARACTER-ADDON-HOLD.md`
 
 ## Current external challenge audit
 
 Canonical audit:
 `docs/audits/ADMONK-HARVEY-EXTERNAL-CHALLENGE-AUDIT-2026-09-28.md`
 
-Verdict:
+Resolved verdict:
 - Architecture: GREEN / KEEP
 - Scaling: GREEN / KEEP
 - Control Room: GREEN / KEEP, control-spine scope
-- Character system: AMBER / refine + Lab-test
-- Harvey public name: RED until professional clearance
+- Character system: PARKED
+- Jarvis: RESTORED
 
 This audit challenges the post-reconciliation architecture against AWS, Azure, Google SRE, NIST, OpenTelemetry, OpenAI, Anthropic, Microsoft Human-AI guidance, Google Conversation Design and current Harvey AI brand/trademark evidence.
 
-**Do not resume M2-19 until the owner accepts/revises this challenge conclusion.**
+**Owner accepted the challenge conclusions. Resume M2-19.**
 
 ## Current Foundation audit
 
@@ -632,7 +642,7 @@ If this checkpoint conflicts with a later explicitly locked/versioned repository
 
 ## 18. Exact resume statement
 
-> **Resume at the external challenge-audit owner decision.**
+> **Resume at FOUNDATION-M2 M2-19 — Version / Compatibility / Migration.**
 >
 > RQ-01 through RQ-25 are locked.
 >
