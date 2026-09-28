@@ -3,7 +3,7 @@
 **Date:** 2026-09-27
 **Program:** Admonk Foundation Program
 **Current milestone:** **FOUNDATION-M2 — Define Shared Product Platform Foundation**
-**Current sub-milestone:** **FOUNDATION-M2 Exit Reconciliation / Completeness Audit — NEXT**
+**Current sub-milestone:** **FOUNDATION-M2 Exit Reconciliation / Completeness Audit — COMPLETE / OWNER LOCK PENDING**
 **Milestone status:** **ACTIVE**
 **Foundation lock:** **LOCKED — Admonk Studio Foundation v1.0.0**
 **Current stable Product Supervisor:** **v2.0.0**  
@@ -150,3 +150,18 @@ External challenge audit resolved by owner: Jarvis restored; characters parked; 
 - M2-19A — **LOCKED**: Separate Platform-Operator Authority with JIT Privilege, Scoped Support Access & Explicit Environment.
 
 - M2-20 — **LOCKED**: Coarse-Grained Runtime Architecture with Evidence-Promoted Isolation.
+
+## Current M2 exit audit
+
+Canonical audit:
+`docs/audits/FOUNDATION-M2-EXIT-RECONCILIATION-2026-09-28.md`
+
+Verdict:
+**PASS WITH TWO REQUIRED RECONCILIATIONS — OWNER LOCK PENDING**
+
+Required before M2 closure:
+- R-01 Workload/Machine Identity promotion;
+- R-02 Tenant/Product Operational Lifecycle contract;
+- stale Product Platform open-question list reclassification.
+
+If accepted, apply these reconciliations, mark FOUNDATION-M2 COMPLETE/LOCKED, and advance to FOUNDATION-M3 — Main Product Master Plan.
