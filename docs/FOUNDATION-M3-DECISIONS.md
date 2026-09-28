@@ -1,7 +1,7 @@
 # FOUNDATION-M3 Decisions
 
 **Milestone:** FOUNDATION-M3 — Main Product Master Plan
-**Status:** ACTIVE
+**Status:** RECONCILED — HISTORICAL DECISIONS RETAINED; CURRENT AUTHORITY IS docs/PRODUCT-MASTER-PLAN.md
 
 ### M3-01 — Specialist-first, Platform-backed, Progressively Unified
 
@@ -280,3 +280,40 @@ Principle:
 > **Open SOLO. Ask SIA.**
 
 **Status:** LOCKED BY OWNER — COMMERCIAL/LEGAL CLEARANCE PENDING.
+
+
+---
+
+## 2026-09-29 Product-Model Reconciliation
+
+The original M3 decision sequence captured the best product-family model available before the later SIA/company-brain discoveries.
+
+It is retained for traceability.
+
+Current authority:
+- `docs/audits/FOUNDATION-M3-FINAL-RECONCILIATION-2026-09-29.md`
+- `docs/PRODUCT-MASTER-PLAN.md`
+- `docs/SIA-EXPERIENCE-DIRECTION.md`
+
+Decision disposition:
+
+| Decision | Current disposition |
+|---|---|
+| M3-01 Specialist-first | **SUPERSEDED** — one environment + role/domain lenses |
+| M3-02 Buying unit | **REVISED** — solo/role/team/enterprise entry |
+| M3-03 Product catalog | **SUPERSEDED** — capabilities/lenses, not separate apps by default |
+| M3-04 Product Jarvis / Company Intelligence | **SUPERSEDED** — SIA is company brain from start |
+| M3-05 Standalone products | **SUPERSEDED** — one company model compounds |
+| M3-06 Packaging/SKUs | **RETAIN MECHANICS / REVISE OBJECTS** |
+| M3-07 Admonk One | **REVISED** — integrated Administration / Setup & Health |
+| M3-08 Family shell/product navigation | **SUPERSEDED** — unified environment/workspaces |
+| M3-09 Domain authority | **RETAIN / STRENGTHEN** |
+| M3-10 Lifecycle | **RETAIN / BROADEN** |
+| M3-11 Health/support | **RETAIN / BROADEN** |
+| M3-12 Release compatibility | **RETAIN** |
+| M3-13 Family naming | **SUPERSEDED** |
+| M3-14 SOLO/SIA naming | **PARTIAL** — SIA role locked; SOLO temporary |
+
+Do not use the old LOCKED labels in isolation to override the reconciliation above.
+
+The Foundation intentionally preserves historical decisions instead of rewriting history.
