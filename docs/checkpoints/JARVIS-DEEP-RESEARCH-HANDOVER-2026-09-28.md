@@ -3,8 +3,8 @@
 **Status:** CANONICAL RESUME CHECKPOINT  
 **Repository:** admonkstudio/admonk  
 **Implementation posture:** Discovery / architecture only. No Production implementation is authorized by this checkpoint.  
-**Exact resume gate:** **FOUNDATION-M2 EXIT AUDIT COMPLETE — OWNER LOCK PENDING**  
-**Parallel Foundation gate:** **FOUNDATION-M2 remains active at M2-19 — Version / Compatibility / Migration**
+**Exact resume gate:** **FOUNDATION-M3 — MAIN PRODUCT MASTER PLAN**  
+**Foundation status:** **FOUNDATION-M2 COMPLETE / LOCKED; FOUNDATION-M3 CURRENT**
 
 ## Current architecture audit
 
@@ -15,7 +15,7 @@ Verdict:
 **LOCKED — PASS WITH REQUIRED REMEDIATIONS / reconciliation applied**
 
 Canonical current product identity:
-**Harvey**
+**Jarvis**
 
 Current Jarvis experience:
 `docs/JARVIS-EXPERIENCE-DIRECTION.md`
@@ -57,7 +57,7 @@ Canonical audit:
 `docs/audits/ADMONK-PRODUCT-PLATFORM-FOUNDATION-AUDIT-2026-09-28.md`
 
 Verdict:
-**PASS WITH REQUIRED FOUNDATION REFINEMENTS — OWNER LOCK PENDING**
+**LOCKED — PASS WITH REQUIRED FOUNDATION REFINEMENTS / reconciled**
 
 Key proposed sequence:
 **M2-19 → M2-19A Platform Operator Identity/Support Access/Environment Authority → M2-20**
@@ -101,14 +101,23 @@ Canonical audit:
 `docs/audits/FOUNDATION-M2-EXIT-RECONCILIATION-2026-09-28.md`
 
 Verdict:
-**PASS WITH TWO REQUIRED RECONCILIATIONS — OWNER LOCK PENDING**
+**LOCKED — PASS / reconciliations applied**
 
-Required before closure:
-- Workload/Machine Identity Foundation addendum;
-- Tenant/Product Operational Lifecycle Foundation addendum;
-- stale open-question reclassification.
+Closure completed:
+- Workload/Machine Identity promoted;
+- Tenant/Product Operational Lifecycle promoted;
+- stale open questions reclassified;
+- FOUNDATION-M2 marked COMPLETE / LOCKED.
 
-If owner locks this audit, apply the three reconciliation actions and advance FOUNDATION-M2 to COMPLETE/LOCKED, then resume at FOUNDATION-M3 — Main Product Master Plan.
+Current Foundation resume point:
+`docs/checkpoints/FOUNDATION-M3-HANDOVER-2026-09-28.md`
+
+## Foundation continuation
+
+Jarvis deep research is complete. The current Foundation program has moved beyond this checkpoint to:
+`docs/checkpoints/FOUNDATION-M3-HANDOVER-2026-09-28.md`
+
+Use this file for Jarvis research history; use the M3 handover for current Foundation sequencing.
 
 ## 1. Purpose
 
@@ -119,16 +128,15 @@ If a conversation/session is lost or closed:
 2. read docs/research/JARVIS-DEEP-RESEARCH-REGISTER.md;
 3. read only supporting decision files needed for RQ-25;
 4. do not reopen RQ-01 through RQ-24 unless new evidence, a contradiction or explicit owner instruction requires it;
-5. resume at RQ-25.
+5. for Foundation/product-family work, resume from `docs/checkpoints/FOUNDATION-M3-HANDOVER-2026-09-28.md`.
 
 Chat history is not the canonical source of truth for these decisions.
 
 ## 2. Resume reading order
 
 1. docs/checkpoints/JARVIS-DEEP-RESEARCH-HANDOVER-2026-09-28.md
-2. docs/HARVEY-EXPERIENCE-DIRECTION.md
-3. docs/HARVEY-IDENTITY-CHARACTER-DIRECTION.md
-4. docs/research/JARVIS-DEEP-RESEARCH-REGISTER.md
+2. docs/JARVIS-EXPERIENCE-DIRECTION.md
+3. docs/research/JARVIS-DEEP-RESEARCH-REGISTER.md
 4. docs/FOUNDATION-M2-OPERATING-BRIEF.md
 5. docs/PRODUCT-PLATFORM-FOUNDATION.md
 6. docs/FOUNDATION-STATUS.md
