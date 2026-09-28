@@ -1,6 +1,6 @@
 # Full Jarvis Architecture Audit — 2026-09-28
 
-**Status:** AUDIT COMPLETE — PASS WITH REQUIRED REMEDIATIONS / OWNER LOCK PENDING  
+**Status:** LOCKED — PASS WITH REQUIRED REMEDIATIONS / OWNER ACCEPTED  
 **Scope:** Jarvis RQ-01 through RQ-25 + relevant FOUNDATION-M2/Product Platform/Suite coordination decisions  
 **Implementation authority:** None  
 **Next decision if accepted:** documentation reconciliation + feed findings into M2-19/M2-20 + Control Room Product Requirements
