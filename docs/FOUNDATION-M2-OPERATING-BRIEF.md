@@ -1,7 +1,7 @@
 # FOUNDATION-M2 — Operating Brief
 
 **Milestone:** FOUNDATION-M2 — Define Shared Product Platform Foundation  
-**Status:** ACTIVE  
+**Status:** COMPLETE / LOCKED  
 **Started:** 2026-09-26  
 **Inherits:** Admonk Studio Foundation v1.0.0 / Product Supervisor v2.0.0  
 **Implementation:** Not authorized by this brief
@@ -929,12 +929,12 @@ Canonical research:
 
 **Status:** LOCKED.
 
-## Current gate — FOUNDATION-M2 Exit Reconciliation / Completeness Audit
+## Historical exit gate — FOUNDATION-M2 Exit Reconciliation / Completeness Audit
 
 Audit all locked M2-01..M2-20 decisions as one platform architecture, reconcile remaining open questions into semantic/runtime/vendor/product-policy categories, detect contradictions or missing boundaries, and determine whether FOUNDATION-M2 is ready to close.
 
 
-## Current gate — M2 Exit Reconciliation
+## Historical exit gate — M2 Exit Reconciliation
 
 Canonical audit:
 `docs/audits/FOUNDATION-M2-EXIT-RECONCILIATION-2026-09-28.md`
@@ -947,3 +947,44 @@ Required before formal M2 closure:
 3. reclassify stale Product Platform open questions into resolved architecture vs deferred implementation/vendor/product/legal policy.
 
 No M2-21 is recommended.
+
+
+## M2 Exit Addendum — Workload / Machine Identity
+
+**Decision:** Every protected internal runtime/service/worker uses explicit workload identity and authorization context. Internal network placement is never treated as authority.
+
+Rules:
+- workload identity is distinct from human identity and Jarvis Agent Profile;
+- protected service-to-service access evaluates workload identity plus environment, tenant/task delegation, requested capability, resource and policy;
+- workers re-authorize from durable context rather than trusting queue payload claims blindly;
+- workload identity never grants tenant/business authority by itself;
+- exact service-identity technology remains implementation-deferred.
+
+**Status:** LOCKED.
+
+## M2 Exit Addendum — Tenant / Product Operational Lifecycle
+
+**Decision:** Commercial entitlement and operational lifecycle remain separate.
+
+Rules:
+- entitlement ON/OFF answers commercial availability only;
+- operational lifecycle covers provisioning, readiness/active use, suspension, offboarding, retention/closure;
+- setup readiness may block active operation without changing entitlement;
+- suspension does not imply deletion;
+- offboarding invokes M2-18 export/retention/delete policy;
+- connectors, tasks and notifications follow lifecycle policy rather than guessing from entitlement;
+- transitions are auditable.
+
+**Status:** LOCKED.
+
+## FOUNDATION-M2 Exit
+
+Canonical exit audit:
+`docs/audits/FOUNDATION-M2-EXIT-RECONCILIATION-2026-09-28.md`
+
+**Verdict:** PASS. Required reconciliations applied.
+
+**FOUNDATION-M2 status:** **COMPLETE / LOCKED**.
+
+Next milestone:
+**FOUNDATION-M3 — Main Product Master Plan**.
