@@ -89,3 +89,24 @@ Principle:
 > **Standalone value is complete. Connected value compounds.**
 
 **Status:** LOCKED.
+
+
+### M3-06 — Simple Commercial Packages over Atomic SKU Entitlements
+
+**Decision:** Admonk keeps atomic product/add-on SKUs as the canonical entitlement layer while presenting customers with a simpler commercial packaging layer above them.
+
+Rules:
+- each specialist product is independently purchasable;
+- each product subscription includes the shared Admonk Platform / Admonk One foundation, product-scoped Jarvis and a defined included AI Credit allowance;
+- Jarvis Company Intelligence remains a separately entitled cross-product add-on;
+- commercial bundles compose existing SKUs for simpler procurement, coordinated setup and optional commercial advantage;
+- bundles never create hidden permissions, custom product forks or alternative entitlement semantics;
+- AI monetization uses predictable subscription + included Admonk AI Credits + visible usage + top-ups/additional credits and optional budget controls;
+- do not impose universal family-level Good/Better/Best tiers;
+- product-specific tiers are introduced only when evidence shows materially different customer segments/needs;
+- pricing, entitlement, permissions, feature flags, lifecycle and usage remain separate.
+
+Principle:
+> **The customer buys a simple offer; the platform resolves it into precise entitlements underneath.**
+
+**Status:** LOCKED.
