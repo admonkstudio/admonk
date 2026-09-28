@@ -6,6 +6,8 @@
 **Status:** LOCKED — OWNER ACCEPTED  
 **Implementation authority:** None. This is a product/architecture decision record.
 
+**Supersession note — 2026-09-28:** n8n references in this research record are historical workflow-architecture evidence only. The current Admonk architecture uses Admonk-owned capability adapters/connectors; n8n is not part of Harvey Lab or Production execution.
+
 ## 1. Decision question
 
 Define the smallest durable responsibility boundary that lets Jarvis:
@@ -287,15 +289,15 @@ SYSTEMS OF RECORD / PROVIDERS
 
 ## 7. Important consequences
 
-### 7.1 n8n becomes replaceable
+### 7.1 execution runtime remains replaceable
 
 Jarvis asks for a business capability such as:
 `campaign.create_draft`
 
 It should not conceptually ask for:
-`run n8n workflow 6832`.
+`execute governed capability`.
 
-The capability may use n8n today and a native service tomorrow without changing Jarvis's product contract.
+The capability may use one Admonk-owned execution/runtime adapter today and another tomorrow without changing Harvey's product contract.
 
 ### 7.2 Models become replaceable
 
@@ -329,7 +331,7 @@ The recommended boundary survives these tests:
 
 **Add a new product:** expose governed capabilities/context; Jarvis does not need a new identity.
 
-**Replace n8n:** change execution adapter; Jarvis contract remains stable.
+**Replace execution runtime:** change the Admonk-owned execution adapter/runtime; Harvey's product contract remains stable.
 
 **Replace a model:** change routing/runtime implementation; domain contracts remain stable.
 
