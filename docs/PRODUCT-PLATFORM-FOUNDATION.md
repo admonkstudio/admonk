@@ -166,14 +166,14 @@ Products may vary:
 - motion character;
 - domain workflows.
 
-## 8. Harvey Company Intelligence / cross-domain layer
+## 8. Jarvis Company Intelligence / cross-domain layer
 
-Company-level intelligence is delivered by the **same Harvey core** under an authorized Company/Executive Operating Lens. It is not a second brain or separate assistant authority.
+Company-level intelligence is delivered by the **same Jarvis core** under an authorized Company/Executive Operating Lens. It is not a second brain or separate assistant authority.
 
 The company layer should:
 - coordinate organization-level setup through the shared platform;
 - expose cross-department summaries only when permitted;
-- provide company-level Harvey orchestration across subscribed/authorized capabilities;
+- provide company-level Jarvis orchestration across subscribed/authorized capabilities;
 - link to specialist products;
 - route cross-domain work through governed contracts.
 
