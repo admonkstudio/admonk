@@ -1,7 +1,7 @@
 # FOUNDATION-M3-02 — Customer / Organization Archetype & Buying Unit
 
 **Date:** 2026-09-28  
-**Status:** RESEARCH COMPLETE — OWNER DECISION PENDING  
+**Status:** LOCKED — OWNER SELECTED SCENARIO B  
 **Milestone:** FOUNDATION-M3 — Main Product Master Plan  
 **Method:** quick internal scan → two high-value sources → two scenarios → challenge → synthesis  
 **Implementation authority:** None
@@ -144,4 +144,4 @@ Optional at first specialist-product purchase; increasingly important for multi-
 >
 > Exact firmographic thresholds, pricing bands and enterprise segmentation remain evidence questions for later commercial planning.
 
-**Recommendation:** LOCK Scenario B.
+**Recommendation:** LOCKED — Scenario B.
