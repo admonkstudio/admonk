@@ -657,3 +657,26 @@ Following owner naming refinement:
 - **SIA** = intelligent operator/presence inside SOLO.
 
 All architectural ideas in this document remain active research. References to “SIA” as the environment should be read as SOLO; references to Jarvis as the intelligent operator should be read as SIA until controlled documentation normalization is completed.
+
+
+---
+
+## 21. SIA company-brain principle
+
+SIA is the single intelligent operator over the company operating model.
+
+It can:
+- advise users;
+- follow authorized instructions;
+- detect operating gaps;
+- coordinate cross-role work;
+- instantiate bounded digital specialists;
+- temporarily provide operational capacity;
+- report findings and outcomes to owners/managers;
+- support transfer of work back to humans.
+
+The target is **no artificial functional ceiling**, not unrestricted authority.
+
+Every consequential action still follows the Agent Authority Envelope, company policy, provider limits, risk class and approval requirements.
+
+This principle must be tested in the Master Plan re-audit.
