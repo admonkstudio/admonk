@@ -77,18 +77,19 @@ Current decision sequence starts with repository/code organization and shared-co
 The Product Platform Foundation is not locked. Existing M2 documents remain direction/architecture discovery until FOUNDATION-M2 decisions are completed.
 
 
-## Parallel Harvey experience track
+## Parallel Jarvis experience track
 
 Harvey research/design is running in parallel with FOUNDATION-M2 and does not replace the current M2 sequence.
 
 Current state:
-- Harvey strategic experience direction — **LOCKED**;
+- Jarvis strategic experience direction — **LOCKED**;
 - JX-01 historical Jarvis/Harvey Surface Contract — **LOCKED**;
 - Deep Research Register **RQ-01 through RQ-25 — COMPLETE / LOCKED**;
-- Full Harvey architecture audit — **LOCKED: PASS WITH REQUIRED REMEDIATIONS / reconciliation applied**;
-- Harvey Lab proof program — **LOCKED as a Lab/discovery program**, not yet authorized for implementation;
+- Full Jarvis architecture audit — **LOCKED: PASS WITH REQUIRED REMEDIATIONS / reconciliation applied**;
+- Jarvis Lab proof program — **LOCKED as a Lab/discovery program**, not yet authorized for implementation;
 - RQ-25 Production Evolution Architecture + SCALE-0..6 roadmap + Admonk Control Room — **LOCKED**;
-- Harvey product identity + initial Male/Female × Professional/Friendly character system — **LOCKED OWNER DIRECTION**;
+- Jarvis product identity — **RESTORED / CURRENT**;
+- character/persona variants — **PARKED FUTURE ADD-ON / not active architecture**;
 - n8n is historical Kalam workflow evidence only and is **not** Jarvis Lab or Production execution infrastructure;
 - JX-03/JX-04 final visual/motion design direction remains open and is accumulating owner-selected references.
 
@@ -98,14 +99,12 @@ Owner-approved responsiveness constraint:
 Canonical current checkpoint:
 `docs/checkpoints/JARVIS-DEEP-RESEARCH-HANDOVER-2026-09-28.md`
 
-Current Harvey architecture audit (historical filename retained):
+Current Jarvis architecture audit (historical filename retained):
 `docs/audits/JARVIS-FULL-ARCHITECTURE-AUDIT-2026-09-28.md`
 
-Canonical Harvey experience:
-`docs/HARVEY-EXPERIENCE-DIRECTION.md`
+Canonical Jarvis experience:
+`docs/JARVIS-EXPERIENCE-DIRECTION.md`
 
-Harvey identity/characters:
-`docs/HARVEY-IDENTITY-CHARACTER-DIRECTION.md`
 
 Older JX-02 checkpoint remains historical discovery evidence:
 `docs/checkpoints/JARVIS-JX02-DISCOVERY-CHECKPOINT-2026-09-27.md`
@@ -113,27 +112,26 @@ Older JX-02 checkpoint remains historical discovery evidence:
 FOUNDATION-M2 remains at:
 **M2-19 — Version / Compatibility / Migration**.
 
-Current Harvey/Foundation gate:
-**Full Admonk Product Platform/Foundation audit — COMPLETE: PASS WITH REQUIRED FOUNDATION REFINEMENTS / OWNER LOCK PENDING.**
+Product Platform/Foundation audit — **LOCKED: PASS WITH REQUIRED FOUNDATION REFINEMENTS / owner accepted**.
 
 Audit:
 `docs/audits/ADMONK-PRODUCT-PLATFORM-FOUNDATION-AUDIT-2026-09-28.md`
 
-Proposed sequence if locked:
+Official next sequence:
 **M2-19 Version/Compatibility/Migration → M2-19A Platform Operator Identity/Support Access/Environment Authority → M2-20 Runtime Boundaries.**
 
-## Current external challenge audit
+## External challenge audit
 
-**Status:** COMPLETE — OWNER DECISION PENDING
+**Status:** RESOLVED — architecture findings accepted; Jarvis restored; characters parked
 
 Canonical audit:
 `docs/audits/ADMONK-HARVEY-EXTERNAL-CHALLENGE-AUDIT-2026-09-28.md`
 
-Current verdict:
+Resolved verdict:
 - architecture — **GREEN / KEEP**;
 - scaling roadmap — **GREEN / KEEP**;
 - Admonk Control Room — **GREEN / KEEP WITH STRICT CONTROL-SPINE SCOPE**;
-- Harvey character system — **AMBER / KEEP WITH PRODUCT-FRAMING REFINEMENT + Lab validation**;
-- Harvey external product name — **RED / working name only until professional trademark/brand clearance**.
+- character/persona system — **PARKED FUTURE ADD-ON**;
+- Jarvis — **RESTORED AS CURRENT PRODUCT IDENTITY**.
 
-Do not resume M2-19 until the owner accepts/revises this challenge-audit conclusion.
+External challenge audit resolved by owner: Jarvis restored; characters parked; architecture findings accepted.
