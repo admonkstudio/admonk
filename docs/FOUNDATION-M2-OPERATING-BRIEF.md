@@ -897,3 +897,23 @@ Canonical research:
 ## Current gate — M2-19A Platform Operator Identity, Support Access & Environment Authority
 
 This decision was added by the Jarvis/Control Room Foundation audit and must be resolved before M2-20 runtime packaging.
+
+
+## Current M2-19A research — 2026-09-28
+
+Status: **RESEARCH COMPLETE — OWNER LOCK PENDING**
+
+Canonical research:
+`docs/research/FOUNDATION-M2-19A-PLATFORM-OPERATOR-AUTHORITY-2026-09-28.md`
+
+Core recommendation:
+- separate Platform Operator authority from tenant roles;
+- JIT time-bound privileged Operator Sessions;
+- Support Access Grants for tenant business content;
+- explicit environment authority;
+- no silent impersonation;
+- dedicated break-glass recovery;
+- M2-11/RQ-07 remains the action-authority model;
+- Control Room visibility/content/action authority remain separate.
+
+Do not record M2-19A as locked until owner acceptance.
