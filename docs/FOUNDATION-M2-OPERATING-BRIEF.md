@@ -96,7 +96,7 @@ Do not select tools because a platform supports more features. Capability and ar
 18. **M2-18 Data sensitivity/retention/export/deletion — LOCKED**
 19. **M2-19 Version / compatibility / migration — LOCKED**
 19A. **M2-19A Platform Operator Identity, Support Access & Environment Authority — LOCKED**
-20. **M2-20 Runtime boundary decisions: shared contract vs package/module vs process/worker vs shared platform service vs domain-owned runtime — NEXT**
+20. **M2-20 Runtime boundary decisions: shared contract vs package/module vs process/worker vs shared platform service vs domain-owned runtime — LOCKED**
 
 Sequence may be adjusted when an earlier decision proves a dependency.
 
@@ -920,22 +920,15 @@ Determine what remains:
 without turning every logical boundary into a microservice.
 
 
-## Current M2-20 research — 2026-09-28
+## Locked decision — M2-20 Coarse-Grained Runtime Architecture with Evidence-Promoted Isolation
 
-Status: **RESEARCH COMPLETE — OWNER LOCK PENDING**
+**Decision:** Keep logical contracts, scaling units and physical runtime boundaries separate. Start with coarse runtime estates and promote isolation only where security, state, scale, availability, ingress, special runtime or failure-domain evidence justifies the network/process boundary.
 
 Canonical research:
 `docs/research/FOUNDATION-M2-20-RUNTIME-BOUNDARIES-2026-09-28.md`
 
-Core recommendation:
-- separate logical contract boundaries, scaling units and physical deployment boundaries;
-- prefer contract/module reuse for deterministic shared logic;
-- use worker/process roles for async/bursty/resource-heavy work;
-- use shared runtime services only when state/security/scale/availability/ingress/lifecycle makes the network boundary valuable;
-- keep specialist domain semantics in domain-owned runtimes;
-- SCALE-1 remains coarse-grained: Platform Management, Jarvis Interactive, specialist products, Execution/Workers, Connector Runtime and Platform Operations;
-- no centralized Context Service, AI Gateway, Notification Service, Artifact Service, Memory Service, Compatibility Service or Feature Flag Service at SCALE-1;
-- browser/computer/code execution is hard-isolated whenever enabled;
-- service extraction remains evidence-driven and reversible.
+**Status:** LOCKED.
 
-Do not record M2-20 as locked until owner acceptance.
+## Current gate — FOUNDATION-M2 Exit Reconciliation / Completeness Audit
+
+Audit all locked M2-01..M2-20 decisions as one platform architecture, reconcile remaining open questions into semantic/runtime/vendor/product-policy categories, detect contradictions or missing boundaries, and determine whether FOUNDATION-M2 is ready to close.
