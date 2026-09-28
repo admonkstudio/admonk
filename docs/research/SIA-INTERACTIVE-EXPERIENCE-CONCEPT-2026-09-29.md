@@ -813,3 +813,317 @@ Do not reduce it to a chatbot feature.
 Do not allow arbitrary runtime UI code generation.
 
 Build the proof around a **typed component vocabulary + streaming surface protocol + persistent artifacts + governed actions**.
+
+
+---
+
+# 20. Operating-system analogy
+
+The owner clarified the intended mental model:
+
+> **SIA is like the operating environment. Jarvis is like the intelligent assistant/operator. Specialist products are the applications.**
+
+A useful translation:
+
+- **SIA** — shared operating environment, interaction runtime, design language, context navigation, component system, artifact system, policy-aware workspace.
+- **Jarvis** — intelligent operator that understands intent/context and selects/uses authorized SIA capabilities.
+- **Specialist products** — durable domain applications with authoritative workflows/data/semantics.
+- **Shared platform capabilities** — OS-like services: identity, permissions, settings, notifications, integrations, audit, lifecycle, credits, context.
+- **Connectors/adapters** — driver-like boundaries to external systems/providers.
+- **SIA components** — the approved UI/interaction vocabulary Jarvis can compose.
+- **Artifacts** — persistent reusable objects/files created by products/Jarvis.
+- **Resource Links** — deep links into the owning product/resource.
+- **Agent Authority Envelope** — permission/sandbox boundary limiting what Jarvis may do.
+- **Context Plane** — permission-aware context/index layer across authorized product/data sources.
+
+Important caveat:
+The analogy is conceptual, not literal. SIA should not become one giant monolithic OS/runtime or centralize domain authority.
+
+---
+
+# 21. Prebuilt capability principle
+
+The owner confirmed a key experience strategy:
+
+> **Speed and quality come from prebuilding the system vocabulary and letting Jarvis compose/populate it rather than generating arbitrary software at runtime.**
+
+This means:
+
+- interaction primitives are developed/tested in advance;
+- charts are developed/tested in advance;
+- tables, maps, forms, documents, drawers, timelines, planners and meeting surfaces are developed/tested in advance;
+- onboarding diagnostic sequences are defined as reusable playbooks;
+- indexing/sync/analysis stages are deterministic capabilities;
+- report templates and artifact schemas are predefined;
+- Jarvis decides which approved capability/template/component is appropriate, supplies data/context and coordinates transitions;
+- Jarvis may generate natural language/content inside those structures, but does not invent unchecked UI/application code.
+
+The product becomes unique through:
+- composition;
+- data;
+- context;
+- sequencing;
+- state;
+- permissions;
+- selected actions;
+- personalization;
+- product/domain semantics.
+
+Not through arbitrary runtime code generation.
+
+---
+
+# 22. Library architecture
+
+The SIA library should be layered rather than treated as one giant flat component catalog.
+
+## Layer 1 — Design primitives
+
+Examples:
+- typography;
+- spacing;
+- surfaces;
+- buttons;
+- inputs;
+- menus;
+- badges;
+- tabs;
+- drawers;
+- dialogs;
+- tooltips;
+- loaders;
+- focus/accessibility states.
+
+These are deterministic and rarely model-selected directly.
+
+## Layer 2 — Data visualization primitives
+
+Examples:
+- KPI/metric;
+- line/bar/area charts;
+- distributions;
+- cohorts;
+- funnel;
+- Sankey;
+- process flow;
+- timeline;
+- heatmap;
+- relationship/network graph;
+- org chart;
+- geographic map;
+- variance/anomaly view.
+
+Jarvis selects from a constrained chart grammar based on schema/data semantics.
+
+## Layer 3 — Business interaction components
+
+Examples:
+- ContactPicker;
+- ApprovalCard;
+- TaskCard;
+- MeetingPanel;
+- ActionComposer;
+- PlanEditor;
+- EvidencePanel;
+- RecommendationCard;
+- ProcessMap;
+- ResourceInspector;
+- ConnectorHealth;
+- AccessRequest;
+- ScenarioControls.
+
+These are typed, permission-aware product capabilities.
+
+## Layer 4 — Artifact renderers/editors
+
+Examples:
+- Report;
+- Process model;
+- Meeting minutes;
+- Decision record;
+- Plan;
+- Brief;
+- Presentation;
+- Spreadsheet/data table;
+- Document;
+- Dashboard snapshot;
+- Comparison;
+- Audit/evidence package.
+
+Artifacts are persistent and versioned.
+
+## Layer 5 — Workspace patterns
+
+Examples:
+- investigation workspace;
+- executive brief;
+- department diagnosis;
+- report review;
+- process-improvement workspace;
+- meeting workspace;
+- planning workspace;
+- approval workspace;
+- onboarding/sensemaking workspace.
+
+Patterns arrange lower-level components but remain bounded/tested compositions.
+
+## Layer 6 — Domain playbooks
+
+Examples:
+- Marketing department discovery;
+- Support operation discovery;
+- recruitment process diagnosis;
+- customer-support health review;
+- campaign-performance analysis;
+- content planning;
+- integration readiness;
+- workflow failure analysis.
+
+A playbook defines:
+- required data/contracts;
+- analysis sequence;
+- intermediate artifacts;
+- UI/workspace pattern;
+- confidence/evidence rules;
+- questions for missing information;
+- permitted next actions.
+
+Jarvis selects/runs playbooks rather than improvising the entire diagnostic methodology.
+
+---
+
+# 23. Deterministic onboarding principle
+
+The first-run company/department analysis should be **predetermined in method but dynamic in evidence and conclusions**.
+
+Do not hard-code the answer.
+
+Predefine the pipeline.
+
+Example:
+
+```
+Connect
+→ Inventory
+→ Normalize
+→ Index
+→ Classify
+→ Link
+→ Discover relationships
+→ Run domain diagnostics
+→ Rank findings
+→ Present finding
+→ Request confirmation/action
+```
+
+Every stage has:
+- explicit inputs;
+- deterministic contracts;
+- progress state;
+- failure state;
+- evidence/provenance;
+- resumability.
+
+Jarvis coordinates and explains the process.
+
+The system components perform the actual ingestion/indexing/analysis operations.
+
+This prevents the onboarding experience from becoming a long uncontrolled LLM prompt.
+
+---
+
+# 24. Historical data/indexing principle
+
+Historical information should be processed through reusable ingestion/indexing capabilities rather than repeatedly re-read by Jarvis.
+
+Examples:
+- historical reports;
+- documents;
+- tickets;
+- tasks;
+- conversations;
+- campaign data;
+- meetings;
+- approvals;
+- process records;
+- analytics.
+
+Pipeline:
+
+```
+source
+→ normalize
+→ preserve authoritative source/provenance
+→ extract metadata/entities/relationships
+→ index/search
+→ produce domain projections where justified
+→ expose governed retrieval/read contracts
+→ Jarvis consumes only authorized context
+```
+
+Jarvis retrieves relevant context; it does not repeatedly ingest the entire organizational history for each prompt.
+
+This supports:
+- lower latency;
+- lower token usage;
+- lower model cost;
+- better consistency;
+- traceable evidence;
+- reusable analytics;
+- incremental updates.
+
+---
+
+# 25. Library-size principle
+
+A larger library increases expressive range only when components remain coherent and composable.
+
+Do **not** optimize for the raw number of components.
+
+Optimize for:
+
+> **small powerful primitives + rich typed business components + reusable workspace patterns + domain playbooks.**
+
+A library with 40 excellent composable capabilities can create more useful experiences than 400 inconsistent widgets.
+
+Expansion should be evidence-driven:
+1. build a reusable primitive/pattern when a real workflow requires it;
+2. register it;
+3. test it;
+4. expose its schema/capabilities to Jarvis;
+5. reuse it across products where semantics match.
+
+The library grows from real product needs and failures rather than speculative component accumulation.
+
+---
+
+# 26. Experience uniqueness
+
+SIA's uniqueness should come from the combination:
+
+```
+SIA component vocabulary
+× domain/product capabilities
+× customer data/context
+× Jarvis reasoning
+× persistent artifacts
+× live interaction state
+× permissions/authority
+× reusable playbooks
+```
+
+This produces a highly adaptive experience without generating arbitrary software.
+
+Two customers may use the exact same SIA runtime/components yet see very different workspaces because their:
+- connected systems;
+- organizational structures;
+- permissions;
+- evidence;
+- current problems;
+- products;
+- selected processes;
+- historical context
+
+are different.
+
+That is the desired form of personalization.
