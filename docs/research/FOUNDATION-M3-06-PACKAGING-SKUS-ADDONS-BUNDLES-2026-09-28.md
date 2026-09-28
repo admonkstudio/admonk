@@ -1,7 +1,7 @@
 # FOUNDATION-M3-06 — Packaging: SKUs, Add-ons, Bundles & Plan Composition
 
 **Date:** 2026-09-28  
-**Status:** RESEARCH COMPLETE — OWNER DECISION PENDING  
+**Status:** LOCKED — OWNER SELECTED SCENARIO B  
 **Milestone:** FOUNDATION-M3 — Main Product Master Plan  
 **Method:** quick internal scan → two high-value sources → two scenarios → challenge → synthesis  
 **Implementation authority:** None
@@ -185,4 +185,4 @@ These remain separate layers.
 >
 > **The customer buys a simple offer; the platform resolves it into precise entitlements underneath.**
 
-**Recommendation:** LOCK Scenario B.
+**Recommendation:** LOCKED — Scenario B.
