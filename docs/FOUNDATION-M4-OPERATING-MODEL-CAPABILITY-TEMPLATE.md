@@ -1,6 +1,6 @@
 # FOUNDATION-M4 — Operating-Model / Capability Template
 
-**Status:** CANDIDATE V4 — M5-02 RECRUITING VALIDATED / M5 CONTINUES  
+**Status:** CANDIDATE V5 — M5-03 SUPPORT VALIDATED / M5 CONTINUES  
 **Date:** 29/09/2026  
 **Authority:** Foundation candidate; requires M5 reference-model validation before final M4 lock.
 
@@ -111,6 +111,8 @@ Domain Packs should **reference** stable shared/platform definitions rather than
 
 Common candidates include:
 - task/work item;
+- case/request;
+- conversation/thread;
 - project;
 - approval;
 - decision;
@@ -131,6 +133,32 @@ Rules:
 - domain extensions must not fork security/authority behavior;
 - if two domains only need the same semantic concept, reference the shared contract;
 - create a domain-owned definition only when the business meaning materially differs.
+
+Shared case/request or conversation/thread contracts provide transport/work-container semantics only.
+
+They do not take semantic authority over the domain object or business process referenced by the case.
+
+# 2B. Communication / interaction audience rule
+
+Where a communication, comment, note, message, thread item or evidence object can be exposed to different audiences, preserve explicit audience/visibility semantics.
+
+At minimum, the relevant contract should be able to represent:
+- intended audience/visibility;
+- origin/author;
+- timestamp;
+- channel/surface;
+- relationship to the governing case/process/artifact;
+- sensitivity where relevant;
+- provenance.
+
+Rules:
+
+- internal/private/restricted content must not be silently surfaced to an external or broader audience;
+- transforming content across visibility boundaries is a consequential disclosure action and requires effective authority/policy;
+- generating a draft does not grant delivery/send authority;
+- summaries and agent context must preserve visibility restrictions;
+- provider-specific labels such as "private note" or "public comment" map to shared visibility semantics rather than becoming universal vocabulary.
+
 
 # 2. Domain Pack
 
@@ -950,6 +978,16 @@ Recruiting reference validation produced two reusable template corrections:
 Evidence:
 `docs/research/FOUNDATION-M5-02-RECRUITING-REFERENCE-VALIDATION-2026-09-29.md`
 
+### M5-03 Support validation corrections
+
+Support reference validation produced two reusable template corrections:
+
+1. add **case/request** and **conversation/thread** to shared-definition candidates so generic service/ticket mechanics are not cloned into each domain;
+2. add explicit **communication/interaction audience visibility** so internal/private/restricted content cannot silently cross into customer/external communication through AI or automation.
+
+Evidence:
+`docs/research/FOUNDATION-M5-03-SUPPORT-REFERENCE-VALIDATION-2026-09-29.md`
+
 # 24. Status
 
 **M4-02 candidate template complete and audited.**
@@ -960,4 +998,4 @@ The template is now ready for **M5 reference-model validation**.
 
 M5 begins from the Reference Core and adds Operable / Measurable / Intelligent / Experience layers only when the scenario requires them.
 
-M4 locks only after M5 demonstrates that Marketing, Recruiting, Support and Founder/multi-role can use the same model without awkward exceptions or unnecessary ontology. Marketing and Recruiting have now passed; Support is next.
+M4 locks only after M5 demonstrates that Marketing, Recruiting, Support and Founder/multi-role can use the same model without awkward exceptions or unnecessary ontology. Marketing, Recruiting and Support have now passed; Founder / multi-role solo is next.
