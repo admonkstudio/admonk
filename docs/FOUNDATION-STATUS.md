@@ -289,3 +289,9 @@ Canonical authority:
 
 Next milestone:
 **FOUNDATION-M4 — Operating-Model / Capability Template**
+
+
+FOUNDATION-M4 Kalam pilot research input:
+`docs/research/FOUNDATION-M4-KALAM-SIA-PILOT-AUDIT-INPUT-2026-09-29.md`
+
+This is research input only; it does not reopen locked M3.
