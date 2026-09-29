@@ -3,7 +3,7 @@
 **Date:** 2026-09-29
 **Program:** Admonk Foundation Program
 **Current milestone:** **FOUNDATION-M4 — Operating-Model / Capability Template**
-**Current sub-milestone:** **M4 preparation — ACTIVE**
+**Current sub-milestone:** **M4-02 — Template Consistency & Minimum-Core Audit — NEXT**
 **Milestone status:** **FOUNDATION-M2 COMPLETE / LOCKED; FOUNDATION-M3 COMPLETE / LOCKED; FOUNDATION-M4 ACTIVE**
 **Foundation lock:** **LOCKED — Admonk Studio Foundation v1.0.0**
 **Current stable Product Supervisor:** **v2.0.0**  
@@ -327,3 +327,42 @@ Active Foundation direction:
 resume the next planning milestone from the current Foundation Program / M4 research queue.
 
 Do not reinterpret the pilot defer as a rejection of the SIA architecture.
+
+
+---
+
+## FOUNDATION-M4 — M4-01 candidate template
+
+Status:
+**COMPLETE AS CANDIDATE / NOT YET M4 LOCK**
+
+Canonical candidate:
+`docs/FOUNDATION-M4-OPERATING-MODEL-CAPABILITY-TEMPLATE.md`
+
+Synthesis:
+`docs/research/FOUNDATION-M4-01-OPERATING-MODEL-CAPABILITY-TEMPLATE-SYNTHESIS-2026-09-29.md`
+
+Core model:
+> **Domain → outcomes → entities → responsibilities → processes → metrics/evidence → capabilities/actions → artifacts → workspace patterns → diagnostics → eligible specialists**
+
+Role Archetypes provide reference lenses over the model.
+
+Locked semantic separations carried forward:
+- role != permission;
+- responsibility != role;
+- capability != provider implementation;
+- process != workflow engine;
+- artifact != source of truth;
+- specialist != employee;
+- observed process != configured process.
+
+Three-reality model:
+- Reference
+- Configured
+- Observed
+
+Next:
+**M4-02 — Template Consistency & Minimum-Core Audit**
+
+Purpose:
+reduce unnecessary mandatory fields before M5 and ensure the template remains practical for solo, SMB and enterprise/reference domains.
