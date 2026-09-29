@@ -524,3 +524,7 @@ Current gate:
 **M4 Final Candidate V6 — OWNER LOCK PENDING**
 
 Do not start FOUNDATION-M6 as an authoritative milestone until the owner explicitly approves M4 V6.
+
+
+Current handover:
+`docs/checkpoints/FOUNDATION-M5-HANDOVER-2026-09-29.md`
