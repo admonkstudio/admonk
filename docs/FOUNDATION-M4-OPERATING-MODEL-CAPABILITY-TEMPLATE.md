@@ -2,7 +2,7 @@
 
 **Status:** FINAL CANDIDATE V6 — M5 COMPLETE / OWNER LOCK PENDING  
 **Date:** 29/09/2026  
-**Authority:** Foundation candidate; requires M5 reference-model validation before final M4 lock.
+**Authority:** Foundation final candidate; M5 validation complete; explicit owner approval required before M4 lock.
 
 ---
 
