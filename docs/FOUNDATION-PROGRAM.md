@@ -3,7 +3,7 @@
 **Status:** Active  
 **Established:** 2026-09-26  
 **Owner:** Admonk Studio  
-**Current milestone:** **FOUNDATION-M5 — Reference Domain / Role Models**  
+**Current milestone:** **FOUNDATION-M5 — COMPLETE / M4 OWNER LOCK GATE**  
 **Latest Studio Foundation release:** **v1.0.0**  
 **Included Product Supervisor:** **v2.0.0**  
 **FOUNDATION-M2:** **COMPLETE / LOCKED — 2026-09-28**  
@@ -315,7 +315,8 @@ Current validation progress:
 - **M5-01 Marketing / Marketing Manager: PASS WITH M4 CORRECTIONS — COMPLETE**
 - **M5-02 Recruiting / Recruiter: PASS WITH M4 CORRECTIONS — COMPLETE**
 - **M5-03 Support / Support Manager: PASS WITH M4 CORRECTIONS — COMPLETE**
-- **M5-04 Founder / multi-role solo: NEXT**
+- **M5-04 Founder / multi-role solo: PASS WITH M4 CORRECTIONS — COMPLETE**
+- **M5 final reconciliation: PASS — M4 Final Candidate V6 ready for owner lock**
 
 Validate the template with a deliberately small representative set, e.g.:
 1. Marketing Manager / Marketing domain;
@@ -324,6 +325,11 @@ Validate the template with a deliberately small representative set, e.g.:
 4. Founder / multi-role solo mode.
 
 The goal is not to recreate separate products. It is to prove that the same environment can deliver deep role/domain value without flattening semantics.
+
+Final reconciliation:
+`docs/audits/FOUNDATION-M5-FINAL-RECONCILIATION-2026-09-29.md`
+
+M5 is complete. M4 remains unlocked until explicit owner approval.
 
 ### FOUNDATION-M6 — Cross-Domain / SIA Contract Freeze
 
