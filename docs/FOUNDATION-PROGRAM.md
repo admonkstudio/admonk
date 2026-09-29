@@ -313,8 +313,8 @@ Each domain/role pack must define:
 
 Current validation progress:
 - **M5-01 Marketing / Marketing Manager: PASS WITH M4 CORRECTIONS — COMPLETE**
-- **M5-02 Recruiting / Recruiter: NEXT**
-- M5-03 Support / Support Manager
+- **M5-02 Recruiting / Recruiter: PASS WITH M4 CORRECTIONS — COMPLETE**
+- **M5-03 Support / Support Manager: NEXT**
 - M5-04 Founder / multi-role solo
 
 Validate the template with a deliberately small representative set, e.g.:
