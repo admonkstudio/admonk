@@ -1,6 +1,6 @@
 # FOUNDATION-M4 — Operating-Model / Capability Template
 
-**Status:** CANDIDATE V5 — M5-03 SUPPORT VALIDATED / M5 CONTINUES  
+**Status:** FINAL CANDIDATE V6 — M5 COMPLETE / OWNER LOCK PENDING  
 **Date:** 29/09/2026  
 **Authority:** Foundation candidate; requires M5 reference-model validation before final M4 lock.
 
@@ -788,6 +788,29 @@ Platform mandatory/security
 
 User customization cannot create authority.
 
+## 15.1 Lens/context vs execution target
+
+Role/domain/company lenses may shape presentation and context selection.
+
+They do not themselves define action scope or grant authority.
+
+For material execution, bind the action to the relevant:
+- tenant;
+- organizational/domain scope;
+- resource/entity;
+- capability;
+- responsibility/context where relevant;
+- connector/resource authority;
+- approval state.
+
+Rules:
+
+- changing visual/role lens does not grant or revoke authority by itself;
+- company-wide synthesis may span several authorized domains while preserving each domain's source authority;
+- context from one responsibility must not silently authorize an action in another;
+- when the execution target is materially ambiguous, remain in draft/planning state or require target resolution rather than executing against a guessed lens.
+
+
 ---
 
 # 16. Authority / Escalation
@@ -813,6 +836,25 @@ At execution time, the deterministic authority layer intersects:
 - execution grant.
 
 The model cannot expand this intersection.
+
+## 16.1 Approval eligibility and independence
+
+Where an action requires approval, the applicable approval policy should be able to declare:
+
+- eligible approver class/scope;
+- whether the initiator/requester may also approve;
+- whether the executor may also approve;
+- whether explicit self-confirmation is permitted;
+- whether an independent/separate approver is mandatory;
+- fallback/escalation when no eligible approver exists.
+
+Rules:
+
+- owner/founder/admin status does not silently bypass an independent-approval requirement;
+- if policy requires independent approval and no eligible approver exists, the action remains blocked/deferred or follows an explicitly allowed external-review path;
+- self-confirmation and independent approval are different controls;
+- provider/platform ceilings remain final regardless of local approval policy.
+
 
 ---
 
@@ -988,14 +1030,24 @@ Support reference validation produced two reusable template corrections:
 Evidence:
 `docs/research/FOUNDATION-M5-03-SUPPORT-REFERENCE-VALIDATION-2026-09-29.md`
 
+### M5-04 Founder / multi-role solo validation corrections
+
+Founder / multi-role solo validation produced two reusable template corrections:
+
+1. explicit **lens/context vs execution-target** separation so a role/company lens cannot become implicit action scope;
+2. explicit **approval eligibility/independence** semantics so solo operation does not silently weaken separation-of-duties policy or deadlock on undefined approval behavior.
+
+Evidence:
+`docs/research/FOUNDATION-M5-04-FOUNDER-MULTI-ROLE-SOLO-VALIDATION-2026-09-29.md`
+
 # 24. Status
 
-**M4-02 candidate template complete and audited.**
+**M4 FINAL CANDIDATE V6 — all planned M5 reference validations complete.**
 
 Not yet final/locked.
 
-The template is now ready for **M5 reference-model validation**.
+The template has completed **M5 reference-model validation** and is ready for final reconciliation / owner lock.
 
-M5 begins from the Reference Core and adds Operable / Measurable / Intelligent / Experience layers only when the scenario requires them.
+M5 confirmed that the Reference Core can remain sparse while Operable / Measurable / Intelligent / Experience layers are added only when the scenario requires them.
 
-M4 locks only after M5 demonstrates that Marketing, Recruiting, Support and Founder/multi-role can use the same model without awkward exceptions or unnecessary ontology. Marketing, Recruiting and Support have now passed; Founder / multi-role solo is next.
+Marketing, Recruiting, Support and Founder/multi-role solo all passed without requiring separate products, provider-bound capability identities or one-agent-per-role architecture. M4 remains unlocked until final reconciliation and owner approval are recorded.
