@@ -2,9 +2,9 @@
 
 **Date:** 2026-09-29
 **Program:** Admonk Foundation Program
-**Current milestone:** **FOUNDATION-M4 — Operating-Model / Capability Template**
-**Current sub-milestone:** **M5-02 — Recruiting / Recruiter Reference Model — NEXT**
-**Milestone status:** **FOUNDATION-M2 COMPLETE / LOCKED; FOUNDATION-M3 COMPLETE / LOCKED; FOUNDATION-M4 ACTIVE**
+**Current milestone:** **FOUNDATION-M5 — Reference Domain / Role Models**
+**Current sub-milestone:** **M5-03 — Support / Support Manager Reference Model — NEXT**
+**Milestone status:** **FOUNDATION-M2 COMPLETE / LOCKED; FOUNDATION-M3 COMPLETE / LOCKED; FOUNDATION-M4 CANDIDATE V4; FOUNDATION-M5 ACTIVE**
 **Foundation lock:** **LOCKED — Admonk Studio Foundation v1.0.0**
 **Current stable Product Supervisor:** **v2.0.0**  
 **Release mapping:** Studio Foundation v1.0.0 → Product Supervisor v2.0.0
@@ -438,3 +438,33 @@ M4 remains CANDIDATE until all M5 reference models complete.
 
 Next:
 **M5-02 — Recruiting / Recruiter**
+
+
+---
+
+## FOUNDATION-M5 — M5-02 Recruiting reference validation
+
+Result:
+**PASS WITH M4 CORRECTIONS — CORRECTIONS APPLIED**
+
+Reference model:
+`docs/reference-models/RECRUITING-RECRUITER-REFERENCE-MODEL.md`
+
+Validation:
+`docs/research/FOUNDATION-M5-02-RECRUITING-REFERENCE-VALIDATION-2026-09-29.md`
+
+M4 corrections applied:
+- subject identity vs domain-record identity;
+- human-impact decision boundary separating INFORM / ANALYZE / RECOMMEND / DECIDE / EXECUTE participation from technical action access.
+
+Key product validation:
+- candidate and application remain distinct records/lifecycles;
+- Recruiting can use the common SIA / Work / Projects / Performance / Settings shell;
+- Recruiting may additionally justify a durable dense pipeline workspace inside the shared Work/runtime model;
+- no dedicated Recruiting product or one-agent-per-role model is required;
+- provider/native Recruiting truth remains authoritative while analytics mirrors are secondary/observed evidence.
+
+M4 remains CANDIDATE until all M5 reference models complete.
+
+Next:
+**M5-03 — Support / Support Manager**
