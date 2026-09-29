@@ -594,3 +594,20 @@ Project continuity / multi-agent authority:
 `docs/PROJECT-CONTINUITY-PROTOCOL.md`
 
 These additions feed FOUNDATION-M4 capability-template work and FOUNDATION-M6 SIA contract freeze without reopening the reconciled M3 product thesis.
+
+
+### Engineering Reliability & Quality specialization
+
+The built-in support concept is now refined into a continuous **Engineering Reliability & Quality Specialist** covering:
+- scheduled health;
+- incident response;
+- release/testing gates;
+- bounded remediation;
+- team-reported bugs;
+- UX/UI feedback;
+- operational learning/logs.
+
+Canonical specialist contract:
+`docs/addenda/SIA-ENGINEERING-RELIABILITY-QUALITY-SPECIALIST-V1-2026-09-29.md`
+
+This specialist is a technical/reliability context source for SIA and a candidate reference profile for FOUNDATION-M4/M5/M6.
