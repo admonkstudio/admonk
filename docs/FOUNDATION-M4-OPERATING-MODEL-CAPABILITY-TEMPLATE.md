@@ -80,6 +80,31 @@ These are composable layers, not maturity grades.
 
 A field/object is added only when required for semantic correctness, authority/safety, real interaction, execution, evidence/measurement or compatibility.
 
+## Detailed-section requirement precedence
+
+The requirement classes in **Section 0** and the M4-02 audit control this document.
+
+Where a detailed section below still uses the word **Required**, interpret it as:
+
+> **required if that object/feature is instantiated**, unless Section 0 explicitly classifies it as CORE at Domain Pack level.
+
+Therefore:
+- Role Archetype is OPTIONAL at Domain Pack level;
+- Process Template is CONDITIONAL;
+- Capability Definition is CONDITIONAL;
+- Connector Requirement is CONDITIONAL;
+- Metric Definition is CONDITIONAL;
+- Goal is OPTIONAL;
+- Artifact Definition is CONDITIONAL;
+- Diagnostic Playbook is OPTIONAL;
+- Skill Reference is OPTIONAL;
+- Specialist Profile is OPTIONAL;
+- Workspace/Interaction Pattern is OPTIONAL;
+- Automation is CONDITIONAL;
+- Human/Digital Handoff is CONDITIONAL.
+
+This precedence rule prevents detailed object schemas from being misread as universal Domain Pack requirements.
+
 # 2. Domain Pack
 
 ## 2.1 Identity
