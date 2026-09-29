@@ -3,8 +3,8 @@
 **Date:** 2026-09-29
 **Program:** Admonk Foundation Program
 **Current milestone:** **FOUNDATION-M5 — Reference Domain / Role Models**
-**Current sub-milestone:** **M5-03 — Support / Support Manager Reference Model — NEXT**
-**Milestone status:** **FOUNDATION-M2 COMPLETE / LOCKED; FOUNDATION-M3 COMPLETE / LOCKED; FOUNDATION-M4 CANDIDATE V4; FOUNDATION-M5 ACTIVE**
+**Current sub-milestone:** **M5-04 — Founder / multi-role solo Reference Model — NEXT**
+**Milestone status:** **FOUNDATION-M2 COMPLETE / LOCKED; FOUNDATION-M3 COMPLETE / LOCKED; FOUNDATION-M4 CANDIDATE V5; FOUNDATION-M5 ACTIVE**
 **Foundation lock:** **LOCKED — Admonk Studio Foundation v1.0.0**
 **Current stable Product Supervisor:** **v2.0.0**  
 **Release mapping:** Studio Foundation v1.0.0 → Product Supervisor v2.0.0
@@ -468,3 +468,30 @@ M4 remains CANDIDATE until all M5 reference models complete.
 
 Next:
 **M5-03 — Support / Support Manager**
+
+
+---
+
+## FOUNDATION-M5 — M5-03 Support reference validation
+
+Result:
+**PASS WITH M4 CORRECTIONS — CORRECTIONS APPLIED**
+
+Reference model:
+`docs/reference-models/SUPPORT-SUPPORT-MANAGER-REFERENCE-MODEL.md`
+
+Validation:
+`docs/research/FOUNDATION-M5-03-SUPPORT-REFERENCE-VALIDATION-2026-09-29.md`
+
+M4 corrections applied:
+- shared case/request and conversation/thread references;
+- communication/interaction audience visibility semantics.
+
+Key product validation:
+- a provider ticket may be a shared request/case envelope rather than a Support-owned domain object;
+- assignment/queue state does not transfer semantic authority over the referenced domain work;
+- Support can use a dense durable queue/case workspace inside the common SIA environment;
+- internal/private content requires explicit visibility preservation through summaries, drafts and automations.
+
+Next:
+**M5-04 — Founder / multi-role solo**
