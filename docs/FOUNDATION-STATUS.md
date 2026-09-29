@@ -93,11 +93,11 @@ Former Product Platform “open questions” were reclassified:
 
 No M2-21 is required.
 
-## Current milestone — FOUNDATION-M3
+## Historical milestone record — FOUNDATION-M3
 
 **FOUNDATION-M3 — Main Product Master Plan**
 
-Status: **ACTIVE**
+Status: **HISTORICAL — later reconciled and COMPLETE / LOCKED**
 
 Current M3-01 research:
 `docs/research/FOUNDATION-M3-01-PRODUCT-FAMILY-IDENTITY-PROMISE-2026-09-28.md`
