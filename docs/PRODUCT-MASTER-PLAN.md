@@ -570,3 +570,27 @@ Measure:
 > **One company. One operating environment. Every role gets the right lens. SIA is the company brain.**
 
 The environment name is intentionally temporary until branding clearance/research is complete.
+
+
+---
+
+# Owner addendum — 29/09/2026
+
+## SIA Built-in Support / Engineering & Quality Specialist
+
+SIA should provide a built-in support path where users and internal team members can report product issues directly to the same intelligent operator.
+
+SIA may invoke a reusable Engineering & Quality Specialist Profile to reproduce, diagnose, test and repair bounded issues.
+
+The specialist may implement fixes only when they remain inside accepted architecture and delegated authority. If a proposed fix conflicts with product, security, data, migration, domain or governance decisions, the specialist must stop and escalate the decision to SIA/owner with evidence.
+
+This capability uses the existing model:
+> **one SIA supervisor + reusable specialist profiles + deterministic validation + bounded authority.**
+
+Canonical addendum:
+`docs/addenda/SIA-BUILT-IN-SUPPORT-ENGINEERING-QUALITY-SPECIALIST-2026-09-29.md`
+
+Project continuity / multi-agent authority:
+`docs/PROJECT-CONTINUITY-PROTOCOL.md`
+
+These additions feed FOUNDATION-M4 capability-template work and FOUNDATION-M6 SIA contract freeze without reopening the reconciled M3 product thesis.
