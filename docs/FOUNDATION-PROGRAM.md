@@ -3,7 +3,7 @@
 **Status:** Active  
 **Established:** 2026-09-26  
 **Owner:** Admonk Studio  
-**Current milestone:** **FOUNDATION-M4 — Operating-Model / Capability Template**  
+**Current milestone:** **FOUNDATION-M5 — Reference Domain / Role Models**  
 **Latest Studio Foundation release:** **v1.0.0**  
 **Included Product Supervisor:** **v2.0.0**  
 **FOUNDATION-M2:** **COMPLETE / LOCKED — 2026-09-28**  
@@ -282,6 +282,12 @@ M4 candidate authority:
 
 M4-01 synthesis:
 `docs/research/FOUNDATION-M4-01-OPERATING-MODEL-CAPABILITY-TEMPLATE-SYNTHESIS-2026-09-29.md`
+
+M4-02 minimum-core audit:
+`docs/research/FOUNDATION-M4-02-TEMPLATE-CONSISTENCY-MINIMUM-CORE-AUDIT-2026-09-29.md`
+
+M4 status:
+**CANDIDATE / READY FOR M5 VALIDATION**
 
 **Goal:** define the reusable contract for departments, roles, responsibilities, processes, domain capabilities and SIA specialist profiles.
 
