@@ -253,7 +253,7 @@ Required decisions:
 Canonical decisions: `docs/FOUNDATION-M2-DECISIONS.md`  
 Exit audit: `docs/audits/FOUNDATION-M2-EXIT-RECONCILIATION-2026-09-28.md`
 
-### FOUNDATION-M3 — Main Product Master Plan — CURRENT
+### FOUNDATION-M3 — Main Product Master Plan — COMPLETE / LOCKED
 
 **Goal:** define the unified company operating environment, SIA company-brain experience, role/responsibility operating model, capability composition and commercial entry model.
 
@@ -276,6 +276,12 @@ The plan must define:
 - support/operations.
 
 ### FOUNDATION-M4 — Operating-Model / Capability Template
+
+M4 candidate authority:
+`docs/FOUNDATION-M4-OPERATING-MODEL-CAPABILITY-TEMPLATE.md`
+
+M4-01 synthesis:
+`docs/research/FOUNDATION-M4-01-OPERATING-MODEL-CAPABILITY-TEMPLATE-SYNTHESIS-2026-09-29.md`
 
 **Goal:** define the reusable contract for departments, roles, responsibilities, processes, domain capabilities and SIA specialist profiles.
 
