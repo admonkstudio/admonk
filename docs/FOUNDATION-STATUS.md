@@ -304,3 +304,26 @@ This adds a reusable reliability/testing/support specialist pattern:
 scheduled health + incident response + release gate + bounded remediation + product-feedback learning.
 
 It does not reopen locked M3.
+
+
+---
+
+## Kalam SIA pilot validation defer — 29/09/2026
+
+The Kalam Slice 0 pilot remains:
+- IMPLEMENTED;
+- validation-blocked by external CI/preview constraints;
+- unmerged;
+- not accepted.
+
+GitHub Actions free minutes are exhausted and reset in two days.
+Webflow existing staging remains healthy, while isolated preview source-management authorization remains degraded.
+
+Pilot validation is intentionally deferred for two days.
+
+This does **not** block continuation of the main SIA Foundation planning program.
+
+Active Foundation direction:
+resume the next planning milestone from the current Foundation Program / M4 research queue.
+
+Do not reinterpret the pilot defer as a rejection of the SIA architecture.
