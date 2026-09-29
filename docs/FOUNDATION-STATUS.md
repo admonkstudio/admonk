@@ -2,9 +2,9 @@
 
 **Date:** 2026-09-29
 **Program:** Admonk Foundation Program
-**Current milestone:** **FOUNDATION-M5 — Reference Domain / Role Models**
-**Current sub-milestone:** **M5-04 — Founder / multi-role solo Reference Model — NEXT**
-**Milestone status:** **FOUNDATION-M2 COMPLETE / LOCKED; FOUNDATION-M3 COMPLETE / LOCKED; FOUNDATION-M4 CANDIDATE V5; FOUNDATION-M5 ACTIVE**
+**Current milestone:** **FOUNDATION-M5 — COMPLETE / M4 OWNER LOCK GATE**
+**Current sub-milestone:** **M4 Final Candidate V6 — OWNER APPROVAL REQUIRED**
+**Milestone status:** **FOUNDATION-M2 COMPLETE / LOCKED; FOUNDATION-M3 COMPLETE / LOCKED; FOUNDATION-M4 FINAL CANDIDATE V6 / OWNER LOCK PENDING; FOUNDATION-M5 COMPLETE / PASS**
 **Foundation lock:** **LOCKED — Admonk Studio Foundation v1.0.0**
 **Current stable Product Supervisor:** **v2.0.0**  
 **Release mapping:** Studio Foundation v1.0.0 → Product Supervisor v2.0.0
@@ -495,3 +495,32 @@ Key product validation:
 
 Next:
 **M5-04 — Founder / multi-role solo**
+
+
+---
+
+## FOUNDATION-M5 — M5-04 Founder / multi-role solo validation
+
+Result:
+**PASS WITH M4 CORRECTIONS — CORRECTIONS APPLIED**
+
+Reference model:
+`docs/reference-models/FOUNDER-MULTI-ROLE-SOLO-REFERENCE-MODEL.md`
+
+Validation:
+`docs/research/FOUNDATION-M5-04-FOUNDER-MULTI-ROLE-SOLO-VALIDATION-2026-09-29.md`
+
+M4 corrections applied:
+- lens/context vs execution-target separation;
+- approval eligibility/independence semantics.
+
+M5 final reconciliation:
+`docs/audits/FOUNDATION-M5-FINAL-RECONCILIATION-2026-09-29.md`
+
+Final result:
+**FOUNDATION-M5 COMPLETE — PASS**
+
+Current gate:
+**M4 Final Candidate V6 — OWNER LOCK PENDING**
+
+Do not start FOUNDATION-M6 as an authoritative milestone until the owner explicitly approves M4 V6.
