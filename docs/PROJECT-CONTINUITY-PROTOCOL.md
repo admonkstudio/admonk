@@ -60,12 +60,21 @@ Before changing anything, the worker must verify:
 - canonical repository;
 - current phase/milestone;
 - current branch/PR if implementation is active;
-- current HEAD SHA;
+- live current HEAD SHA verified from the repository host;
 - current blockers;
 - accepted vs implemented vs tested vs deployed state;
 - relevant external resource IDs when the task touches external systems.
 
 If the current status document is stale, correcting it is part of the task before further expansion.
+
+### SHA recording rule
+
+A checkpoint commit cannot contain its own resulting SHA without becoming stale by definition.
+
+Therefore:
+- record the **code-under-review SHA** or pre-checkpoint implementation SHA inside the checkpoint;
+- verify the **live branch HEAD** directly from GitHub/repository host at the start of the next work packet;
+- treat any SHA written inside a committed checkpoint as evidence of the code state it describes, not as a self-updating branch pointer.
 
 ## 4. Mandatory end-of-work checkpoint
 
@@ -73,7 +82,7 @@ Before an agent/session stops, it must update project authority with:
 
 - exact work completed;
 - exact work not completed;
-- branch + HEAD SHA;
+- branch + code-under-review SHA (or pre-checkpoint HEAD);
 - PR/deployment status;
 - tests actually executed and their results;
 - external mutations made;
