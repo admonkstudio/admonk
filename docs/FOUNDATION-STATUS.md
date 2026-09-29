@@ -3,7 +3,7 @@
 **Date:** 2026-09-29
 **Program:** Admonk Foundation Program
 **Current milestone:** **FOUNDATION-M4 — Operating-Model / Capability Template**
-**Current sub-milestone:** **FOUNDATION-M5 — Reference Domain / Role Models — NEXT**
+**Current sub-milestone:** **M5-02 — Recruiting / Recruiter Reference Model — NEXT**
 **Milestone status:** **FOUNDATION-M2 COMPLETE / LOCKED; FOUNDATION-M3 COMPLETE / LOCKED; FOUNDATION-M4 ACTIVE**
 **Foundation lock:** **LOCKED — Admonk Studio Foundation v1.0.0**
 **Current stable Product Supervisor:** **v2.0.0**  
@@ -409,3 +409,32 @@ Reference set:
 2. Recruiting / Recruiter
 3. Support / Support Manager
 4. Founder / multi-role solo
+
+
+---
+
+## FOUNDATION-M5 — M5-01 Marketing reference validation
+
+Result:
+**PASS WITH M4 CORRECTIONS — CORRECTIONS APPLIED**
+
+Reference model:
+`docs/reference-models/MARKETING-MARKETING-MANAGER-REFERENCE-MODEL.md`
+
+Validation:
+`docs/research/FOUNDATION-M5-01-MARKETING-REFERENCE-VALIDATION-2026-09-29.md`
+
+M4 corrections applied:
+- detailed requirement-precedence clarification;
+- cross-domain process authority with stage/domain ownership;
+- shared-definition reference rule.
+
+Key product validation:
+- Marketing Manager can use the common SIA / Work / Projects / Performance / Settings shell;
+- Marketing-specific semantics can live in responsibilities, processes, metrics, artifacts and contextual components;
+- no dedicated Marketing app or one-agent-per-role model is required.
+
+M4 remains CANDIDATE until all M5 reference models complete.
+
+Next:
+**M5-02 — Recruiting / Recruiter**
