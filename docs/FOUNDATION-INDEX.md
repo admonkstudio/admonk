@@ -6,7 +6,8 @@
 **Current Foundation milestone:** **FOUNDATION-M5 COMPLETE — M4 OWNER LOCK GATE**
 **Current product authority:** `docs/PRODUCT-MASTER-PLAN.md`  
 **Current M4 candidate:** `docs/FOUNDATION-M4-OPERATING-MODEL-CAPABILITY-TEMPLATE.md`  
-**Current resume point:** **M4 Final Candidate V6 — Owner Approval**
+**Current resume point:** **M4 Final Candidate V6 — Owner Approval**  
+**Current resume checkpoint:** `docs/checkpoints/FOUNDATION-M5-HANDOVER-2026-09-29.md`
 **Latest completed validation:** `docs/audits/FOUNDATION-M5-FINAL-RECONCILIATION-2026-09-29.md`
 **Shared Product Platform Foundation:** **FOUNDATION-M2 COMPLETE / LOCKED**
 
