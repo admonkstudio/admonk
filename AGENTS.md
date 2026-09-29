@@ -710,3 +710,20 @@ and use:
 Important: this repository coordinates shared suite rules. Each specialist application's own repository remains authoritative for its product-specific milestones, security, architecture, data model and implementation.
 
 Do not merge the products into one codebase or share runtime data stores merely for organizational convenience.
+
+
+---
+
+# Project continuity and session recovery
+
+For long-running or multi-agent product work, read:
+
+`docs/PROJECT-CONTINUITY-PROTOCOL.md`
+
+Non-negotiable:
+- chat/model memory is context, not project authority;
+- reconstruct current state from repository checkpoint + branch/PR + evidence before acting;
+- work in bounded packets instead of mixing many major tasks into one session;
+- update the authoritative checkpoint before ending a substantial work packet;
+- record external resources/mutations so later cleanup is deterministic;
+- do not self-promote IMPLEMENTED work to ACCEPTED without the required validation/acceptance authority.
