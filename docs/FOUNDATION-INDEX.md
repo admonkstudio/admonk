@@ -3,11 +3,11 @@
 **Current Studio Foundation release:** **v1.0.0**  
 **Product Supervisor:** **v2.0.0**  
 **Release manifest:** `docs/FOUNDATION-RELEASE-MANIFEST.yaml`
-**Current Foundation milestone:** **FOUNDATION-M5 — Reference Domain / Role Models**
+**Current Foundation milestone:** **FOUNDATION-M5 COMPLETE — M4 OWNER LOCK GATE**
 **Current product authority:** `docs/PRODUCT-MASTER-PLAN.md`  
 **Current M4 candidate:** `docs/FOUNDATION-M4-OPERATING-MODEL-CAPABILITY-TEMPLATE.md`  
-**Current resume point:** **M5-04 — Founder / multi-role solo Reference Validation**
-**Latest completed validation:** `docs/research/FOUNDATION-M5-03-SUPPORT-REFERENCE-VALIDATION-2026-09-29.md`
+**Current resume point:** **M4 Final Candidate V6 — Owner Approval**
+**Latest completed validation:** `docs/audits/FOUNDATION-M5-FINAL-RECONCILIATION-2026-09-29.md`
 **Shared Product Platform Foundation:** **FOUNDATION-M2 COMPLETE / LOCKED**
 
 ## A. Studio Foundation — normal product work
