@@ -6,8 +6,8 @@
 **Current Foundation milestone:** **FOUNDATION-M5 — Reference Domain / Role Models**
 **Current product authority:** `docs/PRODUCT-MASTER-PLAN.md`  
 **Current M4 candidate:** `docs/FOUNDATION-M4-OPERATING-MODEL-CAPABILITY-TEMPLATE.md`  
-**Current resume point:** **M5-03 — Support / Support Manager Reference Validation**
-**Latest completed validation:** `docs/research/FOUNDATION-M5-02-RECRUITING-REFERENCE-VALIDATION-2026-09-29.md`
+**Current resume point:** **M5-04 — Founder / multi-role solo Reference Validation**
+**Latest completed validation:** `docs/research/FOUNDATION-M5-03-SUPPORT-REFERENCE-VALIDATION-2026-09-29.md`
 **Shared Product Platform Foundation:** **FOUNDATION-M2 COMPLETE / LOCKED**
 
 ## A. Studio Foundation — normal product work
