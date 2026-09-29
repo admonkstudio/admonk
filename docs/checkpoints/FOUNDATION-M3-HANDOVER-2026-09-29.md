@@ -1,7 +1,25 @@
 # FOUNDATION-M3 Handover — Revised SIA Product Master Plan
 
 **Date:** 2026-09-29  
-**Status:** FINAL RECONCILIATION COMPLETE — OWNER FINAL MASTER-PLAN LOCK PENDING
+**Status:** HISTORICAL HANDOVER — OWNER LOCK COMPLETED / M4 ACTIVE
+
+## Supersession note
+
+This handover captured the state immediately before owner lock.
+
+Current authority is now:
+1. `AGENTS.md`
+2. `docs/FOUNDATION-STATUS.md`
+3. `docs/FOUNDATION-PROGRAM.md`
+4. `docs/PRODUCT-MASTER-PLAN.md`
+5. `docs/SIA-EXPERIENCE-DIRECTION.md`
+
+Current canonical state:
+- FOUNDATION-M3 — COMPLETE / LOCKED;
+- FOUNDATION-M4 — Operating-Model / Capability Template — ACTIVE.
+
+Do not resume the old “owner final lock pending” gate from this historical checkpoint.
+
 
 ## Resume here
 
