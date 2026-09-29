@@ -295,3 +295,12 @@ FOUNDATION-M4 Kalam pilot research input:
 `docs/research/FOUNDATION-M4-KALAM-SIA-PILOT-AUDIT-INPUT-2026-09-29.md`
 
 This is research input only; it does not reopen locked M3.
+
+
+FOUNDATION-M4/M6 research input — Engineering Reliability & Quality Specialist V1:
+`docs/addenda/SIA-ENGINEERING-RELIABILITY-QUALITY-SPECIALIST-V1-2026-09-29.md`
+
+This adds a reusable reliability/testing/support specialist pattern:
+scheduled health + incident response + release gate + bounded remediation + product-feedback learning.
+
+It does not reopen locked M3.
