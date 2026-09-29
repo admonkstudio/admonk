@@ -1,10 +1,51 @@
 # FOUNDATION-M4 — Operating-Model / Capability Template
 
-**Status:** CANDIDATE V1 — M4-01  
+**Status:** CANDIDATE V2 — M4-02 AUDITED / READY FOR M5 VALIDATION  
 **Date:** 29/09/2026  
 **Authority:** Foundation candidate; requires M5 reference-model validation before final M4 lock.
 
 ---
+
+# 0. Requirement model
+
+This template uses four requirement classes:
+
+- **CORE** — required for the object/concept to exist safely;
+- **CONDITIONAL** — required only when the related feature/behavior exists;
+- **RECOMMENDED** — useful default/reference metadata;
+- **OPTIONAL** — extension metadata.
+
+The detailed sections below describe the full semantic catalog.
+
+They do **not** require every Domain Pack to populate every object.
+
+## Minimum Domain Pack CORE
+
+A valid reference Domain Pack needs only:
+
+1. stable domain identity;
+2. purpose/business outcomes;
+3. semantic owner/boundary;
+4. stable version/revision;
+5. customization/inheritance boundary;
+6. responsibility vocabulary, or an explicit statement that responsibility modeling is not yet configured.
+
+Role Archetypes, processes, capabilities, connectors, metrics, artifacts, diagnostics, specialists, dedicated workspaces and automations are conditional/optional.
+
+## Sparse-by-default safety
+
+Absence never grants authority or invents facts:
+
+- missing capability → unavailable/deny;
+- missing evidence → unknown;
+- missing metric value → unknown, not zero;
+- missing role/workspace default → inherit/common shell;
+- missing connector → dependent capability blocked;
+- missing specialist → no specialist delegation;
+- missing process observation → no observed-process claim.
+
+M4-02 audit:
+`docs/research/FOUNDATION-M4-02-TEMPLATE-CONSISTENCY-MINIMUM-CORE-AUDIT-2026-09-29.md`
 
 # 1. Purpose
 
@@ -15,6 +56,29 @@ This template defines the reusable structure by which SIA understands and operat
 A domain implementation should use only the sections it materially needs, but it must preserve the invariants in this document.
 
 ---
+
+# 1A. Progressive composition
+
+Domain Packs grow only as real work requires:
+
+### A — Reference Core
+identity, outcomes, authority boundary, responsibilities, minimal vocabulary, customization/versioning.
+
+### B — Operable
+processes, capabilities, connectors, artifacts and action/approval semantics.
+
+### C — Measurable
+metrics, goals, reports, quality/freshness and drill-through.
+
+### D — Intelligent
+diagnostics, Skills, Specialist Profiles, observed-process analysis and evals.
+
+### E — Experience / Automation
+dedicated workspace patterns, role/domain defaults, automations and human/digital handoff.
+
+These are composable layers, not maturity grades.
+
+A field/object is added only when required for semantic correctness, authority/safety, real interaction, execution, evidence/measurement or compatibility.
 
 # 2. Domain Pack
 
@@ -745,13 +809,12 @@ If reference models require awkward exceptions or repeated fields, fix M4 before
 
 # 24. Status
 
-**M4-01 candidate template complete.**
+**M4-02 candidate template complete and audited.**
 
 Not yet final/locked.
 
-Next bounded milestone:
+The template is now ready for **M5 reference-model validation**.
 
-> **M4-02 — Template Consistency & Minimum-Core Audit**
+M5 begins from the Reference Core and adds Operable / Measurable / Intelligent / Experience layers only when the scenario requires them.
 
-Goal:
-identify which fields are truly mandatory vs optional before M5, so the template does not become an oversized ontology that every domain must populate.
+M4 locks only after M5 demonstrates that Marketing, Recruiting, Support and Founder/multi-role can use the same model without awkward exceptions or unnecessary ontology.
