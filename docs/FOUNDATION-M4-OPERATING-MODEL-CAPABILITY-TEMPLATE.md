@@ -1,6 +1,6 @@
 # FOUNDATION-M4 — Operating-Model / Capability Template
 
-**Status:** CANDIDATE V3 — M5-01 MARKETING VALIDATED / M5 CONTINUES  
+**Status:** CANDIDATE V4 — M5-02 RECRUITING VALIDATED / M5 CONTINUES  
 **Date:** 29/09/2026  
 **Authority:** Foundation candidate; requires M5 reference-model validation before final M4 lock.
 
@@ -217,6 +217,26 @@ Examples:
 - contract.
 
 Do not normalize two different entities merely because providers use similar field names.
+
+## 2.4 Subject identity vs domain-record identity
+
+Where multiple domain records may refer to the same real-world subject, distinguish:
+
+- **subject identity/linkage** — the governed assertion that records refer to the same natural person, organization or other real-world subject;
+- **domain-record identity** — the stable identity and lifecycle of the business record inside its owning domain.
+
+Rules:
+
+- subject linkage does not collapse domain records;
+- one subject may legitimately have multiple records in one domain or across domains;
+- each domain record retains its own semantics, authority, lifecycle, evidence and permissions;
+- cross-record/cross-domain linkage should preserve source, provenance and confidence where the linkage is not authoritative;
+- uncertain linkage must remain uncertain rather than being silently merged;
+- linking records does not transfer semantic or action authority between domains.
+
+Example:
+one natural person may have one Recruiting candidate record, multiple application records and later a separate employee/worker record.
+
 
 ---
 
@@ -450,6 +470,32 @@ Bad:
 `zoho_node_17`
 
 Provider/workflow identity stays implementation metadata.
+
+## 6.3 Human-impact decision boundary
+
+Where a capability, process, automation or specialist materially influences a consequential decision about a natural person, define the applicable decision boundary.
+
+Conditional fields should include:
+
+- **decision_role:** INFORM / ANALYZE / RECOMMEND / DECIDE / EXECUTE;
+- accountable human/policy authority;
+- required review/approval where applicable;
+- permitted/prohibited evidence, factors or uses;
+- required decision evidence;
+- explanation/notification requirements where policy or law requires;
+- override/appeal/accommodation path where applicable;
+- jurisdiction/policy applicability;
+- audit/provenance requirements.
+
+Rules:
+
+- access to a capability or connector does not by itself grant authority to make a consequential decision;
+- ANALYZE or RECOMMEND does not silently become DECIDE;
+- DECIDE does not silently become EXECUTE;
+- automation of a procedural step does not imply authority over the underlying human-impact decision;
+- applicable law, tenant policy and platform ceilings may require human review even when the technical action is available;
+- the overlay is conditional and should not impose one jurisdiction's policy globally.
+
 
 ---
 
@@ -894,6 +940,16 @@ Marketing reference validation produced two template corrections:
 Evidence:
 `docs/research/FOUNDATION-M5-01-MARKETING-REFERENCE-VALIDATION-2026-09-29.md`
 
+### M5-02 Recruiting validation corrections
+
+Recruiting reference validation produced two reusable template corrections:
+
+1. explicit **subject identity vs domain-record identity** so one real-world subject can link to multiple governed records without collapsing their independent semantics/lifecycles;
+2. explicit **human-impact decision boundary** separating INFORM / ANALYZE / RECOMMEND / DECIDE / EXECUTE participation and preventing technical write access from becoming decision authority.
+
+Evidence:
+`docs/research/FOUNDATION-M5-02-RECRUITING-REFERENCE-VALIDATION-2026-09-29.md`
+
 # 24. Status
 
 **M4-02 candidate template complete and audited.**
@@ -904,4 +960,4 @@ The template is now ready for **M5 reference-model validation**.
 
 M5 begins from the Reference Core and adds Operable / Measurable / Intelligent / Experience layers only when the scenario requires them.
 
-M4 locks only after M5 demonstrates that Marketing, Recruiting, Support and Founder/multi-role can use the same model without awkward exceptions or unnecessary ontology.
+M4 locks only after M5 demonstrates that Marketing, Recruiting, Support and Founder/multi-role can use the same model without awkward exceptions or unnecessary ontology. Marketing and Recruiting have now passed; Support is next.
