@@ -3,7 +3,7 @@
 **Date:** 2026-09-29
 **Program:** Admonk Foundation Program
 **Current milestone:** **FOUNDATION-M4 — Operating-Model / Capability Template**
-**Current sub-milestone:** **M4-02 — Template Consistency & Minimum-Core Audit — NEXT**
+**Current sub-milestone:** **FOUNDATION-M5 — Reference Domain / Role Models — NEXT**
 **Milestone status:** **FOUNDATION-M2 COMPLETE / LOCKED; FOUNDATION-M3 COMPLETE / LOCKED; FOUNDATION-M4 ACTIVE**
 **Foundation lock:** **LOCKED — Admonk Studio Foundation v1.0.0**
 **Current stable Product Supervisor:** **v2.0.0**  
@@ -366,3 +366,46 @@ Next:
 
 Purpose:
 reduce unnecessary mandatory fields before M5 and ensure the template remains practical for solo, SMB and enterprise/reference domains.
+
+
+---
+
+## FOUNDATION-M4 — M4-02 minimum-core audit
+
+Result:
+**PASS WITH SIMPLIFICATION**
+
+Evidence:
+`docs/research/FOUNDATION-M4-02-TEMPLATE-CONSISTENCY-MINIMUM-CORE-AUDIT-2026-09-29.md`
+
+Canonical M4 candidate:
+`docs/FOUNDATION-M4-OPERATING-MODEL-CAPABILITY-TEMPLATE.md`
+
+Major change:
+M4 is now **sparse/progressive by default**.
+
+Requirement classes:
+- CORE
+- CONDITIONAL
+- RECOMMENDED
+- OPTIONAL
+
+Progressive composition:
+- A Reference Core
+- B Operable
+- C Measurable
+- D Intelligent
+- E Experience / Automation
+
+A Domain Pack no longer needs roles, metrics, specialists, connectors, dedicated UI or automations merely to exist.
+
+M4 remains **CANDIDATE**, pending M5 reference-model validation.
+
+Next:
+**FOUNDATION-M5 — Reference Domain / Role Models**
+
+Reference set:
+1. Marketing / Marketing Manager
+2. Recruiting / Recruiter
+3. Support / Support Manager
+4. Founder / multi-role solo
