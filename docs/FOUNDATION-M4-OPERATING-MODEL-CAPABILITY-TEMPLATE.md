@@ -1,6 +1,6 @@
 # FOUNDATION-M4 — Operating-Model / Capability Template
 
-**Status:** CANDIDATE V2 — M4-02 AUDITED / READY FOR M5 VALIDATION  
+**Status:** CANDIDATE V3 — M5-01 MARKETING VALIDATED / M5 CONTINUES  
 **Date:** 29/09/2026  
 **Authority:** Foundation candidate; requires M5 reference-model validation before final M4 lock.
 
@@ -104,6 +104,33 @@ Therefore:
 - Human/Digital Handoff is CONDITIONAL.
 
 This precedence rule prevents detailed object schemas from being misread as universal Domain Pack requirements.
+
+# 2A. Shared-definition reference rule
+
+Domain Packs should **reference** stable shared/platform definitions rather than cloning them.
+
+Common candidates include:
+- task/work item;
+- project;
+- approval;
+- decision;
+- meeting;
+- notification;
+- connector/connection;
+- automation Definition/Deployment/Run;
+- issue/incident;
+- audit/provenance envelopes;
+- shared artifact shells;
+- Engineering Reliability & Quality capabilities.
+
+A domain may extend a shared definition only with domain-specific semantics.
+
+Rules:
+
+- shared stable identity remains owned by the shared/platform contract;
+- domain extensions must not fork security/authority behavior;
+- if two domains only need the same semantic concept, reference the shared contract;
+- create a domain-owned definition only when the business meaning materially differs.
 
 # 2. Domain Pack
 
@@ -341,6 +368,31 @@ A Process Template may map to:
 - hybrid orchestration.
 
 Implementation references are replaceable metadata.
+
+## 5.4 Cross-domain process authority
+
+A process may span more than one semantic domain.
+
+For cross-domain processes, define:
+
+- `process_type: cross_domain`;
+- participating domains;
+- coordinating owner/responsibility where one exists;
+- stage-level semantic/domain owner;
+- source authority for each stage/entity/metric;
+- handoff boundary;
+- shared artifact/evidence references;
+- reconciliation/attribution confidence where data is joined.
+
+Rules:
+
+- one coordinating domain does not gain semantic authority over another domain's entities;
+- each stage preserves the owning domain's definitions and authoritative source;
+- cross-domain analytics must preserve provenance and confidence rather than flattening conflicting populations;
+- a cross-domain process may have no single semantic owner for the entire end-to-end outcome.
+
+Example:
+Marketing may own campaign/spend/acquisition semantics while Recruiting owns candidate/application/hire semantics in one recruitment-acquisition outcome process.
 
 ---
 
@@ -831,6 +883,16 @@ M5 must challenge this template.
 If reference models require awkward exceptions or repeated fields, fix M4 before final lock.
 
 ---
+
+### M5-01 Marketing validation corrections
+
+Marketing reference validation produced two template corrections:
+
+1. explicit **cross-domain process authority** with stage-level semantic ownership;
+2. explicit **shared-definition references** to avoid cloning platform/common objects into each domain.
+
+Evidence:
+`docs/research/FOUNDATION-M5-01-MARKETING-REFERENCE-VALIDATION-2026-09-29.md`
 
 # 24. Status
 
