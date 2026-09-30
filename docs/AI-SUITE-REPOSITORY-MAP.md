@@ -1,3 +1,5 @@
+> **ALIGNMENT NOTICE — 30/09/2026:** Current SIA authority is `admonkstudio/sia`. The former Marketing Hub repository was consolidated into SIA as marketing-domain archive/reference material and is no longer a standalone product authority.
+
 # AI Suite — Repository Map
 
 | Product / Layer | Repository | Role | Current State | Canonical Authority |
@@ -5,7 +7,7 @@
 | Admonk shared studio / suite coordination | `admonkstudio/admonk` | shared methods, suite boundaries, cross-product contracts | Active | root `AGENTS.md` + `docs/AI-SUITE.md` |
 | Jarvis — Company Intelligence | `admonkstudio/corporate-ai-assistant` (legacy transition repository) | same Jarvis core under Company/Executive Operating Lens | transition/history; do not expand as a second brain/runtime | Jarvis shared architecture + specialist domain authorities; legacy repo retained pending product-family migration decision |
 | Support Platform / Ask Kalam | `kalamcx/kalam-digital-platform` | AI Customer Resolution Platform | M0 reconstruction | repository `AGENTS.md` + canonical docs |
-| Marketing Hub | `admonkstudio/marketing-hub` | marketing operating/intelligence system | PDISC discovery | repository `AGENTS.md` + canonical docs |
+| Marketing domain | `admonkstudio/sia` | marketing capability/reference input | consolidated 30/09/2026 | SIA authority after explicit reconciliation/promotion |
 
 ## Ownership rule
 
