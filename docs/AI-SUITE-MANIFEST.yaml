@@ -26,12 +26,14 @@ products:
     active_branch: reconstruction/prelaunch
     active_milestone: M0 — Freeze & Establish Source of Truth
     authority: product repository
-  marketing_hub:
-    role: marketing arm
-    repository: admonkstudio/marketing-hub
-    active_milestone: PDISC — Product Discovery through Kalam 2027 Strategy
-    authority: product repository
-    analytics_boundary: analytics is a core Marketing Hub layer
+  marketing_domain:
+    role: marketing domain/capability reference within SIA
+    repository: admonkstudio/sia
+    former_repository: admonkstudio/marketing-hub
+    former_repository_status: retired after 30/09/2026 consolidation
+    archive_path: docs/archive/marketing-hub/
+    reference_path: docs/reference/marketing-domain/
+    authority: SIA after explicit promotion/reconciliation
 
 shared_contracts:
   status: planned
