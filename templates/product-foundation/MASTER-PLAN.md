@@ -32,7 +32,7 @@ Define:
 |---|---|---|---|---|
 |  |  |  |  |  |
 
-## 5. Shared company experience
+## 5. Shared or parent experience (if applicable)
 
 Define:
 - organization setup;
@@ -50,11 +50,11 @@ Define:
 
 For each major data/work domain identify the authoritative product.
 
-## 7. Shared platform contracts
+## 7. Parent/shared contracts (if applicable)
 
-List required shared contracts and their versions/status.
+List only real shared contracts that have an explicit owner and versions/status. Leave empty when the product is standalone.
 
-## 8. Corporate/company brain
+## 8. Cross-domain intelligence/orchestration (if applicable)
 
 Define:
 - permitted company-wide context;

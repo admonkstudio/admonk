@@ -1,6 +1,6 @@
 # Admonk Playbooks
 
-**Status:** FOUNDATION-M1 core Playbooks phase complete.
+**Status:** Core Studio playbook baseline established.
 
 Playbooks answer: **How should a person or agent perform this work?**
 

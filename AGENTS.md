@@ -626,25 +626,28 @@ Research/candidate status does not grant adoption authority.
 
 ---
 
-# 19F. Foundation Program
+# 19F. Product Foundation Boundary
 
-For Admonk-owned software products, company apps, department apps, or cross-product foundation work, read:
+For Admonk-owned software/product work, this repository provides **studio-level methods**, not product-specific architecture authority.
 
-- `docs/FOUNDATION-INDEX.md`
-- `docs/FOUNDATION-STATUS.md`
-- `docs/FOUNDATION-PROGRAM.md`
+Use:
+- `docs/PRODUCT-SUPERVISOR.md`;
+- `docs/PROJECT-LIFECYCLE.md`;
+- `doctrine/`;
+- `standards/`;
+- `playbooks/`;
+- `templates/product-foundation/` only as optional neutral scaffolding.
 
-The Studio Foundation governs **how products are built**.
+Every real product must keep its own product model, contracts, milestones, implementation authority and current-state documents in its dedicated repository.
 
-The Shared Product Platform Foundation governs **what genuinely shared application primitives/contracts products inherit**.
-
-Each product foundation governs **what that product uniquely owns and how it extends the shared platform**.
+Current example:
+- **SIA product authority:** `admonkstudio/sia`
 
 Core rule:
 
-> **Build the studio foundation once. Build the product platform once. Let each product inherit the strengths and earn its differences.**
+> **Admonk supplies reusable method. The product repository owns the product.**
 
-Do not interpret "one product sold in parts" as permission to collapse all domains into one database, one codebase, one UI, or one source of truth.
+Do not copy a product's stable contracts back into this Studio repository merely to make them look shared. Promote only genuinely reusable method, standards or templates.
 
 ---
 
@@ -689,27 +692,18 @@ The goal is to produce better work.
 
 ---
 
-# 20. Admonk AI Suite
+# 20. Product Repository Boundaries
 
-Admonk also coordinates a specialist AI product family:
+This repository is **Admonk Studio authority**, not a product monorepo and not SIA authority.
 
-- Corporate AI Assistant — company brain/intelligence layer.
-- Support Platform / Ask Kalam — support/customer-resolution arm.
-- Marketing Hub — marketing arm.
+Current boundary:
+- `admonkstudio/admonk` — Admonk business, studio methods, reusable skills, doctrine, standards, playbooks, templates, design foundation, research and labs.
+- `admonkstudio/sia` — canonical SIA product, Foundation, architecture, research and promoted product learning.
+- Kalam/client repositories — their own runtime, deployment and client/product authority.
 
-For cross-product work, read:
+Historical AI Suite, Corporate AI Assistant, Harvey, Jarvis, Marketing Hub and SIA product-planning files were removed from the current Studio tree on 30/09/2026 after SIA consolidation. Git history remains provenance; do not revive those files as current authority.
 
-`docs/AI-SUITE.md`
-
-`docs/AI-SUITE-REPOSITORY-MAP.md`
-
-and use:
-
-`.agents/skills/admonk-ai-suite/SKILL.md`
-
-Important: this repository coordinates shared suite rules. Each specialist application's own repository remains authoritative for its product-specific milestones, security, architecture, data model and implementation.
-
-Do not merge the products into one codebase or share runtime data stores merely for organizational convenience.
+When reusable learning emerges from a product, promote only the generalizable method into this repository.
 
 
 ---

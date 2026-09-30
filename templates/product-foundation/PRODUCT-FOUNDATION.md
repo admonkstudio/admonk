@@ -4,7 +4,7 @@
 **Product type:** Company / Department / Specialist  
 **Owner:**  
 **Parent product/family:**  
-**Shared Product Platform Foundation version:**  
+**Parent/shared contract version (if applicable):**  
 **Admonk Studio Foundation version:**  
 **Governance level:**  
 **Status:**  
@@ -19,16 +19,16 @@ What must remain authoritative here rather than in the company/shared layer?
 
 What value must this product deliver when purchased/enabled alone?
 
-## 3. Shared foundation inheritance
+## 3. Parent/shared contract inheritance (if applicable)
 
-For each shared primitive classify:
+If the product actually inherits shared primitives, classify each relevant one:
 
 - INHERIT
 - EXTEND
 - OVERRIDE BY APPROVED CONTRACT
 - NOT APPLICABLE
 
-| Shared area | Status | Product-specific extension / reason |
+| Shared/parent area | Status | Product-specific extension / reason |
 |---|---|---|
 | Tenant/company identity |  |  |
 | User/membership |  |  |
@@ -112,7 +112,7 @@ Authoritative data:
 
 Derived data:
 
-Shared references:
+Parent/shared references (if applicable):
 
 Cross-product access contracts:
 

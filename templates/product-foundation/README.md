@@ -1,12 +1,10 @@
 # Product Foundation Template
 
-Use this template when defining an Admonk-owned company, department, or specialist product that inherits from the shared Product Platform Foundation.
+Use this optional template when an Admonk-owned software product needs a structured foundation document set.
 
-## Purpose
+This template is **neutral scaffolding**. It does not define a shared Admonk product platform, does not grant cross-product authority, and must not override a product repository's own canonical contracts.
 
-Keep every product structurally consistent where consistency creates value while preserving domain authority and product-specific experience.
-
-## Recommended project documents
+## Recommended documents
 
 ```text
 product-foundation/
@@ -15,33 +13,28 @@ product-foundation/
 └── CONNECTION-CONTRACT.md
 ```
 
-For a department/specialist product also use:
-`DEPARTMENT-MASTER-PLAN.md`
+Use `DEPARTMENT-MASTER-PLAN.md` only when a real department/domain product model makes that structure useful.
 
-## Inheritance order
+## Authority order
 
 ```text
 Approved product-owner decision
         ↓
-Product-specific foundation/domain authority
+Product repository canonical authority
         ↓
-Approved Shared Product Platform Foundation contract
+Explicit parent/shared contracts, if the product actually has them
         ↓
-Approved Admonk Studio Foundation doctrine/standards
+Approved Admonk Studio doctrine/standards
         ↓
 Relevant skills/platform guidance
         ↓
 Generic framework defaults
 ```
 
-Security/safety/legal constraints may impose stricter requirements.
+Security, legal and safety constraints may impose stricter requirements.
 
 ## Rule
 
-A product should inherit shared behavior intentionally.
+> **Use the template to ask the right structural questions; never treat the template itself as architecture authority.**
 
-Do not:
-- copy shared documents into the product and let them drift;
-- rebuild shared primitives locally without a recorded reason;
-- move domain semantics into the shared foundation merely for consistency;
-- fork the product for each tenant when configuration can solve the need.
+Do not invent a product family, shared platform, cross-product contract or department-app model merely because this template contains a place to document one.

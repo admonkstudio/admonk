@@ -2,7 +2,7 @@
 
 **Product:**  
 **Product foundation version:**  
-**Shared Product Platform Foundation version:**  
+**Parent/shared contract version (if applicable):**  
 **Admonk Studio Foundation version:**  
 **Last reviewed:**  
 
@@ -21,9 +21,9 @@ Make the inheritance relationship explicit so a person/model can determine what 
 | Release/operations |  |  |  |
 | Design Foundation |  |  |  |
 
-## 2. Platform Foundation conformance
+## 2. Parent/shared contract conformance (if applicable)
 
-| Shared contract | Version/status | Product implementation | Extension/exception |
+| Parent/shared contract | Version/status | Product implementation | Extension/exception |
 |---|---|---|---|
 | Tenant identity |  |  |  |
 | Membership |  |  |  |

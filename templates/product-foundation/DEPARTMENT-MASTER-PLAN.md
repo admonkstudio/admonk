@@ -32,7 +32,7 @@ For each capability record:
 **Frequency:**  
 **Core / Optional / Later / Out:**  
 
-## 4. Shared foundation inheritance
+## 4. Parent/shared inheritance (if applicable)
 
 Which shared:
 - organization/user;
@@ -79,9 +79,9 @@ What business outcomes prove the department/product is working?
 
 ## 11. Cross-product connections
 
-What does this product expose to:
-- company/corporate layer;
-- other department products?
+What does this product expose to, if applicable:
+- a parent/company layer;
+- other domains/products?
 
 What may it consume?
 
