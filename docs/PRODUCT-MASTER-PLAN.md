@@ -1,3 +1,5 @@
+> **MIGRATION NOTICE — 30/09/2026:** SIA-specific product, Foundation, architecture and research authority has moved to the private canonical repository `admonkstudio/sia`. This file is retained here for provenance. Do not continue SIA milestone work in this repository unless the product owner explicitly directs it. Shared Admonk Studio authority remains here where applicable.
+
 # Product Master Plan — Unified Company Operating Environment
 
 **Date:** 2026-09-29  
