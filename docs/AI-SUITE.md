@@ -1,3 +1,5 @@
+> **ALIGNMENT NOTICE — 30/09/2026:** Current SIA authority is `admonkstudio/sia`. The former standalone Marketing Hub repository has been consolidated into SIA as marketing-domain reference/archive material and is no longer a separate product authority. This document is retained as historical suite-evolution context.
+
 # Admonk AI Suite
 
 **Status:** Canonical suite coordination layer  
@@ -55,19 +57,13 @@ Current milestone:
 
 Do not move, merge, redesign, or reorganize that repository from this suite layer while its own active milestone prohibits such work.
 
-### 3. Marketing Hub
-**Role:** marketing arm.
+### 3. Marketing domain — consolidated into SIA
+**Role:** marketing-domain capability/reference area within SIA.
 
-Repository:
+Former repository:
 `admonkstudio/marketing-hub`
 
-Marketing Hub combines:
-**strategy → evidence → analytics → planning → execution → performance → AI marketing intelligence**
-
-Marketing analytics is a core layer of Marketing Hub, not a separate Analytics Hub product.
-
-Current active stage:
-**PDISC — Product Discovery through Kalam 2027 Strategy**
+On 30/09/2026, its documentation-only discovery was preserved in `admonkstudio/sia` under `docs/archive/marketing-hub/` and `docs/reference/marketing-domain/`. The former repository is no longer current product authority.
 
 ## Commercial composition and shared foundation
 
@@ -154,7 +150,7 @@ admonkstudio/admonk
 Product repositories
 ├── Jarvis / Company Intelligence  (legacy transition repo: admonkstudio/corporate-ai-assistant)
 ├── Support Platform             kalamcx/kalam-digital-platform
-└── Marketing Hub                admonkstudio/marketing-hub
+└── Marketing domain             consolidated into admonkstudio/sia
 ```
 
 The existing `admonkstudio/admonk` repository is the umbrella coordination source. A separate `admonk-ai-suite` repository is unnecessary unless the suite later outgrows this shared studio repository.
@@ -227,7 +223,7 @@ Cross-product actions require explicit authorization, auditability, and source o
 ## Current coordination priorities
 
 1. Preserve the existing Support Platform reconstruction without interference.
-2. Continue Marketing Hub discovery and provider/evidence verification.
+2. Reconcile marketing-domain discovery through the canonical SIA repository when relevant.
 3. Preserve the legacy Corporate AI Assistant repository as transition evidence; do not expand it into a second brain/runtime before the product-family audit determines migration.
 4. Define the minimum shared tenant/user/app-to-app contract only when concrete integration work begins.
 5. Create the cross-repository GitHub Project board when UI/admin access is available.
