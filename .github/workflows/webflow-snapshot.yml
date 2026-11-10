@@ -1,11 +1,8 @@
 name: Webflow snapshot
-# Mirrors the published Webflow site (pages, CSS, JS, fonts, images) into _webflow-snapshot/
-# so the design can be ported. Temporary: remove the folder and this workflow once the port is done.
+# Mirrors the published Webflow site (pages, CSS, JS, fonts, images) into webflow-snapshot/
+# so the design can be served by scripts/webflow-port.mjs. Run it by hand after a Webflow publish.
 on:
   workflow_dispatch:
-  push:
-    branches-ignore: [main]
-    paths: [.github/workflows/webflow-snapshot.yml]
 
 permissions:
   contents: write
@@ -17,7 +14,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Mirror the site
         run: |
-          rm -rf _webflow-snapshot && mkdir _webflow-snapshot && cd _webflow-snapshot
+          rm -rf webflow-snapshot && mkdir webflow-snapshot && cd webflow-snapshot
           wget --mirror --page-requisites --adjust-extension --no-parent \
             --span-hosts --domains=admonkstudio.webflow.io,cdn.prod.website-files.com,d3e54v103j8qbb.cloudfront.net,cdn.jsdelivr.net,cdnjs.cloudflare.com \
             --reject-regex '(-p-[0-9]+|\?)' --level=4 --wait=0.2 --tries=3 -e robots=off \
@@ -34,7 +31,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
-          git add _webflow-snapshot
+          git add webflow-snapshot
           git diff --cached --quiet && exit 0
           git commit -m "chore: snapshot of the published Webflow site"
           git push
