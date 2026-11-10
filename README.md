@@ -19,21 +19,31 @@ npm run build    # checks content references, builds to dist/, indexes search wi
 | `src/content/blog/<slug>.md` | Blog posts (Markdown with frontmatter). |
 | `src/pages/` | Routes. URLs match the Webflow site: `/framework/x`, `/solutions/x`, `/services/x`, `/tools-platforms/x`, `/portfolio/x`, `/blog/x`. |
 | `src/components/OfferPage.astro` | The shared page layout for frameworks, solutions, services and tools. |
-| `functions/api/enquiry.js` | Form endpoint (Cloudflare Pages Function): Turnstile check, saves to the CRM database. |
+| `worker/` | The Cloudflare Worker: `/api/enquiry` (Turnstile check, saves to the CRM, emails info@admonk.net) and the `/admin` CRM (enquiries, contacts, overview). |
+| `wrangler.jsonc` | Worker config: static assets from `dist/`, the D1 database, the email binding. |
 | `migrations/` | CRM database schema (Cloudflare D1). |
 | `scripts/import-webflow.mjs` | One-off import from the Webflow CMS backup in `import/`. Re-running overwrites `src/content/`. |
 | `_archive/` | The repository's earlier contents (Studio method docs), pending review and deletion. |
 
 ## Deploy
 
-Cloudflare Pages project connected to this repo: framework preset Astro, build command `npm run build`,
-output `dist`. Set `PUBLIC_INDEXABLE=true` only on the production domain; every other build is `noindex`.
+Cloudflare Workers, connected to this repo (Workers Builds): build command `npm run build`,
+deploy command `npm run deploy` (applies database migrations, then deploys). Every push to `main` goes live.
 
-Environment: `PUBLIC_SITE_ORIGIN` (canonical origin, default `https://admonk.net`), `PUBLIC_TURNSTILE_SITE_KEY`,
-`TURNSTILE_SECRET`, and a D1 binding named `DB`.
+Set `PUBLIC_INDEXABLE=true` as a build variable only on the production domain; every other build is `noindex`.
+Secrets (Worker settings): `TURNSTILE_SECRET`. Build variable: `PUBLIC_TURNSTILE_SITE_KEY`.
+
+### Admin CRM
+
+`/admin` sits behind Cloudflare Access (Zero Trust → Access → Applications, path `/admin*`, allow your team's emails).
+Put the Access team domain and the application's audience tag in `wrangler.jsonc` (`ACCESS_TEAM_DOMAIN`, `ACCESS_AUD`);
+the Worker checks the Access token on every admin request and refuses everything else.
+
+Local: `npm run dev:worker` with `ADMIN_DEV=true` in `.dev.vars` (skips Access) and
+`npx wrangler d1 migrations apply admonk-crm --local` once.
 
 ## Still to do
 
 - Download Webflow CDN images into the repo and serve them as AVIF/WebP (images load from Webflow's CDN for now).
 - Map the portfolio `yearsOption` / `styleOption` Webflow option ids to labels.
-- Admin panel: content editor and CRM (enquiries, contacts, analytics), email to info@admonk.net.
+- Content editor in the admin (Keystatic).
