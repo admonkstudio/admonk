@@ -176,7 +176,7 @@ function finish($, path) {
   }
   // The footer social links were copied from another site.
   const SOCIAL = { facebook: 'https://www.facebook.com/admonkstudio', instagram: 'https://www.instagram.com/admonkstudio', linkedin: 'https://www.linkedin.com/company/admonkstudio', youtube: 'https://www.youtube.com/@admonkstudio' };
-  $('a[href*="pioneers"]').each((_, el) => {
+  $('a[href]').filter((_, el) => /pioneers/i.test($(el).attr('href'))).each((_, el) => {
     const k = Object.keys(SOCIAL).find((s) => $(el).attr('href').includes(s));
     if (k) $(el).attr('href', SOCIAL[k]);
   });

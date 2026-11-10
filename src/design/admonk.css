@@ -300,3 +300,12 @@ html[data-theme="light"] .am-marquee-item { opacity: .85; }
   .dog-face_pupil { width: 44px !important; height: 44px !important; }
   .dog-face_pupil .eye { width: 18px !important; height: 18px !important; }
 }
+
+/* ---------- 8. Filled-in template pieces ---------- */
+.am-chip-list { display: flex; flex-wrap: wrap; gap: .5rem; }
+.am-chip { display: inline-flex; align-items: center; padding: .45rem .9rem; border-radius: 100px; border: 1px solid var(--am-border); color: var(--am-title); text-decoration: none; font-size: .9rem; transition: border-color .3s, color .3s; }
+.am-chip:hover { border-color: var(--am-accent); color: var(--am-accent); }
+.solution-tools a.icon-wrapper { text-decoration: none; }
+.am-card-link { display: block; color: inherit; text-decoration: none; }
+.am-card-link:hover .title { color: var(--am-accent) !important; }
+img.am-hero-icon { width: min(60%, 18rem) !important; height: auto !important; margin: auto; display: block; object-fit: contain; }

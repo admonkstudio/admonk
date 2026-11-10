@@ -2,6 +2,7 @@
 // Styles live in src/design/admonk.css; this file only changes markup that CSS can't reach.
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
+import { fill } from './webflow-fill.mjs';
 
 const ROOT = process.cwd();
 
@@ -54,6 +55,7 @@ export function adjust($, path, { copyFile, media, portfolio }) {
     $(el).replaceWith(`<div class="am-marquee" style="--am-marquee-duration:${Math.max(25, logos.length * 3)}s"><div class="am-marquee-track">${group(false)}${group(true)}</div></div>`);
   });
 
+  fill($, path, { media });
   if (path === '/') home($, { media, portfolio });
 }
 
