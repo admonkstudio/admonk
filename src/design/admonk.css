@@ -91,7 +91,6 @@ html[data-theme="light"] .background-white { display: block !important; }
 .mood-icon .night { display: none !important; }
 html[data-theme="light"] .mood-icon .sunny { display: none !important; }
 html[data-theme="light"] .mood-icon .night { display: block !important; }
-html[data-theme="light"] .mood-icon .night { filter: invert(1); }
 
 /* The logo is white artwork; darken it on light backgrounds. */
 html[data-theme="light"] .logo-admonk,
@@ -161,19 +160,22 @@ html[data-theme="light"] .site-footer .footer_wrapper { --am-heading: #ededed; -
 .am-marquee-group { display: flex; align-items: center; flex: none; }
 .am-marquee-item { display: flex; justify-content: center; align-items: center; width: 140px; height: 80px; margin-right: 3rem; opacity: .75; transition: opacity .3s; }
 .am-marquee-item:hover { opacity: 1; }
-.am-marquee-item img { max-width: 100%; max-height: 100%; object-fit: contain; }
-html[data-theme="light"] .am-marquee-item img { filter: invert(1) grayscale(1); }
+/* Logos arrive in mixed greys; flatten them to one tone so they all read on the panel. */
+.am-marquee-item img { max-width: 100%; max-height: 100%; object-fit: contain; filter: brightness(0) invert(1); }
+html[data-theme="light"] .am-marquee-item img { filter: brightness(0); }
 @keyframes am-marquee { to { transform: translateX(-50%); } }
 @media (prefers-reduced-motion: reduce) { .am-marquee-track { animation: none; } }
 
 /* Eyes: glassy white eyeballs with a layered iris, pupil and catch-light. */
+.dog-face_eyes, .dog-face_eye { overflow: visible !important; }
+html[data-theme="light"] .dog-face_eye .eye-color { --am-eye-shadow: 0.16; border-color: rgba(0, 0, 0, 0.06) !important; }
 .dog-face_eye .eye-color {
   background: radial-gradient(circle at 34% 28%, #ffffff 0%, #f7f8fb 22%, #e4e7ee 55%, #c3c8d4 82%, #9aa1b2 100%) !important;
   border: 1px solid rgba(255, 255, 255, 0.55) !important;
   box-shadow:
     inset 0 -14px 26px rgba(40, 30, 70, 0.35),
     inset 0 8px 16px rgba(255, 255, 255, 0.9),
-    0 18px 40px rgba(0, 0, 0, 0.45),
+    0 18px 40px rgba(0, 0, 0, var(--am-eye-shadow, 0.45)),
     0 0 0 6px rgba(255, 255, 255, 0.04);
 }
 .dog-face_eye .eye-color::after {
@@ -266,8 +268,10 @@ html[data-theme="light"] .works-logo { border-color: rgba(0, 0, 0, 0.08) !import
 html[data-theme="light"] .works-logo-wrap { background-color: #ffffff !important; border-color: rgba(0, 0, 0, 0.08) !important; }
 html[data-theme="light"] .works-circle-logo { background-color: #ffffff !important; border-color: rgba(0, 0, 0, 0.08) !important; }
 
-/* Client logos are white artwork; show them dark on light. */
-html[data-theme="light"] .am-marquee-item { opacity: .85; }
+html[data-theme="light"] .am-marquee-item { opacity: .6; }
+html[data-theme="light"] .am-marquee-item:hover { opacity: 1; }
+/* Orbit centre: Webflow's dark glass disc, lightened for light mode. */
+html[data-theme="light"] .div-block-902 { background-color: rgba(255, 255, 255, 0.92) !important; box-shadow: 0 20px 40px rgba(40, 20, 80, 0.12); }
 
 /* ---------- 7. Tablet and phone ---------- */
 @media screen and (max-width: 991px) {
@@ -309,3 +313,7 @@ html[data-theme="light"] .am-marquee-item { opacity: .85; }
 .am-card-link { display: block; color: inherit; text-decoration: none; }
 .am-card-link:hover .title { color: var(--am-accent) !important; }
 img.am-hero-icon { width: min(60%, 18rem) !important; height: auto !important; margin: auto; display: block; object-fit: contain; }
+
+/* Studio "How we think" Venn: the filled Strategy circle was white under light text. */
+.div-block-864.is-01 { background-color: rgba(255, 255, 255, 0.07) !important; }
+html[data-theme="light"] .div-block-864.is-01 { background-color: rgba(0, 0, 0, 0.05) !important; }

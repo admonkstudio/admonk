@@ -55,6 +55,15 @@ export function adjust($, path, { copyFile, media, portfolio }) {
     $(el).replaceWith(`<div class="am-marquee" style="--am-marquee-duration:${Math.max(25, logos.length * 3)}s"><div class="am-marquee-track">${group(false)}${group(true)}</div></div>`);
   });
 
+  // Empty panels Webflow left at the end of a page (the studio page has one): drop them, and let the
+  // frames on either side follow each other instead of overlapping where the panel used to be.
+  $('main.page-main > .top-section').filter((_, el) => !$(el).text().trim() && !$(el).find('img, video, svg, iframe, form').length).each((_, el) => {
+    const prev = $(el).prev('.down-section');
+    const next = $(el).next('.down-section').length ? $(el).next('.down-section') : $(el).is(':last-child') ? $('footer .down-section').first() : $();
+    $(el).remove();
+    if (prev.length && next.length) { prev.css('margin-bottom', '0'); next.css('margin-top', '0'); }
+  });
+
   fill($, path, { media });
   if (path === '/') home($, { media, portfolio });
 }
