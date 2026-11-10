@@ -4,7 +4,7 @@
     "title": "OpenAI Services | Admonk",
     "description": "We use OpenAI models to build chatbots, AI assistants, and content workflows trained on your business knowledge."
   },
-  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7867172f752052d43b3de8_chatgpt.avif",
+  "icon": "../../assets/cms/chatgpt.avif",
   "summary": "Add AI assistants, chatbots, and smart content workflows to your business.",
   "description": "We use OpenAI models to build chatbots, AI assistants, and content workflows trained on your business knowledge.",
   "framework": "digital-automation",

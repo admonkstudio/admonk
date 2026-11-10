@@ -11,7 +11,7 @@ const { Content } = await render(e);
 const tools = await resolve(d.tools);
 const date = (x: Date) => x.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
 ---
-<Base title={`${d.title} | Admonk`} description={d.description}
+<Base title={d.title.length <= 50 ? `${d.title} | Admonk` : d.title} description={d.description}
   jsonLd={{ '@context': 'https://schema.org', '@type': 'BlogPosting', headline: d.title, description: d.description, datePublished: d.published.toISOString(), dateModified: (d.updated ?? d.published).toISOString(), author: { '@type': 'Organization', name: 'Admonk' }, publisher: { '@type': 'Organization', name: 'Admonk' } }}>
   <article>
     <section class="hero">

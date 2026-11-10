@@ -4,8 +4,8 @@
     "title": "Hophop Case Study | Admonk",
     "description": "See how Admonk designed and built the Hophop website on Webflow, from UI/UX design to CMS development, for a travel and hospitality brand in the Netherlands."
   },
-  "logo": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63fec655a4a89ba175b9ff_Hophop.avif",
-  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a5586a84444e60eaad610c2_Hophop.avif",
+  "logo": "../../assets/cms/6a63fec6-hophop.avif",
+  "cover": "../../assets/cms/hophop.avif",
   "websiteUrl": "https://admonk-hophop.webflow.io/",
   "featured": false,
   "yearsOption": "4b253f66b128156b0a6e049bbdd8ea31",

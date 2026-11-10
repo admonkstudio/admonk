@@ -4,8 +4,8 @@
     "title": "Website Design & Development | Admonk",
     "description": "Custom websites built to convert, easy for your team to manage, and ready for search engines, from strategy to launch."
   },
-  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a41074290027fbc51124032_6a3f70ca5002304ea7f8d239_front-end-programming.avif",
-  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a41074290027fbc5112403b_6a371a6cca0e46e56c1a0293_Tablet-Screen-Mockup.avif",
+  "icon": "../../assets/cms/6a3f70ca5002304ea7f8d239_front-end-programming.avif",
+  "cover": "../../assets/cms/6a371a6cca0e46e56c1a0293_tablet-screen-mockup.avif",
   "hero": {
     "title": "Websites Built to Convert, Scale, and Perform",
     "description": "Build trust, answer customer questions, generate enquiries, and become the central platform your business depends on every day."

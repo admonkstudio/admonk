@@ -4,7 +4,7 @@
     "title": "TikTok Services | Admonk",
     "description": "We plan and run TikTok ad campaigns and short-form video content that reach new audiences and drive them to your website."
   },
-  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a786765d9b0f9e12d1ebeb9_tik-tok.avif",
+  "icon": "../../assets/cms/tik-tok.avif",
   "summary": "Create short-form video campaigns that increase reach and awareness.",
   "description": "We plan and run TikTok ad campaigns and short-form video content that reach new audiences and drive them to your website.",
   "framework": "digital-experience",

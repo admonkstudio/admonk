@@ -4,7 +4,7 @@
     "title": "Make Services | Admonk",
     "description": "We build visual automations in Make that move data between your website, CRM, spreadsheets, and apps without manual work."
   },
-  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a40681d83a077335a336e1f_Make.avif",
+  "icon": "../../assets/cms/make.avif",
   "summary": "Create visual automation workflows that move data between business platforms.",
   "description": "We build visual automations in Make that move data between your website, CRM, spreadsheets, and apps without manual work.",
   "framework": "digital-automation",

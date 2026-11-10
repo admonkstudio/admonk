@@ -3,7 +3,7 @@
 // hero, about, business challenge, the framework (approach), business impact, what you get, case study.
 import Base from '../layouts/Base.astro';
 import PortfolioCard from './PortfolioCard.astro';
-import { href } from '../lib/site';
+import { href, shareImage } from '../lib/site';
 
 interface Link { collection: string; id: string; data: { name: string; icon?: string; summary?: string; hero?: { description?: string } } }
 interface Props {
@@ -15,9 +15,10 @@ interface Props {
   jsonLd?: object;
 }
 const { kind, data, links = [], caseStudies = [], testimonial, jsonLd } = Astro.props;
+const image = await shareImage(data.cover, Astro.site);
 const n = (i: number) => String(i + 1).padStart(2, '0');
 ---
-<Base title={data.seo.title} description={data.seo.description} image={data.cover} jsonLd={jsonLd}>
+<Base title={data.seo.title} description={data.seo.description} image={image} jsonLd={jsonLd}>
   <section class="hero">
     <div class="shell">
       <p class="eyebrow">{kind} · {data.name}</p>

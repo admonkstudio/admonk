@@ -4,7 +4,7 @@
     "title": "Claude Services | Admonk",
     "description": "We use Claude for research, writing, and analysis, and build it into AI assistants and agents that read documents and draft replies for your team."
   },
-  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a52e0f834afa63ae218de38_Claude-ai-logo.webp",
+  "icon": "../../assets/cms/claude-ai-logo.webp",
   "summary": "AI assistant for writing, research, strategy, and complex business tasks.",
   "description": "We use Claude for research, writing, and analysis, and build it into AI assistants and agents that read documents, draft replies, and support teams with complex tasks.",
   "framework": "digital-automation",

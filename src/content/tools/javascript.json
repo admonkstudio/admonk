@@ -4,7 +4,7 @@
     "title": "JavaScript Services | Admonk",
     "description": "We write custom JavaScript for interactions, integrations, and features that go beyond what a website builder offers out of the box."
   },
-  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a786786c2b10b0094799666_java-script.avif",
+  "icon": "../../assets/cms/java-script.avif",
   "summary": "Add custom functionality, interactions, and advanced website behavior.",
   "description": "We write custom JavaScript for interactions, integrations, and features that go beyond what a website builder offers out of the box.",
   "framework": "digital-experience",

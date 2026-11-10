@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { href, live, one, resolve } from '../../lib/site';
+import Media from '../../components/Media.astro';
+import { href, live, one, resolve, shareImage } from '../../lib/site';
 export async function getStaticPaths() {
   return (await live('portfolio')).map((e) => ({ params: { slug: e.id }, props: { e } }));
 }
@@ -8,9 +9,10 @@ const { e } = Astro.props;
 const d = e.data;
 const [industry, location, solutions, services, tools, testimonial] = await Promise.all([one(d.industry), one(d.location), resolve(d.solutions), resolve(d.services), resolve(d.tools), one(d.testimonial)]);
 const facts = [['Industry', industry?.data.name], ['Location', location?.data.name]].filter(([, v]) => v);
+const image = await shareImage(d.cover ?? d.thumbnail, Astro.site);
 const n = (i: number) => String(i + 1).padStart(2, '0');
 ---
-<Base title={d.seo.title} description={d.seo.description} image={d.cover ?? d.thumbnail}
+<Base title={d.seo.title} description={d.seo.description} image={image}
   jsonLd={{ '@context': 'https://schema.org', '@type': 'CreativeWork', name: d.title ?? d.name, about: d.name, description: d.seo.description, creator: { '@type': 'Organization', name: 'Admonk' } }}>
   <section class="hero">
     <div class="shell">
@@ -23,7 +25,7 @@ const n = (i: number) => String(i + 1).padStart(2, '0');
       </ul>
     </div>
   </section>
-  {d.cover && <div class="shell"><img src={d.cover} alt={`${d.name} project`} style="border-radius:var(--radius);width:100%" /></div>}
+  {d.cover && <div class="shell"><Media src={d.cover} alt={`${d.name} project`} eager sizes="(min-width: 80rem) 80rem, 100vw" style="border-radius:var(--radius);width:100%;height:auto" /></div>}
 
   {(d.challenge.items.length > 0) && (
     <section>
@@ -53,7 +55,7 @@ const n = (i: number) => String(i + 1).padStart(2, '0');
   )}
 
   {d.gallery.length > 0 && (
-    <section class="top"><div class="shell gallery">{d.gallery.map((src) => <img src={src} alt="" loading="lazy" />)}</div></section>
+    <section class="top"><div class="shell gallery">{d.gallery.map((src) => <Media src={src} alt="" sizes="(min-width: 60rem) 40rem, 100vw" />)}</div></section>
   )}
 
   {testimonial?.data.quote && (

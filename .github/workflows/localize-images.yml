@@ -1,0 +1,27 @@
+name: Localize images
+# Copies Webflow CDN images into the repo and commits them to the branch that ran it.
+on:
+  workflow_dispatch:
+  push:
+    branches-ignore: [main]
+    paths: [scripts/localize-images.mjs, .github/workflows/localize-images.yml]
+
+permissions:
+  contents: write
+
+jobs:
+  localize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: node scripts/localize-images.mjs
+      - name: Commit images
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git add src/assets src/content public
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: copy Webflow images into the repo"
+          git push

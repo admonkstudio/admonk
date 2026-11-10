@@ -1,0 +1,26 @@
+{
+  // Cloudflare Workers: the static site (dist/) plus a small Worker for the form endpoint and the admin CRM.
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "admonk",
+  "main": "worker/index.js",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page",
+    // Only these paths reach the Worker; everything else is served straight from dist/.
+    "run_worker_first": ["/api/*", "/admin", "/admin/*"]
+  },
+  "d1_databases": [{ "binding": "DB", "database_name": "admonk-crm", "database_id": "8f2283fa-e229-4971-bf01-caf10bd978cf", "migrations_dir": "migrations" }],
+  // New enquiries are emailed to info@admonk.net once this is switched on. The address must first be
+  // verified in Cloudflare Email Routing, or the deploy fails. Until then enquiries are only saved.
+  // "send_email": [{ "name": "NOTIFY", "destination_address": "info@admonk.net" }],
+  "vars": {
+    "NOTIFY_FROM": "website@admonk.net",
+    // Cloudflare Access team domain and app audience for /admin (set once Access is configured).
+    "ACCESS_TEAM_DOMAIN": "",
+    "ACCESS_AUD": ""
+  },
+  "observability": { "enabled": true }
+}

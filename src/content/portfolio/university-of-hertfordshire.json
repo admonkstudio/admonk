@@ -6,10 +6,10 @@
   },
   "title": "Modernizing a University Website for Long-Term Growth",
   "summary": "As one of our longest-standing partnerships, the University of Hertfordshire entrusted Admonk with transforming an outdated website into a modern, scalable digital platform. Beyond redesigning the user experience, we implemented a flexible CMS, optimized website performance, and integrated the university's CRM to streamline lead management and simplify content administration for internal teams.",
-  "thumbnail": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdfa2c73956be8464977c_UHGAF.jpg",
-  "logo": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63fc6f314b22dcb6b860e4_UHGAF.avif",
-  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3dc5d43db98e2d88c08ece_Icon-Grey.avif",
-  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a503c3d442bafc43559cdac_GAF-Cover.avif",
+  "thumbnail": "../../assets/cms/uhgaf.jpg",
+  "logo": "../../assets/cms/uhgaf.avif",
+  "icon": "../../assets/cms/6a3dc5d4-icon-grey.avif",
+  "cover": "../../assets/cms/gaf-cover.avif",
   "websiteUrl": "https://www.gaf.edu.eg/",
   "featured": false,
   "yearsOption": "d2f92d0868243fb3d239afc7e7ea7bcd",
@@ -97,7 +97,7 @@
     }
   ],
   "gallery": [
-    "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a4631fb91f91ae0b7b23ef0_Laptop-Mockup.avif"
+    "../../assets/cms/laptop-mockup.avif"
   ],
   "webflowId": "6901629ddd64bb1495109ba3"
 }

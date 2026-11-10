@@ -4,7 +4,7 @@
     "title": "Zapier Services | Admonk",
     "description": "We use Zapier to connect everyday tools quickly, automating simple tasks like form notifications, lead capture, and data syncing."
   },
-  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a406811052d50c1a9154272_Zapier.avif",
+  "icon": "../../assets/cms/zapier.avif",
   "summary": "Connect everyday tools and automate simple tasks without custom development.",
   "description": "We use Zapier to connect everyday tools quickly, automating simple tasks like form notifications, lead capture, and data syncing.",
   "framework": "digital-automation",

@@ -4,8 +4,8 @@
     "title": "Digital Experience: Website Design & UX | Admonk",
     "description": "Websites, UX, and SEO built to help customers understand your services, trust your business, and get in touch."
   },
-  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a810b3c320f433cf1ab63f9_b9ef410194441739f7b147e8ad388068.jpg",
-  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a4106e74082e5b1527626dd_6a405d54052d50c1a91465a4_Digital-Automation.avif",
+  "icon": "../../assets/cms/b9ef410194441739f7b147e8ad388068.jpg",
+  "cover": "../../assets/cms/6a405d54052d50c1a91465a4_digital-automation.avif",
   "hero": {
     "title": "Create a digital experience that attracts & converts",
     "description": "Create an experience designed to build trust and generate meaningful business opportunities."

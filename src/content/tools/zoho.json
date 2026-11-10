@@ -4,7 +4,7 @@
     "title": "Zoho Services | Admonk",
     "description": "We set up and integrate Zoho CRM and the wider Zoho suite so leads, customers, and support requests live in one connected system."
   },
-  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a40684506d920ee09e2d37a_zohoone-512.png",
+  "icon": "../../assets/cms/zohoone-512.png",
   "summary": "Manage leads, customers, support, and business operations in one connected platform.",
   "description": "We set up and integrate Zoho CRM and the wider Zoho suite so leads, customers, and support requests live in one connected system.",
   "framework": "digital-automation",
