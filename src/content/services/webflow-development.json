@@ -1,0 +1,86 @@
+{
+  "name": "Webflow Development",
+  "seo": {
+    "title": "Webflow Development Agency | Admonk",
+    "description": "Fast, secure Webflow websites your team can update without a developer, with CMS setup, training, and full project ownership."
+  },
+  "hero": {
+    "title": "Take Full Control of Your Website Without the Technical Headache",
+    "description": "Webflow gives your business the freedom to manage, update, and grow your website without relying on developers for every change."
+  },
+  "solutionDescription": "Your website should support your business—not slow it down. We build websites using Webflow because it combines performance, flexibility, and ease of management in one platform. Once your website is launched, your team can update content, publish new pages, manage blogs, and expand your website without writing code. Every project is built to be fast, secure, scalable, and completely owned by your business, giving you the confidence to grow without technical limitations.",
+  "challenges": [
+    {
+      "title": "Updating Your Website Is Slow",
+      "summary": "Simple changes require developers, creating unnecessary delays and additional costs for your business."
+    },
+    {
+      "title": "Your Current Platform Holds You Back",
+      "summary": "An outdated or complicated platform makes it difficult to add new pages, publish content, or improve your website as your business grows."
+    },
+    {
+      "title": "You Don't Have Full Control",
+      "summary": "Many businesses become dependent on agencies or developers because they don't have access to manage their own websites."
+    }
+  ],
+  "approach": [
+    {
+      "title": "Plan for Long-Term Growth",
+      "summary": "We design a flexible website structure that's easy to manage today and scalable for the future."
+    },
+    {
+      "title": "Build a High-Performance Website",
+      "summary": "We develop your website using Webflow, following best practices for speed, security, SEO, and maintainability."
+    },
+    {
+      "title": "Put You in Control",
+      "summary": "Before launch, we provide training, documentation, and full project ownership so your team can confidently manage the website."
+    }
+  ],
+  "impact": [
+    {
+      "title": "90+",
+      "summary": "Website Performance Score"
+    },
+    {
+      "title": "80%",
+      "summary": "Faster Website Management"
+    },
+    {
+      "title": "100%",
+      "summary": "Full Website Ownership"
+    }
+  ],
+  "deliverables": {
+    "summary": "You'll receive a professionally developed Webflow website that's easy to manage, optimized for performance, and built to support your business for years to come.",
+    "items": [
+      "Custom Webflow Development",
+      "Responsive Website Development",
+      "CMS Configuration & Dynamic Content",
+      "Reusable Components & Design System",
+      "Performance & Speed Optimization",
+      "Technical SEO Foundation",
+      "Team Training & Documentation",
+      "Webflow Project Transfer",
+      "Full Website Ownership"
+    ]
+  },
+  "testimonial": "amgad-3",
+  "framework": "digital-experience",
+  "solution": "website-design-development",
+  "related": [
+    "ui-ux-design",
+    "cms-development",
+    "content-management"
+  ],
+  "tools": [
+    "webflow",
+    "claude",
+    "gsap",
+    "javascript",
+    "spline",
+    "unicorn-studio"
+  ],
+  "caseStudy": "newcastle-airjets",
+  "webflowId": "6a41219202a70d64376c70ac"
+}

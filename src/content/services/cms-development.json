@@ -1,0 +1,84 @@
+{
+  "name": "CMS Development",
+  "seo": {
+    "title": "CMS Development | Admonk",
+    "description": "A custom CMS structured around your content, so your team can publish pages, projects, and articles without technical help."
+  },
+  "hero": {
+    "title": "Give Your Team Full Control of Your Website Content",
+    "description": "A Content Management System (CMS) allows your team to update your website without technical knowledge, making it easier to publish content, manage pages, and keep your website up to date."
+  },
+  "solutionDescription": "A website shouldn't become outdated because making changes is too difficult. CMS Development gives your business the ability to manage content internally without relying on developers for every update. Whether you're publishing articles, adding new services, updating team members, managing projects, or creating landing pages, we build a customized content management system that makes maintaining your website simple, organized, and scalable as your business grows.",
+  "challenges": [
+    {
+      "title": "Updating Your Website Takes Too Long",
+      "summary": "Simple changes require technical support, delaying important updates and slowing down your marketing team."
+    },
+    {
+      "title": "Your Content Is Difficult to Manage",
+      "summary": "As your website grows, managing pages, blogs, projects, or services becomes disorganized and time-consuming."
+    },
+    {
+      "title": "Your Website Quickly Becomes Outdated",
+      "summary": "Without an easy way to update content, businesses often leave outdated information online, reducing credibility and customer trust."
+    }
+  ],
+  "approach": [
+    {
+      "title": "Understand Your Content",
+      "summary": "We identify the types of content your business manages and how your team works with it every day."
+    },
+    {
+      "title": "Build a Custom CMS",
+      "summary": "We create a structured content management system tailored to your business, making updates simple and consistent."
+    },
+    {
+      "title": "Train Your Team",
+      "summary": "We provide everything your team needs to confidently manage and expand the website without ongoing technical support."
+    }
+  ],
+  "impact": [
+    {
+      "title": "80%",
+      "summary": "Faster Content Updates"
+    },
+    {
+      "title": "3×",
+      "summary": "Higher Publishing Efficiency"
+    },
+    {
+      "title": "90%",
+      "summary": "Better Content Organization"
+    }
+  ],
+  "deliverables": {
+    "summary": "You'll receive a fully customized content management system built around your business, giving your team complete control over website content while keeping everything organized and easy to manage.",
+    "items": [
+      "Custom CMS Development",
+      "Dynamic Content Collections",
+      "Content Management Dashboard",
+      "Blog & News Management",
+      "Service & Portfolio Management",
+      "User Roles & Permissions",
+      "Search & Content Filtering",
+      "Team Training & Documentation",
+      "Full CMS Ownership & Access"
+    ]
+  },
+  "testimonial": "robert-benjamin",
+  "framework": "digital-experience",
+  "solution": "website-design-development",
+  "related": [
+    "content-management",
+    "webflow-development"
+  ],
+  "tools": [
+    "webflow",
+    "google-sheets",
+    "airtable",
+    "firebase",
+    "supabase"
+  ],
+  "caseStudy": "university-of-hertfordshire",
+  "webflowId": "6a411655205095e38e995b4a"
+}

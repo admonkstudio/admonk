@@ -1,0 +1,97 @@
+{
+  "name": "AI Automation",
+  "seo": {
+    "title": "AI Automation Services for Business | Admonk",
+    "description": "AI workflows and assistants that handle repetitive tasks, answer customers instantly, and make company knowledge easy to find."
+  },
+  "hero": {
+    "title": "Let AI Handle the Repetitive Work While Your Team Focuses on Growth",
+    "description": "AI Automation helps your business complete repetitive tasks faster, respond to customers instantly, and improve daily operations without increasing your workload."
+  },
+  "solutionDescription": "Artificial Intelligence is no longer just a trend—it's becoming an essential part of modern businesses. AI Automation allows your business to automate repetitive tasks, assist customers around the clock, organize information, and support your team with intelligent workflows. Whether it's answering common questions, processing requests, generating content, or assisting employees internally, we design AI solutions that work alongside your business and integrate seamlessly with your existing systems.",
+  "challenges": [
+    {
+      "title": "Your Team Spends Too Much Time on Repetitive Tasks",
+      "summary": "Employees answer the same questions, complete the same processes, and perform manual work that AI can handle automatically."
+    },
+    {
+      "title": "Customers Expect Instant Responses",
+      "summary": "Modern customers don't want to wait for business hours. Slow replies often lead to missed opportunities and lower customer satisfaction."
+    },
+    {
+      "title": "Valuable Business Knowledge Is Difficult to Access",
+      "summary": "Important information is spread across documents, emails, and systems, making it difficult for employees to find answers quickly."
+    }
+  ],
+  "approach": [
+    {
+      "title": "Identify Automation Opportunities",
+      "summary": "We analyze your daily operations to find repetitive tasks where AI can save time and improve efficiency."
+    },
+    {
+      "title": "Build AI Around Your Business",
+      "summary": "We develop AI automations that understand your processes, integrate with your systems, and support your team without disrupting existing workflows."
+    },
+    {
+      "title": "Monitor & Improve Performance",
+      "summary": "We continuously refine your AI solutions based on real business usage, ensuring they become more accurate and valuable over time."
+    }
+  ],
+  "impact": [
+    {
+      "title": "70%",
+      "summary": "Less Time Spent on Repetitive Tasks"
+    },
+    {
+      "title": "24/7",
+      "summary": "Always Available Assistance"
+    },
+    {
+      "title": "4×",
+      "summary": "Faster Information Access"
+    }
+  ],
+  "deliverables": {
+    "summary": "You'll receive a tailored AI solution designed around your business processes, helping automate repetitive work, improve customer experiences, and support your team with intelligent assistance.",
+    "items": [
+      "AI Workflow Design",
+      "AI Assistant Development",
+      "Knowledge Base Integration",
+      "Business Process Automation",
+      "AI Content Generation",
+      "Custom AI Prompt Engineering",
+      "System Integrations",
+      "Team Training & Documentation",
+      "Full Administrative Access"
+    ]
+  },
+  "testimonial": "mostafa-alokaily",
+  "framework": "digital-automation",
+  "solution": "workflow-automation",
+  "related": [
+    "ai-agents",
+    "ai-chatbot",
+    "email-automation",
+    "whatsapp-automation"
+  ],
+  "tools": [
+    "mailchimp",
+    "make",
+    "n8n",
+    "zapier",
+    "openai",
+    "airtable",
+    "claude",
+    "firebase",
+    "google-sheets",
+    "javascript",
+    "sleekflow",
+    "brevo",
+    "webflow",
+    "whatsapp-business",
+    "zoho",
+    "zoho-marketing-automation"
+  ],
+  "caseStudy": "kalam",
+  "webflowId": "6a4113eb64e5cff40d1d3ec6"
+}

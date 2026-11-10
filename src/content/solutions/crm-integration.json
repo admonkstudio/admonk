@@ -1,0 +1,92 @@
+{
+  "name": "CRM Integration",
+  "seo": {
+    "title": "CRM Integration Services | Admonk",
+    "description": "Connect your website to your CRM so every enquiry is captured, assigned, and tracked automatically, with no copying between systems."
+  },
+  "hero": {
+    "title": "Never Lose Another Customer Opportunity",
+    "description": "A CRM helps you keep every enquiry, customer, and sales opportunity in one place. We connect your website with your CRM so every lead is captured, organized, and ready for your team to act on."
+  },
+  "solutionDescription": "Many businesses still manage enquiries through emails, spreadsheets, or messaging apps, making it easy to lose track of potential customers and follow-ups. CRM Integration connects your website directly to your customer management system, automatically collecting enquiries, assigning them to the right team members, and keeping customer information organized throughout the entire sales journey. Instead of manually copying data between systems, your business can respond faster, improve follow-up, and build stronger customer relationships.",
+  "challenges": [
+    {
+      "title": "Customer Enquiries Are Scattered Everywhere",
+      "summary": "Leads arrive through different channels, making it difficult to keep track of conversations and customer information."
+    },
+    {
+      "title": "Your Team Misses Follow-Ups",
+      "summary": "Without a central system, opportunities are forgotten, delayed, or assigned to the wrong person."
+    },
+    {
+      "title": "You Can't See Your Sales Pipeline",
+      "summary": "It's difficult to understand where leads are coming from, how they're progressing, or which opportunities need attention."
+    }
+  ],
+  "approach": [
+    {
+      "title": "Understand Your Sales Process",
+      "summary": "We review how enquiries move through your business and identify where delays, manual work, or lost opportunities occur."
+    },
+    {
+      "title": "Connect Your Business Systems",
+      "summary": "We integrate your website with your CRM, forms, and other business tools so customer information flows automatically."
+    },
+    {
+      "title": "Automate Customer Management",
+      "summary": "Every enquiry is captured, organized, assigned, and tracked, giving your team complete visibility throughout the customer journey."
+    }
+  ],
+  "impact": [
+    {
+      "title": "70%",
+      "summary": "Faster Lead Response"
+    },
+    {
+      "title": "90%",
+      "summary": "Improved Lead Organization"
+    },
+    {
+      "title": "4×",
+      "summary": "Better Sales Visibility"
+    }
+  ],
+  "deliverables": {
+    "summary": "You'll receive a fully integrated CRM solution that connects your website with your sales process, helping your team manage enquiries more efficiently while improving visibility across the entire customer journey.",
+    "items": [
+      "CRM Integration Setup",
+      "Website Form Integration",
+      "Lead Routing Automation",
+      "Contact & Company Synchronization",
+      "Sales Pipeline Configuration",
+      "Custom CRM Fields",
+      "Workflow & Notification Setup",
+      "CRM User Training",
+      "Documentation & Full Admin Access"
+    ]
+  },
+  "testimonial": "dr-ahnaf-aljajah",
+  "framework": "digital-automation",
+  "services": [
+    "ai-automation"
+  ],
+  "tools": [
+    "zoho",
+    "make",
+    "n8n",
+    "openai",
+    "zapier",
+    "airtable",
+    "google-sheets",
+    "supabase",
+    "webflow",
+    "zoho-marketing-automation",
+    "brevo",
+    "firebase",
+    "mailchimp"
+  ],
+  "caseStudies": [
+    "mastery-academy"
+  ],
+  "webflowId": "6a410747f291e2e2699cb676"
+}

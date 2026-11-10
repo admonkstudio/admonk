@@ -1,0 +1,12 @@
+---
+import OfferPage from '../../components/OfferPage.astro';
+import { live, one, resolve } from '../../lib/site';
+export async function getStaticPaths() {
+  return (await live('frameworks')).map((e) => ({ params: { slug: e.id }, props: { e } }));
+}
+const { e } = Astro.props;
+const d = e.data;
+const [solutions, tools, caseStudies, testimonial] = await Promise.all([resolve(d.solutions), resolve(d.tools), resolve(d.caseStudies), one(d.testimonial)]);
+---
+<OfferPage kind="Framework" data={d} links={[{ label: 'Solutions', items: solutions }, { label: 'Tools we use', items: tools }]} caseStudies={caseStudies} testimonial={testimonial}
+  jsonLd={{ '@context': 'https://schema.org', '@type': 'Service', name: d.name, description: d.seo.description, provider: { '@type': 'Organization', name: 'Admonk' } }} />

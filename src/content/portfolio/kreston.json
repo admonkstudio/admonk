@@ -1,0 +1,92 @@
+{
+  "name": "Kreston",
+  "seo": {
+    "title": "Kreston Case Study | Admonk",
+    "description": "Positioning a Regional Consulting Leader on the Global Stage: how Admonk helped Kreston in Egypt. The challenge, our approach, and the results."
+  },
+  "title": "Positioning a Regional Consulting Leader on the Global Stage",
+  "summary": "Following its partnership with Kreston Global, one of the world's leading accounting and advisory networks, Kreston Egypt required a digital presence that reflected its elevated market position. Admonk designed and developed a bilingual corporate website that combines credibility, accessibility, and modern design while strengthening the firm's authority among local and international clients.",
+  "logo": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63fa06384680d913cf306b_Kreston.avif",
+  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3dc325e0c0b2d4c4911d41_Icon-Grey.avif",
+  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a5591007ad54d0d50845ba2_Kreston.avif",
+  "websiteUrl": "https://www.almohaseboon.com/",
+  "featured": false,
+  "yearsOption": "4b253f66b128156b0a6e049bbdd8ea31",
+  "industry": "professional-services",
+  "location": "egypt",
+  "solutions": [
+    "website-design-development"
+  ],
+  "services": [
+    "cms-development",
+    "content-management",
+    "ui-ux-design",
+    "webflow-development"
+  ],
+  "tools": [
+    "adobe-illustrator",
+    "adobe-photoshop",
+    "google-analytics",
+    "google-search-console",
+    "webflow"
+  ],
+  "testimonial": "dr-abdelmoneim-elsayed",
+  "challenge": {
+    "title": "Kreston Egypt needed its digital presence to reflect its new position within one of the world's leading accounting networks.",
+    "items": [
+      "The website needed to reinforce credibility for enterprise clients.",
+      "Arabic and English experiences had to feel equally premium.",
+      "Professional services required clearer organization and navigation.",
+      "The visual identity had to align with international standards.",
+      "Organic visibility was essential for strengthening market leadership."
+    ]
+  },
+  "approach": [
+    {
+      "title": "Strengthened the Brand Position",
+      "summary": "We created a bilingual digital experience that reflected Kreston's regional and international reputation."
+    },
+    {
+      "title": "Designed a Professional Experience",
+      "summary": "We built a clear website structure that improved credibility and client confidence."
+    },
+    {
+      "title": "Prepared the Business for Growth",
+      "summary": "The platform was designed to support future expansion while remaining easy to manage."
+    }
+  ],
+  "results": [
+    {
+      "label": "SEO & Google Placement",
+      "value": "Top 3",
+      "description": "Google rankings for accounting services"
+    },
+    {
+      "label": "Website Performance",
+      "value": "94+",
+      "description": "Performance benchmark"
+    },
+    {
+      "label": "Business Impact",
+      "value": "35%",
+      "description": "Growth in professional visibility"
+    },
+    {
+      "label": "Brand Transformation",
+      "value": "2",
+      "description": "Fully localized bilingual experience"
+    },
+    {
+      "label": "User Experience",
+      "value": "98%",
+      "description": "Mobile usability score"
+    },
+    {
+      "label": "Product / Service Showcase",
+      "value": "50+",
+      "description": "Professional services organized"
+    }
+  ],
+  "gallery": [],
+  "webflowId": "690162c06ab1f32717b8122f"
+}

@@ -1,0 +1,115 @@
+{
+  "name": "Paraguru",
+  "seo": {
+    "title": "Paraguru Case Study | Admonk",
+    "description": "Reimagining the Luxury Digital Experience: how Admonk helped Paraguru in United States. The challenge, our approach, and the results."
+  },
+  "title": "Reimagining the Luxury Digital Experience",
+  "summary": "ParaGuru is a premium language services provider serving high-end clients with professional interpretation and multilingual communication solutions. Admonk partnered with ParaGuru to modernize its brand identity, redesign its website to reflect the premium nature of its services, and automate internal workflows that improve operational efficiency and customer experience.",
+  "thumbnail": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdf8ee845ffc70aa3b858_Paraguru.jpg",
+  "logo": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63fba658c49b1795fa30dd_Paraguru.avif",
+  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3dd1ae470314ed0e6d7ff3_Icon-Grey.svg",
+  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3d4c0236f6ae9a3a6a0770_Paraguru-01.avif",
+  "websiteUrl": "https://www.paraguru.net/",
+  "featured": false,
+  "yearsOption": "4b253f66b128156b0a6e049bbdd8ea31",
+  "styleOption": "89b7740c042d1b038f52a7ec8e195e02",
+  "industry": "professional-services",
+  "location": "united-states",
+  "solutions": [
+    "logo-design",
+    "interactive-experiences",
+    "crm-integration",
+    "performance-marketing",
+    "website-design-development"
+  ],
+  "services": [
+    "ui-ux-design",
+    "cms-development",
+    "content-management",
+    "webflow-development"
+  ],
+  "tools": [
+    "adobe-illustrator",
+    "adobe-photoshop",
+    "google-analytics",
+    "google-search-console",
+    "webflow",
+    "make",
+    "n8n",
+    "zapier",
+    "figma",
+    "javascript",
+    "gsap"
+  ],
+  "testimonial": "eslam-essam",
+  "challenge": {
+    "title": "ParaGuru needed more than a website refresh; the brand had to feel premium, credible, and operationally smoother.",
+    "items": [
+      "The existing identity did not fully reflect the luxury clients ParaGuru works with.",
+      "The website needed to communicate trust faster for high-value prospects.",
+      "Services were not presented with enough clarity or premium positioning.",
+      "The visual system needed consistency across digital touchpoints.",
+      "Internal workflows required automation to reduce manual follow-up."
+    ]
+  },
+  "approach": [
+    {
+      "title": "Repositioned the Brand",
+      "summary": "We refined ParaGuru's digital identity to better reflect the premium quality of its language services, creating a stronger first impression and a more consistent brand across every customer touchpoint."
+    },
+    {
+      "title": "Designed a Better Customer Experience",
+      "summary": "We redesigned the website around the customer's journey, making it easier to understand the company's services, navigate the content, and contact the team with confidence."
+    },
+    {
+      "title": "Connected the Business Behind the Website",
+      "summary": "We automated key workflows and connected the website with the company's internal processes, reducing repetitive tasks and improving operational efficiency."
+    }
+  ],
+  "results": [
+    {
+      "label": "Website Performance",
+      "value": "95+",
+      "description": "Performance benchmark achieved across desktop and mobile."
+    },
+    {
+      "label": "Business Impact",
+      "value": "40%",
+      "description": "Reduction in manual administrative tasks through workflow automation."
+    },
+    {
+      "label": "Brand Transformation",
+      "value": "30+",
+      "description": "Brand identity assets redesigned across digital touchpoints."
+    },
+    {
+      "label": "User Experience",
+      "value": "15+",
+      "description": "Website sections restructured around premium customer journeys."
+    },
+    {
+      "label": "Automation & Integration",
+      "value": "3×",
+      "description": "Core operational workflows automated."
+    },
+    {
+      "label": "Product / Service Showcase",
+      "value": "12+",
+      "description": "Language services reorganized into a clearer digital experience."
+    }
+  ],
+  "gallery": [
+    "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3d5276567e942ab045ca51_Screenshot%202026-06-25%20185956.avif",
+    "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3d527095e55ea3fb9c6e30_Screenshot%202026-06-25%20185944.avif",
+    "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3d4c0236f6ae9a3a6a0770_Paraguru-01.avif",
+    "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3d517d07347d828d5f659b_Paraguru-2.avif",
+    "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3d4c148fe8a1f9749f5ec2_Paraguru-5.avif",
+    "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3d4e50412b9b2416187bd4_Paraguru-4.avif",
+    "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3d4c09460da95779eebbd4_Paraguru-3.avif",
+    "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3d527336009e40f16387fa_Screenshot%202026-06-25%20185923.avif",
+    "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3d527815cce56d3129f67d_Screenshot%202026-06-25%20185733.avif",
+    "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3d526a9a248a410d406868_Screenshot%202026-06-25%20185814.avif"
+  ],
+  "webflowId": "690162d4a6bfc903571c46f7"
+}

@@ -1,0 +1,84 @@
+{
+  "name": "Content Management",
+  "seo": {
+    "title": "Website Content Management Services | Admonk",
+    "description": "We keep your website accurate and current with new pages, projects, and articles, so it keeps working for your business."
+  },
+  "hero": {
+    "title": "Keep Your Website Fresh, Accurate, and Always Up to Date",
+    "description": "A website should grow with your business. We help you keep your content updated, organized, and relevant so customers always see the latest version of your company."
+  },
+  "solutionDescription": "One of the biggest reasons websites stop generating results is because they're no longer maintained. New services aren't added, old information remains online, blog posts stop, and customers begin to lose confidence in the business. Our Content Management service ensures your website continues to evolve alongside your company. Whether it's updating pages, publishing articles, adding new projects, refreshing team information, or organizing content, we help keep your website accurate, professional, and valuable for both your customers and search engines.",
+  "challenges": [
+    {
+      "title": "Your Website Is Outdated",
+      "summary": "Your business changes, but your website still displays old services, team members, pricing, or information."
+    },
+    {
+      "title": "Nobody Has Time to Update the Website",
+      "summary": "Your team is busy running the business, leaving the website neglected for months at a time."
+    },
+    {
+      "title": "Search Engines Prefer Fresh Content",
+      "summary": "An inactive website gradually loses visibility, making it harder for potential customers to find your business online."
+    }
+  ],
+  "approach": [
+    {
+      "title": "Review Your Website Content",
+      "summary": "We audit your existing content to identify outdated information, missing pages, and opportunities for improvement."
+    },
+    {
+      "title": "Keep Everything Up to Date",
+      "summary": "We regularly update your website with new content, pages, projects, news, and business information."
+    },
+    {
+      "title": "Continuously Improve",
+      "summary": "We monitor your content, recommend improvements, and ensure your website continues supporting your business goals over time."
+    }
+  ],
+  "impact": [
+    {
+      "title": "3×",
+      "summary": "More Fresh Content Published"
+    },
+    {
+      "title": "85%",
+      "summary": "Higher Content Accuracy"
+    },
+    {
+      "title": "Top 10",
+      "summary": "Better Search Visibility"
+    }
+  ],
+  "deliverables": {
+    "summary": "You'll receive an ongoing content management process that keeps your website accurate, organized, and continuously evolving as your business grows.",
+    "items": [
+      "Website Content Updates",
+      "New Page Creation",
+      "Blog & News Publishing",
+      "Portfolio & Project Updates",
+      "Team & Company Information Updates",
+      "Content Review & Optimization",
+      "Image & Media Management",
+      "Monthly Content Reports",
+      "Content Management Support"
+    ]
+  },
+  "testimonial": "hisham",
+  "framework": "digital-experience",
+  "solution": "website-design-development",
+  "related": [
+    "paid-social",
+    "ppc",
+    "seo",
+    "webflow-development",
+    "cms-development"
+  ],
+  "tools": [
+    "notion",
+    "google-docs"
+  ],
+  "caseStudy": "vericash",
+  "webflowId": "6a411664d2e509a66a4138f0"
+}

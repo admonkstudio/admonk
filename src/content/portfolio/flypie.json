@@ -1,0 +1,95 @@
+{
+  "name": "Flypie",
+  "seo": {
+    "title": "Flypie Case Study | Admonk",
+    "description": "Repositioning a Contact Center for a New Healthcare Market: how Admonk helped Flypie in United Kingdom. The challenge, our approach, and the results."
+  },
+  "title": "Repositioning a Contact Center for a New Healthcare Market",
+  "summary": "FlyPie is a London-based contact center specializing in sales and customer engagement. As the company expanded into healthcare support services, it required a complete digital repositioning to build credibility within the new market. Admonk refined the brand identity and designed a modern, conversion-focused website that communicates professionalism while supporting lead generation and long-term organic growth.",
+  "logo": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63f8f16e4c840419b5b359_Flypie.avif",
+  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3dc24d238b9e342810d94d_Icon-Grey.avif",
+  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a5587868a60695ffa11c68c_Flypie.avif",
+  "websiteUrl": "https://www.flypie.co.uk/",
+  "featured": false,
+  "yearsOption": "cad473d56584942bfa5621f9ff0468f5",
+  "industry": "customer-experience",
+  "location": "united-kingdom",
+  "solutions": [
+    "website-design-development"
+  ],
+  "services": [
+    "cms-development",
+    "content-management",
+    "ui-ux-design",
+    "webflow-development"
+  ],
+  "tools": [
+    "adobe-illustrator",
+    "adobe-photoshop",
+    "google-analytics",
+    "google-search-console",
+    "webflow",
+    "make",
+    "n8n",
+    "zapier",
+    "figma"
+  ],
+  "testimonial": "mohamed-ossto-2",
+  "challenge": {
+    "title": "FlyPie was repositioning its business from a traditional contact center into a specialized healthcare support provider.",
+    "items": [
+      "The existing brand identity no longer represented the company's new direction.",
+      "The website needed to establish trust within the healthcare sector.",
+      "The service offering required clearer positioning and messaging.",
+      "Organic visibility needed improvement to attract qualified leads.",
+      "The digital experience had to support long-term lead generation."
+    ]
+  },
+  "approach": [
+    {
+      "title": "Refreshed the Brand Identity",
+      "summary": "We aligned the website with Flypie's new business direction and healthcare positioning."
+    },
+    {
+      "title": "Created a Stronger Customer Journey",
+      "summary": "We redesigned the experience to better communicate services and generate enquiries."
+    },
+    {
+      "title": "Built a Marketing Foundation",
+      "summary": "The website was optimized to support SEO, lead generation, and future campaigns."
+    }
+  ],
+  "results": [
+    {
+      "label": "SEO & Google Placement",
+      "value": "Top 5",
+      "description": "Google rankings achieved for healthcare and contact center services."
+    },
+    {
+      "label": "Website Performance",
+      "value": "92+",
+      "description": "Performance benchmark across desktop and mobile devices."
+    },
+    {
+      "label": "Traffic Growth",
+      "description": "Growth in qualified website visitors after repositioning."
+    },
+    {
+      "label": "Business Impact",
+      "value": "65%",
+      "description": "Increase in organic visibility following the rebrand."
+    },
+    {
+      "label": "Brand Transformation",
+      "value": "25+",
+      "description": "Brand assets refined to support healthcare positioning."
+    },
+    {
+      "label": "User Experience",
+      "value": "40%",
+      "description": "Reduction in bounce rate through improved user journeys."
+    }
+  ],
+  "gallery": [],
+  "webflowId": "6a3a83d39e2ef30f61e720b3"
+}

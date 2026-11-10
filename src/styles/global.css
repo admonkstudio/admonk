@@ -1,0 +1,96 @@
+/* Visual reference: the Webflow site (admonkstudio.webflow.io). Dark canvas, Poppins,
+   large tight headings, bento cards with thin borders. Colours copied from its CSS variables. */
+:root {
+  --canvas: #0f0f0f;
+  --top: #000;
+  --bento: #13110d;
+  --line: #3b3b3bcc;
+  --heading: #cacaca;
+  --title: #b6b6b6;
+  --text: #a5a5a5;
+  --muted: #808080;
+  --accent: #f4f4f4;
+  --radius: 1.5rem;
+  --t-display: clamp(2.75rem, 1.5rem + 5.2vw, 5.5rem);
+  --t-h1: clamp(2.25rem, 1.4rem + 3.4vw, 4rem);
+  --t-h2: clamp(1.75rem, 1.3rem + 1.6vw, 2.5rem);
+  --ease: cubic-bezier(.2, .7, .2, 1);
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { color-scheme: dark; -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--canvas); color: var(--text); font-family: Poppins, Verdana, sans-serif; font-size: 1.0625rem; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+a { color: var(--heading); text-underline-offset: 3px; }
+img { max-width: 100%; height: auto; display: block; }
+h1, h2, h3 { color: var(--heading); font-weight: 500; text-wrap: balance; margin: 0 0 1rem; }
+h1 { font-size: var(--t-h1); line-height: 1.02; letter-spacing: -.06em; }
+.display { font-size: var(--t-display); }
+h2 { font-size: var(--t-h2); line-height: 1.1; letter-spacing: -.04em; }
+h3 { font-size: 1.2rem; line-height: 1.3; letter-spacing: -.01em; }
+p { text-wrap: pretty; margin: 0 0 1rem; }
+.shell { width: min(100% - 2rem, 80rem); margin-inline: auto; }
+@media (min-width: 48rem) { .shell { width: min(100% - 4rem, 80rem); } }
+.muted { color: var(--muted); }
+.lead { font-size: clamp(1.1rem, 1rem + .4vw, 1.3rem); max-width: 60ch; }
+.eyebrow { text-transform: uppercase; letter-spacing: .12em; font-size: .78rem; color: var(--muted); margin: 0 0 1rem; }
+.skip { position: absolute; left: 1rem; top: -4rem; background: var(--accent); color: #000; padding: .5rem 1rem; border-radius: 999px; z-index: 10; }
+.skip:focus { top: 1rem; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+.btn { display: inline-flex; align-items: center; gap: .5rem; background: var(--accent); color: #0f0f0f; text-decoration: none; padding: .7rem 1.3rem; border-radius: 999px; font-weight: 500; font-size: .95rem; border: 0; cursor: pointer; font-family: inherit; }
+.btn:hover { background: #fff; }
+.btn.ghost { background: transparent; color: var(--heading); border: 1px solid var(--line); }
+
+.site-header { position: sticky; top: 0; z-index: 5; background: color-mix(in oklab, var(--canvas) 85%, transparent); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
+.bar { display: flex; align-items: center; gap: 1.5rem; min-height: 4.5rem; }
+.brand img { height: 2rem; width: auto; }
+.site-header nav { margin-inline-start: auto; }
+.site-header ul { display: flex; gap: 1.5rem; list-style: none; margin: 0; padding: 0; }
+.site-header nav a { text-decoration: none; color: var(--text); font-size: .95rem; }
+.site-header nav a:hover, .site-header nav a[aria-current] { color: var(--heading); }
+@media (max-width: 52rem) { .site-header nav { display: none; } .bar .btn { margin-inline-start: auto; } }
+
+section { padding-block: clamp(4rem, 3rem + 4vw, 7rem); }
+section.top { background: var(--top); }
+.hero { padding-block: clamp(5rem, 3rem + 8vw, 10rem) clamp(3rem, 2rem + 4vw, 6rem); }
+.hero .lead { margin-bottom: 2rem; }
+.head { max-width: 46rem; margin-bottom: 2.5rem; }
+
+.grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr)); }
+.grid.two { grid-template-columns: repeat(auto-fill, minmax(min(100%, 26rem), 1fr)); }
+.card { background: var(--bento); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.75rem; display: flex; flex-direction: column; gap: .6rem; }
+.card p { margin: 0; }
+a.card { text-decoration: none; color: inherit; transition: border-color .2s var(--ease), transform .2s var(--ease); }
+a.card:hover { border-color: var(--title); transform: translateY(-2px); }
+.card .num { font-size: .8rem; color: var(--muted); }
+.card .big { font-size: clamp(2.25rem, 1.8rem + 1.5vw, 3rem); color: var(--heading); letter-spacing: -.04em; line-height: 1; }
+.card img.cover { border-radius: calc(var(--radius) - .5rem); aspect-ratio: 16 / 10; object-fit: cover; width: 100%; margin-bottom: .5rem; }
+.card .icon { width: 2.5rem; height: 2.5rem; object-fit: contain; }
+.tags { display: flex; flex-wrap: wrap; gap: .5rem; list-style: none; padding: 0; margin: 0; }
+.tags a, .tags span { display: inline-block; border: 1px solid var(--line); border-radius: 999px; padding: .3rem .85rem; font-size: .85rem; text-decoration: none; color: var(--text); }
+.tags a:hover { color: var(--heading); border-color: var(--title); }
+.checks { columns: 2 16rem; padding: 0; list-style: none; margin: 0; }
+.checks li { break-inside: avoid; padding: .6rem 0; border-bottom: 1px solid var(--line); color: var(--heading); }
+.split { display: grid; gap: 2.5rem; }
+@media (min-width: 60rem) { .split { grid-template-columns: 1fr 1.2fr; align-items: start; } }
+.prose { max-width: 70ch; }
+.prose h2 { margin-top: 2.5rem; }
+.prose table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .95rem; }
+.prose th, .prose td { text-align: left; padding: .6rem .75rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+.prose th { color: var(--heading); font-weight: 500; }
+.gallery { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 28rem), 1fr)); }
+.gallery img { border-radius: var(--radius); width: 100%; }
+
+form.enquiry { display: grid; gap: 1rem; max-width: 40rem; }
+form.enquiry label { display: grid; gap: .35rem; color: var(--heading); font-size: .95rem; }
+form.enquiry input, form.enquiry textarea, form.enquiry select { font: inherit; color: var(--heading); background: var(--bento); border: 1px solid var(--line); border-radius: .75rem; padding: .75rem 1rem; }
+form.enquiry textarea { min-height: 9rem; resize: vertical; }
+.form-status { min-height: 1.5rem; }
+
+.site-footer { border-top: 1px solid var(--line); padding-block: 3.5rem 2rem; background: var(--top); }
+.footer-grid { display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); }
+.site-footer img { height: 2rem; width: auto; margin-bottom: 1rem; }
+.site-footer ul { list-style: none; padding: 0; margin: 0; display: grid; gap: .4rem; }
+.site-footer a { text-decoration: none; color: var(--text); }
+.site-footer a:hover { color: var(--heading); }
+.legal { margin-top: 2.5rem; font-size: .85rem; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }

@@ -1,0 +1,90 @@
+{
+  "name": "Email Automation",
+  "seo": {
+    "title": "Email Marketing Automation | Admonk",
+    "description": "Welcome, follow-up, and nurture email sequences triggered by customer actions and connected to your CRM."
+  },
+  "hero": {
+    "title": "Stay Connected with Every Customer Automatically",
+    "description": "Email Automation helps your business communicate with customers at the right time without manual work, keeping leads engaged and improving customer relationships from the first enquiry."
+  },
+  "solutionDescription": "Following up manually becomes difficult as your business grows. Email Automation allows your business to automatically send the right message at every stage of the customer journey. Whether welcoming a new customer, following up after an enquiry, reminding someone about an appointment, or nurturing long-term relationships, automated emails ensure no opportunity is forgotten. Every workflow is designed around your business processes, helping you save time while delivering a more professional customer experience.",
+  "challenges": [
+    {
+      "title": "Customers Stop Hearing From You",
+      "summary": "Many enquiries never receive a follow-up, causing potential customers to lose interest or choose a competitor."
+    },
+    {
+      "title": "Your Team Spends Too Much Time Sending Emails",
+      "summary": "Employees manually send the same emails every day, reducing productivity and increasing the chance of human error."
+    },
+    {
+      "title": "Every Customer Receives the Same Communication",
+      "summary": "Different customers need different messages. Without automation, it's difficult to personalize communication at scale."
+    }
+  ],
+  "approach": [
+    {
+      "title": "Map Your Customer Journey",
+      "summary": "We identify every important customer interaction where automated emails can improve communication and engagement."
+    },
+    {
+      "title": "Build Smart Email Workflows",
+      "summary": "We create personalized email sequences triggered by customer actions, enquiries, purchases, or other business events."
+    },
+    {
+      "title": "Measure & Improve",
+      "summary": "We monitor email performance, customer engagement, and workflow effectiveness to continuously improve results."
+    }
+  ],
+  "impact": [
+    {
+      "title": "5×",
+      "summary": "Faster Customer Follow-Up"
+    },
+    {
+      "title": "80%",
+      "summary": "Less Manual Communication"
+    },
+    {
+      "title": "3×",
+      "summary": "Higher Customer Engagement"
+    }
+  ],
+  "deliverables": {
+    "summary": "You'll receive a complete email automation system tailored to your business, helping you communicate with customers automatically while improving consistency, engagement, and operational efficiency.",
+    "items": [
+      "Customer Journey Mapping",
+      "Automated Email Workflows",
+      "Welcome & Onboarding Emails",
+      "Lead Nurturing Sequences",
+      "Reminder & Follow-Up Emails",
+      "Personalized Email Templates",
+      "Performance Tracking & Reports",
+      "Team Training & Documentation",
+      "Full Administrative Access"
+    ]
+  },
+  "testimonial": "mostafa-alokaily",
+  "framework": "digital-automation",
+  "solution": "marketing-automation",
+  "related": [
+    "content-management",
+    "ai-automation"
+  ],
+  "tools": [
+    "adobe-illustrator",
+    "adobe-photoshop",
+    "mailchimp",
+    "make",
+    "n8n",
+    "openai",
+    "zapier",
+    "zoho",
+    "brevo",
+    "sleekflow",
+    "zoho-marketing-automation"
+  ],
+  "caseStudy": "kalam",
+  "webflowId": "6a41147b21a2963f405255bc"
+}

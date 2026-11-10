@@ -1,43 +1,39 @@
-# Admonk Studio
+# Admonk website
 
-This repository is the canonical home for **Admonk Studio's business context, reusable methods and delivery system**.
+The Admonk Studio site: an Astro static site on Cloudflare Pages, with content in git.
+The Webflow site (admonkstudio.webflow.io) is the visual reference and the source of the first content import.
 
-Admonk is a Web Experience Studio focused on designing and building distinctive websites. The primary product is **The Web Experience**.
+## Run it
 
-## What belongs here
+```sh
+npm install
+npm run dev      # http://localhost:4321
+npm run build    # checks content references, builds to dist/, indexes search with Pagefind
+```
 
-- Admonk business definition and brand/voice guidance
-- reusable studio agent instructions and specialist skills
-- design and motion direction
-- Product Supervisor and Project Lifecycle methods
-- Project OS planning
-- doctrine, standards and playbooks
-- reusable templates
-- Design Foundation
-- research into reusable delivery methods and tools
-- controlled labs and benchmarks
+## Where things live
 
-## What does not belong here
+| Path | What |
+| --- | --- |
+| `src/content/<collection>/<slug>.json` | Frameworks, solutions, services, tools, portfolio, testimonials, locations, industries. One file per item; the file name is the URL slug. Schemas in `src/content.config.ts`. |
+| `src/content/blog/<slug>.md` | Blog posts (Markdown with frontmatter). |
+| `src/pages/` | Routes. URLs match the Webflow site: `/framework/x`, `/solutions/x`, `/services/x`, `/tools-platforms/x`, `/portfolio/x`, `/blog/x`. |
+| `src/components/OfferPage.astro` | The shared page layout for frameworks, solutions, services and tools. |
+| `functions/api/enquiry.js` | Form endpoint (Cloudflare Pages Function): Turnstile check, saves to the CRM database. |
+| `migrations/` | CRM database schema (Cloudflare D1). |
+| `scripts/import-webflow.mjs` | One-off import from the Webflow CMS backup in `import/`. Re-running overwrites `src/content/`. |
+| `_archive/` | The repository's earlier contents (Studio method docs), pending review and deletion. |
 
-Product-specific canonical architecture, milestones, runtime implementation or product research should live in the product's own repository.
+## Deploy
 
-Current boundary:
-- **SIA:** `admonkstudio/sia`
-- **Kalam/SOLO and other client implementations:** Kalam/client-owned repositories
+Cloudflare Pages project connected to this repo: framework preset Astro, build command `npm run build`,
+output `dist`. Set `PUBLIC_INDEXABLE=true` only on the production domain; every other build is `noindex`.
 
-The former AI Suite / Corporate AI Assistant / Harvey / Jarvis / Marketing Hub / SIA planning material was removed from the current Studio tree on 30/09/2026 after consolidation. Historical Git commits remain provenance, but they are not current authority.
+Environment: `PUBLIC_SITE_ORIGIN` (canonical origin, default `https://admonk.net`), `PUBLIC_TURNSTILE_SITE_KEY`,
+`TURNSTILE_SECRET`, and a D1 binding named `DB`.
 
-## Start here
+## Still to do
 
-1. `AGENTS.md`
-2. `docs/ADMONK-BUSINESS.md`
-3. `docs/AGENT-ARCHITECTURE.md`
-4. `docs/AI-COLLABORATION-GUIDE.md`
-5. `docs/CAPABILITY-REGISTRY.md`
-6. `docs/PROJECT-LIFECYCLE.md`
-7. `docs/PRODUCT-SUPERVISOR.md`
-8. `docs/REPOSITORY-STATUS.md`
-
-## Repository principle
-
-> **Admonk carries the method. Product repositories own the product. Client repositories own the implementation context.**
+- Download Webflow CDN images into the repo and serve them as AVIF/WebP (images load from Webflow's CDN for now).
+- Map the portfolio `yearsOption` / `styleOption` Webflow option ids to labels.
+- Admin panel: content editor and CRM (enquiries, contacts, analytics), email to info@admonk.net.

@@ -1,0 +1,15 @@
+---
+import { getEntry, type CollectionEntry } from 'astro:content';
+interface Props { item: CollectionEntry<'portfolio'> }
+const { item } = Astro.props;
+const d = item.data;
+const location = d.location ? await getEntry(d.location) : undefined;
+const industry = d.industry ? await getEntry(d.industry) : undefined;
+const image = d.thumbnail ?? d.cover;
+---
+<a class="card" href={`/portfolio/${item.id}`}>
+  {image && <img class="cover" src={image} alt="" loading="lazy" />}
+  <p class="eyebrow" style="margin:0">{[location?.data.name, industry?.data.name].filter(Boolean).join(' · ')}</p>
+  <h3>{d.name}</h3>
+  {d.title && <p>{d.title}</p>}
+</a>

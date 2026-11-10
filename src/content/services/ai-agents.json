@@ -1,0 +1,89 @@
+{
+  "name": "AI Agents",
+  "seo": {
+    "title": "AI Agent Development | Admonk",
+    "description": "AI agents that complete multi-step work using your CRM, email, and documents, with clear rules and human approval where it matters."
+  },
+  "hero": {
+    "title": "Put AI Agents to Work Inside Your Business",
+    "description": "AI agents complete multi-step tasks on their own, from qualifying leads to preparing reports, using your data and tools, so your team spends its time on decisions instead of admin."
+  },
+  "solutionDescription": "An AI chatbot answers questions. An AI agent gets work done. An agent can read an enquiry, look up the customer in your CRM, draft a reply, create a task, and notify the right person, without anyone copying information between systems. We design agents around specific jobs in your business, connect them to the tools you already use, and set clear rules for what they can do on their own and when a person needs to approve. Work keeps moving around the clock, and your team stays in control.",
+  "challenges": [
+    {
+      "title": "Work Stops When Your Team Is Busy",
+      "summary": "Tasks wait in inboxes and spreadsheets until someone has time, slowing down customers, sales, and operations."
+    },
+    {
+      "title": "Your Tools Hold the Information but Don't Act on It",
+      "summary": "Your CRM, email, and documents contain everything needed to move work forward, but every step still depends on a person."
+    },
+    {
+      "title": "Simple Automations Break on Real-World Cases",
+      "summary": "Rule-based workflows fail when a request doesn't fit the expected format, so exceptions pile up for your team."
+    }
+  ],
+  "approach": [
+    {
+      "title": "Choose the Right Jobs",
+      "summary": "We identify repetitive, multi-step tasks where an agent can save the most time with the least risk."
+    },
+    {
+      "title": "Build and Connect the Agent",
+      "summary": "We build the agent, give it access to the tools and knowledge it needs, and define what it can do alone and what needs approval."
+    },
+    {
+      "title": "Supervise and Improve",
+      "summary": "We monitor every action, review edge cases with your team, and refine the agent as your processes change."
+    }
+  ],
+  "impact": [
+    {
+      "title": "24/7",
+      "summary": "Work That Keeps Moving"
+    },
+    {
+      "title": "70%",
+      "summary": "Less Manual Admin"
+    },
+    {
+      "title": "3×",
+      "summary": "Faster Turnaround"
+    }
+  ],
+  "deliverables": {
+    "summary": "You'll receive AI agents built around specific jobs in your business, connected to your tools, with clear rules and full visibility into everything they do.",
+    "items": [
+      "Agent Use-Case Mapping",
+      "Custom AI Agent Development",
+      "CRM & Tool Integrations",
+      "Knowledge Base Setup",
+      "Approval & Safety Rules",
+      "Human Handover Workflows",
+      "Activity Logs & Reporting",
+      "Team Training & Documentation",
+      "Full Administrative Access"
+    ]
+  },
+  "testimonial": "mostafa-alokaily",
+  "framework": "digital-automation",
+  "solution": "workflow-automation",
+  "related": [
+    "ai-automation",
+    "ai-chatbot"
+  ],
+  "tools": [
+    "make",
+    "openai",
+    "n8n",
+    "zapier",
+    "claude",
+    "javascript",
+    "supabase",
+    "webflow",
+    "zoho",
+    "zoho-marketing-automation"
+  ],
+  "caseStudy": "kalam",
+  "webflowId": "6a4113dd17328cd6f356b21e"
+}

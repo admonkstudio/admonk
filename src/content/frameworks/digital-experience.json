@@ -1,0 +1,108 @@
+{
+  "name": "Digital Experience",
+  "seo": {
+    "title": "Digital Experience: Website Design & UX | Admonk",
+    "description": "Websites, UX, and SEO built to help customers understand your services, trust your business, and get in touch."
+  },
+  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a810b3c320f433cf1ab63f9_b9ef410194441739f7b147e8ad388068.jpg",
+  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a4106e74082e5b1527626dd_6a405d54052d50c1a91465a4_Digital-Automation.avif",
+  "hero": {
+    "title": "Create a digital experience that attracts & converts",
+    "description": "Create an experience designed to build trust and generate meaningful business opportunities."
+  },
+  "solutionDescription": "Digital Experience is about creating a website that works for your business every day. We combine strategy, content, design, and technology to create a fast, professional website that helps customers understand your services, trust your business, and contact you with confidence.",
+  "challenges": [
+    {
+      "title": "Visitors Leave Without Taking Action",
+      "summary": "People arrive on your website but leave before contacting you because they can't quickly find what they're looking for or understand why they should choose your business."
+    },
+    {
+      "title": "Your Website No Longer Reflects Your Business",
+      "summary": "Your company has grown, but your website still looks outdated, contains old information, or doesn't represent the quality of your products and services."
+    },
+    {
+      "title": "Your Competitors Make a Better First Impression",
+      "summary": "Even if you offer a better service, customers often judge your business by its website. A stronger online experience can influence who gets the enquiry."
+    }
+  ],
+  "approach": [
+    {
+      "title": "Understand Your Customers",
+      "summary": "We identify what your visitors are looking for, what questions they ask, and what information they need before making a decision."
+    },
+    {
+      "title": "Design Around Your Business Goals",
+      "summary": "Every page is planned with a purpose, whether that's generating enquiries, showcasing services, or helping customers find the information they need."
+    },
+    {
+      "title": "Build for Long-Term Success",
+      "summary": "We create a fast, scalable website that's easy to manage, ready for search engines, and designed to grow with your business."
+    }
+  ],
+  "impact": [
+    {
+      "title": "Top 10",
+      "summary": "Higher Google Visibility"
+    },
+    {
+      "title": "90+",
+      "summary": "Performance Score"
+    },
+    {
+      "title": "3×",
+      "summary": "More Qualified Enquiries"
+    }
+  ],
+  "deliverables": {
+    "summary": "You'll receive a fully customized website built around your business goals, complete with the tools, content management, and performance needed to support your business online.",
+    "items": [
+      "Fully Custom Website",
+      "Full Website Ownership",
+      "Webflow Project Transfer",
+      "Easy-to-Manage CMS",
+      "SEO-Ready Website Structure",
+      "High-Performance Website",
+      "Mobile Optimized Experience",
+      "Website Training Session",
+      "Documentation & Support Guide"
+    ]
+  },
+  "testimonial": "eslam-essam-3",
+  "whatWeDeliver": [
+    {
+      "title": "Website Strategy",
+      "summary": "We plan your website around your customers, your services, and your business goals instead of simply creating pages."
+    },
+    {
+      "title": "Website Design & Development",
+      "summary": "We design and build a professional website that reflects your brand, works on every device, and provides a smooth browsing experience."
+    },
+    {
+      "title": "Search & Performance Optimization",
+      "summary": "We optimize your website for speed, technical SEO, and overall performance to help improve search visibility and create a better experience for every visitor."
+    }
+  ],
+  "solutions": [
+    "performance-marketing",
+    "website-design-development",
+    "interactive-experiences"
+  ],
+  "tools": [
+    "google-analytics",
+    "google-search-console",
+    "mailchimp",
+    "webflow",
+    "display-video-360",
+    "facebook",
+    "google-ads",
+    "google-campaign-manager-360",
+    "instagram",
+    "linkedin",
+    "search-advertising-360",
+    "youtube"
+  ],
+  "caseStudies": [
+    "paraguru"
+  ],
+  "webflowId": "6a4106e9d2e509a66a3ecee3"
+}

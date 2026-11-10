@@ -1,0 +1,12 @@
+{
+  "name": "Google Docs",
+  "seo": {
+    "title": "Google Docs Services | Admonk",
+    "description": "We use Google Docs for shared content and documentation, and connect it to automations that generate proposals, reports, and contracts."
+  },
+  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a52e3954659d7ce86bce758_google-docs.avif",
+  "summary": "Create and collaborate on documents from anywhere.",
+  "description": "We use Google Docs for shared content and documentation, and connect it to automations that generate proposals, reports, and contracts.",
+  "framework": "digital-automation",
+  "webflowId": "6a4167d595fb0b707c854c9e"
+}

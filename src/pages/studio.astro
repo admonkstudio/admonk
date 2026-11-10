@@ -1,0 +1,41 @@
+---
+import Base from '../layouts/Base.astro';
+import { PAGE_SEO } from '../lib/site';
+const [title, description] = PAGE_SEO['/studio'];
+const pillars = [['Strategy', 'Understand before building.'], ['Experience', 'Design for people, not trends.'], ['Systems', "Automate what shouldn't require people."]];
+const principles = [
+  ['Business Before Technology', 'Technology should solve business problems, not create them.'],
+  ['Long-Term Thinking', 'We build foundations that continue creating value years after launch.'],
+  ['Simplicity Wins', 'The best digital experiences are usually the easiest to use.'],
+  ['Challenge Everything', "We don't automatically agree with every request. We recommend what's best for your business."],
+  ['Measure Success Together', 'Your growth is how we measure our work.'],
+  ['Keep Learning', 'Markets evolve. Technology evolves. So should every business.'],
+];
+---
+<Base title={title} description={description}>
+  <section class="hero">
+    <div class="shell">
+      <p class="eyebrow">Everything we build starts with one question</p>
+      <h1 class="display">How can this create more value for your business?</h1>
+      <p class="lead">We help businesses make smarter digital investments, improve customer experiences, and build systems that continue delivering value long after launch.</p>
+    </div>
+  </section>
+  <section class="top">
+    <div class="shell">
+      <div class="head"><p class="eyebrow">How we think</p><h2>Design how your business is presented, promote it to the right audience, and automate the journey that follows.</h2></div>
+      <div class="grid">{pillars.map(([t, s]) => <div class="card"><h3>{t}</h3><p>{s}</p></div>)}</div>
+    </div>
+  </section>
+  <section>
+    <div class="shell split">
+      <div><p class="eyebrow">Behind Admonk</p><h2>Great businesses aren't built by accident</h2></div>
+      <p class="lead">For over 20 years, we've worked with businesses across different industries, technologies, and markets. One lesson has remained the same: successful businesses don't treat branding, websites, marketing, and automation as separate investments. They build them as one connected system. That belief became the foundation of Admonk and The Framework.</p>
+    </div>
+  </section>
+  <section class="top">
+    <div class="shell">
+      <div class="head"><h2>The principles that guide every decision</h2></div>
+      <div class="grid">{principles.map(([t, s]) => <div class="card"><h3>{t}</h3><p>{s}</p></div>)}</div>
+    </div>
+  </section>
+</Base>

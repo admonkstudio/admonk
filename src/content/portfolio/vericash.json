@@ -1,0 +1,100 @@
+{
+  "name": "Vericash",
+  "seo": {
+    "title": "Vericash Case Study | Admonk",
+    "description": "Simplifying Digital Management for a FinTech Platform: how Admonk helped Vericash in Canada. The challenge, our approach, and the results."
+  },
+  "title": "Simplifying Digital Management for a FinTech Platform",
+  "summary": "VeriCash sought to modernize its online presence while making website management significantly easier for internal teams. Admonk delivered a scalable, CMS-powered platform that combines enterprise-grade functionality with a streamlined content management experience.",
+  "logo": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63fcb42e362d8364bdf4a1_Vericash.avif",
+  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3e9e983e51512cbad7b39f_Icon-Grey.svg",
+  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a558b141877e81ce9ae29a8_Vericash.avif",
+  "websiteUrl": "https://www.citvericash.com/",
+  "featured": false,
+  "yearsOption": "35f63fda26c06daa509ece82b3afd101",
+  "industry": "technology-software",
+  "location": "canada",
+  "solutions": [
+    "website-design-development"
+  ],
+  "services": [
+    "cms-development",
+    "content-management",
+    "seo",
+    "webflow-development",
+    "ui-ux-design"
+  ],
+  "tools": [
+    "adobe-illustrator",
+    "adobe-photoshop",
+    "google-analytics",
+    "google-search-console",
+    "webflow",
+    "figma",
+    "gsap",
+    "javascript",
+    "google-sheets",
+    "zapier",
+    "n8n",
+    "make"
+  ],
+  "testimonial": "hisham",
+  "challenge": {
+    "title": "VeriCash wanted to modernize its online presence while simplifying the management of an enterprise fintech platform.",
+    "items": [
+      "The previous website was difficult to update and maintain.",
+      "Financial services required clearer organization and presentation.",
+      "Internal teams needed greater flexibility over content management.",
+      "The platform had to meet modern expectations for security and performance.",
+      "The digital experience needed to reinforce trust with enterprise customers."
+    ]
+  },
+  "approach": [
+    {
+      "title": "Simplified the Digital Experience",
+      "summary": "We redesigned the website to present financial services in a clearer and more accessible way."
+    },
+    {
+      "title": "Improved Website Management",
+      "summary": "We built a platform that makes updating content easier for the internal team."
+    },
+    {
+      "title": "Prepared for Future Growth",
+      "summary": "The website was designed to scale alongside the company's products and services."
+    }
+  ],
+  "results": [
+    {
+      "label": "Website Performance",
+      "value": "95+",
+      "description": "Enterprise performance benchmark"
+    },
+    {
+      "label": "Brand Transformation",
+      "value": "30+",
+      "description": "Financial services reorganized"
+    },
+    {
+      "label": "User Experience",
+      "value": "98%",
+      "description": "Responsive fintech experience"
+    },
+    {
+      "label": "Automation & Integration",
+      "value": "12+",
+      "description": "Dynamic website components integrated"
+    },
+    {
+      "label": "CMS & Content Management",
+      "value": "85%",
+      "description": "Reduction in website administration time"
+    },
+    {
+      "label": "Platform Stability & Security",
+      "value": "99.90%",
+      "description": "Platform reliability maintained"
+    }
+  ],
+  "gallery": [],
+  "webflowId": "690162cb2b538a45a20d4770"
+}

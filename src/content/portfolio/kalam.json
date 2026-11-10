@@ -1,0 +1,127 @@
+{
+  "name": "Kalam",
+  "seo": {
+    "title": "Kalam Case Study | Admonk",
+    "description": "Building the Digital Foundation for a Global Language & BPO Provider. The challenge, our approach, and the results for Kalam."
+  },
+  "title": "Building the Digital Foundation for a Global Language & BPO Provider",
+  "summary": "Kalam CX is a global language solutions and business process outsourcing company serving clients across 55+ countries in more than 200 languages.",
+  "thumbnail": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdfb397b2cebe0ce1d29c_Kalam.jpg",
+  "logo": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63f9673bda24067152308e_Kalam.avif",
+  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3dd2e94b010bbc72c1bacc_Icon-Grey.avif",
+  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a5039f0c9c98b27704047c5_Kalam-Cover.avif",
+  "websiteUrl": "https://www.kalam.cx/",
+  "featured": false,
+  "yearsOption": "4b253f66b128156b0a6e049bbdd8ea31",
+  "styleOption": "89b7740c042d1b038f52a7ec8e195e02",
+  "industry": "customer-experience",
+  "location": "united-arab-emirates",
+  "solutions": [
+    "brand-guideline",
+    "brand-identity-strategy",
+    "crm-integration",
+    "interactive-experiences",
+    "logo-design",
+    "marketing-automation",
+    "performance-marketing",
+    "website-design-development",
+    "workflow-automation"
+  ],
+  "services": [
+    "ai-agents",
+    "ai-automation",
+    "ai-chatbot",
+    "cms-development",
+    "content-management",
+    "email-automation",
+    "lead-generation",
+    "paid-social",
+    "ppc",
+    "seo",
+    "ui-ux-design",
+    "webflow-development",
+    "whatsapp-automation"
+  ],
+  "tools": [
+    "adobe-illustrator",
+    "adobe-indesign",
+    "adobe-photoshop",
+    "google-analytics",
+    "google-search-console",
+    "mailchimp",
+    "make",
+    "n8n",
+    "openai",
+    "webflow",
+    "whatsapp-business",
+    "zapier",
+    "zoho"
+  ],
+  "testimonial": "mostafa-alokaily",
+  "challenge": {
+    "title": "Kalam CX needed a stronger digital ecosystem to support its global BPO and language operations.",
+    "items": [
+      "Marketing, recruitment, and support workflows were spread across multiple systems.",
+      "The website had to support both client acquisition and interpreter recruitment.",
+      "Leadership needed clearer visibility across campaigns, tickets, and performance.",
+      "Internal teams required smoother automation between departments.",
+      "The digital presence needed to reflect Kalam's global scale and 200+ language capability."
+    ]
+  },
+  "approach": [
+    {
+      "title": "Unified the Digital Presence",
+      "summary": "We aligned Kalam's brand, website, and digital ecosystem into one consistent customer experience."
+    },
+    {
+      "title": "Improved Customer & Candidate Journeys",
+      "summary": "We redesigned the website around the needs of both clients and interpreters."
+    },
+    {
+      "title": "Connected Marketing Operations",
+      "summary": "We supported workflows and automation that simplified marketing, recruitment, and customer operations."
+    }
+  ],
+  "results": [
+    {
+      "label": "Traffic Growth",
+      "value": "60+",
+      "description": "Recruitment languages supported digitally"
+    },
+    {
+      "label": "Business Impact",
+      "value": "7",
+      "description": "Strategic marketing objectives activated"
+    },
+    {
+      "label": "User Experience",
+      "value": "55+",
+      "description": "Countries represented digitally"
+    },
+    {
+      "label": "Automation & Integration",
+      "value": "4+",
+      "description": "Operational workflows connected"
+    },
+    {
+      "label": "CMS & Content Management",
+      "value": "200+",
+      "description": "Language service pages supported"
+    },
+    {
+      "label": "Product / Service Showcase",
+      "value": "8+",
+      "description": "Core service lines structured"
+    }
+  ],
+  "gallery": [
+    "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a41c735d7b838a82b238113_Color-Pallete.avif",
+    "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a41c8bb2fd924f3c5135bfb_Screenshot%202026-06-29%20042154.avif",
+    "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a34285fed5513bcbae28da2_6849a226-b361-4389-9f47-bed25831886f.avif",
+    "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a41c5e2c758e10a5ccd5a1d_Screenshot%202026-06-29%20040937.avif",
+    "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a34286976bca2506a1c1c03_588e6f37-6e5e-4cce-9e5b-6b05f4ef23b6.avif",
+    "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a34286392860a04ed8116f5_5878e867-02a1-47ea-b3e3-358f6868d2b9.avif",
+    "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a34285fed5513bcbae28da2_6849a226-b361-4389-9f47-bed25831886f.avif"
+  ],
+  "webflowId": "6901625beee06f4baa3fb4a8"
+}

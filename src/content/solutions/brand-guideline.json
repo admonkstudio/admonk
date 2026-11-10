@@ -1,0 +1,83 @@
+{
+  "name": "Brand Guidelines",
+  "seo": {
+    "title": "Brand Guidelines Design | Admonk",
+    "description": "A clear guide to your logo, colors, typography, and imagery, so every team and agency presents your brand the same way."
+  },
+  "hero": {
+    "title": "Keep Your Brand Consistent as Your Business Grows",
+    "description": "Brand Guidelines ensure every touchpoint looks consistent, professional, and instantly recognizable, no matter who creates it."
+  },
+  "solutionDescription": "Brand Guidelines are the instruction manual for your brand. They explain how your logo, colors, typography, imagery, and other visual elements should be used across your website, social media, presentations, documents, and marketing materials. Instead of guessing, your team always knows the right way to represent your business.",
+  "challenges": [
+    {
+      "title": "Your Brand Looks Different Everywhere",
+      "summary": "Different departments and designers use different versions of your logo, colors, and fonts, creating an inconsistent brand image."
+    },
+    {
+      "title": "Marketing Takes Longer Than It Should",
+      "summary": "Every new project starts with the same questions about logos, colors, or design styles because there is no documented standard."
+    },
+    {
+      "title": "New Team Members Don't Know Your Brand",
+      "summary": "As your company grows, it becomes difficult to maintain consistency without a clear reference that everyone can follow."
+    }
+  ],
+  "approach": [
+    {
+      "title": "Understand Your Brand",
+      "summary": "We review your existing identity and define the visual rules that should remain consistent across every platform."
+    },
+    {
+      "title": "Build Your Brand System",
+      "summary": "We organize your logo, colors, typography, imagery, icons, spacing, and visual standards into one easy-to-use guide."
+    },
+    {
+      "title": "Prepare Your Team",
+      "summary": "We deliver everything in a practical format that designers, marketers, agencies, and internal teams can easily follow."
+    }
+  ],
+  "impact": [
+    {
+      "title": "100%",
+      "summary": "Brand Consistency"
+    },
+    {
+      "title": "50%",
+      "summary": "Faster Content Creation"
+    },
+    {
+      "title": "1",
+      "summary": "Single Source of Truth"
+    }
+  ],
+  "deliverables": {
+    "summary": "When your Brand Guidelines are complete, you'll have everything needed to keep your business visually consistent across every platform, campaign, and marketing activity. Every asset is organized, documented, and ready for your team to use with confidence.",
+    "items": [
+      "Comprehensive Brand Guidelines Document",
+      "Logo Usage Rules",
+      "Brand Color Palette",
+      "Typography System",
+      "Visual Identity Standards",
+      "Iconography & Graphic Elements",
+      "Imagery & Photography Guidelines",
+      "Ready-to-Use Brand Assets",
+      "Full Ownership of All Source Files"
+    ]
+  },
+  "testimonial": "mostafa-alokaily",
+  "framework": "digital-identity",
+  "services": [],
+  "tools": [
+    "adobe-illustrator",
+    "adobe-indesign",
+    "adobe-photoshop",
+    "figma",
+    "canva"
+  ],
+  "caseStudies": [
+    "kalam",
+    "mastery-academy"
+  ],
+  "webflowId": "6a4107458dd6a57317b95ed8"
+}

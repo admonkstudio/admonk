@@ -1,0 +1,92 @@
+{
+  "name": "Al Rahma Health Clinic",
+  "seo": {
+    "title": "Al Rahma Health Clinic Case Study | Admonk",
+    "description": "Empowering Community Healthcare Through Digital Innovation. The challenge, our approach, and the results for Al Rahma Health Clinic."
+  },
+  "title": "Empowering Community Healthcare Through Digital Innovation",
+  "summary": "Rahma Health Clinic is a nonprofit healthcare organization dedicated to providing accessible medical services to underserved communities. Admonk partnered with the clinic to create a modern digital platform focused on improving patient accessibility, simplifying communication, and introducing an online donation system to support long-term fundraising efforts. Following the launch, we optimized the website for search engines and performance to increase its online visibility and help more people discover the clinic's services.",
+  "logo": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63f54d4ffbde8c1f7e2bd3_Rahma.avif",
+  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3ea161ae1ed47ab9867cd8_Icon-Grey.svg",
+  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a5590f11b6ed48c87550999_Alrahma.avif",
+  "websiteUrl": "https://www.rahmahealthclinic.com/",
+  "featured": false,
+  "yearsOption": "35f63fda26c06daa509ece82b3afd101",
+  "industry": "healthcare",
+  "location": "united-states",
+  "solutions": [
+    "website-design-development"
+  ],
+  "services": [
+    "cms-development",
+    "content-management",
+    "ui-ux-design",
+    "webflow-development"
+  ],
+  "tools": [
+    "adobe-illustrator",
+    "adobe-photoshop",
+    "google-analytics",
+    "google-search-console",
+    "webflow",
+    "figma"
+  ],
+  "testimonial": "dr-mohamed-khater",
+  "challenge": {
+    "title": "Rahma Health Clinic needed a digital platform that could support both patient access and nonprofit fundraising.",
+    "items": [
+      "The clinic needed to make free medical care easier to discover.",
+      "Patients required simple ways to contact and reach the clinic.",
+      "The website had to communicate trust, care, and community impact.",
+      "A donation system was needed to support fundraising.",
+      "SEO optimization was important to help more people find the clinic online."
+    ]
+  },
+  "approach": [
+    {
+      "title": "Strengthened Community Trust",
+      "summary": "We created a welcoming digital experience that made it easier for patients to access services while supporting the clinic's charitable mission."
+    },
+    {
+      "title": "Simplified Patient Communication",
+      "summary": "The website was structured to help visitors quickly find information, contact the clinic, and request assistance."
+    },
+    {
+      "title": "Enabled Online Donations",
+      "summary": "We integrated donation capabilities and optimized the website for search visibility to support long-term fundraising."
+    }
+  ],
+  "results": [
+    {
+      "label": "SEO & Google Placement",
+      "value": "Top 10",
+      "description": "Improved search visibility for local healthcare services."
+    },
+    {
+      "label": "Website Performance",
+      "value": "95+",
+      "description": "Core Web Vitals and performance optimization completed."
+    },
+    {
+      "label": "Traffic Growth",
+      "description": "Growth in community website discovery."
+    },
+    {
+      "label": "Business Impact",
+      "value": "24/7",
+      "description": "Patients can request support and information online anytime."
+    },
+    {
+      "label": "User Experience",
+      "value": "98%",
+      "description": "Mobile accessibility and patient-friendly navigation."
+    },
+    {
+      "label": "Automation & Integration",
+      "value": "2",
+      "description": "Integrated patient contact and online donation systems."
+    }
+  ],
+  "gallery": [],
+  "webflowId": "6a3a83f0eaa4a6af9f52bd15"
+}

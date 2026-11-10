@@ -1,0 +1,114 @@
+{
+  "name": "Digital Automation",
+  "seo": {
+    "title": "Digital Automation: AI & Workflow Automation | Admonk",
+    "description": "Connect your website, CRM, and tools, and let automation and AI handle the repetitive work so your team can focus on customers."
+  },
+  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a810b312ee872b406d891bd_2b28dd255c0432a62ff764280c6533e0.jpg",
+  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a429e4c147ca206405882e4_Digital%20Automation.avif",
+  "hero": {
+    "title": "Stop wasting time on work your business should do automatically",
+    "description": "Allow your business to run faster, smarter, and with less manual work."
+  },
+  "solutionDescription": "Digital Automation connects your website with the tools your business already uses. Whether it's your CRM, CMS, email platform, AI assistant, booking system, or internal workflows, we automate repetitive tasks so your team can focus on serving customers instead of managing processes.",
+  "challenges": [
+    {
+      "title": "Your Team Repeats the Same Tasks Every Day",
+      "summary": "Staff spend hours copying information, sending follow-up emails, updating spreadsheets, or manually assigning enquiries that could all happen automatically."
+    },
+    {
+      "title": "Your Systems Don't Communicate",
+      "summary": "Your website, CRM, email platform, and internal tools operate separately, forcing your team to switch between systems and increasing the risk of missed information."
+    },
+    {
+      "title": "Leads Slow Down Before They Reach the Right Person",
+      "summary": "Customers submit enquiries, but delays in routing, follow-up, or internal communication result in slower responses and missed business opportunities."
+    }
+  ],
+  "approach": [
+    {
+      "title": "Understand How Your Business Operates",
+      "summary": "We map your existing processes to identify repetitive tasks, bottlenecks, and opportunities for automation."
+    },
+    {
+      "title": "Connect Your Digital Tools",
+      "summary": "We integrate your website with your CRM, CMS, email platform, AI tools, and business systems to create a connected workflow."
+    },
+    {
+      "title": "Automate Everyday Operations",
+      "summary": "Once everything is connected, repetitive tasks happen automatically, giving your team more time to focus on customers and business growth."
+    }
+  ],
+  "impact": [
+    {
+      "title": "80%",
+      "summary": "Less Manual Administration"
+    },
+    {
+      "title": "5×",
+      "summary": "Faster Response Times"
+    },
+    {
+      "title": "24/7",
+      "summary": "Always-On Business Processes"
+    }
+  ],
+  "deliverables": {
+    "summary": "You'll receive an integrated automation system that connects your tools, simplifies daily operations, and helps your business work faster with less manual effort.",
+    "items": [
+      "Custom Automation Workflows",
+      "CRM Integration",
+      "AI Assistant Setup",
+      "Email & WhatsApp Automation",
+      "Secure API Connections",
+      "Workflow Documentation",
+      "Automation Dashboard",
+      "Performance Reports",
+      "Training & Handover"
+    ]
+  },
+  "testimonial": "mostafa-alokaily",
+  "whatWeDeliver": [
+    {
+      "title": "Workflow Automation",
+      "summary": "We automate repetitive tasks such as enquiry routing, notifications, approvals, follow-ups, and data processing."
+    },
+    {
+      "title": "System Integrations",
+      "summary": "We connect your website with CRMs, email platforms, booking systems, AI tools, and third-party applications to eliminate manual work."
+    },
+    {
+      "title": "Business Process Optimization",
+      "summary": "We simplify and improve how information moves through your business, creating faster operations and a better experience for both your team and your customers."
+    }
+  ],
+  "solutions": [
+    "marketing-automation",
+    "workflow-automation",
+    "crm-integration"
+  ],
+  "tools": [
+    "mailchimp",
+    "make",
+    "n8n",
+    "openai",
+    "webflow",
+    "zapier",
+    "zoho",
+    "brevo",
+    "airtable",
+    "facebook",
+    "firebase",
+    "google",
+    "google-ads",
+    "google-sheets",
+    "sleekflow",
+    "supabase",
+    "whatsapp-business",
+    "zoho-marketing-automation"
+  ],
+  "caseStudies": [
+    "kalam"
+  ],
+  "webflowId": "6a4106e9988b4ffd98db6359"
+}

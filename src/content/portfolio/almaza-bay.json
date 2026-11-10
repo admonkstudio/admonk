@@ -1,0 +1,95 @@
+{
+  "name": "Almaza Bay",
+  "seo": {
+    "title": "Almaza Bay Case Study | Admonk",
+    "description": "Delivering a Luxury Digital Experience Under Tight Deadlines: how Admonk helped Almaza Bay in Egypt. The challenge, our approach, and the results."
+  },
+  "title": "Delivering a Luxury Digital Experience Under Tight Deadlines",
+  "summary": "Almaza Bay, the flagship coastal destination by Travco Properties, required a premium website to support the launch of a new development phase within an exceptionally tight timeline. Admonk partnered with the client to deliver the website on schedule while maintaining the highest standards of design accuracy, performance optimization, and technical quality. Following the launch, we implemented comprehensive speed optimization and SEO improvements that significantly strengthened the website's search visibility.",
+  "thumbnail": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdfdea32e0823cc254320_Almaza.jpg",
+  "logo": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63f7063d48f7ebf5f8e4d7_Almaza.avif",
+  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3dc42d96129c701f60c777_Icon-Grey.avif",
+  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a557f0b95307bdacbabe1d3_Almazabay-Cover.avif",
+  "websiteUrl": "https://www.almazabay.com/",
+  "featured": false,
+  "yearsOption": "35f63fda26c06daa509ece82b3afd101",
+  "industry": "travel-hospitality",
+  "location": "egypt",
+  "solutions": [
+    "website-design-development"
+  ],
+  "services": [
+    "cms-development",
+    "content-management",
+    "seo",
+    "ui-ux-design",
+    "webflow-development"
+  ],
+  "tools": [
+    "adobe-illustrator",
+    "adobe-photoshop",
+    "google-analytics",
+    "google-search-console",
+    "webflow",
+    "figma"
+  ],
+  "testimonial": "yasmin",
+  "challenge": {
+    "title": "Almaza Bay needed to launch a premium real estate website under a highly compressed timeline.",
+    "items": [
+      "The client had a clear design direction that required accurate execution.",
+      "The launch timeline was short and tied to a new project release.",
+      "The website needed to match the luxury positioning of Almaza Bay.",
+      "Performance optimization was required after launch to improve speed.",
+      "SEO visibility needed to improve quickly to support search placement."
+    ]
+  },
+  "approach": [
+    {
+      "title": "Executed the Launch Vision",
+      "summary": "We translated the client's vision into a polished website that supported the successful launch of their new development."
+    },
+    {
+      "title": "Optimized the Website Experience",
+      "summary": "We improved website speed, structure, and usability to create a smoother browsing experience."
+    },
+    {
+      "title": "Prepared the Site for Search Visibility",
+      "summary": "We implemented technical SEO best practices to support stronger Google visibility."
+    }
+  ],
+  "results": [
+    {
+      "label": "SEO & Google Placement",
+      "value": "95+",
+      "description": "PageSpeed performance benchmark"
+    },
+    {
+      "label": "Website Performance",
+      "value": "Top 10",
+      "description": "Google placement achieved within 3 months"
+    },
+    {
+      "label": "Business Impact",
+      "value": "3 Months",
+      "description": "Organic visibility improvement window"
+    },
+    {
+      "label": "Brand Transformation",
+      "value": "100%",
+      "description": "Design accuracy matched to launch vision"
+    },
+    {
+      "label": "Product / Service Showcase",
+      "value": "12+",
+      "description": "Luxury project sections presented"
+    },
+    {
+      "label": "Platform Stability & Security",
+      "value": "99%",
+      "description": "Launch stability maintained"
+    }
+  ],
+  "gallery": [],
+  "webflowId": "690162b3c0690c4e1eb9f019"
+}

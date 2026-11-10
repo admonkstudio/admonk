@@ -1,0 +1,46 @@
+---
+import Base from '../layouts/Base.astro';
+import FrameworkCards from '../components/FrameworkCards.astro';
+import PortfolioCard from '../components/PortfolioCard.astro';
+import { live, PAGE_SEO, SITE } from '../lib/site';
+// The same projects the Webflow home page shows, in the same order.
+const picks = ['egyptian-education-platform', 'my-dental-centre', 'evos', 'paraguru', 'almaza-bay', 'university-of-hertfordshire', 'softobia', 'mastery-academy', 'kalam'];
+const all = await live('portfolio');
+const projects = picks.map((id) => all.find((p) => p.id === id)).filter((p) => p !== undefined);
+const shown = projects.length >= 6 ? projects : all.slice(0, 9);
+const [title, description] = PAGE_SEO['/'];
+---
+<Base title={title} description={description}
+  jsonLd={{ '@context': 'https://schema.org', '@type': 'Organization', name: 'Admonk', url: 'https://admonk.net', logo: SITE.logo, email: SITE.email, sameAs: SITE.socials.map(([, u]) => u) }}>
+  <section class="hero">
+    <div class="shell">
+      <h1 class="display">One Framework<br />Better Digital Experience</h1>
+      <p class="lead">We create your digital identity, design exceptional customer experiences, and automate the workflows that help your business succeed.</p>
+      <a class="btn" href="/start">Start now</a> <a class="btn ghost" href="/portfolio">See our work</a>
+    </div>
+  </section>
+  <section class="top">
+    <div class="shell">
+      <div class="head">
+        <p class="eyebrow">We offer The Framework</p>
+        <h2>One strategy for identity, experience and automation</h2>
+        <p>A proven approach that connects your business identity, customer experience, and workflow automation into one strategy, so every digital investment moves your business closer to its goals.</p>
+      </div>
+      <FrameworkCards />
+    </div>
+  </section>
+  <section>
+    <div class="shell">
+      <div class="head"><p class="eyebrow">Portfolio</p><h2>Trusted by ambitious brands</h2><p>We partner with forward-thinking businesses to create stronger brands, smarter digital experiences, and solutions built for measurable growth.</p></div>
+      <div class="grid">{shown.map((p) => <PortfolioCard item={p} />)}</div>
+      <p style="margin-top:2rem"><a class="btn ghost" href="/portfolio">View the full portfolio</a></p>
+    </div>
+  </section>
+  <section class="top">
+    <div class="shell head">
+      <h2>A more consistent experience and a more efficient way to operate</h2>
+      <p>The Framework brings the platforms, tools, and technologies behind your digital business into one connected system.</p>
+      <a class="btn" href="/the-framework">How the Framework works</a>
+    </div>
+  </section>
+</Base>

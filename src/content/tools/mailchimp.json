@@ -1,0 +1,12 @@
+{
+  "name": "Mailchimp",
+  "seo": {
+    "title": "Mailchimp Services | Admonk",
+    "description": "We build Mailchimp automations, newsletters, and audience segments that follow up with every lead and keep customers engaged."
+  },
+  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7866d420408fc2bfd19998_mailchimp-logo-vector-png-eps-or-png-476.avif",
+  "summary": "Send automated email campaigns, newsletters, and customer follow-up sequences.",
+  "description": "We build Mailchimp automations, newsletters, and audience segments that follow up with every lead and keep customers engaged.",
+  "framework": "digital-automation",
+  "webflowId": "6a40682dfa909463807ef475"
+}

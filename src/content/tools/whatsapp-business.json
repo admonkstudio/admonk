@@ -1,0 +1,12 @@
+{
+  "name": "WhatsApp Business",
+  "seo": {
+    "title": "WhatsApp Business Services | Admonk",
+    "description": "We connect the WhatsApp Business Platform to your website and CRM to automate replies, qualify leads, send updates, and book appointments."
+  },
+  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a40685339c6f80dfbd26824_Whatsapp.avif",
+  "summary": "Automate customer messages, enquiries, updates, and follow-ups through WhatsApp.",
+  "description": "We connect the WhatsApp Business Platform to your website and CRM to automate replies, qualify leads, send updates, and book appointments.",
+  "framework": "digital-automation",
+  "webflowId": "6a40685b29504b278767312d"
+}

@@ -1,0 +1,83 @@
+{
+  "name": "WhatsApp Automation",
+  "seo": {
+    "title": "WhatsApp Business Automation | Admonk",
+    "description": "Automated WhatsApp replies, lead qualification, and booking flows connected to your CRM, so every customer gets a fast answer."
+  },
+  "hero": {
+    "title": "Respond Faster and Stay Connected Through WhatsApp",
+    "description": "WhatsApp Automation helps your business communicate with customers instantly, automate routine conversations, and provide faster support without increasing your team's workload."
+  },
+  "solutionDescription": "For many businesses, WhatsApp has become the preferred way customers communicate. Instead of manually replying to every enquiry, WhatsApp Automation helps your business respond instantly, qualify leads, answer common questions, send updates, and route conversations to the right team. Whether someone requests a quotation, books a service, or simply asks a question, your business stays responsive and professional while reducing repetitive work for your staff.",
+  "challenges": [
+    {
+      "title": "Customers Wait Too Long for a Response",
+      "summary": "Delayed replies often lead to lost opportunities, especially when customers expect immediate answers."
+    },
+    {
+      "title": "Your Team Answers the Same Questions Every Day",
+      "summary": "Employees spend valuable time replying to repetitive enquiries instead of focusing on more important customer needs."
+    },
+    {
+      "title": "Conversations Are Difficult to Manage",
+      "summary": "As the number of enquiries grows, it becomes harder to organize conversations, assign them to the right people, and maintain a consistent customer experience."
+    }
+  ],
+  "approach": [
+    {
+      "title": "Understand Your Customer Journey",
+      "summary": "We identify the conversations that happen most often and determine where automation can improve speed and customer satisfaction."
+    },
+    {
+      "title": "Build Intelligent Conversations",
+      "summary": "We create automated WhatsApp workflows that answer questions, collect information, qualify leads, and guide customers through the next steps."
+    },
+    {
+      "title": "Connect Your Business",
+      "summary": "We integrate WhatsApp with your CRM, website, booking system, and internal workflows to keep customer information organized and your team informed."
+    }
+  ],
+  "impact": [
+    {
+      "title": "5×",
+      "summary": "Faster Customer Response"
+    },
+    {
+      "title": "80%",
+      "summary": "Less Repetitive Customer Support"
+    },
+    {
+      "title": "3×",
+      "summary": "More Qualified Conversations"
+    }
+  ],
+  "deliverables": {
+    "summary": "You'll receive a fully customized WhatsApp automation system that improves customer communication, speeds up response times, and connects every conversation with your existing business processes.",
+    "items": [
+      "WhatsApp Business Integration",
+      "Automated Conversation Flows",
+      "Lead Qualification Workflows",
+      "Appointment & Booking Automation",
+      "CRM Integration",
+      "Smart Replies & FAQs",
+      "Team Handover & Live Chat Routing",
+      "Performance Reporting",
+      "Documentation & Team Training"
+    ]
+  },
+  "testimonial": "dr-ahnaf-aljajah",
+  "framework": "digital-automation",
+  "solution": "marketing-automation",
+  "related": [
+    "ai-automation",
+    "content-management"
+  ],
+  "tools": [
+    "brevo",
+    "mailchimp",
+    "zoho-marketing-automation",
+    "sleekflow"
+  ],
+  "caseStudy": "mastery-academy",
+  "webflowId": "6a41149cf291e2e2699eb6e3"
+}

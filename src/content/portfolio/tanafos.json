@@ -1,0 +1,93 @@
+{
+  "name": "Tanafos",
+  "seo": {
+    "title": "Tanafos Case Study | Admonk",
+    "description": "Generating Qualified Leads Within a Specialized Market: how Admonk helped Tanafos in Egypt. The challenge, our approach, and the results."
+  },
+  "title": "Generating Qualified Leads Within a Specialized Market",
+  "summary": "Tanafos required a focused digital strategy targeting a highly specialized audience. Admonk developed a professional website designed around trust, lead generation, and search visibility, helping the company reach decision-makers within its niche market.",
+  "logo": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63fc3615b6242621e674be_Tanafos.avif",
+  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3dc4e1b3de31f2a124b10d_Icon-Grey.avif",
+  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a558a21180cc3dd3251ec06_Tanafos.avif",
+  "websiteUrl": "https://tanafos.net/",
+  "featured": false,
+  "yearsOption": "78da0dfd22ad423ad4f653d87acf7f1c",
+  "industry": "education",
+  "location": "egypt",
+  "solutions": [
+    "website-design-development",
+    "logo-design"
+  ],
+  "services": [
+    "cms-development",
+    "content-management",
+    "ui-ux-design",
+    "webflow-development"
+  ],
+  "tools": [
+    "adobe-illustrator",
+    "adobe-photoshop",
+    "google-analytics",
+    "google-search-console",
+    "webflow"
+  ],
+  "testimonial": "dr-mohamed",
+  "challenge": {
+    "title": "Tanafos wanted to generate qualified leads within a highly specialized market through a stronger digital presence.",
+    "items": [
+      "The existing website was not effectively converting visitors into enquiries.",
+      "The company needed to establish credibility within a niche industry.",
+      "Search visibility had to improve for highly targeted keywords.",
+      "Services required a clearer and more professional presentation.",
+      "The user journey needed to support lead generation at every stage."
+    ]
+  },
+  "approach": [
+    {
+      "title": "Strengthened the Online Presence",
+      "summary": "We created a professional website that positions the business as a trusted specialist within its niche."
+    },
+    {
+      "title": "Focused on Customer Conversion",
+      "summary": "Every page was structured to encourage enquiries and make contacting the business simple."
+    },
+    {
+      "title": "Prepared for Long-Term Growth",
+      "summary": "The website was optimized to support marketing campaigns and future business expansion."
+    }
+  ],
+  "results": [
+    {
+      "label": "SEO & Google Placement",
+      "value": "Top 5",
+      "description": "Google rankings for target services"
+    },
+    {
+      "label": "Website Performance",
+      "value": "92+",
+      "description": "Technical performance score"
+    },
+    {
+      "label": "Traffic Growth",
+      "value": "250%",
+      "description": "Growth in organic website visitors"
+    },
+    {
+      "label": "Business Impact",
+      "value": "40%",
+      "description": "Lower customer acquisition cost"
+    },
+    {
+      "label": "Brand Transformation",
+      "value": "20+",
+      "description": "Professional service assets redesigned"
+    },
+    {
+      "label": "User Experience",
+      "value": "96%",
+      "description": "Mobile usability benchmark"
+    }
+  ],
+  "gallery": [],
+  "webflowId": "690162a9cf0273ec456a1e48"
+}

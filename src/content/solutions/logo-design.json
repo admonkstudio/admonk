@@ -1,0 +1,82 @@
+{
+  "name": "Logo Design",
+  "seo": {
+    "title": "Professional Logo Design | Admonk",
+    "description": "A logo that represents your business clearly and works everywhere, delivered with every format, layout, and usage guide you need."
+  },
+  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a41074080fcbddbec7c3345_6a3f703c365b78bfbfe3bdf3_pen-tool.avif",
+  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a4106e74082e5b1527626dd_6a405d54052d50c1a91465a4_Digital-Automation.avif",
+  "hero": {
+    "title": "Create a Logo People Can Recognize and Remember",
+    "description": "Your logo is the face of your business. A clear, professional logo helps customers recognize your brand faster and trust your business from the first look."
+  },
+  "solutionDescription": "A logo should do more than look nice. It should represent your business clearly, work across every platform, and make your brand easier to remember. We design logos that reflect your company's personality, industry, and future direction, while making sure the final design works everywhere — from your website and social media to proposals, signage, uniforms, packaging, and advertising materials.",
+  "challenges": [
+    {
+      "title": "Your Logo Looks Outdated",
+      "summary": "Your business has grown, but your logo still gives customers an old or unprofessional first impression."
+    },
+    {
+      "title": "People Don't Recognize Your Brand",
+      "summary": "A weak or generic logo makes it harder for customers to remember your business or separate it from competitors."
+    },
+    {
+      "title": "Your Logo Doesn't Work Everywhere",
+      "summary": "Your logo may look fine in one place but becomes unclear on social media, mobile screens, print materials, or small icons."
+    }
+  ],
+  "approach": [
+    {
+      "title": "Understand Your Business",
+      "summary": "We learn about your company, audience, competitors, and the impression you want customers to have."
+    },
+    {
+      "title": "Design a Clear Logo Direction",
+      "summary": "We create logo concepts that reflect your business and choose a direction that feels professional, memorable, and practical."
+    },
+    {
+      "title": "Prepare It for Real Use",
+      "summary": "We deliver your logo in the right formats, sizes, and variations so your team can use it confidently everywhere."
+    }
+  ],
+  "impact": [
+    {
+      "title": "3×",
+      "summary": "Stronger First Impression"
+    },
+    {
+      "title": "85%",
+      "summary": "Better Brand Recall"
+    },
+    {
+      "title": "95%",
+      "summary": "Cross-Platform Usability"
+    }
+  ],
+  "deliverables": {
+    "summary": "You'll receive a complete logo package that gives your business a professional visual mark and all the files needed to use it correctly across every platform.",
+    "items": [
+      "Primary Logo Design",
+      "Secondary Logo Version",
+      "Icon / Symbol Mark",
+      "Horizontal & Vertical Logo Layouts",
+      "Color and Monochrome Versions",
+      "SVG, PNG, PDF, and AI Files",
+      "Social Media Profile Versions",
+      "Basic Logo Usage Guide",
+      "Full Ownership of All Source Files"
+    ]
+  },
+  "testimonial": "mr-mohamed",
+  "framework": "digital-identity",
+  "services": [],
+  "tools": [
+    "adobe-illustrator",
+    "adobe-photoshop",
+    "figma"
+  ],
+  "caseStudies": [
+    "budget-digital-marketing"
+  ],
+  "webflowId": "6a41074080fcbddbec7c334c"
+}

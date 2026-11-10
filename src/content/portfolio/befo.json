@@ -1,0 +1,91 @@
+{
+  "name": "BEFO",
+  "seo": {
+    "title": "BEFO Case Study | Admonk",
+    "description": "Bringing an AI SaaS Platform to Life Through Interactive Storytelling: how Admonk helped BEFO in United Kingdom. The challenge, our approach, and the results."
+  },
+  "title": "Bringing an AI SaaS Platform to Life Through Interactive Storytelling",
+  "summary": "BEFO AI is an innovative SaaS platform that leverages artificial intelligence to streamline ERP implementation planning, with a particular focus on Odoo deployments. The challenge was to communicate a complex technical product in a way that was both engaging and easy to understand. Admonk designed a modern digital experience featuring custom motion graphics, interactive animations, and product-focused storytelling that clearly demonstrates the platform's value while reinforcing its position as an AI-first technology company.",
+  "logo": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63f75ecf0ea79e011a68b9_BEFO.avif",
+  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3eb2462a27a0c5558c9146_Icon-Grey.svg",
+  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a558558daadc331c125adf3_BEFO.avif",
+  "websiteUrl": "https://befoai.com/",
+  "featured": false,
+  "yearsOption": "cad473d56584942bfa5621f9ff0468f5",
+  "industry": "technology-software",
+  "location": "united-kingdom",
+  "solutions": [
+    "website-design-development"
+  ],
+  "services": [
+    "webflow-development",
+    "ui-ux-design",
+    "content-management"
+  ],
+  "tools": [
+    "adobe-illustrator",
+    "adobe-photoshop",
+    "google-analytics",
+    "google-search-console",
+    "webflow",
+    "figma"
+  ],
+  "testimonial": "mohamed-ossto-4",
+  "challenge": {
+    "title": "BEFO AI needed to explain a complex AI-powered ERP planning platform in a simple and engaging way.",
+    "items": [
+      "The product concept was technical and needed clearer storytelling.",
+      "The website had to explain AI, ERP, and Odoo implementation visually.",
+      "Motion graphics were required to make the platform feel alive.",
+      "The layout needed to build trust for a new SaaS startup."
+    ]
+  },
+  "approach": [
+    {
+      "title": "Defined the Product Story",
+      "summary": "We transformed a complex AI platform into a clear digital experience that customers can easily understand."
+    },
+    {
+      "title": "Designed an Interactive Experience",
+      "summary": "Motion and animation were used to explain the platform while reinforcing the company's innovative identity."
+    },
+    {
+      "title": "Prepared for Product Growth",
+      "summary": "The website was built to support future features, content, and product expansion."
+    }
+  ],
+  "results": [
+    {
+      "label": "Website Performance",
+      "value": "95+",
+      "description": "Lighthouse performance score maintained with interactive visuals."
+    },
+    {
+      "label": "Traffic Growth",
+      "value": "5+",
+      "description": "Conversion-focused journey paths created for product exploration."
+    },
+    {
+      "label": "Business Impact",
+      "value": "3×",
+      "description": "Higher clarity in communicating the product value proposition."
+    },
+    {
+      "label": "Brand Transformation",
+      "value": "95%",
+      "description": "Product identity aligned with the expectations of an AI SaaS brand."
+    },
+    {
+      "label": "User Experience",
+      "value": "20+",
+      "description": "Custom motion and animation moments created to explain the platform."
+    },
+    {
+      "label": "Product / Service Showcase",
+      "value": "15+",
+      "description": "AI and ERP implementation features visualized through product storytelling."
+    }
+  ],
+  "gallery": [],
+  "webflowId": "6a3a84e1ea3ff252d7f566c1"
+}

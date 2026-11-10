@@ -1,0 +1,12 @@
+{
+  "name": "Supabase",
+  "seo": {
+    "title": "Supabase Services | Admonk",
+    "description": "We use Supabase as the database and backend for custom web apps, client portals, and automations that need secure, real-time data."
+  },
+  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a52e366551926b6611d2d2a_supabase.avif",
+  "summary": "Power modern applications with a scalable cloud database.",
+  "description": "We use Supabase as the database and backend for custom web apps, client portals, and automations that need secure, real-time data.",
+  "framework": "digital-automation",
+  "webflowId": "6a41677573ef42165dcd745d"
+}

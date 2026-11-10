@@ -1,0 +1,103 @@
+{
+  "name": "University of Hertfordshire",
+  "seo": {
+    "title": "University of Hertfordshire Case Study | Admonk",
+    "description": "Modernizing a University Website for Long-Term Growth: how Admonk helped University of Hertfordshire in Egypt. The challenge, our approach, and the results."
+  },
+  "title": "Modernizing a University Website for Long-Term Growth",
+  "summary": "As one of our longest-standing partnerships, the University of Hertfordshire entrusted Admonk with transforming an outdated website into a modern, scalable digital platform. Beyond redesigning the user experience, we implemented a flexible CMS, optimized website performance, and integrated the university's CRM to streamline lead management and simplify content administration for internal teams.",
+  "thumbnail": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdfa2c73956be8464977c_UHGAF.jpg",
+  "logo": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63fc6f314b22dcb6b860e4_UHGAF.avif",
+  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3dc5d43db98e2d88c08ece_Icon-Grey.avif",
+  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a503c3d442bafc43559cdac_GAF-Cover.avif",
+  "websiteUrl": "https://www.gaf.edu.eg/",
+  "featured": false,
+  "yearsOption": "d2f92d0868243fb3d239afc7e7ea7bcd",
+  "styleOption": "89b7740c042d1b038f52a7ec8e195e02",
+  "industry": "education",
+  "location": "egypt",
+  "solutions": [
+    "website-design-development",
+    "performance-marketing"
+  ],
+  "services": [
+    "cms-development",
+    "content-management",
+    "seo",
+    "ui-ux-design",
+    "webflow-development"
+  ],
+  "tools": [
+    "adobe-illustrator",
+    "adobe-photoshop",
+    "google-analytics",
+    "google-search-console",
+    "webflow",
+    "zapier",
+    "zoho",
+    "n8n",
+    "make",
+    "figma"
+  ],
+  "testimonial": "robert-benjamin",
+  "challenge": {
+    "title": "The University of Hertfordshire required a modern platform that would simplify website management while improving the digital experience for prospective students.",
+    "items": [
+      "The legacy website had become difficult to maintain and update.",
+      "Slow loading times were affecting usability and engagement.",
+      "Content management relied heavily on technical intervention.",
+      "Lead management required seamless integration with the university's CRM.",
+      "The platform needed to support continuous growth without increasing administrative complexity."
+    ]
+  },
+  "approach": [
+    {
+      "title": "Modernized the Digital Platform",
+      "summary": "We replaced an outdated website with a faster, easier-to-manage platform for the university team."
+    },
+    {
+      "title": "Simplified Content Management",
+      "summary": "We built a flexible CMS that allows staff to update content without technical support."
+    },
+    {
+      "title": "Connected Student Workflows",
+      "summary": "We integrated the website with the university's CRM to improve lead management."
+    }
+  ],
+  "results": [
+    {
+      "label": "SEO & Google Placement",
+      "value": "Top 5",
+      "description": "Google rankings for key academic programs"
+    },
+    {
+      "label": "Website Performance",
+      "value": "10s → 1.8s",
+      "description": "Page load time improvement"
+    },
+    {
+      "label": "Business Impact",
+      "value": "65%",
+      "description": "Reduction in website maintenance effort"
+    },
+    {
+      "label": "User Experience",
+      "value": "98%",
+      "description": "Content management usability score"
+    },
+    {
+      "label": "Automation & Integration",
+      "value": "100%",
+      "description": "CRM lead synchronization"
+    },
+    {
+      "label": "CMS & Content Management",
+      "value": "90%",
+      "description": "Faster content publishing workflow"
+    }
+  ],
+  "gallery": [
+    "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a4631fb91f91ae0b7b23ef0_Laptop-Mockup.avif"
+  ],
+  "webflowId": "6901629ddd64bb1495109ba3"
+}
