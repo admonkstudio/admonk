@@ -1,0 +1,39 @@
+---
+// Index of the tools and platforms we work with, grouped by framework.
+import Base from '../../layouts/Base.astro';
+import Media from '../../components/Media.astro';
+import { href, live, PAGE_SEO } from '../../lib/site';
+const [tools, frameworks] = await Promise.all([live('tools'), live('frameworks')]);
+const order = ['digital-identity', 'digital-experience', 'digital-automation'];
+const groups = [...frameworks].sort((a, b) => order.indexOf(a.id) - order.indexOf(b.id))
+  .map((f) => ({ f, items: tools.filter((t) => t.data.framework?.id === f.id) }))
+  .filter((g) => g.items.length);
+const other = tools.filter((t) => !frameworks.some((f) => f.id === t.data.framework?.id));
+if (other.length) groups.push({ f: { data: { name: 'Other tools' } } as any, items: other });
+const [title, description] = PAGE_SEO['/tools-platforms'];
+---
+<Base title={title} description={description}>
+  <section class="hero">
+    <div class="shell head">
+      <p class="eyebrow">Tools &amp; Platforms</p>
+      <h1 class="display">The tools behind the work</h1>
+      <p class="lead">{tools.length} tools and platforms we design, build and automate with, grouped by the part of the Framework they serve.</p>
+    </div>
+  </section>
+  {groups.map(({ f, items }) => (
+    <section class="top">
+      <div class="shell">
+        <div class="head"><h2>{f.data.name}</h2></div>
+        <div class="grid">
+          {items.map((t) => (
+            <a class="card" href={href(t)}>
+              {t.data.icon && <Media src={t.data.icon as any} alt="" class="icon" widths={[80]} sizes="2.5rem" />}
+              <h3>{t.data.name}</h3>
+              {t.data.summary && <p>{t.data.summary}</p>}
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  ))}
+</Base>

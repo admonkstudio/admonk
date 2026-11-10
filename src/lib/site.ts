@@ -18,6 +18,7 @@ export const NAV = [
   ['Studio', '/studio'],
   ['Framework', '/the-framework'],
   ['Portfolio', '/portfolio'],
+  ['Tools', '/tools-platforms'],
   ['Blog', '/blog'],
   ['Contact', '/contact-us'],
 ] as const;
@@ -28,6 +29,7 @@ export const PAGE_SEO = {
   '/the-framework': ['The Framework: Identity, Experience, Automation | Admonk', 'How Admonk connects your brand, website and business automation into one system, so every digital investment moves the business toward its goals.'],
   '/studio': ['About the Studio | Admonk', 'Meet Admonk, a digital studio that combines strategy, design and technology to build brands, websites and automations for ambitious businesses.'],
   '/portfolio': ['Portfolio: Websites, Brands & Automation Projects | Admonk', '26 projects across education, healthcare, hospitality and technology in Egypt, the Gulf, the UK and North America. See the Framework in action.'],
+  '/tools-platforms': ['Tools & Platforms We Work With | Admonk', 'The design, web, marketing and automation tools Admonk works with, from Figma and Webflow to n8n, Supabase and Claude, grouped by the Framework.'],
   '/blog': ['Insights on Branding, Web Design & Automation | Admonk', 'Practical thinking on brand identity, website design, SEO and AI automation from the Admonk team.'],
   '/start': ['Start a Project | Admonk', "Tell us about your business and goals. We'll recommend the parts of the Framework that will make the biggest difference, nothing you don't need."],
   '/contact-us': ['Contact Admonk', 'Get in touch with Admonk about branding, website design and development, or AI and marketing automation.'],
