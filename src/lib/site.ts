@@ -1,10 +1,11 @@
+import { getImage } from 'astro:assets';
 import { getCollection, getEntries, getEntry, type CollectionEntry } from 'astro:content';
 
 export const SITE = {
   name: 'Admonk',
   email: 'info@admonk.net',
   phone: '+20 100 306 6621',
-  logo: 'https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a445cad852e3addbfe32923_Logo%203.png',
+  logo: '/logo.png',
   socials: [
     ['Facebook', 'https://www.facebook.com/admonkstudio'],
     ['Instagram', 'https://www.instagram.com/admonkstudio'],
@@ -63,3 +64,11 @@ export const urlOf = {
   blog: (id: string) => `/blog/${id}`,
 } as Record<string, (id: string) => string>;
 export const href = (e: { collection: string; id: string }) => urlOf[e.collection]?.(e.id) ?? '/';
+
+/** An absolute URL for social previews, from a local image or a remote one. */
+export async function shareImage(src: unknown, site: URL | undefined): Promise<string | undefined> {
+  if (!src) return undefined;
+  if (typeof src === 'string') return src;
+  const img = await getImage({ src: src as never, width: 1200, format: 'jpeg' });
+  return new URL(img.src, site).toString();
+}

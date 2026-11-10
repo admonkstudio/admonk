@@ -11,7 +11,7 @@ const shown = projects.length >= 6 ? projects : all.slice(0, 9);
 const [title, description] = PAGE_SEO['/'];
 ---
 <Base title={title} description={description}
-  jsonLd={{ '@context': 'https://schema.org', '@type': 'Organization', name: 'Admonk', url: 'https://admonk.net', logo: SITE.logo, email: SITE.email, sameAs: SITE.socials.map(([, u]) => u) }}>
+  jsonLd={{ '@context': 'https://schema.org', '@type': 'Organization', name: 'Admonk', url: 'https://admonk.net', logo: new URL(SITE.logo, Astro.site).toString(), email: SITE.email, sameAs: SITE.socials.map(([, u]) => u) }}>
   <section class="hero">
     <div class="shell">
       <h1 class="display">One Framework<br />Better Digital Experience</h1>

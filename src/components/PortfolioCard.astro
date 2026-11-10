@@ -1,5 +1,6 @@
 ---
 import { getEntry, type CollectionEntry } from 'astro:content';
+import Media from './Media.astro';
 interface Props { item: CollectionEntry<'portfolio'> }
 const { item } = Astro.props;
 const d = item.data;
@@ -8,7 +9,7 @@ const industry = d.industry ? await getEntry(d.industry) : undefined;
 const image = d.thumbnail ?? d.cover;
 ---
 <a class="card" href={`/portfolio/${item.id}`}>
-  {image && <img class="cover" src={image} alt="" loading="lazy" />}
+  {image && <Media class="cover" src={image} alt="" widths={[400, 640, 960]} sizes="(min-width: 60rem) 26rem, 100vw" />}
   <p class="eyebrow" style="margin:0">{[location?.data.name, industry?.data.name].filter(Boolean).join(' · ')}</p>
   <h3>{d.name}</h3>
   {d.title && <p>{d.title}</p>}

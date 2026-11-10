@@ -1,4 +1,4 @@
-import { defineCollection, reference } from 'astro:content';
+import { defineCollection, reference, type SchemaContext } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 
@@ -7,6 +7,10 @@ import { z } from 'astro/zod';
  * The first copy came from the Webflow CMS (scripts/import-webflow.mjs). From now on these files are
  * the source of truth, edited in the admin editor or by hand.
  */
+/** An image: a local file next to the content (resized and converted at build) or, until copied, a CDN URL. */
+type ImageFn = SchemaContext['image'];
+const media = (image: ImageFn) => z.union([z.url(), image()]);
+
 const json = (dir: string) => glob({ pattern: '*.json', base: `./src/content/${dir}` });
 const text = z.string().min(1);
 const seo = z.object({ title: text, description: text });
@@ -19,10 +23,10 @@ const common = {
 };
 
 // Frameworks, solutions and services share one page layout.
-const page = {
+const page = (image: ImageFn) => ({
   ...common,
-  icon: z.url().optional(),
-  cover: z.url().optional(),
+  icon: media(image).optional(),
+  cover: media(image).optional(),
   color: z.string().optional(),
   hero: z.object({ title: text.optional(), description: text.optional() }),
   solutionDescription: text.optional(),
@@ -31,12 +35,12 @@ const page = {
   impact: z.array(pair).default([]),
   deliverables: z.object({ summary: text.optional(), items: z.array(text).default([]) }),
   testimonial: reference('testimonials').nullable().optional(),
-};
+});
 
 const frameworks = defineCollection({
   loader: json('frameworks'),
-  schema: z.object({
-    ...page,
+  schema: ({ image }) => z.object({
+    ...page(image),
     whatWeDeliver: z.array(pair).default([]),
     solutions: z.array(reference('solutions')).default([]),
     tools: z.array(reference('tools')).default([]),
@@ -46,8 +50,8 @@ const frameworks = defineCollection({
 
 const solutions = defineCollection({
   loader: json('solutions'),
-  schema: z.object({
-    ...page,
+  schema: ({ image }) => z.object({
+    ...page(image),
     framework: reference('frameworks').nullable().optional(),
     services: z.array(reference('services')).default([]),
     tools: z.array(reference('tools')).default([]),
@@ -57,8 +61,8 @@ const solutions = defineCollection({
 
 const services = defineCollection({
   loader: json('services'),
-  schema: z.object({
-    ...page,
+  schema: ({ image }) => z.object({
+    ...page(image),
     framework: reference('frameworks').nullable().optional(),
     solution: reference('solutions').nullable().optional(),
     related: z.array(reference('services')).default([]),
@@ -69,9 +73,9 @@ const services = defineCollection({
 
 const tools = defineCollection({
   loader: json('tools'),
-  schema: z.object({
+  schema: ({ image }) => z.object({
     ...common,
-    icon: z.url().optional(),
+    icon: media(image).optional(),
     summary: text.optional(),
     description: text.optional(),
     framework: reference('frameworks').nullable().optional(),
@@ -80,14 +84,14 @@ const tools = defineCollection({
 
 const portfolio = defineCollection({
   loader: json('portfolio'),
-  schema: z.object({
+  schema: ({ image }) => z.object({
     ...common,
     title: text.optional(),
     summary: text.optional(),
-    thumbnail: z.url().optional(),
-    logo: z.url().optional(),
-    icon: z.url().optional(),
-    cover: z.url().optional(),
+    thumbnail: media(image).optional(),
+    logo: media(image).optional(),
+    icon: media(image).optional(),
+    cover: media(image).optional(),
     websiteUrl: z.url().optional(),
     featured: z.boolean().default(false),
     // Webflow option ids, still to be mapped to their labels.
@@ -102,16 +106,16 @@ const portfolio = defineCollection({
     challenge: z.object({ title: text.optional(), items: z.array(text).default([]) }),
     approach: z.array(pair).default([]),
     results: z.array(z.object({ label: text, value: text.optional(), description: text.optional() })).default([]),
-    gallery: z.array(z.url()).default([]),
+    gallery: z.array(media(image)).default([]),
   }),
 });
 
 const testimonials = defineCollection({
   loader: json('testimonials'),
-  schema: z.object({
+  schema: ({ image }) => z.object({
     name: text,
     role: text.optional(),
-    logo: z.url().optional(),
+    logo: media(image).optional(),
     quote: text.optional(),
     caseStudy: reference('portfolio').nullable().optional(),
     webflowId: z.string().optional(),
@@ -120,12 +124,12 @@ const testimonials = defineCollection({
 
 const locations = defineCollection({
   loader: json('locations'),
-  schema: z.object({ name: text, country: text.optional(), flag: z.url().optional(), webflowId: z.string().optional() }),
+  schema: ({ image }) => z.object({ name: text, country: text.optional(), flag: media(image).optional(), webflowId: z.string().optional() }),
 });
 
 const industries = defineCollection({
   loader: json('industries'),
-  schema: z.object({ name: text, icon: z.url().optional(), webflowId: z.string().optional() }),
+  schema: ({ image }) => z.object({ name: text, icon: media(image).optional(), webflowId: z.string().optional() }),
 });
 
 /** Blog posts: one Markdown file per post in src/content/blog/<slug>.md. */
