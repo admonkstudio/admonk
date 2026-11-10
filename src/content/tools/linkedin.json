@@ -4,7 +4,7 @@
     "title": "LinkedIn Services | Admonk",
     "description": "We run LinkedIn campaigns that reach decision-makers by job title, company, and industry, built for B2B lead generation."
   },
-  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a52e16283065aa9c6be5032_linkedin.avif",
+  "icon": "../../assets/cms/linkedin.avif",
   "summary": "Reach business audiences, decision-makers, and professional communities.",
   "description": "We run LinkedIn campaigns that reach decision-makers by job title, company, and industry, built for B2B lead generation.",
   "framework": "digital-experience",

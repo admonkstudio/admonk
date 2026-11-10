@@ -4,7 +4,7 @@
     "title": "Notion Services | Admonk",
     "description": "We organize project plans, documentation, and company knowledge in Notion, and connect it to AI assistants so your team can find answers quickly."
   },
-  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a786746282075cf34cd7269_white-notion-logo-1hgF386075.avif",
+  "icon": "../../assets/cms/white-notion-logo-1hgf386075.avif",
   "summary": "Organize documents, knowledge, and team collaboration.",
   "description": "We organize project plans, documentation, and company knowledge in Notion, and connect it to AI assistants so your team can find answers quickly.",
   "framework": "digital-automation",

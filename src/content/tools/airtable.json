@@ -4,7 +4,7 @@
     "title": "Airtable Services | Admonk",
     "description": "We build Airtable bases as lightweight databases for operations, content, and CRM, and connect them to your website and automations."
   },
-  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a52e329347fb3edada0df14_Airtable.avif",
+  "icon": "../../assets/cms/airtable.avif",
   "summary": "Manage projects and databases with an easy visual interface.",
   "description": "We build Airtable bases as lightweight databases for operations, content, and CRM, and connect them to your website and automations.",
   "framework": "digital-automation",

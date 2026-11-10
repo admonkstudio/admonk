@@ -4,7 +4,7 @@
     "title": "Google Search Console Services | Admonk",
     "description": "We use Google Search Console to monitor indexing, rankings, and technical SEO issues, and to track how your pages perform in search."
   },
-  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a406aa183a077335a339c0f_Search%20Console.webp",
+  "icon": "../../assets/cms/search-console.webp",
   "summary": "Monitor Google visibility, indexing, keywords, and technical SEO issues.",
   "description": "We use Google Search Console to monitor indexing, rankings, and technical SEO issues, and to track how your pages perform in search.",
   "framework": "digital-experience",

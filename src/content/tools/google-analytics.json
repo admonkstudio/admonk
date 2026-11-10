@@ -4,7 +4,7 @@
     "title": "Google Analytics Services | Admonk",
     "description": "We set up Google Analytics 4 with conversion tracking, so you can see where visitors come from, what they do, and which channels bring enquiries."
   },
-  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a406a58205095e38e85b715_Analytics.webp",
+  "icon": "../../assets/cms/analytics.webp",
   "summary": "Track website visitors, behavior, conversions, and marketing performance.",
   "description": "We set up Google Analytics 4 with conversion tracking, so you can see where visitors come from, what they do, and which channels bring enquiries.",
   "framework": "digital-experience",

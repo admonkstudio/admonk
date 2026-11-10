@@ -4,7 +4,7 @@
     "title": "Figma Services | Admonk",
     "description": "We design websites, interfaces, prototypes, and brand systems in Figma, so you can review and comment on every screen before development starts."
   },
-  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a52e2ec12677a371dc74992_figma.avif",
+  "icon": "../../assets/cms/figma.avif",
   "summary": "Design websites, interfaces, prototypes, and collaborative brand systems.",
   "description": "We design websites, interfaces, prototypes, and brand systems in Figma, so you can review and comment on every screen before development starts.",
   "framework": "digital-experience",

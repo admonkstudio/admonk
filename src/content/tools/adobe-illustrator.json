@@ -4,7 +4,7 @@
     "title": "Adobe Illustrator Services | Admonk",
     "description": "We design logos, icons, and vector brand assets in Illustrator, delivered in every format your team needs."
   },
-  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a406a69e922541887ece8e5_AI.webp",
+  "icon": "../../assets/cms/ai.webp",
   "summary": "Create professional logos, icons, and vector brand assets.",
   "description": "We design logos, icons, and vector brand assets in Illustrator, delivered in every format your team needs.",
   "framework": "digital-identity",

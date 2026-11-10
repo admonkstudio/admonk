@@ -4,7 +4,7 @@
     "title": "Adobe After Effects Services | Admonk",
     "description": "We create motion graphics, animated logos, and visual effects in After Effects for websites, social media, and presentations."
   },
-  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a52e1dc3e32430f2259323a_Adobe_After_Effects_CC_icon.svg.avif",
+  "icon": "../../assets/cms/adobe_after_effects_cc_icon.svg.avif",
   "summary": "Create advanced motion graphics, animations, and visual effects.",
   "description": "We create motion graphics, animated logos, and visual effects in After Effects for websites, social media, and presentations.",
   "framework": "digital-identity",

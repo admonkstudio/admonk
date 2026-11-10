@@ -4,7 +4,7 @@
     "title": "SleekFlow Services | Admonk",
     "description": "We set up SleekFlow so your team can manage WhatsApp, Instagram, and web chat conversations in one shared inbox, with automated replies and routing."
   },
-  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7868ee282075cf34cdb237_unnamed.avif",
+  "icon": "../../assets/cms/unnamed.avif",
   "summary": "Manage WhatsApp and messaging conversations in one inbox.",
   "description": "We set up SleekFlow so your team can manage WhatsApp, Instagram, and web chat conversations in one shared inbox, with automated replies and routing.",
   "framework": "digital-automation",

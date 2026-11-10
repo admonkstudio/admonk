@@ -4,7 +4,7 @@
     "title": "n8n Services | Admonk",
     "description": "We build custom n8n workflows and AI automations that connect your website, CRM, and internal systems, self-hosted when data control matters."
   },
-  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a406801052d50c1a9153e7a_5968872.avif",
+  "icon": "../../assets/cms/5968872.avif",
   "summary": "Build custom automations between your website, apps, and business systems.",
   "description": "We build custom n8n workflows and AI automations that connect your website, CRM, and internal systems, self-hosted when data control matters.",
   "framework": "digital-automation",

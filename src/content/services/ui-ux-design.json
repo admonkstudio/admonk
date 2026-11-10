@@ -4,8 +4,8 @@
     "title": "UI/UX Design Services | Admonk",
     "description": "UX research, information architecture, and interface design that help visitors find what they need and take action."
   },
-  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3f70a080ddf745a7374179_dashboard.avif",
-  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a405d54052d50c1a91465a4_Digital-Automation.avif",
+  "icon": "../../assets/cms/dashboard.avif",
+  "cover": "../../assets/cms/digital-automation.avif",
   "hero": {
     "title": "Make Every Visit Simple, Clear, and Easy to Navigate",
     "description": "A well-designed website helps visitors find what they need, understand your business, and take action without confusion. Good design removes obstacles and creates a smoother customer experience."

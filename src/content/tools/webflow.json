@@ -4,7 +4,7 @@
     "title": "Webflow Services | Admonk",
     "description": "We design and build websites in Webflow, giving your team a fast, secure site and a visual CMS they can update without developers."
   },
-  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a40686580ddf745a75b5b28_Webflow.webp",
+  "icon": "../../assets/cms/webflow.webp",
   "summary": "Build fast, custom websites your team can manage without developers.",
   "description": "We design and build websites in Webflow, giving your team a fast, secure site and a visual CMS they can update without developers.",
   "framework": "digital-experience",

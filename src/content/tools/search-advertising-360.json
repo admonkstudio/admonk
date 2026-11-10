@@ -4,7 +4,7 @@
     "title": "Search Advertising 360 Services | Admonk",
     "description": "We use Search Ads 360 to manage large search campaigns across engines from one place, with bidding and reporting tied to real conversions."
   },
-  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a78689049dff57cea883342_google-search-ads-360-logo-icon-hd.webp",
+  "icon": "../../assets/cms/google-search-ads-360-logo-icon-hd.webp",
   "summary": "Manage search advertising across multiple platforms.",
   "description": "We use Search Ads 360 to manage large search campaigns across engines from one place, with bidding and reporting tied to real conversions.",
   "framework": "digital-experience",

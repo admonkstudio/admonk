@@ -1,7 +1,7 @@
 {
   "name": "Hisham",
   "role": "Marketing Manager",
-  "logo": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3e9e983e51512cbad7b39f_Icon-Grey.svg",
+  "logo": "../../assets/cms/6a3e9e98-icon-grey.svg",
   "quote": "Admonk successfully modernized our digital presence while making day-to-day website management dramatically simpler. The platform is faster, easier to maintain, and provides the flexibility our business needs as we continue to grow.",
   "caseStudy": "vericash",
   "webflowId": "6a3e97dd3e6f6928afc72fa4"

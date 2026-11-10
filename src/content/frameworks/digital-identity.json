@@ -4,8 +4,8 @@
     "title": "Digital Identity: Branding & Brand Strategy | Admonk",
     "description": "Brand strategy, logo design, and brand guidelines that make your business look as strong as the service you provide."
   },
-  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a810b4521e7807773827612_b12359f6841cf44c9fcf28ebc843ea8d.jpg",
-  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a4106e74082e5b1527626dd_6a405d54052d50c1a91465a4_Digital-Automation.avif",
+  "icon": "../../assets/cms/b12359f6841cf44c9fcf28ebc843ea8d.jpg",
+  "cover": "../../assets/cms/6a405d54052d50c1a91465a4_digital-automation.avif",
   "hero": {
     "title": "Your business has changed. Has your brand kept up?",
     "description": "Shape how your business looks, feels, and communicates online."

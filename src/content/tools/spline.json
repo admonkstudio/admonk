@@ -4,7 +4,7 @@
     "title": "Spline Services | Admonk",
     "description": "We create interactive 3D scenes and product visuals in Spline and embed them on websites to explain products and hold attention."
   },
-  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a52e21884c18aea72772263_logo-spline.avif",
+  "icon": "../../assets/cms/logo-spline.avif",
   "summary": "Create interactive 3D visuals and web-ready product experiences.",
   "description": "We create interactive 3D scenes and product visuals in Spline and embed them on websites to explain products and hold attention.",
   "framework": "digital-experience",

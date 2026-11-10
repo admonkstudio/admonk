@@ -4,8 +4,8 @@
     "title": "Marketing Automation: Email, WhatsApp & SMS | Admonk",
     "description": "Automated email, WhatsApp, and SMS journeys that follow up every enquiry instantly and keep customers engaged."
   },
-  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a410744df734d6e6493a1d5_6a3f723c1d1f9c2bf421713a_mail.avif",
-  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a4106e74082e5b1527626dd_6a405d54052d50c1a91465a4_Digital-Automation.avif",
+  "icon": "../../assets/cms/6a3f723c1d1f9c2bf421713a_mail.avif",
+  "cover": "../../assets/cms/6a405d54052d50c1a91465a4_digital-automation.avif",
   "hero": {
     "title": "Turn Every Enquiry into an Ongoing Customer Conversation",
     "description": "Stay connected with customers automatically through personalized emails, WhatsApp messages, SMS, and other communication channels."

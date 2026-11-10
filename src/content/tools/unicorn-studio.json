@@ -4,7 +4,7 @@
     "title": "Unicorn Studio Services | Admonk",
     "description": "We use Unicorn Studio to add lightweight WebGL visuals and animated backgrounds that give a website a distinctive first impression."
   },
-  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a52e2d78f09f8fc7f9b60d1_us_logo_full.avif",
+  "icon": "../../assets/cms/us_logo_full.avif",
   "summary": "Create interactive WebGL visuals and animated website backgrounds.",
   "description": "We use Unicorn Studio to add lightweight WebGL visuals and animated backgrounds that give a website a distinctive first impression.",
   "framework": "digital-experience",

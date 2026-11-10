@@ -6,10 +6,10 @@
   },
   "title": "Reimagining the Luxury Digital Experience",
   "summary": "ParaGuru is a premium language services provider serving high-end clients with professional interpretation and multilingual communication solutions. Admonk partnered with ParaGuru to modernize its brand identity, redesign its website to reflect the premium nature of its services, and automate internal workflows that improve operational efficiency and customer experience.",
-  "thumbnail": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdf8ee845ffc70aa3b858_Paraguru.jpg",
-  "logo": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63fba658c49b1795fa30dd_Paraguru.avif",
-  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3dd1ae470314ed0e6d7ff3_Icon-Grey.svg",
-  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3d4c0236f6ae9a3a6a0770_Paraguru-01.avif",
+  "thumbnail": "../../assets/cms/paraguru.jpg",
+  "logo": "../../assets/cms/paraguru.avif",
+  "icon": "../../assets/cms/icon-grey.svg",
+  "cover": "../../assets/cms/paraguru-01.avif",
   "websiteUrl": "https://www.paraguru.net/",
   "featured": false,
   "yearsOption": "4b253f66b128156b0a6e049bbdd8ea31",
@@ -100,16 +100,16 @@
     }
   ],
   "gallery": [
-    "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3d5276567e942ab045ca51_Screenshot%202026-06-25%20185956.avif",
-    "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3d527095e55ea3fb9c6e30_Screenshot%202026-06-25%20185944.avif",
-    "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3d4c0236f6ae9a3a6a0770_Paraguru-01.avif",
-    "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3d517d07347d828d5f659b_Paraguru-2.avif",
-    "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3d4c148fe8a1f9749f5ec2_Paraguru-5.avif",
-    "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3d4e50412b9b2416187bd4_Paraguru-4.avif",
-    "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3d4c09460da95779eebbd4_Paraguru-3.avif",
-    "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3d527336009e40f16387fa_Screenshot%202026-06-25%20185923.avif",
-    "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3d527815cce56d3129f67d_Screenshot%202026-06-25%20185733.avif",
-    "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3d526a9a248a410d406868_Screenshot%202026-06-25%20185814.avif"
+    "../../assets/cms/screenshot-2026-06-25-185956.avif",
+    "../../assets/cms/screenshot-2026-06-25-185944.avif",
+    "../../assets/cms/paraguru-01.avif",
+    "../../assets/cms/paraguru-2.avif",
+    "../../assets/cms/paraguru-5.avif",
+    "../../assets/cms/paraguru-4.avif",
+    "../../assets/cms/paraguru-3.avif",
+    "../../assets/cms/screenshot-2026-06-25-185923.avif",
+    "../../assets/cms/screenshot-2026-06-25-185733.avif",
+    "../../assets/cms/screenshot-2026-06-25-185814.avif"
   ],
   "webflowId": "690162d4a6bfc903571c46f7"
 }

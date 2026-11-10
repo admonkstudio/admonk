@@ -6,10 +6,10 @@
   },
   "title": "Building the Digital Foundation for a Global Language & BPO Provider",
   "summary": "Kalam CX is a global language solutions and business process outsourcing company serving clients across 55+ countries in more than 200 languages.",
-  "thumbnail": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdfb397b2cebe0ce1d29c_Kalam.jpg",
-  "logo": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63f9673bda24067152308e_Kalam.avif",
-  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3dd2e94b010bbc72c1bacc_Icon-Grey.avif",
-  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a5039f0c9c98b27704047c5_Kalam-Cover.avif",
+  "thumbnail": "../../assets/cms/kalam.jpg",
+  "logo": "../../assets/cms/kalam.avif",
+  "icon": "../../assets/cms/6a3dd2e9-icon-grey.avif",
+  "cover": "../../assets/cms/kalam-cover.avif",
   "websiteUrl": "https://www.kalam.cx/",
   "featured": false,
   "yearsOption": "4b253f66b128156b0a6e049bbdd8ea31",
@@ -115,13 +115,13 @@
     }
   ],
   "gallery": [
-    "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a41c735d7b838a82b238113_Color-Pallete.avif",
-    "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a41c8bb2fd924f3c5135bfb_Screenshot%202026-06-29%20042154.avif",
-    "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a34285fed5513bcbae28da2_6849a226-b361-4389-9f47-bed25831886f.avif",
-    "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a41c5e2c758e10a5ccd5a1d_Screenshot%202026-06-29%20040937.avif",
-    "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a34286976bca2506a1c1c03_588e6f37-6e5e-4cce-9e5b-6b05f4ef23b6.avif",
-    "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a34286392860a04ed8116f5_5878e867-02a1-47ea-b3e3-358f6868d2b9.avif",
-    "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a34285fed5513bcbae28da2_6849a226-b361-4389-9f47-bed25831886f.avif"
+    "../../assets/cms/color-pallete.avif",
+    "../../assets/cms/screenshot-2026-06-29-042154.avif",
+    "../../assets/cms/6849a226-b361-4389-9f47-bed25831886f.avif",
+    "../../assets/cms/screenshot-2026-06-29-040937.avif",
+    "../../assets/cms/588e6f37-6e5e-4cce-9e5b-6b05f4ef23b6.avif",
+    "../../assets/cms/5878e867-02a1-47ea-b3e3-358f6868d2b9.avif",
+    "../../assets/cms/6849a226-b361-4389-9f47-bed25831886f.avif"
   ],
   "webflowId": "6901625beee06f4baa3fb4a8"
 }

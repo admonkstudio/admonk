@@ -4,7 +4,7 @@
     "title": "Brevo Services | Admonk",
     "description": "We use Brevo to automate email and SMS follow-ups, welcome sequences, and newsletters, connected to your website forms and CRM."
   },
-  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a52e51934afa63ae2192f5d_Brevo.avif",
+  "icon": "../../assets/cms/brevo.avif",
   "summary": "Automate email marketing and customer communication.",
   "description": "We use Brevo to automate email and SMS follow-ups, welcome sequences, and newsletters, connected to your website forms and CRM.",
   "framework": "digital-automation",

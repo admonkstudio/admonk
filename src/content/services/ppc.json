@@ -4,8 +4,8 @@
     "title": "PPC & Google Ads Management | Admonk",
     "description": "Google Ads campaigns that put your business at the top of search results when customers are ready to buy."
   },
-  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3f7206c81044b0c36542e6_tap.avif",
-  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a405d54052d50c1a91465a4_Digital-Automation.avif",
+  "icon": "../../assets/cms/tap.avif",
+  "cover": "../../assets/cms/digital-automation.avif",
   "hero": {
     "title": "Be the Business Customers Find When They're Ready to Buy",
     "description": "PPC helps your business appear at the top of search results when potential customers are actively looking for your products or services, generating high-quality enquiries with measurable results."

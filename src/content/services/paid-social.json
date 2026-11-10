@@ -4,8 +4,8 @@
     "title": "Paid Social Ads: Meta, LinkedIn & TikTok | Admonk",
     "description": "Targeted Facebook, Instagram, LinkedIn, and TikTok campaigns built to turn the right audience into qualified enquiries."
   },
-  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3f72264e595ac3b01cedc7_marketing.avif",
-  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a405d54052d50c1a91465a4_Digital-Automation.avif",
+  "icon": "../../assets/cms/marketing.avif",
+  "cover": "../../assets/cms/digital-automation.avif",
   "hero": {
     "title": "Reach the Right Audience Before They Find Your Competitors",
     "description": "Paid Social helps your business reach highly targeted audiences through platforms like Facebook, Instagram, LinkedIn, and TikTok, turning awareness into enquiries and business opportunities."

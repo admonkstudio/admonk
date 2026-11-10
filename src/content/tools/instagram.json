@@ -4,7 +4,7 @@
     "title": "Instagram Services | Admonk",
     "description": "We plan Instagram content and paid campaigns that build awareness, showcase your work, and turn followers into enquiries."
   },
-  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a52e168cbeb7e4ee67a1777_instagram.avif",
+  "icon": "../../assets/cms/instagram.avif",
   "summary": "Showcase products, build awareness, and run visual marketing campaigns.",
   "description": "We plan Instagram content and paid campaigns that build awareness, showcase your work, and turn followers into enquiries.",
   "framework": "digital-experience",

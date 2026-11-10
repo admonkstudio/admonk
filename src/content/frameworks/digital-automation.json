@@ -4,8 +4,8 @@
     "title": "Digital Automation: AI & Workflow Automation | Admonk",
     "description": "Connect your website, CRM, and tools, and let automation and AI handle the repetitive work so your team can focus on customers."
   },
-  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a810b312ee872b406d891bd_2b28dd255c0432a62ff764280c6533e0.jpg",
-  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a429e4c147ca206405882e4_Digital%20Automation.avif",
+  "icon": "../../assets/cms/2b28dd255c0432a62ff764280c6533e0.jpg",
+  "cover": "../../assets/cms/6a429e4c-digital-automation.avif",
   "hero": {
     "title": "Stop wasting time on work your business should do automatically",
     "description": "Allow your business to run faster, smarter, and with less manual work."

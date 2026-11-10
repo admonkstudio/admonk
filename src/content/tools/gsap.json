@@ -4,7 +4,7 @@
     "title": "GSAP Services | Admonk",
     "description": "We use GSAP to build smooth scroll animations and interactive motion that guide visitors through your story without slowing the site down."
   },
-  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7867a96ed37e5291937797_gsap-dark.avif",
+  "icon": "../../assets/cms/gsap-dark.avif",
   "summary": "Build smooth website animations, scroll effects, and interactive motion.",
   "description": "We use GSAP to build smooth scroll animations and interactive motion that guide visitors through your story without slowing the site down.",
   "framework": "digital-experience",

@@ -4,8 +4,8 @@
     "title": "Brand Identity & Strategy | Admonk",
     "description": "Positioning, messaging, and visual identity brought together into one clear brand that customers recognize and trust."
   },
-  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a410741052e7760e0fb9688_6a3f7157fcff911905d7d594_view.avif",
-  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a4106e74082e5b1527626dd_6a405d54052d50c1a91465a4_Digital-Automation.avif",
+  "icon": "../../assets/cms/6a3f7157fcff911905d7d594_view.avif",
+  "cover": "../../assets/cms/6a405d54052d50c1a91465a4_digital-automation.avif",
   "hero": {
     "title": "Build a Brand That Customers Trust from the First Impression",
     "description": "Your brand is often the first thing people notice about your business. A clear brand identity helps you stand out, build trust, and make every customer interaction more memorable."

@@ -4,8 +4,8 @@
     "title": "Professional Logo Design | Admonk",
     "description": "A logo that represents your business clearly and works everywhere, delivered with every format, layout, and usage guide you need."
   },
-  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a41074080fcbddbec7c3345_6a3f703c365b78bfbfe3bdf3_pen-tool.avif",
-  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a4106e74082e5b1527626dd_6a405d54052d50c1a91465a4_Digital-Automation.avif",
+  "icon": "../../assets/cms/6a3f703c365b78bfbfe3bdf3_pen-tool.avif",
+  "cover": "../../assets/cms/6a405d54052d50c1a91465a4_digital-automation.avif",
   "hero": {
     "title": "Create a Logo People Can Recognize and Remember",
     "description": "Your logo is the face of your business. A clear, professional logo helps customers recognize your brand faster and trust your business from the first look."
