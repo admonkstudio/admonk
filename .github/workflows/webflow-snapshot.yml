@@ -1,0 +1,40 @@
+name: Webflow snapshot
+# Mirrors the published Webflow site (pages, CSS, JS, fonts, images) into _webflow-snapshot/
+# so the design can be ported. Temporary: remove the folder and this workflow once the port is done.
+on:
+  workflow_dispatch:
+  push:
+    branches-ignore: [main]
+    paths: [.github/workflows/webflow-snapshot.yml]
+
+permissions:
+  contents: write
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Mirror the site
+        run: |
+          rm -rf _webflow-snapshot && mkdir _webflow-snapshot && cd _webflow-snapshot
+          wget --mirror --page-requisites --adjust-extension --no-parent \
+            --span-hosts --domains=admonkstudio.webflow.io,cdn.prod.website-files.com,d3e54v103j8qbb.cloudfront.net,cdn.jsdelivr.net,cdnjs.cloudflare.com \
+            --reject-regex '(-p-[0-9]+|\?)' --level=4 --wait=0.2 --tries=3 -e robots=off \
+            https://admonkstudio.webflow.io/ || true
+          # Pages Webflow only links from CMS lists may be missed; fetch the fixed pages explicitly too.
+          for p in the-framework studio portfolio blog contact-us start 404 401; do
+            wget -q --page-requisites --adjust-extension --span-hosts \
+              --domains=admonkstudio.webflow.io,cdn.prod.website-files.com -e robots=off \
+              "https://admonkstudio.webflow.io/$p" || true
+          done
+          find . -type f | sed 's|^\./||' | sort > MANIFEST.txt
+          du -sh . ; wc -l MANIFEST.txt
+      - name: Commit snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git add _webflow-snapshot
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: snapshot of the published Webflow site"
+          git push
