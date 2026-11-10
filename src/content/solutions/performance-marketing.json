@@ -1,0 +1,93 @@
+{
+  "name": "Performance Marketing",
+  "seo": {
+    "title": "Performance Marketing: SEO & Paid Ads | Admonk",
+    "description": "SEO, Google Ads, and paid social campaigns planned around qualified leads, with tracking that shows what your budget returns."
+  },
+  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a41074517328cd6f35476bd_6a3f71bdb1dcdd9ac73d16e1_chart.avif",
+  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a4106e74082e5b1527626dd_6a405d54052d50c1a91465a4_Digital-Automation.avif",
+  "hero": {
+    "title": "Help the Right Customers Find Your Business",
+    "description": "Attract qualified visitors through search engines, paid advertising, and data-driven campaigns that generate measurable results."
+  },
+  "solutionDescription": "Performance Marketing is about putting your business in front of the right audience at the right time. We combine search engine optimization, paid advertising, social media campaigns, and conversion tracking to increase visibility, generate qualified traffic, and support long-term business growth. Every campaign is planned around measurable performance, allowing you to understand what's working, where your leads come from, and how your marketing investment contributes to your business.",
+  "challenges": [
+    {
+      "title": "Your Business Is Difficult to Find Online",
+      "summary": "Even with a great website and excellent services, potential customers can't choose your business if they never discover it."
+    },
+    {
+      "title": "You're Spending Money Without Clear Results",
+      "summary": "Many businesses invest in advertising without understanding which campaigns generate leads and which simply consume budget."
+    },
+    {
+      "title": "Website Visitors Don't Become Customers",
+      "summary": "Traffic alone isn't enough. Without the right targeting, messaging, and optimization, visitors leave without taking action."
+    }
+  ],
+  "approach": [
+    {
+      "title": "Understand Your Audience",
+      "summary": "We identify who your ideal customers are, how they search, and which channels are most likely to generate quality enquiries."
+    },
+    {
+      "title": "Build Data-Driven Campaigns",
+      "summary": "We create SEO strategies and advertising campaigns focused on attracting qualified visitors instead of simply increasing traffic."
+    },
+    {
+      "title": "Measure & Optimize",
+      "summary": "Every campaign is monitored, analyzed, and continuously improved to maximize visibility, conversions, and return on investment."
+    }
+  ],
+  "impact": [
+    {
+      "title": "3×",
+      "summary": "More Qualified Website Traffic"
+    },
+    {
+      "title": "60%",
+      "summary": "Lower Cost Per Lead"
+    },
+    {
+      "title": "Top 10",
+      "summary": "Higher Google Visibility"
+    }
+  ],
+  "deliverables": {
+    "summary": "You'll receive a complete performance marketing strategy designed to increase your online visibility, generate qualified enquiries, and provide clear reporting on every campaign's performance.",
+    "items": [
+      "SEO Strategy & Optimization",
+      "Google Ads Management",
+      "Paid Social Campaigns",
+      "Keyword & Audience Research",
+      "Landing Page Recommendations",
+      "Conversion Tracking Setup",
+      "Analytics & Performance Dashboard",
+      "Monthly Performance Reports",
+      "Campaign Optimization & Support"
+    ]
+  },
+  "testimonial": "dr-ahnaf-aljajah",
+  "framework": "digital-experience",
+  "services": [
+    "paid-social",
+    "ppc",
+    "seo"
+  ],
+  "tools": [
+    "google-analytics",
+    "google-search-console",
+    "display-video-360",
+    "facebook",
+    "google",
+    "google-ads",
+    "google-campaign-manager-360",
+    "instagram",
+    "linkedin",
+    "youtube"
+  ],
+  "caseStudies": [
+    "mastery-academy"
+  ],
+  "webflowId": "6a41074517328cd6f35476c3"
+}

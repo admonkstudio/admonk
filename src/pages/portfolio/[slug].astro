@@ -1,0 +1,80 @@
+---
+import Base from '../../layouts/Base.astro';
+import { href, live, one, resolve } from '../../lib/site';
+export async function getStaticPaths() {
+  return (await live('portfolio')).map((e) => ({ params: { slug: e.id }, props: { e } }));
+}
+const { e } = Astro.props;
+const d = e.data;
+const [industry, location, solutions, services, tools, testimonial] = await Promise.all([one(d.industry), one(d.location), resolve(d.solutions), resolve(d.services), resolve(d.tools), one(d.testimonial)]);
+const facts = [['Industry', industry?.data.name], ['Location', location?.data.name]].filter(([, v]) => v);
+const n = (i: number) => String(i + 1).padStart(2, '0');
+---
+<Base title={d.seo.title} description={d.seo.description} image={d.cover ?? d.thumbnail}
+  jsonLd={{ '@context': 'https://schema.org', '@type': 'CreativeWork', name: d.title ?? d.name, about: d.name, description: d.seo.description, creator: { '@type': 'Organization', name: 'Admonk' } }}>
+  <section class="hero">
+    <div class="shell">
+      <p class="eyebrow">Case study · {d.name}</p>
+      <h1 class="display">{d.title ?? d.name}</h1>
+      {d.summary && <p class="lead">{d.summary}</p>}
+      <ul class="tags" style="margin-top:1.5rem">
+        {facts.map(([k, v]) => <li><span>{k}: {v}</span></li>)}
+        {d.websiteUrl && <li><a href={d.websiteUrl} rel="noopener" target="_blank">Visit website ↗</a></li>}
+      </ul>
+    </div>
+  </section>
+  {d.cover && <div class="shell"><img src={d.cover} alt={`${d.name} project`} style="border-radius:var(--radius);width:100%" /></div>}
+
+  {(d.challenge.items.length > 0) && (
+    <section>
+      <div class="shell split">
+        <div><p class="eyebrow">The challenge</p><h2>{d.challenge.title ?? 'Where they started'}</h2></div>
+        <ul class="checks" style="columns:1">{d.challenge.items.map((c) => <li>{c}</li>)}</ul>
+      </div>
+    </section>
+  )}
+
+  {d.approach.length > 0 && (
+    <section class="top">
+      <div class="shell">
+        <div class="head"><p class="eyebrow">The Framework</p><h2>Our approach</h2></div>
+        <div class="grid">{d.approach.map((c, i) => <div class="card"><span class="num">{n(i)}</span><h3>{c.title}</h3><p>{c.summary}</p></div>)}</div>
+      </div>
+    </section>
+  )}
+
+  {d.results.length > 0 && (
+    <section>
+      <div class="shell">
+        <div class="head"><p class="eyebrow">Results</p><h2>What changed</h2></div>
+        <div class="grid">{d.results.map((r) => <div class="card"><span class="num">{r.label}</span>{r.value && <h3>{r.value}</h3>}{r.description && <p>{r.description}</p>}</div>)}</div>
+      </div>
+    </section>
+  )}
+
+  {d.gallery.length > 0 && (
+    <section class="top"><div class="shell gallery">{d.gallery.map((src) => <img src={src} alt="" loading="lazy" />)}</div></section>
+  )}
+
+  {testimonial?.data.quote && (
+    <section>
+      <div class="shell">
+        <figure class="card" style="max-width:52rem;margin:0 auto">
+          <blockquote style="margin:0"><p class="lead" style="color:var(--heading)">“{testimonial.data.quote}”</p></blockquote>
+          <figcaption class="muted">{testimonial.data.name}{testimonial.data.role && `, ${testimonial.data.role}`}</figcaption>
+        </figure>
+      </div>
+    </section>
+  )}
+
+  <section>
+    <div class="shell split">
+      <div><h2>What we did</h2></div>
+      <div>
+        {[['Solutions', solutions], ['Services', services], ['Tools', tools]].filter(([, l]) => (l as any[]).length).map(([label, l]) => (
+          <><p class="eyebrow" style="margin-top:1rem">{label}</p><ul class="tags">{(l as any[]).map((x) => <li><a href={href(x)}>{x.data.name}</a></li>)}</ul></>
+        ))}
+      </div>
+    </div>
+  </section>
+</Base>

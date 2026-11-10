@@ -1,0 +1,87 @@
+{
+  "name": "AI Chatbot",
+  "seo": {
+    "title": "AI Chatbot Development for Websites | Admonk",
+    "description": "An AI chatbot trained on your business that answers questions, captures leads, and books appointments around the clock."
+  },
+  "hero": {
+    "title": "Give Your Website a Team Member That Never Sleeps",
+    "description": "An AI Chatbot answers questions, guides visitors, captures leads, and supports customers 24/7, helping your business respond instantly without increasing your workload."
+  },
+  "solutionDescription": "Today's customers expect immediate answers. An AI Chatbot allows your business to assist visitors around the clock by answering common questions, recommending services, collecting enquiries, booking appointments, and guiding users through your website. Unlike traditional chatbots that rely on fixed responses, modern AI Chatbots understand natural conversations, learn from your business knowledge, and integrate with your existing systems to provide a smarter and more personalized customer experience.",
+  "challenges": [
+    {
+      "title": "Your Team Can't Respond Fast Enough",
+      "summary": "Customers often leave your website before receiving an answer because they don't want to wait for business hours or manual responses."
+    },
+    {
+      "title": "Visitors Have Questions Before They Contact You",
+      "summary": "Many potential customers leave simply because they can't quickly find the information they need to make a decision."
+    },
+    {
+      "title": "Your Customer Support Team Repeats the Same Answers",
+      "summary": "Your staff spends valuable time answering common questions that an AI Chatbot could handle automatically."
+    }
+  ],
+  "approach": [
+    {
+      "title": "Learn Your Business",
+      "summary": "We train the chatbot using your website, services, documents, FAQs, and business knowledge to ensure accurate responses."
+    },
+    {
+      "title": "Connect Your Systems",
+      "summary": "We integrate the chatbot with your website, CRM, booking system, or other business tools to automate customer interactions."
+    },
+    {
+      "title": "Monitor & Improve",
+      "summary": "We continuously refine the chatbot based on customer conversations, helping it become more accurate and useful over time."
+    }
+  ],
+  "impact": [
+    {
+      "title": "24/7",
+      "summary": "Instant Customer Support"
+    },
+    {
+      "title": "80%",
+      "summary": "Fewer Repetitive Support Requests"
+    },
+    {
+      "title": "3×",
+      "summary": "More Qualified Leads"
+    }
+  ],
+  "deliverables": {
+    "summary": "You'll receive a fully customized AI Chatbot trained on your business, integrated with your website, and ready to support customers, generate leads, and automate conversations from day one.",
+    "items": [
+      "Custom AI Chatbot Development",
+      "Knowledge Base Training",
+      "Website Integration",
+      "CRM & System Integration",
+      "Lead Capture Workflows",
+      "Multi-Language Support",
+      "Conversation Analytics",
+      "Team Training & Documentation",
+      "Full Administrative Access"
+    ]
+  },
+  "testimonial": "mostafa-alokaily",
+  "framework": "digital-automation",
+  "solution": "workflow-automation",
+  "related": [
+    "ai-agents",
+    "ai-automation"
+  ],
+  "tools": [
+    "openai",
+    "n8n",
+    "javascript",
+    "make",
+    "zapier",
+    "supabase",
+    "webflow",
+    "zoho"
+  ],
+  "caseStudy": "kalam",
+  "webflowId": "6a4113fa739e39f44a740bb3"
+}

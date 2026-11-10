@@ -1,0 +1,121 @@
+---
+// One layout for framework, solution, service and tool pages (the Webflow "Services" layout):
+// hero, about, business challenge, the framework (approach), business impact, what you get, case study.
+import Base from '../layouts/Base.astro';
+import PortfolioCard from './PortfolioCard.astro';
+import { href } from '../lib/site';
+
+interface Link { collection: string; id: string; data: { name: string; icon?: string; summary?: string; hero?: { description?: string } } }
+interface Props {
+  kind: string;
+  data: any;
+  links?: { label: string; items: Link[] }[];
+  caseStudies?: any[];
+  testimonial?: any;
+  jsonLd?: object;
+}
+const { kind, data, links = [], caseStudies = [], testimonial, jsonLd } = Astro.props;
+const n = (i: number) => String(i + 1).padStart(2, '0');
+---
+<Base title={data.seo.title} description={data.seo.description} image={data.cover} jsonLd={jsonLd}>
+  <section class="hero">
+    <div class="shell">
+      <p class="eyebrow">{kind} · {data.name}</p>
+      <h1 class="display">{data.hero?.title ?? data.name}</h1>
+      {(data.hero?.description ?? data.summary) && <p class="lead">{data.hero?.description ?? data.summary}</p>}
+      <a class="btn" href="/start">Get in touch</a>
+    </div>
+  </section>
+
+  {(data.solutionDescription || data.description || links.some((l) => l.items.length)) && (
+    <section class="top">
+      <div class="shell split">
+        <div>
+          <h2>About the {kind === 'Tool' ? 'tool' : 'solution'}</h2>
+          {links.filter((l) => l.items.length).map((l) => (
+            <>
+              <p class="eyebrow" style="margin-top:1.5rem">{l.label}</p>
+              <ul class="tags">{l.items.map((i) => <li><a href={href(i)}>{i.data.name}</a></li>)}</ul>
+            </>
+          ))}
+        </div>
+        <div class="prose"><p class="lead">{data.solutionDescription ?? data.description}</p></div>
+      </div>
+    </section>
+  )}
+
+  {data.challenges?.length > 0 && (
+    <section>
+      <div class="shell">
+        <div class="head"><p class="eyebrow">Business challenge</p><h2>What gets in the way</h2></div>
+        <div class="grid">{data.challenges.map((c: any, i: number) => <div class="card"><span class="num">{n(i)}</span><h3>{c.title}</h3><p>{c.summary}</p></div>)}</div>
+      </div>
+    </section>
+  )}
+
+  {data.whatWeDeliver?.length > 0 && (
+    <section>
+      <div class="shell">
+        <div class="head"><p class="eyebrow">What we deliver</p><h2>Three parts of one system</h2></div>
+        <div class="grid">{data.whatWeDeliver.map((c: any, i: number) => <div class="card"><span class="num">{n(i)}</span><h3>{c.title}</h3><p>{c.summary}</p></div>)}</div>
+      </div>
+    </section>
+  )}
+
+  {data.approach?.length > 0 && (
+    <section class="top">
+      <div class="shell">
+        <div class="head"><p class="eyebrow">The Framework</p><h2>How we work</h2></div>
+        <div class="grid">{data.approach.map((c: any, i: number) => <div class="card"><span class="num">Step {n(i)}</span><h3>{c.title}</h3><p>{c.summary}</p></div>)}</div>
+      </div>
+    </section>
+  )}
+
+  {data.impact?.length > 0 && (
+    <section>
+      <div class="shell">
+        <div class="head"><p class="eyebrow">Business impact</p><h2>What changes for your business</h2></div>
+        <div class="grid">{data.impact.map((c: any) => <div class="card"><span class="big">{c.title}</span><p>{c.summary}</p></div>)}</div>
+      </div>
+    </section>
+  )}
+
+  {data.deliverables?.items?.length > 0 && (
+    <section class="top">
+      <div class="shell split">
+        <div><p class="eyebrow">What you get</p><h2>Deliverables</h2>{data.deliverables.summary && <p>{data.deliverables.summary}</p>}</div>
+        <ul class="checks">{data.deliverables.items.map((d: string) => <li>{d}</li>)}</ul>
+      </div>
+    </section>
+  )}
+
+  <slot />
+
+  {testimonial?.data.quote && (
+    <section>
+      <div class="shell">
+        <figure class="card" style="max-width:52rem;margin:0 auto">
+          <blockquote style="margin:0"><p class="lead" style="color:var(--heading)">“{testimonial.data.quote}”</p></blockquote>
+          <figcaption class="muted">{testimonial.data.name}{testimonial.data.role && `, ${testimonial.data.role}`}</figcaption>
+        </figure>
+      </div>
+    </section>
+  )}
+
+  {caseStudies.length > 0 && (
+    <section>
+      <div class="shell">
+        <div class="head"><p class="eyebrow">Case study</p><h2>See it in practice</h2></div>
+        <div class="grid">{caseStudies.slice(0, 6).map((c) => <PortfolioCard item={c} />)}</div>
+      </div>
+    </section>
+  )}
+
+  <section class="top">
+    <div class="shell head">
+      <h2>Ready to start?</h2>
+      <p>Tell us about your business and we'll recommend the parts of the Framework that will make the biggest difference.</p>
+      <a class="btn" href="/start">Start a project</a>
+    </div>
+  </section>
+</Base>

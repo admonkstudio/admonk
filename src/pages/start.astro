@@ -1,0 +1,19 @@
+---
+import Base from '../layouts/Base.astro';
+import EnquiryForm from '../components/EnquiryForm.astro';
+import { PAGE_SEO, SITE } from '../lib/site';
+const [title, description] = PAGE_SEO['/start'];
+---
+<Base title={title} description={description}>
+  <section class="hero">
+    <div class="shell split">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h1>Start a project</h1>
+        <p class="lead">Tell us about your business and goals. We'll recommend the parts of the Framework that will make the biggest difference, nothing you don't need.</p>
+        <p style="margin-top:2rem"><a href={`mailto:${SITE.email}`}>{SITE.email}</a><br /><a href={`tel:${SITE.phone.replace(/\s/g, '')}`}>{SITE.phone}</a></p>
+      </div>
+      <EnquiryForm source="start" />
+    </div>
+  </section>
+</Base>

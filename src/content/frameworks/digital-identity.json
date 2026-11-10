@@ -1,0 +1,101 @@
+{
+  "name": "Digital Identity",
+  "seo": {
+    "title": "Digital Identity: Branding & Brand Strategy | Admonk",
+    "description": "Brand strategy, logo design, and brand guidelines that make your business look as strong as the service you provide."
+  },
+  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a810b4521e7807773827612_b12359f6841cf44c9fcf28ebc843ea8d.jpg",
+  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a4106e74082e5b1527626dd_6a405d54052d50c1a91465a4_Digital-Automation.avif",
+  "hero": {
+    "title": "Your business has changed. Has your brand kept up?",
+    "description": "Shape how your business looks, feels, and communicates online."
+  },
+  "solutionDescription": "Digital Identity is about making sure your business looks as professional as the service you provide. We create a clear visual identity that builds trust, reflects your values, and gives customers confidence from the very first impression.",
+  "challenges": [
+    {
+      "title": "Your Business Looks Smaller Than It Really Is",
+      "summary": "You have a great business, but your logo, colors, or overall appearance don't reflect the quality of your work."
+    },
+    {
+      "title": "Customers Don't Remember Your Brand",
+      "summary": "Your business looks similar to everyone else, making it difficult for people to recognize or remember you."
+    },
+    {
+      "title": "Your Brand Looks Different Everywhere",
+      "summary": "Your website, social media, proposals, and marketing materials all look slightly different, creating confusion and reducing trust."
+    }
+  ],
+  "approach": [
+    {
+      "title": "Understand Your Business",
+      "summary": "Before we design anything, we learn about your company, your customers, and how you want people to see your business."
+    },
+    {
+      "title": "Create a Clear Identity",
+      "summary": "We build a consistent visual identity that reflects your business and works across every platform."
+    },
+    {
+      "title": "Prepare It for Growth",
+      "summary": "Everything is organized into a complete brand system that your team can use as your business grows."
+    }
+  ],
+  "impact": [
+    {
+      "title": "3×",
+      "summary": "Stronger Brand Recognition"
+    },
+    {
+      "title": "80%",
+      "summary": "More Consistent Brand Communication"
+    },
+    {
+      "title": "90+",
+      "summary": "Professional Brand Readiness"
+    }
+  ],
+  "deliverables": {
+    "summary": "You'll receive a complete brand foundation with everything needed to present your business consistently, professionally, and confidently across every customer touchpoint.",
+    "items": [
+      "Brand Strategy Document",
+      "Professional Logo Package (AI, SVG, PNG, PDF)",
+      "Complete Brand Guidelines",
+      "Color Palette & Typography System",
+      "Social Media Brand Assets",
+      "Brand Icon & Favicon",
+      "Brand Presentation",
+      "Commercial Usage Rights",
+      "Full Ownership of All Files"
+    ]
+  },
+  "testimonial": "dr-ahnaf-aljajah",
+  "whatWeDeliver": [
+    {
+      "title": "Brand Strategy",
+      "summary": "We define how your business should be positioned and remembered."
+    },
+    {
+      "title": "Logo & Visual Identity",
+      "summary": "A professional logo, colors, typography, and supporting visual elements."
+    },
+    {
+      "title": "Brand Guidelines",
+      "summary": "A practical guide that keeps your branding consistent across your website, social media, presentations, and marketing materials."
+    }
+  ],
+  "solutions": [
+    "brand-guideline",
+    "brand-identity-strategy",
+    "logo-design"
+  ],
+  "tools": [
+    "adobe-illustrator",
+    "adobe-indesign",
+    "adobe-photoshop",
+    "figma",
+    "notion"
+  ],
+  "caseStudies": [
+    "mastery-academy"
+  ],
+  "webflowId": "6a4106e74082e5b1527626e3"
+}

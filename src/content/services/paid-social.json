@@ -1,0 +1,83 @@
+{
+  "name": "Paid Social",
+  "seo": {
+    "title": "Paid Social Ads: Meta, LinkedIn & TikTok | Admonk",
+    "description": "Targeted Facebook, Instagram, LinkedIn, and TikTok campaigns built to turn the right audience into qualified enquiries."
+  },
+  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3f72264e595ac3b01cedc7_marketing.avif",
+  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a405d54052d50c1a91465a4_Digital-Automation.avif",
+  "hero": {
+    "title": "Reach the Right Audience Before They Find Your Competitors",
+    "description": "Paid Social helps your business reach highly targeted audiences through platforms like Facebook, Instagram, LinkedIn, and TikTok, turning awareness into enquiries and business opportunities."
+  },
+  "solutionDescription": "Social media advertising allows your business to reach potential customers based on their interests, location, behavior, and demographics. Instead of waiting for customers to discover you, Paid Social puts your business in front of the people most likely to need your products or services. We create campaigns designed to increase brand awareness, generate qualified enquiries, promote new services, and support your overall business growth while continuously optimizing performance to maximize your marketing investment.",
+  "challenges": [
+    {
+      "title": "Your Business Isn't Reaching the Right People",
+      "summary": "Organic social media has become increasingly competitive, making it difficult for your content to reach potential customers consistently."
+    },
+    {
+      "title": "Your Advertising Budget Isn't Producing Results",
+      "summary": "Campaigns generate clicks and impressions, but very few enquiries or meaningful business opportunities."
+    },
+    {
+      "title": "You Don't Know Which Campaigns Work",
+      "summary": "Without proper tracking and optimization, it's difficult to understand where your leads come from or how your advertising budget is performing."
+    }
+  ],
+  "approach": [
+    {
+      "title": "Define Your Target Audience",
+      "summary": "We identify the people most likely to become your customers and build campaigns around their interests, behaviors, and buying intent."
+    },
+    {
+      "title": "Create High-Performing Campaigns",
+      "summary": "We develop targeted advertising campaigns with compelling creative, clear messaging, and optimized landing experiences."
+    },
+    {
+      "title": "Optimize for Better Results",
+      "summary": "We monitor campaign performance, improve targeting, and adjust budgets to maximize enquiries and return on investment."
+    }
+  ],
+  "impact": [
+    {
+      "title": "3×",
+      "summary": "More Qualified Reach"
+    },
+    {
+      "title": "50%",
+      "summary": "Lower Advertising Waste"
+    },
+    {
+      "title": "40%",
+      "summary": "Higher Campaign Engagement"
+    }
+  ],
+  "deliverables": {
+    "summary": "You'll receive a complete paid social advertising strategy designed to increase brand awareness, attract qualified prospects, and generate measurable business results across today's leading social media platforms.",
+    "items": [
+      "Audience Research & Targeting",
+      "Campaign Strategy",
+      "Ad Creative & Copy Direction",
+      "Campaign Setup & Management",
+      "Landing Page Recommendations",
+      "Conversion Tracking",
+      "Performance Reporting",
+      "Campaign Optimization",
+      "Ongoing Strategic Support"
+    ]
+  },
+  "testimonial": "mostafa-alokaily",
+  "framework": "digital-experience",
+  "solution": "performance-marketing",
+  "related": [],
+  "tools": [
+    "facebook",
+    "instagram",
+    "linkedin",
+    "youtube",
+    "tiktok"
+  ],
+  "caseStudy": "kalam",
+  "webflowId": "6a332c286d288107f091e8e6"
+}

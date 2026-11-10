@@ -1,0 +1,97 @@
+{
+  "name": "Workflow Automation",
+  "seo": {
+    "title": "Workflow Automation with n8n, Make & Zapier | Admonk",
+    "description": "Automate enquiry routing, approvals, notifications, and data entry by connecting your website, CRM, and business tools."
+  },
+  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a410743a851c8612a0a44d9_6a3f7104825509a0ab80951c_connect.avif",
+  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a4106e74082e5b1527626dd_6a405d54052d50c1a91465a4_Digital-Automation.avif",
+  "hero": {
+    "title": "Eliminate Repetitive Work and Let Your Business Run Smarter",
+    "description": "Your team shouldn't spend hours copying data, sending notifications, or updating spreadsheets. We connect your business processes so repetitive tasks happen automatically, saving time and reducing human error."
+  },
+  "solutionDescription": "As businesses grow, so does the number of repetitive tasks that slow teams down. New enquiries need to be assigned, documents generated, approvals requested, notifications sent, and information copied between different systems. Workflow Automation integrates these processes into a single, seamless workflow, enabling your business to operate faster with less manual effort. By reducing repetitive work, your team can focus on serving customers, closing sales, and growing the business instead of managing routine tasks.",
+  "challenges": [
+    {
+      "title": "Your Team Repeats the Same Tasks Every Day",
+      "summary": "Employees spend valuable time copying information, updating spreadsheets, sending notifications, and completing tasks that could happen automatically."
+    },
+    {
+      "title": "Business Processes Depend on People",
+      "summary": "Important tasks are delayed or forgotten because they rely on someone remembering to complete them manually."
+    },
+    {
+      "title": "Your Systems Don't Work Together",
+      "summary": "Different software platforms store different information, forcing your team to manually transfer data between systems."
+    }
+  ],
+  "approach": [
+    {
+      "title": "Understand Your Business Process",
+      "summary": "We map how work flows through your business and identify repetitive tasks, bottlenecks, and opportunities for automation."
+    },
+    {
+      "title": "Connect Your Business Systems",
+      "summary": "We integrate your website, CRM, internal tools, and third-party applications into one connected workflow."
+    },
+    {
+      "title": "Automate & Improve",
+      "summary": "We build reliable automations that save time, reduce errors, and continue working as your business grows."
+    }
+  ],
+  "impact": [
+    {
+      "title": "75%",
+      "summary": "Less Manual Administration"
+    },
+    {
+      "title": "5×",
+      "summary": "Faster Internal Processes"
+    },
+    {
+      "title": "90%",
+      "summary": "Improved Process Accuracy"
+    }
+  ],
+  "deliverables": {
+    "summary": "You'll receive a fully automated workflow tailored to your business, connecting your systems and simplifying everyday operations while giving your team complete visibility over every process.",
+    "items": [
+      "Business Process Mapping",
+      "Custom Workflow Automation",
+      "System & API Integrations",
+      "Internal Notifications & Approvals",
+      "Automated Task Assignment",
+      "Data Synchronization",
+      "Workflow Monitoring & Reporting",
+      "Documentation & Team Training",
+      "Full Administrative Access"
+    ]
+  },
+  "testimonial": "mostafa-alokaily",
+  "framework": "digital-automation",
+  "services": [
+    "ai-agents",
+    "ai-automation",
+    "ai-chatbot"
+  ],
+  "tools": [
+    "make",
+    "n8n",
+    "openai",
+    "zapier",
+    "firebase",
+    "javascript",
+    "sleekflow",
+    "brevo",
+    "supabase",
+    "webflow",
+    "zoho",
+    "zoho-marketing-automation",
+    "mailchimp",
+    "whatsapp-business"
+  ],
+  "caseStudies": [
+    "kalam"
+  ],
+  "webflowId": "6a410743a851c8612a0a44df"
+}

@@ -1,0 +1,80 @@
+{
+  "name": "SEO",
+  "seo": {
+    "title": "SEO Services | Admonk",
+    "description": "Keyword research, technical SEO, and on-page optimization that help customers find your business before your competitors."
+  },
+  "hero": {
+    "title": "Help Customers Find Your Business Before They Find Your Competitors",
+    "description": "SEO helps your business appear in search results when potential customers are looking for your products or services, increasing your visibility without relying entirely on paid advertising."
+  },
+  "solutionDescription": "Every day, potential customers search online for businesses like yours. If your website isn't visible, those opportunities go to your competitors. Search Engine Optimization (SEO) improves your website's visibility by optimizing its structure, content, performance, and authority, making it easier for search engines to understand and recommend your business. Unlike paid advertising, SEO creates long-term value by helping your website attract qualified visitors naturally and consistently over time.",
+  "challenges": [
+    {
+      "title": "Your Website Is Difficult to Find",
+      "summary": "Even though you offer great products or services, your business doesn't appear when customers search online."
+    },
+    {
+      "title": "You're Too Dependent on Paid Advertising",
+      "summary": "Every new customer requires advertising spend because your website isn't generating enough organic traffic."
+    },
+    {
+      "title": "Your Competitors Rank Higher Than You",
+      "summary": "Customers find competing businesses first, even when your products or services are better suited to their needs."
+    }
+  ],
+  "approach": [
+    {
+      "title": "Understand How Customers Search",
+      "summary": "We research the keywords, topics, and search intent that matter most to your business and industry."
+    },
+    {
+      "title": "Optimize Your Website",
+      "summary": "We improve your website's structure, content, speed, and technical foundation to support better search engine visibility."
+    },
+    {
+      "title": "Measure & Grow",
+      "summary": "We monitor rankings, traffic, and search performance while continuously improving your website's long-term visibility."
+    }
+  ],
+  "impact": [
+    {
+      "title": "Top 10",
+      "summary": "Higher Google Rankings"
+    },
+    {
+      "title": "3×",
+      "summary": "More Organic Website Traffic"
+    },
+    {
+      "title": "50%",
+      "summary": "Lower Customer Acquisition Cost"
+    }
+  ],
+  "deliverables": {
+    "summary": "You'll receive a complete SEO strategy focused on improving your website's visibility, attracting qualified visitors, and building a strong foundation for sustainable long-term growth.",
+    "items": [
+      "SEO Audit & Strategy",
+      "Keyword Research",
+      "Technical SEO Optimization",
+      "On-Page SEO Improvements",
+      "Website Structure Optimization",
+      "Content Optimization",
+      "Performance & Core Web Vitals Review",
+      "Search Performance Reporting",
+      "Ongoing SEO Recommendations"
+    ]
+  },
+  "testimonial": "robert-benjamin",
+  "framework": "digital-experience",
+  "solution": "performance-marketing",
+  "related": [],
+  "tools": [
+    "google",
+    "google-search-console",
+    "google-analytics",
+    "notion"
+  ],
+  "caseStudy": "university-of-hertfordshire",
+  "webflowId": "6a411411e7b76eedf8b74d7e"
+}

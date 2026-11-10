@@ -1,0 +1,92 @@
+{
+  "name": "Al Safa Logistics Solutions",
+  "seo": {
+    "title": "Al Safa Logistics Solutions Case Study | Admonk",
+    "description": "Modernizing the Digital Presence of a Regional Logistics Leader. The challenge, our approach, and the results for Al Safa Logistics Solutions."
+  },
+  "title": "Modernizing the Digital Presence of a Regional Logistics Leader",
+  "summary": "Al Safa Logistics Solutions is part of one of the region's leading import, export, and logistics groups. The objective was to strengthen the company's digital presence through a modern corporate website that clearly communicates its logistics capabilities, builds trust with international partners, and supports long-term brand awareness. Alongside the website, Admonk developed a complete visual identity system to ensure consistency across every digital touchpoint.",
+  "logo": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63f6bdf3a1016570ad7eec_Al%20Safa%20Logistics.avif",
+  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3dbf2406a35758469df31a_Icon-Grey.avif",
+  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a55807d2c850f73e61c0eca_Alsafaa.avif",
+  "websiteUrl": "https://al-safa-arro.webflow.io/",
+  "featured": false,
+  "yearsOption": "d2f92d0868243fb3d239afc7e7ea7bcd",
+  "industry": "logistics-industrial",
+  "location": "egypt",
+  "solutions": [
+    "website-design-development"
+  ],
+  "services": [
+    "ui-ux-design",
+    "webflow-development",
+    "cms-development",
+    "content-management"
+  ],
+  "tools": [
+    "adobe-illustrator",
+    "adobe-photoshop",
+    "google-analytics",
+    "google-search-console",
+    "webflow",
+    "figma"
+  ],
+  "testimonial": "ahmed-al-baz",
+  "challenge": {
+    "title": "Al Safa Logistics needed a stronger online presence that reflected its regional import/export scale.",
+    "items": [
+      "The company's digital presence did not fully reflect its market size.",
+      "Services needed to be presented in a clearer, more professional way",
+      "The brand required stronger consistency across the website.",
+      "The website had to build trust with local and international partners."
+    ]
+  },
+  "approach": [
+    {
+      "title": "Modernized the Company Identity",
+      "summary": "We aligned the company's online presence with its position as a leading logistics and import/export provider."
+    },
+    {
+      "title": "Improved Service Presentation",
+      "summary": "We organized the website around the company's logistics solutions, making services easier to explore."
+    },
+    {
+      "title": "Built a Scalable Digital Foundation",
+      "summary": "The platform was prepared for future growth with structured content and a consistent visual identity."
+    }
+  ],
+  "results": [
+    {
+      "label": "SEO & Google Placement",
+      "value": "90+",
+      "description": "Search-ready structure implemented across the corporate website."
+    },
+    {
+      "label": "Website Performance",
+      "value": "90+",
+      "description": "Performance benchmark reached for a cleaner browsing experience."
+    },
+    {
+      "label": "Business Impact",
+      "value": "3×",
+      "description": "Improved digital brand consistency across client touchpoints."
+    },
+    {
+      "label": "Brand Transformation",
+      "value": "12+",
+      "description": "Visual guideline components created for stronger brand consistency."
+    },
+    {
+      "label": "User Experience",
+      "value": "95%",
+      "description": "Responsive experience optimized for regional and international partners."
+    },
+    {
+      "label": "Product / Service Showcase",
+      "value": "12+",
+      "description": "Logistics and import-export services clearly showcased online."
+    }
+  ],
+  "gallery": [],
+  "webflowId": "6a3a84cac11953c652395b3b"
+}

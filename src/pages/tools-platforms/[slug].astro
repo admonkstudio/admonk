@@ -1,0 +1,28 @@
+---
+// Tool pages reuse the service layout (decided 2026-11-10). A tool has no page copy of its own beyond
+// its description, so the page lists the services that use it and the projects built with it.
+import OfferPage from '../../components/OfferPage.astro';
+import { href, live, one } from '../../lib/site';
+export async function getStaticPaths() {
+  const [tools, services, solutions, portfolio, posts] = await Promise.all([live('tools'), live('services'), live('solutions'), live('portfolio'), live('blog')]);
+  const uses = (list: any[], id: string) => list.filter((x) => x.data.tools?.some((t: any) => t.id === id));
+  return tools.map((e) => ({
+    params: { slug: e.id },
+    props: { e, services: [...uses(solutions, e.id), ...uses(services, e.id)], projects: uses(portfolio, e.id), posts: uses(posts as any[], e.id) },
+  }));
+}
+const { e, services, projects, posts } = Astro.props;
+const d = e.data;
+const framework = await one(d.framework);
+---
+<OfferPage kind="Tool" data={{ ...d, hero: { title: d.name, description: d.summary } }} links={[{ label: 'Framework', items: framework ? [framework] : [] }, { label: 'Where we use it', items: services }]} caseStudies={projects}
+  jsonLd={{ '@context': 'https://schema.org', '@type': 'Service', name: `${d.name} services`, description: d.seo.description, provider: { '@type': 'Organization', name: 'Admonk' } }}>
+  {posts.length > 0 && (
+    <section>
+      <div class="shell">
+        <div class="head"><p class="eyebrow">From the blog</p><h2>Read more about {d.name}</h2></div>
+        <div class="grid">{posts.map((p: any) => <a class="card" href={href(p)}><h3>{p.data.title}</h3><p>{p.data.description}</p></a>)}</div>
+      </div>
+    </section>
+  )}
+</OfferPage>

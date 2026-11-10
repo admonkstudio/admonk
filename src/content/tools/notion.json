@@ -1,0 +1,12 @@
+{
+  "name": "Notion",
+  "seo": {
+    "title": "Notion Services | Admonk",
+    "description": "We organize project plans, documentation, and company knowledge in Notion, and connect it to AI assistants so your team can find answers quickly."
+  },
+  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a786746282075cf34cd7269_white-notion-logo-1hgF386075.avif",
+  "summary": "Organize documents, knowledge, and team collaboration.",
+  "description": "We organize project plans, documentation, and company knowledge in Notion, and connect it to AI assistants so your team can find answers quickly.",
+  "framework": "digital-automation",
+  "webflowId": "6a4167c8c486cab150d34241"
+}

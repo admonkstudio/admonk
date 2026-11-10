@@ -1,0 +1,19 @@
+---
+import Base from '../layouts/Base.astro';
+import EnquiryForm from '../components/EnquiryForm.astro';
+import { PAGE_SEO, SITE } from '../lib/site';
+const [title, description] = PAGE_SEO['/contact-us'];
+---
+<Base title={title} description={description}>
+  <section class="hero">
+    <div class="shell split">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h1>Connect with us</h1>
+        <p class="lead">Have a project or an idea in mind? We'd love to hear from you. Complete your details below and we'll get straight back to you.</p>
+        <p style="margin-top:2rem"><a href={`mailto:${SITE.email}`}>{SITE.email}</a><br /><a href={`tel:${SITE.phone.replace(/\s/g, '')}`}>{SITE.phone}</a></p>
+      </div>
+      <EnquiryForm source="contact-us" />
+    </div>
+  </section>
+</Base>

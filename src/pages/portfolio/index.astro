@@ -1,0 +1,21 @@
+---
+import Base from '../../layouts/Base.astro';
+import PortfolioCard from '../../components/PortfolioCard.astro';
+import { live, PAGE_SEO } from '../../lib/site';
+const items = await live('portfolio');
+const featured = items.filter((i) => i.data.featured);
+const ordered = [...featured, ...items.filter((i) => !i.data.featured)];
+const [title, description] = PAGE_SEO['/portfolio'];
+---
+<Base title={title} description={description}>
+  <section class="hero">
+    <div class="shell head">
+      <p class="eyebrow">Portfolio</p>
+      <h1 class="display">The Framework in action</h1>
+      <p class="lead">{items.length} projects across education, healthcare, hospitality and technology in Egypt, the Gulf, the UK and North America.</p>
+    </div>
+  </section>
+  <section class="top">
+    <div class="shell grid">{ordered.map((i) => <PortfolioCard item={i} />)}</div>
+  </section>
+</Base>

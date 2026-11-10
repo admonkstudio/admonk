@@ -1,0 +1,95 @@
+{
+  "name": "Evos",
+  "seo": {
+    "title": "Evos Case Study | Admonk",
+    "description": "Crafting a Premium Digital Launch for a Luxury Real Estate Development. The challenge, our approach, and the results for Evos."
+  },
+  "title": "Crafting a Premium Digital Launch for a Luxury Real Estate Development",
+  "summary": "Evos Investments develops luxury real estate destinations targeting high-end investors and international buyers. To support the launch of a flagship development, the company required a sophisticated digital experience that reflected the exclusivity of the project and the quality associated with its brand. Admonk designed a premium website that combines elegant visuals, immersive storytelling, and a refined user experience to strengthen investor confidence from the first interaction.",
+  "thumbnail": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdf7861e079777f2e7f67_Evos.jpg",
+  "logo": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63f8c0f3a1016570adc2aa_Evos.avif",
+  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3e9feec6e8ee970664c862_Icon-Grey.svg",
+  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a5581110335cd6cbaafe935_File.avif",
+  "websiteUrl": "https://evos-investments.com/",
+  "featured": false,
+  "yearsOption": "cad473d56584942bfa5621f9ff0468f5",
+  "styleOption": "89b7740c042d1b038f52a7ec8e195e02",
+  "industry": "travel-hospitality",
+  "location": "united-arab-emirates",
+  "solutions": [
+    "website-design-development"
+  ],
+  "services": [
+    "cms-development",
+    "content-management",
+    "ui-ux-design",
+    "webflow-development"
+  ],
+  "tools": [
+    "adobe-illustrator",
+    "adobe-photoshop",
+    "google-analytics",
+    "google-search-console",
+    "webflow",
+    "figma"
+  ],
+  "testimonial": "yasmin-2",
+  "challenge": {
+    "title": "Evos Investments required a premium digital launch experience for a luxury real estate development.",
+    "items": [
+      "The website had to communicate exclusivity from the very first interaction.",
+      "Investors needed an engaging way to explore the new development.",
+      "The digital experience had to match the prestige of the Four Seasons ecosystem.",
+      "Visual storytelling was critical to increasing buyer confidence.",
+      "The project had to be delivered within the launch schedule."
+    ]
+  },
+  "approach": [
+    {
+      "title": "Elevated the Luxury Brand",
+      "summary": "We translated the project's premium identity into a digital experience that reflected the quality of the development."
+    },
+    {
+      "title": "Delivered a Launch-Ready Website",
+      "summary": "Every page was crafted to support the project's launch with a polished and engaging presentation."
+    },
+    {
+      "title": "Built for Long-Term Growth",
+      "summary": "The website was optimized for performance, scalability, and future marketing activities."
+    }
+  ],
+  "results": [
+    {
+      "label": "SEO & Google Placement",
+      "value": "92+",
+      "description": "Technical SEO implementation completed."
+    },
+    {
+      "label": "Website Performance",
+      "value": "96+",
+      "description": "Optimized loading performance across devices."
+    },
+    {
+      "label": "Business Impact",
+      "value": "Launch",
+      "description": "Launch-ready digital experience delivered on schedule."
+    },
+    {
+      "label": "Brand Transformation",
+      "value": "30+",
+      "description": "Luxury marketing assets aligned with project identity."
+    },
+    {
+      "label": "User Experience",
+      "value": "98%",
+      "description": "Immersive investor browsing experience."
+    },
+    {
+      "label": "Product / Service Showcase",
+      "value": "15+",
+      "description": "Luxury project sections professionally presented."
+    }
+  ],
+  "gallery": [],
+  "webflowId": "6a3a84197092f58d5fa2b571"
+}

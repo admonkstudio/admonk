@@ -1,0 +1,101 @@
+{
+  "name": "Softobia",
+  "seo": {
+    "title": "Softobia Case Study | Admonk",
+    "description": "Creating an Interactive Digital Experience for a Technology Leader. The challenge, our approach, and the results for Softobia."
+  },
+  "title": "Creating an Interactive Digital Experience for a Technology Leader",
+  "summary": "Softobia required a website capable of communicating an extensive portfolio of enterprise technology services while showcasing the company's innovative culture. Admonk designed one of its most interactive digital experiences, combining advanced motion design with a scalable architecture that supports a large volume of content.",
+  "thumbnail": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdfebf750192b49df85ae_Softobia.jpg",
+  "logo": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63fc0aedd1a7dcc2652227_Softobia.avif",
+  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3dc7681d702c15e46cff64_Icon-Grey.avif",
+  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a5582a876c7282ee9874ffe_Laptop-Dark-Ambience-2.avif",
+  "websiteUrl": "https://www.softobia.com/",
+  "featured": false,
+  "yearsOption": "35f63fda26c06daa509ece82b3afd101",
+  "styleOption": "87526f1e43e8235ec4a9e58bfe239dd7",
+  "industry": "technology-software",
+  "location": "united-kingdom",
+  "solutions": [
+    "website-design-development"
+  ],
+  "services": [
+    "cms-development",
+    "content-management",
+    "seo",
+    "ui-ux-design",
+    "webflow-development"
+  ],
+  "tools": [
+    "adobe-illustrator",
+    "adobe-photoshop",
+    "google-analytics",
+    "google-search-console",
+    "make",
+    "n8n",
+    "webflow",
+    "zapier",
+    "figma",
+    "gsap",
+    "javascript"
+  ],
+  "testimonial": "mohamed-ossto",
+  "challenge": {
+    "title": "Softobia required a digital experience capable of showcasing an extensive portfolio of technology solutions without overwhelming visitors.",
+    "items": [
+      "Hundreds of pages needed to be organized into a logical user journey.",
+      "The company wanted to differentiate itself through interaction and motion design.",
+      "Complex service offerings had to become easier to understand.",
+      "The website needed to remain fast despite its large content volume.",
+      "Scalability was essential to support future products and services."
+    ]
+  },
+  "approach": [
+    {
+      "title": "Showcased Digital Innovation",
+      "summary": "We transformed complex digital services into an engaging website that clearly communicates Softobia's expertise and capabilities."
+    },
+    {
+      "title": "Designed an Interactive Experience",
+      "summary": "We combined motion, visuals, and structured content to create a memorable browsing experience."
+    },
+    {
+      "title": "Built a Scalable Platform",
+      "summary": "We developed a flexible website that supports continuous growth and future content expansion."
+    }
+  ],
+  "results": [
+    {
+      "label": "SEO & Google Placement",
+      "value": "95+",
+      "description": "Technical SEO implementation score"
+    },
+    {
+      "label": "Website Performance",
+      "value": "94+",
+      "description": "Performance optimization benchmark"
+    },
+    {
+      "label": "Business Impact",
+      "value": "4×",
+      "description": "Increase in average session engagement"
+    },
+    {
+      "label": "User Experience",
+      "value": "60+",
+      "description": "Motion graphics and animated experiences"
+    },
+    {
+      "label": "CMS & Content Management",
+      "value": "100+",
+      "description": "Dynamic content pages managed"
+    },
+    {
+      "label": "Product / Service Showcase",
+      "value": "100+",
+      "description": "Interactive solution pages delivered"
+    }
+  ],
+  "gallery": [],
+  "webflowId": "69016278376ecae469a7087c"
+}

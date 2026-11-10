@@ -1,0 +1,99 @@
+{
+  "name": "Pioneers",
+  "seo": {
+    "title": "Pioneers Case Study | Admonk",
+    "description": "Modernizing the Digital Presence of a Microsoft Industry Leader: how Admonk helped Pioneers in Saudi Arabia. The challenge, our approach, and the results."
+  },
+  "title": "Modernizing the Digital Presence of a Microsoft Industry Leader",
+  "summary": "As one of Microsoft's leading regional partners, Pioneers required a digital presence that matched its reputation for innovation and enterprise technology. Admonk redesigned the company's website with a strong focus on performance, usability, and modern UI/UX, creating a platform that better supports business development and strengthens its market leadership.",
+  "logo": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63fbda847abdfa569286fb_Pioneers.avif",
+  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3eb2ece878a740e045d484_Icon-Grey.svg",
+  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a5589892fc4234b283a009c_Pioneers.avif",
+  "websiteUrl": "https://pioneersit.com/",
+  "featured": false,
+  "yearsOption": "cad473d56584942bfa5621f9ff0468f5",
+  "industry": "technology-software",
+  "location": "saudi-arabia",
+  "solutions": [
+    "website-design-development",
+    "performance-marketing"
+  ],
+  "services": [
+    "webflow-development",
+    "cms-development",
+    "content-management",
+    "seo",
+    "ui-ux-design"
+  ],
+  "tools": [
+    "adobe-illustrator",
+    "adobe-photoshop",
+    "google-analytics",
+    "google-search-console",
+    "n8n",
+    "webflow",
+    "zapier",
+    "google",
+    "javascript",
+    "figma"
+  ],
+  "testimonial": "salma-sameh-2",
+  "challenge": {
+    "title": "Pioneers needed a digital presence that reflected its leadership as one of Microsoft's largest partners in the region.",
+    "items": [
+      "The existing website no longer matched the company's market position.",
+      "Enterprise solutions needed to be presented with greater clarity.",
+      "User experience required modernization across all touchpoints.",
+      "Website performance had to support a faster, more reliable experience.",
+      "The platform needed to reinforce trust with enterprise clients and decision-makers."
+    ]
+  },
+  "approach": [
+    {
+      "title": "Refreshed the Brand Experience",
+      "summary": "We redesigned the company's digital presence to better reflect its position as a leading Microsoft partner."
+    },
+    {
+      "title": "Built a Modern Business Platform",
+      "summary": "We created a fast, professional website that clearly communicates solutions, services, and expertise."
+    },
+    {
+      "title": "Prepared the Website for Growth",
+      "summary": "We optimized the platform for performance, scalability, and easy content management."
+    }
+  ],
+  "results": [
+    {
+      "label": "SEO & Google Placement",
+      "value": "Top 3",
+      "description": "Google rankings for Microsoft solutions"
+    },
+    {
+      "label": "Website Performance",
+      "value": "96+",
+      "description": "Core Web Vitals optimization score"
+    },
+    {
+      "label": "Business Impact",
+      "value": "3×",
+      "description": "Increase in user engagement"
+    },
+    {
+      "label": "Brand Transformation",
+      "value": "40+",
+      "description": "Corporate brand assets modernized"
+    },
+    {
+      "label": "User Experience",
+      "value": "98%",
+      "description": "Cross-device usability score"
+    },
+    {
+      "label": "Product / Service Showcase",
+      "value": "60+",
+      "description": "Enterprise solutions structured"
+    }
+  ],
+  "gallery": [],
+  "webflowId": "6a3e9881d2998c0e54f73fe6"
+}

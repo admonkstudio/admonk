@@ -1,0 +1,93 @@
+{
+  "name": "Khalagaat",
+  "seo": {
+    "title": "Khalagaat Case Study | Admonk",
+    "description": "Rescuing and Modernizing a High-Traffic E-Commerce Platform: how Admonk helped Khalagaat in Canada. The challenge, our approach, and the results."
+  },
+  "title": "Rescuing and Modernizing a High-Traffic E-Commerce Platform",
+  "summary": "Khalagaat approached Admonk with a website suffering from outdated technology, security vulnerabilities, poor user experience, and an unstructured content architecture. Rather than applying temporary fixes, we rebuilt the platform with a modern interface, migrated it to a high-performance hosting environment, eliminated security threats, and established a stable technical foundation capable of supporting long-term business growth.",
+  "logo": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63f9aa8e37d36197082c79_Khalagaat.avif",
+  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3e96982193d0f8b10732a5_Icon-Grey.svg",
+  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a5588732a3fad32a03e7569_Khalagaat.avif",
+  "websiteUrl": "https://khalagaat.com/",
+  "featured": false,
+  "yearsOption": "39a6b523a3a372c59090802893318023",
+  "industry": "e-commerce",
+  "location": "canada",
+  "solutions": [
+    "website-design-development",
+    "logo-design"
+  ],
+  "services": [
+    "cms-development",
+    "content-management",
+    "ui-ux-design",
+    "webflow-development"
+  ],
+  "tools": [
+    "adobe-illustrator",
+    "adobe-photoshop",
+    "google-analytics",
+    "google-search-console",
+    "figma"
+  ],
+  "testimonial": "amgad-2",
+  "challenge": {
+    "title": "Khalagaat required a complete digital rescue rather than a standard website redesign.",
+    "items": [
+      "The existing platform suffered from malware and security vulnerabilities.",
+      "Poor user experience was affecting customer confidence.",
+      "Website performance was limited by outdated infrastructure.",
+      "Content and system architecture lacked organization.",
+      "The business required a stable platform capable of supporting future growth."
+    ]
+  },
+  "approach": [
+    {
+      "title": "Rebuilt the Digital Platform",
+      "summary": "We redesigned the website from the ground up to replace an outdated and unstable platform."
+    },
+    {
+      "title": "Improved Performance & Security",
+      "summary": "The website was migrated, cleaned, and optimized to provide a faster and more reliable experience."
+    },
+    {
+      "title": "Organized the Business Content",
+      "summary": "Products and content were restructured to make the website easier to manage and navigate."
+    }
+  ],
+  "results": [
+    {
+      "label": "SEO & Google Placement",
+      "value": "90+",
+      "description": "Technical SEO optimization completed."
+    },
+    {
+      "label": "Website Performance",
+      "value": "80%",
+      "description": "Improvement in page loading speed."
+    },
+    {
+      "label": "Business Impact",
+      "value": "3+ Years",
+      "description": "Reliable platform operation without major interruptions."
+    },
+    {
+      "label": "User Experience",
+      "value": "75%",
+      "description": "Improved shopping and browsing experience."
+    },
+    {
+      "label": "Automation & Integration",
+      "value": "100%",
+      "description": "Security vulnerabilities and malware eliminated."
+    },
+    {
+      "label": "Platform Stability & Security",
+      "value": "99.90%",
+      "description": "Website stability maintained after infrastructure migration."
+    }
+  ],
+  "gallery": [],
+  "webflowId": "6a3a843a111ee90f2c46be16"
+}

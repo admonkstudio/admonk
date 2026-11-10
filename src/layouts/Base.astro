@@ -1,0 +1,80 @@
+---
+import { NAV, SITE } from '../lib/site';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  image?: string;
+  jsonLd?: object;
+  noindex?: boolean;
+}
+const { title, description, image, jsonLd, noindex } = Astro.props;
+const canonical = new URL(Astro.url.pathname.replace(/\.html$/, '').replace(/\/index$/, '/'), Astro.site).toString();
+// Preview builds (anything but the live domain) stay out of search engines.
+const indexable = import.meta.env.PUBLIC_INDEXABLE === 'true';
+const path = Astro.url.pathname;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    {(!indexable || noindex) && <meta name="robots" content="noindex,nofollow" />}
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.png" type="image/png" />
+    <meta name="theme-color" content="#0f0f0f" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={SITE.name} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    {image && <meta property="og:image" content={image} />}
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" />
+    {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="shell bar">
+        <a href="/" class="brand" aria-label="Admonk home"><img src={SITE.logo} alt="Admonk" width="120" height="32" /></a>
+        <nav aria-label="Main">
+          <ul>
+            {NAV.map(([label, url]) => <li><a href={url} aria-current={path.startsWith(url) ? 'page' : undefined}>{label}</a></li>)}
+          </ul>
+        </nav>
+        <a class="btn" href="/start">Start now</a>
+      </div>
+    </header>
+    <main id="main" data-pagefind-body>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="shell footer-grid">
+        <div>
+          <img src={SITE.logo} alt="Admonk" width="120" height="32" loading="lazy" />
+          <p class="muted">One framework for your digital identity, experience and automation.</p>
+        </div>
+        <nav aria-label="Footer">
+          <ul>
+            {NAV.map(([label, url]) => <li><a href={url}>{label}</a></li>)}
+            <li><a href="/start">Start here</a></li>
+          </ul>
+        </nav>
+        <div>
+          <p><a href={`mailto:${SITE.email}`}>{SITE.email}</a></p>
+          <ul class="socials">
+            {SITE.socials.map(([label, url]) => <li><a href={url} rel="me noopener" target="_blank">{label}</a></li>)}
+          </ul>
+        </div>
+      </div>
+      <div class="shell legal muted">© {new Date().getFullYear()} Admonk Studio</div>
+    </footer>
+  </body>
+</html>

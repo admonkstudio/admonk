@@ -1,0 +1,85 @@
+{
+  "name": "PPC",
+  "seo": {
+    "title": "PPC & Google Ads Management | Admonk",
+    "description": "Google Ads campaigns that put your business at the top of search results when customers are ready to buy."
+  },
+  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3f7206c81044b0c36542e6_tap.avif",
+  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a405d54052d50c1a91465a4_Digital-Automation.avif",
+  "hero": {
+    "title": "Be the Business Customers Find When They're Ready to Buy",
+    "description": "PPC helps your business appear at the top of search results when potential customers are actively looking for your products or services, generating high-quality enquiries with measurable results."
+  },
+  "solutionDescription": "When people search online, they're often looking for an immediate solution. PPC advertising places your business in front of those customers at the exact moment they're ready to take action. We create and manage Google Ads campaigns that focus on attracting qualified traffic, maximizing your advertising budget, and turning searches into enquiries. Every campaign is monitored, optimized, and refined to improve performance while giving you complete visibility into where your marketing investment is going.",
+  "challenges": [
+    {
+      "title": "Your Competitors Appear Before You",
+      "summary": "Potential customers are searching for your services, but your competitors are capturing the enquiries before they ever reach your website."
+    },
+    {
+      "title": "You're Spending Money Without Enough Enquiries",
+      "summary": "Advertising costs continue to increase, but your campaigns aren't generating the quality or volume of leads your business needs."
+    },
+    {
+      "title": "You Don't Know What's Working",
+      "summary": "Without proper tracking, it's difficult to understand which keywords, campaigns, or landing pages are producing real business opportunities."
+    }
+  ],
+  "approach": [
+    {
+      "title": "Understand Search Intent",
+      "summary": "We research how your customers search online and identify the keywords most likely to generate qualified enquiries."
+    },
+    {
+      "title": "Build High-Performing Campaigns",
+      "summary": "We create targeted Google Ads campaigns with optimized keywords, compelling ad copy, and dedicated landing pages designed to convert."
+    },
+    {
+      "title": "Measure & Improve",
+      "summary": "We continuously monitor campaign performance, adjust bidding strategies, and optimize conversions to improve return on your advertising investment."
+    }
+  ],
+  "impact": [
+    {
+      "title": "60%",
+      "summary": "Lower Cost Per Lead"
+    },
+    {
+      "title": "4×",
+      "summary": "More Qualified Website Traffic"
+    },
+    {
+      "title": "35%",
+      "summary": "Higher Conversion Rate"
+    }
+  ],
+  "deliverables": {
+    "summary": "You'll receive a fully managed PPC strategy focused on generating qualified enquiries, maximizing your advertising budget, and providing complete visibility into your campaign performance.",
+    "items": [
+      "Google Ads Strategy",
+      "Keyword Research & Planning",
+      "Campaign Setup & Management",
+      "Landing Page Recommendations",
+      "Conversion Tracking",
+      "Budget & Bid Optimization",
+      "Performance Reporting Dashboard",
+      "Ongoing Campaign Optimization",
+      "Monthly Strategy Review"
+    ]
+  },
+  "testimonial": "dr-firas-zghoul",
+  "framework": "digital-experience",
+  "solution": "performance-marketing",
+  "related": [],
+  "tools": [
+    "google-search-console",
+    "google-analytics",
+    "google",
+    "google-ads",
+    "google-campaign-manager-360",
+    "display-video-360",
+    "search-advertising-360"
+  ],
+  "caseStudy": "my-dental-centre",
+  "webflowId": "6a332c1ac8a6658246337d40"
+}

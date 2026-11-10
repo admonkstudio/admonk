@@ -1,0 +1,30 @@
+---
+import Base from '../layouts/Base.astro';
+import FrameworkCards from '../components/FrameworkCards.astro';
+import { PAGE_SEO } from '../lib/site';
+const [title, description] = PAGE_SEO['/the-framework'];
+const system = [
+  ['Connected Architecture', 'Brand, website, marketing, and automation work as one system.'],
+  ['Structured Data', 'Content, leads, and customer information stay organized and reusable.'],
+  ['Reusable Components', 'Launch new pages and campaigns without starting from scratch.'],
+  ['Automated Journeys', 'Move customers from first interaction to follow-up automatically.'],
+  ['Cross-Platform Integration', 'Connect your website with CRM, email, WhatsApp, AI, and internal tools.'],
+  ['Performance Intelligence', 'Track customer behavior, conversions, and workflow performance in one view.'],
+];
+---
+<Base title={title} description={description}>
+  <section class="hero">
+    <div class="shell">
+      <p class="eyebrow">The Framework</p>
+      <h1 class="display">Transform the way your business works online</h1>
+      <p class="lead">Build a stronger digital identity, create exceptional customer experiences, and automate the workflows that help your business grow with confidence.</p>
+    </div>
+  </section>
+  <section class="top"><div class="shell"><FrameworkCards /></div></section>
+  <section>
+    <div class="shell">
+      <div class="head"><h2>Built to work as one connected system</h2><p>Connect your website, customer data, marketing channels, and business tools through one flexible setup designed to simplify operations.</p></div>
+      <div class="grid">{system.map(([t, s]) => <div class="card"><h3>{t}</h3><p>{s}</p></div>)}</div>
+    </div>
+  </section>
+</Base>

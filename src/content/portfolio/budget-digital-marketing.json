@@ -1,0 +1,98 @@
+{
+  "name": "Budget Digital Marketing",
+  "seo": {
+    "title": "Budget Digital Marketing Case Study | Admonk",
+    "description": "Transforming a Startup Agency into a High-Performing Digital Brand. The challenge, our approach, and the results for Budget Digital Marketing."
+  },
+  "title": "Transforming a Startup Agency into a High-Performing Digital Brand",
+  "summary": "Budget Digital Marketing approached Admonk with a strong service offering but a weak digital presence that limited its ability to attract ideal clients. We developed a complete brand identity, redesigned the company's visual positioning, and built a conversion-focused website optimized for search engines and lead generation. Within months of launch, the agency experienced substantial growth in organic visibility, website traffic, and inbound business opportunities.",
+  "logo": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63f8545e3c83c9d054d052_Budget.avif",
+  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3dd22321a1475f193fed56_Icon-Grey.avif",
+  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a557d95a2af09d370345afa_Budget.avif",
+  "websiteUrl": "https://budgetdigitalmarketing.webflow.io/",
+  "featured": false,
+  "yearsOption": "d2f92d0868243fb3d239afc7e7ea7bcd",
+  "industry": "professional-services",
+  "location": "egypt",
+  "solutions": [
+    "website-design-development",
+    "logo-design",
+    "brand-identity-strategy"
+  ],
+  "services": [
+    "webflow-development",
+    "ui-ux-design",
+    "cms-development",
+    "content-management"
+  ],
+  "tools": [
+    "adobe-illustrator",
+    "adobe-indesign",
+    "adobe-photoshop",
+    "google-analytics",
+    "google-search-console",
+    "webflow",
+    "figma",
+    "gsap",
+    "javascript"
+  ],
+  "testimonial": "mr-mohamed",
+  "challenge": {
+    "title": "Budget Digital Marketing needed to reposition itself online to attract better-fit clients.",
+    "items": [
+      "The previous brand identity did not reflect the agency's value.",
+      "The website struggled to communicate services clearly.",
+      "Poor online presence limited trust and lead generation.",
+      "SEO visibility needed major improvement.",
+      "The client needed a stronger showcase to convert visitors into customers."
+    ]
+  },
+  "approach": [
+    {
+      "title": "Established a Strong Brand Identity",
+      "summary": "We created a modern brand identity and visual system that positioned the agency as a trusted digital marketing partner."
+    },
+    {
+      "title": "Built a High-Converting Website",
+      "summary": "We designed a professional website focused on showcasing services, building credibility, and converting visitors into enquiries."
+    },
+    {
+      "title": "Prepared the Business for Growth",
+      "summary": "We optimized the website for performance and search visibility, supporting long-term organic growth and lead generation."
+    }
+  ],
+  "results": [
+    {
+      "label": "SEO & Google Placement",
+      "value": "Top 3",
+      "description": "Target keywords positioned on the first page of Google."
+    },
+    {
+      "label": "Traffic Growth",
+      "value": "300×",
+      "description": "Organic website traffic growth achieved after the brand and website rebuild."
+    },
+    {
+      "label": "Business Impact",
+      "value": "70%",
+      "description": "Lower customer acquisition cost after improving organic visibility."
+    },
+    {
+      "label": "Brand Transformation",
+      "value": "12+",
+      "description": "Core brand identity assets created to reposition the agency."
+    },
+    {
+      "label": "User Experience",
+      "value": "250%",
+      "description": "Increase in organic enquiries through clearer service presentation."
+    },
+    {
+      "label": "Product / Service Showcase",
+      "value": "15+",
+      "description": "Service and case-study sections structured to convert better-fit clients."
+    }
+  ],
+  "gallery": [],
+  "webflowId": "6a3a85039448816a2b2daa71"
+}

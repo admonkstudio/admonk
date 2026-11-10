@@ -1,0 +1,95 @@
+{
+  "name": "Marketing Automation",
+  "seo": {
+    "title": "Marketing Automation: Email, WhatsApp & SMS | Admonk",
+    "description": "Automated email, WhatsApp, and SMS journeys that follow up every enquiry instantly and keep customers engaged."
+  },
+  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a410744df734d6e6493a1d5_6a3f723c1d1f9c2bf421713a_mail.avif",
+  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a4106e74082e5b1527626dd_6a405d54052d50c1a91465a4_Digital-Automation.avif",
+  "hero": {
+    "title": "Turn Every Enquiry into an Ongoing Customer Conversation",
+    "description": "Stay connected with customers automatically through personalized emails, WhatsApp messages, SMS, and other communication channels."
+  },
+  "solutionDescription": "Most businesses lose opportunities not because they don't generate enough leads, but because they don't follow up consistently. Marketing Automation helps you build automated customer journeys that continue working long after someone visits your website. Whether a visitor downloads a brochure, requests a quotation, books a meeting, or abandons a form, your business can respond instantly with the right message at the right time. This creates a better customer experience, saves your team valuable time, and increases the chances of converting enquiries into loyal customers.",
+  "challenges": [
+    {
+      "title": "Your Team Can't Follow Up with Every Lead",
+      "summary": "As enquiries increase, manual follow-ups become inconsistent, causing potential customers to lose interest before anyone contacts them."
+    },
+    {
+      "title": "Customers Stop Hearing from You",
+      "summary": "Many businesses communicate once, then disappear. Without consistent follow-up, customers often choose competitors who stay engaged."
+    },
+    {
+      "title": "Marketing Takes Too Much Time",
+      "summary": "Sending emails, WhatsApp messages, reminders, and updates manually wastes valuable time that could be spent growing the business."
+    }
+  ],
+  "approach": [
+    {
+      "title": "Understand Your Customer Journey",
+      "summary": "We map every important stage of your customer's journey to identify where automation can improve communication."
+    },
+    {
+      "title": "Build Smart Automations",
+      "summary": "We create automated workflows that deliver personalized messages based on customer actions, interests, and business goals."
+    },
+    {
+      "title": "Monitor & Improve Performance",
+      "summary": "We continuously track campaign performance, customer engagement, and conversion rates to improve your automation over time."
+    }
+  ],
+  "impact": [
+    {
+      "title": "5×",
+      "summary": "Faster Customer Follow-Up"
+    },
+    {
+      "title": "80%",
+      "summary": "Less Manual Marketing"
+    },
+    {
+      "title": "3×",
+      "summary": "Higher Customer Engagement"
+    }
+  ],
+  "deliverables": {
+    "summary": "You'll receive a complete marketing automation system designed to nurture leads, improve customer communication, and reduce manual work across your marketing channels.",
+    "items": [
+      "Customer Journey Mapping",
+      "Email Automation Setup",
+      "WhatsApp Automation",
+      "SMS Automation",
+      "Lead Nurturing Workflows",
+      "Trigger-Based Campaigns",
+      "Audience Segmentation",
+      "Performance Reporting Dashboard",
+      "Documentation & Team Training"
+    ]
+  },
+  "testimonial": "mostafa-alokaily",
+  "framework": "digital-automation",
+  "services": [
+    "email-automation",
+    "whatsapp-automation"
+  ],
+  "tools": [
+    "adobe-illustrator",
+    "adobe-indesign",
+    "adobe-photoshop",
+    "mailchimp",
+    "zoho",
+    "brevo",
+    "make",
+    "javascript",
+    "n8n",
+    "zoho-marketing-automation",
+    "openai",
+    "sleekflow",
+    "whatsapp-business"
+  ],
+  "caseStudies": [
+    "kalam"
+  ],
+  "webflowId": "6a410744df734d6e6493a1e3"
+}

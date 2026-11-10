@@ -1,0 +1,20 @@
+---
+import { live } from '../lib/site';
+// Short lines from the Webflow pages, in Framework order.
+const lines: Record<string, string> = {
+  'digital-identity': 'Shape how your business looks, feels, and communicates online.',
+  'digital-experience': 'Create an experience designed to build trust and generate meaningful business opportunities.',
+  'digital-automation': 'Allow your business to run faster, smarter, and with less manual work.',
+};
+const order = Object.keys(lines);
+const items = (await live('frameworks')).sort((a, b) => order.indexOf(a.id) - order.indexOf(b.id));
+---
+<div class="grid">
+  {items.map((f, i) => (
+    <a class="card" href={`/framework/${f.id}`}>
+      <span class="num">{String(i + 1).padStart(2, '0')}</span>
+      <h3>{f.data.name}</h3>
+      <p>{lines[f.id] ?? f.data.hero.description}</p>
+    </a>
+  ))}
+</div>

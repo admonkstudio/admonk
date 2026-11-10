@@ -1,0 +1,87 @@
+{
+  "name": "UI/UX Design",
+  "seo": {
+    "title": "UI/UX Design Services | Admonk",
+    "description": "UX research, information architecture, and interface design that help visitors find what they need and take action."
+  },
+  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3f70a080ddf745a7374179_dashboard.avif",
+  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a405d54052d50c1a91465a4_Digital-Automation.avif",
+  "hero": {
+    "title": "Make Every Visit Simple, Clear, and Easy to Navigate",
+    "description": "A well-designed website helps visitors find what they need, understand your business, and take action without confusion. Good design removes obstacles and creates a smoother customer experience."
+  },
+  "solutionDescription": "UI/UX Design is about creating a website that's easy to understand and enjoyable to use. Instead of focusing only on appearance, we design every page around your customers' needs, helping them find information quickly, understand your services, and complete important actions with confidence. From page layouts and navigation to calls-to-action and mobile usability, every design decision is made to improve the overall experience and support your business goals.",
+  "challenges": [
+    {
+      "title": "Visitors Can't Find What They're Looking For",
+      "summary": "Important information is difficult to locate, causing visitors to leave before contacting your business."
+    },
+    {
+      "title": "Your Website Feels Confusing",
+      "summary": "Too many pages, poor navigation, or unclear layouts make it harder for customers to understand your services."
+    },
+    {
+      "title": "Customers Leave Without Taking Action",
+      "summary": "Visitors browse your website but don't enquire, book, or request a quotation because the experience doesn't guide them towards the next step."
+    }
+  ],
+  "approach": [
+    {
+      "title": "Understand Your Customers",
+      "summary": "We identify what your visitors need, how they navigate your website, and what information influences their decisions."
+    },
+    {
+      "title": "Design Around User Behavior",
+      "summary": "We organize pages, content, and navigation into a clear structure that helps visitors move naturally through your website."
+    },
+    {
+      "title": "Test & Refine the Experience",
+      "summary": "Every design is reviewed across different devices and user scenarios to ensure a smooth, consistent experience."
+    }
+  ],
+  "impact": [
+    {
+      "title": "45%",
+      "summary": "Higher User Engagement"
+    },
+    {
+      "title": "35%",
+      "summary": "Lower Bounce Rate"
+    },
+    {
+      "title": "3×",
+      "summary": "More Customer Actions"
+    }
+  ],
+  "deliverables": {
+    "summary": "You'll receive a complete user experience designed around your customers, making your website easier to navigate, more enjoyable to use, and better aligned with your business objectives.",
+    "items": [
+      "User Experience Research",
+      "Website Information Architecture",
+      "User Interface Design",
+      "Responsive Page Layouts",
+      "Navigation & Menu Design",
+      "Wireframes & Prototypes",
+      "Call-to-Action Optimization",
+      "Mobile Experience Optimization",
+      "Design Files & Full Ownership"
+    ]
+  },
+  "testimonial": "mostafa-alokaily",
+  "framework": "digital-experience",
+  "solution": "website-design-development",
+  "related": [
+    "content-management"
+  ],
+  "tools": [
+    "adobe-illustrator",
+    "adobe-photoshop",
+    "figma",
+    "webflow",
+    "canva",
+    "lottie-files",
+    "javascript"
+  ],
+  "caseStudy": "kalam",
+  "webflowId": "6a332bd8ee7c5942fbabcad4"
+}

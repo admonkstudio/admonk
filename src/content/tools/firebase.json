@@ -1,0 +1,12 @@
+{
+  "name": "Firebase",
+  "seo": {
+    "title": "Firebase Services | Admonk",
+    "description": "We use Firebase for authentication, real-time data, and hosting when building web and mobile applications that need to scale."
+  },
+  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a52e34683065aa9c6be7c95_fire.avif",
+  "summary": "Build secure, real-time web and mobile applications.",
+  "description": "We use Firebase for authentication, real-time data, and hosting when building web and mobile applications that need to scale.",
+  "framework": "digital-automation",
+  "webflowId": "6a416768c4092364e2392c52"
+}

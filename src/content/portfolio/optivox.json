@@ -1,0 +1,91 @@
+{
+  "name": "Optivox",
+  "seo": {
+    "title": "Optivox Case Study | Admonk",
+    "description": "Launching a Modern Digital Identity for an AI Startup: how Admonk helped Optivox in United Kingdom. The challenge, our approach, and the results."
+  },
+  "title": "Launching a Modern Digital Identity for an AI Startup",
+  "summary": "Optivox entered the AI market with an innovative product and needed a website that reflected its forward-thinking vision. Admonk crafted a modern digital experience centered around product storytelling, interactive design, and clear communication, helping position the company as a credible player in a rapidly evolving industry.",
+  "logo": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63fb103d48f7ebf5f99b32_Optivox.avif",
+  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3dc6784da587d39be4fce4_Icon-Grey.avif",
+  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a5581cfd07cff67f2d28561_Laptop-Dark-Ambience-1.avif",
+  "websiteUrl": "https://optivox.ai/",
+  "featured": false,
+  "yearsOption": "35f63fda26c06daa509ece82b3afd101",
+  "industry": "technology-software",
+  "location": "united-kingdom",
+  "solutions": [
+    "website-design-development"
+  ],
+  "services": [
+    "content-management",
+    "ui-ux-design",
+    "webflow-development"
+  ],
+  "tools": [
+    "adobe-illustrator",
+    "adobe-photoshop",
+    "google-analytics",
+    "google-search-console",
+    "webflow"
+  ],
+  "testimonial": "mohamed-ossto-3",
+  "challenge": {
+    "title": "Optivox needed to establish credibility as a new AI company entering a competitive technology market.",
+    "items": [
+      "The product required a modern digital identity from launch.",
+      "Complex AI capabilities needed to be communicated simply.",
+      "The website had to differentiate the company from emerging competitors.",
+      "Product storytelling needed to increase visitor engagement.",
+      "The experience had to reflect innovation without overwhelming users."
+    ]
+  },
+  "approach": [
+    {
+      "title": "Presented the Product Clearly",
+      "summary": "We transformed a complex AI platform into a simple, engaging digital experience."
+    },
+    {
+      "title": "Designed Around User Understanding",
+      "summary": "Every page was structured to explain the platform through visuals, animation, and storytelling."
+    },
+    {
+      "title": "Created a Scalable Foundation",
+      "summary": "The website was built to support future growth as the product and company evolve."
+    }
+  ],
+  "results": [
+    {
+      "label": "SEO & Google Placement",
+      "value": "90+",
+      "description": "Search-ready launch"
+    },
+    {
+      "label": "Website Performance",
+      "value": "95+",
+      "description": "Performance optimization score"
+    },
+    {
+      "label": "Business Impact",
+      "value": "85%",
+      "description": "Higher visitor engagement"
+    },
+    {
+      "label": "Brand Transformation",
+      "value": "95%",
+      "description": "Modern AI brand positioning"
+    },
+    {
+      "label": "User Experience",
+      "value": "25+",
+      "description": "Interactive product sections"
+    },
+    {
+      "label": "Product / Service Showcase",
+      "value": "12+",
+      "description": "AI capabilities presented"
+    }
+  ],
+  "gallery": [],
+  "webflowId": "69016282fe1eeb5a01b531fc"
+}

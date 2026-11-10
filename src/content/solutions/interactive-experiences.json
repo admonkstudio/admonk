@@ -1,0 +1,90 @@
+{
+  "name": "Interactive Experiences",
+  "seo": {
+    "title": "Interactive Website Experiences & Motion | Admonk",
+    "description": "Scroll animations, motion design, and interactive storytelling that make your website memorable without slowing it down."
+  },
+  "hero": {
+    "title": "Create a Website People Remember, Not Just Visit",
+    "description": "First impressions happen in seconds. Interactive experiences help your website capture attention, keep visitors engaged, and create a memorable experience that sets your business apart."
+  },
+  "solutionDescription": "Most business websites look and behave the same. Interactive Experiences add movement, storytelling, and meaningful interactions that make your brand feel more engaging and professional. Whether it's subtle animations, immersive scrolling, product showcases, or interactive content, every element is designed with a purpose—to improve the customer experience, highlight your value, and leave a lasting impression without sacrificing speed or usability.",
+  "challenges": [
+    {
+      "title": "Your Website Feels Like Every Other Website",
+      "summary": "Customers browse dozens of websites before making a decision. A generic experience makes it difficult for your business to stand out."
+    },
+    {
+      "title": "Visitors Lose Interest Too Quickly",
+      "summary": "Long blocks of text and static pages often fail to keep visitors engaged long enough to understand your products or services."
+    },
+    {
+      "title": "Complex Ideas Are Difficult to Explain",
+      "summary": "Some products and services require more than words. Interactive experiences help simplify information and guide visitors through your story."
+    }
+  ],
+  "approach": [
+    {
+      "title": "Discover What Matters Most",
+      "summary": "We identify the moments where interaction can improve understanding, engagement, and customer confidence."
+    },
+    {
+      "title": "Design Meaningful Interactions",
+      "summary": "Every animation and interactive element is carefully designed to support your message, not distract from it."
+    },
+    {
+      "title": "Build a Smooth Experience",
+      "summary": "We optimize every interaction for speed, responsiveness, and compatibility across modern devices and browsers."
+    }
+  ],
+  "impact": [
+    {
+      "title": "2×",
+      "summary": "Higher Visitor Engagement"
+    },
+    {
+      "title": "65%",
+      "summary": "Lower Bounce Rate"
+    },
+    {
+      "title": "90%",
+      "summary": "Stronger Brand Perception"
+    }
+  ],
+  "deliverables": {
+    "summary": "You'll receive a collection of custom interactive experiences designed specifically for your website, helping you present your business in a more engaging, memorable, and professional way.",
+    "items": [
+      "Custom Motion Design",
+      "Interactive User Interface",
+      "Scroll-Based Animations",
+      "Product & Service Storytelling",
+      "Interactive Content Sections",
+      "Micro Interactions",
+      "Performance Optimization",
+      "Cross-Device Testing",
+      "Full Ownership of All Assets"
+    ]
+  },
+  "testimonial": "mohamed-ossto-3",
+  "framework": "digital-experience",
+  "services": [
+    "webflow-development",
+    "ai-chatbot"
+  ],
+  "tools": [
+    "openai",
+    "webflow",
+    "adobe-after-effect",
+    "adobe-premier-pro",
+    "spline",
+    "lottie-files",
+    "unicorn-studio",
+    "gsap",
+    "javascript",
+    "figma"
+  ],
+  "caseStudies": [
+    "softobia"
+  ],
+  "webflowId": "6a410746c486cab150c1ffae"
+}

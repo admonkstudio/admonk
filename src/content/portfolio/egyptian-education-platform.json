@@ -1,0 +1,95 @@
+{
+  "name": "Egyptian Education Platform",
+  "seo": {
+    "title": "Egyptian Education Platform Case Study | Admonk",
+    "description": "Building the Digital Foundation for a Regional Education Group. The challenge, our approach, and the results for Egyptian Education Platform."
+  },
+  "title": "Building the Digital Foundation for a Regional Education Group",
+  "summary": "Egypt Education Platform (EEP) is one of the Middle East's leading education organizations, operating multiple schools and educational institutions across the region. The objective was to create a modern digital platform that reflects the organization's renewed brand identity while showcasing its projects, values, and educational vision. Admonk developed a scalable, CMS-driven website that enables internal teams to efficiently manage large volumes of content while delivering an engaging experience for students, parents, and partners.",
+  "thumbnail": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdfc045b5225a3bae1045_EEP.jpg",
+  "logo": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63f88be3b07a3755fb9cca_EEP.avif",
+  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3dbc62a11747a5a451405d_Icon-Grey.avif",
+  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a558375b6f034c23712d1f8_EEP.avif",
+  "websiteUrl": "https://eep-egypteducationplatform.webflow.io/",
+  "featured": false,
+  "yearsOption": "35f63fda26c06daa509ece82b3afd101",
+  "industry": "education",
+  "location": "egypt",
+  "solutions": [
+    "website-design-development"
+  ],
+  "services": [
+    "webflow-development",
+    "ui-ux-design",
+    "content-management",
+    "cms-development"
+  ],
+  "tools": [
+    "adobe-illustrator",
+    "adobe-photoshop",
+    "google-analytics",
+    "google-search-console",
+    "webflow",
+    "gsap",
+    "figma"
+  ],
+  "testimonial": "eslam-essam-3",
+  "challenge": {
+    "title": "EEP needed a scalable website to represent a major education group and its growing portfolio.",
+    "items": [
+      "The website had to reflect the company's new branding and identity.",
+      "Multiple schools and projects needed to be presented clearly.",
+      "The platform required a large but easy-to-manage CMS.",
+      "The digital experience had to communicate values, credibility, and scale.",
+      "The project needed to be completed on time with high design accuracy."
+    ]
+  },
+  "approach": [
+    {
+      "title": "Unified the Digital Identity",
+      "summary": "We translated the organization's new branding into a consistent digital experience across the entire website."
+    },
+    {
+      "title": "Showcased Every Education Project",
+      "summary": "We built a structured platform that presents schools, initiatives, and company values in a clear and organized way."
+    },
+    {
+      "title": "Simplified Content Management",
+      "summary": "We developed a scalable CMS that allows the team to manage and expand website content with ease."
+    }
+  ],
+  "results": [
+    {
+      "label": "SEO & Google Placement",
+      "value": "90+",
+      "description": "Technical SEO health score prepared for stronger discoverability."
+    },
+    {
+      "label": "Website Performance",
+      "value": "98%",
+      "description": "Mobile compatibility benchmark reached across the platform."
+    },
+    {
+      "label": "Brand Transformation",
+      "value": "5+",
+      "description": "Educational entities presented through the refreshed brand identity."
+    },
+    {
+      "label": "User Experience",
+      "value": "95%",
+      "description": "Brand-to-website experience accuracy across major page templates."
+    },
+    {
+      "label": "CMS & Content Management",
+      "value": "300+",
+      "description": "CMS content items structured for easier internal content control."
+    },
+    {
+      "label": "Product / Service Showcase",
+      "value": "20+",
+      "description": "Corporate, school, and project pages digitized under one platform."
+    }
+  ],
+  "gallery": [],
+  "webflowId": "6a3a851f671eafb06a920ea4"
+}

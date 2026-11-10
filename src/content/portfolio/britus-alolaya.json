@@ -1,0 +1,93 @@
+{
+  "name": "Britus Alolaya",
+  "seo": {
+    "title": "Britus Alolaya Case Study | Admonk",
+    "description": "Building a Digital Campus for One of the Region's Leading International Schools. The challenge, our approach, and the results for Britus Alolaya."
+  },
+  "title": "Building a Digital Campus for One of the Region's Leading International Schools",
+  "summary": "Al Olaya International Schools is one of the Gulf region's largest private education groups, operating multiple campuses across Saudi Arabia. The organization required more than a modern website—it needed a centralized digital platform capable of supporting branding, admissions, parent engagement, and content management across multiple schools. Admonk delivered a scalable CMS-powered platform that simplifies website administration while providing parents with an intuitive experience to explore programs, resources, and enrollment information.",
+  "logo": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63f7e9bb3c3be3b357d8ab_Britos.avif",
+  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3e6e41090e41d688260fb7_Icon-Grey.svg",
+  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a557bc1a0935f773c7f8d91_Britus.avif",
+  "websiteUrl": "https://www.alolaya.edu.sa/",
+  "featured": false,
+  "yearsOption": "35f63fda26c06daa509ece82b3afd101",
+  "industry": "education",
+  "location": "saudi-arabia",
+  "solutions": [
+    "website-design-development"
+  ],
+  "services": [
+    "webflow-development",
+    "ui-ux-design",
+    "cms-development",
+    "content-management"
+  ],
+  "tools": [
+    "adobe-illustrator",
+    "adobe-photoshop",
+    "google-analytics",
+    "google-search-console",
+    "webflow",
+    "figma"
+  ],
+  "testimonial": "eslam-essam-2",
+  "challenge": {
+    "title": "Al Olaya needed a digital platform that could support branding, parent communication, and multi-branch content management.",
+    "items": [
+      "The existing website did not reflect the school's regional reputation.",
+      "Parents needed easier access to resources and admissions information.",
+      "The school required a large CMS for simple content updates.",
+      "The website had to support multiple branches and programs.",
+      "The new design needed to feel clean, fast, and trustworthy."
+    ]
+  },
+  "approach": [
+    {
+      "title": "Refreshed the School Identity",
+      "summary": "We modernized the school's digital presence while respecting its established reputation."
+    },
+    {
+      "title": "Designed for Parents and Students",
+      "summary": "The website was structured to help families quickly find information about campuses, admissions, and academic programs."
+    },
+    {
+      "title": "Simplified Content Management",
+      "summary": "A flexible CMS allows the school's team to manage large amounts of content across multiple departments."
+    }
+  ],
+  "results": [
+    {
+      "label": "Business Impact",
+      "value": "24/7",
+      "description": "Parent resources made accessible online at any time."
+    },
+    {
+      "label": "Brand Transformation",
+      "value": "5+",
+      "description": "School branches unified under one digital brand experience."
+    },
+    {
+      "label": "User Experience",
+      "value": "98%",
+      "description": "Mobile usability optimized for parents and prospective families."
+    },
+    {
+      "label": "Automation & Integration",
+      "value": "80%",
+      "description": "Reduction in content publishing time through CMS-based management."
+    },
+    {
+      "label": "CMS & Content Management",
+      "value": "500+",
+      "description": "Content items structured inside a scalable CMS for school teams."
+    },
+    {
+      "label": "Product / Service Showcase",
+      "value": "30+",
+      "description": "Admissions, programs, and parent information pages organized."
+    }
+  ],
+  "gallery": [],
+  "webflowId": "6a3a84f3f6077a00a90ea8eb"
+}

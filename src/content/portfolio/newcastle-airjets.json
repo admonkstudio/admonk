@@ -1,0 +1,101 @@
+{
+  "name": "Newcastle Airjets",
+  "seo": {
+    "title": "Newcastle Airjets Case Study | Admonk",
+    "description": "Engineering a Premium Digital Experience for Private Aviation: how Admonk helped Newcastle Airjets in Canada. The challenge, our approach, and the results."
+  },
+  "title": "Engineering a Premium Digital Experience for Private Aviation",
+  "summary": "Newcastle Airjets required a luxury digital experience capable of handling sophisticated operational requirements while maintaining the elegance expected within the private aviation sector. Admonk developed a highly customized solution featuring advanced calculations, refined interactions, and premium visual storytelling.",
+  "logo": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63fae4c064a7a594df09a5_Newcastle.avif",
+  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3e9c1864df7247079bc982_Logo-Grey.svg",
+  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a557aeb18ebdb559179ba0c_6a4633da57f009e0e8c0f8b0_03-Macbook.avif",
+  "websiteUrl": "https://www.newcastleairjets.com/",
+  "featured": false,
+  "yearsOption": "35f63fda26c06daa509ece82b3afd101",
+  "industry": "travel-hospitality",
+  "location": "canada",
+  "solutions": [
+    "website-design-development",
+    "logo-design"
+  ],
+  "services": [
+    "cms-development",
+    "content-management",
+    "email-automation",
+    "ui-ux-design",
+    "webflow-development"
+  ],
+  "tools": [
+    "adobe-illustrator",
+    "adobe-photoshop",
+    "google-analytics",
+    "google-search-console",
+    "webflow",
+    "make",
+    "n8n",
+    "zapier",
+    "figma",
+    "airtable",
+    "gsap",
+    "javascript"
+  ],
+  "testimonial": "amgad-3",
+  "challenge": {
+    "title": "Newcastle Airjets required a sophisticated digital platform capable of supporting complex aviation requirements without compromising the luxury customer experience.",
+    "items": [
+      "Flight calculations required advanced custom functionality.",
+      "The website needed to reflect the exclusivity of private aviation.",
+      "Complex booking logic had to remain simple for visitors.",
+      "Performance and responsiveness were essential across all devices.",
+      "The user journey needed to inspire confidence from the first interaction."
+    ]
+  },
+  "approach": [
+    {
+      "title": "Engineered a Premium Experience",
+      "summary": "We transformed complex aviation requirements into a refined digital experience that reflects the exclusivity of private air travel."
+    },
+    {
+      "title": "Built Around Business Requirements",
+      "summary": "Every section, calculation, and interaction was carefully developed to match the client's operational needs."
+    },
+    {
+      "title": "Prepared for Long-Term Growth",
+      "summary": "The website was optimized for performance, scalability, and future expansion without compromising the premium experience."
+    }
+  ],
+  "results": [
+    {
+      "label": "SEO & Google Placement",
+      "value": "90+",
+      "description": "Technical SEO foundation prepared for long-term organic growth."
+    },
+    {
+      "label": "Website Performance",
+      "value": "94+",
+      "description": "Performance benchmark achieved despite advanced custom functionality."
+    },
+    {
+      "label": "Business Impact",
+      "value": "99.9%",
+      "description": "Calculation accuracy across complex flight quotation scenarios."
+    },
+    {
+      "label": "Brand Transformation",
+      "value": "25+",
+      "description": "Luxury visual components designed to reinforce the premium aviation experience."
+    },
+    {
+      "label": "User Experience",
+      "value": "12+",
+      "description": "Custom booking and quotation journeys optimized for private aviation clients."
+    },
+    {
+      "label": "Product / Service Showcase",
+      "value": "8+",
+      "description": "Private aviation services structured into an intuitive digital experience."
+    }
+  ],
+  "gallery": [],
+  "webflowId": "6a3a845df78dbb8a95a01805"
+}

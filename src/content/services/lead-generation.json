@@ -1,0 +1,92 @@
+{
+  "name": "Lead Generation",
+  "seo": {
+    "title": "Lead Generation Services | Admonk",
+    "description": "Landing pages, campaigns, and conversion paths that turn your website into a steady source of qualified enquiries."
+  },
+  "hero": {
+    "title": "Turn Your Website Into a Reliable Source of New Business",
+    "description": "A well-planned lead generation strategy helps your business attract qualified prospects, generate consistent enquiries, and create more opportunities for your sales team."
+  },
+  "solutionDescription": "Generating leads isn't about bringing more visitors to your website—it's about attracting the right visitors and giving them a reason to take action. We combine landing pages, advertising campaigns, SEO, customer journeys, and conversion optimization to help your business consistently generate qualified enquiries. Every strategy is designed around your ideal customer, ensuring your marketing budget is focused on attracting people who are genuinely interested in your products or services.",
+  "challenges": [
+    {
+      "title": "Your Website Gets Visitors But Few Enquiries",
+      "summary": "People browse your website but leave without contacting your business or requesting a quotation."
+    },
+    {
+      "title": "You're Attracting the Wrong Audience",
+      "summary": "Your marketing brings traffic, but many visitors aren't interested in your services or don't match your ideal customer profile."
+    },
+    {
+      "title": "Lead Generation Is Inconsistent",
+      "summary": "Some months are busy, while others are quiet because your business doesn't have a reliable system for attracting new opportunities."
+    }
+  ],
+  "approach": [
+    {
+      "title": "Define Your Ideal Customer",
+      "summary": "We identify who you're trying to reach, where they spend their time, and what motivates them to take action."
+    },
+    {
+      "title": "Build Your Lead Generation Strategy",
+      "summary": "We create landing pages, marketing campaigns, and conversion paths designed to turn visitors into qualified enquiries."
+    },
+    {
+      "title": "Optimize for Better Results",
+      "summary": "We monitor performance, improve conversion rates, and continuously refine the strategy to generate better-quality leads over time."
+    }
+  ],
+  "impact": [
+    {
+      "title": "3×",
+      "summary": "More Qualified Enquiries"
+    },
+    {
+      "title": "45%",
+      "summary": "Higher Conversion Rate"
+    },
+    {
+      "title": "60%",
+      "summary": "Lower Cost Per Lead"
+    }
+  ],
+  "deliverables": {
+    "summary": "You'll receive a complete lead generation system built around your business goals, helping you consistently attract, capture, and convert qualified prospects into valuable business opportunities.",
+    "items": [
+      "Lead Generation Strategy",
+      "Landing Page Development",
+      "Lead Capture Forms",
+      "Conversion Optimization",
+      "Customer Journey Planning",
+      "Campaign Tracking & Analytics",
+      "CRM Lead Integration",
+      "Performance Reporting",
+      "Ongoing Optimization Recommendations"
+    ]
+  },
+  "testimonial": "dr-ahnaf-aljajah",
+  "framework": "digital-experience",
+  "solution": "performance-marketing",
+  "related": [
+    "paid-social",
+    "ppc",
+    "seo"
+  ],
+  "tools": [
+    "facebook",
+    "google-analytics",
+    "google-search-console",
+    "instagram",
+    "linkedin",
+    "tiktok",
+    "youtube",
+    "google",
+    "google-ads",
+    "google-campaign-manager-360",
+    "display-video-360",
+    "search-advertising-360"
+  ],
+  "caseStudy": "mastery-academy",
+  "webflowId": "6a4116dc8cb15a3ebf1d1924"
+}

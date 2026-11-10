@@ -1,0 +1,12 @@
+{
+  "name": "Google Sheets",
+  "seo": {
+    "title": "Google Sheets Services | Admonk",
+    "description": "We connect Google Sheets to your website, forms, and tools so data updates automatically instead of being copied by hand."
+  },
+  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a52e12c29a68e66178fd9f4_google-sheets.avif",
+  "summary": "Organize, share, and automate business data in one place.",
+  "description": "We connect Google Sheets to your website, forms, and tools so data updates automatically instead of being copied by hand.",
+  "framework": "digital-automation",
+  "webflowId": "6a4166fd3984228fb073b893"
+}

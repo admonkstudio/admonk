@@ -1,0 +1,82 @@
+{
+  "name": "Brand Identity & Strategy",
+  "seo": {
+    "title": "Brand Identity & Strategy | Admonk",
+    "description": "Positioning, messaging, and visual identity brought together into one clear brand that customers recognize and trust."
+  },
+  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a410741052e7760e0fb9688_6a3f7157fcff911905d7d594_view.avif",
+  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a4106e74082e5b1527626dd_6a405d54052d50c1a91465a4_Digital-Automation.avif",
+  "hero": {
+    "title": "Build a Brand That Customers Trust from the First Impression",
+    "description": "Your brand is often the first thing people notice about your business. A clear brand identity helps you stand out, build trust, and make every customer interaction more memorable."
+  },
+  "solutionDescription": "Your brand is much more than a logo or a color palette—it's how people recognize, remember, and talk about your business. Brand Identity & Strategy brings together your positioning, visual identity, messaging, and personality into one clear direction. We help you define how your business should be perceived, ensuring every touchpoint—from your website to your proposals and social media—communicates the same professional image and supports your long-term business goals.",
+  "challenges": [
+    {
+      "title": "Your Business Looks Like Everyone Else",
+      "summary": "Without a clear identity, it's difficult for customers to understand what makes your business different from the competition."
+    },
+    {
+      "title": "Customers Don't Remember Your Brand",
+      "summary": "An inconsistent or generic brand makes it harder for people to recognize, recall, and recommend your business."
+    },
+    {
+      "title": "Your Brand Doesn't Match Your Business",
+      "summary": "Your company has grown, but your branding no longer reflects the quality of your products, services, or expertise."
+    }
+  ],
+  "approach": [
+    {
+      "title": "Understand Your Business",
+      "summary": "We learn about your goals, target audience, competitors, and market position to build a strategy around your business—not just your visuals."
+    },
+    {
+      "title": "Define Your Brand",
+      "summary": "We create a clear identity through positioning, messaging, visual direction, and branding elements that work together consistently."
+    },
+    {
+      "title": "Build a Scalable Brand System",
+      "summary": "Everything is documented and prepared so your brand can grow consistently across your website, marketing, and future campaigns."
+    }
+  ],
+  "impact": [
+    {
+      "title": "3×",
+      "summary": "Stronger Brand Recognition"
+    },
+    {
+      "title": "85%",
+      "summary": "More Consistent Brand Communication"
+    },
+    {
+      "title": "90+",
+      "summary": "Brand Readiness Score"
+    }
+  ],
+  "deliverables": {
+    "summary": "You'll receive a complete brand identity system designed to help your business present itself consistently, professionally, and confidently across every digital and physical touchpoint.",
+    "items": [
+      "Brand Strategy Document",
+      "Brand Positioning",
+      "Visual Identity System",
+      "Brand Color Palette",
+      "Typography System",
+      "Brand Messaging Guidelines",
+      "Iconography & Graphic Elements",
+      "Brand Presentation",
+      "Full Ownership of All Source Files"
+    ]
+  },
+  "testimonial": "dr-ahnaf-aljajah",
+  "framework": "digital-identity",
+  "services": [],
+  "tools": [
+    "adobe-illustrator",
+    "adobe-indesign",
+    "adobe-photoshop"
+  ],
+  "caseStudies": [
+    "mastery-academy"
+  ],
+  "webflowId": "6a410741052e7760e0fb96aa"
+}

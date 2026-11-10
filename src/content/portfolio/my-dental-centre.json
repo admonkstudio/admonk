@@ -1,0 +1,103 @@
+{
+  "name": "My Dental Centre",
+  "seo": {
+    "title": "My Dental Centre Case Study | Admonk",
+    "description": "Driving Long-Term Growth Through Continuous Digital Optimization. The challenge, our approach, and the results for My Dental Centre."
+  },
+  "title": "Driving Long-Term Growth Through Continuous Digital Optimization",
+  "summary": "Over several years, My Dental Centre has evolved alongside its digital presence. Through continuous website improvements, SEO optimization, and PPC management, Admonk transformed the practice into one of the strongest-performing dental clinics online while maintaining exceptional return on advertising investment.",
+  "thumbnail": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdfd4f750192b49df75e6_My-Dental.jpg",
+  "logo": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63fa91f4611f86d1a818db_My%20Dental.avif",
+  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3dc06be7c263d2bf04555c_Icon-Grey.avif",
+  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a55910c415baa87d17b70c4_My-Dental.avif",
+  "websiteUrl": "https://www.mydentalcentre.com.au/",
+  "featured": false,
+  "yearsOption": "7ec0453c49d2094dd5a828269e685dd1",
+  "styleOption": "87526f1e43e8235ec4a9e58bfe239dd7",
+  "industry": "healthcare",
+  "location": "sydney-australia",
+  "solutions": [
+    "website-design-development",
+    "performance-marketing"
+  ],
+  "services": [
+    "cms-development",
+    "content-management",
+    "seo",
+    "ppc",
+    "ui-ux-design",
+    "webflow-development"
+  ],
+  "tools": [
+    "adobe-illustrator",
+    "adobe-photoshop",
+    "google-analytics",
+    "google-search-console",
+    "webflow",
+    "figma",
+    "google",
+    "google-ads",
+    "google-campaign-manager-360",
+    "search-advertising-360",
+    "lottie-files"
+  ],
+  "testimonial": "dr-firas-zghoul",
+  "challenge": {
+    "title": "My Dental Centre wanted to continuously improve its digital presence while maximizing marketing performance.",
+    "items": [
+      "The website required ongoing modernization to remain competitive.",
+      "Organic search visibility needed continuous improvement.",
+      "Paid advertising had to generate more leads without increasing budget.",
+      "User experience required regular optimization to improve conversions.",
+      "The practice wanted a sustainable long-term growth strategy rather than one-time improvements."
+    ]
+  },
+  "approach": [
+    {
+      "title": "Modernized the Online Presence",
+      "summary": "We continuously improved the website to reflect the clinic's growth and professional reputation."
+    },
+    {
+      "title": "Optimized the Patient Journey",
+      "summary": "The website was designed to make booking appointments and exploring treatments simple and intuitive."
+    },
+    {
+      "title": "Supported Long-Term Growth",
+      "summary": "We combined SEO, performance improvements, and ongoing optimization to strengthen digital results."
+    }
+  ],
+  "results": [
+    {
+      "label": "SEO & Google Placement",
+      "value": "Top 3",
+      "description": "Google rankings maintained across core dental services."
+    },
+    {
+      "label": "Website Performance",
+      "value": "95+",
+      "description": "Landing page optimization for SEO and PPC."
+    },
+    {
+      "label": "Traffic Growth",
+      "value": "220%",
+      "description": "Increase in organic website traffic."
+    },
+    {
+      "label": "Business Impact",
+      "value": "500%",
+      "description": "Growth in qualified patient enquiries while maintaining the same advertising budget."
+    },
+    {
+      "label": "Brand Transformation",
+      "value": "15+",
+      "description": "Website improvements delivered over multiple redesign phases."
+    },
+    {
+      "label": "User Experience",
+      "value": "90%",
+      "description": "Higher visitor engagement through continuous optimization."
+    }
+  ],
+  "gallery": [],
+  "webflowId": "6a3a844f7092f58d5fa2c84a"
+}

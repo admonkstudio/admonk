@@ -1,0 +1,120 @@
+{
+  "name": "Website Design & Development",
+  "seo": {
+    "title": "Website Design & Development | Admonk",
+    "description": "Custom websites built to convert, easy for your team to manage, and ready for search engines, from strategy to launch."
+  },
+  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a41074290027fbc51124032_6a3f70ca5002304ea7f8d239_front-end-programming.avif",
+  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a41074290027fbc5112403b_6a371a6cca0e46e56c1a0293_Tablet-Screen-Mockup.avif",
+  "hero": {
+    "title": "Websites Built to Convert, Scale, and Perform",
+    "description": "Build trust, answer customer questions, generate enquiries, and become the central platform your business depends on every day."
+  },
+  "solutionDescription": "Your website is often the first place customers decide whether they trust your business. We design and develop custom websites that combine strategy, content, user experience, and technology into one platform that supports your business goals. Whether you're launching a new company or replacing an outdated website, we build websites that are easy to manage, optimized for search engines, and ready to grow with your business. Every website is designed to deliver a better experience for your customers while giving your team complete control over content and future updates.",
+  "challenges": [
+    {
+      "title": "Your Website Doesn't Reflect Your Business",
+      "summary": "Your company has grown, but your website still looks outdated, contains old content, or no longer represents the quality of your services."
+    },
+    {
+      "title": "Managing Your Website Is Too Difficult",
+      "summary": "Simple content updates require developers, slowing your team down and making your website difficult to maintain."
+    },
+    {
+      "title": "Your Website Isn't Helping Your Business Grow",
+      "summary": "Visitors leave without taking action because the website lacks a clear structure, strong messaging, or a smooth customer experience."
+    }
+  ],
+  "approach": [
+    {
+      "title": "Plan Around Your Business Goals",
+      "summary": "We understand your customers, services, and objectives before designing the website, ensuring every page has a clear purpose."
+    },
+    {
+      "title": "Design & Build Your Digital Platform",
+      "summary": "We create a custom website that reflects your brand, performs across all devices, and gives your team full control through an easy-to-manage CMS."
+    },
+    {
+      "title": "Launch, Optimize & Support",
+      "summary": "Before launch, we optimize your website for speed, technical SEO, security, and long-term scalability, ensuring it's ready to support your business from day one."
+    }
+  ],
+  "impact": [
+    {
+      "title": "90+",
+      "summary": "Performance Score"
+    },
+    {
+      "title": "3×",
+      "summary": "More Customer Enquiries"
+    },
+    {
+      "title": "80%",
+      "summary": "Faster Content Management"
+    }
+  ],
+  "deliverables": {
+    "summary": "You'll receive a fully customized website built around your business goals, complete with everything your team needs to manage, grow, and continuously improve your online presence.",
+    "items": [
+      "Custom Website Design & Development",
+      "Responsive User Experience",
+      "Webflow Development",
+      "CMS Setup & Content Management",
+      "Database Structure & Collections",
+      "Technical SEO Foundation",
+      "Performance & Speed Optimization",
+      "Team Training & Documentation",
+      "Full Website Ownership & Source Transfer"
+    ]
+  },
+  "testimonial": "robert-benjamin",
+  "framework": "digital-experience",
+  "services": [
+    "cms-development",
+    "content-management",
+    "ui-ux-design",
+    "webflow-development"
+  ],
+  "tools": [
+    "adobe-illustrator",
+    "adobe-photoshop",
+    "webflow",
+    "figma",
+    "gsap",
+    "javascript",
+    "lottie-files",
+    "spline",
+    "unicorn-studio",
+    "canva",
+    "firebase",
+    "google-analytics"
+  ],
+  "caseStudies": [
+    "al-rahma-health-clinic",
+    "al-safa-industrial",
+    "al-safa-logistics-solutions",
+    "almaza-bay",
+    "befo",
+    "britus-alolaya",
+    "budget-digital-marketing",
+    "egyptian-education-platform",
+    "evos",
+    "flypie",
+    "gen-academy",
+    "kalam",
+    "khalagaat",
+    "kreston",
+    "mastery-academy",
+    "mississauga-used-cars",
+    "my-dental-centre",
+    "newcastle-airjets",
+    "optivox",
+    "paraguru",
+    "pioneers",
+    "softobia",
+    "tanafos",
+    "university-of-hertfordshire",
+    "vericash"
+  ],
+  "webflowId": "6a41074290027fbc51124048"
+}

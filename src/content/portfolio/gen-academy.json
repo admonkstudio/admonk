@@ -1,0 +1,93 @@
+{
+  "name": "Gen Academy",
+  "seo": {
+    "title": "Gen Academy Case Study | Admonk",
+    "description": "Launching an Engaging Digital Learning Experience: how Admonk helped Gen Academy in Saudi Arabia. The challenge, our approach, and the results."
+  },
+  "title": "Launching an Engaging Digital Learning Experience",
+  "summary": "Gen Academy is an online learning platform focused on Microsoft technologies and professional development. The objective was to create a modern educational website capable of attracting learners while presenting courses in a simple, engaging, and intuitive way. Admonk designed a clean user experience that balances educational content, conversion, and long-term scalability.",
+  "logo": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63f9236ab88dff9c2e1983_Gen.avif",
+  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3dc138da73f0b11723c3a9_Icon-Grey.avif",
+  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a557eb693490bdc7582abf8_Gen-Academy.avif",
+  "websiteUrl": "https://www.pioneersgenacademy.com/",
+  "featured": false,
+  "yearsOption": "cad473d56584942bfa5621f9ff0468f5",
+  "industry": "education",
+  "location": "saudi-arabia",
+  "solutions": [
+    "website-design-development"
+  ],
+  "services": [
+    "cms-development",
+    "content-management",
+    "seo",
+    "ui-ux-design",
+    "webflow-development"
+  ],
+  "tools": [
+    "adobe-illustrator",
+    "adobe-photoshop",
+    "google-analytics",
+    "google-search-console",
+    "webflow",
+    "zapier"
+  ],
+  "testimonial": "salma-sameh-2",
+  "challenge": {
+    "title": "Gen Academy wanted to establish itself as a modern online learning platform from day one.",
+    "items": [
+      "The academy required a digital identity that appealed to technology professionals.",
+      "Courses needed to be organized into a simple learning experience.",
+      "The website had to encourage course exploration and enrollment.",
+      "The platform needed to be scalable for future learning programs.",
+      "User experience had to remain intuitive across all devices."
+    ]
+  },
+  "approach": [
+    {
+      "title": "Created a Modern Learning Brand",
+      "summary": "We designed a digital experience that positioned the academy as a trusted destination for professional training."
+    },
+    {
+      "title": "Simplified the Learning Journey",
+      "summary": "The website was structured to help students easily explore courses and begin their learning experience."
+    },
+    {
+      "title": "Prepared the Platform for Growth",
+      "summary": "The solution was built to support future content, programs, and continuous expansion."
+    }
+  ],
+  "results": [
+    {
+      "label": "SEO & Google Placement",
+      "value": "90+",
+      "description": "Search-ready educational platform architecture."
+    },
+    {
+      "label": "Website Performance",
+      "value": "94+",
+      "description": "Accessibility and performance benchmark achieved."
+    },
+    {
+      "label": "Business Impact",
+      "description": "Faster publishing workflow for educational content."
+    },
+    {
+      "label": "Brand Transformation",
+      "value": "20+",
+      "description": "Educational branding assets designed."
+    },
+    {
+      "label": "User Experience",
+      "value": "95%",
+      "description": "Optimized online learning experience across devices."
+    },
+    {
+      "label": "Product / Service Showcase",
+      "value": "15+",
+      "description": "Learning programs organized into structured experiences."
+    }
+  ],
+  "gallery": [],
+  "webflowId": "6a3a842211775dae7bb5a404"
+}

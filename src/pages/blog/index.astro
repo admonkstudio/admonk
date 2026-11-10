@@ -1,0 +1,22 @@
+---
+import Base from '../../layouts/Base.astro';
+import { live, PAGE_SEO } from '../../lib/site';
+const posts = await live('blog');
+const [title, description] = PAGE_SEO['/blog'];
+const date = (d: Date) => d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+---
+<Base title={title} description={description}>
+  <section class="hero">
+    <div class="shell head">
+      <p class="eyebrow">Blog</p>
+      <h1 class="display">Insights</h1>
+      <p class="lead">Practical thinking on brand identity, website design, SEO and AI automation, including honest comparisons of the tools we use.</p>
+    </div>
+  </section>
+  <section class="top">
+    <div class="shell grid two">
+      {posts.length === 0 && <p class="muted">The first posts are on their way.</p>}
+      {posts.map((p) => <a class="card" href={`/blog/${p.id}`}><span class="num">{date(p.data.published)}</span><h3>{p.data.title}</h3><p>{p.data.description}</p></a>)}
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,127 @@
+{
+  "name": "Mastery Academy",
+  "seo": {
+    "title": "Mastery Academy Case Study | Admonk",
+    "description": "Transforming a Leading Dental Academy into a Digital Learning Platform. The challenge, our approach, and the results for Mastery Academy."
+  },
+  "title": "Transforming a Leading Dental Academy into a Digital Learning Platform",
+  "summary": "Mastery Academy is one of the Gulf's leading dental education providers, offering hands-on training and professional certification programs. The objective extended far beyond a website redesign—it was a complete digital transformation. Admonk created a new brand identity, redesigned the learning experience, integrated the academy with Teachable, implemented marketing automation, and built a conversion-focused ecosystem that supports awareness, lead generation, and online enrollment.",
+  "thumbnail": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdffceb79e28dd98c8913_Mastery.jpg",
+  "logo": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63fe2e5e3c83c9d055ab2b_Mastery.avif",
+  "icon": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a3dc916785756657d86b7f1_Icon-Grey.avif",
+  "cover": "https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a5537208bbb6d8855b87ad2_6a503ad3e343ae5455dfaaa3_Mastery-Cover.avif",
+  "websiteUrl": "https://www.mastery-academy.com/",
+  "featured": false,
+  "yearsOption": "78da0dfd22ad423ad4f653d87acf7f1c",
+  "industry": "education",
+  "location": "united-arab-emirates",
+  "solutions": [
+    "brand-guideline",
+    "brand-identity-strategy",
+    "crm-integration",
+    "interactive-experiences",
+    "logo-design",
+    "marketing-automation",
+    "performance-marketing",
+    "website-design-development",
+    "workflow-automation"
+  ],
+  "services": [
+    "cms-development",
+    "content-management",
+    "email-automation",
+    "lead-generation",
+    "paid-social",
+    "ppc",
+    "seo",
+    "ui-ux-design",
+    "webflow-development",
+    "whatsapp-automation"
+  ],
+  "tools": [
+    "adobe-illustrator",
+    "adobe-indesign",
+    "adobe-photoshop",
+    "google-analytics",
+    "google-search-console",
+    "mailchimp",
+    "make",
+    "n8n",
+    "openai",
+    "webflow",
+    "whatsapp-business",
+    "zapier",
+    "zoho",
+    "facebook",
+    "google",
+    "google-ads",
+    "google-campaign-manager-360",
+    "google-sheets",
+    "gsap",
+    "instagram",
+    "javascript",
+    "linkedin",
+    "lottie-files",
+    "youtube",
+    "zoho-marketing-automation"
+  ],
+  "testimonial": "dr-ahnaf-aljajah",
+  "challenge": {
+    "title": "Mastery Academy wanted to transform its business from primarily offline education into a scalable digital learning ecosystem.",
+    "items": [
+      "Traditional training needed to evolve into online education.",
+      "Student acquisition required a stronger digital marketing funnel.",
+      "Manual enrollment processes slowed business growth.",
+      "Branding no longer reflected the academy's market leadership.",
+      "Marketing, automation, and learning systems needed to work together seamlessly."
+    ]
+  },
+  "approach": [
+    {
+      "title": "Modernized the Learning Experience",
+      "summary": "We redesigned the academy's digital identity to better reflect its leadership in dental education."
+    },
+    {
+      "title": "Built a Scalable Learning Platform",
+      "summary": "We connected the website with online learning tools to simplify the student journey."
+    },
+    {
+      "title": "Connected Marketing & Sales",
+      "summary": "We automated customer journeys and supported lead generation through integrated marketing systems."
+    }
+  ],
+  "results": [
+    {
+      "label": "SEO & Google Placement",
+      "value": "Top 3",
+      "description": "Google rankings for dental education"
+    },
+    {
+      "label": "Traffic Growth",
+      "value": "500%",
+      "description": "Growth in qualified student traffic"
+    },
+    {
+      "label": "Business Impact",
+      "value": "4×",
+      "description": "Organic growth in business enquiries"
+    },
+    {
+      "label": "Brand Transformation",
+      "value": "25+",
+      "description": "Brand assets redesigned"
+    },
+    {
+      "label": "Automation & Integration",
+      "value": "95%",
+      "description": "Student journey automated"
+    },
+    {
+      "label": "CMS & Content Management",
+      "value": "100+",
+      "description": "Courses and learning resources managed"
+    }
+  ],
+  "gallery": [],
+  "webflowId": "69016267a499eab62a00d9fe"
+}
