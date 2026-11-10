@@ -13,8 +13,9 @@
     "run_worker_first": ["/api/*", "/admin", "/admin/*"]
   },
   "d1_databases": [{ "binding": "DB", "database_name": "admonk-crm", "database_id": "8f2283fa-e229-4971-bf01-caf10bd978cf", "migrations_dir": "migrations" }],
-  // New enquiries are emailed here. The address must be verified in Email Routing (free to send to).
-  "send_email": [{ "name": "NOTIFY", "destination_address": "info@admonk.net" }],
+  // New enquiries are emailed to info@admonk.net once this is switched on. The address must first be
+  // verified in Cloudflare Email Routing, or the deploy fails. Until then enquiries are only saved.
+  // "send_email": [{ "name": "NOTIFY", "destination_address": "info@admonk.net" }],
   "vars": {
     "NOTIFY_FROM": "website@admonk.net",
     // Cloudflare Access team domain and app audience for /admin (set once Access is configured).
