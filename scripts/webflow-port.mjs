@@ -118,6 +118,8 @@ function finish($, path) {
   $('link[rel="shortcut icon"], link[rel="icon"], link[rel="apple-touch-icon"]').remove();
   $('head').append('<link rel="icon" type="image/png" href="/favicon.png"><link rel="apple-touch-icon" href="/logo.png">');
   $('head').append('<style>.w-webflow-badge{display:none!important}</style>');
+  // Webflow's grey text is too faint on the dark background (and its dark grey too faint on white).
+  $('head').append('<style id="wf-port-contrast">:root{--typography-color--heading-white:#ededed;--typography-color--title-white:#dcdcdc;--typography-color--paragraph-white:#cfcfcf;--typography-color--paragraph-black:#4d4d4d;--typography-color--text-black:#454545;--typography-color--title-black:#3a3a3a}</style>');
 
   // Serve every mirrored asset from this site.
   for (const [sel, attr] of [['[src]', 'src'], ['link[href]', 'href'], ['a[href]', 'href'], ['[poster]', 'poster'], ['[data-src]', 'data-src'], ['[data-poster-url]', 'data-poster-url'], ['[data-video-urls]', 'data-video-urls'], ['meta[content^="https"]', 'content']]) {
@@ -142,7 +144,8 @@ function finish($, path) {
     const h = $(el).html();
     if (h && /Framwork/.test(h)) $(el).html(h.replace(/Framwork/g, 'Framework'));
   });
-  $('.site-footer a').each((_, el) => {
+  // Blog and Contact links are swapped in the footer and the menu.
+  $('a').each((_, el) => {
     const t = $(el).text().trim().toLowerCase();
     if (t === 'blog') $(el).attr('href', '/blog');
     if (t === 'contact' || t === 'contact us') $(el).attr('href', '/contact-us');
@@ -151,11 +154,27 @@ function finish($, path) {
   const sol = ['/framework/digital-identity', '/framework/digital-experience', '/framework/digital-automation'];
   $('.site-footer a').filter((_, el) => $(el).text().trim() === 'Solutions').each((i, el) => { $(el).attr('href', sol[Math.min(i + 1, 2)]); });
   // Placeholder (#) links that have an obvious destination.
-  const DEST = { 'start now': '/start', 'get started': '/start', 'book free consultation': '/contact-us', 'get in touch': '/contact-us', portfolio: '/portfolio', 'check what they say': '/portfolio', 'crm integration': '/solutions/crm-integration', 'marketing automation': '/solutions/marketing-automation', 'workflow automation': '/solutions/workflow-automation' };
+  const DEST = { 'start now': '/start', 'get started': '/start', 'book free consultation': '/contact-us', 'get in touch': '/contact-us', portfolio: '/portfolio', 'check what they say': '/portfolio', 'crm integration': '/solutions/crm-integration', 'marketing automation': '/solutions/marketing-automation', 'workflow automation': '/solutions/workflow-automation', solutions: '/the-framework' };
+  $('a.nav-logo[href="#"]').attr('href', '/');
   $('a[href="#"]').each((_, el) => {
     const to = DEST[$(el).text().replace(/\s+/g, ' ').trim().toLowerCase()];
     if (to) $(el).attr('href', to);
   });
+  // Tools & Platforms isn't in the Webflow menu.
+  const last = $('ul.menu-list > li.menu-list-item').last();
+  if (last.length && !$('ul.menu-list a[href="/tools-platforms"]').length) {
+    const item = last.clone();
+    item.find('a').attr('href', '/tools-platforms').removeClass('w--current');
+    item.find('.eyebrow').text(String($('ul.menu-list > li.menu-list-item').length + 1).padStart(2, '0'));
+    item.find('.menu-link-heading').text('Tools');
+    last.after(item);
+  }
+  const mSol = $('ul.mobile-nav-list a').filter((_, el) => $(el).text().trim() === 'Solutions').closest('li');
+  if (mSol.length && !$('ul.mobile-nav-list a[href="/tools-platforms"]').length) {
+    const item = mSol.clone();
+    item.find('a').attr('href', '/tools-platforms').removeClass('w--current').removeAttr('aria-current').text('Tools');
+    mSol.after(item);
+  }
   // The footer social links were copied from another site.
   const SOCIAL = { facebook: 'https://www.facebook.com/admonkstudio', instagram: 'https://www.instagram.com/admonkstudio', linkedin: 'https://www.linkedin.com/company/admonkstudio', youtube: 'https://www.youtube.com/@admonkstudio' };
   $('a[href*="pioneers"]').each((_, el) => {
