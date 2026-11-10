@@ -1,0 +1,2640 @@
+<!DOCTYPE html><!-- This site was created in Webflow. https://webflow.com --><!-- Last Published: Tue Nov 10 2026 11:11:51 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="admonkstudio.webflow.io" data-wf-page="68f2d146268648daf2a713f5" data-wf-site="68f2d144268648daf2a713dc" lang="en"><head><meta charset="utf-8"/><link href="https://cdn.prod.website-files.com" rel="preconnect" crossorigin="anonymous"/><title>admonk</title><meta content="width=device-width, initial-scale=1" name="viewport"/><meta content="Webflow" name="generator"/><link href="https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/css/admonkstudio.webflow.shared.caf8b9bd1.css" rel="stylesheet" type="text/css" integrity="sha384-yvi5vR3EuFvT458lxPEVJdX6TIcA/r3ucya1ojitYdVhLgwIPLZiCPVNwphGg7ht" crossorigin="anonymous"/><style>html.w-mod-js:not(.w-mod-ix3) :is(.marquee-wrapper-2.is-left, .marquee-wrapper-2.is-right, .marquee-wrapper-3, .marquee-wrapper, .button_11) {visibility: hidden !important;}</style><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="https://cdn.prod.website-files.com/img/favicon.ico" rel="shortcut icon" type="image/x-icon"/><link href="https://cdn.prod.website-files.com/img/webclip.png" rel="apple-touch-icon"/>
+
+<style>
+html[data-wf-page="6a445afee9fdd80be3505ae3"] body {
+  overflow-x: visible !important;
+  overflow-y: visible !important;
+}
+
+html[data-wf-page="6a445afee9fdd80be3505ae3"] .page-shell .scene.clients {
+  top: var(--frame-size) !important;
+}
+
+@media screen and (max-width: 991px) {
+  html[data-wf-page="6a445afee9fdd80be3505ae3"] .page-shell .scene.clients {
+    top: auto !important;
+  }
+}
+</style><style>
+/* =========================================================
+   HOME — CODE-DEPENDENT STYLES ONLY
+   ========================================================= */
+
+
+/* =========================================================
+   MATTER.JS CANVAS
+
+   Matter.js creates this canvas dynamically,
+   so this child selector remains custom CSS.
+   ========================================================= */
+
+.tag-canvas > canvas {
+  position: relative;
+  top: -1px;
+  left: -1px;
+  display: block;
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .shader-layer {
+    opacity: 0;
+  }
+}
+</style></head><body><div class="page-wrapper"><div class="custom-codes"><div class="global-fluid-scale-basic-utilities w-embed"><style>
+/* =========================================================
+   GLOBAL — FLUID SCALE & BASIC UTILITIES
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   Fluid body scale
+   Desktop only.
+
+   Kept from the existing Wizardry setup because the site's
+   em-based sizing may depend on this calculation.
+--------------------------------------------------------- */
+
+@media screen and (min-width: 992px) {
+  body {
+    font-size: calc(
+      0.4934210526315789vw +
+      0.506578947368421em
+    );
+  }
+}
+
+
+/* ---------------------------------------------------------
+   Tablet and below
+--------------------------------------------------------- */
+
+@media screen and (max-width: 991px) {
+  body {
+    font-size: 1em;
+  }
+}
+
+
+/* ---------------------------------------------------------
+   Main container width
+--------------------------------------------------------- */
+
+.container {
+  max-width: 100em;
+}
+
+
+/* ---------------------------------------------------------
+   Link color
+
+   Links inherit their color from the component or parent
+   instead of forcing the browser's default link color.
+--------------------------------------------------------- */
+
+a {
+  color: inherit;
+}
+
+
+/* ---------------------------------------------------------
+   Pointer event utilities
+--------------------------------------------------------- */
+
+.no-click {
+  pointer-events: none !important;
+}
+
+.can-click {
+  pointer-events: auto !important;
+}
+
+</style></div><div class="global-design-system-utilities w-embed"><style>
+/* =========================================================
+   GLOBAL — DESIGN SYSTEM UTILITIES
+   ========================================================= */
+
+
+/* =========================================================
+   BOX SIZING
+   ========================================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+/* Prevent Webflow-generated pseudo-elements from interfering
+   with custom layout systems. */
+
+.w-embed::before,
+.w-embed::after,
+.w-richtext::before,
+.w-richtext::after {
+  content: unset;
+}
+
+
+/* =========================================================
+   DOCUMENT
+   ========================================================= */
+
+html {
+  background-color: var(--_theme---background);
+}
+
+
+/* =========================================================
+   ELEMENT RESETS
+   ========================================================= */
+
+button {
+  background-color: unset;
+  padding: unset;
+  text-align: inherit;
+}
+
+button:not(:disabled) {
+  cursor: pointer;
+}
+
+video {
+  width: 100%;
+  object-fit: cover;
+}
+
+svg {
+  max-width: 100%;
+}
+
+@media (prefers-color-scheme: light) {
+  option {
+    color: black;
+  }
+}
+
+
+/* =========================================================
+   TYPOGRAPHY
+   ========================================================= */
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* =========================================================
+   DEFAULT ELEMENT BEHAVIOR
+   ========================================================= */
+
+a:not([class]) {
+  text-decoration: underline;
+}
+
+label {
+  font-weight: inherit;
+  margin-bottom: 0;
+}
+
+select:has(option[value=""]:checked) {
+  color: color-mix(
+    in lab,
+    currentcolor 60%,
+    transparent
+  );
+}
+
+
+/* =========================================================
+   SELECTION
+   ========================================================= */
+
+::selection {
+  background-color: var(
+    --_theme---selection--background
+  );
+
+  color: var(
+    --_theme---selection--text
+  );
+
+  text-shadow: none;
+}
+
+
+/* =========================================================
+   MARGIN TRIM
+   ========================================================= */
+
+:is(
+  .u-margin-trim,
+  .w-richtext,
+  .u-content-wrapper,
+  [class*="u-container"],
+  [class*="u-layout-column"]
+)
+>
+:not(
+  :not(
+    .w-condition-invisible,
+    .u-cover-absolute,
+    .u-ignore-trim
+  )
+  ~
+  :not(
+    .w-condition-invisible,
+    .u-cover-absolute,
+    .u-ignore-trim
+  )
+),
+
+:is(
+  .u-margin-trim,
+  .w-richtext,
+  .u-content-wrapper,
+  [class*="u-container"],
+  [class*="u-layout-column"]
+)
+>
+.u-display-contents
+>
+:not(
+  :not(
+    .w-condition-invisible,
+    .u-cover-absolute,
+    .u-ignore-trim
+  )
+  ~
+  :not(
+    .w-condition-invisible,
+    .u-cover-absolute,
+    .u-ignore-trim
+  )
+) {
+  margin-top: 0;
+}
+
+
+:is(
+  .u-margin-trim,
+  .w-richtext,
+  .u-content-wrapper,
+  [class*="u-container"],
+  [class*="u-layout-column"]
+)
+>
+:not(
+  :has(
+    ~
+    :not(
+      .w-condition-invisible,
+      .u-cover-absolute,
+      .u-ignore-trim
+    )
+  )
+),
+
+:is(
+  .u-margin-trim,
+  .w-richtext,
+  .u-content-wrapper,
+  [class*="u-container"],
+  [class*="u-layout-column"]
+)
+>
+.u-display-contents
+>
+:not(
+  :has(
+    ~
+    :not(
+      .w-condition-invisible,
+      .u-cover-absolute,
+      .u-ignore-trim
+    )
+  )
+) {
+  margin-bottom: 0;
+}
+
+
+/* =========================================================
+   LINE HEIGHT TRIM
+   ========================================================= */
+
+:not(.u-text-trim-off)
+>
+:is(
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p
+):not(
+  .u-text-trim-off,
+  :has([class*="u-text-style-"])
+)::before,
+
+[class*="u-text-style-"]:not(
+  .u-text-trim-off,
+  :has(
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p
+  )
+)::before {
+  content: "";
+  display: table;
+
+  margin-bottom: calc(
+    -0.5lh +
+    var(--_text-style---trim-top)
+  );
+}
+
+
+:not(.u-text-trim-off)
+>
+:is(
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p
+):not(
+  .u-text-trim-off,
+  :has([class*="u-text-style-"])
+)::after,
+
+[class*="u-text-style-"]:not(
+  .u-text-trim-off,
+  :has(
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p
+  )
+)::after {
+  content: "";
+  display: table;
+
+  margin-bottom: calc(
+    -0.5lh +
+    var(--_text-style---trim-bottom)
+  );
+}
+
+
+/* =========================================================
+   RICH TEXT
+   ========================================================= */
+
+.w-richtext a {
+  position: relative;
+  z-index: 4;
+}
+
+
+/* =========================================================
+   LINE CLAMP
+   ========================================================= */
+
+[class*="u-line-clamp"]:not(.w-richtext),
+[class*="u-line-clamp"].w-richtext > * {
+  display: -webkit-box !important;
+
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+
+  overflow: hidden;
+}
+
+[class*="u-line-clamp"].w-richtext
+>
+:not(:first-child) {
+  display: none;
+}
+
+.u-line-clamp-2:not(.w-richtext),
+.u-line-clamp-2.w-richtext > * {
+  -webkit-line-clamp: 2;
+}
+
+.u-line-clamp-3:not(.w-richtext),
+.u-line-clamp-3.w-richtext > * {
+  -webkit-line-clamp: 3;
+}
+
+.u-line-clamp-4:not(.w-richtext),
+.u-line-clamp-4.w-richtext > * {
+  -webkit-line-clamp: 4;
+}
+
+
+/* =========================================================
+   TEXT MAX WIDTH
+   ========================================================= */
+
+.u-heading > *,
+.u-text > * {
+  width: 100%;
+  max-width: inherit !important;
+
+  margin-inline: 0 !important;
+  margin-top: 0 !important;
+}
+
+
+/* =========================================================
+   BACKGROUND SLOT
+   ========================================================= */
+
+.u-background-slot > * {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  aspect-ratio: unset;
+}
+
+
+/* =========================================================
+   CMS UTILITIES
+   ========================================================= */
+
+.u-hide-if-empty-cms:not(
+  :has(.w-dyn-item)
+) {
+  display: none !important;
+}
+
+
+/* =========================================================
+   ACCESSIBILITY / FOCUS
+   ========================================================= */
+
+a,
+button,
+:where([tabindex]),
+input,
+select,
+textarea {
+  outline-offset: var(
+    --focus--offset-outer,
+    3px
+  );
+}
+
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline-color: var(
+    --_theme---text,
+    currentColor
+  );
+
+  outline-width: var(
+    --focus--width,
+    2px
+  );
+
+  outline-style: solid;
+}
+
+
+/* =========================================================
+   DISABLED STATES
+   ========================================================= */
+
+[data-button]:has(button:disabled) {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   ICON SYSTEM
+   ========================================================= */
+
+.u-icon svg {
+  display: block !important;
+
+  width: 100% !important;
+  height: auto !important;
+}
+
+.u-icon path[stroke] {
+  stroke: currentColor !important;
+
+  stroke-width: var(
+    --border-width--main
+  );
+
+  vector-effect: non-scaling-stroke;
+}
+
+.u-icon :is(
+  path:not([stroke]),
+  rect,
+  circle,
+  ellipse,
+  polygon,
+  polyline
+) {
+  fill: currentColor !important;
+}
+
+
+/* =========================================================
+   CLICKABLE COMPONENT
+   ========================================================= */
+
+.wf-design-mode .clickable_wrap {
+  z-index: 0;
+}
+
+
+/* =========================================================
+   NUMBER ATTRIBUTES
+   ========================================================= */
+
+[data-number="-1"] { --number: initial; }
+
+[data-number="0"] { --number: 0; }
+[data-number="1"] { --number: 1; }
+[data-number="2"] { --number: 2; }
+[data-number="3"] { --number: 3; }
+[data-number="4"] { --number: 4; }
+[data-number="5"] { --number: 5; }
+[data-number="6"] { --number: 6; }
+[data-number="7"] { --number: 7; }
+[data-number="8"] { --number: 8; }
+[data-number="9"] { --number: 9; }
+
+[data-number="10"] { --number: 10; }
+[data-number="11"] { --number: 11; }
+[data-number="12"] { --number: 12; }
+[data-number="13"] { --number: 13; }
+[data-number="14"] { --number: 14; }
+[data-number="15"] { --number: 15; }
+[data-number="16"] { --number: 16; }
+[data-number="17"] { --number: 17; }
+[data-number="18"] { --number: 18; }
+[data-number="19"] { --number: 19; }
+
+[data-number="20"] { --number: 20; }
+[data-number="21"] { --number: 21; }
+[data-number="22"] { --number: 22; }
+[data-number="23"] { --number: 23; }
+[data-number="24"] { --number: 24; }
+[data-number="25"] { --number: 25; }
+[data-number="26"] { --number: 26; }
+[data-number="27"] { --number: 27; }
+[data-number="28"] { --number: 28; }
+[data-number="29"] { --number: 29; }
+
+[data-number="30"] { --number: 30; }
+[data-number="31"] { --number: 31; }
+[data-number="32"] { --number: 32; }
+[data-number="33"] { --number: 33; }
+[data-number="34"] { --number: 34; }
+[data-number="35"] { --number: 35; }
+[data-number="36"] { --number: 36; }
+[data-number="37"] { --number: 37; }
+[data-number="38"] { --number: 38; }
+[data-number="39"] { --number: 39; }
+
+[data-number="40"] { --number: 40; }
+[data-number="41"] { --number: 41; }
+[data-number="42"] { --number: 42; }
+[data-number="43"] { --number: 43; }
+[data-number="44"] { --number: 44; }
+[data-number="45"] { --number: 45; }
+[data-number="46"] { --number: 46; }
+[data-number="47"] { --number: 47; }
+[data-number="48"] { --number: 48; }
+[data-number="49"] { --number: 49; }
+
+[data-number="50"] { --number: 50; }
+[data-number="51"] { --number: 51; }
+[data-number="52"] { --number: 52; }
+[data-number="53"] { --number: 53; }
+[data-number="54"] { --number: 54; }
+[data-number="55"] { --number: 55; }
+[data-number="56"] { --number: 56; }
+[data-number="57"] { --number: 57; }
+[data-number="58"] { --number: 58; }
+[data-number="59"] { --number: 59; }
+
+[data-number="60"] { --number: 60; }
+[data-number="61"] { --number: 61; }
+[data-number="62"] { --number: 62; }
+[data-number="63"] { --number: 63; }
+[data-number="64"] { --number: 64; }
+[data-number="65"] { --number: 65; }
+[data-number="66"] { --number: 66; }
+[data-number="67"] { --number: 67; }
+[data-number="68"] { --number: 68; }
+[data-number="69"] { --number: 69; }
+
+[data-number="70"] { --number: 70; }
+[data-number="71"] { --number: 71; }
+[data-number="72"] { --number: 72; }
+[data-number="73"] { --number: 73; }
+[data-number="74"] { --number: 74; }
+[data-number="75"] { --number: 75; }
+[data-number="76"] { --number: 76; }
+[data-number="77"] { --number: 77; }
+[data-number="78"] { --number: 78; }
+[data-number="79"] { --number: 79; }
+
+[data-number="80"] { --number: 80; }
+[data-number="81"] { --number: 81; }
+[data-number="82"] { --number: 82; }
+[data-number="83"] { --number: 83; }
+[data-number="84"] { --number: 84; }
+[data-number="85"] { --number: 85; }
+[data-number="86"] { --number: 86; }
+[data-number="87"] { --number: 87; }
+[data-number="88"] { --number: 88; }
+[data-number="89"] { --number: 89; }
+
+[data-number="90"] { --number: 90; }
+[data-number="91"] { --number: 91; }
+[data-number="92"] { --number: 92; }
+[data-number="93"] { --number: 93; }
+[data-number="94"] { --number: 94; }
+[data-number="95"] { --number: 95; }
+[data-number="96"] { --number: 96; }
+[data-number="97"] { --number: 97; }
+[data-number="98"] { --number: 98; }
+[data-number="99"] { --number: 99; }
+
+[data-number="100"] {
+  --number: 100;
+}
+
+
+/* =========================================================
+   STATE MANAGER
+   ========================================================= */
+
+[data-state] {
+  --_state---true: 1;
+  --_state---false: 0;
+}
+
+
+.is-active,
+
+.wf-design-mode
+[data-preview="true"],
+
+.wf-design-mode
+[data-preview]:not(
+  :has(> [data-w-instance-of])
+),
+
+[data-state~="checked"]:is(
+  :checked,
+  :has(:checked)
+),
+
+[data-state~="current"]:is(
+  .w--current,
+  :has(.w--current)
+),
+
+[data-state~="open"]:is(
+  .w--open,
+  :has(.w--open)
+),
+
+[data-state~="pressed"]:is(
+  [aria-pressed="true"],
+  :has([aria-pressed="true"])
+),
+
+[data-state~="expanded"]:is(
+  [aria-expanded="true"],
+  :has([aria-expanded="true"])
+),
+
+[data-state~="external"]:is(
+  [target="_blank"],
+  :has([target="_blank"])
+) {
+  --_state---true: 0;
+  --_state---false: 1;
+}
+
+
+/* =========================================================
+   TRIGGER MANAGER — FOCUS
+   ========================================================= */
+
+.wf-design-mode
+[data-trigger~="preview"],
+
+[data-trigger~="focus"]:is(
+  :focus-visible,
+  :has(:focus-visible)
+),
+
+[data-trigger~="group"]:has(
+  [data-trigger~="focus-other"]:focus-visible,
+  [data-trigger~="focus-other"] :focus-visible
+)
+[data-trigger~="focus-other"]:not(
+  :focus-visible,
+  :has(:focus-visible)
+) {
+  --_trigger---on: 0;
+  --_trigger---off: 1;
+}
+
+
+/* =========================================================
+   TRIGGER MANAGER — HOVER
+   ========================================================= */
+
+@media (hover: hover) {
+
+  [data-trigger~="hover"]:hover,
+
+  [data-trigger~="hover-if-clickable"]:has(
+    .clickable_wrap:not(
+      .w-condition-invisible
+    )
+  ):hover,
+
+  [data-trigger~="group"]:has(
+    [data-trigger~="hover-other"]:hover
+  )
+  [data-trigger~="hover-other"]:not(:hover) {
+    --_trigger---on: 0;
+    --_trigger---off: 1;
+  }
+
+
+  [data-trigger~="hover-other"]:hover {
+    --_trigger---on: 1 !important;
+    --_trigger---off: 0 !important;
+  }
+
+}
+
+
+@media (hover: none) {
+
+  [data-trigger~="mobile"] {
+    --_trigger---on: 0;
+    --_trigger---off: 1;
+  }
+
+}
+
+
+/* =========================================================
+   SLOT STYLER
+   ========================================================= */
+
+[data-slot] > .w-dyn-list,
+
+[data-slot] > .w-dyn-list > *,
+
+[data-slot] > .w-dyn-list > * > *,
+
+[data-slot]
+>
+.u-display-contents
+>
+.w-dyn-list,
+
+[data-slot]
+>
+.u-display-contents
+>
+.w-dyn-list
+>
+*,
+
+[data-slot]
+>
+.u-display-contents
+>
+.w-dyn-list
+>
+*
+>
+*,
+
+[data-slot]
+>
+.u-display-contents
+>
+.u-display-contents
+>
+.w-dyn-list,
+
+[data-slot]
+>
+.u-display-contents
+>
+.u-display-contents
+>
+.w-dyn-list
+>
+*,
+
+[data-slot]
+>
+.u-display-contents
+>
+.u-display-contents
+>
+.w-dyn-list
+>
+*
+>
+* {
+  display: contents;
+}
+
+
+/* =========================================================
+   LAYOUT SLOT
+   ========================================================= */
+
+.u-layout-column-2:has(
+  >
+  :not(
+    .u-image-wrapper,
+    .u-video,
+    .u-overlay
+  )
+) {
+  aspect-ratio: auto;
+  border-radius: 0;
+  overflow: visible;
+}
+
+
+.u-layout-column-2:not(
+  :has(
+    >
+    :not(
+      .u-image-wrapper,
+      .u-video,
+      .u-overlay
+    )
+  )
+)
+:is(
+  .u-image-wrapper,
+  .u-video,
+  .u-overlay
+) {
+  position: absolute;
+  height: 100%;
+}
+
+
+/* =========================================================
+   RESPONSIVE COLUMN SYSTEM
+   ========================================================= */
+
+[data-large-columns="1"] {
+  display: flex;
+}
+
+[data-large-columns="2"] {
+  display: grid;
+  --_column-count---value: 2;
+}
+
+[data-large-columns="3"] {
+  display: grid;
+  --_column-count---value: 3;
+}
+
+[data-large-columns="4"] {
+  display: grid;
+  --_column-count---value: 4;
+}
+
+[data-large-columns="5"] {
+  display: grid;
+  --_column-count---value: 5;
+}
+
+[data-large-columns="6"] {
+  display: grid;
+  --_column-count---value: 6;
+}
+
+[data-large-columns="7"] {
+  display: grid;
+  --_column-count---value: 7;
+}
+
+[data-large-columns="8"] {
+  display: grid;
+  --_column-count---value: 8;
+}
+
+[data-large-columns="9"] {
+  display: grid;
+  --_column-count---value: 9;
+}
+
+[data-large-columns="10"] {
+  display: grid;
+  --_column-count---value: 10;
+}
+
+[data-large-columns="11"] {
+  display: grid;
+  --_column-count---value: 11;
+}
+
+[data-large-columns="12"] {
+  display: grid;
+  --_column-count---value: 12;
+}
+
+
+/* =========================================================
+   SLIDER VARIABLES
+   ========================================================= */
+
+.slider_offset {
+  --lg: 3;
+  --md: var(--lg);
+  --sm: var(--md);
+  --xs: var(--sm);
+
+  --slide-count: var(--lg);
+}
+
+
+/* =========================================================
+   MEDIUM CONTAINER
+   ========================================================= */
+
+@container (width < 53em) {
+
+  * {
+    --_responsive---large: 0;
+    --_responsive---medium: 1;
+
+    --flex-medium: flex;
+    --none-medium: none;
+
+    --column-medium: column;
+    --row-medium: row;
+
+    --start-medium: start;
+    --center-medium: center;
+    --end-medium: end;
+
+    --first-medium: -1;
+    --last-medium: 1;
+
+    --unset-medium: unset;
+    --relative-medium: relative;
+  }
+
+
+  [data-medium-columns="1"] {
+    display: flex;
+  }
+
+  [data-medium-columns="2"] {
+    display: grid;
+    --_column-count---value: 2;
+  }
+
+  [data-medium-columns="3"] {
+    display: grid;
+    --_column-count---value: 3;
+  }
+
+  [data-medium-columns="4"] {
+    display: grid;
+    --_column-count---value: 4;
+  }
+
+  [data-medium-columns="5"] {
+    display: grid;
+    --_column-count---value: 5;
+  }
+
+  [data-medium-columns="6"] {
+    display: grid;
+    --_column-count---value: 6;
+  }
+
+  [data-medium-columns="7"] {
+    display: grid;
+    --_column-count---value: 7;
+  }
+
+  [data-medium-columns="8"] {
+    display: grid;
+    --_column-count---value: 8;
+  }
+
+  [data-medium-columns="9"] {
+    display: grid;
+    --_column-count---value: 9;
+  }
+
+  [data-medium-columns="10"] {
+    display: grid;
+    --_column-count---value: 10;
+  }
+
+  [data-medium-columns="11"] {
+    display: grid;
+    --_column-count---value: 11;
+  }
+
+  [data-medium-columns="12"] {
+    display: grid;
+    --_column-count---value: 12;
+  }
+
+
+  .slider_offset {
+    --slide-count: var(--md);
+  }
+
+}
+
+
+/* =========================================================
+   SMALL CONTAINER
+   ========================================================= */
+
+@container (width < 42em) {
+
+  * {
+    --_responsive---medium: 0;
+    --_responsive---small: 1;
+
+    --flex-small: flex;
+    --none-small: none;
+
+    --column-small: column;
+    --row-small: row;
+
+    --start-small: start;
+    --center-small: center;
+    --end-small: end;
+
+    --first-small: -1;
+    --last-small: 1;
+
+    --unset-small: unset;
+    --relative-small: relative;
+  }
+
+
+  [data-small-columns="1"] {
+    display: flex;
+  }
+
+  [data-small-columns="2"] {
+    display: grid;
+    --_column-count---value: 2;
+  }
+
+  [data-small-columns="3"] {
+    display: grid;
+    --_column-count---value: 3;
+  }
+
+  [data-small-columns="4"] {
+    display: grid;
+    --_column-count---value: 4;
+  }
+
+  [data-small-columns="5"] {
+    display: grid;
+    --_column-count---value: 5;
+  }
+
+  [data-small-columns="6"] {
+    display: grid;
+    --_column-count---value: 6;
+  }
+
+  [data-small-columns="7"] {
+    display: grid;
+    --_column-count---value: 7;
+  }
+
+  [data-small-columns="8"] {
+    display: grid;
+    --_column-count---value: 8;
+  }
+
+  [data-small-columns="9"] {
+    display: grid;
+    --_column-count---value: 9;
+  }
+
+  [data-small-columns="10"] {
+    display: grid;
+    --_column-count---value: 10;
+  }
+
+  [data-small-columns="11"] {
+    display: grid;
+    --_column-count---value: 11;
+  }
+
+  [data-small-columns="12"] {
+    display: grid;
+    --_column-count---value: 12;
+  }
+
+
+  .slider_offset {
+    --slide-count: var(--sm);
+  }
+
+}
+
+
+/* =========================================================
+   X-SMALL CONTAINER
+   ========================================================= */
+
+@container (width < 27em) {
+
+  * {
+    --_responsive---small: 0;
+    --_responsive---xsmall: 1;
+
+    --flex-xsmall: flex;
+    --none-xsmall: none;
+
+    --column-xsmall: column;
+    --row-xsmall: row;
+
+    --start-xsmall: start;
+    --center-xsmall: center;
+    --end-xsmall: end;
+
+    --first-xsmall: -1;
+    --last-xsmall: 1;
+
+    --unset-xsmall: unset;
+    --relative-xsmall: relative;
+  }
+
+
+  [data-xsmall-columns="1"] {
+    display: flex;
+  }
+
+  [data-xsmall-columns="2"] {
+    display: grid;
+    --_column-count---value: 2;
+  }
+
+  [data-xsmall-columns="3"] {
+    display: grid;
+    --_column-count---value: 3;
+  }
+
+  [data-xsmall-columns="4"] {
+    display: grid;
+    --_column-count---value: 4;
+  }
+
+  [data-xsmall-columns="5"] {
+    display: grid;
+    --_column-count---value: 5;
+  }
+
+  [data-xsmall-columns="6"] {
+    display: grid;
+    --_column-count---value: 6;
+  }
+
+  [data-xsmall-columns="7"] {
+    display: grid;
+    --_column-count---value: 7;
+  }
+
+  [data-xsmall-columns="8"] {
+    display: grid;
+    --_column-count---value: 8;
+  }
+
+  [data-xsmall-columns="9"] {
+    display: grid;
+    --_column-count---value: 9;
+  }
+
+  [data-xsmall-columns="10"] {
+    display: grid;
+    --_column-count---value: 10;
+  }
+
+  [data-xsmall-columns="11"] {
+    display: grid;
+    --_column-count---value: 11;
+  }
+
+  [data-xsmall-columns="12"] {
+    display: grid;
+    --_column-count---value: 12;
+  }
+
+
+  .slider_offset {
+    --slide-count: var(--xs);
+  }
+
+}
+
+
+/* =========================================================
+   CMS / GRID ITEM SPAN UTILITIES
+   ========================================================= */
+
+@media screen and (min-width: 768px) {
+
+  [item-style="wide"],
+  [item-style=wide] {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+
+
+  [item-style="tall"],
+  [item-style=tall] {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+
+}
+
+</style></div></div><div class="global-effects"><div class="noise-wrapper"></div><div class="background-color"><div class="white-background"></div><div class="black-background"></div></div><div class="shader-layer w-embed"><canvas
+  class="splash-canvas"
+  aria-hidden="true"
+  style="display:block;width:100%;height:100%;"
+></canvas></div></div><div data-w-id="c5844e7b-c731-df2f-3b6f-eedba009b5a0" class="mood-icon"><img loading="lazy" src="https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7b9a7cbc0611f557f67751_sunny-day.png" alt="" sizes="(max-width: 512px) 100vw, 512px" srcset="https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7b9a7cbc0611f557f67751_sunny-day-p-500.png 500w, https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7b9a7cbc0611f557f67751_sunny-day.png 512w" class="sunny"/><img loading="lazy" src="https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7b9a7c99d1fdfb1d8dd1dd_moon.png" alt="" class="night"/></div><div class="background-grid"><div class="custom-grid"><div class="frame _01"></div><div class="frame _02"></div><div class="frame _03"></div><div class="frame _04"></div><div class="frame _05"></div><div class="frame _06"></div><div class="frame _07"></div><div class="frame _08"></div><div class="frame _09"></div></div></div><nav class="site-nav"><div class="navigation"><div class="nav-container"><div data-w-id="dcf7ef24-876b-ba84-8e4b-4ac4c2e50320" class="button-frame"><a href="/" aria-current="page" class="logo-brand w-inline-block w--current"><img src="https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a445cad852e3addbfe32923_Logo%203.png" loading="lazy" alt="Admonk Studio" class="logo-admonk"/></a></div><div class="middle-nav"></div><div class="button-frame"><div data-w-id="58c5f725-6ba0-a5c0-ba44-80f334548e25" class="_141-open-button-wrapper"><div class="_141-line-wrapper"><button role="button" data-menu-toggle="" class="menu-button"><div class="icon-wrap"><div class="menu-line _01"></div><div class="menu-line _05"></div></div><div class="menu-button-text"><div data-w-id="c9eb4a1f-c8cb-ab9e-8413-35dada0ec12c"><p class="p-large">Menu</p></div></div><div class="button-background"></div></button></div></div></div></div><div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navigation-mobile w-nav"><div class="container w-container"><a href="#" class="nav-logo ismob _02 w-inline-block"><div><img src="https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a445cad852e3addbfe32923_Logo%203.png" loading="lazy" alt="Admonk Studio"/></div></a><nav role="navigation" class="nav-menu-2 w-nav-menu"><ul role="list" class="mobile-nav-list"><li class="mobile-item"><a href="/" aria-current="page" class="mobile-nav-link w-nav-link w--current">Home</a></li><li class="mobile-item"><a href="/studio" class="mobile-nav-link w-nav-link">Studio</a></li><li class="mobile-item"><a href="#" class="mobile-nav-link w-nav-link">Portfolio</a></li><li class="mobile-item"><a href="#" class="mobile-nav-link w-nav-link">Solutions</a></li><li class="mobile-item"><a href="/contact-us" class="mobile-nav-link w-nav-link">Contact</a></li><li class="mobile-item"><a href="#" class="mobile-nav-link w-nav-link">Start Now</a></li></ul><div class="space is-section"></div><a href="#" class="nav-logo ismob w-inline-block"><div><img src="https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a445cad852e3addbfe32923_Logo%203.png" loading="lazy" alt="Admonk Studio"/></div></a></nav><div class="menu-button-mobile w-nav-button"><div class="icon-2 w-icon-nav-menu"></div></div></div></div><div data-w-id="d6d5b452-1791-645f-25b9-e464ff177cae" class="_141-menu-wrapper"><div data-preserve-aspect-ratio="none" data-w-id="d6d5b452-1791-645f-25b9-e464ff177caf" data-is-ix2-target="1" class="lottie-animation" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/6a772013ff0bf8c5ec724945/6a772015ff0bf8c5ec7249cf_menu-animation.json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="1" data-duration="0" data-loading="eager" data-ix2-initial-state="0"></div><div class="menu-inner"><ul class="menu-list"><p data-menu-fade="" class="p-small">Menu</p><li class="menu-list-item"><a href="/studio" class="menu-link w-inline-block"><p class="eyebrow">01</p><p class="menu-link-heading">Studio</p><div class="menu-link-bg"></div></a></li><li class="menu-list-item"><a href="/portfolio" class="menu-link w-inline-block"><p class="eyebrow">02</p><p class="menu-link-heading">Portfolio</p><div class="menu-link-bg"></div></a></li><li class="menu-list-item"><a href="/the-framework" class="menu-link w-inline-block"><p class="eyebrow">03</p><p class="menu-link-heading">Framework</p><div class="menu-link-bg"></div></a></li></ul><div class="menu-details"><p data-menu-fade="" class="p-small">Ready for Business</p><li class="menu-list-item"><a href="/start" class="menu-link w-inline-block"><p class="menu-link-heading">Start here</p><div class="menu-link-bg"></div></a></li></div><div class="menu-details"><p data-menu-fade="" class="p-small">Insights</p><div class="socials-row"><a data-menu-fade="" href="/contact-us" class="p-large text-link">Blog</a><a data-menu-fade="" href="/blog" class="p-large text-link">Contact us</a></div></div><div class="menu-details"><p data-menu-fade="" class="p-small">Socials</p><div class="socials-row"><a href="https://www.facebook.com/admonkstudio" class="icon-wrapper-3 is-icon-main _02 _333 w-inline-block"><img width="10" loading="lazy" alt="" src="https://cdn.prod.website-files.com/630a788660046f847b0a16cc/66df77ca1990306f289fe912_facebook-app-symbol.png"/><div class="text-block-30">Visit Facebook</div></a><a href="https://www.instagram.com/admonkstudio" class="icon-wrapper-3 is-icon-main _02 _333 w-inline-block"><img loading="lazy" src="https://cdn.prod.website-files.com/630a788660046f847b0a16cc/66df77dabee8fc25dbed2220_instagram.png" alt=""/><div class="text-block-30">Visit Instagram</div></a><a href="https://www.linkedin.com/company/admonkstudio" class="icon-wrapper-3 is-icon-main _02 _333 w-inline-block"><img width="25" loading="lazy" alt="" src="https://cdn.prod.website-files.com/630a788660046f847b0a16cc/66df77da70d7f7ee4dc4f2a2_linkedin.png"/><div class="text-block-30">Visit Linkedin</div></a><a href="https://www.youtube.com/@admonkstudio" class="icon-wrapper-3 is-icon-main _02 _333 w-inline-block"><img width="25" loading="lazy" alt="follow softobia on youtube" src="https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a42eda7e24e9c9606db9c8b_youtube.png"/><div class="text-block-30">Visit Youtube</div></a><a href="https://x.com/admonkstudio" class="icon-wrapper-3 is-icon-main _02 _333 w-inline-block"><img width="25" sizes="(max-width: 479px) 100vw, (max-width: 767px) 25px, (max-width: 991px) 3vw, (max-width: 1279px) 25px, (max-width: 1439px) 2vw, (max-width: 1919px) 25px, 1vw" alt="" src="https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a78b46373d53acae1e10752_twitter.png" loading="lazy" srcset="https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a78b46373d53acae1e10752_twitter-p-500.png 500w, https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a78b46373d53acae1e10752_twitter.png 512w"/><div class="text-block-30">Visit Youtube</div></a><a href="https://www.behance.net/admonkstudio" class="icon-wrapper-3 is-icon-main _02 _333 w-inline-block"><img width="25" sizes="(max-width: 479px) 100vw, (max-width: 767px) 25px, (max-width: 991px) 3vw, (max-width: 1279px) 25px, (max-width: 1439px) 2vw, (max-width: 1919px) 25px, 1vw" alt="" src="https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a78b60d6ed37e5291a1b9ec_behance.png" loading="lazy" srcset="https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a78b60d6ed37e5291a1b9ec_behance-p-500.png 500w, https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a78b60d6ed37e5291a1b9ec_behance.png 512w"/><div class="text-block-30">Visit Youtube</div></a></div></div></div><div data-w-id="d6d5b452-1791-645f-25b9-e464ff177cc1" class="_141-close-button-wrapper"><div class="_141-line-wrapper"><button role="button" data-menu-toggle="" class="menu-button is-close"><div class="icon-wrap"><div class="_141-close-button-x"></div><div class="_141-close-button-x _2"></div></div><div class="menu-button-text"><div data-w-id="e3c72294-c262-9791-f9da-7d91fc21563d"><p class="p-large _02">Close</p></div></div><div class="button-background is-close"></div></button></div></div></div><div class="code-embed-css w-embed"><style>
+
+/* Menu toggle button*/
+.menu-button:hover .icon-wrap{transform: rotate(90deg); }
+
+/* Menu Large Links */
+.menu-link-heading{text-shadow: 0px 1em 0px #ff4c24; }
+.menu-link:hover .menu-link-heading{ transform: translate(0px, -1em); transition-delay: 0.1s; }
+.menu-link:hover .menu-link-bg{ transform: scale(1,1) }
+
+/* Menu Smaller Links */
+.text-link::after{
+	content: '';
+  position:absolute;
+  left: 0;
+  bottom: 0;
+  width:100%;
+  height:1px;
+  background: var(--color-primary);
+  transform-origin: right center;
+  transform: scale(0,1);
+  transition: transform 0.4s var(--cubic-default)
+}
+
+.text-link:hover::after{
+  transform-origin: left center;
+  transform: scale(1,1);	
+}
+
+@media screen and (max-width: 767px){
+	:root{
+  	--menu-padding: var(--container-padding);
+  }
+}
+
+</style></div></div></nav><main class="page-main"><div class="down-section"><section data-fluid-strength="0.45" data-fluid-color="#6E28C8" class="frame-stage hero-section"><div class="content-frame"><div class="text-wrapper is-center"><div><h1 class="heading is-center">One Framwork<br/>Better Digital Experience</h1></div><div class="space is-medium"></div><p class="paragraph is-center framework-hero-paragraph">We create your digital identity, design exceptional customer experiences, and automate the workflows that help your business succeed.</p><div class="space is-medium"></div><div class="fw-scroll-label-native"><span class="fw-scroll-line-native"></span>Scroll to explore</div></div></div></section></div><div class="top-section"><section class="home-intro_section"><div class="grid"><div class="text-wrapper"><h2 class="heading is-cust">We offer The Framework</h2><div class="space"></div><p class="paragraph is-large framework-hero-paragraph">A proven approach that connects your business identity, customer experience, and workflow automation into one strategy, so every digital investment moves your business closer to its goals. A proven approach that connects your business identity, customer experience, and workflow automation into one strategy, so every digital investment moves your business closer to its goals. </p></div><div><img src="https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a8109dd12dc249ddeeb432d_b12359f6841cf44c9fcf28ebc843ea8d.jpg" loading="lazy" sizes="(max-width: 736px) 100vw, 736px" srcset="https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a8109dd12dc249ddeeb432d_b12359f6841cf44c9fcf28ebc843ea8d-p-500.jpg 500w, https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a8109dd12dc249ddeeb432d_b12359f6841cf44c9fcf28ebc843ea8d.jpg 736w" alt=""/></div></div></section></div><div class="down-section"><section data-fluid-strength="0.45" data-fluid-color="#D55432" class="frame-stage hero-section"><div class="content-frame"><div class="text-wrapper is-center"><h2 class="heading">The Framework</h2><div class="space"></div></div><div class="card-container"><div class="w-dyn-list"><div role="list" class="collection-list-27 w-dyn-items"><div role="listitem" class="w-dyn-item"><div data-w-id="eef5613e-342d-33d8-4836-73386acd026f" class="flipper-wrapper-main"><div style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform-style:preserve-3d" class="flipper-card-wrapper"><div class="flipper-card-front"><div class="div-block-904"><div class="title is-medium">Digital Identity</div></div><div style="background-image:url(&quot;https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a810b4521e7807773827612_b12359f6841cf44c9fcf28ebc843ea8d.jpg&quot;)" class="div-block-903"><div class="overlay"></div></div></div><div class="flipper-card-backside"><div class="title is-small">Digital Identity</div><div class="space is-text"></div><p class="paragraph">Shape how your business looks, feels, and communicates online.</p></div></div></div></div><div role="listitem" class="w-dyn-item"><div data-w-id="eef5613e-342d-33d8-4836-73386acd026f" class="flipper-wrapper-main"><div style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform-style:preserve-3d" class="flipper-card-wrapper"><div class="flipper-card-front"><div class="div-block-904"><div class="title is-medium">Digital Experience</div></div><div style="background-image:url(&quot;https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a810b3c320f433cf1ab63f9_b9ef410194441739f7b147e8ad388068.jpg&quot;)" class="div-block-903"><div class="overlay"></div></div></div><div class="flipper-card-backside"><div class="title is-small">Digital Experience</div><div class="space is-text"></div><p class="paragraph">Create an experience designed to build trust and generate meaningful business opportunities.</p></div></div></div></div><div role="listitem" class="w-dyn-item"><div data-w-id="eef5613e-342d-33d8-4836-73386acd026f" class="flipper-wrapper-main"><div style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0deg) rotateZ(0) skew(0, 0);transform-style:preserve-3d" class="flipper-card-wrapper"><div class="flipper-card-front"><div class="div-block-904"><div class="title is-medium">Digital Automation</div></div><div style="background-image:url(&quot;https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a810b312ee872b406d891bd_2b28dd255c0432a62ff764280c6533e0.jpg&quot;)" class="div-block-903"><div class="overlay"></div></div></div><div class="flipper-card-backside"><div class="title is-small">Digital Automation</div><div class="space is-text"></div><p class="paragraph">Allow your business to run faster, smarter, and with less manual work.</p></div></div></div></div></div></div></div></div></section></div><div class="top-section"><section class="home-intro_section"><div class="text-wrapper is-center"><h2 class="heading is-center is-20ch">Trusted by Ambitious Brands</h2><div class="space"></div><p class="paragraph is-center">We partner with forward-thinking businesses to create stronger brands, smarter digital experiences, and solutions built for measurable growth.</p></div><div class="space is-section"></div><div class="logos-marquee"><div class="marquee-wrapper-3"><div class="w-dyn-list"><div role="list" class="collection-list-25 w-dyn-items"><div role="listitem" class="w-dyn-item"><div class="client-logo-2"><img loading="lazy" src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63fec655a4a89ba175b9ff_Hophop.avif" alt=""/></div></div><div role="listitem" class="w-dyn-item"><div class="client-logo-2"><img loading="lazy" src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63fa61e7e05e80ba71791d_Missassauga.avif" alt=""/></div></div><div role="listitem" class="w-dyn-item"><div class="client-logo-2"><img loading="lazy" src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63fbda847abdfa569286fb_Pioneers.avif" alt=""/></div></div><div role="listitem" class="w-dyn-item"><div class="client-logo-2"><img loading="lazy" src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63f88be3b07a3755fb9cca_EEP.avif" alt=""/></div></div><div role="listitem" class="w-dyn-item"><div class="client-logo-2"><img loading="lazy" src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63f8545e3c83c9d054d052_Budget.avif" alt=""/></div></div><div role="listitem" class="w-dyn-item"><div class="client-logo-2"><img loading="lazy" src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63f7e9bb3c3be3b357d8ab_Britos.avif" alt=""/></div></div><div role="listitem" class="w-dyn-item"><div class="client-logo-2"><img loading="lazy" src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63f75ecf0ea79e011a68b9_BEFO.avif" alt=""/></div></div><div role="listitem" class="w-dyn-item"><div class="client-logo-2"><img loading="lazy" src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63f6bdf3a1016570ad7eec_Al%20Safa%20Logistics.avif" alt=""/></div></div><div role="listitem" class="w-dyn-item"><div class="client-logo-2"><img loading="lazy" src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63f65de7e05e80ba70ce70_Al%20Safa%20Ind.avif" alt=""/></div></div><div role="listitem" class="w-dyn-item"><div class="client-logo-2"><img loading="lazy" src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63fae4c064a7a594df09a5_Newcastle.avif" alt=""/></div></div><div role="listitem" class="w-dyn-item"><div class="client-logo-2"><img loading="lazy" src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63fa91f4611f86d1a818db_My%20Dental.avif" alt=""/></div></div><div role="listitem" class="w-dyn-item"><div class="client-logo-2"><img loading="lazy" src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63f9aa8e37d36197082c79_Khalagaat.avif" alt=""/></div></div><div role="listitem" class="w-dyn-item"><div class="client-logo-2"><img loading="lazy" src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63f9236ab88dff9c2e1983_Gen.avif" alt=""/></div></div><div role="listitem" class="w-dyn-item"><div class="client-logo-2"><img loading="lazy" src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63f8c0f3a1016570adc2aa_Evos.avif" alt=""/></div></div><div role="listitem" class="w-dyn-item"><div class="client-logo-2"><img loading="lazy" src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63f54d4ffbde8c1f7e2bd3_Rahma.avif" alt=""/></div></div><div role="listitem" class="w-dyn-item"><div class="client-logo-2"><img loading="lazy" src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63f8f16e4c840419b5b359_Flypie.avif" alt=""/></div></div><div role="listitem" class="w-dyn-item"><div class="client-logo-2"><img loading="lazy" src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63fba658c49b1795fa30dd_Paraguru.avif" alt=""/></div></div><div role="listitem" class="w-dyn-item"><div class="client-logo-2"><img loading="lazy" src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63fcb42e362d8364bdf4a1_Vericash.avif" alt=""/></div></div><div role="listitem" class="w-dyn-item"><div class="client-logo-2"><img loading="lazy" src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63fa06384680d913cf306b_Kreston.avif" alt=""/></div></div><div role="listitem" class="w-dyn-item"><div class="client-logo-2"><img loading="lazy" src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63f7063d48f7ebf5f8e4d7_Almaza.avif" alt=""/></div></div><div role="listitem" class="w-dyn-item"><div class="client-logo-2"><img loading="lazy" src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63fc3615b6242621e674be_Tanafos.avif" alt=""/></div></div><div role="listitem" class="w-dyn-item"><div class="client-logo-2"><img loading="lazy" src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63fc6f314b22dcb6b860e4_UHGAF.avif" alt=""/></div></div><div role="listitem" class="w-dyn-item"><div class="client-logo-2"><img loading="lazy" src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63fb103d48f7ebf5f99b32_Optivox.avif" alt=""/></div></div><div role="listitem" class="w-dyn-item"><div class="client-logo-2"><img loading="lazy" src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63fc0aedd1a7dcc2652227_Softobia.avif" alt=""/></div></div><div role="listitem" class="w-dyn-item"><div class="client-logo-2"><img loading="lazy" src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63fe2e5e3c83c9d055ab2b_Mastery.avif" alt=""/></div></div><div role="listitem" class="w-dyn-item"><div class="client-logo-2"><img loading="lazy" src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a63f9673bda24067152308e_Kalam.avif" alt=""/></div></div></div></div></div><div class="marquee-wrapper-3"><div class="w-dyn-list"><div class="w-dyn-empty"><div>No items found.</div></div></div></div></div><div class="space is-section"></div><div class="button-wrapper"><a href="#" class="button-4 is-dark w-inline-block"><div>Check what they say</div><div class="arrow"><img loading="lazy" src="https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a41adcf4e8dc30fe083d0de_right-arrow.avif" alt="White right-pointing arrow on transparent background." sizes="(max-width: 512px) 100vw, 512px" srcset="https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a41adcf4e8dc30fe083d0de_right-arrow-p-500.avif 500w, https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a41adcf4e8dc30fe083d0de_right-arrow.avif 512w"/></div></a></div><div class="gradient-black"></div><div class="background-white"></div></section></div><div class="down-section"><section data-fluid-strength="0.45" data-fluid-color="#2878C8" class="frame-stage hero-section"><div class="content-frame"><div class="dog-wrapper"><div class="dog-head_wrapper"><div class="dog-face_eyes"><div class="dog-face_eye"><div class="eye-color"><div class="dog-face_pupil"><div class="eye"></div></div></div></div><div class="dog-face_eye right"><div class="eye-color"><div class="dog-face_pupil right"><div class="eye"></div></div></div></div></div></div><div class="text-wrapper is-center"><h2 class="heading">Check our Portfolio</h2><div class="space"></div><div class="fw-scroll-label-native"><span class="fw-scroll-line-native"></span>Scroll to explore</div><div class="space"></div></div></div></div></section></div><div class="top-section"><section class="home-intro_section"><div class="work_wrapper w-dyn-list"><div role="list" class="work_list w-dyn-items"><div role="listitem" class="work_item w-dyn-item"><img loading="lazy" src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdfc045b5225a3bae1045_EEP.jpg" alt="" sizes="100vw" srcset="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdfc045b5225a3bae1045_EEP-p-500.jpg 500w, https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdfc045b5225a3bae1045_EEP-p-800.jpg 800w, https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdfc045b5225a3bae1045_EEP-p-1080.jpg 1080w, https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdfc045b5225a3bae1045_EEP-p-1600.jpg 1600w, https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdfc045b5225a3bae1045_EEP.jpg 1920w" class="work_image"/><div class="work_content-wrap"><div class="work_date-wrap"><div class="work_date-dot"></div><div class="work_date-text">Egypt</div></div><div class="work_title-wrap"><div class="work_title">Egyptian Education Platform</div><div class="work_description">Education</div></div></div></div><div role="listitem" class="work_item w-dyn-item"><img loading="lazy" src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdfd4f750192b49df75e6_My-Dental.jpg" alt="" sizes="100vw" srcset="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdfd4f750192b49df75e6_My-Dental-p-500.jpg 500w, https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdfd4f750192b49df75e6_My-Dental-p-800.jpg 800w, https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdfd4f750192b49df75e6_My-Dental-p-1080.jpg 1080w, https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdfd4f750192b49df75e6_My-Dental-p-1600.jpg 1600w, https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdfd4f750192b49df75e6_My-Dental.jpg 1920w" class="work_image"/><div class="work_content-wrap"><div class="work_date-wrap"><div class="work_date-dot"></div><div class="work_date-text">Australia</div></div><div class="work_title-wrap"><div class="work_title">My Dental Centre</div><div class="work_description">Healthcare</div></div></div></div><div role="listitem" class="work_item w-dyn-item"><img loading="lazy" src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdf7861e079777f2e7f67_Evos.jpg" alt="" sizes="100vw" srcset="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdf7861e079777f2e7f67_Evos-p-500.jpg 500w, https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdf7861e079777f2e7f67_Evos-p-800.jpg 800w, https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdf7861e079777f2e7f67_Evos-p-1080.jpg 1080w, https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdf7861e079777f2e7f67_Evos-p-1600.jpg 1600w, https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdf7861e079777f2e7f67_Evos.jpg 1920w" class="work_image"/><div class="work_content-wrap"><div class="work_date-wrap"><div class="work_date-dot"></div><div class="work_date-text">United Arab Emirates</div></div><div class="work_title-wrap"><div class="work_title">Evos</div><div class="work_description">Travel &amp; Hospitality</div></div></div></div><div role="listitem" class="work_item w-dyn-item"><img loading="lazy" src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdf8ee845ffc70aa3b858_Paraguru.jpg" alt="" sizes="100vw" srcset="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdf8ee845ffc70aa3b858_Paraguru-p-500.jpg 500w, https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdf8ee845ffc70aa3b858_Paraguru-p-800.jpg 800w, https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdf8ee845ffc70aa3b858_Paraguru-p-1080.jpg 1080w, https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdf8ee845ffc70aa3b858_Paraguru-p-1600.jpg 1600w, https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdf8ee845ffc70aa3b858_Paraguru.jpg 1920w" class="work_image"/><div class="work_content-wrap"><div class="work_date-wrap"><div class="work_date-dot"></div><div class="work_date-text">United States</div></div><div class="work_title-wrap"><div class="work_title">Paraguru</div><div class="work_description">Professional Services</div></div></div></div><div role="listitem" class="work_item w-dyn-item"><img loading="lazy" src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdfdea32e0823cc254320_Almaza.jpg" alt="" sizes="100vw" srcset="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdfdea32e0823cc254320_Almaza-p-500.jpg 500w, https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdfdea32e0823cc254320_Almaza-p-800.jpg 800w, https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdfdea32e0823cc254320_Almaza-p-1080.jpg 1080w, https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdfdea32e0823cc254320_Almaza-p-1600.jpg 1600w, https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdfdea32e0823cc254320_Almaza.jpg 1920w" class="work_image"/><div class="work_content-wrap"><div class="work_date-wrap"><div class="work_date-dot"></div><div class="work_date-text">Egypt</div></div><div class="work_title-wrap"><div class="work_title">Almaza Bay</div><div class="work_description">Travel &amp; Hospitality</div></div></div></div><div role="listitem" class="work_item w-dyn-item"><img loading="lazy" src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdfa2c73956be8464977c_UHGAF.jpg" alt="" sizes="100vw" srcset="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdfa2c73956be8464977c_UHGAF-p-500.jpg 500w, https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdfa2c73956be8464977c_UHGAF-p-800.jpg 800w, https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdfa2c73956be8464977c_UHGAF-p-1080.jpg 1080w, https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdfa2c73956be8464977c_UHGAF-p-1600.jpg 1600w, https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdfa2c73956be8464977c_UHGAF.jpg 1920w" class="work_image"/><div class="work_content-wrap"><div class="work_date-wrap"><div class="work_date-dot"></div><div class="work_date-text">Egypt</div></div><div class="work_title-wrap"><div class="work_title">University of Hertfordshire</div><div class="work_description">Education</div></div></div></div><div role="listitem" class="work_item w-dyn-item"><img loading="lazy" src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdfebf750192b49df85ae_Softobia.jpg" alt="" sizes="100vw" srcset="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdfebf750192b49df85ae_Softobia-p-500.jpg 500w, https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdfebf750192b49df85ae_Softobia-p-800.jpg 800w, https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdfebf750192b49df85ae_Softobia-p-1080.jpg 1080w, https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdfebf750192b49df85ae_Softobia-p-1600.jpg 1600w, https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdfebf750192b49df85ae_Softobia.jpg 1920w" class="work_image"/><div class="work_content-wrap"><div class="work_date-wrap"><div class="work_date-dot"></div><div class="work_date-text">United Kingdom</div></div><div class="work_title-wrap"><div class="work_title">Softobia</div><div class="work_description">Technology &amp; Software</div></div></div></div><div role="listitem" class="work_item w-dyn-item"><img loading="lazy" src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdffceb79e28dd98c8913_Mastery.jpg" alt="" sizes="100vw" srcset="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdffceb79e28dd98c8913_Mastery-p-500.jpg 500w, https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdffceb79e28dd98c8913_Mastery-p-800.jpg 800w, https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdffceb79e28dd98c8913_Mastery-p-1080.jpg 1080w, https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdffceb79e28dd98c8913_Mastery-p-1600.jpg 1600w, https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdffceb79e28dd98c8913_Mastery.jpg 1920w" class="work_image"/><div class="work_content-wrap"><div class="work_date-wrap"><div class="work_date-dot"></div><div class="work_date-text">United Arab Emirates</div></div><div class="work_title-wrap"><div class="work_title">Mastery Academy</div><div class="work_description">Education</div></div></div></div><div role="listitem" class="work_item w-dyn-item"><img loading="lazy" src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdfb397b2cebe0ce1d29c_Kalam.jpg" alt="" sizes="100vw" srcset="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdfb397b2cebe0ce1d29c_Kalam-p-500.jpg 500w, https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdfb397b2cebe0ce1d29c_Kalam-p-800.jpg 800w, https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdfb397b2cebe0ce1d29c_Kalam-p-1080.jpg 1080w, https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdfb397b2cebe0ce1d29c_Kalam-p-1600.jpg 1600w, https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7cdfb397b2cebe0ce1d29c_Kalam.jpg 1920w" class="work_image"/><div class="work_content-wrap"><div class="work_date-wrap"><div class="work_date-dot"></div><div class="work_date-text">United Arab Emirates</div></div><div class="work_title-wrap"><div class="work_title">Kalam</div><div class="work_description">Customer Experience</div></div></div></div></div></div><div class="space is-section"></div></section><div class="hc-wrapper is-stretch"><div class="text-wrapper"><div class="title is-medium">Want to check more?</div></div><div class="button-wrapper"><a href="/portfolio" class="button-4 is-dark w-inline-block"><div>View our portfolio</div><div class="arrow"><img loading="lazy" src="https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a41adcf4e8dc30fe083d0de_right-arrow.avif" alt="White right-pointing arrow on transparent background."/></div></a></div></div><div class="space is-section"></div></div><div class="down-section"><section data-fluid-strength="0.45" data-fluid-color="#6D9D72" class="frame-stage hero-section"><div class="content-frame is-matter"><div class="matter-js"><div class="text-wrapper is-center"><h2 class="heading is-center is30ch">more consistent experience and a more efficient way to operate</h2><div class="space"></div><p class="paragraph is-center">The Framework brings the platforms, tools, and technologies behind your digital business into one connected system</p></div><div class="tag-wrapper"><div class="tag-element"><div class="tag-canvas"></div></div></div></div></div></section></div><div class="top-section is-no-down"><section class="home-intro_section"><div class="space"></div><div class="text-wrapper"><h2 class="heading is-20ch">more consistent experience and a more efficient way to operate</h2><div class="space"></div><p class="paragraph">The Framework brings the platforms, tools, and technologies behind your digital business into one connected system</p><div class="div-block-891"><div class="w-dyn-list"><div role="list" class="tools-list w-dyn-items"><div role="listitem" class="w-dyn-item"><a href="/tools-platforms/claude" class="tools-icon w-inline-block"><img src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a52e0f834afa63ae218de38_Claude-ai-logo.webp" loading="lazy" alt=""/></a></div><div role="listitem" class="w-dyn-item"><a href="/tools-platforms/canva" class="tools-icon w-inline-block"><img src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a52e4cc4659d7ce86bd028a_canva.avif" loading="lazy" alt=""/></a></div><div role="listitem" class="w-dyn-item"><a href="/tools-platforms/display-video-360" class="tools-icon w-inline-block"><img src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a52e4b5a52b15bf927fa52e_Display%20%26%20Video%20360.avif" loading="lazy" alt=""/></a></div><div role="listitem" class="w-dyn-item"><a href="/tools-platforms/search-advertising-360" class="tools-icon w-inline-block"><img src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a78689049dff57cea883342_google-search-ads-360-logo-icon-hd.webp" loading="lazy" alt=""/></a></div><div role="listitem" class="w-dyn-item"><a href="/tools-platforms/google-campaign-manager-360" class="tools-icon w-inline-block"><img src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a52e48934afa63ae21923c1_Google%20Campaign%20Manager%20360.avif" loading="lazy" alt=""/></a></div><div role="listitem" class="w-dyn-item"><a href="/tools-platforms/google-ads" class="tools-icon w-inline-block"><img src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a52e46d3ee14396ea1c0a9a_logo%20(3).avif" loading="lazy" alt=""/></a></div><div role="listitem" class="w-dyn-item"><a href="/tools-platforms/sleekflow" class="tools-icon w-inline-block"><img src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7868ee282075cf34cdb237_unnamed.avif" loading="lazy" alt=""/></a></div><div role="listitem" class="w-dyn-item"><a href="/tools-platforms/zoho-marketing-automation" class="tools-icon w-inline-block"><img src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a52e3d18a3b83a3ed7afdc4_Zoho%20Marketing%20Automation.png" loading="lazy" alt=""/></a></div><div role="listitem" class="w-dyn-item"><a href="/tools-platforms/brevo" class="tools-icon w-inline-block"><img src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a52e51934afa63ae2192f5d_Brevo.avif" loading="lazy" alt=""/></a></div><div role="listitem" class="w-dyn-item"><a href="/tools-platforms/google" class="tools-icon w-inline-block"><img src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a52e11c75614ee8367b5458_search.avif" loading="lazy" alt=""/></a></div><div role="listitem" class="w-dyn-item"><a href="/tools-platforms/google-docs" class="tools-icon w-inline-block"><img src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a52e3954659d7ce86bce758_google-docs.avif" loading="lazy" alt=""/></a></div><div role="listitem" class="w-dyn-item"><a href="/tools-platforms/notion" class="tools-icon w-inline-block"><img src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a786746282075cf34cd7269_white-notion-logo-1hgF386075.avif" loading="lazy" alt=""/></a></div><div role="listitem" class="w-dyn-item"><a href="/tools-platforms/supabase" class="tools-icon w-inline-block"><img src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a52e366551926b6611d2d2a_supabase.avif" loading="lazy" alt="" sizes="100vw" srcset="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a52e366551926b6611d2d2a_supabase-p-500.avif 500w, https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a52e366551926b6611d2d2a_supabase.avif 512w"/></a></div><div role="listitem" class="w-dyn-item"><a href="/tools-platforms/firebase" class="tools-icon w-inline-block"><img src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a52e34683065aa9c6be7c95_fire.avif" loading="lazy" alt=""/></a></div><div role="listitem" class="w-dyn-item"><a href="/tools-platforms/airtable" class="tools-icon w-inline-block"><img src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a52e329347fb3edada0df14_Airtable.avif" loading="lazy" alt=""/></a></div><div role="listitem" class="w-dyn-item"><a href="/tools-platforms/google-sheets" class="tools-icon w-inline-block"><img src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a52e12c29a68e66178fd9f4_google-sheets.avif" loading="lazy" alt=""/></a></div><div role="listitem" class="w-dyn-item"><a href="/tools-platforms/tiktok" class="tools-icon w-inline-block"><img src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a786765d9b0f9e12d1ebeb9_tik-tok.avif" loading="lazy" alt=""/></a></div><div role="listitem" class="w-dyn-item"><a href="/tools-platforms/youtube" class="tools-icon w-inline-block"><img src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a52e301d7ef7f7d887c162e_youtube.avif" loading="lazy" alt=""/></a></div><div role="listitem" class="w-dyn-item"><a href="/tools-platforms/linkedin" class="tools-icon w-inline-block"><img src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a52e16283065aa9c6be5032_linkedin.avif" loading="lazy" alt=""/></a></div><div role="listitem" class="w-dyn-item"><a href="/tools-platforms/instagram" class="tools-icon w-inline-block"><img src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a52e168cbeb7e4ee67a1777_instagram.avif" loading="lazy" alt=""/></a></div><div role="listitem" class="w-dyn-item"><a href="/tools-platforms/facebook" class="tools-icon w-inline-block"><img src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a52e1707fa975a5d1f2c2b3_facebook.avif" loading="lazy" alt=""/></a></div><div role="listitem" class="w-dyn-item"><a href="/tools-platforms/figma" class="tools-icon w-inline-block"><img src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a52e2ec12677a371dc74992_figma.avif" loading="lazy" alt=""/></a></div><div role="listitem" class="w-dyn-item"><a href="/tools-platforms/javascript" class="tools-icon w-inline-block"><img src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a786786c2b10b0094799666_java-script.avif" loading="lazy" alt=""/></a></div><div role="listitem" class="w-dyn-item"><a href="/tools-platforms/gsap" class="tools-icon w-inline-block"><img src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7867a96ed37e5291937797_gsap-dark.avif" loading="lazy" alt="" sizes="100vw" srcset="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7867a96ed37e5291937797_gsap-dark-p-500.avif 500w, https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7867a96ed37e5291937797_gsap-dark-p-800.avif 800w, https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7867a96ed37e5291937797_gsap-dark-p-1080.avif 1080w, https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a7867a96ed37e5291937797_gsap-dark.avif 1381w"/></a></div><div role="listitem" class="w-dyn-item"><a href="/tools-platforms/unicorn-studio" class="tools-icon w-inline-block"><img src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a52e2d78f09f8fc7f9b60d1_us_logo_full.avif" loading="lazy" alt=""/></a></div><div role="listitem" class="w-dyn-item"><a href="/tools-platforms/lottie-files" class="tools-icon w-inline-block"><img src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a52e23729a68e66178fe9b3_free-lottiefiles-logo-icon-svg-download-png-4674917.avif" loading="lazy" alt=""/></a></div><div role="listitem" class="w-dyn-item"><a href="/tools-platforms/spline" class="tools-icon w-inline-block"><img src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a52e21884c18aea72772263_logo-spline.avif" loading="lazy" alt=""/></a></div><div role="listitem" class="w-dyn-item"><a href="/tools-platforms/adobe-premier-pro" class="tools-icon w-inline-block"><img src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a52e1f765731c22c320e6d5_premiere-pro.avif" loading="lazy" alt=""/></a></div><div role="listitem" class="w-dyn-item"><a href="/tools-platforms/adobe-after-effect" class="tools-icon w-inline-block"><img src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a52e1dc3e32430f2259323a_Adobe_After_Effects_CC_icon.svg.avif" loading="lazy" alt="" sizes="100vw" srcset="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a52e1dc3e32430f2259323a_Adobe_After_Effects_CC_icon.svg-p-500.avif 500w, https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a52e1dc3e32430f2259323a_Adobe_After_Effects_CC_icon.svg-p-800.avif 800w, https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a52e1dc3e32430f2259323a_Adobe_After_Effects_CC_icon.svg.avif 960w"/></a></div><div role="listitem" class="w-dyn-item"><a href="/tools-platforms/google-search-console" class="tools-icon w-inline-block"><img src="https://cdn.prod.website-files.com/690162478ceb96377a0b3bde/6a406aa183a077335a339c0f_Search%20Console.webp" loading="lazy" alt=""/></a></div></div></div></div></div><div class="grid"><div class="space"></div><div class="works-wrapper"><div class="works-circle"><div data-w-id="c9873751-ab75-7705-c2ef-470fdc2f9c52" class="works-circle-xl"><div class="works-circle-logo"><img src="https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c56931ebc65d91d120cca_Whatsapp.svg" loading="eager" alt="" class="works-circle-icon"/></div><div class="works-circle-logo _02"><img src="https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c541cd4708c0741030d59_Analytics.svg" loading="eager" alt="" class="works-circle-icon"/></div><div class="works-circle-logo _03"><img src="https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c7ab0a4d276e739d6615e_N8n.svg" loading="eager" alt="" class="works-circle-icon"/></div><div class="works-circle-logo _04"><img src="https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c7ab0b7d427491e1fe2bc_Supabase.svg" loading="eager" alt="" class="works-circle-icon"/></div></div><div data-w-id="c9873751-ab75-7705-c2ef-470fdc2f9c5b" class="works-circle-l"><div class="works-circle-logo _05"><img src="https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c541c5b55276c98188d85_Instagram.svg" loading="eager" alt="" class="works-circle-icon"/></div><div class="works-circle-logo _07"><img src="https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c7ab14ac86dc6cb775631_Search%20Console.svg" loading="eager" alt="" class="works-circle-icon"/></div><div class="works-circle-logo _06"><img src="https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c7ab079e0c2d96d3b99fd_Zapier.svg" loading="eager" alt="" class="works-circle-icon"/></div><div class="works-circle-logo _08"><img src="https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c56a79d01a73a63aa7bb4_Gmail.svg" loading="eager" alt="" class="works-circle-icon"/></div></div><div data-w-id="c9873751-ab75-7705-c2ef-470fdc2f9c64" class="works-circle-m"><div class="works-circle-logo _09"><img src="https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c541cdce29aceac0f56fd_Youtube.svg" loading="eager" alt="" class="works-circle-icon"/></div><div class="works-circle-logo _10"><img src="https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c5692080cae291de5c300_Airtable.svg" loading="eager" alt="" class="works-circle-icon"/></div></div><div data-w-id="c9873751-ab75-7705-c2ef-470fdc2f9c69" class="works-circle-s"><div class="works-circle-logo _11"><img src="https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c541d956ae3a0bc7447c4_Facebook.svg" loading="eager" alt="" class="works-circle-icon"/></div><div class="works-circle-logo _12"><img src="https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c7ab0ad47361e4f8df9f2_Figma.svg" loading="eager" alt="" class="works-circle-icon"/></div></div></div><div class="works-logo"><div class="works-logo-wrap"><div class="lottie-wrap"><div class="lottie-animation-2" data-w-id="b5694d0b-bd0d-ad12-d10b-78ae27821c6e" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7ced0bd271359f0af5b0d3_ai%20animation%20Flow%201.lottie" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="0" data-duration="8" data-loading="lazy"></div><div class="div-block-902"></div></div></div></div><div class="works-over"></div></div></div></section></div></main><footer class="site-footer"><div class="down-section"><section data-fluid-strength="0.34" data-fluid-color="#D1C8FF" class="frame-stage"><div class="content-frame"><div class="text-wrapper is-center"><h2 class="heading is-center is30ch">Get started today</h2><div class="space"></div><p class="paragraph is-center">The Framework brings the platforms, tools, and technologies behind your digital business into one connected system</p><div class="space is-section"></div><a href="#" class="button-3 w-inline-block"><div>Start Now</div><div class="arrow"><img loading="lazy" src="https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a4050654191bcebaa3c9c00_right-arrow.png" alt="Kalam right arrow"/></div></a></div></div></section></div><div class="top-section is-faq"><section class="home-intro_section"><div class="grid is-none"><div class="card is-black is-100-height"><div class="space is-section"></div><div class="video-wrapper"><div data-poster-url="https://cdn.prod.website-files.com/68f2d144268648daf2a713dc%2F6a503d14fd67fe774d1616ca_remi_dark%402x_poster.0000000.jpg" data-video-urls="https://cdn.prod.website-files.com/68f2d144268648daf2a713dc%2F6a503d14fd67fe774d1616ca_remi_dark%402x_mp4.mp4,https://cdn.prod.website-files.com/68f2d144268648daf2a713dc%2F6a503d14fd67fe774d1616ca_remi_dark%402x_webm.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="background-video w-background-video w-background-video-atom"><video id="728ae983-6a49-c7dc-98ef-29a160669620-video" autoplay="" loop="" style="background-image:url(&quot;https://cdn.prod.website-files.com/68f2d144268648daf2a713dc%2F6a503d14fd67fe774d1616ca_remi_dark%402x_poster.0000000.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover"><source src="https://cdn.prod.website-files.com/68f2d144268648daf2a713dc%2F6a503d14fd67fe774d1616ca_remi_dark%402x_mp4.mp4" data-wf-ignore="true"/><source src="https://cdn.prod.website-files.com/68f2d144268648daf2a713dc%2F6a503d14fd67fe774d1616ca_remi_dark%402x_webm.webm" data-wf-ignore="true"/></video></div><div class="video-overlay"></div></div><div class="text-wrapper is-center is-mob"><h3 class="heading is-center">Every business is different.</h3><div class="space-10"></div><p class="paragraph is-faq is-center">Book a free consultation and we&#x27;ll help you identify the right digital investment, whether you need one solution or The Framework.</p><div class="space-10 is-button"></div><div class="button-wrapper"><a href="#" class="button-4 is-dark w-inline-block"><div>Book Free Consultation</div><div class="arrow"><img src="" loading="lazy" alt=""/></div></a></div></div><div class="space-10 is-section"></div></div><div id="w-node-_728ae983-6a49-c7dc-98ef-29a160669630-60669606" class="q-a"><h2 class="heading">Frequently <br/>asked questions</h2><div class="faq"><div data-delay="0" data-hover="false" data-w-id="728ae983-6a49-c7dc-98ef-29a160669636" class="accordion-item w-dropdown"><div class="accordion-toggle w-dropdown-toggle"><div class="title is-small">Do I need all three parts of The Framework?</div><div class="accordion-icon-3"><div class="div-block-882"></div><div class="div-block-882 rotate"></div></div></div><nav class="dropdown-list faq w-dropdown-list"><p class="paragraph is-faq">No. Every business starts from a different point. You can choose a single solution such as branding, website development, or automation, and expand into the full framework whenever you&#x27;re ready.</p></nav></div><div data-delay="0" data-hover="false" data-w-id="728ae983-6a49-c7dc-98ef-29a160669640" class="accordion-item w-dropdown"><div class="accordion-toggle w-dropdown-toggle"><div class="title is-small">Can you work with our existing website or branding?</div><div class="accordion-icon-3"><div class="div-block-882"></div><div class="div-block-882 rotate"></div></div></div><nav class="dropdown-list faq w-dropdown-list"><p class="paragraph is-faq">Absolutely. We can improve what you already have instead of starting from scratch. During our discovery session, we&#x27;ll recommend the approach that delivers the best return on your investment.</p></nav></div><div data-delay="0" data-hover="false" data-w-id="728ae983-6a49-c7dc-98ef-29a16066964a" class="accordion-item w-dropdown"><div class="accordion-toggle w-dropdown-toggle"><div class="title is-small">How do you decide which solution is right for us?</div><div class="accordion-icon-3"><div class="div-block-882"></div><div class="div-block-882 rotate"></div></div></div><nav class="dropdown-list faq w-dropdown-list"><p class="paragraph is-faq">We begin by understanding your business, your customers, and your goals. From there, we recommend only the solutions that will create the biggest impact—not services you don&#x27;t need.</p></nav></div><div data-delay="0" data-hover="false" data-w-id="728ae983-6a49-c7dc-98ef-29a160669654" class="accordion-item w-dropdown"><div class="accordion-toggle w-dropdown-toggle"><div class="title is-small">Can The Framework grow as our business grows?</div><div class="accordion-icon-3"><div class="div-block-882"></div><div class="div-block-882 rotate"></div></div></div><nav class="dropdown-list faq w-dropdown-list"><p class="paragraph is-faq">Yes. The Framework is designed to be implemented in phases. Many clients start with one solution and gradually expand into branding, digital experience, and automation as their business evolves.</p></nav></div><div data-delay="0" data-hover="false" data-w-id="728ae983-6a49-c7dc-98ef-29a16066965e" class="accordion-item no-down w-dropdown"><div class="accordion-toggle w-dropdown-toggle"><div class="title is-small">What makes Admonk different from a traditional agency?</div><div class="accordion-icon-3"><div class="div-block-882"></div><div class="div-block-882 rotate"></div></div></div><nav class="dropdown-list faq w-dropdown-list"><p class="paragraph is-faq">We don&#x27;t believe in disconnected projects. Every recommendation is made with your long-term business goals in mind. We focus on creating a connected digital ecosystem where your brand, website, marketing, and automation work together to maximize your return on investment.</p></nav></div></div></div></div></section></div><div class="footer_wrapper"><div class="footer-space"></div><div class="footer_component"><div class="footer-container _01"><div class="footer-wrapper"><div class="grid is-footer"><div class="footer-column"><div class="logo-wrapper-footer is-footer"><img src="https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a445cad852e3addbfe32923_Logo%203.png" loading="lazy" alt="Admonk Studio" class="logo is-white"/></div></div><div class="space is-mob"></div><div class="footer-column"><a href="https://admonkstudio.webflow.io/framework/digital-identity" class="title">Digital Identity</a><div class="space is-text"></div><div class="w-dyn-list"><div role="list" class="collection-list-16 w-dyn-items"><div role="listitem" class="w-dyn-item"><a href="/solutions/brand-guideline" class="text is-custom is-left">Brand Guidelines</a></div><div role="listitem" class="w-dyn-item"><a href="/solutions/brand-identity-strategy" class="text is-custom is-left">Brand Identity &amp; Strategy</a></div><div role="listitem" class="w-dyn-item"><a href="/solutions/logo-design" class="text is-custom is-left">Logo Design</a></div></div></div></div><div class="footer-column"><a href="https://admonkstudio.webflow.io/framework/digital-experience" class="title">Digital Experience</a><div class="space is-text"></div><div class="w-dyn-list"><div role="list" class="collection-list-16 w-dyn-items"><div role="listitem" class="w-dyn-item"><a href="/solutions/interactive-experiences" class="text is-custom is-left">Interactive Experiences</a></div><div role="listitem" class="w-dyn-item"><a href="/solutions/performance-marketing" class="text is-custom is-left">Performance Marketing</a></div><div role="listitem" class="w-dyn-item"><a href="/solutions/website-design-development" class="text is-custom is-left">Website Design &amp; Development</a></div></div></div></div><div class="footer-column"><a href="https://admonkstudio.webflow.io/framework/digital-automation" class="title">Digital Automation</a><div class="space is-text"></div><div class="w-dyn-list"><div role="list" class="collection-list-16 w-dyn-items"><div role="listitem" class="w-dyn-item"><a href="#" class="text is-custom is-left">CRM Integration</a></div><div role="listitem" class="w-dyn-item"><a href="#" class="text is-custom is-left">Marketing Automation</a></div><div role="listitem" class="w-dyn-item"><a href="#" class="text is-custom is-left">Workflow Automation</a></div></div></div></div><div class="footer-column ispadding"><div class="title">Studio</div><div class="space is-text"></div><a href="/studio" class="text is-custom is-left">Inside the Studio</a><div class="space"></div><a href="/blog" class="text is-custom is-left">Blog</a><div class="space"></div><a href="/contact-us" class="text is-custom is-left">Contact us</a><div class="space"></div></div><div class="space is-mob"></div><div class="space is-mob"></div><div class="footer-column"><a href="https://admonkstudio.webflow.io/framework/digital-identity" class="title is-xsmall">Solutions</a><div class="space is-text"></div><div class="w-dyn-list"><div role="list" class="collection-list-16 w-dyn-items"><div role="listitem" class="w-dyn-item"><a href="/services/webflow-development" class="text is-custom is-left">Webflow Development</a></div><div role="listitem" class="w-dyn-item"><a href="/services/lead-generation" class="text is-custom is-left">Lead Generation</a></div><div role="listitem" class="w-dyn-item"><a href="/services/content-management" class="text is-custom is-left">Content Management</a></div><div role="listitem" class="w-dyn-item"><a href="/services/cms-development" class="text is-custom is-left">CMS Development</a></div><div role="listitem" class="w-dyn-item"><a href="/services/seo" class="text is-custom is-left">SEO</a></div><div role="listitem" class="w-dyn-item"><a href="/services/paid-social" class="text is-custom is-left">Paid Social</a></div><div role="listitem" class="w-dyn-item"><a href="/services/ppc" class="text is-custom is-left">PPC</a></div><div role="listitem" class="w-dyn-item"><a href="/services/ui-ux-design" class="text is-custom is-left">UI/UX Design</a></div></div></div></div><div class="footer-column"><a href="https://admonkstudio.webflow.io/framework/digital-identity" class="title is-xsmall">Solutions</a><div class="space is-text"></div><div class="w-dyn-list"><div role="list" class="collection-list-16 w-dyn-items"><div role="listitem" class="w-dyn-item"><a href="/services/whatsapp-automation" class="text is-custom is-left">WhatsApp Automation</a></div><div role="listitem" class="w-dyn-item"><a href="/services/email-automation" class="text is-custom is-left">Email Automation</a></div><div role="listitem" class="w-dyn-item"><a href="/services/ai-chatbot" class="text is-custom is-left">AI Chatbot</a></div><div role="listitem" class="w-dyn-item"><a href="/services/ai-automation" class="text is-custom is-left">AI Automation</a></div><div role="listitem" class="w-dyn-item"><a href="/services/ai-agents" class="text is-custom is-left">AI Agents</a></div></div></div></div></div><div class="space is-section"></div><div class="line is-dark"></div><div class="space"></div><div class="footer-buttom"><div class="div-block-842"><a href="#" class="text is-custom is-left">© 2026 admonk creative studio. All rights reserved.</a><div class="circle"></div><a href="#" class="text is-custom is-left">Terms &amp; Conditions</a><div class="circle"></div><a href="#" class="text is-custom is-left">Privacy Policy</a></div><div class="footer-social-block-two"><a href="https://www.facebook.com/PioneersIT.MENA#" class="icon-wrapper is-social w-inline-block"><img width="10" src="https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a5108e6a3c374ab2a3a67b5_icons8-facebook-f-48%20(1).png" alt="Facebook icon lowercase f in white." loading="lazy"/><div class="text-block-30">Visit Facebook</div></a><a href="https://www.instagram.com/pioneersit.mena/" class="icon-wrapper is-social w-inline-block"><img src="https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a5108e6a3c374ab2a3a677d_instagram.webp" loading="lazy" alt="Instagram Icon"/><div class="text-block-30">Visit Instagram</div></a><a href="https://www.linkedin.com/company/pioneers-it/" class="icon-wrapper is-social w-inline-block"><img width="25" src="https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a5108e6a3c374ab2a3a6778_linkedin.webp" alt="LinkedIn Icon" loading="lazy"/><div class="text-block-30">Visit Linkedin</div></a><a href="https://www.youtube.com/@pioneersit-microsoftgolder1725" class="icon-wrapper is-social w-inline-block"><img width="25" src="https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a42eda7e24e9c9606db9c8b_youtube.png" alt="follow softobia on youtube" loading="lazy"/><div class="text-block-30">Visit Youtube</div></a></div></div><div class="space"></div></div></div></div></div></footer></div><script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=68f2d144268648daf2a713dc" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/js/webflow.schunk.f2efb3c5440a81cf.js" type="text/javascript" integrity="sha384-VK02VJvMib7ytrF5M2joPWNtDQs366FZgEQ5B+Iwnjx0WBnwQXfootyziSYxdrmS" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/js/webflow.schunk.162d1f79a0518d2d.js" type="text/javascript" integrity="sha384-P//AzzBZkLvZVMlsJCBGIyuCuYyAx3h34/0faA7aqXM7kuyiQQ6nSKefhvyPSM+5" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/js/webflow.46f8e100.2268eee541e4f7a7.js" type="text/javascript" integrity="sha384-rG8bxrVrcLLhmAFaFq9daEQ9QsBSPn5uI8ZfNNzOlIqvn8xqHgAUSOio5XFjKJtn" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/gsap/3.15.0/gsap.min.js" type="text/javascript"></script><script src="https://cdn.prod.website-files.com/gsap/3.15.0/SplitText.min.js" type="text/javascript"></script>
+<!-- ======================================================
+     HOME — FLUID EFFECT
+======================================================= -->
+
+<script src="https://cdn.jsdelivr.net/gh/lissanh95/splash-background-effect/splash-background-effect.js"></script>
+
+<script>
+(function () {
+
+  function initHomeFluid() {
+
+    /* =====================================================
+       REQUIREMENTS
+    ===================================================== */
+
+    if (typeof config === "undefined") {
+      console.warn(
+        "Home Fluid: splash background library was not loaded."
+      );
+      return;
+    }
+
+    const fluidCanvas =
+      document.querySelector(".splash-canvas");
+
+    if (!fluidCanvas) {
+      console.warn(
+        "Home Fluid: .splash-canvas was not found."
+      );
+      return;
+    }
+
+
+    /* =====================================================
+       REDUCED MOTION
+    ===================================================== */
+
+    const reduceMotion =
+      window.matchMedia(
+        "(prefers-reduced-motion: reduce)"
+      ).matches;
+
+    if (reduceMotion) {
+      return;
+    }
+
+
+    /* =====================================================
+       BASE CONFIG
+    ===================================================== */
+
+    config.TRANSPARENT = true;
+
+    window.drawCheckerboard =
+      function () {};
+
+
+    /* =====================================================
+       COLOR SYSTEM
+    ===================================================== */
+
+    const DEFAULT_COLOR =
+      "#6E28C8";
+
+    const DEFAULT_STRENGTH =
+      0.45;
+
+
+    function hexToFluidColor(
+      hex,
+      strength
+    ) {
+
+      let value =
+        String(hex || "")
+          .trim()
+          .replace("#", "");
+
+
+      if (value.length === 3) {
+
+        value =
+          value
+            .split("")
+            .map(function (character) {
+              return character + character;
+            })
+            .join("");
+      }
+
+
+      if (
+        !/^[0-9a-fA-F]{6}$/.test(value)
+      ) {
+
+        value =
+          DEFAULT_COLOR.replace("#", "");
+      }
+
+
+      const r =
+        parseInt(
+          value.slice(0, 2),
+          16
+        );
+
+      const g =
+        parseInt(
+          value.slice(2, 4),
+          16
+        );
+
+      const b =
+        parseInt(
+          value.slice(4, 6),
+          16
+        );
+
+
+      return {
+
+        r:
+          (r / 255) * strength,
+
+        g:
+          (g / 255) * strength,
+
+        b:
+          (b / 255) * strength
+
+      };
+    }
+
+
+    let currentColor =
+      hexToFluidColor(
+        DEFAULT_COLOR,
+        DEFAULT_STRENGTH
+      );
+
+
+    window.generateColor =
+      function () {
+
+        return {
+          r: currentColor.r,
+          g: currentColor.g,
+          b: currentColor.b
+        };
+      };
+
+
+    /* =====================================================
+       PHYSICS MODES
+    ===================================================== */
+
+    let currentMode = null;
+
+
+    function applyHeroMode() {
+
+      if (currentMode === "hero") {
+        return;
+      }
+
+      currentMode = "hero";
+
+
+      config.SPLAT_FORCE = 5200;
+      config.SPLAT_RADIUS = 0.30;
+
+      config.DENSITY_DISSIPATION = 4.0;
+      config.VELOCITY_DISSIPATION = 2.7;
+
+      config.BLOOM = true;
+      config.BLOOM_INTENSITY = 0.13;
+
+      config.SUNRAYS = false;
+      config.COLORFUL = false;
+    }
+
+
+    function applyRestMode() {
+
+      if (currentMode === "rest") {
+        return;
+      }
+
+      currentMode = "rest";
+
+
+      config.SPLAT_FORCE = 2600;
+      config.SPLAT_RADIUS = 0.20;
+
+      config.DENSITY_DISSIPATION = 4.8;
+      config.VELOCITY_DISSIPATION = 3.2;
+
+      config.BLOOM = true;
+      config.BLOOM_INTENSITY = 0.07;
+
+      config.SUNRAYS = false;
+      config.COLORFUL = false;
+    }
+
+
+    /* =====================================================
+       APPLY ACTIVE STAGE
+    ===================================================== */
+
+    function applyStage(stage) {
+
+      if (!stage) {
+        return;
+      }
+
+
+      /* -----------------------------------------------
+         COLOR
+      ------------------------------------------------ */
+
+      const color =
+        stage.getAttribute(
+          "data-fluid-color"
+        ) || DEFAULT_COLOR;
+
+
+      const requestedStrength =
+        Number.parseFloat(
+          stage.getAttribute(
+            "data-fluid-strength"
+          )
+        );
+
+
+      const strength =
+        Number.isFinite(
+          requestedStrength
+        )
+          ? requestedStrength
+          : DEFAULT_STRENGTH;
+
+
+      currentColor =
+        hexToFluidColor(
+          color,
+          strength
+        );
+
+
+      /* -----------------------------------------------
+         PHYSICS
+
+         Adding the hero-section combo class means
+         this stage receives Hero physics.
+      ------------------------------------------------ */
+
+      if (
+        stage.classList.contains(
+          "hero-section"
+        )
+      ) {
+
+        applyHeroMode();
+
+      } else {
+
+        applyRestMode();
+
+      }
+
+    }
+
+
+    /* =====================================================
+       FRAME STAGES
+    ===================================================== */
+
+    const stages =
+      Array.from(
+        document.querySelectorAll(
+          ".frame-stage"
+        )
+      );
+
+
+    if (!stages.length) {
+
+      applyHeroMode();
+      return;
+    }
+
+
+    /* Initial state */
+
+    applyStage(
+      stages[0]
+    );
+
+
+    /* =====================================================
+       ACTIVE STAGE DETECTION
+
+       A narrow strip through the center of the viewport
+       determines which sticky stage currently owns
+       the fluid effect.
+    ===================================================== */
+
+    if (
+      "IntersectionObserver" in window
+    ) {
+
+      const activeStages =
+        new Set();
+
+
+      const observer =
+        new IntersectionObserver(
+          function (entries) {
+
+            entries.forEach(
+              function (entry) {
+
+                if (
+                  entry.isIntersecting
+                ) {
+
+                  activeStages.add(
+                    entry.target
+                  );
+
+                } else {
+
+                  activeStages.delete(
+                    entry.target
+                  );
+
+                }
+
+              }
+            );
+
+
+            /*
+            Multiple sticky stages can briefly overlap.
+
+            The later stage in the DOM should win.
+            */
+
+            const activeStage =
+              stages
+                .slice()
+                .reverse()
+                .find(
+                  function (stage) {
+
+                    return activeStages.has(
+                      stage
+                    );
+
+                  }
+                );
+
+
+            if (activeStage) {
+
+              applyStage(
+                activeStage
+              );
+
+            }
+
+          },
+          {
+
+            /*
+            Leaves approximately a 2% high detection
+            zone through the center of the viewport.
+            */
+
+            rootMargin:
+              "-49% 0px -49% 0px",
+
+            threshold:
+              0
+          }
+        );
+
+
+      stages.forEach(
+        function (stage) {
+
+          observer.observe(
+            stage
+          );
+
+        }
+      );
+
+    }
+
+  }
+
+
+  /* =======================================================
+     INIT
+  ======================================================= */
+
+  if (
+    document.readyState === "loading"
+  ) {
+
+    document.addEventListener(
+      "DOMContentLoaded",
+      initHomeFluid,
+      {
+        once: true
+      }
+    );
+
+  } else {
+
+    initHomeFluid();
+
+  }
+
+})();
+</script>
+
+<!-- ======================================================
+     HOME — TOOL PHYSICS
+======================================================= -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+
+<script>
+(function () {
+
+  function initToolPhysics() {
+
+    const container =
+      document.querySelector(
+        ".tag-canvas"
+      );
+
+
+    if (!container) {
+
+      console.warn(
+        "Tool Physics: .tag-canvas was not found."
+      );
+
+      return;
+    }
+
+
+    if (
+      container.dataset.matterInitialized ===
+      "true"
+    ) {
+      return;
+    }
+
+
+    let simulation = null;
+
+    let isInView = false;
+
+
+    /* =====================================================
+       CREATE SIMULATION
+    ===================================================== */
+
+    function createSimulation() {
+
+      container.dataset.matterInitialized =
+        "true";
+
+
+      const Engine =
+        Matter.Engine;
+
+      const Render =
+        Matter.Render;
+
+      const Runner =
+        Matter.Runner;
+
+      const MouseConstraint =
+        Matter.MouseConstraint;
+
+      const Mouse =
+        Matter.Mouse;
+
+      const World =
+        Matter.World;
+
+      const Bodies =
+        Matter.Bodies;
+
+
+      const engine =
+        Engine.create();
+
+
+      const world =
+        engine.world;
+
+
+      const containerWidth =
+        container.clientWidth + 2;
+
+
+      const containerHeight =
+        container.clientHeight + 2;
+
+
+      const render =
+        Render.create({
+
+          element: container,
+
+          engine: engine,
+
+          options: {
+
+            width:
+              containerWidth,
+
+            height:
+              containerHeight,
+
+            pixelRatio:
+              Math.min(
+                window.devicePixelRatio || 1,
+                2
+              ),
+
+            background:
+              "transparent",
+
+            wireframes:
+              false
+          }
+
+        });
+
+
+      render.canvas.setAttribute(
+        "aria-hidden",
+        "true"
+      );
+
+
+      const runner =
+        Runner.create();
+
+
+      /* ===================================================
+         PHYSICS CONSTANTS
+      =================================================== */
+
+      const wallThickness = 160;
+
+      const iconSize = 64;
+
+      const iconRadius = 20;
+
+      const halfIcon =
+        iconSize / 2;
+
+
+      function clamp(
+        value,
+        minimum,
+        maximum
+      ) {
+
+        return Math.min(
+          Math.max(
+            value,
+            minimum
+          ),
+          maximum
+        );
+
+      }
+
+
+      /* ===================================================
+         CONTAINER WALLS
+      =================================================== */
+
+      const ground =
+        Bodies.rectangle(
+
+          containerWidth / 2,
+
+          containerHeight +
+            wallThickness / 2,
+
+          containerWidth +
+            wallThickness * 2,
+
+          wallThickness,
+
+          {
+            isStatic: true
+          }
+
+        );
+
+
+      const roof =
+        Bodies.rectangle(
+
+          containerWidth / 2,
+
+          -wallThickness / 2,
+
+          containerWidth +
+            wallThickness * 2,
+
+          wallThickness,
+
+          {
+            isStatic: true
+          }
+
+        );
+
+
+      const wallLeft =
+        Bodies.rectangle(
+
+          -wallThickness / 2,
+
+          containerHeight / 2,
+
+          wallThickness,
+
+          containerHeight +
+            wallThickness * 2,
+
+          {
+            isStatic: true
+          }
+
+        );
+
+
+      const wallRight =
+        Bodies.rectangle(
+
+          containerWidth +
+            wallThickness / 2,
+
+          containerHeight / 2,
+
+          wallThickness,
+
+          containerHeight +
+            wallThickness * 2,
+
+          {
+            isStatic: true
+          }
+
+        );
+
+
+      /* ===================================================
+         TOOL ICON DATA
+      =================================================== */
+
+      const tools = [
+
+        {
+          x: 150,
+          y: 500,
+          texture:
+            "https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c56a79d01a73a63aa7bb4_Gmail.svg"
+        },
+
+        {
+          x: 150,
+          y: 460,
+          texture:
+            "https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c5692080cae291de5c300_Airtable.svg"
+        },
+
+        {
+          x: 250,
+          y: 420,
+          texture:
+            "https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c56931ebc65d91d120cca_Whatsapp.svg"
+        },
+
+        {
+          x: -75,
+          y: 380,
+          texture:
+            "https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c5693cfc7d7b32aac02e9_Slack.svg"
+        },
+
+        {
+          x: -74,
+          y: 540,
+          texture:
+            "https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c533ac69c58743a13f649_Snapchat.svg"
+        },
+
+        {
+          x: 174,
+          y: 490,
+          texture:
+            "https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c541c080cae291de42d15_Claude.svg"
+        },
+
+        {
+          x: -142,
+          y: 440,
+          texture:
+            "https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c541ce51f9bb45625eb37_Google%20Ads.svg"
+        },
+
+        {
+          x: -10,
+          y: 260,
+          texture:
+            "https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c51ad6ebba2bafabb267a_Google%20Search.svg"
+        },
+
+        {
+          x: -242,
+          y: 420,
+          texture:
+            "https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c541c080cae291de42d27_Webflow.svg"
+        },
+
+        {
+          x: 60,
+          y: 380,
+          texture:
+            "https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c541cd4708c0741030d59_Analytics.svg"
+        },
+
+        {
+          x: 0,
+          y: 360,
+          texture:
+            "https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c541c5b55276c98188d85_Instagram.svg"
+        },
+
+        {
+          x: -59,
+          y: 260,
+          texture:
+            "https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c541c82c3cdbfedfa7cc6_LinkedIn.svg"
+        },
+
+        {
+          x: -59,
+          y: 260,
+          texture:
+            "https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c541cdce29aceac0f56fd_Youtube.svg"
+        },
+
+        {
+          x: -59,
+          y: 260,
+          texture:
+            "https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c541de51f9bb45625eb5c_Wordpress.svg"
+        },
+
+        {
+          x: -59,
+          y: 260,
+          texture:
+            "https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c541d956ae3a0bc7447c4_Facebook.svg"
+        },
+
+        {
+          x: 210,
+          y: 300,
+          texture:
+            "https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c7aaf84524f5c57aaf1e1_AE.svg"
+        },
+
+        {
+          x: 130,
+          y: 300,
+          texture:
+            "https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c7aafb67730f1c40209fe_AI.svg"
+        },
+
+        {
+          x: 50,
+          y: 300,
+          texture:
+            "https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c7aaff314f6bf8326eb72_PR.svg"
+        },
+
+        {
+          x: -30,
+          y: 300,
+          texture:
+            "https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c7ab084f65ff49eb4cf30_PS.svg"
+        },
+
+        {
+          x: -110,
+          y: 300,
+          texture:
+            "https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c7ab0ad47361e4f8df9f2_Figma.svg"
+        },
+
+        {
+          x: -190,
+          y: 300,
+          texture:
+            "https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c7ab0c2d5e919dff2e409_Google02.svg"
+        },
+
+        {
+          x: 190,
+          y: 220,
+          texture:
+            "https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c7ab058e3827011aa2e0f_Canva.svg"
+        },
+
+        {
+          x: 110,
+          y: 220,
+          texture:
+            "https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c7ab0d972c36180a05ed3_Google%20Docs.svg"
+        },
+
+        {
+          x: 30,
+          y: 220,
+          texture:
+            "https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c7ab0a4d276e739d660fc_Bing.svg"
+        },
+
+        {
+          x: -50,
+          y: 220,
+          texture:
+            "https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c7ab0d972c36180a05edf_Line.svg"
+        },
+
+        {
+          x: -130,
+          y: 220,
+          texture:
+            "https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c7ab039a63adea14fcb47_Google.svg"
+        },
+
+        {
+          x: -210,
+          y: 220,
+          texture:
+            "https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c7ab07f0cf52a3d1412c1_Zoho%20One.svg"
+        },
+
+        {
+          x: 170,
+          y: 140,
+          texture:
+            "https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c7ab042b3bd35cb0e1d53_Zoho%20CRM.svg"
+        },
+
+        {
+          x: 90,
+          y: 140,
+          texture:
+            "https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c7ab079429922e554e9a2_Pinterest.svg"
+        },
+
+        {
+          x: 10,
+          y: 140,
+          texture:
+            "https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c7ab079e0c2d96d3b99f9_Sleekflow.svg"
+        },
+
+        {
+          x: -70,
+          y: 140,
+          texture:
+            "https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c7ab079e0c2d96d3b99fd_Zapier.svg"
+        },
+
+        {
+          x: -150,
+          y: 140,
+          texture:
+            "https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c7ab07b119050c045387b_Spline%20Design.svg"
+        },
+
+        {
+          x: 130,
+          y: 60,
+          texture:
+            "https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c7ab0a4d276e739d6615e_N8n.svg"
+        },
+
+        {
+          x: 50,
+          y: 60,
+          texture:
+            "https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c7ab0b7d427491e1fe2bc_Supabase.svg"
+        },
+
+        {
+          x: -30,
+          y: 60,
+          texture:
+            "https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c7ab04ac86dc6cb77551c_ID.svg"
+        },
+
+        {
+          x: -110,
+          y: 60,
+          texture:
+            "https://cdn.prod.website-files.com/68f2d144268648daf2a713dc/6a7c7ab14ac86dc6cb775631_Search%20Console.svg"
+        }
+
+      ];
+
+
+      /* ===================================================
+         CREATE ICON BODIES
+      =================================================== */
+
+      const iconBodies =
+        tools.map(
+          function (tool) {
+
+            /*
+            Clamp spawn positions so icons don't
+            begin outside the canvas on small screens.
+            */
+
+            const spawnX =
+              clamp(
+
+                containerWidth / 2 +
+                  tool.x,
+
+                halfIcon,
+
+                containerWidth -
+                  halfIcon
+
+              );
+
+
+            const spawnY =
+              clamp(
+
+                tool.y,
+
+                halfIcon,
+
+                Math.max(
+                  halfIcon,
+                  containerHeight -
+                    halfIcon
+                )
+
+              );
+
+
+            return Bodies.rectangle(
+
+              spawnX,
+
+              spawnY,
+
+              iconSize,
+
+              iconSize,
+
+              {
+
+                chamfer: {
+                  radius:
+                    iconRadius
+                },
+
+                render: {
+
+                  sprite: {
+
+                    texture:
+                      tool.texture,
+
+                    xScale:
+                      0.5,
+
+                    yScale:
+                      0.5
+                  }
+
+                }
+
+              }
+
+            );
+
+          }
+        );
+
+
+      /* ===================================================
+         ADD WORLD
+      =================================================== */
+
+      World.add(
+        world,
+        [
+          ground,
+          roof,
+          wallLeft,
+          wallRight,
+          ...iconBodies
+        ]
+      );
+
+
+      /* ===================================================
+         MOUSE / DRAG
+      =================================================== */
+
+      const mouse =
+        Mouse.create(
+          render.canvas
+        );
+
+
+      const mouseConstraint =
+        MouseConstraint.create(
+
+          engine,
+
+          {
+
+            mouse: mouse,
+
+            constraint: {
+
+              stiffness: 0.2,
+
+              render: {
+                visible: false
+              }
+
+            }
+
+          }
+
+        );
+
+
+      World.add(
+        world,
+        mouseConstraint
+      );
+
+
+      render.mouse =
+        mouse;
+
+
+      /*
+      Do not allow Matter.js to capture the
+      page's mouse wheel.
+      */
+
+      if (mouse.mousewheel) {
+
+        mouse.element.removeEventListener(
+          "mousewheel",
+          mouse.mousewheel
+        );
+
+        mouse.element.removeEventListener(
+          "DOMMouseScroll",
+          mouse.mousewheel
+        );
+
+      }
+
+
+      /* ===================================================
+         START / STOP
+      =================================================== */
+
+      let running = false;
+
+
+      function start() {
+
+        if (running) {
+          return;
+        }
+
+
+        Runner.run(
+          runner,
+          engine
+        );
+
+
+        Render.run(
+          render
+        );
+
+
+        running = true;
+      }
+
+
+      function stop() {
+
+        if (!running) {
+          return;
+        }
+
+
+        Runner.stop(
+          runner
+        );
+
+
+        Render.stop(
+          render
+        );
+
+
+        running = false;
+      }
+
+
+      return {
+        start: start,
+        stop: stop
+      };
+
+    }
+
+
+    /* =====================================================
+       VIEWPORT CONTROL
+
+       Physics starts when the section approaches the
+       viewport and pauses when it leaves.
+    ===================================================== */
+
+    if (
+      "IntersectionObserver" in window
+    ) {
+
+      const observer =
+        new IntersectionObserver(
+
+          function (entries) {
+
+            const entry =
+              entries[0];
+
+
+            isInView =
+              entry.isIntersecting;
+
+
+            if (isInView) {
+
+              if (!simulation) {
+
+                simulation =
+                  createSimulation();
+
+              }
+
+
+              if (
+                simulation &&
+                !document.hidden
+              ) {
+
+                simulation.start();
+
+              }
+
+            } else if (
+              simulation
+            ) {
+
+              simulation.stop();
+
+            }
+
+          },
+
+          {
+
+            rootMargin:
+              "150px 0px 150px 0px",
+
+            threshold:
+              0.01
+
+          }
+
+        );
+
+
+      observer.observe(
+        container
+      );
+
+
+      document.addEventListener(
+        "visibilitychange",
+        function () {
+
+          if (!simulation) {
+            return;
+          }
+
+
+          if (
+            document.hidden ||
+            !isInView
+          ) {
+
+            simulation.stop();
+
+          } else {
+
+            simulation.start();
+
+          }
+
+        }
+      );
+
+    } else {
+
+      simulation =
+        createSimulation();
+
+
+      if (simulation) {
+        simulation.start();
+      }
+
+    }
+
+  }
+
+
+ /* =======================================================
+   INIT
+======================================================= */
+
+if (
+  document.readyState === "loading"
+) {
+
+  document.addEventListener(
+    "DOMContentLoaded",
+    initToolPhysics,
+    {
+      once: true
+    }
+  );
+
+} else {
+
+  initToolPhysics();
+
+}
+
+})();
+</script>
+</body></html>
