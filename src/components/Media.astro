@@ -19,4 +19,4 @@ const isSvg = typeof src !== 'string' && src.format === 'svg';
 ---
 {typeof src === 'string' || isSvg
   ? <img src={typeof src === 'string' ? src : src.src} alt={alt} loading={loading} decoding="async" {...rest} />
-  : <Picture src={src} alt={alt} formats={['avif', 'webp']} widths={widths.filter((w) => w <= src.width).concat(widths.some((w) => w <= src.width) ? [] : [src.width])} sizes={sizes} loading={loading} decoding="async" {...rest} />}
+  : <Picture src={src} alt={alt} formats={['avif', 'webp']} fallbackFormat="jpg" quality="mid" widths={widths.filter((w) => w <= src.width).concat(widths.some((w) => w <= src.width) ? [] : [src.width])} sizes={sizes} loading={loading} decoding="async" {...rest} />}

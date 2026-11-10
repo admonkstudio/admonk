@@ -5,7 +5,7 @@
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { basename, join, relative } from 'node:path';
 
-const CDN = /https:\/\/cdn\.prod\.website-files\.com\/[^"\s)]+/g;
+const CDN = /https:\/\/cdn\.prod\.website-files\.com\/[^"\s]+/g;
 const OUT = 'src/assets/cms';
 mkdirSync(OUT, { recursive: true });
 
