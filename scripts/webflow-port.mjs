@@ -11,6 +11,7 @@ import { dirname, join, relative } from 'node:path';
 import * as cheerio from 'cheerio';
 import { marked } from 'marked';
 import { parse as parseYaml } from 'yaml';
+import { adjust } from './webflow-adjust.mjs';
 
 const ROOT = process.cwd();
 const SNAP = join(ROOT, 'webflow-snapshot');
@@ -118,8 +119,6 @@ function finish($, path) {
   $('link[rel="shortcut icon"], link[rel="icon"], link[rel="apple-touch-icon"]').remove();
   $('head').append('<link rel="icon" type="image/png" href="/favicon.png"><link rel="apple-touch-icon" href="/logo.png">');
   $('head').append('<style>.w-webflow-badge{display:none!important}</style>');
-  // Webflow's grey text is too faint on the dark background (and its dark grey too faint on white).
-  $('head').append('<style id="wf-port-contrast">:root{--typography-color--heading-white:#ededed;--typography-color--title-white:#dcdcdc;--typography-color--paragraph-white:#cfcfcf;--typography-color--paragraph-black:#4d4d4d;--typography-color--text-black:#454545;--typography-color--title-black:#3a3a3a}</style>');
 
   // Serve every mirrored asset from this site.
   for (const [sel, attr] of [['[src]', 'src'], ['link[href]', 'href'], ['a[href]', 'href'], ['[poster]', 'poster'], ['[data-src]', 'data-src'], ['[data-poster-url]', 'data-poster-url'], ['[data-video-urls]', 'data-video-urls'], ['meta[content^="https"]', 'content']]) {
@@ -186,6 +185,7 @@ function finish($, path) {
     if (!$(el).find('[name="website"]').length) $(el).append('<input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">');
   });
   $('body').append(FORM_SCRIPT);
+  adjust($, path, { copyFile, media, portfolio });
   return '<!DOCTYPE html>' + $.html().replace(/^<!DOCTYPE html>/i, '');
 }
 
