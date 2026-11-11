@@ -315,3 +315,5 @@ html[data-theme="light"] .div-block-864.is-01 { background-color: rgba(0, 0, 0, 
 /* "Learn more" text links: Webflow made them white with a white arrow. */
 .link.is-white { color: var(--am-heading) !important; }
 html[data-theme="light"] .link.is-white .arrow-icon img { filter: invert(1); }
+/* White-only icons (Notion logo, white arrows) would vanish on light surfaces. */
+html[data-theme="light"] :is(.page-content, .top-section:not(.is-faq), .am-portfolio, .wf-port-cards) img[src*="white"] { filter: invert(1); }

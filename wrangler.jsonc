@@ -18,9 +18,12 @@
   // "send_email": [{ "name": "NOTIFY", "destination_address": "info@admonk.net" }],
   "vars": {
     "NOTIFY_FROM": "website@admonk.net",
-    // Cloudflare Access team domain and app audience for /admin (set once Access is configured).
-    "ACCESS_TEAM_DOMAIN": "",
-    "ACCESS_AUD": ""
+    // Admin dashboard. Google accounts listed here become owners the first time they sign in;
+    // everyone else is invited from Admin → Members. Secrets (set in the Cloudflare dashboard, not here):
+    // GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET (Google sign-in) and GITHUB_TOKEN (content editing).
+    "OWNER_EMAILS": "info@admonk.net",
+    "GITHUB_REPO": "admonkstudio/admonk",
+    "CONTENT_BRANCH": "main"
   },
   "observability": { "enabled": true }
 }

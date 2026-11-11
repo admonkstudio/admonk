@@ -1,7 +1,8 @@
 // Design adjustments on top of the Webflow markup (batch 1 of Hisham's review, Nov 2026).
 // Styles live in src/design/admonk.css; this file only changes markup that CSS can't reach.
-import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
+import { execSync } from 'node:child_process';
 import { fill } from './webflow-fill.mjs';
 import { tokensCss, TOKENS, ELEMENTS, GROUPS } from '../src/design/tokens.mjs';
 
@@ -26,6 +27,31 @@ const THEME_BODY = `<script>
   btn.addEventListener('click', toggle);
   btn.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); } });
 })();
+(function () {
+  // Live preview for the admin design editor: the editor sends CSS to this page when it's shown in its frame.
+  if (window.parent === window || !/[?&]am-preview=1/.test(location.search)) {
+    // Page view for the site's own analytics (no cookies; see worker/analytics.js).
+    try {
+      var q = new URLSearchParams(location.search);
+      var data = JSON.stringify({ p: location.pathname, r: document.referrer, u: q.get('utm_source'), t: document.documentElement.getAttribute('data-theme') });
+      if (!navigator.sendBeacon || !navigator.sendBeacon('/api/t', new Blob([data], { type: 'application/json' }))) fetch('/api/t', { method: 'POST', body: data, keepalive: true, headers: { 'Content-Type': 'application/json' } });
+    } catch (e) {}
+    return;
+  }
+  var style = document.createElement('style'); style.id = 'am-preview'; document.head.appendChild(style);
+  window.addEventListener('message', function (e) {
+    if (e.origin !== location.origin || !e.data || e.data.type !== 'am-design') return;
+    var live = document.querySelector('link[href="/api/design.css"]'); if (live) live.disabled = true;
+    style.textContent = e.data.css || '';
+    if (e.data.theme) document.documentElement.setAttribute('data-theme', e.data.theme);
+  });
+  // Keep the preview flag when following links inside the editor's preview.
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href]');
+    if (a && a.origin === location.origin && !/am-preview=1/.test(a.search)) a.search += (a.search ? '&' : '?') + 'am-preview=1';
+  }, true);
+  window.parent.postMessage({ type: 'am-preview-ready', path: location.pathname }, location.origin);
+})();
 </script>`;
 
 // The stylesheet is the generated tokens plus src/design/admonk.css; tokens.json feeds the admin editor.
@@ -37,9 +63,36 @@ function designFiles() {
   const css = tokensCss() + '\n' + readFileSync(join(ROOT, 'src/design/admonk.css'), 'utf8');
   writeFileSync(join(dir, 'admonk.css'), css);
   writeFileSync(join(dir, 'tokens.json'), JSON.stringify({ groups: GROUPS, tokens: TOKENS, elements: ELEMENTS }));
+  writeFileSync(join(dir, 'content-index.json'), JSON.stringify(contentIndex()));
+  // Which commit this build came from, so the admin can tell when a content change is live.
+  let commit = process.env.WORKERS_CI_COMMIT_SHA || '';
+  if (!commit) { try { commit = execSync('git rev-parse HEAD', { stdio: ['ignore', 'pipe', 'ignore'] }).toString().trim(); } catch {} }
+  writeFileSync(join(dir, 'build.json'), JSON.stringify({ commit, branch: process.env.WORKERS_CI_BRANCH || '', builtAt: new Date().toISOString() }));
   // Cache-bust on content so a new build is picked up straight away.
   let h = 0; for (let i = 0; i < css.length; i++) h = (h * 31 + css.charCodeAt(i)) | 0;
   return (designHref = `/wf/am/admonk.css?v=${(h >>> 0).toString(36)}`);
+}
+
+// A light index of every content item (name, image, draft) for the admin's lists and pickers.
+function contentIndex() {
+  const out = {};
+  const base = join(ROOT, 'src/content');
+  for (const coll of readdirSync(base, { withFileTypes: true }).filter((d) => d.isDirectory()).map((d) => d.name)) {
+    out[coll] = readdirSync(join(base, coll)).filter((f) => /\.(json|md)$/.test(f) && f !== 'README.md').map((f) => {
+      const id = f.replace(/\.(json|md)$/, '');
+      const raw = readFileSync(join(base, coll, f), 'utf8');
+      if (f.endsWith('.md')) {
+        const fm = (raw.match(/^---\n([\s\S]*?)\n---/) || [])[1] || '';
+        const get = (k) => (fm.match(new RegExp(`^${k}:\\s*"?(.*?)"?\\s*$`, 'm')) || [])[1];
+        return { id, name: get('title') || id, draft: get('draft') === 'true', date: get('published') };
+      }
+      try {
+        const j = JSON.parse(raw);
+        return { id, name: j.name || j.title || id, draft: !!j.draft, image: j.thumbnail || j.cover || j.icon || j.logo || j.flag || null, summary: j.summary || j.hero?.title || j.role || null };
+      } catch { return { id, name: id }; }
+    }).sort((a, b) => String(a.name).localeCompare(String(b.name)));
+  }
+  return out;
 }
 
 export function adjust($, path, { copyFile, media, portfolio }) {
@@ -83,6 +136,38 @@ export function adjust($, path, { copyFile, media, portfolio }) {
 
   fill($, path, { media });
   if (path === '/') home($, { media, portfolio });
+  pageText($, path);
+}
+
+// Page text editing (admin → Pages). Top-level pages keep their copy in the Webflow markup; the admin
+// stores changes in src/content/pages/<slug>.json as { replacements: [{ find, replace }] }.
+// The build lists each page's original text blocks for the editor, then applies the saved changes.
+export const pageSlug = (path) => (path === '/' ? 'home' : path.replace(/^\//, '').replace(/\//g, '-'));
+function pageText($, path) {
+  if (path.split('/').filter(Boolean).length > 1 || path === '/404') return;
+  const slug = pageSlug(path);
+  const nodes = [];
+  const walk = (el, section) => {
+    for (const n of el.children || []) {
+      if (n.type === 'text') { const t = n.data.replace(/\s+/g, ' ').trim(); if (t.length > 1 && /[a-z]/i.test(t)) nodes.push({ n, t, section }); }
+      else if (n.type === 'tag' && !['script', 'style', 'noscript', 'svg', 'template'].includes(n.name)) walk(n, section || (n.name === 'nav' || /site-nav|navigation-mobile|_141-menu/.test(n.attribs?.class || '') ? 'Menu and navigation' : null) || (/^(section|footer)$/.test(n.name) || /(top|down)-section|footer_component|am-portfolio/.test(n.attribs?.class || '') ? sectionName($, n) : null));
+    }
+  };
+  walk($('body')[0], null);
+  const seen = new Set();
+  const blocks = nodes.filter(({ t }) => (seen.has(t) ? false : seen.add(t))).map(({ t, section, n }) => ({ text: t, section: section || 'Page', tag: n.parent?.name || '' }));
+  const dir = join(ROOT, 'dist/wf/am/pages');
+  mkdirSync(dir, { recursive: true });
+  writeFileSync(join(dir, `${slug}.json`), JSON.stringify({ path, slug, blocks }));
+  const file = join(ROOT, 'src/content/pages', `${slug}.json`);
+  if (!existsSync(file)) return;
+  const { replacements = [] } = JSON.parse(readFileSync(file, 'utf8'));
+  const map = new Map(replacements.filter((r) => r.find && typeof r.replace === 'string').map((r) => [r.find.replace(/\s+/g, ' ').trim(), r.replace]));
+  for (const { n, t } of nodes) if (map.has(t)) n.data = n.data.replace(/^(\s*)[\s\S]*?(\s*)$/, (_, a, b) => a + map.get(t) + b);
+}
+function sectionName($, el) {
+  const h = ($(el).find('h1, h2, .heading').first().html() || '').replace(/<br\s*\/?>/gi, ' ').replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+  return h ? h.slice(0, 60) : ($(el).hasClass('footer_component') || el.name === 'footer' ? 'Footer' : 'Section');
 }
 
 function home($, { media, portfolio }) {
