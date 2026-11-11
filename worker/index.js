@@ -27,7 +27,7 @@ export default {
     const { pathname } = url;
     try {
       if (pathname === '/api/enquiry' && request.method === 'POST') return await handleEnquiry(request, env, ctx);
-      if (pathname === '/api/t' && request.method === 'POST') return await handleBeacon(request, env, ctx);
+      if (pathname === '/api/t' && request.method === 'POST') return await handleBeacon(request, env, ctx).catch((e) => (console.error(e), new Response(null, { status: 204 })));
       if (pathname === '/api/design.css') return await designCss(env, ctx);
       if (pathname.startsWith('/api/auth/')) return await handleAuth(request, env, url);
       if (pathname.startsWith('/api/admin/')) return await handleApi(request, env, url);
