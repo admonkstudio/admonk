@@ -29,14 +29,14 @@ ${can('owner') ? `<div class="card" style="margin-top:16px"><div class="card-h">
   <li>Open <a href="https://console.cloud.google.com/apis/credentials" target="_blank" rel="noopener">Google Cloud → APIs and services → Credentials</a> while signed in as the Admonk Google Workspace admin. Create a project called “Admonk website” if asked.</li>
   <li>Set up the <b>OAuth consent screen</b>: user type <b>Internal</b> (only Admonk accounts) or External, app name “Admonk admin”, support email info@admonk.net.</li>
   <li>Create credentials → <b>OAuth client ID</b> → type <b>Web application</b>. Under <b>Authorised redirect URIs</b> add <code>${esc(origin)}/api/auth/callback</code>${origin.includes('admonk.net') ? '' : ' and <code>https://admonk.net/api/auth/callback</code>'}.</li>
-  <li>Copy the client ID and secret into ${secrets} as two <b>secrets</b>: <code>GOOGLE_CLIENT_ID</code> and <code>GOOGLE_CLIENT_SECRET</code>.</li>
+  <li>Put the client ID in <code>GOOGLE_CLIENT_ID</code> in <code>wrangler.jsonc</code> (it isn’t secret), and the client secret into ${secrets} as a <b>secret</b> called <code>GOOGLE_CLIENT_SECRET</code>, for Production and Previews.</li>
   <li>Owners are set by <code>OWNER_EMAILS</code> in <code>wrangler.jsonc</code> (they become owners on first sign-in). Invite everyone else from <a href="/admin/members" data-link>Members</a>.</li>
 </ol></div></div>
 
 <div class="card" style="margin-top:16px"><div class="card-h"><h2>2 · Content editing</h2>${s.github ? '<span class="badge b-active">done</span>' : ''}</div><div class="card-b"><ol class="steps">
   <li>Open <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">GitHub → Fine-grained personal access tokens → Generate</a>. Resource owner: <b>admonkstudio</b>.</li>
   <li>Repository access: <b>Only select repositories</b> → <code>${esc(state.me.repo)}</code>. Permissions: <b>Contents: Read and write</b> (Metadata: read is added automatically). Pick the longest expiry you’re comfortable with.</li>
-  <li>Add the token in ${secrets} as a secret called <code>GITHUB_TOKEN</code>.</li>
+  <li>Add the token in ${secrets} as a secret called <code>GITHUB_TOKEN</code>, for Production and Previews.</li>
   <li>Each save becomes a commit with the editor’s name, and the site redeploys on its own in about two minutes.</li>
 </ol></div></div>` : '<p class="muted" style="margin-top:16px">Only owners can see the setup steps.</p>'}`;
 }

@@ -20,8 +20,10 @@
     "NOTIFY_FROM": "website@admonk.net",
     // Admin dashboard. Google accounts listed here become owners the first time they sign in;
     // everyone else is invited from Admin → Members. Secrets (set in the Cloudflare dashboard, not here):
-    // GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET (Google sign-in) and GITHUB_TOKEN (content editing).
+    // GOOGLE_CLIENT_SECRET (Google sign-in) and GITHUB_TOKEN (content editing).
     "OWNER_EMAILS": "info@admonk.net",
+    // The OAuth client ID isn't secret; keeping it here stops deploys from wiping it.
+    "GOOGLE_CLIENT_ID": "960644797619-jttojqjhns7hrdtm1qdfqg18e816aa1t.apps.googleusercontent.com",
     "GITHUB_REPO": "admonkstudio/admonk",
     "CONTENT_BRANCH": "main"
   },

@@ -15,7 +15,7 @@
 ## Admin dashboard (`/admin`)
 
 - Single-page app in `public/admin/` (no build step; `screens/*.js` are ES modules). The Worker (`worker/`) serves it and its JSON API at `/api/admin/*` (`worker/api.js`).
-- Sign-in is Google OAuth (`worker/auth.js`); members and roles (viewer < editor < admin < owner) are in D1. `OWNER_EMAILS` in `wrangler.jsonc` become owners on first sign-in. Secrets: `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET`, `GITHUB_TOKEN`.
+- Sign-in is Google OAuth (`worker/auth.js`); members and roles (viewer < editor < admin < owner) are in D1. `OWNER_EMAILS` in `wrangler.jsonc` become owners on first sign-in. `GOOGLE_CLIENT_ID` is a plain var in `wrangler.jsonc`; secrets (dashboard, Production and Previews): `GOOGLE_CLIENT_SECRET`, `GITHUB_TOKEN`.
 - Content and page-text edits are commits to `CONTENT_BRANCH` through the GitHub Contents API (`worker/github.js`); the push redeploys the site. Page text is `src/content/pages/<slug>.json` find/replace pairs applied by `scripts/webflow-adjust.mjs`.
 - Analytics are first-party: the beacon posts to `/api/t` (no cookies, no IPs stored).
 - New tables go in a new file under `migrations/`; `npm run deploy` applies them. Local testing: `.dev.vars` with `ADMIN_DEV=true` skips sign-in, then `wrangler d1 migrations apply admonk-crm --local` and `wrangler dev`.
