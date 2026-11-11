@@ -1,8 +1,9 @@
 // Design adjustments on top of the Webflow markup (batch 1 of Hisham's review, Nov 2026).
 // Styles live in src/design/admonk.css; this file only changes markup that CSS can't reach.
-import { readFileSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { fill } from './webflow-fill.mjs';
+import { tokensCss, TOKENS, ELEMENTS, GROUPS } from '../src/design/tokens.mjs';
 
 const ROOT = process.cwd();
 
@@ -27,11 +28,27 @@ const THEME_BODY = `<script>
 })();
 </script>`;
 
+// The stylesheet is the generated tokens plus src/design/admonk.css; tokens.json feeds the admin editor.
+let designHref;
+function designFiles() {
+  if (designHref) return designHref;
+  const dir = join(ROOT, 'dist/wf/am');
+  mkdirSync(dir, { recursive: true });
+  const css = tokensCss() + '\n' + readFileSync(join(ROOT, 'src/design/admonk.css'), 'utf8');
+  writeFileSync(join(dir, 'admonk.css'), css);
+  writeFileSync(join(dir, 'tokens.json'), JSON.stringify({ groups: GROUPS, tokens: TOKENS, elements: ELEMENTS }));
+  // Cache-bust on content so a new build is picked up straight away.
+  let h = 0; for (let i = 0; i < css.length; i++) h = (h * 31 + css.charCodeAt(i)) | 0;
+  return (designHref = `/wf/am/admonk.css?v=${(h >>> 0).toString(36)}`);
+}
+
 export function adjust($, path, { copyFile, media, portfolio }) {
-  const css = copyFile(join(ROOT, 'src/design/admonk.css'), 'am/admonk.css');
+  const css = designFiles();
   const icon = copyFile(join(ROOT, 'src/design/logo-icon.png'), 'am/logo-icon.png');
   $('head').prepend(THEME_HEAD);
   $('head').append(`<link rel="stylesheet" href="${css}">`);
+  // Changes saved in the admin design editor (served by the Worker; empty until something is changed).
+  $('head').append('<link rel="stylesheet" href="/api/design.css">');
 
   // Theme toggle: drop Webflow's interaction (bound through data-w-id) and use ours.
   $('.mood-icon').removeAttr('data-w-id');
@@ -52,7 +69,7 @@ export function adjust($, path, { copyFile, media, portfolio }) {
     const logos = $(el).find('.client-logo-2 img').toArray().map((img) => ({ src: $(img).attr('src'), alt: $(img).attr('alt') || '' }));
     if (!logos.length) return;
     const group = (hidden) => `<div class="am-marquee-group"${hidden ? ' aria-hidden="true"' : ''}>${logos.map((l) => `<div class="am-marquee-item"><img src="${l.src}" alt="${hidden ? '' : l.alt}" loading="lazy"></div>`).join('')}</div>`;
-    $(el).replaceWith(`<div class="am-marquee" style="--am-marquee-duration:${Math.max(25, logos.length * 3)}s"><div class="am-marquee-track">${group(false)}${group(true)}</div></div>`);
+    $(el).replaceWith(`<div class="am-marquee" style="--am-marquee-count:${Math.max(8, logos.length)}"><div class="am-marquee-track">${group(false)}${group(true)}</div></div>`);
   });
 
   // Empty panels Webflow left at the end of a page (the studio page has one): drop them, and let the

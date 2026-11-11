@@ -8,52 +8,7 @@
    5. Components: menu, logo marquee, eyes, portfolio
    ========================================================================= */
 
-/* ---------- 1. Tokens ---------- */
-:root {
-  color-scheme: dark;
-  /* brand */
-  --am-accent: #ff4c24;
-  --am-violet: #6e28c8;
-  --am-on-accent: #ffffff;
-
-  /* surfaces */
-  --am-bg: #0f0f0f;            /* page behind the frames */
-  --am-surface: #000000;       /* the panels that slide over the frames */
-  --am-surface-raised: #141414;/* cards inside panels */
-  --am-frame: rgba(67, 65, 78, 0.2);
-  --am-border: rgba(255, 255, 255, 0.12);
-
-  /* text */
-  --am-heading: #ededed;
-  --am-title: #dcdcdc;
-  --am-text: #cfcfcf;
-  --am-muted: #9a9a9a;
-
-  /* controls */
-  --am-control-bg: #dcdcdc;
-  --am-control-fg: #111111;
-
-  /* layout */
-  --am-rail: 6rem;             /* width of the side columns and height of the top/bottom rows */
-  --am-gap: 10px;
-  --am-radius: 10px;
-  --am-radius-panel: 40px;
-}
-
-html[data-theme="light"] {
-  color-scheme: light;
-  --am-bg: #f4f4f4;
-  --am-surface: #ffffff;
-  --am-surface-raised: #f6f6f7;
-  --am-frame: rgba(206, 201, 201, 0.3);
-  --am-border: rgba(0, 0, 0, 0.1);
-  --am-heading: #1b1b1d;
-  --am-title: #2c2c2c;
-  --am-text: #474747;
-  --am-muted: #6b6b6b;
-  --am-control-bg: #1b1b1d;
-  --am-control-fg: #ffffff;
-}
+/* ---------- 1. Tokens: generated from src/design/tokens.mjs and prepended at build ---------- */
 
 /* ---------- 2. Webflow variables follow the tokens ---------- */
 :root,
@@ -65,10 +20,20 @@ html[data-theme="light"] {
   --top-section-black: var(--am-surface);
   --background-color--body-black: var(--am-bg);
   --dark-boarders: var(--am-border);
+  --typography-color--heading-black: var(--am-title);
+  --typography-color--title-black: var(--am-title);
+  --typography-color--paragraph-black: var(--am-muted);
+  --typography-color--text-black: var(--am-muted);
+  --background-color--boarders: var(--am-card);
+  --background-color--hover-white: var(--am-card-hover);
+  --background-color--body-white: var(--am-bg);
+  --top-section-white: var(--am-surface);
 }
 
 /* ---------- 3. Theme rules ---------- */
 html { background-color: var(--am-bg); }
+body { font-family: var(--am-font-body); }
+.heading, h1, h2, h3, h4, .title { font-family: var(--am-font-heading); }
 .heading, h1, h2, h3, h4 { color: var(--am-heading) !important; }
 .paragraph { color: var(--am-text) !important; }
 .title, .text { color: var(--am-title) !important; }
@@ -144,7 +109,7 @@ html[data-theme="light"] .site-footer .footer_wrapper { --am-heading: #ededed; -
 .menu-link { justify-content: flex-start !important; align-items: center !important; text-align: left !important; overflow: visible !important; }
 .menu-link .eyebrow { flex: 0 0 2.2em; color: var(--am-muted) !important; }
 .menu-link-heading { display: block; height: 1.15em !important; line-height: 1.15 !important; overflow: hidden !important; text-shadow: none !important; transform: none !important; }
-.menu-link-heading .am-roll { display: block; text-shadow: 0 1.15em 0 var(--am-accent); transition: transform .55s cubic-bezier(.65, .05, 0, 1); }
+.menu-link-heading .am-roll { display: block; text-shadow: 0 1.15em 0 var(--am-accent); transition: transform var(--am-menu-roll-speed) cubic-bezier(.65, .05, 0, 1); }
 .menu-link:hover .menu-link-heading .am-roll,
 .menu-link:focus-visible .menu-link-heading .am-roll { transform: translateY(-1.15em); }
 .menu-link-bg { display: none !important; }
@@ -155,10 +120,10 @@ html[data-theme="light"] .site-footer .footer_wrapper { --am-heading: #ededed; -
 
 /* Client logos: a seamless loop with no empty stretch. */
 .am-marquee { width: 100%; overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent); mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent); }
-.am-marquee-track { display: flex; width: max-content; animation: am-marquee var(--am-marquee-duration, 40s) linear infinite; }
+.am-marquee-track { display: flex; width: max-content; animation: am-marquee calc(var(--am-marquee-count, 12) * var(--am-marquee-seconds) * 1s) linear infinite; }
 .am-marquee:hover .am-marquee-track { animation-play-state: paused; }
 .am-marquee-group { display: flex; align-items: center; flex: none; }
-.am-marquee-item { display: flex; justify-content: center; align-items: center; width: 140px; height: 80px; margin-right: 3rem; opacity: .75; transition: opacity .3s; }
+.am-marquee-item { display: flex; justify-content: center; align-items: center; width: 140px; height: 80px; margin-right: 3rem; opacity: .75; transition: opacity var(--am-hover-speed); }
 .am-marquee-item:hover { opacity: 1; }
 /* Logos arrive in mixed greys; flatten them to one tone so they all read on the panel. */
 .am-marquee-item img { max-width: 100%; max-height: 100%; object-fit: contain; filter: brightness(0) invert(1); }
@@ -168,14 +133,14 @@ html[data-theme="light"] .am-marquee-item img { filter: brightness(0); }
 
 /* Eyes: glassy white eyeballs with a layered iris, pupil and catch-light. */
 .dog-face_eyes, .dog-face_eye { overflow: visible !important; }
-html[data-theme="light"] .dog-face_eye .eye-color { --am-eye-shadow: 0.16; border-color: rgba(0, 0, 0, 0.06) !important; }
+html[data-theme="light"] .dog-face_eye .eye-color { border-color: rgba(0, 0, 0, 0.06) !important; }
 .dog-face_eye .eye-color {
-  background: radial-gradient(circle at 34% 28%, #ffffff 0%, #f7f8fb 22%, #e4e7ee 55%, #c3c8d4 82%, #9aa1b2 100%) !important;
+  background: radial-gradient(circle at 34% 28%, #ffffff 0%, var(--am-eye-white) 22%, color-mix(in srgb, var(--am-eye-white) 88%, #5a6078) 55%, color-mix(in srgb, var(--am-eye-white) 72%, #3c4258) 82%, color-mix(in srgb, var(--am-eye-white) 55%, #2a2f44) 100%) !important;
   border: 1px solid rgba(255, 255, 255, 0.55) !important;
   box-shadow:
     inset 0 -14px 26px rgba(40, 30, 70, 0.35),
     inset 0 8px 16px rgba(255, 255, 255, 0.9),
-    0 18px 40px rgba(0, 0, 0, var(--am-eye-shadow, 0.45)),
+    0 18px 40px rgba(0, 0, 0, var(--am-eye-shadow)),
     0 0 0 6px rgba(255, 255, 255, 0.04);
 }
 .dog-face_eye .eye-color::after {
@@ -187,7 +152,7 @@ html[data-theme="light"] .dog-face_eye .eye-color { --am-eye-shadow: 0.16; borde
   background:
     radial-gradient(circle, transparent 0 30%, rgba(0, 0, 0, 0.35) 31% 33%, transparent 34%),
     repeating-conic-gradient(from 0deg, rgba(255, 255, 255, 0.08) 0 4deg, rgba(0, 0, 0, 0.06) 4deg 9deg),
-    radial-gradient(circle, #1a0d33 0 30%, #4b1f9a 42%, #6e28c8 58%, #ff4c24 80%, #2a1450 94%);
+    radial-gradient(circle, color-mix(in srgb, var(--am-eye-iris-inner) 30%, #000) 0 30%, color-mix(in srgb, var(--am-eye-iris-inner) 70%, #000) 42%, var(--am-eye-iris-inner) 58%, var(--am-eye-iris-outer) 80%, color-mix(in srgb, var(--am-eye-iris-inner) 40%, #000) 94%);
   box-shadow: inset 0 0 0 2px rgba(20, 8, 40, 0.65), inset 0 -6px 10px rgba(0, 0, 0, 0.35);
 }
 .dog-face_pupil .eye {
@@ -205,11 +170,11 @@ html[data-theme="light"] .dog-face_eye .eye-color { --am-eye-shadow: 0.16; borde
 .am-portfolio-inner { width: min(100% - 2 * var(--am-rail), 110rem); margin: 0 auto; }
 @media (max-width: 991px) { .am-portfolio { padding: 5rem 0 4rem; } .am-portfolio-inner { width: calc(100% - 2rem); } }
 .am-portfolio-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 2rem; flex-wrap: wrap; margin-bottom: 3.5rem; }
-.am-portfolio-head .am-eyebrow { color: var(--am-accent); font-size: .85rem; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 1rem; }
+.am-portfolio-head .am-eyebrow { color: var(--am-accent-text); font-size: .85rem; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 1rem; }
 .am-portfolio-head h2 { margin: 0; font-size: clamp(2.5rem, 5vw, 5rem); line-height: .95; letter-spacing: -.04em; font-weight: 500; max-width: 14ch; }
 .am-portfolio-head p { margin: 0; max-width: 34ch; color: var(--am-text); font-size: 1.1rem; }
 .am-portfolio-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 1.25rem; }
-.am-case { grid-column: span 4; display: block; text-decoration: none; color: inherit; border-radius: 24px; overflow: hidden; background: var(--am-surface-raised); border: 1px solid var(--am-border); }
+.am-case { grid-column: span 4; display: block; text-decoration: none; color: inherit; border-radius: var(--am-radius-card); overflow: hidden; background: var(--am-surface-raised); border: 1px solid var(--am-border); }
 .am-case:nth-child(5n + 1), .am-case:nth-child(5n + 2) { grid-column: span 6; }
 .am-case-media { aspect-ratio: 16 / 11; overflow: hidden; background: var(--am-surface); }
 .am-case:nth-child(5n + 1) .am-case-media, .am-case:nth-child(5n + 2) .am-case-media { aspect-ratio: 16 / 10; }
@@ -221,8 +186,8 @@ html[data-theme="light"] .dog-face_eye .eye-color { --am-eye-shadow: 0.16; borde
 .am-case-arrow { flex: none; width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; border: 1px solid var(--am-border); color: var(--am-heading); transition: background .3s, color .3s, transform .3s; }
 .am-case:hover .am-case-arrow { background: var(--am-accent); border-color: var(--am-accent); color: var(--am-on-accent); transform: rotate(-45deg); }
 .am-portfolio-cta { display: flex; justify-content: center; margin-top: 3rem; }
-.am-button { display: inline-flex; align-items: center; gap: .75rem; padding: 1rem 1.75rem; border-radius: 100px; background: var(--am-control-bg); color: var(--am-control-fg); text-decoration: none; font-weight: 500; transition: background .3s, color .3s; }
-.am-button:hover { background: var(--am-accent); color: var(--am-on-accent); }
+.am-button { display: inline-flex; align-items: center; gap: .75rem; padding: 1rem 1.75rem; border-radius: var(--am-radius-button); background: var(--am-control-bg); color: var(--am-control-fg); text-decoration: none; font-weight: 500; transition: background var(--am-hover-speed), color var(--am-hover-speed); }
+.am-button:hover { background: var(--am-button-hover-bg); color: var(--am-button-hover-fg); }
 @media (max-width: 991px) { .am-case, .am-case:nth-child(5n + 1), .am-case:nth-child(5n + 2) { grid-column: span 6; } }
 @media (max-width: 767px) { .am-case, .am-case:nth-child(5n + 1), .am-case:nth-child(5n + 2) { grid-column: span 12; } }
 
@@ -232,7 +197,7 @@ html[data-theme="light"] .dog-face_eye .eye-color { --am-eye-shadow: 0.16; borde
 .top-section.is-faq,
 .footer_component,
 ._141-menu-wrapper {
-  --am-surface: #000000;
+  --am-surface: var(--am-dark-surface);
   --am-surface-raised: #141414;
   --am-border: rgba(255, 255, 255, 0.12);
   --am-heading: #ededed;
@@ -242,10 +207,14 @@ html[data-theme="light"] .dog-face_eye .eye-color { --am-eye-shadow: 0.16; borde
   --typography-color--title-white: #dcdcdc;
   --typography-color--heading-white: #ededed;
   --typography-color--paragraph-white: #cfcfcf;
-  --top-section-black: #000000;
+  --top-section-black: var(--am-dark-surface);
+  --am-card: #0c0c0c; --am-card-hover: #181818; --am-input: #0c0c0c; --am-line: #272727; --am-line-faint: #161616;
+  --am-muted: #9a9a9a; --am-accent-text: #ff6a47; --am-control-bg: #dcdcdc; --am-control-fg: #111111;
+  --am-secondary-bg: #141414; --am-secondary-fg: #ededed;
+  --typography-color--paragraph-black: #9a9a9a; --background-color--boarders: #0c0c0c;
   color-scheme: dark;
 }
-html[data-theme="light"] .footer_component { background-color: #000000 !important; }
+html[data-theme="light"] .footer_component { background-color: var(--am-dark-surface) !important; }
 html[data-theme="light"] .footer_component .logo-admonk,
 html[data-theme="light"] .footer_component img { filter: none !important; }
 
@@ -253,10 +222,13 @@ html[data-theme="light"] .footer_component img { filter: none !important; }
 .flipper-card-front .title { color: #ffffff !important; }
 
 /* Buttons */
-.button-3 { background-color: var(--am-control-bg) !important; color: var(--am-control-fg) !important; }
+.button-3 { background-color: var(--am-control-bg) !important; color: var(--am-control-fg) !important; border-radius: var(--am-radius-button) !important; transition: background-color var(--am-hover-speed), color var(--am-hover-speed) !important; }
+.button-3:hover { background-color: var(--am-button-hover-bg) !important; color: var(--am-button-hover-fg) !important; }
+.button-3 .text, .button-3 div { color: inherit !important; }
 .button-3 .arrow img { filter: none; }
 html[data-theme="light"] .button-3 .arrow img { filter: invert(1); }
-.button-4.is-dark { background-color: var(--am-surface-raised) !important; color: var(--am-heading) !important; border: 1px solid var(--am-border); }
+.button-4.is-dark { background-color: var(--am-secondary-bg) !important; color: var(--am-secondary-fg) !important; border: 1px solid var(--am-border); border-radius: var(--am-radius-button) !important; }
+.button-4.is-dark .text, .button-4.is-dark div { color: inherit !important; }
 html[data-theme="light"] .button-4.is-dark .arrow img { filter: invert(1); }
 
 /* Orbit of tool logos */
@@ -307,8 +279,8 @@ html[data-theme="light"] .div-block-902 { background-color: rgba(255, 255, 255, 
 
 /* ---------- 8. Filled-in template pieces ---------- */
 .am-chip-list { display: flex; flex-wrap: wrap; gap: .5rem; }
-.am-chip { display: inline-flex; align-items: center; padding: .45rem .9rem; border-radius: 100px; border: 1px solid var(--am-border); color: var(--am-title); text-decoration: none; font-size: .9rem; transition: border-color .3s, color .3s; }
-.am-chip:hover { border-color: var(--am-accent); color: var(--am-accent); }
+.am-chip { display: inline-flex; align-items: center; padding: .45rem .9rem; border-radius: var(--am-radius-button); border: 1px solid var(--am-border); color: var(--am-title); text-decoration: none; font-size: .9rem; transition: border-color .3s, color .3s; }
+.am-chip:hover { border-color: var(--am-accent); color: var(--am-accent-text); }
 .solution-tools a.icon-wrapper { text-decoration: none; }
 .am-card-link { display: block; color: inherit; text-decoration: none; }
 .am-card-link:hover .title { color: var(--am-accent) !important; }
@@ -317,3 +289,29 @@ img.am-hero-icon { width: min(60%, 18rem) !important; height: auto !important; m
 /* Studio "How we think" Venn: the filled Strategy circle was white under light text. */
 .div-block-864.is-01 { background-color: rgba(255, 255, 255, 0.07) !important; }
 html[data-theme="light"] .div-block-864.is-01 { background-color: rgba(0, 0, 0, 0.05) !important; }
+
+/* ---------- 9. Inner pages: panels, cards, labels and forms follow the theme ----------
+   Webflow hard-coded these dark, so in light mode they kept black boxes under dark text. */
+.page-content, .page-content.is-small { background-color: var(--am-panel) !important; border-radius: var(--am-radius-panel) !important; }
+.services-wrap, .services-wrap.is-deliverable { background-color: var(--am-card) !important; border-color: var(--am-border) !important; border-radius: var(--am-radius-card) !important; color: var(--am-muted) !important; transition: background-color var(--am-hover-speed); }
+.services-wrap:hover { background-color: var(--am-card-hover) !important; }
+.contact-block { background-color: var(--am-card) !important; border-color: var(--am-border) !important; border-radius: var(--am-radius-card) !important; }
+.content-wrapper.is-black { background-color: var(--am-surface) !important; }
+.lable { background-color: var(--am-card) !important; border-color: var(--am-border) !important; color: var(--am-title) !important; }
+.text-field, .text-field.is-large { background-color: var(--am-input) !important; border-color: var(--am-border) !important; color: var(--am-heading) !important; border-radius: var(--am-radius-field) !important; }
+.text-field::placeholder { color: var(--am-muted) !important; }
+.line.is-dark { background-color: var(--am-line) !important; }
+.line-animation { background-color: var(--am-line-faint) !important; }
+.text.is-custom { color: var(--am-muted); }
+/* The big gradient numbers fade from secondary text to heading colour in either theme. */
+.text.is-large { background-image: linear-gradient(90deg, var(--am-muted) 47%, var(--am-heading)) !important; }
+/* Blog article body and tables */
+.w-richtext, .w-richtext p, .w-richtext li { color: var(--am-text); }
+.w-richtext a { color: var(--am-accent-text); }
+.w-richtext table { border-collapse: collapse; width: 100%; }
+.w-richtext th, .w-richtext td { border: 1px solid var(--am-border); padding: .6rem .8rem; color: var(--am-text); text-align: left; }
+.w-richtext th { color: var(--am-heading); background: var(--am-card); }
+.form-wrapper { background-color: var(--am-card) !important; border-radius: var(--am-radius-card); }
+/* "Learn more" text links: Webflow made them white with a white arrow. */
+.link.is-white { color: var(--am-heading) !important; }
+html[data-theme="light"] .link.is-white .arrow-icon img { filter: invert(1); }

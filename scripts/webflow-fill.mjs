@@ -20,6 +20,8 @@ const PLACEHOLDER = (src = '') => /placeholder\.[0-9a-f]+\.svg/.test(src);
 export function fill($, path, { media }) {
   // Footer: the copyright line is a link to nowhere.
   $('a.text.is-custom[href="#"]').filter((_, el) => /all rights reserved/i.test($(el).text())).each((_, el) => { $(el).replaceWith(`<span class="${$(el).attr('class')}">${$(el).html()}</span>`); });
+  // Bound fields Webflow left empty (an empty name line on portfolio cards, for example).
+  $('.w-dyn-bind-empty').filter((_, el) => el.tagName !== 'img' && !$(el).text().trim() && !$(el).children().length).remove();
   // Stray single-letter text Webflow left in the service template.
   $('.text-block-4').filter((_, el) => $(el).text().trim().length <= 1).remove();
   // Section navigation on solution pages: point the links at their sections.

@@ -59,6 +59,7 @@ const cssUrls = (css) => css.replace(/url\((['"]?)(https:[^'")]+)\1\)/g, (_, q, 
 
 // ---------- content ----------
 const readJson = (dir) => Object.fromEntries(readdirSync(join(ROOT, 'src/content', dir)).filter((f) => f.endsWith('.json')).map((f) => [f.slice(0, -5), JSON.parse(readFileSync(join(ROOT, 'src/content', dir, f), 'utf8'))]));
+const frameworks = readJson('frameworks');
 const tools = readJson('tools');
 const services = readJson('services');
 const solutions = readJson('solutions');
@@ -261,10 +262,10 @@ function servicePage({ path, title, description, eyebrow, heading, intro, image,
   }
   $('head').append(`<style>
 .wf-port-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,16rem),1fr));gap:1rem}
-.wf-port-card{display:flex;flex-direction:column;gap:.6rem;padding:1.5rem;border:1px solid rgba(255,255,255,.12);border-radius:1.25rem;color:inherit;text-decoration:none;transition:border-color .2s,transform .2s}
-.wf-port-card:hover{border-color:rgba(255,255,255,.4);transform:translateY(-2px)}
+.wf-port-card{display:flex;flex-direction:column;gap:.6rem;padding:1.5rem;border:1px solid var(--am-border);border-radius:var(--am-radius-card);color:inherit;text-decoration:none;transition:border-color .2s,transform .2s}
+.wf-port-card:hover{border-color:var(--am-accent);transform:translateY(-2px)}
 .wf-port-card img{width:2.75rem;height:2.75rem;object-fit:contain}
-.wf-port-card .meta{font-size:.8rem;opacity:.6}
+.wf-port-card .meta{font-size:.8rem;color:var(--am-muted)}
 .wf-port-group{margin-top:2.5rem}
 .wf-port-rich{max-width:46rem;line-height:1.7}
 .wf-port-rich h2{margin:2.5rem 0 1rem;font-size:1.6rem;line-height:1.25}
@@ -272,7 +273,7 @@ function servicePage({ path, title, description, eyebrow, heading, intro, image,
 .wf-port-rich p,.wf-port-rich ul,.wf-port-rich ol{margin:0 0 1.1rem}
 .wf-port-rich a{text-decoration:underline}
 .wf-port-rich table{width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:.95rem}
-.wf-port-rich th,.wf-port-rich td{border-bottom:1px solid rgba(255,255,255,.15);padding:.6rem .5rem;text-align:left;vertical-align:top}
+.wf-port-rich th,.wf-port-rich td{border-bottom:1px solid var(--am-border);padding:.6rem .5rem;text-align:left;vertical-align:top}
 img.is-tool-icon{width:min(60%,14rem);height:auto;margin:auto;object-fit:contain}
 </style>`);
   write(path, finish($, path));
@@ -297,6 +298,14 @@ servicePage({
 });
 
 // Tool pages
+// The hero intro says where the tool fits; the full description sits in "About", so it isn't shown twice.
+function toolIntro(t, nWhere, nProjects) {
+  const fw = frameworks[t.framework]?.name;
+  const bits = [fw ? `${t.name} is one of the tools behind our ${fw} work` : `${t.name} is one of the tools we work with`];
+  if (nWhere) bits.push(`used across ${nWhere} of our solutions and services`);
+  if (nProjects) bits.push(`and in ${nProjects} client ${nProjects === 1 ? 'project' : 'projects'}`);
+  return bits.join(', ').replace(', and', ' and') + '.';
+}
 const usesTool = (list, id) => Object.entries(list).filter(([, x]) => x.tools?.includes(id) && !x.draft).sort(byName);
 for (const [id, t] of Object.entries(tools)) {
   const where = [...usesTool(solutions, id).map(([sid, s]) => [`/solutions/${sid}`, s]), ...usesTool(services, id).map(([sid, s]) => [`/services/${sid}`, s])];
@@ -306,7 +315,7 @@ for (const [id, t] of Object.entries(tools)) {
   if (where.length) sections.push({ id: 'Where-we-use-it', nav: 'Where we use it', title: 'Where we use it', html: `<div class="wf-port-cards">${where.map(([href, s]) => card(href, s.name, s.hero?.title)).join('')}</div>` });
   if (projects.length) sections.push({ id: 'Projects', nav: 'Projects', title: `Projects built with ${t.name}`, html: `<div class="wf-port-cards">${projects.map(([pid, p]) => card(`/portfolio/${pid}`, p.name, p.summary ?? p.hero?.title)).join('')}</div>` });
   if (related.length) sections.push({ id: 'Blog', nav: 'From the blog', title: 'From the blog', html: `<div class="wf-port-cards">${related.map((p) => card(`/blog/${p.id}`, p.title, p.description)).join('')}</div>` });
-  servicePage({ path: `/tools-platforms/${id}`, title: t.seo?.title ?? `${t.name} | Admonk`, description: t.seo?.description ?? t.description, eyebrow: t.name, heading: t.summary, intro: t.description, image: media(t.icon), sections });
+  servicePage({ path: `/tools-platforms/${id}`, title: t.seo?.title ?? `${t.name} | Admonk`, description: t.seo?.description ?? t.description, eyebrow: t.name, heading: t.summary, intro: toolIntro(t, where.length, projects.length), image: media(t.icon), sections });
 }
 
 // Blog index and posts
